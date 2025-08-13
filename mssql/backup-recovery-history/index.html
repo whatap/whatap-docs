@@ -1,4 +1,4 @@
-<!doctype html><html lang=ko-KR dir=ltr class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-mssql/backup-recovery-history" data-has-hydrated=false><meta charset=UTF-8><meta name=generator content="Docusaurus v3.7.0"><title data-rh=true>백업/복구 내역 | WhaTap Docs</title><meta data-rh=true name=viewport content="width=device-width, initial-scale=1.0"><meta data-rh=true name=twitter:card content=summary_large_image><meta data-rh=true property=og:image content=https://www.whatap.io/img/og/whatap.png><meta data-rh=true name=twitter:image content=https://www.whatap.io/img/og/whatap.png><meta data-rh=true property=og:url content=https://docs.whatap.io/whatap-docs/mssql/backup-recovery-history><meta data-rh=true property=og:locale content=ko_KR><meta data-rh=true property=og:locale:alternate content=en_US><meta data-rh=true property=og:locale:alternate content=ja_JP><meta data-rh=true name=docusaurus_locale content=ko><meta data-rh=true name=docsearch:language content=ko><meta data-rh=true name=docusaurus_version content=current><meta data-rh=true name=docusaurus_tag content=docs-default-current><meta data-rh=true name=docsearch:version content=current><meta data-rh=true name=docsearch:docusaurus_tag content=docs-default-current><meta data-rh=true property=og:title content="백업/복구 내역 | WhaTap Docs"><meta data-rh=true name=description content="SQL Server에서 수행된 데이터베이스 백업 및 복구 작업의 기록을 제공합니다."><meta data-rh=true property=og:description content="SQL Server에서 수행된 데이터베이스 백업 및 복구 작업의 기록을 제공합니다."><meta data-rh=true name=keywords content="SQL Server,백업/복구 내역"><link data-rh=true rel=icon href=/whatap-docs/img/whatap-favicon.ico><link data-rh=true rel=canonical href=https://docs.whatap.io/whatap-docs/mssql/backup-recovery-history><link data-rh=true rel=alternate href=https://docs.whatap.io/whatap-docs/mssql/backup-recovery-history hreflang=ko-KR><link data-rh=true rel=alternate href=https://docs.whatap.io/whatap-docs/en/mssql/backup-recovery-history hreflang=en-US><link data-rh=true rel=alternate href=https://docs.whatap.io/whatap-docs/ja/mssql/backup-recovery-history hreflang=ja-JP><link data-rh=true rel=alternate href=https://docs.whatap.io/whatap-docs/mssql/backup-recovery-history hreflang=x-default><script>!function(e,t,a,c,n,o){e=e[n]=e[n]||{config:{projectAccessKey:"x4t5020boh2ln-z6pi7d91ds6c1a-z7t4b2lrgnub4o",pcode:29856,sampleRate:100,sessionReplaySampleRate:100,ignorePageUrls:[/^.*localhost.*$/i,/^.*ngrok-free.app.*$/i,/^.*whatap.github.io.*$/i],collectUserClick:!0}},(n=t.createElement(a)).async=1,n.src=c,(c=t.getElementsByTagName(a)[0]).parentNode.insertBefore(n,c)}(window,document,"script","https://repo.whatap-browser-agent.io/rum/prod/v1/whatap-browser-agent.js","WhatapBrowserAgent",0);let curLang=document.documentElement.lang.split("-")[0];CRISP_RUNTIME_CONFIG={locale:curLang},window.$crisp=[],window.CRISP_WEBSITE_ID="9a0c342f-a5b1-4c4a-a22f-92c7b4b9b477",(s=(d=document).createElement("script")).src="https://client.crisp.chat/l.js",s.async=1,d.getElementsByTagName("head")[0].appendChild(s)</script><link rel=preconnect href=https://www.googletagmanager.com><script>window.dataLayer=window.dataLayer||[],function(e,t,a,n,r){e[n]=e[n]||[],e[n].push({"gtm.start":new Date().getTime(),event:"gtm.js"});var d=t.getElementsByTagName(a)[0],g=t.createElement(a);g.async=!0,g.src="https://www.googletagmanager.com/gtm.js?id="+r+("dataLayer"!=n?"&l="+n:""),d.parentNode.insertBefore(g,d)}(window,document,"script","dataLayer","GTM-KT747XQX")</script><meta name=keywords content="WhaTap, 와탭, 매뉴얼, 사용법, WhaTap 사용법, WhaTap 매뉴얼, 기술 문서, APM, 애플리케이션 모니터링, 로그 모니터링, 쿠버네티스 모니터링, 서버 모니터링, 데이터베이스 모니터링, URL 모니터링, 클라우드 모니터링, 브라우저 모니터링, Browser monitoring, Application Monitoring, Log Monitoring, Kubernetes Monitoring, Server Monitoring, Database Monitoring, URL Monitoring, Cloud Monitoring, Manual, User Guide, Docs, WhaTap Manual, WhaTap Docs, WhaTap Documents, 트랜잭션, Transaction, 트레이싱, Tracing, 마스터, Master, 노드, Node, 데드락, Deadlock, 락 트리, Lock tree, 멀티 트랜잭션, Multi Trancsaction, 메트릭스, Metrics, 소프트웨어 프록시, Software proxy, 스택, Stack, 슬로우 쿼리, Slow query, 액티브 트랜잭션, Active transaction, 컨테이너, Container, 히트맵, Hitmap, Garbage Collection, GC, MXQL, Method 추적, Trace method, OOM Killed 컨테이너, OOM Killed Container, Oracle, Tibero, PostgreSQL, MySQL, MongoDB, SQL Server, CUBRID, Altibase, Redis, WebLogic, WebSphere"><meta name=description content="WhaTap Docs 페이지입니다. 애플리케이션, 서버, 쿠버네티스, 데이터베이스, 브라우저 등 다양한 모니터링 솔루션의 사용법을 제공합니다."><meta name=naver-site-verification content=0c21fc5664a467108fb762ade47a3f81ee9b88ed><meta name=google-site-verification content=rIlfJkbbogFOIDc3DgJZmOGbUMJWytyvZSKEgV7EMsE><link rel=stylesheet href=/whatap-docs/assets/css/styles.78042a15.css><script src=/whatap-docs/assets/js/runtime~main.928a02c0.js defer></script><script src=/whatap-docs/assets/js/main.eb5e7aa0.js defer></script><body class=navigation-with-keyboard><script>!function(){var t,e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();t=null!==e?e:window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":(window.matchMedia("(prefers-color-scheme: light)").matches,"light"),document.documentElement.setAttribute("data-theme",t)}(),function(){try{for(var[t,e]of new URLSearchParams(window.location.search).entries())if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}(),document.documentElement.setAttribute("data-announcement-bar-initially-dismissed",function(){try{return"true"===localStorage.getItem("docusaurus.announcement.dismiss")}catch(t){}return!1}())</script><script async defer crossorigin=anonymous src="https://connect.facebook.net/ko_KR/sdk.js#xfbml=1&version=v17.0&appId=169051789422006&autoLogAppEvents=1" nonce=y4U7YSrt></script>
+<!doctype html><html lang=ko-KR dir=ltr class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-mssql/backup-recovery-history" data-has-hydrated=false><meta charset=UTF-8><meta name=generator content="Docusaurus v3.7.0"><title data-rh=true>백업/복구 내역 | WhaTap Docs</title><meta data-rh=true name=viewport content="width=device-width, initial-scale=1.0"><meta data-rh=true name=twitter:card content=summary_large_image><meta data-rh=true property=og:image content=https://www.whatap.io/img/og/whatap.png><meta data-rh=true name=twitter:image content=https://www.whatap.io/img/og/whatap.png><meta data-rh=true property=og:url content=https://docs.whatap.io/whatap-docs/mssql/backup-recovery-history><meta data-rh=true property=og:locale content=ko_KR><meta data-rh=true property=og:locale:alternate content=en_US><meta data-rh=true property=og:locale:alternate content=ja_JP><meta data-rh=true name=docusaurus_locale content=ko><meta data-rh=true name=docsearch:language content=ko><meta data-rh=true name=docusaurus_version content=current><meta data-rh=true name=docusaurus_tag content=docs-default-current><meta data-rh=true name=docsearch:version content=current><meta data-rh=true name=docsearch:docusaurus_tag content=docs-default-current><meta data-rh=true property=og:title content="백업/복구 내역 | WhaTap Docs"><meta data-rh=true name=description content="SQL Server에서 수행된 데이터베이스 백업 및 복구 작업의 기록을 제공합니다."><meta data-rh=true property=og:description content="SQL Server에서 수행된 데이터베이스 백업 및 복구 작업의 기록을 제공합니다."><meta data-rh=true name=keywords content="SQL Server,백업/복구 내역"><link data-rh=true rel=icon href=/whatap-docs/img/whatap-favicon.ico><link data-rh=true rel=canonical href=https://docs.whatap.io/whatap-docs/mssql/backup-recovery-history><link data-rh=true rel=alternate href=https://docs.whatap.io/whatap-docs/mssql/backup-recovery-history hreflang=ko-KR><link data-rh=true rel=alternate href=https://docs.whatap.io/whatap-docs/en/mssql/backup-recovery-history hreflang=en-US><link data-rh=true rel=alternate href=https://docs.whatap.io/whatap-docs/ja/mssql/backup-recovery-history hreflang=ja-JP><link data-rh=true rel=alternate href=https://docs.whatap.io/whatap-docs/mssql/backup-recovery-history hreflang=x-default><script>!function(e,t,a,c,n,o){e=e[n]=e[n]||{config:{projectAccessKey:"x4t5020boh2ln-z6pi7d91ds6c1a-z7t4b2lrgnub4o",pcode:29856,sampleRate:100,sessionReplaySampleRate:100,ignorePageUrls:[/^.*localhost.*$/i,/^.*ngrok-free.app.*$/i,/^.*whatap.github.io.*$/i],collectUserClick:!0}},(n=t.createElement(a)).async=1,n.src=c,(c=t.getElementsByTagName(a)[0]).parentNode.insertBefore(n,c)}(window,document,"script","https://repo.whatap-browser-agent.io/rum/prod/v1/whatap-browser-agent.js","WhatapBrowserAgent",0);let curLang=document.documentElement.lang.split("-")[0];CRISP_RUNTIME_CONFIG={locale:curLang},window.$crisp=[],window.CRISP_WEBSITE_ID="9a0c342f-a5b1-4c4a-a22f-92c7b4b9b477",(s=(d=document).createElement("script")).src="https://client.crisp.chat/l.js",s.async=1,d.getElementsByTagName("head")[0].appendChild(s)</script><link rel=preconnect href=https://www.googletagmanager.com><script>window.dataLayer=window.dataLayer||[],function(e,t,a,n,r){e[n]=e[n]||[],e[n].push({"gtm.start":new Date().getTime(),event:"gtm.js"});var d=t.getElementsByTagName(a)[0],g=t.createElement(a);g.async=!0,g.src="https://www.googletagmanager.com/gtm.js?id="+r+("dataLayer"!=n?"&l="+n:""),d.parentNode.insertBefore(g,d)}(window,document,"script","dataLayer","GTM-KT747XQX")</script><meta name=keywords content="WhaTap, 와탭, 매뉴얼, 사용법, WhaTap 사용법, WhaTap 매뉴얼, 기술 문서, APM, 애플리케이션 모니터링, 로그 모니터링, 쿠버네티스 모니터링, 서버 모니터링, 데이터베이스 모니터링, URL 모니터링, 클라우드 모니터링, 브라우저 모니터링, Browser monitoring, Application Monitoring, Log Monitoring, Kubernetes Monitoring, Server Monitoring, Database Monitoring, URL Monitoring, Cloud Monitoring, Manual, User Guide, Docs, WhaTap Manual, WhaTap Docs, WhaTap Documents, 트랜잭션, Transaction, 트레이싱, Tracing, 마스터, Master, 노드, Node, 데드락, Deadlock, 락 트리, Lock tree, 멀티 트랜잭션, Multi Trancsaction, 메트릭스, Metrics, 소프트웨어 프록시, Software proxy, 스택, Stack, 슬로우 쿼리, Slow query, 액티브 트랜잭션, Active transaction, 컨테이너, Container, 히트맵, Hitmap, Garbage Collection, GC, MXQL, Method 추적, Trace method, OOM Killed 컨테이너, OOM Killed Container, Oracle, Tibero, PostgreSQL, MySQL, MongoDB, SQL Server, CUBRID, Altibase, Redis, WebLogic, WebSphere"><meta name=description content="WhaTap Docs 페이지입니다. 애플리케이션, 서버, 쿠버네티스, 데이터베이스, 브라우저 등 다양한 모니터링 솔루션의 사용법을 제공합니다."><meta name=naver-site-verification content=0c21fc5664a467108fb762ade47a3f81ee9b88ed><meta name=google-site-verification content=rIlfJkbbogFOIDc3DgJZmOGbUMJWytyvZSKEgV7EMsE><link rel=stylesheet href=/whatap-docs/assets/css/styles.78042a15.css><script src=/whatap-docs/assets/js/runtime~main.a39ceec2.js defer></script><script src=/whatap-docs/assets/js/main.ea87984d.js defer></script><body class=navigation-with-keyboard><script>!function(){var t,e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();t=null!==e?e:window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":(window.matchMedia("(prefers-color-scheme: light)").matches,"light"),document.documentElement.setAttribute("data-theme",t)}(),function(){try{for(var[t,e]of new URLSearchParams(window.location.search).entries())if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}(),document.documentElement.setAttribute("data-announcement-bar-initially-dismissed",function(){try{return"true"===localStorage.getItem("docusaurus.announcement.dismiss")}catch(t){}return!1}())</script><script async defer crossorigin=anonymous src="https://connect.facebook.net/ko_KR/sdk.js#xfbml=1&version=v17.0&appId=169051789422006&autoLogAppEvents=1" nonce=y4U7YSrt></script>
 <div id=fb-root></div>
 
 
@@ -22,52 +22,52 @@
 <div class="theme-admonition theme-admonition-note admonition_xJq3 alert alert--secondary"><div class=admonitionHeading_Gvgb><span class=admonitionIcon_Rf37><svg viewBox="0 0 14 16"><path fill-rule=evenodd d="M6.3 5.69a.942.942 0 0 1-.28-.7c0-.28.09-.52.28-.7.19-.18.42-.28.7-.28.28 0 .52.09.7.28.18.19.28.42.28.7 0 .28-.09.52-.28.7a1 1 0 0 1-.7.3c-.28 0-.52-.11-.7-.3zM8 7.99c-.02-.25-.11-.48-.31-.69-.2-.19-.42-.3-.69-.31H6c-.27.02-.48.13-.69.31-.2.2-.3.44-.31.69h1v3c.02.27.11.5.31.69.2.2.42.31.69.31h1c.27 0 .48-.11.69-.31.2-.19.3-.42.31-.69H8V7.98v.01zM7 2.3c-3.14 0-5.7 2.54-5.7 5.68 0 3.14 2.56 5.7 5.7 5.7s5.7-2.55 5.7-5.7c0-3.15-2.56-5.69-5.7-5.69v.01zM7 .98c3.86 0 7 3.14 7 7s-3.14 7-7 7-7-3.12-7-7 3.14-7 7-7z"/></svg></span>노트</div><div class=admonitionContent_BuS1><p>목록에 조회하려는 항목이 없다면 <img decoding=async loading=lazy alt="새로 고침 아이콘" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAAAjCAYAAAAe2bNZAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA4RpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDkuMC1jMDAwIDc5LjE3MWMyN2ZhYiwgMjAyMi8wOC8xNi0yMjozNTo0MSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDpiMWU1MDAyNS1hY2U4LTQ4OGUtYTMyNy1lYzYzYzFlZjUwOTIiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6NjRFQzI5Mjc1MkE4MTFFRDlCM0E5NTc3MjZCNzA3NDQiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6NjRFQzI5MjY1MkE4MTFFRDlCM0E5NTc3MjZCNzA3NDQiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIDIwMjMgTWFjaW50b3NoIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6MjBmOTFjYzItZTZiYy00YjUwLThhZTQtOGNmZThmOGI4OTQ2IiBzdFJlZjpkb2N1bWVudElEPSJhZG9iZTpkb2NpZDpwaG90b3Nob3A6MDJiOGIwNTktYWQ4YS1hZjRhLTljNTMtMjlkMzcxNTBkOGY4Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+M9zsYQAABPJJREFUeNrEWGtoHFUU/u6du5vdbZJNk8Zqi602pFRDTULVBCpaW3yCYH8YTREpqH9aBBF8oIj0jw/6Q0EMhVBQRBvwR18ICmrQtiLUojVNbGObxtjm/Wx3N7uZmXs9Z6ZpLCo720nTC8Psnb0z57vnfOc7Z0bsOuigs1cnKpPYfvCI3Xx+RCeVBVcIGFyjYQyE48JaXimnHlsf2TMyhY9qbpEZVZIQsZ5+t3Xf984WNq8UIHBtB23UszM4qtF6IFd/R7Wqa7zd2ib7hty3jnfbW3I2LZLXHshlQPDtsV22TzieFfXPpc3opPbQioVCcmXIvGNJmeyQQ+N6yvPIdQAyGzK2TzgWyYXgSJCQEQ5HhgEiaUfTOQPbCe9Zvl1erWspNTEwalC52EJFUnjzsKNgMOzK3IzBhbRBXbWF3a/EkSwWOHfWRWrawNVX7yVV6A1ZSsV0VuCNZ2J4tdm/ffM9CqWLJP4a1vhzQENrg/JS4YXRFCCdYmXTxUk6J4Msdl3WBYM3t8bxwuZ/7yOdBY6edNGy38a+H2awhMIXiwroYIC6rbKa11+jH7G8WnApRHweHDdYXCKxZoUf5T3fOcQfjZuW+Nee2KAwkRY43OFCWcJT2wBjLC8YeYmsExcNIkogUUT8GNFo+9ZGx1lg/VqFl1uyeHtXDp+227DIOEk7HrrLIv2w8M0xG0URgQBpmx9MOmuwarnC0w9GcPqcS6kMxAlQhHZ77JSDn7pcpCm9QeHI0Nr9h22MXBB44E4LG+ok9h5yMTyhPUD5wMh8KTxCIamvltixNYqnNkU9D3HY+OHLKCxdvWSM1sSiwOJSvibQ0pbFzjbbe8ZLTVHKsnlIbZuelyQS3ldrefOuXo2omuMRj+I4ccKaqzFRAllM6fAFhSxDXmzepLB6hYVU1oQDkyU9oZ4DG9cpj7Q/djpeiPKRvbxU4mSfi997fSVcsVQimwsJhgWsNA5UlFDenZ8LXZAywaQ/0qm9eV2VQDoTMkyzss9Cd+tSwKLVgTSDmzRay2HiwaSXMiQY5sfwFHCCUvjmGwS526KiGACN8MWRPcLjdD8RvCgkGBarsUmDU32ON3+kQWGMuJMvVJMpjXVrFB6+2+faoeMOiaQIB4ZFTmuNlr0z3nz74wpVK5VXg2ZFjAk7PHFlG6FdgTIqnhMpoK3d8fSHn5Vv5BU9atjR0aNRv1qhtkri3lqFn7s1Os+4iESYCwIb6hV6BgwuZoxXixKU7oNjGl8fdfELrWXAYj4UeNZDR05orF1lkdRLT41TOS4RfnN14J0EHm1U6B0y+O2M9nQnHhPop3rFAIuigXqKsUBVm3c1foElXeLDF+N48n7r8n/skRvLuWb589YvHezck8NUypAmFdSddAeqp7NCxrvc9v40Fb8IGshDjTUKNSvFFT30XB9jUGh3XVA/I4T/njNJ9YkzrSIpUUwBbv8gQWrNXrHx3mczKIkbaraEJ5rz7pl/eoi1p7LMN5TKaDq4n3HxyVczOP6Hg6Xl0uNYgUAK98z/9sQ2K7XBoljgru4/PSPDvt1r4/ODC2gIIH4n6TgI/bkhGgn30sT2CYeSFOOk0YV18fP+rk32CUdaNm2MvMtu5mxYaEBsz7drQDg+llSJd9SujnxeFPERLhQetsP22C7bJxy7FQlZdtUy6/mG26xfr+eXK8KR+VuAAQDQvDP0Yp7wsgAAAABJRU5ErkJggg==" width=35 height=35 class=img_ev3q> 버튼을 선택하세요.</div></div>
 <section class=remark-sectionize-h2><h2 class="anchor anchorWithStickyNavbar_LWe7" id=backup>백업 내역 확인하기<a href=#backup class=hash-link aria-label="백업 내역 확인하기에 대한 직접 링크" title="백업 내역 확인하기에 대한 직접 링크">​</a></h2><p>화면 상단의 <span class=uitext>백업</span> 탭을 선택하세요. 수집한 데이터를 기준으로 백업 작업의 상위 50건을 조회하여 데이터베이스별 백업 정보를 제공합니다. 백업 작업의 이름 및 유형, 소프트웨어, 크기 및 백업 시점 등을 확인할 수 있습니다.<p><img loading=lazy src=/whatap-docs/img/db-backup-history-mssql.png alt="백업 내역" width=auto height=auto><p>제공하는 컬럼 항목에 대한 자세한 내용은 다음을 참조하세요.<ul>
 <li>
-<p><em><strong>database_name</strong></em>: 백업 작업에 관련된 데이터베이스의 이름입니다.</p>
+<p><strong>database_name</strong>: 백업 작업에 관련된 데이터베이스의 이름입니다.</p>
 </li>
 <li>
-<p><em><strong>backup_name</strong></em>: 백업 집합의 이름입니다.</p>
+<p><strong>backup_name</strong>: 백업 집합의 이름입니다.</p>
 </li>
 <li>
-<p><em><strong>backup_type</strong></em>: 백업 유형입니다.</p>
+<p><strong>backup_type</strong>: 백업 유형입니다.</p>
 </li>
 <li>
-<p><em><strong>device_type</strong></em>: 백업 기기의 유형입니다.</p>
+<p><strong>device_type</strong>: 백업 기기의 유형입니다.</p>
 </li>
 <li>
-<p><em><strong>software_name</strong></em>: 백업을 수행한 소프트웨어의 이름입니다.</p>
+<p><strong>software_name</strong>: 백업을 수행한 소프트웨어의 이름입니다.</p>
 </li>
 <li>
-<p><em><strong>recovery_model</strong></em>: 데이터베이스의 복구 모델입니다.</p>
+<p><strong>recovery_model</strong>: 데이터베이스의 복구 모델입니다.</p>
 </li>
 <li>
-<p><em><strong>compatibility_level</strong></em>: 데이터베이스의 호환성 수준 설정입니다.</p>
+<p><strong>compatibility_level</strong>: 데이터베이스의 호환성 수준 설정입니다.</p>
 </li>
 <li>
-<p><em><strong>backup_start_date</strong></em>: 백업 작업이 시작된 날짜와 시간입니다.</p>
+<p><strong>backup_start_date</strong>: 백업 작업이 시작된 날짜와 시간입니다.</p>
 </li>
 <li>
-<p><em><strong>backup_finish_date</strong></em>: 백업 작업이 완료된 날짜와 시간입니다.</p>
+<p><strong>backup_finish_date</strong>: 백업 작업이 완료된 날짜와 시간입니다.</p>
 </li>
 <li>
-<p><em><strong>latest_backup_location</strong></em>: 백업 디바이스의 물리적 경로입니다.</p>
+<p><strong>latest_backup_location</strong>: 백업 디바이스의 물리적 경로입니다.</p>
 </li>
 <li>
-<p><em><strong>backup_size_mb</strong></em>: 백업 세트의 크기(Byte)입니다.</p>
+<p><strong>backup_size_mb</strong>: 백업 세트의 크기(Byte)입니다.</p>
 </li>
 <li>
-<p><em><strong>compressed_backup_size_mb</strong></em>: 디스크에 저장된 백업의 총 크기입니다.</p>
+<p><strong>compressed_backup_size_mb</strong>: 디스크에 저장된 백업의 총 크기입니다.</p>
 </li>
 <li>
-<p><em><strong>database_backup_lsn</strong></em>: 가장 최근 전체 데이터베이스 백업의 로그 시퀀스 번호입니다.</p>
+<p><strong>database_backup_lsn</strong>: 가장 최근 전체 데이터베이스 백업의 로그 시퀀스 번호입니다.</p>
 </li>
 <li>
-<p><em><strong>checkpoint_lsn</strong></em>: 다시 실행이 시작되어야 하는 로그 레코드의 로그 시퀀스 번호입니다.</p>
+<p><strong>checkpoint_lsn</strong>: 다시 실행이 시작되어야 하는 로그 레코드의 로그 시퀀스 번호입니다.</p>
 </li>
 <li>
-<p><em><strong>begins_log_chain</strong></em>: 연속되는 로그 백업 체인에서 첫 번째 체인(<code>1</code>)입니다. 로그 체인은 데이터베이스를 만든 후, 또는 단순에서 전체, 대량 로그 복구 모델로 전환될 때 수행되는 첫 번째 로그 백업으로 시작합니다.</p>
+<p><strong>begins_log_chain</strong>: 연속되는 로그 백업 체인에서 첫 번째 체인(<code>1</code>)입니다. 로그 체인은 데이터베이스를 만든 후, 또는 단순에서 전체, 대량 로그 복구 모델로 전환될 때 수행되는 첫 번째 로그 백업으로 시작합니다.</p>
 </li>
 <li>
-<p><em><strong>is_password_protected</strong></em></p>
+<p><strong>is_password_protected</strong></p>
 <ul>
 <li>
 <p><code>protected</code>: 암호로 보호된 백업 세트</p>
@@ -80,28 +80,28 @@
 </ul></section>
 <section class=remark-sectionize-h2><h2 class="anchor anchorWithStickyNavbar_LWe7" id=recovery>복구 내역 확인하기<a href=#recovery class=hash-link aria-label="복구 내역 확인하기에 대한 직접 링크" title="복구 내역 확인하기에 대한 직접 링크">​</a></h2><p>화면 상단의 <span class=uitext>복구</span> 탭을 선택하세요. 복구 작업의 상위 50건을 조회합니다. 복원된 데이터베이스, 복구 유형 및 사용자 정보 등을 확인할 수 있습니다. 복구 작업의 대상 데이터베이스, 복구 시점, 복원 파일 경로를 파악할 수 있습니다.<p><img loading=lazy src=/whatap-docs/img/db-recovery-history-mssql.png alt="복구 내역" width=auto height=auto><p>제공하는 컬럼 항목에 대한 자세한 내용은 다음을 참조하세요.<ul>
 <li>
-<p><em><strong>restore_database_name</strong></em>: 복원 작업의 대상 데이터베이스 이름입니다.</p>
+<p><strong>restore_database_name</strong>: 복원 작업의 대상 데이터베이스 이름입니다.</p>
 </li>
 <li>
-<p><em><strong>backup_name</strong></em>: 복구에 사용된 백업 집합의 이름입니다.</p>
+<p><strong>backup_name</strong>: 복구에 사용된 백업 집합의 이름입니다.</p>
 </li>
 <li>
-<p><em><strong>restore_date</strong></em>: 복구 작업이 시작된 날짜와 시간입니다.</p>
+<p><strong>restore_date</strong>: 복구 작업이 시작된 날짜와 시간입니다.</p>
 </li>
 <li>
-<p><em><strong>restore_type</strong></em>: 복구 작업의 유형입니다.</p>
+<p><strong>restore_type</strong>: 복구 작업의 유형입니다.</p>
 </li>
 <li>
-<p><em><strong>user_name</strong></em>: 복구 작업을 수행한 사용자의 이름입니다.</p>
+<p><strong>user_name</strong>: 복구 작업을 수행한 사용자의 이름입니다.</p>
 </li>
 <li>
-<p><em><strong>backup_server_name</strong></em>: 백업 작업을 수행한 SQL Server의 이름입니다.</p>
+<p><strong>backup_server_name</strong>: 백업 작업을 수행한 SQL Server의 이름입니다.</p>
 </li>
 <li>
-<p><em><strong>backup_database_name</strong></em>: 복구에 사용된 백업 집합이 원래 생성된 데이터베이스의 이름입니다.</p>
+<p><strong>backup_database_name</strong>: 복구에 사용된 백업 집합이 원래 생성된 데이터베이스의 이름입니다.</p>
 </li>
 <li>
-<p><em><strong>destination_phys_name</strong></em>: 복원된 파일의 물리적 경로입니다.</p>
+<p><strong>destination_phys_name</strong>: 복원된 파일의 물리적 경로입니다.</p>
 </li>
 </ul><h2 class="anchor anchorWithStickyNavbar_dcSZ" id=filtering>조회 결과 필터링하기<a href=#filtering class=hash-link>​</a></h2>
 <h3 class="anchor anchorWithStickyNavbar_dcSZ" id=필터_조건_추가하기>필터 조건 추가하기<a href=#필터_조건_추가하기 class=hash-link>​</a></h3>
