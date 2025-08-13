@@ -34,20 +34,6 @@ The following provides the options related to the Node.js agent DB and SQL.
 
   When the SQL execution time exceeds the set value, it is treated as the **SLOW_SQL** error. If it is set to `0`, it is not treated as an error.
 
-- **trace_sql_normalize_enabled** <span class='type'>Boolean</span>
-
-  Default `true`
-
-  It enables the function to normalize any SQL statements by extracting the literal part from each SQL statement.
-
-- **hook_connection_open_patterns** <span class='type'>String</span>
-
-  It registers the method to call upon DB connection open. It is common to register getConnection of any connection pool that has not been set.
-
-  ```ini title='Example'
-  hook_connection_open_patterns=mypool.ConPool.getConnection
-  ```
-
 - **trace_sql_error_stack** <span class='type'>Boolean</span>
 
   Default `false`
