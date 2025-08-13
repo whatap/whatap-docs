@@ -31,46 +31,6 @@ import Transactionprofileactivecolor from "../common-items/_transaction-profile-
 
 <Transactionprofileactivecolor />
 
-- **hook_method_patterns** <span class='type'>String</span>
-
-  レスポンス時間を測定するメソッドを設定します。最後のピリオド(.)を区切り文字としてクラスのFullNameとメソッドに区分され、アスタリスク(\*)をワイルドカードとして使用できます。対象が複数ある場合は、コンマ(,)で区切ります。
-
-  ```ini title='Example'
-  hook_method_patterns=a.b.C1.*
-  ```
-
-  :::note
-
-  - このオプションで登録したメソッドは、<Cmdname sid="side_hitmap" className="uitext" />、<Cmdname sid="TTL06209" className="uitext" />または<Cmdname sid="TTL06527" className="uitext" />画面のMethodステップで確認できます。
-
-  - なるべく小さい範囲に適用してください。広い範囲に適用すると、アプリケーションの性能が低下する恐れがあります。
-
-  :::
-
-- **hook_method_access_public_enabled** <span class='type'>Boolean</span>
-
-  既定値 `true`
-
-  メソッドトレースを設定する場合、publicメソッドを個別のターゲットとしてのみ処理するかどうかを設定します。
-
-- **hook_method_access_protected_enabled** <span class='type'>Boolean</span>
-
-  既定値 `true`
-
-  メソッドトレースを設定する場合、protectedメソッドに限り、個別の対象として処理するかどうかを設定します。
-
-- **hook_method_access_private_enabled** <span class='type'>Boolean</span>
-
-  既定値`false`
-
-  メソッドトレースを設定する場合、privateメソッドに限り、個別の対象として処理するかどうかを設定します。
-
-- **hook_method_access_none_enabled** <span class='type'>Boolean</span>
-
-  既定値 `true`
-
-  メソッドトレースを設定する際、no access indicatedメソッドに限り、別途対象として処理するかを設定します。
-
 - **trace_service_port_enabled** <span class='type'>Boolean</span>
 
   既定値`false`
