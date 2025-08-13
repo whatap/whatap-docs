@@ -31,46 +31,6 @@ import Transactionprofileactivecolor from "../common-items/_transaction-profile-
 
 <Transactionprofileactivecolor />
 
-- **hook_method_patterns** <span class='type'>String</span>
-
-  It sets the method to measure the response time. Class full names and methods are separated by the period (.) as the delimiter, and asterisk (\*) can be used as the wildcard. In case of multiple items, comma (,) is used as the delimiter.
-
-  ```ini title='Example'
-  hook_method_patterns=a.b.C1.*
-  ```
-
-  :::note
-
-  - The methods registered through this option can be checked through the Method step in <Cmdname sid="side_hitmap" className="uitext" />, <Cmdname sid="TTL06209" className="uitext" />, or <Cmdname sid="TTL06527" className="uitext" /> window.
-
-  - It is recommended to apply it locally as much as possible. If applied extensively, it may cause performance degradation in applications.
-
-  :::
-
-- **hook_method_access_public_enabled** <span class='type'>Boolean</span>
-
-  Default `true`
-
-  When setting a method trace, it sets whether or not to treat only the public methods as separate targets.
-
-- **hook_method_access_protected_enabled** <span class='type'>Boolean</span>
-
-  Default `true`
-
-  When setting a method trace, it sets whether or not to treat only the protected methods as separate targets.
-
-- **hook_method_access_private_enabled** <span class='type'>Boolean</span>
-
-  Default `false`
-
-  When setting a method trace, it sets whether or not to treat only the private methods as separate targets.
-
-- **hook_method_access_none_enabled** <span class='type'>Boolean</span>
-
-  Default `true`
-
-  When setting a method trace, it sets whether or not to treat only the no access indicated methods as separate targets.
-
 - **trace_service_port_enabled** <span class='type'>Boolean</span>
 
   Default `false`
