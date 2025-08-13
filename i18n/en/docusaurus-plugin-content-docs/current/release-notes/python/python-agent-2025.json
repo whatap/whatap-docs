@@ -1,5 +1,27 @@
 [
   {
+    "url": "https://docs.whatap.io/release-notes/python/python-1_8_9",
+    "ver": "v1.8.9",
+    "date": "2025-08-12",
+    "Lists": [
+      {
+        "ver": "v1.8.9",
+        "hash": "v189",
+        "product": "Python Agent",
+        "type": "New",
+        "desc": "<p><code class=\"New\" type=\"1\">New</code> Added <code>sqlite3</code> module tracing feature</p>"
+      },
+      {
+        "ver": "v1.8.9",
+        "hash": "v189",
+        "product": "Python Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Fixed issue where DB Connection was displayed redundantly</p>",
+        "details": "<ul><li>Fixed an issue where the DB Connection Step was displayed in Step view even when only a DB query was executed</li></ul>"
+      }
+    ]
+  },
+  {
     "url": "https://docs.whatap.io/release-notes/python/python-1_8_8",
     "ver": "v1.8.8",
     "date": "2025-08-04",
