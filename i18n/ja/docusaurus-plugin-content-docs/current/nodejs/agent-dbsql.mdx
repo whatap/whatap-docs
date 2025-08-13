@@ -16,12 +16,6 @@ Node.jsエージェントのDB、SQL関連オプションを提供します。
 
   SQLパラメータの収集を有効にします。ただし、パラメータを表示するには、セキュリティキーを入力する必要があります。セキュリティキーは、エージェントのインストールパスの*paramkey.txt*ファイルに6桁で指定されます。 *paramkey.txt*が存在しない場合は自動生成され、randomキーが設定されます。
 
-- **profile_connection_open_enabled** <span class='type'>Boolean</span>
-
-  既定値 `true`
-
-  トレース履歴にDBConnectionオープン情報を記録します。
-
 - **profile_error_sql_fetch_max** <span class='type'>Int</span> <ScrollToLink anchor='profile_error_sql_fetch_max' />
 
   既定値`10000`
@@ -33,20 +27,6 @@ Node.jsエージェントのDB、SQL関連オプションを提供します。
   既定値`30000`
 
   SQLの実行時間が設定した値を超えると、**SLOW_SQL**エラーで処理されます。`0`に設定する場合、エラー処理は実行されません。
-
-- **trace_sql_normalize_enabled** <span class='type'>Boolean</span>
-
-  既定値 `true`
-
-  SQL文からリテラル部分を抽出し、SQL文を正規化する機能を活性化します。
-
-- **hook_connection_open_patterns** <span class='type'>String</span>
-
-  DB Connection Open時に呼び出すメソッドを登録します。事前設定していないConnection PoolのgetConnectionを登録するのが一般的です。
-
-  ```ini title='Example'
-  hook_connection_open_patterns=mypool.ConPool.getConnection
-  ```
 
 - **trace_sql_error_stack** <span class='type'>Boolean</span>
 
