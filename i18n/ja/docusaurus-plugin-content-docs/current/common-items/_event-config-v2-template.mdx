@@ -8,55 +8,54 @@
 
 提供するイベントテンプレートは次のとおりです。 <Cmdname sid="ITM07578" className="uitext" />項目に設定された既定値は、ユーザーが希望する値に変更できます。
 
-- **_Active Transaction_**
+- **Active Transaction**
 
   カテゴリ：[`app_counter`](metrics-app#app_counter)
 
   アクティブトランザクション発生件数(`active_tx_count`)が100個を超過した状態になると警告(<span class="slow">Warning</span>)レベルの通知を送信します。
 
-- **_Agent Alive Check_**
+- **Agent Data Timeout**
 
   カテゴリ: [`agent_status_summary`](metrics-app#agent_status_summary)
 
-  エージェントからデータを収集できない時(`isActive` \=\= `false`) 警告(<span class="slow">Warning</span>) レベルの通知を送信します。
-
+  エージェントから30秒間データを収集できない場合（now-`lastActTime` >= 30000）、警告レベル（<span class="slow">Warning</span>）のアラートを送信します。
   :::note
 
   このテンプレートイベントは、ネットワークが切断された場合でも発生する可能性があります。
 
   :::
 
-- **_Apdex 100 by kind_**
+- **Apdex 100 by kind**
 
   カテゴリ：[`app_counter`](metrics-app#app_counter)
 
   エージェント種類別アプリケーション性能メトリクスのパーセンテージ(`apdex100`)が95%未満だと警告(<span class="slow">Warning</span>)レベルの通知を、90%未満であれば危険(<span class="vslow">Critical</span>)レベルの通知を送信します。
 
-- **_Apdex 100 by project_**
+- **Apdex 100 by project**
 
   カテゴリ：[`app_counter`](metrics-app#app_counter)
 
   プロジェクトの全体エージェントのアプリケーション性能マトリクスのパーセンテージ(`apdex100`)が95%未満だと警告(<span class="slow">Warning</span>)レベルの通知を、90%未満であれば危険(<span class="vslow">Critical</span>)レベルの通知を送信します。
 
-- **_Server CPU_**
+- **Server CPU**
 
   カテゴリ：[`app_host_resource`](metrics-app#app_host_resource)
 
   ホストのCPU使用率(`cpu`)が70%を超えると警告(<span class="slow">Warning</span>)レベルの通知を、90%を超えると危険(<span class="vslow">Critical</span>)レベルの通知を送信します。
 
-- **_Server Memory_**
+- **Server Memory**
 
   カテゴリ：[`app_host_resource`](metrics-app#app_host_resource)
 
   ホストのメモリ使用率(`mem`)が70%を超えると警告(<span class="slow">Warning</span>)レベルの通知を、90%を超えると危険(<span class="vslow">Critical</span>)レベルの通知を送信します。
 
-- **_Transaction Error Count_**
+- **Transaction Error Count**
 
   カテゴリ：[`app_counter`](metrics-app#app_counter)
 
   トランザクションエラー件数(`tx_error`)が10個を超えると警告(<span class="slow">Warning</span>)レベルの通知を送信します。
 
-- **_Transaction Response Time_**
+- **Transaction Response Time**
 
   カテゴリ：[`app_counter`](metrics-app#app_counter)
 
@@ -76,67 +75,67 @@
 
 提供するイベントテンプレートは次のとおりです。 <Cmdname sid="ITM07578" className="uitext" />項目に設定された既定値は、ユーザーが希望する値に変更できます。
 
-- **_Agent Alive Check_**
+- **Agent Data Timeout**
 
   カテゴリ: [`agent_status_summary`](metrics-server#agent_status_summary)
 
-  エージェントからデータを収集できない時(`isActive` \=\= `false`) 警告(<span class="slow">Warning</span>) レベルの通知を送信します。
-
+  エージェントから30秒間データを収集できない場合（now-`lastActTime` >= 30000）、警告レベル（<span class="slow">Warning</span>）のアラートを送信します。
+  
   :::note
 
   このテンプレートイベントは、ネットワークが切断された場合でも発生する可能性があります。
 
   :::
 
-- **_CPU_**
+- **CPU**
 
   カテゴリ：[`server_base`](metrics-server#server_base)
 
   CPU使用率(`cpu`)が70%を超えると警告(<span class="slow">Warning</span>)レベルの通知を、90%を超えると危険(<span class="vslow">Critical</span>)レベルの通知を送信します。
 
-- **_CPU Steal_**
+- **CPU Steal**
 
   カテゴリ：[`server_base`](metrics-server#server_base)
 
   [CPU steal使用率](../glossary#cpusteal)(`cpu_steal`)が5を超えると警告(<span class="slow">Warning</span>)レベルの通知を、10を超えると危険(<span class="vslow">Critical</span>)レベルの通知を送信します。
 
-- **_Disk_**
+- **Disk**
 
   カテゴリ：[`server_disk`](metrics-server#server_disk)
 
   ファイルシステム使用率(`usedPercent`)が90%を超えると警告(<span class="slow">Warning</span>)レベルの通知を、95%を超えると危険(<span class="vslow">Critical</span>)レベルの通知を送信します。
 
-- **_Disk I/O_**
+- **Disk I/O**
 
   カテゴリ：[`server_disk`](metrics-server#server_disk)
 
   [Disk I/O使用率](../glossary#diskio)(`ioPercent`)が90%を超えると警告(<span class="slow">Warning</span>)レベルの通知を、95%を超えると危険(<span class="vslow">Critical</span>)レベルの通知を送信します。
 
-- **_Disk Inode_**
+- **Disk Inode**
 
   カテゴリ：[`server_disk`](metrics-server#server_disk)
 
   Disk Inode使用率(`usedInodePercent`)が90%を超えると警告(<span class="slow">Warning</span>)レベルの通知を、95%を超えると危険(<span class="vslow">Critical</span>)レベルの通知を送信します。
 
-- **_Memory_**
+- **Memory**
 
   カテゴリ：[`server_base`](metrics-server#server_base)
 
   メモリ使用率(`memory_pused`)が70%を超えると警告(<span class="slow">Warning</span>)レベルの通知を、90%を超えると危険(<span class="vslow">Critical</span>)レベルの通知を送信します。
 
-- **_Network BPS_**
+- **Network BPS**
 
   カテゴリ：[`server_network`](metrics-server#server_network)
 
   ネットワークインバウンドトラフィック(`trafficIn`)とアウトバウンドトラフィック(`trafficOut`)の合計が150,000,000byte(150MB)を超えると警告(<span class="slow">Warning</span>)レベルの通知を、200,000,000byte(200MB)を超えると危険(<span class="vslow">Critical</span>)レベルの通知を送信します。
 
-- **_Network IOPS_**
+- **Network IOPS**
 
   カテゴリ：[`server_network`](metrics-server#server_network)
 
   ネットワークインバウンドパケット(`packetIn`)とアウトバウンドパケット(`packetOut`)の合計が45000byteを超えると警告(<span class="slow">Warning</span>)レベルの通知を、50000byteを超えると危険(<span class="vslow">Critical</span>)レベルの通知を送信します。
 
-- **_Port Alive Check_**
+- **Port Alive Check**
 
   カテゴリ: `server_tcpport`
 
@@ -169,25 +168,25 @@
 
   :::
 
-- **_Process CPU_**
+- **Process CPU**
 
   カテゴリ：[`server_process`](metrics-server#server_process)
 
   CPU全体使用率(`cpu`)が90%を超えると警告(<span class="slow">Warning</span>)レベルの通知を、95%を超えると危険(<span class="vslow">Critical</span>)レベルの通知を送信します。
 
-- **_Process Count_**
+- **Process Count**
 
   カテゴリ：[`server_process`](metrics-server#server_process)
 
   プロセス数(`count`)が2つ以上ある場合は警告(<span class="slow">Warning</span>)レベルの通知を、1つ未満の場合は危険(<span class="vslow">Critical</span>)レベルの通知を送信します。
 
-- **_Process Memory_**
+- **Process Memory**
 
   カテゴリ：[`server_process`](metrics-server#server_process)
 
   プロセスメモリ使用率(`memory`)が90%を超えると警告(<span class="slow">Warning</span>)レベルの通知を、95%を超えると危険(<span class="vslow">Critical</span>)レベルの通知を送信します。
 
-- **_Server Reboot Check_**
+- **Server Reboot Check**
 
   カテゴリ: [`agent_status_summary`](metrics-server#agent_status_summary)
 
@@ -199,7 +198,7 @@
 
   :::
 
-- **_Swap Memory_**
+- **Swap Memory**
 
   カテゴリ：[`server_base`](metrics-server#server_base)
 
@@ -219,31 +218,31 @@
 
 提供するイベントテンプレートは次のとおりです。 <Cmdname sid="ITM07578" className="uitext" />項目に設定された既定値は、ユーザーが希望する値に変更できます。
 
-- **_Active Transaction_**
+- **Active Transaction**
 
   カテゴリ：<Link to="../java/metrics-app#app_counter" target="_blank"><code>app_counter</code></Link>
 
   アクティブトランザクション発生件数(`active_tx_count`)が100個を超過すると警告(<span class="slow">Warning</span>)レベルの通知を送信します。
 
-- **_Container CPU Utilization Relative to Container CPU Limit_**
+- **Container CPU Utilization Relative to Container CPU Limit**
 
   カテゴリ：[`container`](metrics-kubernetes#container)
 
   コンテナの実際のCPU使用率(`cpu_per_quota`)が70%を超えると警告(<span class="slow">Warning</span>)レベルの通知を、90%を超えると危険(<span class="vslow">Critical</span>)レベルの通知を送信します。
 
-- **_Container Memory Utilization Relative to Container Memory Limit_**
+- **Container Memory Utilization Relative to Container Memory Limit**
 
   カテゴリ：[`container`](metrics-kubernetes#container)
 
   コンテナの実際のメモリ使用量(`mem_percent`)が70%を超えると警告(<span class="slow">Warning</span>)レベルの通知を、90%を超えると危険(<span class="vslow">Critical</span>)レベルの通知を送信します。
 
-- **_Deployment Replicas Pending Pods Count_**
+- **Deployment Replicas Pending Pods Count**
 
   カテゴリ：[`kube_pod_stat`](metrics-kubernetes#kube_pod_stat)
 
   使用できるPodの個数(`available_pod`)が、配布時に必要なPod数(`desired_pod`)より小さければ警告(<span class="slow">Warning</span>)レベルの通知を送信します。 使用できるPodの個数と配布時に必要なPodの個数の差を臨界値として入力します。
 
-- **_Master Agent Alive_**
+- **Master Agent Alive**
 
   カテゴリ: [`agent_status_summary`](metrics-kubernetes#agent_status_summary)
 
@@ -255,7 +254,7 @@
 
   :::
 
-- **_Node Agent Alive_**
+- **Node Agent Alive**
 
   カテゴリ: [`agent_status_summary`](metrics-kubernetes#agent_status_summary)
 
@@ -267,49 +266,49 @@
 
   :::
 
-- **_Node CPU_**
+- **Node CPU**
 
   カテゴリ：<Link to="../server/metrics-server#server_base" target="_blank"><code>server_base</code></Link>
 
   NodeのCPU使用率(`cpu`)が70%を超えると警告(<span class="slow">Warning</span>)レベルの通知を、90%を超えると危険(<span class="vslow">Critical</span>)レベルの通知を送信します。
 
-- **_Node Disk(/) Utilization_**
+- **Node Disk(/) Utilization**
 
   カテゴリ：<Link to="../server/metrics-server#server_disk" target="_blank"><code>server_disk</code></Link>
 
   Nodeのルート経路に該当するディスク使用率(`usedPercent`)が70%を超えると警告(<span class="slow">Warning</span>)レベルの通知を、90%を超えると危険(<span class="vslow">Critical</span>)レベルの通知を送信します。
 
-- **_Node Memory_**
+- **Node Memory**
 
   カテゴリ：<Link to="../server/metrics-server#server_base" target="_blank"><code>server_base</code></Link>
 
   Nodeのメモリ使用率(`memory_pused`)が70%を超えると警告(<span class="slow">Warning</span>)レベルの通知を、90%を超えると危険(<span class="vslow">Critical</span>)レベルの通知を送信します。
 
-- **_Restart Count Of Container In Pod_**
+- **Restart Count Of Container In Pod**
 
   カテゴリ：[`kube_pod`](metrics-kubernetes#kube_pod)
 
   Podの再起動回数(`RestartCount`)が5つを超えると警告(<span class="slow">Warning</span>)レベルの通知を送信します。
 
-- **_Transaction Error_**
+- **Transaction Error**
 
   カテゴリ：<Link to="../java/metrics-app#app_counter" target="_blank"><code>app_counter</code></Link>
 
   トランザクションエラー件数(`tx_error`)が10個を超えると警告(<span class="slow">Warning</span>)レベルの通知を送信します。
 
-- **_Transaction Response Time_**
+- **Transaction Response Time**
 
   カテゴリ：<Link to="../java/metrics-app#app_counter" target="_blank"><code>app_counter</code></Link>
 
   トランザクションの平均リスポンスタイム(`resp_time`)が10回連続、2,000ms(2秒)を超えた状態で続く場合は警告(<span class="slow">Warning</span>)レベルの通知を送信します。
 
-- **_kube-apiserver CPU Limit Alert_**
+- **kube-apiserver CPU Limit Alert**
 
   カテゴリ：[`kube_pod`](metrics-kubernetes#kube_pod)
 
   kube-apiserverのCPU使用率が50%を超えると警告(<span class="slow">Warning</span>) レベルの通知を、80%を超えると危険(<span class="vslow">Critical</span>) レベルの通知を送信します。
 
-- **_kube-apiserver Memory Limit Alert_**
+- **kube-apiserver Memory Limit Alert**
 
   カテゴリ：[`kube_pod`](metrics-kubernetes#kube_pod)
 
@@ -329,25 +328,25 @@
 
 提供するイベントテンプレートは次のとおりです。 <Cmdname sid="ITM07578" className="uitext" />項目に設定された既定値は、ユーザーが希望する値に変更できます。
 
-- **_Active Sessions_**
+- **Active Sessions**
 
   カテゴリ：[`db_db2_counter`](metrics-data-list：
 
   クエリを実行中のセッション数(`active_sessions`)が30を超えると警告(<span class="slow">Warning</span>)レベルの通知を、50を超えると危険(<span class="vslow">Critical</span>)レベルの通知を送信します。
 
-- **_CPU Utilization_**
+- **CPU Utilization**
 
   カテゴリ：[`db_db2_counter`](metrics-data-list：
 
   CPU使用率(`cpu(xos)`)が80%を超えると警告(<span class="slow">Warning</span>)レベルの通知を、90%を超えると危険(<span class="vslow">Critical</span>)レベルの通知を送信します。
 
-- **_DB2 CPU Utilizaion_**
+- **DB2 CPU Utilizaion**
 
   カテゴリ：[`db_db2_counter`](metrics-data-list：
 
   CPU使用率(`cpu_usage_total`)が70%を超えると警告(<span class="slow">Warning</span>)レベルの通知を、90%を超えると危険(<span class="vslow">Critical</span>)レベルの通知を送信します。
 
-- **_Memory Utilization_**
+- **Memory Utilization**
 
   カテゴリ：[`db_db2_counter`](metrics-data-list：
 
@@ -359,7 +358,7 @@
 
   :::
 
-- **_lock wait Sessions_**
+- **lock wait Sessions**
 
   カテゴリ：[`db_db2_counter`](metrics-data-list：
 
@@ -373,25 +372,25 @@
 
 提供するイベントテンプレートは次のとおりです。 <Cmdname sid="ITM07578" className="uitext" />項目に設定された既定値は、ユーザーが希望する値に変更できます。
 
-- **_Active Sessions_**
+- **Active Sessions**
 
   カテゴリ: [`db_sap_ase_counter`](metrics-data-list)
 
   クエリを実行中のセッション数(`active_sessions`)が30を超えると警告(<span class="slow">Warning</span>)レベルの通知を、50を超えると危険(<span class="vslow">Critical</span>)レベルの通知を送信します。
 
-- **_CPU Utilization_**
+- **CPU Utilization**
 
   カテゴリ: [`db_sap_ase_counter`](metrics-data-list)
 
   CPU使用率(`cpu(xos)`)が80%を超えると警告(<span class="slow">Warning</span>)レベルの通知を、90%を超えると危険(<span class="vslow">Critical</span>)レベルの通知を送信します。
 
-- **_Connection Failed_**
+- **Connection Failed**
 
   カテゴリ: [`db_sap_ase_counter`](metrics-data-list)
 
   データベース接続が15回以上失敗(`connect_error`)であれば、危険(<span class="vslow">Critical</span>)レベルの通知を送信します。
 
-- **_Memory Utilization_**
+- **Memory Utilization**
 
   カテゴリ: [`db_sap_ase_counter`](metrics-data-list)
 
@@ -403,7 +402,7 @@
 
   :::
 
-- **_lock wait Sessions_**
+- **lock wait Sessions**
 
   カテゴリ: [`db_sap_ase_counter`](metrics-data-list)
 
@@ -417,49 +416,49 @@
 
 提供するイベントテンプレートは次のとおりです。 <Cmdname sid="ITM07578" className="uitext" />項目に設定された既定値は、ユーザーが希望する値に変更できます。
 
-- **_Active Sessions_**
+- **Active Sessions**
 
   カテゴリ：[`db_mysql_counter`](metrics-data-list)
 
   クエリを実行中のセッション数(`active_sessions`)が30を超えると警告(<span class="slow">Warning</span>)レベルの通知を、50を超えると危険(<span class="vslow">Critical</span>)レベルの通知を送信します。
 
-- **_Agent Alive Check_**
+- **Agent Data Timeout**
 
   カテゴリ: [`agent_status_summary`](metrics-data-list#agent_status_summary)
 
-  エージェントからデータを収集できない時(`isActive` \=\= `false`) 警告(<span class="slow">Warning</span>) レベルの通知を送信します。
-
+  エージェントから30秒間データを収集できない場合（now-`lastActTime` >= 30000）、警告レベル（<span class="slow">Warning</span>）のアラートを送信します。
+  
   :::note
 
   このテンプレートイベントは、ネットワークが切断された場合でも発生する可能性があります。
 
   :::
 
-- **_CPU_**
+- **CPU**
 
   カテゴリ：[`db_mysql_counter`](metrics-data-list)
 
   CPU使用率(`cpu(xos)`)が80%を超えると警告(<span class="slow">Warning</span>)レベルの通知を、90%を超えると危険(<span class="vslow">Critical</span>)レベルの通知を送信します。
 
-- **_Connection Failed_**
+- **Connection Failed**
 
   カテゴリ：[`db_mysql_counter`](metrics-data-list)
 
   データベース接続が15回以上失敗(`connect_error`)であれば、危険(<span class="vslow">Critical</span>)レベルの通知を送信します。
 
-- **_Lock Wait Sessions_**
+- **Lock Wait Sessions**
 
   カテゴリ：[`db_mysql_counter`](metrics-data-list)
 
   現在row lockを取得するために待機中のセッション数(`lock_wait_sessions`)が3つを超えると警告(<span class="slow">Warning</span>)レベルの通知を、5つを超えると危険(<span class="vslow">Critical</span>)レベルの通知を送信します。
 
-- **_Long running session count_**
+- **Long running session count**
 
   カテゴリ：[`db_mysql_counter`](metrics-data-list)
 
   長時間実行中のセッション数(`long_running_sessions`)が1つを超えるとアラート(<span class="slow">Warning</span>)レベルの通知を、5つを超えると危険(<span class="vslow">Critical</span>)レベルの通知を送信します。
 
-- **_Memory_**
+- **Memory**
 
   カテゴリ：[`db_mysql_counter`](metrics-data-list)
 
@@ -471,19 +470,19 @@
 
   :::
 
-- **_Replication Delay_**
+- **Replication Delay**
 
   カテゴリ：[`db_mysql_counter`](metrics-data-list)
 
   Replication構造の場合、relication dbに反映される遅延時間(`replication_delay`)この50秒を超えると警告(<span class="slow">Warning</span>)レベルの通知を、100秒を超えると危険(<span class="vslow">Critical</span>)レベルの通知を送信します。
 
-- **_Replication broken_**
+- **Replication broken**
 
   カテゴリ：[`db_mysql_counter`](metrics-data-list)
 
   Replication構造の場合、複製に失敗(`replication_broken`) が発生すると危険(<span class="vslow">Critical</span>)レベルの通知を送信します。
 
-- **_Uptime_**
+- **Uptime**
 
   カテゴリ：[`db_mysql_counter`](metrics-data-list)
 
@@ -497,17 +496,17 @@
 
 提供するイベントテンプレートは次のとおりです。 <Cmdname sid="ITM07578" className="uitext" />項目に設定された既定値は、ユーザーが希望する値に変更できます。
 
-- **_Active Sessions_**
+- **Active Sessions**
 
   カテゴリ：[`db_postgresql_counter`](metrics-data-list)
 
   クエリを実行中のセッション数(`active_sessions`)が30を超えると警告(<span class="slow">Warning</span>)レベルの通知を、50を超えると危険(<span class="vslow">Critical</span>)レベルの通知を送信します。
 
-- **_Agent Alive Check_**
+- **Agent Data Timeout**
 
   カテゴリ: [`agent_status_summary`](metrics-data-list#agent_status_summary)
 
-  エージェントからデータを収集できない時(`isActive` \=\= `false`) 警告(<span class="slow">Warning</span>) レベルの通知を送信します。
+  エージェントから30秒間データを収集できない場合（now-`lastActTime` >= 30000）、警告レベル（<span class="slow">Warning</span>）のアラートを送信します。
 
   :::note
 
@@ -515,25 +514,25 @@
 
   :::
 
-- **_CPU_**
+- **CPU**
 
   カテゴリ：[`db_postgresql_counter`](metrics-data-list)
 
   CPU使用率(`cpu(xos)`)が80%を超えると警告(<span class="slow">Warning</span>)レベルの通知を、90%を超えると危険(<span class="vslow">Critical</span>)レベルの通知を送信します。
 
-- **_Connection Failed_**
+- **Connection Failed**
 
   カテゴリ：[`db_postgresql_counter`](metrics-data-list)
 
   データベース接続が15回以上失敗(`connect_error`)であれば、危険(<span class="vslow">Critical</span>)レベルの通知を送信します。
 
-- **_Lock Wait Sessions_**
+- **Lock Wait Sessions**
 
   カテゴリ：[`db_postgresql_counter`](metrics-data-list)
 
   現在row lockを取得するために待機中のセッション数(`lock_wait_sessions`)が3つを超えると警告(<span class="slow">Warning</span>)レベルの通知を、5つを超えると危険(<span class="vslow">Critical</span>)レベルの通知を送信します。
 
-- **_Memory_**
+- **Memory**
 
   カテゴリ：[`db_postgresql_counter`](metrics-data-list)
 
@@ -545,7 +544,7 @@
 
   :::
 
-- **_Replication Delay_**
+- **Replication Delay**
 
   カテゴリ：[`db_postgresql_counter`](metrics-data-list)
 
@@ -559,17 +558,17 @@
 
 提供するイベントテンプレートは次のとおりです。 <Cmdname sid="ITM07578" className="uitext" />項目に設定された既定値は、ユーザーが希望する値に変更できます。
 
-- **_Active Sessions_**
+- **Active Sessions**
 
   カテゴリ: [`db_oracle_counter`](metrics-data-list#db_oracle_counter)
 
   クエリを実行中のセッション数(`active_sessions`)が30を超えると警告(<span class="slow">Warning</span>)レベルの通知を、50を超えると危険(<span class="vslow">Critical</span>)レベルの通知を送信します。
 
-- **_Agent Alive Check_**
+- **Agent Data Timeout**
 
   カテゴリ: [`agent_status_summary`](metrics-data-list#agent_status_summary)
 
-  エージェントからデータを収集できない時(`isActive` \=\= `false`) 警告(<span class="slow">Warning</span>) レベルの通知を送信します。
+  エージェントから30秒間データを収集できない場合（now-`lastActTime` >= 30000）、警告レベル（<span class="slow">Warning</span>）のアラートを送信します。
 
   :::note
 
@@ -577,25 +576,25 @@
 
   :::
 
-- **_CPU_**
+- **CPU**
 
   カテゴリ: [`db_oracle_counter`](metrics-data-list#db_oracle_counter)
 
   CPU使用率(`cpu(xos)`)が80%を超えると警告(<span class="slow">Warning</span>)レベルの通知を、90%を超えると危険(<span class="vslow">Critical</span>)レベルの通知を送信します。
 
-- **_Connection Failed_**
+- **Connection Failed**
 
   カテゴリ: [`db_oracle_counter`](metrics-data-list#db_oracle_counter)
 
   データベース接続が15回以上失敗(`connect_error`)であれば、危険(<span class="vslow">Critical</span>)レベルの通知を送信します。
 
-- **_Lock Wait Sessions_**
+- **Lock Wait Sessions**
 
   カテゴリ: [`db_oracle_counter`](metrics-data-list#db_oracle_counter)
 
   現在row lockを取得するために待機中のセッション数(`lock_wait_sessions`)が3つを超えると警告(<span class="slow">Warning</span>)レベルの通知を、5つを超えると危険(<span class="vslow">Critical</span>)レベルの通知を送信します。
 
-- **_Memory_**
+- **Memory**
 
   カテゴリ: [`db_oracle_counter`](metrics-data-list#db_oracle_counter)
 
@@ -607,7 +606,7 @@
 
   :::
 
-- **_Tablespace Usage_**
+- **Tablespace Usage**
 
   カテゴリ: [`db_oracle_tablespace`](metrics-data-list#db_oracle_tablespace)
 
@@ -621,17 +620,17 @@
 
 提供するイベントテンプレートは次のとおりです。 <Cmdname sid="ITM07578" className="uitext" />項目に設定された既定値は、ユーザーが希望する値に変更できます。
 
-- **_Active Sessions_**
+- **Active Sessions**
 
   カテゴリ: [`db_oracle_dma_counter`](metrics-data-list#db_oracle_dma_counter)
 
   クエリを実行中のセッション数(`active_sessions`)が30を超えると警告(<span class="slow">Warning</span>)レベルの通知を、50を超えると危険(<span class="vslow">Critical</span>)レベルの通知を送信します。
 
-- **_Agent Alive Check_**
+- **Agent Data Timeout**
 
   カテゴリ: [`agent_status_summary`](metrics-data-list#agent_status_summary)
 
-  エージェントからデータを収集できない時(`isActive` \=\= `false`) 警告(<span class="slow">Warning</span>) レベルの通知を送信します。
+  エージェントから30秒間データを収集できない場合（now-`lastActTime` >= 30000）、警告レベル（<span class="slow">Warning</span>）のアラートを送信します。
 
   :::note
 
@@ -639,25 +638,25 @@
 
   :::
 
-- **_CPU_**
+- **CPU**
 
   カテゴリ: [`db_oracle_dma_counter`](metrics-data-list#db_oracle_dma_counter)
 
   CPU使用率(`cpu(xos)`)が70%を超えると警告(<span class="slow">Warning</span>)レベルの通知を、90%を超えると危険(<span class="vslow">Critical</span>)レベルの通知を送信します。
 
-- **_Connection Failed_**
+- **Connection Failed**
 
   カテゴリ: [`db_oracle_dma_counter`](metrics-data-list#db_oracle_dma_counter)
 
   データベース接続が15回以上失敗(`connect_error`)であれば、危険(<span class="vslow">Critical</span>)レベルの通知を送信します。
 
-- **_Lock Wait Sessions_**
+- **Lock Wait Sessions**
 
   カテゴリ: [`db_oracle_dma_counter`](metrics-data-list#db_oracle_dma_counter)
 
   現在row lockを取得するために待機中のセッション数(`lock_wait_sessions`)が3つを超えると警告(<span class="slow">Warning</span>)レベルの通知を、5つを超えると危険(<span class="vslow">Critical</span>)レベルの通知を送信します。
 
-- **_Memory_**
+- **Memory**
 
   カテゴリ: [`db_oracle_dma_counter`](metrics-data-list#db_oracle_dma_counter)
 
@@ -669,7 +668,7 @@
 
   :::
 
-- **_Tablespace Usage_**
+- **Tablespace Usage**
 
   カテゴリ: [`db_oracle_dma_tablespace`](metrics-data-list#db_oracle_dma_tablespace)
 
@@ -683,17 +682,17 @@
 
 提供するイベントテンプレートは次のとおりです。 <Cmdname sid="ITM07578" className="uitext" />項目に設定された既定値は、ユーザーが希望する値に変更できます。
 
-- **_Active Sessions_**
+- **Active Sessions**
 
   カテゴリ：[`db_cubrid_counter`](metrics-data-list)
 
   クエリを実行中のセッション数(`active_sessions`)が30を超えると警告(<span class="slow">Warning</span>)レベルの通知を、50を超えると危険(<span class="vslow">Critical</span>)レベルの通知を送信します。
 
-- **_Agent Alive Check_**
+- **Agent Data Timeout**
 
   カテゴリ: [`agent_status_summary`](metrics-data-list#agent_status_summary)
 
-  エージェントからデータを収集できない時(`isActive` \=\= `false`) 警告(<span class="slow">Warning</span>) レベルの通知を送信します。
+  エージェントから30秒間データを収集できない場合（now-`lastActTime` >= 30000）、警告レベル（<span class="slow">Warning</span>）のアラートを送信します。
 
   :::note
 
@@ -701,25 +700,25 @@
 
   :::
 
-- **_CPU_**
+- **CPU**
 
   カテゴリ：[`db_cubrid_counter`](metrics-data-list)
 
   CPU使用率(`cpu(xos)`)が70%を超えると警告(<span class="slow">Warning</span>)レベルの通知を、90%を超えると危険(<span class="vslow">Critical</span>)レベルの通知を送信します。
 
-- **_Connection Failed_**
+- **Connection Failed**
 
   カテゴリ：[`db_cubrid_counter`](metrics-data-list)
 
   データベース接続が15回以上失敗(`connect_error`)であれば、危険(<span class="vslow">Critical</span>)レベルの通知を送信します。
 
-- **_Lock Wait Sessions_**
+- **Lock Wait Sessions**
 
   カテゴリ：[`db_cubrid_counter`](metrics-data-list)
 
   現在row lockを取得するために待機中のセッション数(`lock_wait_sessions`)が3つを超えると警告(<span class="slow">Warning</span>)レベルの通知を、5つを超えると危険(<span class="vslow">Critical</span>)レベルの通知を送信します。
 
-- **_Memory_**
+- **Memory**
 
   カテゴリ：[`db_cubrid_counter`](metrics-data-list)
 
@@ -739,17 +738,17 @@
 
 提供するイベントテンプレートは次のとおりです。 <Cmdname sid="ITM07578" className="uitext" />項目に設定された既定値は、ユーザーが希望する値に変更できます。
 
-- **_Active Sessions_**
+- **Active Sessions**
 
   カテゴリ：[`db_tibero_counter`](metrics-data-list)
 
   クエリを実行中のセッション数(`active_sessions`)が30を超えると警告(<span class="slow">Warning</span>)レベルの通知を、50を超えると危険(<span class="vslow">Critical</span>)レベルの通知を送信します。
 
-- **_Agent Alive Check_**
+- **Agent Data Timeout**
 
   カテゴリ: [`agent_status_summary`](metrics-data-list#agent_status_summary)
 
-  エージェントからデータを収集できない時(`isActive` \=\= `false`) 警告(<span class="slow">Warning</span>) レベルの通知を送信します。
+  エージェントから30秒間データを収集できない場合（now-`lastActTime` >= 30000）、警告レベル（<span class="slow">Warning</span>）のアラートを送信します。
 
   :::note
 
@@ -757,25 +756,25 @@
 
   :::
 
-- **_CPU_**
+- **CPU**
 
   カテゴリ：[`db_tibero_counter`](metrics-data-list)
 
   CPU使用率(`cpu(xos)`)が70%を超えると警告(<span class="slow">Warning</span>)レベルの通知を、90%を超えると危険(<span class="vslow">Critical</span>)レベルの通知を送信します。
 
-- **_Connection Failed_**
+- **Connection Failed**
 
   カテゴリ：[`db_tibero_counter`](metrics-data-list)
 
   データベース接続が15回以上失敗(`connect_error`)であれば、危険(<span class="vslow">Critical</span>)レベルの通知を送信します。
 
-- **_Lock Wait Sessions_**
+- **Lock Wait Sessions**
 
   カテゴリ：[`db_tibero_counter`](metrics-data-list)
 
   現在row lockを取得するために待機中のセッション数(`lock_wait_sessions`)が3つを超えると警告(<span class="slow">Warning</span>)レベルの通知を、5つを超えると危険(<span class="vslow">Critical</span>)レベルの通知を送信します。
 
-- **_Memory_**
+- **Memory**
 
   カテゴリ：[`db_tibero_counter`](metrics-data-list)
 
@@ -795,17 +794,17 @@
 
 提供するイベントテンプレートは次のとおりです。 <Cmdname sid="ITM07578" className="uitext" />項目に設定された既定値は、ユーザーが希望する値に変更できます。
 
-- **_Active Sessions_**
+- **Active Sessions**
 
   カテゴリ：[`db_altibase_counter`](metrics-data-list)
 
   クエリを実行中のセッション数(`active_sessions`)が30を超えると警告(<span class="slow">Warning</span>)レベルの通知を、50を超えると危険(<span class="vslow">Critical</span>)レベルの通知を送信します。
 
-- **_Agent Alive Check_**
+- **Agent Data Timeout**
 
   カテゴリ: [`agent_status_summary`](metrics-data-list#agent_status_summary)
 
-  エージェントからデータを収集できない時(`isActive` \=\= `false`) 警告(<span class="slow">Warning</span>) レベルの通知を送信します。
+  エージェントから30秒間データを収集できない場合（now-`lastActTime` >= 30000）、警告レベル（<span class="slow">Warning</span>）のアラートを送信します。
 
   :::note
 
@@ -813,25 +812,25 @@
 
   :::
 
-- **_CPU_**
+- **CPU**
 
   カテゴリ：[`db_altibase_counter`](metrics-data-list)
 
   CPU使用率(`cpu(xos)`)が80%を超えると警告(<span class="slow">Warning</span>)レベルの通知を、90%を超えると危険(<span class="vslow">Critical</span>)レベルの通知を送信します。
 
-- **_Connection Failed_**
+- **Connection Failed**
 
   カテゴリ：[`db_altibase_counter`](metrics-data-list)
 
   データベース接続が15回以上失敗(`connect_error`)であれば、危険(<span class="vslow">Critical</span>)レベルの通知を送信します。
 
-- **_Lock Wait Sessions_**
+- **Lock Wait Sessions**
 
   カテゴリ：[`db_altibase_counter`](metrics-data-list)
 
   現在row lockを取得するために待機中のセッション数(`lock_wait_sessions`)が3つを超えると警告(<span class="slow">Warning</span>)レベルの通知を、5つを超えると危険(<span class="vslow">Critical</span>)レベルの通知を送信します。
 
-- **_Memory_**
+- **Memory**
 
   カテゴリ：[`db_altibase_counter`](metrics-data-list)
 
@@ -851,17 +850,17 @@
 
 提供するイベントテンプレートは次のとおりです。 <Cmdname sid="ITM07578" className="uitext" />項目に設定された既定値は、ユーザーが希望する値に変更できます。
 
-- **_Active Sessions_**
+- **Active Sessions**
 
   カテゴリ：[`db_mysql_counter`](metrics-data-list)
 
   クエリを実行中のセッション数(`active_sessions`)が30を超えると警告(<span class="slow">Warning</span>)レベルの通知を、50を超えると危険(<span class="vslow">Critical</span>)レベルの通知を送信します。
 
-- **_Agent Alive Check_**
+- **Agent Data Timeout**
 
   カテゴリ: [`agent_status_summary`](metrics-data-list#agent_status_summary)
 
-  エージェントからデータを収集できない時(`isActive` \=\= `false`) 警告(<span class="slow">Warning</span>) レベルの通知を送信します。
+  エージェントから30秒間データを収集できない場合（now-`lastActTime` >= 30000）、警告レベル（<span class="slow">Warning</span>）のアラートを送信します。
 
   :::note
 
@@ -869,25 +868,25 @@
 
   :::
 
-- **_CPU_**
+- **CPU**
 
   カテゴリ：[`db_mysql_counter`](metrics-data-list)
 
   CPU使用率(`cpu`)が80%を超えると警告(<span class="slow">Warning</span>)レベルの通知を、90%を超えると危険(<span class="vslow">Critical</span>)レベルの通知を送信します。
 
-- **_Connection Failed_**
+- **Connection Failed**
 
   カテゴリ：[`db_mysql_counter`](metrics-data-list)
 
   データベース接続が15回以上失敗した場合、危険(<span class="vslow">Critical</span>) レベルの通知を送信します。
 
-- **_Lock Wait Sessions_**
+- **Lock Wait Sessions**
 
   カテゴリ：[`db_mysql_counter`](metrics-data-list)
 
   現在row lockを取得するために待機中のセッション数(`lock_wait_sessions`)が30個を超えると警告(<span class="slow">Warning</span>)レベルの通知を、50個を超えると危険(<span class="vslow">Critical</span>)レベルの通知を送信します。
 
-- **_Memory_**
+- **Memory**
 
   カテゴリ：[`db_mysql_counter`](metrics-data-list)
 
@@ -907,11 +906,11 @@
 
 提供するイベントテンプレートは次のとおりです。 <Cmdname sid="ITM07578" className="uitext" />項目に設定された既定値は、ユーザーが希望する値に変更できます。
 
-- **_Agent Alive Check_**
+- **Agent Data Timeout**
 
   カテゴリ: [`agent_status_summary`](metrics-data-list#agent_status_summary)
 
-  エージェントからデータを収集できない時(`isActive` \=\= `false`) 警告(<span class="slow">Warning</span>) レベルの通知を送信します。
+  エージェントから30秒間データを収集できない場合（now-`lastActTime` >= 30000）、警告レベル（<span class="slow">Warning</span>）のアラートを送信します。
 
   :::note
 
@@ -919,19 +918,19 @@
 
   :::
 
-- **_CPU Utilization_**
+- **CPU Utilization**
 
   カテゴリ：[`db_redis_counter`](metrics-data-list)
 
   CPU使用率(`cpu(xos)`)が80%を超えると警告(<span class="slow">Warning</span>)レベルの通知を、90%を超えると危険(<span class="vslow">Critical</span>)レベルの通知を送信します。
 
-- **_Connection Failed_**
+- **Connection Failed**
 
   カテゴリ：[`db_redis_counter`](metrics-data-list)
 
   データベース接続が15回以上失敗(`connect_error`)であれば、危険(<span class="vslow">Critical</span>)レベルの通知を送信します。
 
-- **_Memory Utilization_**
+- **Memory Utilization**
 
   カテゴリ：[`db_redis_counter`](metrics-data-list)
 
@@ -943,13 +942,13 @@
 
   :::
 
-- **_Redis Cache Hit Ratio_**
+- **Redis Cache Hit Ratio**
 
   カテゴリ：[`db_redis_counter`](metrics-data-list)
 
   すべての読み取り実行作業の成功率が70%未満である場合は警告(<span class="slow">Warning</span>) レベルの通知を、30%未満である場合は危険(<span class="vslow">Critical</span>) レベルの通知を送信します。
 
-- **_Used Memory Size_**
+- **Used Memory Size**
 
   カテゴリ：[`db_redis_counter`](metrics-data-list)
 
@@ -963,17 +962,17 @@
 
 提供するイベントテンプレートは次のとおりです。 <Cmdname sid="ITM07578" className="uitext" />項目に設定された既定値は、ユーザーが希望する値に変更できます。
 
-- **_Active connections_**
+- **Active connections**
 
   カテゴリ：[`db_mongodb_counter`](metrics-data-list)
 
   現在作業中のクライアントの接続数(`active$connections`)が30を超えると警告(<span class="slow">Warning</span>)レベルの通知を、50を超えると危険(<span class="vslow">Critical</span>)レベルの通知を送信します。
 
-- **_Agent Alive Check_**
+- **Agent Data Timeout**
 
   カテゴリ: [`agent_status_summary`](metrics-data-list#agent_status_summary)
 
-  エージェントからデータを収集できない時(`isActive` \=\= `false`) 警告(<span class="slow">Warning</span>) レベルの通知を送信します。
+  エージェントから30秒間データを収集できない場合（now-`lastActTime` >= 30000）、警告レベル（<span class="slow">Warning</span>）のアラートを送信します。
 
   :::note
 
@@ -981,25 +980,25 @@
 
   :::
 
-- **_CPU Utilization_**
+- **CPU Utilization**
 
   カテゴリ：[`db_mongodb_counter`](metrics-data-list)
 
   CPU使用率(`cpu(xos)`)が80%を超えると警告(<span class="slow">Warning</span>)レベルの通知を、90%を超えると危険(<span class="vslow">Critical</span>)レベルの通知を送信します。
 
-- **_Connection Failed_**
+- **Connection Failed**
 
   カテゴリ：[`db_mongodb_counter`](metrics-data-list)
 
   データベース接続が15回以上失敗(`connect_error`)であれば、危険(<span class="vslow">Critical</span>)レベルの通知を送信します。
 
-- **_Global Lock Queue count_**
+- **Global Lock Queue count**
 
   カテゴリ：[`db_mongodb_counter`](metrics-data-list)
 
   現在待機中のクライアントの接続数(`total$currentQueue$globalLock`)が10個を超えると警告(<span class="slow">Warning</span>)レベルの通知を、20個を超えると危険(<span class="vslow">Critical</span>)レベルの通知を送信します。
 
-- **_Memory Utilization_**
+- **Memory Utilization**
 
   カテゴリ：[`db_mongodb_counter`](metrics-data-list)
 
@@ -1017,43 +1016,43 @@
 
 <ImgLang img='event-config-v2-npm.png' desc='イベントリスト' />
 
-- **_Jitter_**
+- **Jitter**
 
   カテゴリ：[`npm_process_tag_data`](metrics-npm#npm_process_tag_data)
 
   パケットの往復遅延時間の変動回数の平均(`avg_jitter`)が30回を超えると警告(<span class="slow">Warning</span>)レベルの通知を、60回を超えると危険(<span class="vslow">Critical</span>)レベルの通知を送信します。
 
-- **_Latency_**
+- **Latency**
 
   カテゴリ：[`npm_process_tag_data`](metrics-npm#npm_process_tag_data)
 
   パケットの往復遅延時間の平均(`avg_latency`)が200ms(0.2秒)を超えると警告(<span class="slow">Warning</span>)レベルの通知を、400ms(0.4秒)を超えると危険(<span class="vslow">Critical</span>)レベルの通知を送信します。
 
-- **_Loss Packet_**
+- **Loss Packet**
 
   カテゴリ：[`npm_process_tag_data`](metrics-npm#npm_process_tag_data)
 
   失われたパケット数(`lost_count`)が1個を超えると警告(<span class="slow">Warning</span>)レベルの通知を、10個を超えると危険(<span class="vslow">Critical</span>)レベルの通知を送信します。
 
-- **_Retransmission Packet_**
+- **Retransmission Packet**
 
   カテゴリ：[`npm_process_tag_data`](metrics-npm#npm_process_tag_data)
 
   再送信が発生したパケット数(`retransmission_count`)が1個を超えると警告(<span class="slow">Warning</span>)レベルの通知を、10個を超えると危険(<span class="vslow">Critical</span>)レベルの通知を送信します。
 
-- **_Session Count_**
+- **Session Count**
 
   カテゴリ：[`npm_process_tag_data`](metrics-npm#npm_process_tag_data)
 
   重複を除いたセッション数(`session_count`)が100個を超えると警告(<span class="slow">Warning</span>)レベルの通知を、1000を超えると危険(<span class="vslow">Critical</span>)レベルの通知を送信します。
 
-- **_Total Packet Count_**
+- **Total Packet Count**
 
   カテゴリ：[`npm_process_tag_data`](metrics-npm#npm_process_tag_data)
 
   送信したパケット数(`send_packet_count`)と受信したパケット数(`recv_packet_count`)の合計が50,000を超えると警告(<span class="slow">Warning</span>)レベルの通知を、100,000個を超えると危険(<span class="vslow">Critical</span>)レベルの通知を送信します。
 
-- **_Total Packet Size_**
+- **Total Packet Size**
 
   カテゴリ：[`npm_process_tag_data`](metrics-npm#npm_process_tag_data)
 
@@ -1071,31 +1070,31 @@
 
 <ImgLang img='event-config-v2-browser.png' desc='イベントリスト' />
 
-- **_Abnormal ajax load count_**
+- **Abnormal ajax load count**
 
   カテゴリ：[`rum_ajax_each_page`](metrics-browser#rum_ajax_each_page)
 
   AJAX読み込み数(`ajax_count`)が50個を超えると警告(<span class="slow">Warning</span>)レベルの通知を、100個を超えると危険(<span class="vslow">Critical</span>)レベルの通知を送信します。
 
-- **_Abnormal ajax response time_**
+- **Abnormal ajax response time**
 
   カテゴリ：[`rum_ajax_each_page`](metrics-browser#rum_ajax_each_page)
 
   AJAXリクエスト平均リスポンスタイム(`ajax_duration`)が20,000ms(20秒)を超えると警告(<span class="slow">Warning</span>) レベルの通知を、50,000ms(50秒)を超えると危険(<span class="vslow">Critical</span>)レベルの通知を送信します。
 
-- **_Abnormal error count_**
+- **Abnormal error count**
 
   カテゴリ：[`rum_error_total_each_page`](metrics-browser#rum_error_total_each_page)
 
   エラー発生件数(`error_count`)が10個を超えると警告(<span class="slow">Warning</span>)レベルの通知を、50個を超えると危険(<span class="vslow">Critical</span>)レベルの通知を送信します。
 
-- **_Abnormal page load_**
+- **Abnormal page load**
 
   カテゴリ：[`rum_page_load_each_page`](metrics-browser#rum_page_load_each_page)
 
   ページロード数(`page_load_count`)が50個を超えると警告(<span class="slow">Warning</span>)レベルの通知を、100個を超えると危険(<span class="vslow">Critical</span>)レベルの通知を送信します。
 
-- **_Abnormal page load time_**
+- **Abnormal page load time**
 
   カテゴリ：[`rum_page_load_each_page`](metrics-browser#rum_page_load_each_page)
 

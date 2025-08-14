@@ -24,7 +24,7 @@ The WhaTap's server monitoring agent checks the status of the monitored servers 
 
 :::note 
 
-Click Home &gt; Select Project &gt; <Cmdname sid="side_event" className="uitext" /> &gt; <Cmdname sid="side_eventSetting" className="uitext" /> &gt; <Cmdname sid="server" className="uitext" /> tab and select the ***+*** <Cmdname sid="add_alert_setting" className="uitext" /> button.
+Click Home &gt; Select Project &gt; <Cmdname sid="side_event" className="uitext" /> &gt; <Cmdname sid="side_eventSetting" className="uitext" /> &gt; <Cmdname sid="server" className="uitext" /> tab and select the **+** <Cmdname sid="add_alert_setting" className="uitext" /> button.
 
 :::
 
@@ -32,15 +32,15 @@ Click Home &gt; Select Project &gt; <Cmdname sid="side_event" className="uitext"
 
 ### Default notifications
 
-The WhaTap Server Monitoring provides the **default notification**. You can complete basic notification settings without any additional actions by simply enabling the server ***Restart*** and data ***Not received*** within the event template as follows:
+The WhaTap Server Monitoring provides the **default notification**. You can complete basic notification settings without any additional actions by simply enabling the server **Restart** and data **Not received** within the event template as follows:
 
-- ***Restart***: A notification is sent when the monitored server performs the system reboot.
+- **Restart**: A notification is sent when the monitored server performs the system reboot.
 
-- ***Not received***: If data is not received from the monitoring agent for a set period of time due to server downtime or network issues, a notification is sent for the condition.
+- **Not received**: If data is not received from the monitoring agent for a set period of time due to server downtime or network issues, a notification is sent for the condition.
 
 ### Alerting the TCP port monitoring
 
-After activating ***Port*** in the WhaTap server Monitoring event template, set the monitoring target endpoint and TCP port through the following script. 
+After activating **Port** in the WhaTap server Monitoring event template, set the monitoring target endpoint and TCP port through the following script. 
 
 <Tabs groupId='server-user-script'>
 <TabItem value="lxs" label="Linux Shell">
@@ -86,7 +86,7 @@ import TcpMulti from "../common-items/_server-tcp-port-multi.mdx";
 
 #### Metrics Search
 
-Once setup is completed, the `server_tcpport` category is added to the ***Analyze*** &gt; ***Metrics Search*** menu. Metrics notifications can be used based on the value of the `isAlive` field in the category. 
+Once setup is completed, the `server_tcpport` category is added to the **Analyze** &gt; **Metrics Search** menu. Metrics notifications can be used based on the value of the `isAlive` field in the category. 
 
 <ImgLang img='best-p/about-server-adf-tcp-port-ms.png' desc='View metrics related to tcp port monitoring notifications' />
 
