@@ -2,9 +2,9 @@ Home &gt; Select Project &gt; <Cmdname sid="side_analysis" className="uitext" />
 
 It provides useful information for diagnosing performance issues by analyzing SQL statements executed on the database. The <Cmdname sid="side_dbSqlAnalysis" className="uitext" /> menu consists of two key tabs. 
 
-- ***Access Statistics***: You can check the SQL that caused Full Scan, which may be the cause of the performance degradation.
+- **Access Statistics**: You can check the SQL that caused Full Scan, which may be the cause of the performance degradation.
 
-- ***Plan Change History***: It detects the case when a SQL statement with the same SQL ID is changed to a different execution plan by the optimizer. This can affect the performance and needs to be monitored.
+- **Plan Change History**: It detects the case when a SQL statement with the same SQL ID is changed to a different execution plan by the optimizer. This can affect the performance and needs to be monitored.
 
 ## Access Statistics {#access_statistics}
 
@@ -14,9 +14,9 @@ You can check the SQL that caused Full Scan, which may be the cause of the perfo
 
 Select the query time and target on the screen. Select the <Cmdname sid="time" className="uitext" /> and <Cmdname sid="instance" className="uitext" /> options, and then select ![Search icon](/img/ico-btn-search.png). If necessary, you can filter the desired query results by setting the <Cmdname sid="filter" className="uitext" /> option.
 
-- ***Access Count***: This bar graph chart allows you to check the number of Full Scan occurrences by the time zone. When you select a specific time zone, a list of SQLs performed during the selected time is displayed in the list at the bottom of the screen and in the ***Operation Count*** chart on the right.
+- **Access Count**: This bar graph chart allows you to check the number of Full Scan occurrences by the time zone. When you select a specific time zone, a list of SQLs performed during the selected time is displayed in the list at the bottom of the screen and in the **Operation Count** chart on the right.
 
-- ***Operation Count***: You can check the type and number of full scans that occurred. You can see the object name by hovering your mouse over each bar.
+- **Operation Count**: You can check the type and number of full scans that occurred. You can see the object name by hovering your mouse over each bar.
 
   ![Operation Count](/img/db-analysis-sql-access-statistics-op-count.png)
 
@@ -33,7 +33,7 @@ import QueryDetails from "../common-items/_db-query-details.mdx";
 
 :::note
 
-- If the ***query_text*** column is selected from the table list, the <Cmdname sid="TTL06224" className="uitext" /> window appears. For more information about the <Cmdname sid="TTL06224" className="uitext" /> window.
+- If the **query_text** column is selected from the table list, the <Cmdname sid="TTL06224" className="uitext" /> window appears. For more information about the <Cmdname sid="TTL06224" className="uitext" /> window.
 
 :::
 
@@ -45,9 +45,9 @@ You can filter the desired results based on the values ​​of the following it
 
 :::info
 
-- ***Access Type***: You can filter results by **Full Scan** or **Index Scan**.
+- **Access Type**: You can filter results by **Full Scan** or **Index Scan**.
 
-- ***Object Name***: You can filter based on the object name.
+- **Object Name**: You can filter based on the object name.
 
 :::
 
@@ -57,7 +57,7 @@ You can filter the desired results based on the values ​​of the following it
 
    <ImgLang img="db-analysis-sql-access-statistics-filter.png" desc="Filter" />
 
-2. In <Cmdname sid="TTL06737" className="uitext" />, select ***FULL*** or ***INDEX***.
+2. In <Cmdname sid="TTL06737" className="uitext" />, select **FULL** or **INDEX**.
 
 3. Select <Cmdname sid="apply" className="uitext" />.
 
@@ -65,7 +65,7 @@ You can filter the desired results based on the values ​​of the following it
 
 :::note
 
-To search all for Full Scan and Index Scan, in <Cmdname sid="TTL06737" className="uitext" />, select all options for ***FULL*** and ***INDEX***. Or by selecting the ![Plus icon](/img/ic-s-plus.svg) button, you add more filtering options.
+To search all for Full Scan and Index Scan, in <Cmdname sid="TTL06737" className="uitext" />, select all options for **FULL** and **INDEX**. Or by selecting the ![Plus icon](/img/ic-s-plus.svg) button, you add more filtering options.
 
 :::
 
@@ -75,7 +75,7 @@ To search all for Full Scan and Index Scan, in <Cmdname sid="TTL06737" className
 
 1. In the <Cmdname sid="filter" className="uitext" /> option, select <LinkImage img="ico-add.svg" className="ico" />.
 
-2. In the <Cmdname sid="TTL06617" className="uitext" /> popup, select ***Object Name*** and the <Cmdname sid="equal" className="uitext" /> condition.
+2. In the <Cmdname sid="TTL06617" className="uitext" /> popup, select **Object Name** and the <Cmdname sid="equal" className="uitext" /> condition.
 
 3. Select an empty input field and then select a desired object name from the object list.
 
@@ -107,15 +107,15 @@ It detects the case when a SQL statement with the same SQL ID is changed to a di
 
 Select the query time and target on the screen. Select the <Cmdname sid="time" className="uitext" /> and <Cmdname sid="instance" className="uitext" /> options, and then select ![Search icon](/img/ico-btn-search.png).
 
-The ***Plan Change Count*** section is a bar graph chart that displays the number of plan changes that occurred over time. When you select a time zone, a list of plan changes for the selected time appears.
+The **Plan Change Count** section is a bar graph chart that displays the number of plan changes that occurred over time. When you select a time zone, a list of plan changes for the selected time appears.
 
 
 ### Checking the plan change details
 
-When you select a specific change from the list at the bottom of the screen, a ***Query*** section appears at the bottom of the screen where you can see the details before and after the plan change. By comparing the differences before and after the plan change in detail, you can determine which change affected the performance.
+When you select a specific change from the list at the bottom of the screen, a **Query** section appears at the bottom of the screen where you can see the details before and after the plan change. By comparing the differences before and after the plan change in detail, you can determine which change affected the performance.
 
 <ImgLang img="db-analysis-sql-plan-change-history-diff.png" desc="Plan Change History" />
 
-- You can open the ***Query*** section in a new window by selecting ![New window viewing icon](/img/ic-popup.svg) on the upper right of the section.
+- You can open the **Query** section in a new window by selecting ![New window viewing icon](/img/ic-popup.svg) on the upper right of the section.
 
-- To close the ***Query*** section, select ![Close icon](/img/ico-close.svg) in the upper right corner.
+- To close the **Query** section, select ![Close icon](/img/ico-close.svg) in the upper right corner.
