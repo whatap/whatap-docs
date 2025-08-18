@@ -6477,6 +6477,45 @@ const sidebars = {
       ]
     }
   ],
+  urlproSidebar: [
+    {
+      type: 'category',
+      label: 'URL PRO 모니터링',
+      collapsible: false,
+      collapsed: false,
+      link: {
+        type: 'doc',
+        id: 'url-pro/url-intro'
+      },
+      items: [
+        'url-pro/getting-started',
+        {
+          type: 'category',
+          label: '관리',
+          collapsible: true,
+          collapsed: false,
+          items: [
+            'url-pro/url-list',
+            'url-pro/category',
+            'url-pro/issue',
+            'url-pro/custom-field'
+          ],
+        },
+        'url-pro/dashboard',
+        {
+          type: 'category',
+          label: '이벤트 설정',
+          collapsible: true,
+          collapsed: false,
+          items: [
+            'url-pro/event',
+            'url-pro/set-receive-event',
+            'url-pro/url-event-history',
+          ],
+        },
+      ]
+    }
+  ],
   rumsSidebar: [
     {
       type: 'category',
