@@ -40,8 +40,8 @@ jobs:
 
     - name: Build PDF
       run: |
-        node generate-pdf -u https://docs.whatap.io/cover/cover-extensions --prince-args="--page-size='a4' --page-margin='10mm' --style=./pdf-print.css" -o ./pdf/whatap-extensions.pdf --dest ./pdf --include-index
-        pdfcpu annot remove -pages 1 ./pdf/whatap-extensions.pdf
+        node generate-pdf -u https://docs.whatap.io/cover/cover-url-pro --prince-args="--page-size='a4' --page-margin='10mm' --style=./pdf-print.css" -o ./pdf/whatap-url-pro.pdf --dest ./pdf --include-index
+        pdfcpu annot remove -pages 1 ./pdf/whatap-url-pro.pdf
 
     - name: Create Release
       id: create_release
