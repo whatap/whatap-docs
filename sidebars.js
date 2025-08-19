@@ -6484,6 +6484,28 @@ const sidebars = {
       },
       items: [
         'url-pro/getting-started',
+        'url-pro/dashboard',
+        {
+          type: 'category',
+          label: '분석',
+          collapsible: true,
+          collapsed: true,
+          items: [
+            'url-pro/metrics-chart',
+            'url-pro/metrics-search',
+          ],
+        },
+        {
+          type: 'category',
+          label: '경고 알림',
+          collapsible: true,
+          collapsed: false,
+          items: [
+            'url-pro/event',
+            'url-pro/set-receive-event',
+            'url-pro/url-event-history',
+          ],
+        },
         {
           type: 'category',
           label: '관리',
@@ -6494,18 +6516,6 @@ const sidebars = {
             'url-pro/category',
             'url-pro/issue',
             'url-pro/custom-field'
-          ],
-        },
-        'url-pro/dashboard',
-        {
-          type: 'category',
-          label: '이벤트 설정',
-          collapsible: true,
-          collapsed: false,
-          items: [
-            'url-pro/event',
-            'url-pro/set-receive-event',
-            'url-pro/url-event-history',
           ],
         },
       ]
