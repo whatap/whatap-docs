@@ -140,9 +140,9 @@ const ImportJson = ({ filePath, product, type, sort, category, platform }) => {
                         <div>
                         {(index === 0 || list.ver !== array[index - 1].ver) && (
                           <>
-                            <span id={`ver-${list.ver}`} className={styles.goto}>
+                            <h3 id={`ver-${list.ver}`} className={styles.goto}>
                               <strong>{list.ver}</strong>
-                            </span>
+                            </h3>
                               {list.JavaVersion && (
                                 <span className={styles.JavaVersion}>
                                   <strong>{list.JavaVersion}</strong>
