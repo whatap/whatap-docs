@@ -6479,6 +6479,57 @@ const sidebars = {
       ]
     }
   ],
+  urlproSidebar: [
+    {
+      type: 'category',
+      label: 'URL PRO 모니터링',
+      collapsible: false,
+      collapsed: false,
+      link: {
+        type: 'doc',
+        id: 'url-pro/url-intro'
+      },
+      items: [
+        'url-pro/getting-started',
+        'url-pro/dashboard',
+        {
+          type: 'category',
+          label: '분석',
+          collapsible: true,
+          collapsed: true,
+          items: [
+            'url-pro/metrics-chart',
+            'url-pro/metrics-search',
+          ],
+        },
+        {
+          type: 'category',
+          label: '경고 알림',
+          collapsible: true,
+          collapsed: false,
+          items: [
+            'url-pro/event',
+            'url-pro/set-receive-event',
+            'url-pro/url-event-history',
+          ],
+        },
+        {
+          type: 'category',
+          label: '관리',
+          collapsible: true,
+          collapsed: false,
+          items: [
+            'url-pro/project-manage',
+            'url-pro/maintenance',
+            'url-pro/url-list',
+            'url-pro/category',
+            'url-pro/issue',
+            'url-pro/custom-field'
+          ],
+        },
+      ]
+    }
+  ],
   rumsSidebar: [
     {
       type: 'category',
