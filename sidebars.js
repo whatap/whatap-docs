@@ -6512,6 +6512,8 @@ const sidebars = {
           collapsible: true,
           collapsed: false,
           items: [
+            'url-pro/project-manage',
+            'url-pro/maintenance',
             'url-pro/url-list',
             'url-pro/category',
             'url-pro/issue',
