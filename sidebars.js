@@ -2486,7 +2486,19 @@ const sidebars = {
             'oracle/user-group-display-settings',
           ],
         },
-        'oracle/labs'
+        {
+          type: 'category',
+          label: '실험실',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'oracle/labs',
+          },
+          items: [
+            'oracle/openmetrics_explorer',
+          ],
+        },
       ],
     }
   ],
@@ -4787,13 +4799,16 @@ const sidebars = {
               collapsible: true,
               collapsed: true,
               // className: 'new',
+              link: {
+                type: 'doc',
+                id: 'release-notes/php/index',
+              },
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/php/index',
-                  className: 'new',
-                },
-                'release-notes/php/download-php-agent',
+                  id: 'release-notes/php/download-php-agent',
+                  // className: 'new',
+                }
               ],
             },
             {
