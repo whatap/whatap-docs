@@ -4748,11 +4748,9 @@ const sidebars = {
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/java/java-2_2_0',
-                  className: 'new',
+                  id: 'release-notes/java/download-agent-java',
+                  // className: 'new',
                 },
-                'release-notes/java/java-previous',
-                'release-notes/java/download-agent-java',
               ],
             },
             {
