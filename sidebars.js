@@ -2486,7 +2486,19 @@ const sidebars = {
             'oracle/user-group-display-settings',
           ],
         },
-        'oracle/labs'
+        {
+          type: 'category',
+          label: '실험실',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'oracle/labs',
+          },
+          items: [
+            'oracle/openmetrics_explorer',
+          ],
+        },
       ],
     }
   ],
