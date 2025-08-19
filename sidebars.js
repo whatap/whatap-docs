@@ -4799,13 +4799,16 @@ const sidebars = {
               collapsible: true,
               collapsed: true,
               // className: 'new',
+              link: {
+                type: 'doc',
+                id: 'release-notes/php/index',
+              },
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/php/index',
-                  className: 'new',
-                },
-                'release-notes/php/download-php-agent',
+                  id: 'release-notes/php/download-php-agent',
+                  // className: 'new',
+                }
               ],
             },
             {
