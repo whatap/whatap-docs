@@ -6842,6 +6842,14 @@ const sidebars = {
             'server/server-list',
             'server/server-detail',
             'server/server-detail-process-group',
+          ]
+        },
+        {
+          type: 'category',
+          label: 'GPU',
+          collapsible: true,
+          collapsed: true,
+          items: [
             'server/gpu-inventory',
             'server/gpu-performance-summary',
           ]
