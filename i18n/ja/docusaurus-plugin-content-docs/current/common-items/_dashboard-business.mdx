@@ -164,6 +164,32 @@ TPS、応答時間、エラー率などの主要なパフォーマンス指標�
 
 - **PHP**: 2.11.0 以上
 
+### 必須設定
+
+```
+# 機能全体の有効化
+whatap.app_context_enabled=true
+```
+
+### 選択設定
+
+```
+# パーサーの選択 (default/prefix/match)
+# default: 最初のパスセグメントを抽出
+# prefix: 接頭辞マッチングパーサー（最も柔軟）
+# match: 完全一致のみのパーサー
+whatap.app_context_parser=default
+
+# パーサーの内部キャッシュと設定を強制的にリセットするカウンター
+whatap.app_context_parser_reset=0
+
+# URLから抽出するパスセグメントの深さを指定（default パーサーで 1 または 2 を使用）
+whatap.app_context_path_depth=1
+
+# 監視対象のパスとその名前を定義するマッピング設定（カンマ区切りで使用）
+whatap.app_context_path_set=name1@url1,name2@url2,url3,name4@url4
+```
+
 </InDoc>
 
 <InDoc product="python">
@@ -177,6 +203,8 @@ TPS、応答時間、エラー率などの主要なパフォーマンス指標�
 - **.NET**: 2.4.3 以上
 
 </InDoc>
+
+<InDoc product="java,python,dotnet">
 
 ### 必須設定
 
@@ -203,6 +231,8 @@ app_context_path_depth=1
 # 監視対象のパスとその名前を定義するマッピング設定（カンマ区切りで使用）
 app_context_path_set=name1@url1,name2@url2,url3,name4@url4
 ```
+
+</InDoc>
 
 :::tip
 
