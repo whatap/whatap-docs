@@ -5714,6 +5714,7 @@ const sidebars = {
           label: 'Open API',
           href: '/openapi-spec' 
         },
+        'openmetrics_cardinality',
         'software-proxy',
         // {
         //   type: 'doc',
