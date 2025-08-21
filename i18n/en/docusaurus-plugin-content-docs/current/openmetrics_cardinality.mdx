@@ -1,0 +1,131 @@
+---
+id: openmetrics_cardinality
+title: OpenMetrics Cardinality
+description: Understand OpenMetrics cardinality and calculate cardinality per metric directly.
+keywords: [ OpenMetrics, Cardinality ]
+---
+
+:::info
+
+**Purpose of the OpenMetrics Cardinality Document**
+
+After storing metrics exposed in Prometheus format, you can directly calculate cardinality per metric using a simple script.  
+This allows you to see how many different label combinations each metric has in your environment.
+
+:::
+
+## What is Cardinality?
+
+Cardinality refers to the **number of unique label combinations (excluding values)** for a specific metric. Even if the metric name is the same, data with identical label composition is treated as one.
+
+**Example**
+
+<pre
+  style={{
+    background:'#292d3e',
+    borderRadius:'5px',
+    padding:'16px 20px',
+    overflow:'auto',
+    lineHeight:'1.9',
+    lineHeight:'0.3',
+    fontSize:'10px',
+  }}
+>
+  <code style={{fontFamily:'var(--ifm-font-family-monospace, monospace)'}}>
+    <span style={{color:'#ffffff'}}>
+      00:00&nbsp;&nbsp;<span style={{background:'#d7ecff', color:'#000000'}}> http_requests_total{'{'}url="/hello"{'}'} </span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Value:&nbsp;<span style={{color:'#ffffff'}}>100</span>
+    </span>
+    <span style={{color:'#ffffff'}}>
+      00:00&nbsp;&nbsp;<span style={{background:'#fffbd1', color:'#000000'}}> http_requests_total{'{'}url="/hello", name="whatap"{'}'} </span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Value:&nbsp;<span style={{color:'#ffffff'}}>93</span>
+    </span>
+    <span style={{color:'#ffffff'}}>
+      00:01&nbsp;&nbsp;<span style={{background:'#fffbd1', color:'#000000'}}> http_requests_total{'{'}url="/hello", name="whatap"{'}'} </span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Value:&nbsp;<span style={{color:'#ffffff'}}>114</span>
+    </span>
+    <span style={{color:'#ffffff'}}>
+      00:01&nbsp;&nbsp;<span style={{background:'#d7ecff', color:'#000000'}}> http_requests_total{'{'}url="/hello"{'}'} </span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Value:&nbsp;<span style={{color:'#ffffff'}}>5</span>
+    </span>
+  </code>
+</pre>
+
+Although there are four data points, based on label composition they are counted as two:
+
+- `url="/hello"` → 1  
+- `url="/hello", name="whatap"` → 1  
+
+Thus, the cardinality of this metric is **2**.
+
+---
+
+## How to Check Cardinality
+
+To check the cardinality of actual metrics collected in your environment, calculate it based on metrics exposed in Prometheus format.
+
+### Step 1. Extract Prometheus Metric File
+
+Call the endpoint (`/metrics`) that exposes metrics in Prometheus format and save it as a text file.  
+Port `9100` is an example for Prometheus Node Exporter; use the endpoint address suitable for your environment.
+
+```bash
+curl -s http://localhost:9100/metrics > metrics.txt
+```
+
+### Step 2. Check Metric Format
+
+The saved file (metrics.txt) usually looks like the following.
+Here, the basis for calculating cardinality is **metric_name + label combination**.
+
+```
+metric_name{label1="value1",label2="value2"} 123
+```
+
+### Step 3. Calculate Cardinality
+
+Run the following command to calculate the number of unique label combinations for each metric (metric_name).
+
+Download the shell script and execute the following commands. [Download count_cardinality.sh ](https://github.com/whatap/whatap-docs/releases/download/v2.19.0/count_cardinality.sh)
+
+
+```bash
+chmod +x count_cardinality.sh
+./count_cardinality.sh metrics.txt
+```
+
+If you cannot download and run the shell script in your environment, copy and execute the following commands directly:
+
+```bash
+grep -v '^#' metrics.txt \
+  | awk -F'{' '{
+      if (NF > 1) {
+        name=$1
+      } else {
+        split($1, arr, " ")
+        name=arr[1]
+      }
+      count[name]++
+      total++
+    }
+    END {
+      for (n in count) {
+        print n, count[n]
+      }
+      print "Total", total
+    }' | sort
+```
+
+### Step 4. Interpret Results
+
+The execution result will look like the following. It shows the cardinality count of each metric and the total cardinality.
+
+```
+apiserver_flowcontrol_priority_level_request_utilization_bucket 44
+go_gc_duration_seconds_count 1
+go_gc_duration_seconds_sum 1
+process_cpu_seconds_total 1
+Total 47
+```
+
+- apiserver_flowcontrol_priority_level_request_utilization_bucket: 44 unique label combinations
+- go_gc_duration_seconds_count: 1 unique label combination
+- go_gc_duration_seconds_sum: 1 unique label combination
+- process_cpu_seconds_total: 1 unique label combination
+- Total: 47 (overall cardinality count)

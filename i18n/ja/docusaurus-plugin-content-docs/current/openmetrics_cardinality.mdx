@@ -1,0 +1,132 @@
+---
+id: openmetrics_cardinality
+title: オープンメトリクス カーディナリティ
+description: オープンメトリクスのカーディナリティについて理解し、指標ごとのカーディナリティを直接計算できます。
+keywords: [ オープンメトリクス, オープンメトリクス カーディナリティ ]
+---
+
+:::info
+
+**オープンメトリクス カーディナリティ ドキュメントの目的**
+
+Prometheus 形式で公開されたメトリクスを保存し、簡単なスクリプトで指標ごとのカーディナリティを直接計算できます。  
+これにより、ユーザー環境でどの指標がどれほど多様なラベルの組み合わせを持つのか確認することができます。
+
+:::
+
+## カーディナリティとは？
+
+カーディナリティ(Cardinality)とは、特定のメトリクス(metric)における **値(value)を除いたすべてのラベル(label)組み合わせのユニーク数** を意味します。  
+同じメトリクス名を持つデータでも、ラベル構成が同じであれば一つとして扱われます。
+
+**例**
+
+<pre
+  style={{
+    background:'#292d3e',
+    borderRadius:'5px',
+    padding:'16px 20px',
+    overflow:'auto',
+    lineHeight:'1.9',
+    lineHeight:'0.3',
+    fontSize:'10px',
+  }}
+>
+  <code style={{fontFamily:'var(--ifm-font-family-monospace, monospace)'}}>
+    <span style={{color:'#ffffff'}}>
+      00:00&nbsp;&nbsp;<span style={{background:'#d7ecff', color:'#000000'}}> http_requests_total{'{'}url="/hello"{'}'} </span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;値:&nbsp;<span style={{color:'#ffffff'}}>100</span>
+    </span>
+    <span style={{color:'#ffffff'}}>
+      00:00&nbsp;&nbsp;<span style={{background:'#fffbd1', color:'#000000'}}> http_requests_total{'{'}url="/hello", name="whatap"{'}'} </span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;値:&nbsp;<span style={{color:'#ffffff'}}>93</span>
+    </span>
+    <span style={{color:'#ffffff'}}>
+      00:01&nbsp;&nbsp;<span style={{background:'#fffbd1', color:'#000000'}}> http_requests_total{'{'}url="/hello", name="whatap"{'}'} </span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;値:&nbsp;<span style={{color:'#ffffff'}}>114</span>
+    </span>
+    <span style={{color:'#ffffff'}}>
+      00:01&nbsp;&nbsp;<span style={{background:'#d7ecff', color:'#000000'}}> http_requests_total{'{'}url="/hello"{'}'} </span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;値:&nbsp;<span style={{color:'#ffffff'}}>5</span>
+    </span>
+  </code>
+</pre>
+
+上記のデータは全部で4つですが、ラベル構成を基準にすると次のように2つとして計算されます。
+
+- `url="/hello"` → 1個
+- `url="/hello", name="whatap"` → 1個
+
+したがって、このメトリクスのカーディナリティは **2** です。
+
+---
+
+## カーディナリティの確認方法
+
+ユーザー環境で実際に収集されるメトリクスのカーディナリティを直接確認するには、Prometheus 形式で公開されたメトリクスを基に計算する必要があります。
+
+### Step 1. Prometheus メトリクスファイル抽出
+
+Prometheus 形式でメトリクスを公開するエンドポイント(`/metrics`)を呼び出し、テキストファイルとして保存します。  
+`9100` ポートは Prometheus Node Exporter の例であり、環境に応じたエンドポイントアドレスを入力してください。
+
+```bash
+curl -s http://localhost:9100/metrics > metrics.txt
+```
+
+### Step 2. メトリクス形式確認
+
+保存されたファイル(metrics.txt)のデータは通常、次のような形式になります。
+ここでカーディナリティ計算の基準は **metric_name + ラベル組み合わせ** です。
+
+```
+metric_name{label1="value1",label2="value2"} 123
+```
+
+### Step 3. カーディナリティ計算
+
+以下のコマンドを実行すると、各メトリクス(metric_name)ごとにユニークなラベル組み合わせの数を計算できます。
+
+シェルスクリプトをダウンロードした後、以下のコマンドを実行してください。[count_cardinality.sh ダウンロード](https://github.com/whatap/whatap-docs/releases/download/v2.19.0/count_cardinality.sh)
+
+
+```bash
+chmod +x count_cardinality.sh
+./count_cardinality.sh metrics.txt
+```
+
+シェルスクリプトをダウンロードして実行できない環境の場合、次のコマンドを直接コピーして実行します。
+
+```bash
+grep -v '^#' metrics.txt \
+  | awk -F'{' '{
+      if (NF > 1) {
+        name=$1
+      } else {
+        split($1, arr, " ")
+        name=arr[1]
+      }
+      count[name]++
+      total++
+    }
+    END {
+      for (n in count) {
+        print n, count[n]
+      }
+      print "合計", total
+    }' | sort
+```
+
+### Step 4. 結果の解釈
+
+実行結果は次のようになります。各メトリクスのカーディナリティ数とカーディナリティ合計を表しています。
+
+```
+apiserver_flowcontrol_priority_level_request_utilization_bucket 44
+go_gc_duration_seconds_count 1
+go_gc_duration_seconds_sum 1
+process_cpu_seconds_total 1
+合計 47
+```
+
+- apiserver_flowcontrol_priority_level_request_utilization_bucket: 44個のユニークなラベル組み合わせ
+- go_gc_duration_seconds_count: 1個のユニークなラベル組み合わせ
+- go_gc_duration_seconds_sum: 1個のユニークなラベル組み合わせ
+- process_cpu_seconds_total: 1個のユニークなラベル組み合わせ
+- 合計: 47個 (全体のカーディナリティ数)
