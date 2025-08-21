@@ -153,6 +153,29 @@ To use the Business Dashboard, agent configuration is required.
 
 - **PHP**: 2.11.0 or higher
 
+### Required Setting
+
+```
+# Enable business context monitoring
+whatap.app_context_enabled=true
+```
+
+### Optional Settings
+
+```
+# Parser type (default/prefix/match)
+whatap.app_context_parser=default
+
+# Reset parser's internal cache/settings
+whatap.app_context_parser_reset=0
+
+# Depth of path segment to extract
+whatap.app_context_path_depth=1
+
+# Mapping of names to monitored paths (comma-separated)
+whatap.app_context_path_set=name1@url1,name2@url2,url3,name4@url4
+```
+
 </InDoc>
 
 <InDoc product="python">
@@ -166,6 +189,8 @@ To use the Business Dashboard, agent configuration is required.
 - **.NET**: 2.4.3 or higher
 
 </InDoc>
+
+<InDoc product="java,python,dotnet">
 
 ### Required Setting
 
@@ -181,14 +206,16 @@ app_context_enabled=true
 app_context_parser=default
 
 # Reset parser's internal cache/settings
-app_context_parser_reset=0
+whatap.app_context_parser_reset=0
 
 # Depth of path segment to extract
-app_context_path_depth=1
+whatap.app_context_path_depth=1
 
 # Mapping of names to monitored paths (comma-separated)
-app_context_path_set=name1@url1,name2@url2,url3,name4@url4
+whatap.app_context_path_set=name1@url1,name2@url2,url3,name4@url4
 ```
+
+</InDoc>
 
 :::tip
 
