@@ -1,5 +1,28 @@
 [
   {
+    "url": "https://docs.whatap.io/release-notes/nodejs/nodejs-0_5_25/",
+    "ver": "v0.5.25",
+    "date": "2025-08-22",
+    "Lists": [
+      {
+        "ver": "v0.5.25",
+        "hash": "v0525",
+        "product": "Node.js Agent",
+        "type": "New",
+        "desc": "<p><code class=\"New\" type=\"1\">New</code> <strong>perfx_nodejs_gc_enabled</strong> <span class=\"type\">Boolean</span></p>",
+        "details": "<ul><li><p>デフォルト: <code>false</code></p></li><li><p>ガーベジコレクション(GC) パフォーマンスメトリクスの収集を有効化 (Node.js 16.7 以上でサポート)</p></li></ul>"
+      },
+      {
+        "ver": "v0.5.25",
+        "hash": "v0525",
+        "product": "Node.js Agent",
+        "type": "New",
+        "desc": "<p><code class=\"New\" type=\"1\">New</code> アプリケーションプロセスの終了を検知し、終了理由をエージェントログに記録</p>",
+        "details": "<ul><li><p><strong>SIGTERM</strong>: システムまたはプロセスマネージャーによる正常な終了リクエスト</p></li>\n<li><p><strong>SIGINT</strong>: ユーザーによる中断 (Ctrl+C または kill コマンド)</p></li>\n<li><p><strong>SIGHUP</strong>: ターミナル切断または親プロセスの終了</p></li>\n<li><p><strong>SIGUSR1/SIGUSR2</strong>: ユーザー定義シグナル</p></li>\n<li><p><strong>uncaughtException</strong>: 未処理例外による異常終了</p></li>\n<li><p><strong>unhandledRejection</strong>: 未処理Promise拒否による終了</p></li></ul>"
+      }
+    ]
+  },  
+  {
     "url": "https://docs.whatap.io/release-notes/nodejs/nodejs-0_5_23/",
     "ver": "v0.5.23",
     "date": "2025-07-10",
