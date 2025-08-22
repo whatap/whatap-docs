@@ -7618,6 +7618,7 @@ const sidebars = {
             id: 'log/log-setting',
           },
           items: [
+            'log/log-filter-settings',
             'log/log-parser',
             'log/log-process',
           ],
