@@ -1,0 +1,28 @@
+---
+id: nodejs-0_5_25
+title: Node.js Agent v0.5.25
+toc_max_heading_level: 2
+pagination_next: release-notes/nodejs/nodejs-0_5_23
+displayed_sidebar: releaseSidebar
+---
+
+2025年 8月 22日
+
+- <Status priority='1'>New</Status> **perfx_nodejs_gc_enabled** <span class='type'>Boolean</span> 
+
+    * デフォルト値: `false`
+
+    * ガーベジコレクション(GC) パフォーマンスメトリクスの収集を有効にします。（Node.js 16.7 以上でサポート）
+
+- <Status priority='1'>New</Status> アプリケーションプロセスの終了を検知し、終了原因をエージェントログに記録します。
+
+    - **SIGTERM**: システムまたはプロセスマネージャーによる正常な終了リクエスト  
+    - **SIGINT**: ユーザーによる中断（Ctrl+C または kill コマンド）  
+    - **SIGHUP**: ターミナル切断または親プロセスの終了  
+    - **SIGUSR1/SIGUSR2**: ユーザー定義シグナル  
+    - **uncaughtException**: 未処理例外による異常終了  
+    - **unhandledRejection**: 未処理Promise拒否による終了  
+
+import DownloadNode2 from './_import_dl-nodejs-agent2.mdx';
+
+<DownloadNode2 ver="0.5.25" />
