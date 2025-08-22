@@ -1,0 +1,119 @@
+---
+id: log-filter-settings
+title: Log Filter Settings
+description: Learn how to configure log filter settings. 
+toc_max_heading_level: 3
+keywords: [ log, log monitoring, configuration, log settings, log filter settings ]
+---
+
+:::note
+
+**Permission**
+
+Only users with log edit permissions can configure these settings.
+
+:::
+
+**Log Filter Settings** allow you to store only the logs that match the filter conditions specified by the user.  
+By storing only the necessary logs, you can reduce costs. 
+
+## Add a Log Filter Setting
+
+This section explains how to add a new filter setting. When configuring log filter settings, **Filter Name, Show in Live Tail, Category, and Filter Condition** are required fields.
+
+Even logs that are not stored by the filter can still be viewed in **Live Tail** if the **Show in Live Tail** toggle is enabled.  
+
+:::caution
+
+Only one filter can be set per category.
+
+:::
+
+1. Go to **Logs > Log Settings > Log Filter Settings** tab.
+
+1. Click the **+ Add** button to create a new filter setting.
+
+1. In **Add Log Filter Setting**, enter **Filter Name, Show in Live Tail, Category, and Filter Condition**.
+
+    - **Filter Name**: A name to identify the filter.
+
+    - **Show in Live Tail**: Select whether to display in Live Tail regardless of storage.
+
+    - **Category**: The log category to which the filter is applied **(multiple selection allowed)**.
+
+    - **Filter Condition**: Conditions for logs to be stored by the filter.
+    
+    :::note
+    
+    For more details on filter conditions, see [WhaTap log search query syntax](https://docs.whatap.io/log/log-search-query).
+    
+    :::
+    
+1. Click **Add** to review and edit the filter settings in the **Preview Results** screen.
+
+1. Once confirmed, click **Apply** to save the log filter settings.
+
+### Simulation
+
+You can preview the log results based on the entered category and filter conditions before applying the log filter settings.
+
+Click the **Simulation** button to display the **Log Search** screen with the applied filter settings. 
+
+## Edit a Log Filter Setting
+
+Registered log filters can be modified by clicking the edit icon. The **Edit Log Filter Setting** screen shows the existing values, which you can change and apply as needed.
+
+:::caution
+
+When editing log filter settings, only one category can be selected.
+
+:::
+
+## Delete a Log Filter Setting
+
+Registered filters can be deleted by clicking the delete icon. After deletion, make sure to click the **Save** button.
+
+:::caution
+
+If changes are not saved, the filter will not be deleted. 
+
+:::
+
+## Import/Export Log Filter Settings as JSON
+
+Log filter settings can be imported or exported in JSON format.  
+This is useful if you want to apply the same log filter settings to another project.
+
+### Export JSON
+
+1. Click the ![Export Icon](/img/ic-json-export.svg) button at the top right of the screen.
+
+1. In the **Export JSON** window, click the **Export** button. 
+
+1. The log filter settings will be downloaded as a JSON file.
+
+### Import JSON
+
+1. Click the ![Import Icon](/img/ic-json-import.svg) button at the top right of the screen.
+
+1. Select the JSON file to import. 
+
+1. In the **Import JSON** window, click either **Add to List** or **Overwrite** to import the log filter settings.
+
+1. Click the **Save** button to apply the changes.
+
+#### Validation Rules
+
+The following validation rules are applied when saving settings: 
+
+- **type**: Only `GENERAL` is supported.
+
+- **category**: Required, supports `string` type.
+
+- **condition**
+    - **language**: Only `jsonDsl` and `lucene` are supported.
+    - **description**: Invalid filter conditions cannot be saved.
+
+- **showLiveTail**: Only `boolean` type is supported.
+
+- **name**: Required, supports `string` type.
