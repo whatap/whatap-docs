@@ -1,5 +1,74 @@
 [
   {
+    "ver": "v2.55.04",
+    "date": "2025-08-11",
+    "Lists": [
+      {
+        "ver": "v2.55.04",
+        "hash": "v25504",
+        "product": "DBX",
+        "type": "Change",
+        "desc": "<p><code class=\"Change\" type=\"0\">Change</code> Added Exec_Master_Log_Pos field to db_mysql_slave category</p>",
+        "category": "MySQL"
+      },
+      {
+        "ver": "v2.55.04",
+        "hash": "v25504",
+        "product": "DBX",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Modified collection command for master/slave in MySQL 8.4 and later</p>",
+        "category": "MySQL"
+      }
+    ]
+  },
+  {
+    "ver": "v2.55.03",
+    "date": "2025-08-08",
+    "Lists": [
+      {
+        "ver": "v2.55.03",
+        "hash": "v25503",
+        "product": "DBX",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> Added Agent Paused / Down function</p>",
+        "category": "Common"
+      },
+      {
+        "ver": "v2.55.03",
+        "hash": "v25503",
+        "product": "DBX",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Removed xos_dbip option from whatap.conf</p>",
+        "category": "Common",
+        "details": "<p>Related documentation update required: <a href='https://docs.whatap.io/mysql/agent-xos-settings#xosconf-파일-설정'>docs link</a></p>"
+      },
+      {
+        "ver": "v2.55.03",
+        "hash": "v25503",
+        "product": "DBX",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Fixed issue where plans were not collected when plan_hash_value was the same but child_number was different</p>",
+        "category": "Oracle"
+      },
+      {
+        "ver": "v2.55.03",
+        "hash": "v25503",
+        "product": "DBX",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Added child_number field to db_oracle_plan_save category</p>",
+        "category": "Oracle"
+      },
+      {
+        "ver": "v2.55.03",
+        "hash": "v25503",
+        "product": "DBX",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Fixed issue where object detail was not retrieved when object name was lowercase</p>",
+        "category": "Oracle"
+      }
+    ]
+  },
+  {
     "ver": "v2.55.02",
     "date": "2025-07-17",
     "Lists": [
