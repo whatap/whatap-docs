@@ -4816,13 +4816,13 @@ const sidebars = {
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/nodejs/nodejs-0_5_23',
+                  id: 'release-notes/nodejs/nodejs-0_5_25',
                   className: 'new',
                 },
+                'release-notes/nodejs/nodejs-0_5_23',
                 'release-notes/nodejs/nodejs-0_5_22',
                 'release-notes/nodejs/nodejs-0_5_21',
                 'release-notes/nodejs/nodejs-0_5_19',
-                'release-notes/nodejs/nodejs-0_5_16',
                 'release-notes/nodejs/nodejs-previous',
               ]
             },
@@ -4839,14 +4839,13 @@ const sidebars = {
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/python/python-1_8_9',
+                  id: 'release-notes/python/python-1_8_10',
                   className: 'new',
                 },
+                'release-notes/python/python-1_8_9',
                 'release-notes/python/python-1_8_8',
                 'release-notes/python/python-1_8_7',
                 'release-notes/python/python-1_8_6',
-                'release-notes/python/python-1_8_5',
-                'release-notes/python/python-1_8_4',
                 'release-notes/python/python-previous',
               ],
             },
