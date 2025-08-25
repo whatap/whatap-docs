@@ -1703,7 +1703,19 @@ const sidebars = {
             'db2/common-alert'
           ],
         },
-        'db2/labs'
+        {
+          type: 'category',
+          label: '실험실',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'db2/labs'
+          },
+          items: [
+            'db2/openmetrics_explorer',
+          ],
+        },
       ],
     }
   ],
@@ -1890,7 +1902,19 @@ const sidebars = {
             'sapase/user-group-display-settings',
           ],
         },
-        'sapase/labs'
+        {
+          type: 'category',
+          label: '실험실',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'sapase/labs'
+          },
+          items: [
+            'sapase/openmetrics_explorer',
+          ],
+        },
       ],
     }
   ],
@@ -2697,7 +2721,19 @@ const sidebars = {
             'oracle-pro/user-group-display-settings',
           ],
         },
-        'oracle-pro/labs'
+        {
+          type: 'category',
+          label: '실험실',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'oracle-pro/labs',
+          },
+          items: [
+            'oracle-pro/openmetrics_explorer',
+          ],
+        },
       ],
     }
   ],
@@ -2917,7 +2953,19 @@ const sidebars = {
             'mysql/user-group-display-settings',
           ],
         },
-        'mysql/labs',
+        {
+          type: 'category',
+          label: '실험실',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'mysql/labs',
+          },
+          items: [
+            'mysql/openmetrics_explorer',
+          ],
+        },
       ],
     }
   ],
@@ -3111,7 +3159,19 @@ const sidebars = {
             'mssql/common-alert'
           ],
         },
-        'mssql/labs'
+        {
+          type: 'category',
+          label: '실험실',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'mssql/labs'
+          },
+          items: [
+            'mssql/openmetrics_explorer',
+          ],
+        },
       ],
     }
   ],
@@ -3440,7 +3500,19 @@ const sidebars = {
             'tibero/common-alert'
           ],
         },
-        'tibero/labs'
+        {
+          type: 'category',
+          label: '실험실',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'tibero/labs'
+          },
+          items: [
+            'tibero/openmetrics_explorer',
+          ],
+        },
       ],
     }
   ],
@@ -3632,7 +3704,19 @@ const sidebars = {
             'cubrid/common-alert'
           ],
         },
-        'cubrid/labs'
+        {
+          type: 'category',
+          label: '실험실',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'cubrid/labs'
+          },
+          items: [
+            'cubrid/openmetrics_explorer',
+          ],
+        },
       ],
     }
   ],
@@ -3987,7 +4071,19 @@ const sidebars = {
             'altibase/common-alert'
           ],
         },
-        'altibase/labs'
+        {
+          type: 'category',
+          label: '실험실',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'altibase/labs'
+          },
+          items: [
+            'altibase/openmetrics_explorer',
+          ],
+        },
       ],
     }
   ],
@@ -4315,7 +4411,19 @@ const sidebars = {
             'redis/common-alert'
           ],
         },
-        'redis/labs'
+        {
+          type: 'category',
+          label: '실험실',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'redis/labs'
+          },
+          items: [
+            'redis/openmetrics_explorer',
+          ],
+        },
       ],
     }
   ],
@@ -4501,7 +4609,19 @@ const sidebars = {
             'mongodb/common-alert'
           ],
         },
-        'mongodb/labs'
+        {
+          type: 'category',
+          label: '실험실',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'mongodb/labs'
+          },
+          items: [
+            'mongodb/openmetrics_explorer',
+          ],
+        },
       ],
     }
   ],
