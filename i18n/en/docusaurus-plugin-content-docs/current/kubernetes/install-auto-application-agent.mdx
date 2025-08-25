@@ -45,6 +45,9 @@ spec:
                 app: hello-world               # Pod label to match for injection
             config:
               mode: default                    # Use 'default' config or reference a configMap
+            envs:
+              WHATAP_JAVA_AGENT_PATH: /whatap-agent/whatap.agent.java.jar
+              OKIND: hello
 ```
 
 ### Example: APM Configuration {#example_set_up_apm}
@@ -55,7 +58,7 @@ spec:
 
 * Currently, WhaTap APM supports only the `latest` version of the Java agent. (Support for other languages will be added in the future.)
 
-* Configuration values are provided via a `ConfigMapRef`.
+* Configuration values are provided via a `ConfigMapRef`. (The configMap must exist in the same namespace as the application.)
 
 ```yaml
 apiVersion: monitoring.whatap.com/v2alpha1
@@ -83,8 +86,6 @@ spec:
               mode: configMapRef
               configMapRef:
                 name: shop-api-config
-                namespace: backend
-
 ```
 
 ```yaml title='shop-api-config.yaml'
@@ -130,7 +131,6 @@ spec:
               mode: configMap
               configMapRef:
                 name: request-router-config
-                namespace: system
           - name: shop-api
             enabled: "true"
             language: "java"
@@ -146,8 +146,6 @@ spec:
               mode: configMapRef
               configMapRef:
                 name: shop-api-config
-                namespace: backend
-
 ```
 
 ```yaml title='shop-api-config.yaml'
