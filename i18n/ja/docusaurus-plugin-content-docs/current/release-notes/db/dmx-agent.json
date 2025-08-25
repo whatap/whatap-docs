@@ -1,5 +1,46 @@
 [
   {
+    "ver": "v1.0.5m",
+    "date": "2025-08-18",
+    "Lists": [
+      {
+        "ver": "v1.0.5m",
+        "hash": "v105m",
+        "product": "DMX",
+        "type": "Change",
+        "desc": "<p><code class=\"Change\" type=\"0\">Change</code> sqlmon の結果が複数行の場合、100件以内で全て送信</p>"
+      },
+      {
+        "ver": "v1.0.5m",
+        "hash": "v105m",
+        "product": "DMX",
+        "type": "Change",
+        "desc": "<p><code class=\"Change\" type=\"0\">Change</code> sqlmon の結果で int と float 値を認識し、idx フィールドを追加</p>"
+      },
+      {
+        "ver": "v1.0.5m",
+        "hash": "v105m",
+        "product": "DMX",
+        "type": "Change",
+        "desc": "<p><code class=\"Change\" type=\"0\">Change</code> ObjectDetail に subpartition 情報を追加し、ini_trans、max_trans、avg_space_freelist_blocks、num_freelist_blocks フィールドを削除</p>"
+      },
+      {
+        "ver": "v1.0.5m",
+        "hash": "v105m",
+        "product": "DMX",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> メモリ侵害によるエージェントの異常終了を修正</p>"
+      },
+      {
+        "ver": "v1.0.5m",
+        "hash": "v105m",
+        "product": "DMX",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> tablespace の結果単位を M bytes に変更</p>"
+      }
+    ]
+  },
+  {
     "ver": "v1.0.5g",
     "date": "2025-07-08",
     "Lists": [
