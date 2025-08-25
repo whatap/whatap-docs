@@ -48,6 +48,9 @@ spec:
                 app: hello-world               # APM 注入対象の Pod ラベル
             config:
               mode: default                    # デフォルト設定または configMap 参照可能
+            envs:
+              WHATAP_JAVA_AGENT_PATH: /whatap-agent/whatap.agent.java.jar
+              OKIND: hello
 ```
 
 ### 例題. APM設定方法 {#example_set_up_apm}
@@ -56,9 +59,9 @@ spec:
 
 - `backend`ネームスペースに存在し、`app=shop`ラベルを持つPodにJava APMを自動的に注入します。
 
-- WhaTap APMは現在、`latest` Javaバージョンのみをサポートしています。 （他の言語は今後サポート予定）
+- WhaTap APMは現在、`latest` Javaバージョンのみをサポートしています。 (他の言語は今後サポート予定)
 
-- 設定情報はConfigMapRefで渡します。
+- 設定情報はConfigMapRefで渡します。 (configMap はアプリケーションと同じネームスペースに存在する必要があります。)
 
 ```yaml
 apiVersion: monitoring.whatap.com/v2alpha1
@@ -86,8 +89,6 @@ spec:
               mode: configMapRef
               configMapRef:
                 name: shop-api-config
-                namespace: backend
-
 ```
 
 ```yaml title='shop-api-config.yaml'
@@ -133,7 +134,6 @@ spec:
               mode: configMap
               configMapRef:
                 name: request-router-config
-                namespace: system
           - name: shop-api
             enabled: "true"
             language: "java"
@@ -149,8 +149,6 @@ spec:
               mode: configMapRef
               configMapRef:
                 name: shop-api-config
-                namespace: backend
-
 ```
 
 ```yaml title='shop-api-config.yaml'
