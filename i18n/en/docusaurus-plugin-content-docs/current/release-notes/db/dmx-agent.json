@@ -1,5 +1,46 @@
 [
   {
+    "ver": "v1.0.5m",
+    "date": "2025-08-18",
+    "Lists": [
+      {
+        "ver": "v1.0.5m",
+        "hash": "v105m",
+        "product": "DMX",
+        "type": "Change",
+        "desc": "<p><code class=\"Change\" type=\"0\">Change</code> When sqlmon results contain multiple rows, send all rows within 100 entries</p>"
+      },
+      {
+        "ver": "v1.0.5m",
+        "hash": "v105m",
+        "product": "DMX",
+        "type": "Change",
+        "desc": "<p><code class=\"Change\" type=\"0\">Change</code> Recognize int and float values in sqlmon results and add idx field</p>"
+      },
+      {
+        "ver": "v1.0.5m",
+        "hash": "v105m",
+        "product": "DMX",
+        "type": "Change",
+        "desc": "<p><code class=\"Change\" type=\"0\">Change</code> Added subpartition information in ObjectDetail and removed ini_trans, max_trans, avg_space_freelist_blocks, num_freelist_blocks fields</p>"
+      },
+      {
+        "ver": "v1.0.5m",
+        "hash": "v105m",
+        "product": "DMX",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Fixed abnormal agent termination caused by memory violation</p>"
+      },
+      {
+        "ver": "v1.0.5m",
+        "hash": "v105m",
+        "product": "DMX",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Changed tablespace result unit to M bytes</p>"
+      }
+    ]
+  },
+  {
     "ver": "v1.0.5g",
     "date": "2025-07-08",
     "Lists": [

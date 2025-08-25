@@ -1,5 +1,74 @@
 [
   {
+    "ver": "v2.55.04",
+    "date": "2025-08-11",
+    "Lists": [
+      {
+        "ver": "v2.55.04",
+        "hash": "v25504",
+        "product": "DBX",
+        "type": "Change",
+        "desc": "<p><code class=\"Change\" type=\"0\">Change</code> db_mysql_slave カテゴリに Exec_Master_Log_Pos フィールドを追加</p>",
+        "category": "MySQL"
+      },
+      {
+        "ver": "v2.55.04",
+        "hash": "v25504",
+        "product": "DBX",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> MySQL 8.4 以降で master/slave 収集コマンドを変更</p>",
+        "category": "MySQL"
+      }
+    ]
+  },
+  {
+    "ver": "v2.55.03",
+    "date": "2025-08-08",
+    "Lists": [
+      {
+        "ver": "v2.55.03",
+        "hash": "v25503",
+        "product": "DBX",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> Agent Paused / Down 機能を追加</p>",
+        "category": "Common"
+      },
+      {
+        "ver": "v2.55.03",
+        "hash": "v25503",
+        "product": "DBX",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> whatap.conf から xos_dbip オプションを削除</p>",
+        "category": "Common",
+        "details": "<p>関連ドキュメントの修正が必要: <a href='https://docs.whatap.io/mysql/agent-xos-settings#xosconf-파일-설정'>docs リンク</a></p>"
+      },
+      {
+        "ver": "v2.55.03",
+        "hash": "v25503",
+        "product": "DBX",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> plan_hash_value が同一で child_number が異なる場合、plan が収集されない問題を修正</p>",
+        "category": "Oracle"
+      },
+      {
+        "ver": "v2.55.03",
+        "hash": "v25503",
+        "product": "DBX",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> db_oracle_plan_save カテゴリに child_number フィールドを追加</p>",
+        "category": "Oracle"
+      },
+      {
+        "ver": "v2.55.03",
+        "hash": "v25503",
+        "product": "DBX",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> object 名が小文字の場合に object detail が取得できない問題を修正</p>",
+        "category": "Oracle"
+      }
+    ]
+  },
+  {
     "ver": "v2.55.02",
     "date": "2025-07-17",
     "Lists": [
