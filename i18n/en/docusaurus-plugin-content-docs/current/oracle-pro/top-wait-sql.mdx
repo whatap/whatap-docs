@@ -42,3 +42,88 @@ Key execution performance metrics are displayed for each SQL item, including Ela
 - **Default (no filters selected)**: Displays the top 50 queries by Elapsed Time.
 
 - **When a class is selected**: Displays the top 50 queries by Wait Time for the selected class.
+
+## View Query Details
+
+When you select the **query** column item in the retrieved result list, the **SQL Details** window appears.  
+Click <Cmdname sid="BTN06225" className="uitext" /> **→** to move to the <Cmdname sid="statistics_sql" className="uitext" /> menu, where you can check the statistical information related to the SQL query.
+
+<ImgLang img="db-sql-details-oracle-pro.png" desc="SQL Details" />
+
+The tabs of the **SQL Details** window are as follows:
+
+* **Trend**: Analyze execution time, I/O, and wait events of a specific SQL comprehensively to quickly identify performance bottlenecks.
+
+* **Runtime Plan**: Provides execution plan and runtime information for the selected SQL query. Includes details such as execution count, average execution time, and average physical reads.
+
+* **Explain Plan**: Shows the execution plan predicted by the optimizer, including cost, operations, object names, and cardinality.
+
+* **Plan History**: Check the history of execution plans for SQL queries that have been run in the database.
+
+* **Bind Capture**: Displays the bind variable values used in executed SQL queries in the database. This allows you to confirm the actual contents of the query execution.
+
+  :::note
+
+  These are not real-time bind values, but values captured in the database (`v$sql_bind_capture`). If there are many, up to 100 entries are displayed.
+
+  :::
+
+### Trend Tab
+
+The upper chart visualizes Elapsed Time, I/O, and Wait Time trends by time range.  
+The lower statistics table shows accumulated execution statistics, Wait Class ratio, and major Wait Events at a glance.
+
+#### Elapsed Time
+
+Displays the sum of **CPU time, Wait Class time, and Idle time** during the selected period with the time selector.
+
+> Example:
+> * CPU Time: Time actually spent using CPU for SQL execution
+> * Scheduler: Time the session waited for CPU
+> * Idle: Time not executed, waiting, or idle (intuitively confirms which factor consumed the most time)
+
+#### Elapsed Time Trend
+
+Aggregates **average Elapsed Time** and execution count at 5-minute intervals and shows the trend.  
+If the period is less than 3 hours, it aggregates by 1-minute intervals.
+
+This helps quickly identify whether Elapsed Time spiked at a certain time or response time increased compared to execution counts, making it useful to pinpoint performance degradation timing.
+
+#### I/O Trend
+
+Shows **Logical Reads** and **Physical Reads** during query execution in 5-minute intervals.  
+If the period is less than 3 hours, it displays by 1-minute intervals.
+
+* Logical Reads: Number of reads from buffer cache
+* Physical Reads: Number of reads directly from disk. Useful for comparing cache efficiency and I/O load to identify bottlenecks
+
+#### Wait Time Trend
+
+Shows **Wait Event elapsed time** during query execution by time range.
+
+If Wait Time spikes at a certain moment, it indicates DB resource contention or I/O latency. You can track which events (locks, I/O, parallel processing, etc.) caused the bottleneck.
+
+#### Total Statistics
+
+Displays **accumulated SQL execution statistics** for the selected range.
+
+> Example:
+> * sorts(rows): Total number of sorted rows
+> * session logical reads: Session logical read count
+> * table scan blocks gotten: Number of blocks read during table scans
+> * elapsed_time: Total elapsed time  
+> Confirms aggregated data of how SQL execution used resources.
+
+#### Total Wait Classes
+
+Shows the sum of **Wait Time** that occurred during SQL execution, grouped by Wait Class.  
+The more time consumed by a specific Wait Class, the more likely that area is the bottleneck.
+
+> Example: Idle, Scheduler, User I/O, Concurrency
+
+#### Top Wait Events
+
+Displays the **top detailed Wait Events** during the selected range.  
+Provides a more fine-grained view than Wait Classes to see which events most impacted performance.
+
+> Example: PX Deq: Execution Msg, resmgr:cpu quantum, direct path read, etc.

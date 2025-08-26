@@ -72,13 +72,22 @@ import Dbv2mimactivesessionnote from "../common-items/_db-v2-mim-activesession-n
 
 ### クエリの詳細を見る {#query-details}
 
-現在実行中のセッションまたは過去のセッションのSQLクエリの情報を確認するためには<UI>query_text</UI>のカラム項目を確認します。 クエリー文とSQL Planを詳細に確認できる<Cmdname sid="TTL06224" className="uitext" />画面が表示されます。
+検索結果リストで query カラム項目を選択すると **SQL 詳細** ウィンドウが表示されます。  
+<Cmdname sid="BTN06225" className="uitext" /> **→** ボタンをクリックすると、該当 SQL クエリに関連する統計情報を確認できる <Cmdname sid="statistics_sql" className="uitext" /> メニューに移動します。
 
-<ImgLang img="db-sql-details-new-oracle-pro.png" desc="SQL 상세" />
+<ImgLang img="db-sql-details-oracle-pro.png" desc="SQL 詳細" />
+
+**SQL 詳細** ウィンドウのタブは以下の通りです。
+
+* **Trend**: 特定 SQL の実行時間、I/O、待機イベントを総合的に分析し、パフォーマンスのボトルネックを迅速に確認できます。
+* **Runtime Plan**: 選択した SQL クエリの実行計画とランタイム情報を表示します。実行回数、平均実行時間、平均物理読み取りなど詳細情報を提供します。
+* **Explain Plan**: オプティマイザが予測した実行計画を表示します。コスト、操作、オブジェクト名、カーディナリティなどの情報を提供します。
+* **Plan History**: データベースで実行された SQL クエリの実行計画履歴を確認できます。
+* **Bind Capture**: データベースで実行された SQL クエリに使用されたバインド変数の値を確認できます。これによりクエリ実行の実際の内容を把握できます。
 
 :::note
 
-- Planツリーで![チューニングアイコン](/img/ic-chat-red.svg)ボタンを選択すると、チューニングガイドを確認できます。 チューニングガイドは、Plan Treeノードが`TABLE ACCESS (FULL)` / `INDEX (SKIP SCAN)`である場合とノードに`CARTESIAN`キーワードが含まれている場合、確認できます。
+Planツリーで![チューニングアイコン](/img/ic-chat-red.svg)ボタンを選択すると、チューニングガイドを確認できます。 チューニングガイドは、Plan Treeノードが`TABLE ACCESS (FULL)` / `INDEX (SKIP SCAN)`である場合とノードに`CARTESIAN`キーワードが含まれている場合、確認できます。
 
 :::
 
