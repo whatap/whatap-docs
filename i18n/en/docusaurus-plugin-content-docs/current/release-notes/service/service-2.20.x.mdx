@@ -1,0 +1,227 @@
+---
+id: service-2_20_x
+title: Service 2.20.X
+toc_max_heading_level: 2
+pagination_next: release-notes/service/service-2_19_x
+displayed_sidebar: releaseSidebar
+---
+
+## Service 2.20.0
+
+August 27, 2025
+
+<div class='indentTab'>
+
+### `Common`
+
+- <Status priority='1'>Feature</Status> <Cmdname sid="MNU07360" className="uitext" /> &gt; **Account Information** Added UTC offset modification feature
+
+- <Status priority='1'>Feature</Status> <Cmdname sid="MNU07360" className="uitext" /> Added access control menu and IP access control per account
+
+- <Status priority='1'>Feature</Status> <Cmdname sid="MNU07360" className="uitext" /> Added new usage metrics such as GPU, GPU MIG, Open Metric High, Open Metric Low to billing, subscription, and metering summary
+
+- <Status priority='1'>Feature</Status> <Cmdname sid="side_flexboard" className="uitext" /> &gt; **Filter** Added direct input option for metrics filter and tag selection
+
+- <Status priority='1'>Feature</Status> <Cmdname sid="side_flexboard" className="uitext" /> Added daily comparison widget
+
+---
+
+### `Application`
+
+- <Status priority='1'>Feature</Status> <Cmdname sid="dashboard" className="uitext" /> &gt; <Cmdname sid="application_dashboard" className="uitext" /> Added Active HTTPC and Active DB widgets
+
+- <Status priority='1'>Feature</Status> <Cmdname sid="side_statistics" className="uitext" /> &gt; <Cmdname sid="side_tx" className="uitext" /> Added topology open button
+
+- <Status priority='1'>Feature</Status> <Cmdname sid="dashboard" className="uitext" /> &gt; **Business Dashboard** Added Details and Topology tabs
+
+- <Status priority='1'>Feature</Status> <Cmdname sid="dashboard" className="uitext" /> &gt; <Cmdname sid="application_dashboard" className="uitext" /> Added Event widget
+
+    - Visualizes events by level and distinguishes events by agent
+
+- <Status priority='1'>Changed</Status> <Cmdname sid="side_appTopology" className="uitext" /> <code className="Beta">Beta</code> UI improvements
+
+    - Added edge label gauge representation and response time threshold color representation
+
+    - Specific node (details)
+
+        - Added TX trace column settings and filters for All/Active/Multi-transaction/Error
+
+        - Added pop-out showing only nodes related to the selected node
+
+- <Status priority='1'>Changed</Status> Unified naming related to `app_context_stat` (Context → Business)
+
+- <Status priority='0'>Fixed</Status> <Cmdname sid="dashboard" className="uitext" /> &gt; **Business Dashboard** Fixed issue where alias changes were not applied after deleting all aliases and saving
+
+#### Java, Node.js, PHP
+
+- <Status priority='0'>Fixed</Status> <Cmdname sid="side_log" className="uitext" /> &gt; <Cmdname sid="side_logSetting" className="uitext" /> Fixed Japanese translation in “Start Log Monitoring” tab, “1. Verify Agent Settings” item
+
+#### .Net, Python
+
+- <Status priority='1'>Changed</Status> Updated supported version and OS information
+
+#### Java
+
+- <Status priority='1'>Changed</Status> Improved **Agent Installation** page
+
+---
+
+### `Server`
+
+- <Status priority='1'>Feature</Status> **GPU Inventory** Added keyword search filter
+
+- <Status priority='1'>Feature</Status> **GPU Performance Summary** Added tooltips for field descriptions in column settings
+
+- <Status priority='1'>Feature</Status> <Cmdname sid="side_serverDetail" className="uitext" /> Added search input field to server list
+
+- <Status priority='1'>Feature</Status> <Cmdname sid="side_dashboard" className="uitext" /> Enabled auto-adjust widget size by browser width by default and added auto-adjust widget height switch
+
+- <Status priority='1'>Changed</Status>  **GPU Performance Summary** Changed GPU Status query range from 5 minutes to 1 minute
+
+- <Status priority='1'>Changed</Status> **GPU Performance Summary** Changed `Performance_State` values to display as P0~P15
+
+- <Status priority='1'>Changed</Status> **GPU Performance Summary** &gt; <Cmdname sid="compare" className="uitext" /> panel 
+
+    - Automatically converts units for bytes/s charts
+
+    - Fixed Y-axis range for `Performance_State` chart to P0~P15
+
+- <Status priority='1'>Changed</Status> Moved **GPU Inventory** and **GPU Performance Summary** under **GPU** group in server list
+
+- <Status priority='1'>Changed</Status> **Event v2** Added validation when adding metric rules and error message on validation failure
+
+- <Status priority='1'>Changed</Status> Updated minimum agent version for **GPU Inventory** and **GPU Performance Summary** from 2.8.9 to 2.9.2
+
+- <Status priority='0'>Fixed</Status>  **Server List** Fixed issue where items with oid were not selectable in keyword filter search
+
+- <Status priority='0'>Fixed</Status> <Cmdname sid="side_serverDetail" className="uitext" /> Fixed issue where server name did not update immediately when hovering after page load
+
+- <Status priority='0'>Fixed</Status> <Cmdname sid="side_serverMetricsExplorer" className="uitext" /> Fixed legend label format for by GPU Process to `process_name, pid, (process_type) - index(uuid)`
+
+- <Status priority='0'>Fixed</Status> <Cmdname sid="side_serverInventory" className="uitext" /> Fixed issue where new agent fields were not displayed in table header
+
+- <Status priority='0'>Fixed</Status> <Cmdname sid="side_serverDetail" className="uitext" /> Fixed issue where default server was selected when closing chart detail drawer
+
+- <Status priority='0'>Fixed</Status> **Server List** Fixed issue where server status was not updated after full refresh
+
+- <Status priority='0'>Fixed</Status> **GPU Performance Summary** &gt; <Cmdname sid="compare" className="uitext" /> panel 
+
+    - Fixed y-axis max value not exceeding 100% for % charts
+
+    - Fixed issue where empty parentheses appeared in chart titles with no units
+
+---
+
+### `Kubernetes`
+
+- <Status priority='1'>Feature</Status> Added **GPU Trend** menu
+
+---
+
+### `Database`
+
+#### Common
+
+- <Status priority='1'>Feature</Status> Improved single instance selector for database products
+
+- <Status priority='1'>Feature</Status> <Cmdname sid="side_flexboard" className="uitext" /> Added Open MX widget
+
+- <Status priority='1'>Feature</Status> <Cmdname sid="side_flexboard" className="uitext" /> Added query text limit option for SQL Elapse Map widget
+
+- <Status priority='1'>Feature</Status> <Cmdname sid="side_lab" className="uitext" /> &gt; **Open Metric Explorer** added
+
+- <Status priority='1'>Feature</Status> <Cmdname sid="side_flexboard" className="uitext" /> **Instance Map** widget available
+
+- <Status priority='1'>Feature</Status> **Instance Map** Added role icons to instance icons
+
+- <Status priority='1'>Feature</Status> **Instance Map** &gt; **Instance Overview** Added master/slave information
+
+- <Status priority='1'>Changed</Status> <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_instanceList" className="uitext" />, <Cmdname sid="side_dbMonitoring" className="uitext" /> Changed instance status colors to sync with active events
+
+- <Status priority='1'>Changed</Status> <Cmdname sid="side_management" className="uitext" /> &gt; <Cmdname sid="side_dbAgents" className="uitext" /> Updated CSV download header and data format
+
+- <Status priority='1'>Changed</Status> <Cmdname sid="side_dbCloudSetting" className="uitext" /> Removed menu and changed to "Serverless Agent Settings" in sitemap
+
+- <Status priority='1'>Changed</Status> <Cmdname sid="side_logSetting" className="uitext" /> Updated guidance text (excluding Tibero, Altibase)
+
+- <Status priority='1'>Changed</Status> **DB** <Cmdname sid="agent_installation" className="uitext" /> 8. Added example yaml log for Cloud Agent
+
+#### Altibase, Cubrid, IBM DB2, MongoDB, Redis, SAP ASE, SQL Server
+
+- <Status priority='1'>Feature</Status> Supported **Instance Map**
+
+#### MySQL V2, Oracle V2, Oracle Pro, PostgreSQL
+
+- <Status priority='0'>Fixed</Status> **Top SQL** Fixed unclickable select box in vertical filter popout
+
+#### CUBRID, MySQL, PostgreSQL
+
+- <Status priority='1'>Changed</Status> <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_multiInstance" className="uitext" /> Changed Slow Query widget drawer table view
+
+#### Oracle V2, Oracle Pro, PostgreSQL
+
+- <Status priority='0'>Fixed</Status> <Cmdname sid="side_dbWaitAnalysis" className="uitext" /> Fixed tooltip not clearing when reloading pie chart
+
+#### MySQL, PostgreSQL
+
+- <Status priority='1'>Changed</Status> <Cmdname sid="side_slowQueryLog" className="uitext" /> Updated guidance text
+
+#### Oracle V2, Oracle Pro
+
+- <Status priority='0'>Fixed</Status> Fixed issue where lock tree `serial#` field did not appear in APM-linked DB details
+
+- <Status priority='1'>Changed</Status> **SQL Detail** popup design improved for plan tuning guide
+
+#### DB2 
+
+- <Status priority='1'>Feature</Status> <Cmdname sid="side_analysis" className="uitext" /> &gt; <Cmdname sid="side_dbTopSqlComparison" className="uitext" /> Added
+
+- <Status priority='1'>Feature</Status> Added plan view feature in **SQL Detail**
+
+- <Status priority='1'>Feature</Status> <Cmdname sid="side_dbScriptManager" className="uitext" /> Added
+
+- <Status priority='1'>Feature</Status> <Cmdname sid="side_reportStat" className="uitext" /> &gt; <Cmdname sid="side_tableSpace" className="uitext" /> Added table size and object information view
+
+- <Status priority='1'>Feature</Status> <Cmdname sid="active_sessions" className="uitext" /> Added session detail popup on row click
+
+#### Oracle V2
+
+- <Status priority='1'>Feature</Status> **SQL Detail** popup shows plan tuning guide for specific keywords
+
+- <Status priority='0'>Fixed</Status> Fixed issue where active sessions were not displayed in multi-DB environment
+
+#### Oracle Pro
+
+- <Status priority='1'>Feature</Status> <Cmdname sid="TTL06224" className="uitext" /> Added Trend tab for overview of total execution trends
+
+- <Status priority='1'>Feature</Status> **SQL List** Added filter options aligned with SQL statistics filters
+
+- <Status priority='0'>Fixed</Status> <Cmdname sid="side_dbWaitAnalysis" className="uitext" /> Fixed chart legends to auto-adjust by screen size (removed horizontal scroll)
+
+---
+
+### `Cloud`
+
+- <Status priority='1'>Changed</Status> Removed **Metrics** &gt; **Metrics Cube** menu
+
+---
+
+### `Browser` 
+
+- <Status priority='1'>Feature</Status> **Browser User Action Heatmap** Added Performance tab
+
+- <Status priority='1'>Feature</Status> **Mobile Screen Heatmap** Added Performance tab
+
+---
+
+### `Mobile` 
+
+- <Status priority='1'>New</Status> Released **Mobile Monitoring**
+
+---
+
+### `Log`
+
+- <Status priority='1'>Feature</Status> <Cmdname sid="side_management" className="uitext" /> &gt; **Log Filter Settings** added
+
+</div>  
