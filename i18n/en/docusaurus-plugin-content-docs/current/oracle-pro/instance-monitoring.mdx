@@ -104,9 +104,19 @@ For more information about the <Cmdname sid="session_detail" className="uitext" 
 
 ### See query details {#query-details}
 
-To check the SQL query information of the current session or past sessions, check the <UI>query_text</UI> column. The <Cmdname sid="TTL06224" className="uitext" /> window appears to display the query statement and SQL plan.
+To check the SQL query information of the current or past session, refer to the <UI>SQL_Text</UI> column item.  
+The <Cmdname sid="TTL06224" className="uitext" /> window will appear, showing the SQL query and plan information.  
+By clicking the <Cmdname sid="BTN06225" className="uitext" /> **→** button, you can move to the <Cmdname sid="statistics_sql" className="uitext" /> menu to check the statistical information related to the SQL query.
 
-<ImgLang img="db-sql-details-new-oracle-pro.png" desc="SQL 상세" />
+<ImgLang img="db-sql-details-oracle-pro.png" desc="SQL Details" />
+
+The tabs in the **SQL Details** window are as follows:
+
+* **Trend**: Provides a comprehensive analysis of the execution time, I/O, and wait events of a specific SQL, enabling quick identification of performance bottlenecks.
+* **Runtime Plan**: Displays the execution plan and runtime information of the selected SQL query, including execution count, average execution time, and average physical reads.
+* **Explain Plan**: Shows the execution plan predicted by the optimizer, including cost, operation, object name, and cardinality.
+* **Plan History**: Displays the execution plan history of SQL queries executed in the database.
+* **Bind Capture**: Shows the values of bind variables used in SQL queries executed in the database, allowing you to understand the actual content of query execution.
 
 :::note
 

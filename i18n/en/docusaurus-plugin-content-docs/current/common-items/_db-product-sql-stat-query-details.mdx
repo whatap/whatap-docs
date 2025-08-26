@@ -1,46 +1,46 @@
-- <Cmdname sid="BTN06225" className="uitext" />: You can go to the <Cmdname sid="statistics_sql" className="uitext" /> menu where you can check statistical information related to the SQL query statement.
+Click the <Cmdname sid="BTN06225" className="uitext" /> **→** button to navigate to the <Cmdname sid="statistics_sql" className="uitext" /> menu, where you can view the statistical information related to the SQL query.
 
 <InDoc product='postgresql,mysql,altibase,cubrid,mssql,mssql-v1,db2,sapase'>
 
-- **_Default Bind_**: You can bind the part set as a variable in the query sentence to the default value.
+- **Default Bind**: You can bind the part set as a variable in the query sentence to the default value.
 
-- **_Reset Bind_**: You can release the bound default value and check the variable.
+- **Reset Bind**: You can release the bound default value and check the variable.
 
-- **_Formatting_**: You can improve readability by applying indentation and formatting to a SQL query statement.
+- **Formatting**: You can improve readability by applying indentation and formatting to a SQL query statement.
 
 </InDoc>
 
 <InDoc product="altibase,cubrid,mssql,mssql-v1">
 
-- **_Plan_**: To check plan information, enter **DB Name**, **User Name**, and **Password**, and then select ![Search icon](/img/ico-btn-search.png).
+- **Plan**: To check plan information, enter **DB Name**, **User Name**, and **Password**, and then select ![Search icon](/img/ico-btn-search.png).
 
 </InDoc>
 
 <InDoc product='postgresql'>
 
-- **_Plan_**: To check plan information, enter **DB Name**, **User Name**, and **Password**, and then select ![Search icon](/img/ico-btn-search.png).
+- **Plan**: To check plan information, enter **DB Name**, **User Name**, and **Password**, and then select ![Search icon](/img/ico-btn-search.png).
 
-  - **_Text_**: You can check plan information in text format.
+  - **Text**: You can check plan information in text format.
 
-  - **_JSON_**: By viewing the plan information in Json format, you can quickly find the points where bottlenecks occur.
+  - **JSON**: By viewing the plan information in Json format, you can quickly find the points where bottlenecks occur.
 
   :::note
 
-  The function to view plan information in **_JSON_** format is supported only in DBX agent 1.6.12 or later.
+  The function to view plan information in **JSON** format is supported only in DBX agent 1.6.12 or later.
 
   :::
 
 </InDoc>
 
-<InDoc product='oracle-pro,oracle'>
+<InDoc product='oracle'>
 
-- **_Runtime Plan_**: It provides the execution plan and runtime information for a selected SQL query. It provides the information details such as execution count, average execution time, and average physical reads.
+- **Runtime Plan**: It provides the execution plan and runtime information for a selected SQL query. It provides the information details such as execution count, average execution time, and average physical reads.
 
-- **_Explain Plan_**: It displays the execution plan predicted by the optimizer. It provides information such as cost, job, object name, and cardinality.
+- **Explain Plan**: It displays the execution plan predicted by the optimizer. It provides information such as cost, job, object name, and cardinality.
 
-- **_Plan History_**: You can check the history of the execution plans of the SQL queries executed in the database.
+- **Plan History**: You can check the history of the execution plans of the SQL queries executed in the database.
 
-- **_Bind Capture_**: You can see the values ​​of the bind variables used in SQL queries executed in the database. This allows you to see actual content of query executions.
+- **Bind Capture**: You can see the values ​​of the bind variables used in SQL queries executed in the database. This allows you to see actual content of query executions.
 
   :::note
 
@@ -50,17 +50,91 @@
 
 </InDoc>
 
-<InDoc product='mysql'>
+<InDoc product='oracle-pro'>
 
-- **_Plan_**: To check plan information, enter **DB Name**, **User Name**, and **Password**, and then select ![Search icon](/img/ico-btn-search.png).
-
-  - **_Text_**: You can check plan information in text format.
-
-  - **_JSON_**: By viewing the plan information in Json format, you can quickly find the points where bottlenecks occur.
+* **Trend**: Provides a comprehensive analysis of the execution time, I/O, and wait events of a specific SQL to quickly identify performance bottlenecks.  
+* **Runtime Plan**: Provides the execution plan and runtime information of the selected SQL query, including execution count, average execution time, and average physical reads.  
+* **Explain Plan**: Displays the execution plan predicted by the optimizer, showing cost, operations, object names, cardinality, and more.  
+* **Plan History**: Allows you to review the execution plan history of SQL queries executed in the database.  
+* **Bind Capture**: Displays the values of bind variables used in SQL queries executed in the database, allowing you to check the actual query execution contents.  
 
   :::note
 
-  The function to view plan information in **_JSON_** format is supported only in DBX agent 1.6.15 or later.
+  These are not real-time bind values but those captured in the database (`v$sql_bind_capture`). Up to 100 entries are displayed if there are many.  
+
+  :::
+
+#### Trend Tab
+
+The top chart visualizes the trends of Elapsed Time, I/O, and Wait Time over time. The bottom statistics table provides a side-by-side comparison of cumulative execution statistics, Wait Class ratios, and major Wait Events.  
+
+##### Elapsed Time
+
+Displays the total of **CPU time, Wait Class time, and Idle time** for the selected interval.  
+
+> Example:  
+> * CPU Time: Time actually spent using the CPU for SQL execution  
+> * Scheduler: Time the session waited for CPU  
+> * Idle: Time spent idle or waiting without execution (quickly see which factor consumed the most time)  
+
+##### Elapsed Time Trend
+
+Shows the trend of **average Elapsed Time** and Execution Count aggregated in 5-minute intervals (1-minute intervals if under 3 hours).  
+
+This helps quickly identify performance degradation by checking if Elapsed Time spiked or if response time increased compared to execution count.  
+
+##### I/O Trend
+
+Displays **Logical Reads** and **Physical Reads** during query execution in 5-minute intervals (1-minute intervals if under 3 hours).  
+
+* Logical Reads: Number of times data was read from the buffer cache  
+* Physical Reads: Number of times data was read directly from disk, allowing you to assess cache efficiency and I/O bottlenecks  
+
+##### Wait Time Trend
+
+Displays the **Wait Event times** during query execution by time interval.  
+
+If Wait Time spikes at a certain point, it indicates DB resource contention or I/O delays. You can trace which events (lock, I/O, parallelism, etc.) caused the bottleneck.  
+
+##### Total Statistics
+
+Shows **cumulative SQL execution statistics** for the selected interval.  
+
+> Example:  
+> * sorts(rows): Total number of sorted rows  
+> * session logical reads: Number of session logical reads  
+> * table scan blocks gotten: Number of blocks read during table scans  
+> * elapsed_time: Total elapsed time  
+> → Provides aggregated data on how SQL execution used resources  
+
+##### Total Wait Classes
+
+Displays the total **Wait Time** aggregated by Wait Class during SQL execution.  
+The higher the time for a particular Wait Class, the more likely it is the bottleneck.  
+
+> Example: Idle, Scheduler, User I/O, Concurrency, etc.  
+
+##### Top Wait Events
+
+Shows the **top detailed Wait Events** that occurred during the selected interval.  
+Provides more fine-grained detail than Wait Classes to identify which events most impacted performance.  
+
+> Example: PX Deq: Execution Msg, resmgr:cpu quantum, direct path read, etc.  
+
+</InDoc>
+
+
+<InDoc product='mysql'>
+
+- **Plan**: To check plan information, enter **DB Name**, **User Name**, and **Password**, and then select ![Search icon](/img/ico-btn-search.png).
+
+  - **Text**: You can check plan information in text format.
+
+  - **JSON**: By viewing the plan information in Json format, you can quickly find the points where bottlenecks occur.
+
+  :::note
+
+  The function to view plan information in **JSON** format is supported only in DBX agent 1.6.15 or later.
 
   :::
 
@@ -70,7 +144,7 @@
 
 :::tip
 
-If you select a table or index while viewing the plan information in **_JSON_** format, the **_Object detail_** window appears where you can see the configurations for **columns** and **index** items in the table.
+If you select a table or index while viewing the plan information in **JSON** format, the **Object detail** window appears where you can see the configurations for **columns** and **index** items in the table.
 
 <ImgLang img='db-sql-objectdetail-pg.png' desc='Object detail' />
 

@@ -42,3 +42,88 @@ Wait Event リストで **Wait Event** を選択すると、**SQL List** フィ�
 - **デフォルト（フィルター未選択）**: Elapsed Time が最も高い上位50件のクエリを表示
 
 - **クラス選択時**: 選択したクラスに対して Wait Time が最も高い上位50件のクエリを表示
+
+## 詳細クエリの表示
+
+取得した結果リストで **query** 列を選択すると **SQL詳細** ウィンドウが表示されます。  
+<Cmdname sid="BTN06225" className="uitext" /> **→** ボタンをクリックすると、該当SQLクエリに関連する統計情報を確認できる <Cmdname sid="statistics_sql" className="uitext" /> メニューに移動します。
+
+<ImgLang img="db-sql-details-oracle-pro.png" desc="SQL 詳細" />
+
+**SQL詳細** ウィンドウのタブは次のとおりです。
+
+* **Trend**: 特定SQLの実行時間、I/O、待機イベントを総合的に分析し、パフォーマンスボトルネックを素早く把握できます。
+
+* **Runtime Plan**: 選択したSQLクエリの実行計画とランタイム情報を提供します。実行回数、平均実行時間、平均物理読み取り数などの詳細情報を確認できます。
+
+* **Explain Plan**: オプティマイザが予測した実行計画を表示します。コスト、処理内容、オブジェクト名、カーディナリティなどの情報を提供します。
+
+* **Plan History**: データベースで実行されたSQLクエリの実行計画履歴を確認できます。
+
+* **Bind Capture**: データベースで実行されたSQLクエリに使用されたバインド変数の値を確認できます。これにより、実際に実行されたクエリの内容を把握できます。
+
+  :::note
+
+  リアルタイムのバインド値ではなく、データベースにキャプチャされた値（`v$sql_bind_capture`）です。件数が多い場合は最大100件まで表示されます。
+
+  :::
+
+### Trend タブ
+
+上部チャートで時間帯ごとの Elapsed Time、I/O、Wait Time の推移を可視化します。  
+下部統計テーブルでは累積実行統計、Wait Class比率、主要Wait Eventを一目で比較できます。
+
+#### Elapsed Time
+
+タイムセレクタで選択された区間の **CPU使用時間、Wait Class所要時間、Idle時間** を合算して表示します。
+
+> 例:
+> * CPU Time: SQL実行で実際にCPUを使用した時間
+> * Scheduler: セッションがCPUを待機していた時間
+> * Idle: 実行されず待機またはアイドル状態の時間（どの項目に最も時間が費やされたか直感的に確認可能）
+
+#### Elapsed Time Trend
+
+時間帯ごとの **平均Elapsed Time** と実行回数（Execution Count）を5分単位で集計し、推移を表示します。  
+3時間未満の場合は1分単位で集計されます。
+
+特定の時点でElapsed Timeが急増したか、実行回数に比べ応答時間が増加したかを確認でき、性能低下の発生時点を素早く把握するのに役立ちます。
+
+#### I/O Trend
+
+クエリ実行中に発生した **Logical Reads** と **Physical Reads** を5分単位で表示します。  
+3時間未満の場合は1分単位で表示します。
+
+* Logical Reads: バッファキャッシュからデータを読み取った回数
+* Physical Reads: ディスクから直接データを読み取った回数。キャッシュ効率やI/O負荷を比較してボトルネックを把握可能
+
+#### Wait Time Trend
+
+クエリ実行中に発生した **Wait Event所要時間** を時間帯別に表示します。
+
+特定の時点でWait Timeが急上昇した場合、DBリソース競合やI/O遅延が発生していることを意味します。どのイベント（ロック、I/O、並列処理など）がボトルネックを引き起こしたのかを追跡できます。
+
+#### Total Statistics
+
+選択区間中の **SQL実行累積統計** を表示します。 
+
+> 例:
+> * sorts(rows): ソートされた総行数
+> * session logical reads: セッション論理読み取り回数
+> * table scan blocks gotten: テーブルスキャン時に読み取ったブロック数
+> * elapsed_time: 総所要時間  
+> SQL実行がリソースをどのように使用したか集計データを確認できます。
+
+#### Total Wait Classes
+
+SQL実行中に発生した **待機時間(Wait Time)** をWait Class単位で合算した値です。  
+Wait Classごとの所要時間が多いほど、その領域がボトルネックである可能性が高いです。
+
+> 例: Idle, Scheduler, User I/O, Concurrency など
+
+#### Top Wait Events
+
+選択区間で発生した **詳細Wait Eventの上位リスト** を表示します。  
+Wait Classよりも詳細に、どのイベントがパフォーマンスに最も大きな影響を与えたかを確認できます。
+
+> 例: PX Deq: Execution Msg, resmgr:cpu quantum, direct path read など
