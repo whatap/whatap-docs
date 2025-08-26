@@ -1,4 +1,4 @@
-- <Cmdname sid="BTN06225" className="uitext" />: 該当SQLクエリ文に関する統計情報が確認できる<Cmdname sid="statistics_sql" className="uitext" />メニューへ移動できます。
+<Cmdname sid="BTN06225" className="uitext" /> **→** ボタンをクリックすると、該当SQLクエリに関連する統計情報を確認できる <Cmdname sid="statistics_sql" className="uitext" /> メニューに移動します。
 
 <InDoc product='postgresql,mysql,altibase,cubrid,mssql,mssql-v1,db2,sapase'>
 
@@ -32,7 +32,7 @@
 
 </InDoc>
 
-<InDoc product='oracle-pro,oracle'>
+<InDoc product='oracle'>
 
 - **Runtime Plan**: 選択されたSQLクエリの実行計画とランタイム情報を提供します。 実行回数、平均実行時間、平均物理的読み取りなどの詳細を提供します。
 
@@ -49,6 +49,80 @@
   :::
 
 </InDoc>
+
+<InDoc product='oracle-pro'>
+
+* **Trend**: 特定のSQLの実行時間、I/O、待機イベントを総合的に分析し、性能ボトルネックを迅速に確認できます。  
+* **Runtime Plan**: 選択したSQLクエリの実行計画とランタイム情報を提供します。実行回数、平均実行時間、平均物理読み取りなどの詳細情報を確認できます。  
+* **Explain Plan**: オプティマイザが予測した実行計画を表示します。コスト、操作、オブジェクト名、カーディナリティなどの情報を提供します。  
+* **Plan History**: データベースで実行されたSQLクエリの実行計画履歴を確認できます。  
+* **Bind Capture**: データベースで実行されたSQLクエリに使用されたバインド変数の値を確認できます。これによりクエリ実行の実際の内容を確認できます。  
+
+  :::note
+
+  実際のリアルタイムのバインド値ではなく、データベースにキャプチャされた値(`v$sql_bind_capture`)です。件数が多い場合は100件まで表示されます。  
+
+  :::
+
+#### Trend タブ
+
+上部のチャートでは時間帯ごとの Elapsed Time、I/O、Wait Time の推移を視覚化します。下部の統計テーブルでは累積実行統計、Wait Class 比率、主要な Wait Event を一目で比較できます。
+
+##### Elapsed Time
+
+タイムセレクタで選択した区間の **CPU使用時間、Wait Class時間、Idle時間** などを合算して表示します。  
+
+> 例:  
+> * CPU Time: SQL実行に実際にCPUを使用した時間  
+> * Scheduler: セッションがCPUを待機していた時間  
+> * Idle: 実行されずに待機またはアイドル状態にあった時間（どの項目が最も時間を消費したかを直感的に確認可能）
+
+##### Elapsed Time Trend
+
+時間ごとに **平均 Elapsed Time** と実行回数(Execution Count)を5分単位で集計して推移を表示します。3時間未満なら1分単位で表示します。  
+
+特定の時点でElapsed Timeが急増したか、実行回数に比べ応答時間が増加したかを確認でき、性能劣化のタイミングを迅速に把握できます。  
+
+##### I/O Trend
+
+クエリ実行中に発生した **Logical Reads** と **Physical Reads** を5分単位で表示します。3時間未満なら1分単位で表示します。  
+
+* Logical Reads: バッファキャッシュからデータを読み込んだ回数  
+* Physical Reads: ディスクから直接データを読み込んだ回数で、キャッシュ効率やI/O負荷を比較して性能ボトルネックを特定可能  
+
+##### Wait Time Trend
+
+クエリ実行中に発生した **Wait Event時間** を時間ごとに表示します。  
+
+特定の時点でWait Timeが急増していれば、DBリソース競合やI/O遅延が発生していることを意味します。どのイベント（ロック、I/O、並列処理など）がボトルネックを引き起こしたかを追跡できます。  
+
+##### Total Statistics
+
+選択区間中の **SQL実行累積統計** を表示します。  
+
+> 例:  
+> * sorts(rows): ソートされた総行数  
+> * session logical reads: セッション論理読み取り回数  
+> * table scan blocks gotten: テーブルスキャン時に読み込んだブロック数  
+> * elapsed_time: 総経過時間  
+> → SQL実行がリソースをどのように使用したかを集計データで確認可能  
+
+##### Total Wait Classes
+
+SQL実行中に発生した **待機時間(Wait Time)** を Wait Class 単位で合算した値です。  
+Wait Classごとの時間が多いほど、その領域がボトルネックである可能性が高まります。  
+
+> 例: Idle, Scheduler, User I/O, Concurrency など  
+
+##### Top Wait Events
+
+選択区間で発生した **詳細な Wait Event の上位リスト** を表示します。  
+Wait Classより細かく、どのイベントが性能に最も影響を与えたかを確認できます。  
+
+> 例: PX Deq: Execution Msg, resmgr:cpu quantum, direct path read など  
+
+</InDoc>
+
 
 <InDoc product='mysql'>
 

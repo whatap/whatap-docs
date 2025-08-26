@@ -78,15 +78,22 @@ For more information about the <Cmdname sid="session_detail" className="uitext" 
 
 ### See query details {#query-details}
 
-To check the SQL query information of the current session or past sessions, check the <UI>query_text</UI> column. The <Cmdname sid="TTL06224" className="uitext" /> window appears to display the query statement and SQL plan.
+When you select the query column item in the result list, the **SQL Details** window appears.  
+Click the <Cmdname sid="BTN06225" className="uitext" /> **→** button to move to the <Cmdname sid="statistics_sql" className="uitext" /> menu, where you can check statistical information related to the SQL query.
 
-<ImgLang img="db-sql-details-new-oracle-pro.png" desc="SQL 상세" />
+<ImgLang img="db-sql-details-oracle-pro.png" desc="SQL Details" />
+
+The tabs in the **SQL Details** window are as follows:
+
+* **Trend**: Provides a comprehensive analysis of the execution time, I/O, and wait events of a specific SQL, allowing quick identification of performance bottlenecks.
+* **Runtime Plan**: Displays the execution plan and runtime information of the selected SQL query, including execution count, average execution time, and average physical reads.
+* **Explain Plan**: Shows the execution plan predicted by the optimizer, including cost, operations, object names, and cardinality.
+* **Plan History**: Displays the history of execution plans for SQL queries executed in the database.
+* **Bind Capture**: Shows the values of bind variables used in SQL queries executed in the database, helping you understand the actual execution content of the query.
 
 :::note
 
-- For more information about the <Cmdname sid="TTL06224" className="uitext" /> window.
-
-- You can see the tuning guide after selecting the ![Tuning icon](/img/ic-chat-red.svg) button in the Plan tree. The tuning guide can be viewed when the nodes in the Plan Tree are `TABLE ACCESS (FULL)` and `INDEX (SKIP SCAN)` and the nodes contain the keyword, `CARTESIAN`.
+You can see the tuning guide after selecting the ![Tuning icon](/img/ic-chat-red.svg) button in the Plan tree. The tuning guide can be viewed when the nodes in the Plan Tree are `TABLE ACCESS (FULL)` and `INDEX (SKIP SCAN)` and the nodes contain the keyword, `CARTESIAN`.
 
 :::
 
