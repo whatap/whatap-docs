@@ -1,0 +1,227 @@
+---
+id: service-2_20_x
+title: Service 2.20.X
+toc_max_heading_level: 2
+pagination_next: release-notes/service/service-2_19_x
+displayed_sidebar: releaseSidebar
+---
+
+## Service 2.20.0
+
+2025年08月27日
+
+<div class='indentTab'>
+
+### `共通`
+
+- <Status priority='1'>Feature</Status> <Cmdname sid="MNU07360" className="uitext" /> &gt; **アカウント情報** UTCオフセット変更機能を追加
+
+- <Status priority='1'>Feature</Status> <Cmdname sid="MNU07360" className="uitext" /> アクセス制御メニューを追加し、アカウントごとのIPアクセス制御機能を追加
+
+- <Status priority='1'>Feature</Status> <Cmdname sid="MNU07360" className="uitext" /> GPU、GPU MIG、Open Metric High、Open Metric Lowなど新しい使用量指標を請求書、課金、プロジェクト購読、メータリングサマリーに追加
+
+- <Status priority='1'>Feature</Status> <Cmdname sid="side_flexboard" className="uitext" /> &gt; **フィルター** メトリクスフィルター、タグ選択に直接入力オプションを追加
+
+- <Status priority='1'>Feature</Status> <Cmdname sid="side_flexboard" className="uitext" /> 日次比較ウィジェットを追加
+
+---
+
+### `Application`
+
+- <Status priority='1'>Feature</Status> <Cmdname sid="dashboard" className="uitext" /> &gt; <Cmdname sid="application_dashboard" className="uitext" /> アクティブHTTPC、アクティブDBウィジェットを追加
+
+- <Status priority='1'>Feature</Status> <Cmdname sid="side_statistics" className="uitext" /> &gt; <Cmdname sid="side_tx" className="uitext" /> トポロジーを開くボタンを追加
+
+- <Status priority='1'>Feature</Status> <Cmdname sid="dashboard" className="uitext" /> &gt; **ビジネスダッシュボード** 詳細、トポロジータブを追加
+
+- <Status priority='1'>Feature</Status> <Cmdname sid="dashboard" className="uitext" /> &gt; <Cmdname sid="application_dashboard" className="uitext" /> イベントウィジェットを追加
+
+    - イベントをレベルごとに可視化し、エージェントごとに区分して表示
+
+- <Status priority='1'>Changed</Status> <Cmdname sid="side_appTopology" className="uitext" /> <code className="Beta">Beta</code> UI改善
+
+    - エッジラベルゲージ表現の追加および応答時間の閾値色表示を追加
+
+    - 特定ノード（詳細）
+
+        - TXトレース列設定追加および全体/アクティブ/マルチトランザクション/エラーフィルターを追加
+
+        - 選択したノードと関連するノードのみ表示するポップアウトを追加
+
+- <Status priority='1'>Changed</Status> `app_context_stat` 関連名称を統一（コンテキスト → 業務）
+
+- <Status priority='0'>Fixed</Status> <Cmdname sid="dashboard" className="uitext" /> &gt; **ビジネスダッシュボード** エイリアス設定で、全エイリアス削除後保存しても変更が適用されない問題を修正
+
+#### Java, Node.js, PHP
+
+- <Status priority='0'>Fixed</Status> <Cmdname sid="side_log" className="uitext" /> &gt; <Cmdname sid="side_logSetting" className="uitext" /> ログモニタリング開始タブ「1. エージェント設定確認」の日本語翻訳を修正
+
+#### .Net, Python
+
+- <Status priority='1'>Changed</Status> サポートバージョン情報とOS情報を修正
+
+#### Java
+
+- <Status priority='1'>Changed</Status> **エージェントインストール** ページ改善
+
+---
+
+### `Server`
+
+- <Status priority='1'>Feature</Status> **GPUインベントリ** キーワード検索フィルターを追加
+
+- <Status priority='1'>Feature</Status> **GPU性能サマリー** 列設定にフィールド別説明ツールチップを追加
+
+- <Status priority='1'>Feature</Status> <Cmdname sid="side_serverDetail" className="uitext" /> サーバーリストに検索入力フィールドを追加
+
+- <Status priority='1'>Feature</Status> <Cmdname sid="side_dashboard" className="uitext" /> ブラウザサイズに応じてウィジェットサイズを自動調整するモードをデフォルト適用し、スクロールが発生してもウィジェットを拡大して正常に表示できるようウィジェット高さ自動調整スイッチを追加
+
+- <Status priority='1'>Changed</Status>  **GPU性能サマリー** GPU Statusの参照時間範囲を従来の5分から1分に変更
+
+- <Status priority='1'>Changed</Status> **GPU性能サマリー** `Performance_State` フィールド値をP0~P15で表示されるよう変更
+
+- <Status priority='1'>Changed</Status> **GPU性能サマリー** &gt; <Cmdname sid="compare" className="uitext" /> パネル 
+
+    - 単位がbytes/sのチャート値を自動的に単位変換するよう変更
+
+    - `Performance_State` チャートのY軸範囲をP0~P15に固定
+
+- <Status priority='1'>Changed</Status> **サーバーリスト** 下位の **GPUインベントリ** と **GPU性能サマリー** メニューを **GPU** グループ下位に移動
+
+- <Status priority='1'>Changed</Status> **Event v2** メトリクスイベントルールを追加する際、指標設定条件にバリデーションを追加し、問題がある場合はエラーメッセージを追加
+
+- <Status priority='1'>Changed</Status> **GPUインベントリ**, **GPU性能サマリー** のエージェント最小バージョンを2.8.9から2.9.2に変更
+
+- <Status priority='0'>Fixed</Status>  **サーバーリスト** キーワードフィルター検索で項目がoidの場合フィルター項目が選択できない問題を修正
+
+- <Status priority='0'>Fixed</Status> <Cmdname sid="side_serverDetail" className="uitext" /> サーバー選択後ページロード時、サーバーリストにマウスホバーしても即時表示されない問題を修正
+
+- <Status priority='0'>Fixed</Status> <Cmdname sid="side_serverMetricsExplorer" className="uitext" /> GPUプロセスごとの指標選択時、凡例ラベルの形式を `process_name, pid, (process_type) - index(uuid)` に修正
+
+- <Status priority='0'>Fixed</Status> <Cmdname sid="side_serverInventory" className="uitext" /> 新規エージェント収集フィールド追加時、テーブルヘッダーにフィールド名が表示されない問題を修正
+
+- <Status priority='0'>Fixed</Status> <Cmdname sid="side_serverDetail" className="uitext" /> チャート詳細ビューのドロワーを閉じる際、選択サーバーではなくデフォルトサーバー選択に初期化される問題を修正
+
+- <Status priority='0'>Fixed</Status> **サーバーリスト** 全体リフレッシュボタンをクリックした際、イベントによるサーバー状態が反映されない問題を修正
+
+- <Status priority='0'>Fixed</Status> **GPU性能サマリー** &gt; <Cmdname sid="compare" className="uitext" /> パネル 
+
+    - 単位が%のチャートのY軸最大値が100%を超えないよう修正
+
+    - 単位がないチャートでタイトルに空の括弧が表示される問題を修正
+
+---
+
+### `Kubernetes`
+
+- <Status priority='1'>Feature</Status> **GPUトレンド** メニューを追加
+
+---
+
+### `Database`
+
+#### 共通
+
+- <Status priority='1'>Feature</Status> データベース製品の単一インスタンスセレクターを改善
+
+- <Status priority='1'>Feature</Status> <Cmdname sid="side_flexboard" className="uitext" /> Open MXウィジェットを追加
+
+- <Status priority='1'>Feature</Status> <Cmdname sid="side_flexboard" className="uitext" /> SQL Elapse Mapウィジェットにクエリテキスト制限オプションを追加
+
+- <Status priority='1'>Feature</Status> <Cmdname sid="side_lab" className="uitext" /> &gt; **オープンメトリクスエクスプローラー** を追加
+
+- <Status priority='1'>Feature</Status> <Cmdname sid="side_flexboard" className="uitext" /> **インスタンスマップ** ウィジェット追加可能
+
+- <Status priority='1'>Feature</Status> **インスタンスマップ** インスタンスアイコンにロールアイコンを追加
+
+- <Status priority='1'>Feature</Status> **インスタンスマップ** &gt; **インスタンス概要** にmaster, slave情報を追加
+
+- <Status priority='1'>Changed</Status> <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_instanceList" className="uitext" />, <Cmdname sid="side_dbMonitoring" className="uitext" />  インスタンス状態の色が進行中のイベントと同期されるよう変更
+
+- <Status priority='1'>Changed</Status> <Cmdname sid="side_management" className="uitext" /> &gt; <Cmdname sid="side_dbAgents" className="uitext" /> CSVダウンロードのヘッダーとデータ形式を修正
+
+- <Status priority='1'>Changed</Status> <Cmdname sid="side_dbCloudSetting" className="uitext" /> メニューを削除し、サイトマップで「サーバーレスエージェント設定」に変更
+
+- <Status priority='1'>Changed</Status> <Cmdname sid="side_logSetting" className="uitext" /> ガイド文を修正（Tibero, Altibase除外）
+
+- <Status priority='1'>Changed</Status> **DB** <Cmdname sid="agent_installation" className="uitext" /> 8. クラウドエージェント項目に例yaml logを追加
+
+#### Altibase, Cubrid, IBM DB2, MongoDB, Redis, SAP ASE, SQL Server
+
+- <Status priority='1'>Feature</Status> **インスタンスマップ** をサポート
+
+#### MySQL V2, Oracle V2, Oracle Pro, PostgreSQL
+
+- <Status priority='0'>Fixed</Status> **Top SQL** 縦フィルタポップアウトでセレクトボックスがクリックできない問題を修正
+
+#### CUBRID, MySQL, PostgreSQL
+
+- <Status priority='1'>Changed</Status> <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_multiInstance" className="uitext" /> Slow Queryウィジェットドラッグ時に表示されるドロワーテーブルビューを変更
+
+#### Oracle V2, Oracle Pro, PostgreSQL
+
+- <Status priority='0'>Fixed</Status> <Cmdname sid="side_dbWaitAnalysis" className="uitext" /> 再照会時に円グラフの前ツールチップが残る問題を修正
+
+#### MySQL, PostgreSQL
+
+- <Status priority='1'>Changed</Status> <Cmdname sid="side_slowQueryLog" className="uitext" /> ガイド文を修正
+
+#### Oracle V2, Oracle Pro
+
+- <Status priority='0'>Fixed</Status> APM連携DB詳細画面でlock treeの `serial#` フィールドが表示されない問題を修正
+
+- <Status priority='1'>Changed</Status> **SQL詳細** ポップアップのプランチューニングガイドデザインを修正
+
+#### DB2 
+
+- <Status priority='1'>Feature</Status> <Cmdname sid="side_analysis" className="uitext" /> &gt; <Cmdname sid="side_dbTopSqlComparison" className="uitext" /> を追加
+
+- <Status priority='1'>Feature</Status> **SQL詳細** 画面にプラン参照機能を追加
+
+- <Status priority='1'>Feature</Status> <Cmdname sid="side_dbScriptManager" className="uitext" /> を追加
+
+- <Status priority='1'>Feature</Status> <Cmdname sid="side_reportStat" className="uitext" /> &gt; <Cmdname sid="side_tableSpace" className="uitext" /> テーブルサイズおよびオブジェクト情報参照機能を追加
+
+- <Status priority='1'>Feature</Status> <Cmdname sid="active_sessions" className="uitext" /> テーブルの行クリック時にセッション情報を確認できるセッション詳細ポップアップを追加
+
+#### Oracle V2
+
+- <Status priority='1'>Feature</Status> **SQL詳細** ポップアップに特定キーワードでプランチューニングガイドを表示するよう修正
+
+- <Status priority='0'>Fixed</Status> マルチDB環境でアクティブセッションが表示されない問題を修正
+
+#### Oracle Pro
+
+- <Status priority='1'>Feature</Status> <Cmdname sid="TTL06224" className="uitext" /> に全体トレンドを一目で確認できるTrendタブを追加
+
+- <Status priority='1'>Feature</Status> **SQL List** フィルターにSQL統計のフィルター値を同じように使えるオプションを追加
+
+- <Status priority='0'>Fixed</Status> <Cmdname sid="side_dbWaitAnalysis" className="uitext" /> チャート凡例が画面サイズに合わせて調整されるよう修正（横スクロール除去）
+
+---
+
+### `Cloud`
+
+- <Status priority='1'>Changed</Status> **メトリクス** &gt; **メトリクスキューブ** メニューを削除
+
+---
+
+### `Browser` 
+
+- <Status priority='1'>Feature</Status> **ブラウザユーザーアクションヒートマップ** Performanceタブを追加
+
+- <Status priority='1'>Feature</Status> **モバイルスクリーンヒートマップ** Performanceタブを追加
+
+---
+
+### `Mobile` 
+
+- <Status priority='1'>New</Status> **モバイルモニタリング** をリリース
+
+---
+
+### `Log`
+
+- <Status priority='1'>Feature</Status> <Cmdname sid="side_management" className="uitext" /> &gt; **ログフィルター設定** を追加
+
+</div>  
