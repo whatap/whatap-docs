@@ -6115,7 +6115,6 @@ const sidebars = {
               items: [
                 'amazon-ecs/metrics-ecs',
                 'amazon-ecs/metrics-search',
-                'amazon-ecs/metrics-cube',
                 'amazon-ecs/metrics-chart',
                 'amazon-ecs/metrics-detect-anormal',
               ]
@@ -6185,7 +6184,6 @@ const sidebars = {
               },
               items: [
                 'amazon-cloudwatch/metrics-search',
-                'amazon-cloudwatch/metrics-cube',
                 'amazon-cloudwatch/metrics-chart',
                 'amazon-cloudwatch/metrics-detect-anormal',
               ]
@@ -6255,7 +6253,6 @@ const sidebars = {
           },
           items: [
             'azure/metrics-search',
-            'azure/metrics-cube',
             'azure/metrics-chart',
             'azure/metrics-detect-anormal',
           ]
@@ -6325,7 +6322,6 @@ const sidebars = {
           },
           items: [
             'ncloud/metrics-search',
-            'ncloud/metrics-cube',
             'ncloud/metrics-chart',
             'ncloud/metrics-detect-anormal',
           ]
@@ -6395,7 +6391,6 @@ const sidebars = {
           },
           items: [
             'oracle-cloud/metrics-search',
-            'oracle-cloud/metrics-cube',
             'oracle-cloud/metrics-chart',
             'oracle-cloud/metrics-detect-anormal',
           ]
