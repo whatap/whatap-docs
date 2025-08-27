@@ -1,0 +1,30 @@
+---
+id: gpu-trends
+title: GPU Trends
+description: Visualize long-term GPU usage statistics to quickly identify inefficiently used devices by period.
+keywords: [ Kubernetes, Kubernetes Monitoring, GPU Trends ]
+---
+
+# GPU Trends
+
+**GPU Trends** visualizes long-term usage statistics per GPU device, enabling quick identification of devices that were inefficiently used at specific times.
+
+## Main Screen
+
+You can check long-term GPU usage statistics and patterns. The query unit supports **daily, weekly, and monthly** views.  
+Each device's GPU utilization is displayed as blocks, with color intensity representing the level of usage.
+
+* **Less than 50%**: Light Blue  
+* **Less than 80%**: Blue  
+* **80% or higher**: Dark Blue  
+
+<ImgLang img='gpu-trends.png' desc='GPU Trends' />
+
+## View Detailed Information
+
+Hover over each block to see detailed information for the corresponding device and time in a tooltip.
+
+* **Label**: Device name and GPU model  
+* **UUID**: Unique GPU identifier  
+* **Time**: Reference time  
+* **GPU Utilization**: GPU utilization (%) at that time 
