@@ -963,6 +963,10 @@
     "message": "設定",
     "description": "The label for category 설정하기 in sidebar serverSidebar"
   },
+  "sidebar.serverSidebar.category.고급 기능": {
+    "message": "拡張機能",
+    "description": "The label for the doc item 고급 기능 in sidebar serverSidebar"
+  },
   "sidebar.serverSidebar.category.관리하기": {
     "message": "管理",
     "description": "The label for category 관리하기 in sidebar serverSidebar"
