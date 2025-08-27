@@ -6810,6 +6810,100 @@ const sidebars = {
       ],
     }
   ],
+  mobileSidebar: [
+    {
+      type: 'category',
+      label: 'Mobile 모니터링',
+      collapsible: false,
+      collapsed: false,
+      link: {
+        type: 'doc',
+        id: 'mobile/mobile-intro'
+      },
+      items: [
+        {
+          type: 'category',
+          label: '에이전트 적용',
+          collapsible: true,
+          collapsed: false,
+          items: [
+            {
+              type: 'doc',
+              id: 'mobile/apply-agent-android',
+              label: 'Android',  
+            },
+            {
+              type: 'doc',
+              id: 'mobile/apply-agent-ios',
+              label: 'iOS',  
+            },
+          ],
+        },
+        {
+          type: 'category',
+          label: '대시보드',
+          collapsible: true,
+          collapsed: true,
+          items: [
+            'mobile/dashboard',
+            {
+              type: 'category',
+              label: 'Flex 보드',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'mobile/flex-board',
+              },
+              items: [
+                'mobile/flexboard-template',
+                'mobile/flexboard-create',
+                'mobile/flexboard-manage',
+                'mobile/flexboard-metric-widget',
+                'mobile/flexboard-widget-manage',
+                'mobile/flexboard-widget-template',
+                'mobile/flexboard-mode',
+                'mobile/flexboard-share',
+              ]
+            },
+          ],
+        },
+        {
+          type: 'category',
+          label: '통계',
+          collapsible: true,
+          collapsed: false,
+          items: [
+            'mobile/stat-screenload',
+            'mobile/stat-anr',
+            'mobile/stat-crash',
+          ],
+        },
+        {
+          type: 'category',
+          label: '로그',
+          collapsible: true,
+          collapsed: false,
+          items: [
+            'log/log-lt',
+            'log/log-exp',
+            'log/log-search',
+          ],
+        },
+        {
+          type: 'category',
+          label: '경고 알림',
+          collapsible: true,
+          collapsed: false,
+          items: [
+            'mobile/metric-warning-notice',
+            'mobile/set-receive-event',
+            'mobile/set-event-history',
+          ],
+        },
+      ]
+    }
+  ],
   serverSidebar: [
     {
       type: 'category',
