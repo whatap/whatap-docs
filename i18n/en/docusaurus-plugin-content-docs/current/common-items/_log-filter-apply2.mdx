@@ -1,6 +1,6 @@
 <InDoc pages="log-search,aws-log-search">In <UI>Time selector</UI> on the left of <LinkImage img="number-01.png" className="ico" />, you can specify the time range. On the right, </InDoc>When a filter is applied, the logs that match the specified conditions are filtered. You can enter multiple filters. OR (<code>||</code>) if the filters have the same tags, otherwise AND (<code>&&</code>).
 
-You can specify a filter by directly entering a value in the input field or clicking the <Cmdname sid="filter" className="uitext" /> field. Filter tags are entered in the following order: `Search key`, `Operator`, and `Search value`. If you select ![Search icon](/img/ic-search-on-press.svg) <Cmdname sid="search" className="uitext" />, the data with the filter applied can be viewed in the ![number-s3](/img/number-03.png) area.
+You can specify a filter by directly entering a value in the input field or clicking the <Cmdname sid="filter" className="uitext" /> field. Filter tags are entered in the following order: `Search key`, `Operator`, and `Search value`. If you select ![Search icon](/img/ic-search-on-press.svg) <Cmdname sid="search" className="uitext" />, the data with the filter applied can be viewed log list area.
 
 :::note 
 
@@ -18,9 +18,7 @@ The **Guide UI** is provided under the input field as follows: You can close the
 
 - When entering an `operator`, for a general index search key, `==` and `!=` options are provided at the bottom. In case of the numeric index, the `>`, `<`, `<=`, `>=`, `==`, and `!=` options are provided.
 
-- Upon entry of the `search value` for matched search (`>`, `<`, `<=`, `>=`, `==`), it is highlighted in <span class='normal'>blue</span>, In case of excluded search (`!=`), it is highlighted in <span class='vslow'>red</span>. 
-
-- Upon entry of the `search value`, you can search using the case-sensitive option.
+- Upon entry of the `search value` for matched search (`>`, `<`, `<=`, `>=`, `==`), it is highlighted in <span class='normal'>blue</span>, In case of excluded search (`!=`), it is highlighted in <span class='vslow'>red</span>. Upon entry of the `search value`, you can search using the case-sensitive option.
 
 :::note 
 
@@ -34,19 +32,12 @@ The **Guide UI** is provided under the input field as follows: You can close the
 
 #### Adding filter tags
 
-- You can enter text in the input field and add then add more items by using the Enter key or Tab key on your keyboard.
-
-- You can add recommended values by clicking them in the **Guide UI** below the input field.
-
-- In the **Guide UI** below the input field, you can select recommended values with the up/down arrow keys on the keyboard and add tags by using the Enter and Tab keys.
+To add a filter tag, type the desired text in the input field and press **Enter** or **Tab**.  
+You can also select a recommended value from the **Guide UI** below the input field by clicking it or navigating with the arrow keys.
 
 #### Deleting filter tags
 
-- A tag can be deleted with the Backspace key.
-
-- You can delete a tag by selecting the **X** icon for it.
-
-- You can delete all tags by selecting the Delete All **X** icon in the input field.
+To remove a single tag, press **Backspace** or click the **X** icon on the tag. To clear all tags at once, click the **X** icon located on the right side of the input field.
 
 #### Filter favorites {#log-filter-fav}
 
@@ -66,9 +57,8 @@ The filter **favorites** feature is provided. You can select the ![Favorites ico
 
 :::note
 
-- You cannot enter a `category` with the <Cmdname sid="side_logTail" className="uitext" /> `search key`.
-
-- The expression under the entered filter value is a preview of the filter expression for querying the log data. 
+You cannot enter a `category` with the <Cmdname sid="side_logTail" className="uitext" /> `search key`.  
+The expression under the entered filter value is a preview of the filter expression for querying the log data. 
 
 :::
 

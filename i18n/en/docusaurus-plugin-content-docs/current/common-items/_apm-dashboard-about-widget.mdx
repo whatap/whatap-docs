@@ -180,6 +180,54 @@ It displays a list of all agents and the total number of active transactions. Ho
 
 - If you select ![right-arrow](/img/right-arrow.svg), the <Cmdname sid="side_multi_active_tx" className="uitext" /> menu appears.
 
+#### Active HTTPC/SQL {#active-httpc-sql}
+
+<ImgLang img='apm-dashboard-active-httpc-sql.png' desc='Active HTTPC/SQL' />
+
+The **Active HTTPC/SQL** widget monitors the performance of external calls (HTTP calls and database queries) occurring in the application in real time.  
+Unlike the <Cmdname sid="AA002" className="uitext" /> widget, which shows all transactions, this widget is specialized for outbound calls, allowing you to quickly identify external system bottlenecks. Placing the two widgets together helps distinguish whether transaction increases are caused by external system delays or internal logic issues, enabling more effective multilayered analysis.
+
+Ongoing HTTPC/SQL operations are visualized as an **Arc Equalizer** chart, showing latency status by host or database URL. The arc is divided by the number of hosts or database URLs, and every 5 seconds it displays the number of requests being processed on the current server and their response times. Requests detected in 5-second intervals are classified into intuitive colors according to their severity.
+
+* Red (<span class='vslow'>Very Slow</span>): 8 seconds or more
+
+* Orange (<span class='slow'>Slow</span>): 3 to 8 seconds
+
+* Normal: 0 to 3 seconds
+  * Purple (<span class='purple'>HTTPC Normal</span>)
+  * Mint (<span class='mint'>SQL Normal</span>)
+
+A large number of Normal values is not a concern. You need to monitor if some values turn orange or red. In failure scenarios, the number of ongoing transactions increases and the proportion of red rises. Conversely, in very fast systems, TPS may be high but the number of ongoing transactions may remain low.
+
+This widget is especially useful in microservice environments to track HTTP communication delays between services or monitor DB performance individually in systems using multiple databases. For services with many external API calls, it allows monitoring of response times by API provider, making dependency management effective.
+
+##### Arc Equalizer Chart
+
+This is the core visualization element of the widget, dividing ongoing HTTPC/SQL operations by host or database URL. If issues are detected in the overall transactions, this chart helps pinpoint specific external bottlenecks.
+
+* **Top Left Indicator**: Displays the host/database URL with the most active transactions for easy identification of key targets.
+* **Center Number**: Shows the total sum of active HTTPC/SQL.
+* **TPS-Based Animation**: Bars around the equalizer rotate at three speeds depending on throughput (TPS), visually expressing system load.
+* **5-Second Refresh**: Provides near real-time monitoring for immediate response.
+* **Arc Segmentation**: Divides arcs by host/database URL for quick identification of where delays are occurring.
+
+##### Host/Database URL Details
+
+Selecting a segmented arc area opens a popup showing the **Top 100 ongoing transactions** for that host or database URL.
+
+* **Transaction List**: Displays the Top 100 ongoing transactions for the selected host or database URL.
+* **Trend Chart**: Shows TPS, response time, error count, and error rate trends over the last 10 minutes.
+* **Transaction Details**: Selecting a transaction from the list opens detailed information.
+  * For already finished transactions, select the **View Transaction** button to open the **Transaction Info** window.
+
+1. In the **Active HTTPC Top 100** popup, check the transaction list and trends.
+
+1. Select a transaction that requires detailed analysis.
+
+    a. In the Arc Equalizer, click the arc for the host or database URL you want to analyze. 
+
+1. In the Transaction Info window, review the details.
+
 ### Service-related widget
 
 The service-related widget can be used as the metric for application performance tuning.
