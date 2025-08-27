@@ -84,6 +84,8 @@ jobs:
         pdfcpu annot remove -pages 1 ./pdf/whatap-log-monitoring.pdf
         node generate-pdf -u https://docs.whatap.io/cover/cover-url --prince-args="--page-size='a4' --page-margin='10mm' --style=./pdf-print.css" -o ./pdf/whatap-url-monitoring.pdf --dest ./pdf --include-index
         pdfcpu annot remove -pages 1 ./pdf/whatap-url-monitoring.pdf
+        node generate-pdf -u https://docs.whatap.io/cover/cover-url-pro --prince-args="--page-size='a4' --page-margin='10mm' --style=./pdf-print.css" -o ./pdf/whatap-url-pro.pdf --dest ./pdf --include-index
+        pdfcpu annot remove -pages 1 ./pdf/whatap-url-pro.pdf
         node generate-pdf -u https://docs.whatap.io/cover/cover-manage --prince-args="--page-size='a4' --page-margin='10mm' --style=./pdf-print.css" -o ./pdf/whatap-manage.pdf --dest ./pdf --include-index
         pdfcpu annot remove -pages 1 ./pdf/whatap-manage.pdf
         node generate-pdf -u https://docs.whatap.io/cover/cover-reference --prince-args="--page-size='a4' --page-margin='10mm' --style=./pdf-print.css" -o ./pdf/whatap-reference.pdf --dest ./pdf --include-index

@@ -7343,28 +7343,27 @@ const sidebars = {
             },
             'kubernetes/node-map',
             'kubernetes/performance-summary',
-            'kubernetes/dashboard-gpu'
+            {
+              type: 'category',
+              label: 'Flex 보드',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'kubernetes/flex-board',
+              },
+              items: [
+                'kubernetes/flexboard-template',
+                'kubernetes/flexboard-create',
+                'kubernetes/flexboard-manage',
+                'kubernetes/flexboard-metric-widget',
+                'kubernetes/flexboard-widget-manage',
+                'kubernetes/flexboard-widget-template',
+                'kubernetes/flexboard-mode',
+                'kubernetes/flexboard-share',
+              ],
+            },
           ]
-        },
-        {
-          type: 'category',
-          label: 'Flex 보드',
-          collapsible: true,
-          collapsed: true,
-          link: {
-            type: 'doc',
-            id: 'kubernetes/flex-board',
-          },
-          items: [
-            'kubernetes/flexboard-template',
-            'kubernetes/flexboard-create',
-            'kubernetes/flexboard-manage',
-            'kubernetes/flexboard-metric-widget',
-            'kubernetes/flexboard-widget-manage',
-            'kubernetes/flexboard-widget-template',
-            'kubernetes/flexboard-mode',
-            'kubernetes/flexboard-share',
-          ],
         },
         {
           type: 'category',
@@ -7387,6 +7386,16 @@ const sidebars = {
             'kubernetes/node-details',
             'kubernetes/node-disk-list',
           ]
+        },
+        {
+          type: 'category',
+          label: 'GPU',
+          collapsible: true,
+          collapsed: true,
+          items: [
+            'kubernetes/dashboard-gpu',
+            'kubernetes/gpu-trends',
+          ],
         },
         {
           type: 'category',

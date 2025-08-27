@@ -1,0 +1,62 @@
+---
+id: dashboard-gpu
+title: GPU Dashboard
+description: A Kubernetes GPU dashboard that tracks relationships between Node - GPU (MIG) - Pod. 
+keywords: [ Kubernetes, Kubernetes Monitoring, GPU Dashboard ]
+---
+
+The **GPU Dashboard** provides a Kubernetes perspective to track relationships between Node - GPU (MIG) - Pod.  
+
+* Visually maps Node - GPU (MIG) - Pod relationships to easily understand GPU resource allocation.  
+* Displays Top 5 trends by utilization, temperature, and memory to quickly detect overuse or imbalance of resources.  
+* Highlights critical states such as Pending or Unused GPUs to identify allocation gaps or abnormal usage patterns at a glance.  
+
+### Permissions & Requirements
+
+* **Supported environment**: Kubernetes cluster project  
+* **Agent version**: Kubernetes Agent v1.8.7 or higher  
+* Requires Open Agent installation  
+
+## Main Screen
+
+A visual dashboard to easily identify GPU resource status and usage within the cluster.  
+
+<ImgLang img='gpu-dashboard-main.png' desc='GPU dashboard' />
+
+### GPU Resource Summary
+
+Summarized GPU information (assigned nodes, Pods, GPU counts by status) collected during the last 5 minutes, shown in four widgets.
+
+### GPU Map
+
+Displays collected devices at the query time in a map chart.  
+
+* Physical devices are labeled **P**, MIG instances are labeled **M**.  
+* Grouping can be done by Node/Physical device, with options to color by status or utilization.  
+
+### Usage
+
+Shows the total cluster VRAM size and usage, average GPU utilization per device, and VRAM usage over the last 1 minute.
+
+### GPU Performance Summary (Top 5)
+
+Displays performance trends of major physical device metrics during the query period.  
+
+* Utilization (%)  
+* VRAM Usage (MiB)  
+* Temperature (℃)  
+* SM Active (%)  
+
+### GPU / Node / Pod Lists
+
+Lists of GPUs, Nodes, and Pods are displayed.  
+* Node and Pod lists show the Top 5 items by GPU utilization.  
+* The GPU list shows all GPUs collected at query time (data collected within the last 1 minute).  
+
+<ImgLang img='gpu-top5-list.png' desc='GPU top5 list' />
+
+## Details
+
+Click the details icon next to a GPU in the GPU Map or GPU List to view the relationship map and metric trends for the selected GPU.  
+
+<ImgLang img='gpu-detail-relation.png' desc='GPU dashboard details' />
