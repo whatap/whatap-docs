@@ -951,6 +951,10 @@
     "message": "Configuration",
     "description": "The label for category 설정하기 in sidebar serverSidebar"
   },
+  "sidebar.serverSidebar.category.고급 기능": {
+    "message": "Advanced functions",
+    "description": "The label for category 고급 기능 in sidebar serverSidebar"
+  },
   "sidebar.serverSidebar.category.관리하기": {
     "message": "Management",
     "description": "The label for category 관리하기 in sidebar serverSidebar"
