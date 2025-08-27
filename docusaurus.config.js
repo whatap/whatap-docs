@@ -372,6 +372,11 @@ const config = {
               },
               {
                 type: 'doc',
+                docId: 'mobile/mobile-intro',
+                label: 'Mobile',
+              },
+              {
+                type: 'doc',
                 docId: 'amazon-cloudwatch/install-agent',
                 label: 'Amazon CloudWatch',
                 className: 'narrow',
@@ -663,6 +668,13 @@ const config = {
             docId: 'browser',
             position: "left",
             label: 'Browser',
+            className: 'hidden',
+          },
+          {
+            type: 'doc',
+            docId: 'mobile/mobile-intro',
+            position: "left",
+            label: 'Mobile 모니터링',
             className: 'hidden',
           },
           {
