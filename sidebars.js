@@ -6896,12 +6896,9 @@ const sidebars = {
           collapsible: true,
           collapsed: false,
           items: [
-            {
-              type: 'doc',
-              id: 'mobile/metric-warning-notice',
-              label: '이벤트 설정',  
-            },
+            'mobile/metric-warning-notice',
             'mobile/set-receive-event',
+            'mobile/set-event-history',
           ],
         },
       ]
