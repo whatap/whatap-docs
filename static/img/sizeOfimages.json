@@ -703,18 +703,6 @@
     "width": 800,
     "height": 37
   },
-  "analysis-hitmap-tx-list-select-column-en.png": {
-    "width": 1200,
-    "height": 531
-  },
-  "analysis-hitmap-tx-list-select-column-ja.png": {
-    "width": 1200,
-    "height": 493
-  },
-  "analysis-hitmap-tx-list-select-column.png": {
-    "width": 1200,
-    "height": 506
-  },
   "analysis-tx-active-stack-en.png": {
     "width": 800,
     "height": 334
@@ -831,14 +819,6 @@
     "width": 1200,
     "height": 575
   },
-  "analysis-tx-table-view-mode-en.png": {
-    "width": 800,
-    "height": 873
-  },
-  "analysis-tx-table-view-mode-ja.png": {
-    "width": 800,
-    "height": 874
-  },
   "analysis-tx-table-view-mode-none-actx-en.png": {
     "width": 800,
     "height": 872
@@ -850,10 +830,6 @@
   "analysis-tx-table-view-mode-none-actx.png": {
     "width": 800,
     "height": 872
-  },
-  "analysis-tx-table-view-mode.png": {
-    "width": 800,
-    "height": 874
   },
   "analysis-tx-table-view-none-actx-en.png": {
     "width": 1200,
