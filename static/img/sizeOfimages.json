@@ -743,18 +743,6 @@
     "width": 1200,
     "height": 325
   },
-  "analysis-tx-main-error-en.png": {
-    "width": 1200,
-    "height": 225
-  },
-  "analysis-tx-main-error-ja.png": {
-    "width": 1200,
-    "height": 226
-  },
-  "analysis-tx-main-error.png": {
-    "width": 1200,
-    "height": 222
-  },
   "analysis-tx-main-ja.png": {
     "width": 1200,
     "height": 325
@@ -12715,14 +12703,6 @@
     "width": 1200,
     "height": 617
   },
-  "linked-project-db-instance-dahboard-en.png": {
-    "width": 1200,
-    "height": 709
-  },
-  "linked-project-db-instance-dahboard-ja.png": {
-    "width": 1200,
-    "height": 706
-  },
   "linked-project-db-instance-dahboard-not-allowed-btn-en.png": {
     "width": 800,
     "height": 75
@@ -12746,10 +12726,6 @@
   "linked-project-db-instance-dahboard-select-instance.png": {
     "width": 1200,
     "height": 392
-  },
-  "linked-project-db-instance-dahboard.png": {
-    "width": 1200,
-    "height": 708
   },
   "linked-project-management-add-project-en.png": {
     "width": 800,
