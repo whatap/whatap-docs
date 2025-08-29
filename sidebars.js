@@ -1969,10 +1969,24 @@ const sidebars = {
           items: [
             'postgresql/agent-dbx-settings',
             'postgresql/agent-xos-settings',
-            'postgresql/agent-cloud-settings',
+            'postgresql/cloudsettings',
+            {
+              type: 'category',
+              label: '클라우드 에이전트 설정',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'postgresql/agent-cloud-settings',
+              },
+              items: [
+                'postgresql/agent-cloud-settings-usage',
+                'postgresql/agent-cloud-settings-logs',
+              ],
+            },
           ],
         },
-        'postgresql/cloudsettings',
+        
         'postgresql/agent-manage',
         {
           type: 'category',
