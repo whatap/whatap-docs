@@ -2357,10 +2357,23 @@ const sidebars = {
           items: [
             'oracle/agent-dbx-settings',
             'oracle/agent-xos-settings',
-            'oracle/agent-cloud-settings',
+            'oracle/cloudsettings',
+            {
+              type: 'category',
+              label: '클라우드 에이전트 설정',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'oracle/agent-cloud-settings',
+              },
+              items: [
+                'oracle/agent-cloud-settings-usage',
+                'oracle/agent-cloud-settings-logs',
+              ],
+            },
           ],
         },
-        'oracle/cloudsettings',
         'oracle/agent-manage',
         {
           type: 'category',
@@ -2802,10 +2815,23 @@ const sidebars = {
           items: [
             'mysql/agent-dbx-settings',
             'mysql/agent-xos-settings',
-            'mysql/agent-cloud-settings',
+            'mysql/cloudsettings',
+            {
+              type: 'category',
+              label: '클라우드 에이전트 설정',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'mysql/agent-cloud-settings',
+              },
+              items: [
+                'mysql/agent-cloud-settings-usage',
+                'mysql/agent-cloud-settings-logs',
+              ],
+            },
           ],
         },
-        'mysql/cloudsettings',
         'mysql/agent-manage',
         {
           type: 'category',
@@ -3022,10 +3048,23 @@ const sidebars = {
           items: [
             'mssql/agent-dbx-settings',
             'mssql/agent-xos-settings',
-            'mssql/agent-cloud-settings',
+            'mssql/cloudsettings',
+            {
+              type: 'category',
+              label: '클라우드 에이전트 설정',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'mssql/agent-cloud-settings',
+              },
+              items: [
+                'mssql/agent-cloud-settings-usage',
+                'mssql/agent-cloud-settings-logs',
+              ],
+            },
           ],
         },
-        'mssql/cloudsettings',
         'mssql/agent-manage',
         {
           type: 'category',
