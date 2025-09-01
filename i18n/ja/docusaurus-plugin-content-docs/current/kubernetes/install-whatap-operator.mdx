@@ -47,7 +47,7 @@ toc_max_heading_level: 3
    kubectl delete clusterrole whatap
    kubectl delete clusterrolebinding whatap
    kubectl create ns whatap-monitoring
-   kubectl create secret generic whatap-credentials --namespace whatap-monitoring --from-literal license=$WHATAP_LICENSE --from-literal host=$WHATAP_HOST --from-literal port=$WHATAP_PORT
+   kubectl create secret generic whatap-credentials --namespace whatap-monitoring --from-literal WHATAP_LICENSE=$WHATAP_LICENSE --from-literal WHATAP_HOST=$WHATAP_HOST --from-literal WHATAP_PORT=$WHATAP_PORT
    helm install whatap-operator whatap/whatap-operator --namespace whatap-monitoring
    ```
 
