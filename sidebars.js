@@ -1969,7 +1969,6 @@ const sidebars = {
           items: [
             'postgresql/agent-dbx-settings',
             'postgresql/agent-xos-settings',
-            'postgresql/cloudsettings',
             {
               type: 'category',
               label: '클라우드 에이전트 설정',
@@ -1984,6 +1983,7 @@ const sidebars = {
                 'postgresql/agent-cloud-settings-logs',
               ],
             },
+            'postgresql/cloudsettings',
           ],
         },
         
@@ -2357,7 +2357,6 @@ const sidebars = {
           items: [
             'oracle/agent-dbx-settings',
             'oracle/agent-xos-settings',
-            'oracle/cloudsettings',
             {
               type: 'category',
               label: '클라우드 에이전트 설정',
@@ -2372,6 +2371,7 @@ const sidebars = {
                 'oracle/agent-cloud-settings-logs',
               ],
             },
+            'oracle/cloudsettings',
           ],
         },
         'oracle/agent-manage',
@@ -2815,7 +2815,6 @@ const sidebars = {
           items: [
             'mysql/agent-dbx-settings',
             'mysql/agent-xos-settings',
-            'mysql/cloudsettings',
             {
               type: 'category',
               label: '클라우드 에이전트 설정',
@@ -2830,6 +2829,7 @@ const sidebars = {
                 'mysql/agent-cloud-settings-logs',
               ],
             },
+            'mysql/cloudsettings',
           ],
         },
         'mysql/agent-manage',
@@ -3048,7 +3048,6 @@ const sidebars = {
           items: [
             'mssql/agent-dbx-settings',
             'mssql/agent-xos-settings',
-            'mssql/cloudsettings',
             {
               type: 'category',
               label: '클라우드 에이전트 설정',
@@ -3063,6 +3062,7 @@ const sidebars = {
                 'mssql/agent-cloud-settings-logs',
               ],
             },
+            'mssql/cloudsettings',
           ],
         },
         'mssql/agent-manage',
