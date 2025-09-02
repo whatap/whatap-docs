@@ -5259,7 +5259,19 @@ const sidebars = {
         id: 'manage'
       },
       items: [
-        'account/account-manage',
+        {
+          type: 'category',
+          label: '계정 관리',
+          collapsible: false,
+          collapsed: false,
+          link: {
+            type: 'doc',
+            id: 'account/account-manage',
+          },
+          items: [
+            'account/access-control',
+          ]
+        },
         'account/mfa',
         {
           type: 'category',
