@@ -1,5 +1,27 @@
 [
   {
+    "url": "https://docs.whatap.io/release-notes/python/python-1_8_11",
+    "ver": "v1.8.11",
+    "date": "2025-09-01",
+    "Lists": [
+      {
+        "ver": "v1.8.11",
+        "hash": "v1811",
+        "product": "Python Agent",
+        "type": "New",
+        "desc": "<p><code class=\"New\" type=\"1\">New</code> Added tracing support for <code>psycopg_pool</code> module</p>"
+      },
+      {
+        "ver": "v1.8.11",
+        "hash": "v1811",
+        "product": "Python Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Updated <code>sqlAlchemy</code> module</p>",
+        "details": "<ul><li><p>Fixed an issue where query parameters of the <code>asyncmy</code> driver were not being substituted</p></li></ul>"
+      }
+    ]
+  },  
+  {
     "url": "https://docs.whatap.io/release-notes/python/python-1_8_10",
     "ver": "v1.8.10",
     "date": "2025-08-22",

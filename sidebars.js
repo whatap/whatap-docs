@@ -4927,9 +4927,20 @@ const sidebars = {
               items: [
                 {
                   type: 'doc',
+<<<<<<< HEAD
                   id: 'release-notes/java/download-agent-java',
                   // className: 'new',
                 },
+=======
+                  id: 'release-notes/java/java-2_2_63',
+                  className: 'new',
+                },
+                'release-notes/java/java-2_2_62',
+                'release-notes/java/java-2_2_61',
+                'release-notes/java/java-2_2_60',
+                'release-notes/java/java-2_2_59',
+                'release-notes/java/java-previous',
+>>>>>>> 085861f6be58fd0ace00eb4e502f3df804458b7c
               ],
             },
             {
@@ -5013,13 +5024,13 @@ const sidebars = {
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/python/python-1_8_10',
+                  id: 'release-notes/python/python-1_8_11',
                   className: 'new',
                 },
+                'release-notes/python/python-1_8_10',
                 'release-notes/python/python-1_8_9',
                 'release-notes/python/python-1_8_8',
                 'release-notes/python/python-1_8_7',
-                'release-notes/python/python-1_8_6',
                 'release-notes/python/python-previous',
               ],
             },
