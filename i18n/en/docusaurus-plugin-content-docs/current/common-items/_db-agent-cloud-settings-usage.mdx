@@ -147,16 +147,6 @@ dbxc-ctl logs -c specific-config.yaml -f
 
 :::
 
-## Key Features
-
-DBXC provides stable execution, intuitive user experience, and extensive monitoring features.
-
-| Feature | Description |
-| --- | --- |
-| **Stability** | - Prevents duplicate runs with PID files <br /> - Verifies successful start with health checks <br /> - 5-second startup timeout |
-| **User Experience** | - Consistent color coding per project (agent) <br /> - Real-time log streaming <br /> - Intuitive status display |
-| **Monitoring** | - Status API based on HTTP server (port: 53200) <br /> - Structured logging (Zap library) <br /> - Automatic log rotation |
-
 ## Technical Details
 
 Detailed command structure and internal system behavior of DBXC.
@@ -165,9 +155,9 @@ Detailed command structure and internal system behavior of DBXC.
 
 dbxc-ctl supports the following commands:
 
-- **start**: Start DBX agent  
-- **stop**: Stop DBX agent  
-- **restart**: Restart DBX agent  
+- **start**: Start DBXC agent  
+- **stop**: Stop DBXC agent  
+- **restart**: Restart DBXC agent  
 - **logs**: View logs  
 - **status or describe**: Check agent status  
 - **version**: Check version information  
