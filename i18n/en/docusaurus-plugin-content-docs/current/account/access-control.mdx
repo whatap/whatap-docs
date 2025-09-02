@@ -1,0 +1,37 @@
+---
+id: access-control
+title: Access Control
+description: You can configure whether to allow access to the WhaTap service based on registered IP addresses.
+---
+
+You can configure whether to allow access to the WhaTap service based on registered IP addresses.
+
+* **When you register an IP as allowed**, all unregistered IPs will be blocked.  
+* **When you register an IP as denied**, only the added IPs will be blocked.
+
+### Register/Modify IP Address
+
+1. Click the **Profile icon** at the top right of the screen, then go to **Account Management**.  
+
+1. In **Access Control**, check the **IP Access Control** list.  
+
+1. Click the **+ Add IP** button and enter all the information (IP address, description, access permission).  
+
+    a. To modify a registered IP address, click the ![Edit Icon](/img/ic-edit.svg) next to the IP and update the information.  
+
+    :::caution
+
+    **Important Note When Registering Allowed IPs (Whitelist Mode)**  
+    
+    Once the allowlist is enabled, all access other than the registered IPs will be blocked. To prevent disruption, register the current operator’s IP address in the allowlist first.  
+
+    :::
+
+1. Click the **Confirm** button to register the IP.  
+
+### Delete IP Address
+
+When deleting an IP address, the access permissions will change. Click the ![Delete Icon](/img/ic-delete-critical.svg) next to the IP you want to remove.  
+
+* **When deleting an allowed IP**: IPs previously blocked will now be able to connect.  
+* **When deleting a denied IP**: That IP will now be able to connect.  
