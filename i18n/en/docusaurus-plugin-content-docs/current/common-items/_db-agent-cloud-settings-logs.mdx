@@ -1,0 +1,92 @@
+Database Cloud Agent can periodically collect various logs, including RDS and Aurora instances, using the AWS CloudWatch Logs API.  
+This document explains how the API affects costs and provides guidance on configuring collection settings appropriately.
+
+## Using CloudWatch Logs API and Cost Impact
+
+The DBXC Agent uses the CloudWatch Logs **FilterLogEvents** API to query already stored logs.  
+The cost incurred is determined mainly by two factors:
+
+First, the **amount of data retrieved**. When the API is called, it fetches logs from CloudWatch Logs within the specified time range and limit (`regular_fetch_limit`). The larger the volume of data retrieved, the higher the cost due to AWS internal processing and data transfer.
+
+Second, the **number of API calls**. If the interval is short or there are many target log groups, frequent API calls occur periodically. Since API calls themselves are billed, frequent calls at short intervals may accumulate costs even if the data volume is small.
+
+As a result, in log collection using FilterLogEvents, the **amount of retrieved data** has a greater impact on costs. However, using **short intervals with many target groups** makes API call costs also significant.  
+Therefore, for efficient operation, avoid fetching unnecessarily large volumes of logs at once with `regular_fetch_limit`, and adjust the interval according to your environment to control the number of calls.
+
+:::info
+
+**Official References**
+- AWS API Reference: [FilterLogEvents](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_FilterLogEvents.html)
+- AWS Pricing: [CloudWatch Logs Pricing](https://aws.amazon.com/cloudwatch/pricing/)
+
+:::
+
+## Log Collection Mechanism
+
+The DBXC Agent periodically calls the FilterLogEvents API to fetch new logs from specified log groups.
+
+At each call, it queries only logs between the last collection time and the current time, managing collection status separately for each log group.
+
+The last collection time is stored in a local state file, so even after restarting the agent, collection resumes from the previous point.
+
+## Recommended Settings by Environment
+
+All settings require specifying the actual log group list in `logs.groups`, and log collection requires **logs:FilterLogEvents** and **logs:DescribeLogGroups** permissions.
+
+### General Production Environment (Default)
+
+```yaml
+logs:
+  groups:
+    - "/aws/rds/instance/prod-mysql/error"
+    - "/aws/rds/instance/prod-mysql/general"
+  interval: 60
+  regular_fetch_limit: 1000
+```
+
+This is the agent’s default configuration, applied even if not explicitly defined in the config file.
+It prevents unnecessary bulk log retrieval at service startup and stably collects up to 1,000 logs per cycle afterward.
+With a good balance of real-time performance, stability, and cost efficiency, this setting suits most production environments.
+
+### Real-time Oriented Environment
+
+```yaml
+logs:
+  groups:
+    - "/aws/rds/cluster/prod-aurora/audit"
+    - "/aws/rds/cluster/prod-aurora/error"
+  interval: 30
+  regular_fetch_limit: 200
+```
+
+Collecting logs every 30 seconds minimizes latency while reducing memory usage by limiting the amount retrieved at once. However, since the number of API calls increases, this setup may raise API call costs and should be used only for services requiring strong real-time capabilities.
+
+### Cost-optimized Environment
+
+```yaml
+logs:
+  groups:
+    - "/aws/rds/instance/mysql/error"
+  interval: 300
+  regular_fetch_limit: 500
+```
+
+Collecting logs every 5 minutes significantly reduces API call frequency and lowers costs. However, it introduces up to a 5-minute delay in log reflection, making it unsuitable for environments where real-time monitoring is critical.
+
+## Tuning Guidelines
+
+If API costs are higher than expected, increase the interval or reduce `regular_fetch_limit`.
+If log loss is a concern, reduce the interval. If memory usage is high, reduce `regular_fetch_limit` or decrease the number of target log groups.
+
+## IAM Permission Configuration
+
+```json
+{
+  "Effect": "Allow",
+  "Action": [
+    "logs:FilterLogEvents",
+    "logs:DescribeLogGroups"
+  ],
+  "Resource": "arn:aws:logs:*:*:log-group:/aws/rds/*"
+}
+```

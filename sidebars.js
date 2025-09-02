@@ -1981,9 +1981,9 @@ const sidebars = {
               items: [
                 'postgresql/agent-cloud-settings-usage',
                 'postgresql/agent-cloud-settings-logs',
+                'postgresql/cloudsettings',
               ],
             },
-            'postgresql/cloudsettings',
           ],
         },
         
@@ -2369,9 +2369,9 @@ const sidebars = {
               items: [
                 'oracle/agent-cloud-settings-usage',
                 'oracle/agent-cloud-settings-logs',
+                'oracle/cloudsettings',
               ],
             },
-            'oracle/cloudsettings',
           ],
         },
         'oracle/agent-manage',
@@ -2827,9 +2827,9 @@ const sidebars = {
               items: [
                 'mysql/agent-cloud-settings-usage',
                 'mysql/agent-cloud-settings-logs',
+                'mysql/cloudsettings',
               ],
             },
-            'mysql/cloudsettings',
           ],
         },
         'mysql/agent-manage',
@@ -3060,9 +3060,9 @@ const sidebars = {
               items: [
                 'mssql/agent-cloud-settings-usage',
                 'mssql/agent-cloud-settings-logs',
+                'mssql/cloudsettings',
               ],
             },
-            'mssql/cloudsettings',
           ],
         },
         'mssql/agent-manage',

@@ -1,0 +1,197 @@
+DBX for Cloud、DBXCは2つの主要コンポーネントで構成されています。 
+
+- **dbxc-agent**: クラウド指標を監視するバックグラウンドサービス（エージェント）  
+- **dbxc-ctl**: エージェントを制御するCLIツール（開始、停止、状態確認、ログ参照）  
+
+## 設定ファイル構造
+
+DBXCはYAML形式の設定ファイルを通じて実行構成を定義します。
+
+### サポート形式
+
+DBXCは単一/マルチプロジェクトエージェントをサポートします。
+
+- YAML形式 (.yaml, .yml)  
+- 単一ファイル: 1つのエージェントを実行  
+- ディレクトリ: 複数のエージェントを実行  
+
+### 設定ファイル自動探索順序
+
+1. `c` オプションで指定されたファイル/ディレクトリ  
+2. `config.yaml`, `config.yml` (デフォルトファイル)  
+3. カレントディレクトリ内のすべての `.yaml`, `.yml` ファイル  
+
+### 設定ファイル例
+
+```bash title="ディレクトリ tree 例"
+❯ tree
+.
+├── configs
+│   ├── project-1.yml
+│   └── project-2.yml
+├── dbxc-agent
+├── dbxc-ctl
+├── dbxc.log
+├── dbxc.pid
+
+❯ ls -al
+total 68456
+drwxr-xr-x  8 kyw  staff       256  7 18 20:23 .
+drwxr-xr-x  9 kyw  staff       288  7 18 20:10 ..
+drwxr-xr-x  4 kyw  staff       128  7 18 20:23 configs
+-rwxr-xr-x  1 kyw  staff  20174450  7 18 20:09 dbxc-agent
+-rwxr-xr-x  1 kyw  staff   8565570  7 18 20:09 dbxc-ctl
+-rw-------  1 kyw  staff   5574908  7 18 20:30 dbxc.log
+-rw-r--r--  1 kyw  staff         5  7 18 20:23 dbxc.pid
+```
+
+```bash title="yml 例"
+input:
+  csp: "aws" # クラウドサービスプロバイダーを入力します。
+  namespace: "rds"
+  region: "ap-northeast-2"
+  instances: # 指定したインスタンスは常に収集されます。クラスター内のインスタンスをここに指定すると、オートスケールに関係なく収集されます。
+    - name: "mysql-rds"
+      slow_query: true # スロークエリページを利用する場合は true に設定してください。
+  clusters:
+    autoscale:
+      enabled: false # オートスケールが有効な場合、スケーリングされたインスタンスを収集対象に追加または削除します。
+      interval: 60 # 指定したクラスターのオートスケール確認間隔です。（単位: 秒）
+    names:
+      - "database-cluster-name"
+  metrics: # 収集するメトリクスを入力します。
+    - "CPUUtilization"
+    - "FreeStorageSpace"
+    - "FreeableMemory"
+    - "ReadLatency"
+    - "WriteLatency"
+  logs:
+    enabled: false # 有効化/無効化が可能。true/false を選択してください。
+    groups: # 任意のAWSロググループを追加できます。
+      - "/aws/rds/cluster/test-letsgo/error"
+      - "/aws/lambda/MyLambda"
+
+output: # 収集したメトリクスを送信する WhaTap 情報を入力します。
+  license: "x42u920rpstnp-z5sv3qlhn3tcn-z39qoj8fvv8123"
+  host: "15.165.146.117"
+```
+
+## エージェント実行および制御コマンド
+
+CLIはエージェントの開始から状態確認、ログ参照まで様々なコマンドを提供します。
+
+### 開始/終了
+
+```
+# エージェント開始
+dbxc-ctl start -c project.yaml       # 特定の設定ファイル
+dbxc-ctl start --config configs      # 複数プロジェクト（ディレクトリ）
+dbxc-ctl start                       # デフォルト設定ファイルを自動探索
+
+# エージェント停止
+dbxc-ctl stop
+
+# エージェント再起動
+dbxc-ctl restart -c project.yaml
+```
+
+### 状態確認
+
+```
+# 簡単な状態確認
+dbxc-ctl status
+dbxc-ctl describe
+```
+
+### ログ参照
+
+```
+# リアルタイムログ参照
+dbxc-ctl logs -f
+
+# 特定プロジェクトのログのみ参照
+dbxc-ctl logs -c project.yaml
+
+# ログレベルでフィルタリング
+dbxc-ctl logs --level error
+
+# 直近100件のログ参照
+dbxc-ctl logs --tail 100
+```
+
+### エージェント起動失敗時
+
+```
+# ログ確認
+dbxc-ctl logs --level error
+```
+
+### エージェント状態確認
+
+```
+# 全体状態確認
+dbxc-ctl describe
+
+# 特定エージェントのログ確認
+dbxc-ctl logs -c specific-config.yaml -f
+```
+
+:::tip
+
+**一般的なトラブルシューティング**
+
+- **ポート競合**: デフォルトポート53200が使用中か確認
+
+- **設定ファイルエラー**: YAML文法を確認
+
+- **権限問題**: ファイル読み取り権限を確認
+
+- **PIDファイルロック**: 強制終了後にPIDファイルを削除
+
+:::
+
+## 主な特徴
+
+DBXCは安定した実行、直感的なユーザー体験、そして多様なモニタリング機能を提供します。
+
+| 特徴         | 説明                                                                             |
+| ---------- | ------------------------------------------------------------------------------ |
+| **安定性**    | - PIDファイルに基づく重複実行防止 <br /> - ヘルスチェックによる正常起動確認 <br /> - 5秒起動タイムアウト設定            |
+| **ユーザー体験** | - プロジェクト（エージェント）ごとの一貫したカラーコーディング <br /> - リアルタイムログストリーミング <br /> - 直感的な状態表示    |
+| **モニタリング** | - HTTPサーバーベースの状態API (ポート: 53200) <br /> - 構造化ログ（Zapライブラリ） <br /> - 自動ログローテーション |
+
+## 詳細技術情報
+
+DBXCの詳細なコマンド構成および内部システム動作情報です。
+
+### コマンド構造
+
+dbxc-ctlは以下のコマンドをサポートします。
+
+- **start**: DBXエージェント開始
+- **stop**: DBXエージェント停止
+- **restart**: DBXエージェント再起動
+- **logs**: ログ参照
+- **status 또는 describe**: エージェント状態確認
+- **version**: バージョン情報確認
+- **help**: ヘルプ表示
+
+### HTTP API エンドポイント
+
+エージェントはHTTPエンドポイントを提供します。
+
+- `http://localhost:53200/health`: ヘルスチェック
+- `http://localhost:53200/status`: 状態情報
+- `http://localhost:53200/logs`: ログ参照
+
+### ログシステム
+
+- ファイル名: dbxc.log
+- 最大サイズ: 1ファイルあたり10MB
+- 最大バックアップファイル数: 7個 (dbxc.log.1, dbxc.log.2, ... dbxc.log.7)
+- 保管期間: 14日
+- 圧縮: 古いログファイルを自動圧縮（.gz形式）
+- タイムゾーン: ローカル時間
+
+ログファイルが10MBに達すると自動的にローテーションされ、最大7個のバックアップファイルが保持されます。
+14日以上経過したログは自動的に削除され、ディスク容量節約のため古いログは圧縮されます。
