@@ -9,38 +9,6 @@
 
 </InDoc>
 
-## 料金案内
-
-:::caution
-
-クラウドモニタリングエージェントは無料ですが、クラウドサービスの使用によっては別途料金が発生することがありますので、確認が必要です。
-
-:::
-
-<InDoc product="postgresql,mongodb,mysql,mssql,oracle">
-
-### AWS料金
-
-クラウドモニタリングエージェントは別途のSaaS料金なしで提供され、エージェントのインストールだけでモニタリング機能を使用できます。 ただ、AWS CloudWatchなどクラウドサービスのAPIを通じてメトリックを収集するため、**CloudWatch使用量によって別途料金がかかる場合があります**。
-
-本エージェントは、基本的に**1分周期でGetMetricData APIを呼び出し**してメトリックを収集し、呼び出し頻度と収集対象によって料金が増加することがあるので注意が必要です。
-
-詳しい料金ポリシーは[AWS公式文書のAmazon CloudWatch料金](https://aws.amazon.com/cloudwatch/pricing/)ページを参照してください。
-
-</InDoc>
-
-<InDoc product="postgresql">
-
-### NCP料金
-
-クラウドモニタリングエージェントは別途のSaaS料金なしで提供され、エージェントのインストールだけでモニタリング機能を使用できます。 クラウドモニタリングエージェントは、5分周期でCloud Insight APIを呼び出し、1分単位のメトリックデータを収集します。  
-
-NAVERクラウドプラットフォーム(NCP)のCloud Insightサービスは現在無料で提供されていますが、今後のポリシーによっては有料化される場合があります。 Cloud Insightサービスが有料化される場合、**API呼び出し回数によって料金がかかる場合がありますので**、使用量にご注意ください。
-
-詳しい料金ポリシーは[NAVERクラウドプラットフォームの公式料金案内](https://www.ncloud.com/product/management/cloudInsight#pricing)ページを参照してください。
-
-</InDoc>
-
 ## エージェント設定
 
 <InDoc product="mysql,mssql,oracle">
@@ -330,5 +298,37 @@ JSONポリシーをIAMユーザーまたは役割に**インラインポリシ�
 2. 上段メニューで**My Page> アカウント管理**に移動します。
 3. メニューで**認証キー管理**を選択します。
 4. **[キー生成]**ボタンをクリックして新しいAccess KeyとSecret Keyを生成します。
+
+</InDoc>
+
+## 料金案内
+
+:::caution
+
+クラウドモニタリングエージェントは無料ですが、クラウドサービスの使用によっては別途料金が発生することがありますので、確認が必要です。
+
+:::
+
+<InDoc product="postgresql,mongodb,mysql,mssql,oracle">
+
+### AWS料金
+
+クラウドモニタリングエージェントは別途のSaaS料金なしで提供され、エージェントのインストールだけでモニタリング機能を使用できます。 ただ、AWS CloudWatchなどクラウドサービスのAPIを通じてメトリックを収集するため、**CloudWatch使用量によって別途料金がかかる場合があります**。
+
+本エージェントは、基本的に**1分周期でGetMetricData APIを呼び出し**してメトリックを収集し、呼び出し頻度と収集対象によって料金が増加することがあるので注意が必要です。
+
+詳しい料金ポリシーは[AWS公式文書のAmazon CloudWatch料金](https://aws.amazon.com/cloudwatch/pricing/)ページを参照してください。
+
+</InDoc>
+
+<InDoc product="postgresql">
+
+### NCP料金
+
+クラウドモニタリングエージェントは別途のSaaS料金なしで提供され、エージェントのインストールだけでモニタリング機能を使用できます。 クラウドモニタリングエージェントは、5分周期でCloud Insight APIを呼び出し、1分単位のメトリックデータを収集します。  
+
+NAVERクラウドプラットフォーム(NCP)のCloud Insightサービスは現在無料で提供されていますが、今後のポリシーによっては有料化される場合があります。 Cloud Insightサービスが有料化される場合、**API呼び出し回数によって料金がかかる場合がありますので**、使用量にご注意ください。
+
+詳しい料金ポリシーは[NAVERクラウドプラットフォームの公式料金案内](https://www.ncloud.com/product/management/cloudInsight#pricing)ページを参照してください。
 
 </InDoc>

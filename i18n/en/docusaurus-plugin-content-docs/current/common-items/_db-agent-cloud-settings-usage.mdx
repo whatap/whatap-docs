@@ -1,0 +1,193 @@
+DBX for Cloud, DBXC consists of two main components. 
+
+- **dbxc-agent**: A background service (agent) that monitors cloud metrics  
+- **dbxc-ctl**: A CLI tool to control the agent (start, stop, check status, view logs)  
+
+## Configuration File Structure
+
+DBXC defines runtime configurations through a YAML configuration file.
+
+### Supported Formats
+
+DBXC supports both single-project and multi-project agents.
+
+- YAML format (.yaml, .yml)  
+- Single file: Run a single agent  
+- Directory: Run multiple agents  
+
+### Automatic Search Order for Configuration Files
+
+1. File or directory specified with the `c` option  
+2. `config.yaml`, `config.yml` (default files)  
+3. All `.yaml`, `.yml` files in the current directory  
+
+### Example Configuration Files
+
+```bash title="Directory tree example"
+❯ tree
+.
+├── configs
+│   ├── project-1.yml
+│   └── project-2.yml
+├── dbxc-agent
+├── dbxc-ctl
+├── dbxc.log
+├── dbxc.pid
+
+❯ ls -al
+total 68456
+drwxr-xr-x  8 kyw  staff       256  7 18 20:23 .
+drwxr-xr-x  9 kyw  staff       288  7 18 20:10 ..
+drwxr-xr-x  4 kyw  staff       128  7 18 20:23 configs
+-rwxr-xr-x  1 kyw  staff  20174450  7 18 20:09 dbxc-agent
+-rwxr-xr-x  1 kyw  staff   8565570  7 18 20:09 dbxc-ctl
+-rw-------  1 kyw  staff   5574908  7 18 20:30 dbxc.log
+-rw-r--r--  1 kyw  staff         5  7 18 20:23 dbxc.pid
+```
+
+```bash title="yml example"
+input:
+  csp: "aws" # Enter the cloud service provider.
+  namespace: "rds"
+  region: "ap-northeast-2"
+  instances: # Always collect the specified instances. If you specify an instance inside a cluster here, it will always be collected regardless of autoscale.
+    - name: "mysql-rds"
+      slow_query: true # Set this to true if you want to use the slow query page.
+  clusters:
+    autoscale:
+      enabled: false # When autoscale is enabled, scaled instances are added to or removed from the collection targets.
+      interval: 60 # Autoscale check interval for the specified clusters (unit: seconds).
+    names:
+      - "database-cluster-name"
+  metrics: # Enter the metrics to collect.
+    - "CPUUtilization"
+    - "FreeStorageSpace"
+    - "FreeableMemory"
+    - "ReadLatency"
+    - "WriteLatency"
+  logs:
+    enabled: false # Can be enabled/disabled. Select true/false.
+    groups: # Add the desired AWS log groups.
+      - "/aws/rds/cluster/test-letsgo/error"
+      - "/aws/lambda/MyLambda"
+
+output: # Enter the WhaTap information to receive the collected metric data.
+  license: "x42u920rpstnp-z5sv3qlhn3tcn-z39qoj8fvv8123"
+  host: "15.165.146.117"
+```
+
+## Agent Execution and Control Commands
+
+The CLI provides various commands for starting the agent, checking its status, and viewing logs.
+
+### Start/Stop
+
+```
+# Start agent
+dbxc-ctl start -c project.yaml        # Specific config file
+dbxc-ctl start --config configs      # Multiple projects (directory)
+dbxc-ctl start                       # Automatically search for default config file
+
+# Stop agent
+dbxc-ctl stop
+
+# Restart agent
+dbxc-ctl restart -c project.yaml
+```
+
+### Check Status
+
+```
+# Quick status check
+dbxc-ctl status
+dbxc-ctl describe
+```
+
+### View Logs
+
+```
+# View logs in real time
+dbxc-ctl logs -f
+
+# View logs for a specific project only
+dbxc-ctl logs -c project.yaml
+
+# Filter logs by level
+dbxc-ctl logs --level error
+
+# View the last 100 logs
+dbxc-ctl logs --tail 100
+```
+
+### If Agent Startup Fails
+
+```
+# Check logs
+dbxc-ctl logs --level error
+```
+
+### Check Agent Status
+
+```
+# Check all statuses
+dbxc-ctl describe
+
+# Check logs for a specific agent
+dbxc-ctl logs -c specific-config.yaml -f
+```
+
+:::tip
+
+**Common Troubleshooting**
+
+- **Port conflict**: Check if the default port 53200 is in use  
+- **Configuration file errors**: Verify YAML syntax  
+- **Permission issues**: Check file read permissions  
+- **PID file lock**: Force stop and delete the PID file  
+
+:::
+
+## Key Features
+
+DBXC provides stable execution, intuitive user experience, and extensive monitoring features.
+
+| Feature | Description |
+| --- | --- |
+| **Stability** | - Prevents duplicate runs with PID files <br /> - Verifies successful start with health checks <br /> - 5-second startup timeout |
+| **User Experience** | - Consistent color coding per project (agent) <br /> - Real-time log streaming <br /> - Intuitive status display |
+| **Monitoring** | - Status API based on HTTP server (port: 53200) <br /> - Structured logging (Zap library) <br /> - Automatic log rotation |
+
+## Technical Details
+
+Detailed command structure and internal system behavior of DBXC.
+
+### Command Structure
+
+dbxc-ctl supports the following commands:
+
+- **start**: Start DBX agent  
+- **stop**: Stop DBX agent  
+- **restart**: Restart DBX agent  
+- **logs**: View logs  
+- **status or describe**: Check agent status  
+- **version**: Check version information  
+- **help**: Display help  
+
+### HTTP API Endpoints
+
+The agent provides HTTP endpoints:
+
+- `http://localhost:53200/health`: Health check  
+- `http://localhost:53200/status`: Status information  
+- `http://localhost:53200/logs`: Log viewing  
+
+### Logging System
+
+- File name: dbxc.log  
+- Maximum size: 10MB per file  
+- Maximum number of backup files: 7 (dbxc.log.1, dbxc.log.2, ... dbxc.log.7)  
+- Retention period: 14 days  
+- Compression: Automatic compression enabled (.gz for old logs)  
+- Timezone: Local time  
+
+When the log file reaches 10MB, it rotates automatically. Up to 7 backup files are retained, and logs older than 14 days are deleted. Old logs are compressed to save disk space.
