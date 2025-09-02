@@ -1,6 +1,14 @@
-Home &gt; Select Project &gt; <Cmdname sid="side_management" className="uitext" /> &gt; <Cmdname sid="side_dbCloudSetting" className="uitext" />
+Home &gt; Select Project &gt; <Cmdname sid="side_management" className="uitext" /> &gt; **Serverless Agent Settings**
 
-It provides the feature to set up additional collection and monitoring for monitoring metrics provided by cloud services on the dashboard of the database project. Through the <Cmdname sid="side_dbCloudSetting" className="uitext" /> menu, you can monitor the resource status of the cloud database server in real time to maximize the operational efficiency.
+:::note
+The serverless agent is a lightweight collector designed to gather only cloud metrics in a serverless execution environment (such as Lambda or Functions) without requiring a dedicated server or program installation.  
+It can be easily deployed via AWS CloudFormation or Azure Resource Manager Template, enabling quick setup with minimal management overhead.
+
+This agent provides the same functionality as [Cloud Agent Settings](agent-cloud-settings), but is more suitable for single-instance environments where you only need to collect metrics.  
+However, it does **not support log collection**. If you operate multiple instances or require log collection (e.g., via CloudWatch Logs), it is recommended to use the Cloud Agent Settings instead.
+:::
+
+It provides the feature to set up additional collection and monitoring for monitoring metrics provided by cloud services on the dashboard of the database project. Through the **Serverless Agent Settings** menu, you can monitor the resource status of the cloud database server in real time to maximize the operational efficiency.
 
 Cloud settings allow you to collect CloudWatch metrics and slow query data. Collection of slow queries is supported only for MySQL and PostgreSQL.
 

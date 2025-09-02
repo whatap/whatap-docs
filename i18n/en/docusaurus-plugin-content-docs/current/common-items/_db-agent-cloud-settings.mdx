@@ -9,38 +9,6 @@ This document is a guide to configure the WhaTap Cloud Agent in the AWS and NCP 
 
 </InDoc>
 
-## Pricing information
-
-:::caution
-
-The Cloud Monitoring Agent is free, but note that separate charges may apply depending on the use of Cloud services.
-
-:::
-
-<InDoc product="postgresql,mongodb,mysql,mssql,oracle">
-
-### AWS Pricing
-
-Cloud monitoring agents are provided without separate SaaS fees, and the monitoring feature can be used simply by installing the agent. However, because the metrics are collected through the API for Cloud services such as AWS CloudWatch, **separate charges may apply depending on the CloudWatch usage**.
-
-This agent basically collects metrics by **calling the GetMetricData API every 1 minute**. Note that the charge may increase depending on the call frequency and collection targets.
-
-For more information about the pricing policy, see the [Amazon CloudWatch pricing in AWS official documentation](https://aws.amazon.com/cloudwatch/pricing/) page.
-
-</InDoc>
-
-<InDoc product="postgresql">
-
-### NCP Pricing
-
-Cloud monitoring agents are provided without separate SaaS fees, and the monitoring feature can be used simply by installing the agent. The Cloud Monitoring Agent calls the Cloud Insight API every 5 minutes to collect metrics at 1-minute granularity.  
-
-The Cloud Insight service of the Naver Cloud Platform (NCP) is currently provided free of charge, but may become paid depending on the future policy. If the Cloud Insight service becomes paid, charges may apply based on the number of API calls. Monitor the usage accordingly.
-
-For more information about the pricing policy, see the [Official pricing guide of NAVER Cloud Platform](https://www.ncloud.com/product/management/cloudInsight#pricing) page.
-
-</InDoc>
-
 ## Agent CONFIG.
 
 <InDoc product="mysql,mssql,oracle">
@@ -330,5 +298,37 @@ The Cloud Agent calls the NCP Cloud Insight API to collect metrics and configura
 2. From the top menu, go to **My Page > Account Management**.
 3. Select **Authentication Key Management** from the menu.
 4. Click the **[Create Key]** button to create new Access Key and Secret Key.
+
+</InDoc>
+
+## Pricing information
+
+:::caution
+
+The Cloud Monitoring Agent is free, but note that separate charges may apply depending on the use of Cloud services.
+
+:::
+
+<InDoc product="postgresql,mongodb,mysql,mssql,oracle">
+
+### AWS Pricing
+
+Cloud monitoring agents are provided without separate SaaS fees, and the monitoring feature can be used simply by installing the agent. However, because the metrics are collected through the API for Cloud services such as AWS CloudWatch, **separate charges may apply depending on the CloudWatch usage**.
+
+This agent basically collects metrics by **calling the GetMetricData API every 1 minute**. Note that the charge may increase depending on the call frequency and collection targets.
+
+For more information about the pricing policy, see the [Amazon CloudWatch pricing in AWS official documentation](https://aws.amazon.com/cloudwatch/pricing/) page.
+
+</InDoc>
+
+<InDoc product="postgresql">
+
+### NCP Pricing
+
+Cloud monitoring agents are provided without separate SaaS fees, and the monitoring feature can be used simply by installing the agent. The Cloud Monitoring Agent calls the Cloud Insight API every 5 minutes to collect metrics at 1-minute granularity.  
+
+The Cloud Insight service of the Naver Cloud Platform (NCP) is currently provided free of charge, but may become paid depending on the future policy. If the Cloud Insight service becomes paid, charges may apply based on the number of API calls. Monitor the usage accordingly.
+
+For more information about the pricing policy, see the [Official pricing guide of NAVER Cloud Platform](https://www.ncloud.com/product/management/cloudInsight#pricing) page.
 
 </InDoc>
