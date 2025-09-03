@@ -6113,26 +6113,8 @@ const sidebars = {
       items: [
         'opentelemetry/install-agent',
         'opentelemetry/set-agent',
-        {
-          type: 'category',
-          label: '릴리스 노트',
-          collapsible: true,
-          collapsed: false,
-          className: 'new',
-          items: [
-            {
-              type: 'doc',
-              id: 'release-notes/otel/otel-v0_2_6',
-              className: 'new',
-            },
-            'release-notes/otel/otel-v0_2_5',
-            'release-notes/otel/otel-v0_2_4',
-            'release-notes/otel/otel-v0_2_3',
-            'release-notes/otel/otel-v0_2_2',
-            'release-notes/otel/otel-v0_2_1',
-            'release-notes/otel/otel-v0_2_0',
-          ]
-        }
+        'release-notes/otel/index',
+        'opentelemetry/download-agent',
       ],
     }
   ],
