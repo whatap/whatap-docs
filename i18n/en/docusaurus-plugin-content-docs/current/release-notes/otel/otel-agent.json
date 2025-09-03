@@ -1,0 +1,250 @@
+[
+  {
+    "ver": "v0.2.7",
+    "date": "2025-09-02",
+    "Lists": [
+      {
+        "ver": "v0.2.7",
+        "hash": "v027",
+        "product": "OTEL Agent",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> Added option to process Span data sequentially</p>",
+        "details": "<ul>\n<li>When processing <code>scopespan</code> of Trace data, <code>Span.Kind = KIND_SERVER</code> is handled as a WhaTap transaction</li>\n<li>Previous behavior: aggregated multiple <code>KIND_SERVER</code> spans in a single request and processed them at the end</li>\n<li>With the option enabled, spans are processed sequentially</li>\n<ul>\n    <li>otel_tx_process_server_span_in_order_enabled</li>\n    <li>Default: <code>false</code></li>\n</ul>\n</ul>"
+      }
+    ]
+  },  
+  {
+    "url": "https://docs.whatap.io/release-notes/otel/otel-v0_2_6",
+    "ver": "v0.2.6",
+    "date": "2025-09-01",
+    "Lists": [
+      {
+        "ver": "v0.2.6",
+        "hash": "v026",
+        "product": "OTEL Agent",
+        "type": "Change",
+        "desc": "<p><code class=\"Change\" type=\"1\">Change</code> Improved Span data processing method</p>",
+        "details": "<ul>\n<li>Collect span data in a parent–child tree structure</li>\n<li>Changed to process subsequent child spans even if an intermediate parent span is missing</li>\n</ul>"
+      },
+      {
+        "ver": "v0.2.6",
+        "hash": "v026",
+        "product": "OTEL Agent",
+        "type": "Change",
+        "desc": "<p><code class=\"Change\" type=\"1\">Change</code> Added attribute key names</p>",
+        "details": "<ul>\n<li>\n<p>Added the attribute key name <code>http.response.status_code</code> for collecting HTTP status codes</p>\n<ul>\n<li>otel_attr_tx_status_keys<!-- -->\n<ul>\n<li>Default: <code>http.status_code, http.response.status_code</code></li>\n</ul>\n</li>\n</ul>\n</li>\n<li>\n<p>Added the attribute key name <code>error</code> for collecting error information</p>\n<ul>\n<li>otel_attr_error_keys<!-- -->\n<ul>\n<li>Default: <code>error, error.type</code></li>\n</ul>\n</li>\n</ul>\n</li>\n</ul>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/release-notes/otel/otel-v0_2_5",
+    "ver": "v0.2.5",
+    "date": "2025-07-09",
+    "Lists": [
+      {
+        "ver": "v0.2.5",
+        "hash": "v025",
+        "product": "OTEL Agent",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"2\">Feature</code> Treat spans without a parent as transactions</p>",
+        "details": "<ul>\n<li>A span with no parent is treated as a transaction regardless of kind</li>\n<li>Previously, only <code>SPAN_KIND_SERVER</code> was treated as a transaction</li>\n<li>Related option: <code>otel_tx_root_span_enabled</code> (Default: true)</li>\n</ul>"
+      },
+      {
+        "ver": "v0.2.5",
+        "hash": "v025",
+        "product": "OTEL Agent",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"2\">Feature</code> Improved metrics collection method</p>",
+        "details": "<ul>\n<li>Changed from log-based collection to a Prometheus-compatible approach</li>\n<li>Viewable on Flex Board (MXQL data query)</li>\n</ul>"
+      },
+      {
+        "ver": "v0.2.5",
+        "hash": "v025",
+        "product": "OTEL Agent",
+        "type": "Change",
+        "desc": "<p><code class=\"Change\" type=\"1\">Change</code> Changed behavior of <code>query_string_enabled</code> option</p>",
+        "details": "<ul>\n<li>If <code>query_string_enabled</code> is true and <code>query_string_urls</code> and <code>query_string_keys</code> are not set,<br>\n<!-- -->collect query strings for all URLs</li>\n</ul>"
+      },
+      {
+        "ver": "v0.2.5",
+        "hash": "v025",
+        "product": "OTEL Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Fixed an issue with HTTP status counter collection</p>",
+        "details": "<ul>\n<li>Fixed an issue where the sum of 5xx errors was not collected</li>\n</ul>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/release-notes/otel/otel-v0_2_4",
+    "ver": "v0.2.4",
+    "date": "2025-04-30",
+    "Lists": [
+      {
+        "ver": "v0.2.4",
+        "hash": "v024",
+        "product": "OTEL Agent",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> Mark HTTP status errors</p>",
+        "details": "<ul>\n<li>\n<p>Setting to mark as error when HTTP status code is 400 or higher</p>\n<ul>\n<li>Key: <strong>transaction_status_error_enable</strong></li>\n<li>Type: <span class=\"type\">bool</span></li>\n<li>Default: <code>false</code></li>\n<li>Collection interval: 10 seconds</li>\n</ul>\n</li>\n</ul>"
+      },
+      {
+        "ver": "v0.2.4",
+        "hash": "v024",
+        "product": "OTEL Agent",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> Collect HTTP status code statistics</p>",
+        "details": "<ul>\n<li>\n<p>Setting to collect counts by status code across all URLs</p>\n<ul>\n<li>Key: <strong>tx_status_meter_enabled</strong></li>\n<li>Type: <span class=\"type\">bool</span></li>\n<li>Default: <code>true</code></li>\n<li>Collection interval: 10 seconds</li>\n</ul>\n</li>\n<li>\n<p>Setting to collect counts by status code per URL</p>\n<ul>\n<li>Key: <strong>stat_txstatus_enabled</strong></li>\n<li>Type: <span class=\"type\">bool</span></li>\n<li>Default: <code>true</code></li>\n<li>Collection interval: 5 minutes</li>\n</ul>\n</li>\n</ul>"
+      },
+      {
+        "ver": "v0.2.4",
+        "hash": "v024",
+        "product": "OTEL Agent",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> Analyze distributed traces by configuring virtual HTTP call spans</p>",
+        "details": "<ul>\n<li>\n<p>Enable virtual spans when HTTP call span information is missing</p>\n<ul>\n<li>Key: <strong>otel_virtual_httpc_enabled</strong></li>\n<li>Type: <span class=\"type\">bool</span></li>\n<li>Default: <code>false</code></li>\n</ul>\n</li>\n<li>\n<p>Set the name when HTTP call span information is missing</p>\n<ul>\n<li>Key: <strong>otel_virtual_httpc_name</strong></li>\n<li>Type: <span class=\"type\">string</span></li>\n<li>Default: <code>external http call</code></li>\n</ul>\n</li>\n</ul>"
+      },
+      {
+        "ver": "v0.2.4",
+        "hash": "v024",
+        "product": "OTEL Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Fixed an error in the HTTP Method ignore setting</p>",
+        "details": "<ul>\n<li><code>PATCH</code>, <code>OPTIONS</code>, <code>HEAD</code>, and <code>TRACE</code> methods are not collected as transactions</li>\n</ul>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/release-notes/otel/otel-v0_2_3",
+    "ver": "v0.2.3",
+    "date": "2025-02-25",
+    "Lists": [
+      {
+        "ver": "v0.2.3",
+        "hash": "v023",
+        "product": "OTEL Agent",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> Added an option to set the transaction name from the span <code>name</code> value</p>",
+        "details": "<ul>\n<li><strong>otel_tx_path_setby_name_enabled</strong> <span class=\"type\">bool</span> (Default <code>false</code>)</li>\n</ul>"
+      },
+      {
+        "ver": "v0.2.3",
+        "hash": "v023",
+        "product": "OTEL Agent",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> Added options for multi-transaction linkage recognizing a trace span’s <code>SpanID</code> as the external connection’s <code>ParentSpanID</code></p>",
+        "details": "<ul>\n<li><strong>otel_mtrace_stepid_setby_trace_spanid_enabled</strong> <span class=\"type\">bool</span> (Default <code>false</code>)</li>\n</ul>"
+      },
+      {
+        "ver": "v0.2.3",
+        "hash": "v023",
+        "product": "OTEL Agent",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> Added a log option to output the same content to <code>Stdout</code> as the file log</p>",
+        "details": "<ul>\n<li><strong>log_stdout_enabled</strong> <span class=\"type\">bool</span> (Default <code>false</code>)</li>\n</ul>"
+      },
+      {
+        "ver": "v0.2.3",
+        "hash": "v023",
+        "product": "OTEL Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Fixed an issue where a “file not found” error log was repeatedly printed if <em>whatap.conf</em> did not exist</p>"
+      },
+      {
+        "ver": "v0.2.3",
+        "hash": "v023",
+        "product": "OTEL Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Fixed an issue where the transaction ID was shown as <code>0</code></p>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/release-notes/otel/otel-v0_2_2",
+    "ver": "v0.2.2",
+    "date": "2024-12-11",
+    "Lists": [
+      {
+        "ver": "v0.2.2",
+        "hash": "v022",
+        "product": "OTEL Agent",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> Process transaction URL and URI information separately</p>",
+        "details": "<p>Items previously labeled as URL are now labeled as URI.</p>"
+      },
+      {
+        "ver": "v0.2.2",
+        "hash": "v022",
+        "product": "OTEL Agent",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> Modified external HTTP call URL notation to \"Host<!-- -->:Port<!-- -->\"</p>"
+      },
+      {
+        "ver": "v0.2.2",
+        "hash": "v022",
+        "product": "OTEL Agent",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> Added default attribute keys for extracting Kong gateway information</p>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/release-notes/otel/otel-v0_2_1",
+    "ver": "v0.2.1",
+    "date": "2024-11-06",
+    "Lists": [
+      {
+        "ver": "v0.2.1",
+        "hash": "v021",
+        "product": "OTEL Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> Fixed an issue where a goroutine stopped due to an unexpected internal panic</p>"
+      },
+      {
+        "ver": "v0.2.1",
+        "hash": "v021",
+        "product": "OTEL Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> Removed and cleaned up unnecessary logs</p>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/release-notes/otel/otel-v0_2_0",
+    "ver": "v0.2.0",
+    "date": "2024-06-19",
+    "Lists": [
+      {
+        "ver": "v0.2.0",
+        "hash": "v020",
+        "product": "OTEL Agent",
+        "type": "New",
+        "desc": "<p><code class=\"New\">New</code> Support for Linux aarch64</p>"
+      },
+      {
+        "ver": "v0.2.0",
+        "hash": "v020",
+        "product": "OTEL Agent",
+        "type": "New",
+        "desc": "<p><code class=\"New\">New</code> Collect additional error information from span events</p>",
+        "details": "<ul>\n<li>\n<p>Collect when error information comes in as an <code>event</code> rather than an <code>attribute</code>.</p>\n</li>\n<li>\n<p>Add agent configuration options to find errors in <code>event</code>.</p>\n<div class=\"language-ini codeBlockContainer_Ckt0 theme-code-block\" style=\"--prism-color:#bfc7d5;--prism-background-color:#292d3e\"><div class=\"codeBlockTitle_Ktv7\">whatap.conf</div><div class=\"codeBlockContent_biex\"><pre tabindex=\"0\" class=\"prism-code language-ini codeBlock_bY9V thin-scrollbar\" style=\"color:#bfc7d5;background-color:#292d3e\"><code class=\"codeBlockLines_e6Vv\"><span class=\"token-line\" style=\"color:#bfc7d5\"><span class=\"token key attr-name\" style=\"color:rgb(255, 203, 107)\">otel_events_exception_keys</span><span class=\"token punctuation\" style=\"color:rgb(199, 146, 234)\">=</span><span class=\"token value attr-value\">exception.type</span><span class=\"token plain\"></span><br></span><span class=\"token-line\" style=\"color:#bfc7d5\"><span class=\"token plain\"></span><span class=\"token key attr-name\" style=\"color:rgb(255, 203, 107)\">otel_events_error_message_keys</span><span class=\"token punctuation\" style=\"color:rgb(199, 146, 234)\">=</span><span class=\"token value attr-value\">exception.message</span><span class=\"token plain\"></span><br></span><span class=\"token-line\" style=\"color:#bfc7d5\"><span class=\"token plain\"></span><span class=\"token key attr-name\" style=\"color:rgb(255, 203, 107)\">otel_events_error_stack_keys</span><span class=\"token punctuation\" style=\"color:rgb(199, 146, 234)\">=</span><span class=\"token value attr-value\">exception.stacktrace</span><span class=\"token plain\"></span><br></span><span class=\"token-line\" style=\"color:#bfc7d5\"><span class=\"token plain\"></span><span class=\"token key attr-name\" style=\"color:rgb(255, 203, 107)\">otel_events_error_esc_keys</span><span class=\"token punctuation\" style=\"color:rgb(199, 146, 234)\">=</span><span class=\"token value attr-value\">exception.escaped</span><br></span></code></pre><div class=\"buttonGroup__atx\"><button type=\"button\" aria-label=\"클립보드에 코드 복사\" title=\"복사\" class=\"clean-btn\"><span class=\"copyButtonIcons_eSgA\" aria-hidden=\"true\"><svg viewbox=\"0 0 24 24\" class=\"copyButtonIcon_y97N\"><path fill=\"currentColor\" d=\"M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z\"></path></svg><svg viewbox=\"0 0 24 24\" class=\"copyButtonSuccessIcon_LjdS\"><path fill=\"currentColor\" d=\"M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z\"></path></svg></span></button></div></div></div>\n</li>\n</ul>"
+      },
+      {
+        "ver": "v0.2.0",
+        "hash": "v020",
+        "product": "OTEL Agent",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\">Changed</code> Use <em>security.conf</em> instead of <em>paramkey.txt</em></p>",
+        "details": "<p>Use the value of the <code>paramkey</code> key in the existing <em>security.conf</em> file. Changed the default from a random value to <code>WHATAP</code>. When set to <code>WHATAP</code>, decryption can be done without entering a key.</p>"
+      },
+      {
+        "ver": "v0.2.0",
+        "hash": "v020",
+        "product": "OTEL Agent",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\">Changed</code> Changed SQL normalization option settings</p>",
+        "details": "<ul>\n<li>\n<p>Always enable parameter separation and normalization in SQL statements. Set <code>trace_sql_normalize_enabled</code> to <code>true</code> at all times.</p>\n</li>\n<li>\n<p>If normalization was previously disabled, enable the setting to normalize and record parameters separately.</p>\n<ul>\n<li>Set <code>profile_sql_param_enabled</code> to <code>true</code>.</li>\n<li>Collect normalized parameters with separate encryption.</li>\n<li>You can decrypt and view data using <code>paramkey</code> in <em>security.conf</em>.</li>\n</ul>\n</li>\n</ul>"
+      }
+    ]
+  }
+]
