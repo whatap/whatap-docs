@@ -1,5 +1,64 @@
 [
   {
+    "url": "https://docs.whatap.io/release-notes/java/java-2_2_64",
+    "ver": "v2.2.64",
+    "date": "2025-09-03",
+    "Lists": [
+      {
+        "ver": "v2.2.64",
+        "hash": "v2264",
+        "product": "Java Agent",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code>Trace when calling Opensearch with apache httpclient</p>",
+        "details": "<div class=\"language-bash codeBlockContainer theme-code-block\" style=\"--prism-background-color:#292d3e;--prism-color:#f8f8f2\"><div class=\"codeBlockContent\"><pre tabindex=\"0\" class=\"prism-code language-bash codeBlock thin-scrollbar\" style=\"color:#f8f8f2;background-color:#292d3e\"><code class=\"codeBlockLines\"><span class=\"token-line\"><span class=\"token comment\" style=\"color:rgb(105,112,152);font-style:italic\"># requires agent restart</span></span><br /><span class=\"token-line\"><span class=\"token assign-left variable\" style=\"color:rgb(255,203,107)\">weaving</span><span class=\"token operator\" style=\"color:rgb(199,146,234)\">=</span><span class=\"token plain\" style=\"color:#bfc7d5\">opensearch</span></span></code></pre></div></div>"
+      },
+      {
+        "ver": "v2.2.64",
+        "hash": "v2264",
+        "product": "Java Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Modified to prevent duplicate vCPU aggregation when running multiple dockers on the same Linux host</p>"
+      },
+      {
+        "ver": "v2.2.64",
+        "hash": "v2264",
+        "product": "Java Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Fixed an issue where applications using the opentelemetry agent with WebClient in spring-boot-3.2 or later were not linked in multi-transaction tabs</p>"
+      },
+      {
+        "ver": "v2.2.64",
+        "hash": "v2264",
+        "product": "Java Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Prevent system CPU metrics collection via jmx when using Java version below 1.7</p>",
+        "details": "<ul><li>Indicates in the agent log to use the sigar library</li><div class=\"language-bash codeBlockContainer theme-code-block\" style=\"--prism-background-color:#292d3e;--prism-color:#f8f8f2\"><div class=\"codeBlockContent\"><pre tabindex=\"0\" class=\"prism-code language-bash codeBlock thin-scrollbar\" style=\"color:#f8f8f2;background-color:#292d3e\"><code class=\"codeBlockLines\"><span class=\"token-line\"><span class=\"token comment\" style=\"color:rgb(105,112,152);font-style:italic\"># default: false</span></span><br /><span class=\"token-line\"><span class=\"token assign-left variable\" style=\"color:rgb(255,203,107)\">sigar_enabled</span><span class=\"token operator\" style=\"color:rgb(199,146,234)\">=</span><span class=\"token plain\" style=\"color:#bfc7d5\">true</span></span></code></pre></div></div><ul>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/release-notes/java/java-2_2_63",
+    "ver": "v2.2.63",
+    "date": "2025-08-08",
+    "Lists": [
+      {
+        "ver": "v2.2.63",
+        "hash": "v2263",
+        "product": "Java Agent",
+        "type": "New",
+        "desc": "<p><code class=\"New\" type=\"1\">New</code> Opensearch tracing</p>",
+        "details": "<div class=\"language-bash codeBlockContainer theme-code-block\" style=\"--prism-background-color:#292d3e;--prism-color:#f8f8f2\"><div class=\"codeBlockContent\"><pre tabindex=\"0\" class=\"prism-code language-bash codeBlock thin-scrollbar\" style=\"color:#f8f8f2;background-color:#292d3e\"><code class=\"codeBlockLines\"><span class=\"token-line\"><span class=\"token comment\" style=\"color:rgb(105,112,152);font-style:italic\"># requires restart</span></span><br /><span class=\"token-line\"><span class=\"token assign-left variable\" style=\"color:rgb(255,203,107)\">weaving</span><span class=\"token operator\" style=\"color:rgb(199,146,234)\">=</span><span class=\"token plain\" style=\"color:#bfc7d5\">opensearch</span></span></code></pre></div></div>\n<div class=\"language-bash codeBlockContainer theme-code-block\" style=\"--prism-background-color:#292d3e;--prism-color:#f8f8f2\"><div class=\"codeBlockContent\"><pre tabindex=\"0\" class=\"prism-code language-bash codeBlock thin-scrollbar\" style=\"color:#f8f8f2;background-color:#292d3e\"><code class=\"codeBlockLines\"><span class=\"token-line\"><span class=\"token comment\" style=\"color:rgb(105,112,152);font-style:italic\"># default: true</span></span><br /><span class=\"token-line\"><span class=\"token comment\" style=\"color:rgb(105,112,152);font-style:italic\"># trace opensearch</span></span><br /><span class=\"token-line\"><span class=\"token assign-left variable\" style=\"color:rgb(255,203,107)\">trace_opensearch_enabled</span><span class=\"token operator\" style=\"color:rgb(199,146,234)\">=</span><span class=\"token plain\" style=\"color:#bfc7d5\">true</span></span><br /><br /><span class=\"token-line\"><span class=\"token comment\" style=\"color:rgb(105,112,152);font-style:italic\"># default: true</span></span><br /><span class=\"token-line\"><span class=\"token comment\" style=\"color:rgb(105,112,152);font-style:italic\"># add method step</span></span><br /><span class=\"token-line\"><span class=\"token assign-left variable\" style=\"color:rgb(255,203,107)\">trace_opensearch_step_method_enabled</span><span class=\"token operator\" style=\"color:rgb(199,146,234)\">=</span><span class=\"token plain\" style=\"color:#bfc7d5\">true</span></span></code></pre></div></div>"
+      },
+      {
+        "ver": "v2.2.63",
+        "hash": "v2263",
+        "product": "Java Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Collect jboss connection pool data even when using lower versions of the ironjacamar-core-api library</p>"
+      }
+    ]
+  },
+  {
     "url": "https://docs.whatap.io/en/release-notes/java/java-2_2_62",
     "ver": "v2.2.62",
     "date": "2025-07-03",

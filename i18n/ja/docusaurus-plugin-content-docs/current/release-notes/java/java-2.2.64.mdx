@@ -1,0 +1,33 @@
+---
+id: java-2_2_64
+title: Java Agent v2.2.64
+toc_max_heading_level: 2
+pagination_next: release-notes/java/java-2_2_63
+displayed_sidebar: releaseSidebar
+---
+
+2025年9月3日
+
+- <Status priority='1'>Feature</Status> apache httpclientでOpensearchを呼び出す場合のトレース
+
+    ```
+    # requires agent restart
+    weaving=opensearch
+    ```
+
+- <Status priority='0'>Fixed</Status> 同一Linuxホストで複数のdockerを実行する場合、vCPUの重複集計を防止するよう修正
+
+- <Status priority='0'>Fixed</Status> spring-boot-3.2以降のバージョンで、WebClientを使用してopentelemetryエージェントを利用するアプリケーション連携トレースがマルチトランザクションタブで接続されない現象を修正
+
+- <Status priority='0'>Fixed</Status> Java 1.7未満の場合、jmxを通じてsystem cpu指標を収集する現象を防止
+
+    - エージェントログにsigarライブラリを使用するように表示
+
+    ```
+    # default: false
+    sigar_enabled=true
+    ```
+
+import DownloadJava from './_import_dl-java-agent.mdx';
+
+<DownloadJava ver="2.2.64" />
