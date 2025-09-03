@@ -1,0 +1,33 @@
+---
+id: java-2_2_64
+title: Java Agent v2.2.64
+toc_max_heading_level: 2
+pagination_next: release-notes/java/java-2_2_63
+displayed_sidebar: releaseSidebar
+---
+
+September 3, 2025
+
+- <Status priority='1'>Feature</Status> Trace when calling Opensearch with apache httpclient
+
+    ```
+    # requires agent restart
+    weaving=opensearch
+    ```
+
+- <Status priority='0'>Fixed</Status> Modified to prevent duplicate vCPU aggregation when running multiple dockers on the same Linux host
+
+- <Status priority='0'>Fixed</Status> Fixed an issue where applications using the opentelemetry agent with WebClient in spring-boot-3.2 or later were not linked in multi-transaction tabs
+
+- <Status priority='0'>Fixed</Status> Prevented system CPU metrics collection via jmx when using Java version below 1.7
+
+    - Indicates in the agent log to use the sigar library
+
+    ```
+    # default: false
+    sigar_enabled=true
+    ```
+
+import DownloadJava from './_import_dl-java-agent.mdx';
+
+<DownloadJava ver="2.2.64" />

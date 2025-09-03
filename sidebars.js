@@ -4934,13 +4934,13 @@ const sidebars = {
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/java/java-2_2_63',
+                  id: 'release-notes/java/java-2_2_64',
                   className: 'new',
                 },
+                'release-notes/java/java-2_2_63',
                 'release-notes/java/java-2_2_62',
                 'release-notes/java/java-2_2_61',
                 'release-notes/java/java-2_2_60',
-                'release-notes/java/java-2_2_59',
                 'release-notes/java/java-previous',
               ],
             },
