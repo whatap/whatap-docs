@@ -39,7 +39,7 @@ p.date {
 }
 
 .subgroup {
-  padding-bottom: 30px;
+  padding-bottom: 40px;
   position: relative;
 }
 
@@ -145,7 +145,7 @@ p.date {
 }
 
 .details {
-  margin-top: 8px;
+  margin-top: 0px;
 }
 
 .details ul {
