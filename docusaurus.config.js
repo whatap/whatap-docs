@@ -499,13 +499,6 @@ const config = {
           },
           {
             type: 'doc',
-            docId: 'oracle-v1/monitoring-intro',
-            position: "left",
-            label: 'Oracle V1 모니터링',
-            className: 'hidden',
-          },
-          {
-            type: 'doc',
             docId: 'oracle/monitoring-intro',
             position: "left",
             label: 'Oracle V2 모니터링',
@@ -534,13 +527,6 @@ const config = {
           },
           {
             type: 'doc',
-            docId: 'mssql-v1/monitoring-intro',
-            position: "left",
-            label: 'SQL Server V1 모니터링',
-            className: 'hidden',
-          },
-          {
-            type: 'doc',
             docId: 'tibero/monitoring-intro',
             position: "left",
             label: 'Tibero 모니터링',
@@ -555,23 +541,9 @@ const config = {
           },
           {
             type: 'doc',
-            docId: 'cubrid-v1/monitoring-intro',
-            position: "left",
-            label: 'CUBRID V1 모니터링',
-            className: 'hidden',
-          },
-          {
-            type: 'doc',
             docId: 'altibase/monitoring-intro',
             position: "left",
             label: 'Altibase V2 모니터링',
-            className: 'hidden',
-          },
-          {
-            type: 'doc',
-            docId: 'altibase-v1/monitoring-intro',
-            position: "left",
-            label: 'Altibase V1 모니터링',
             className: 'hidden',
           },
           {
