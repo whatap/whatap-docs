@@ -151,7 +151,7 @@ output: # Enter the WhaTap information to receive the collected metrics.
 | `csp`                   | Indicates using the Naver Cloud Platform (`ncp`) as the cloud service provider.                                                                                                                                                                                                                              |
 | `namespace`             | It is used as the delimiter for monitoring targets or group name.<br />- e.g. `vpc_postgresql`                                                                                                                                                                                                               |
 | `region`                | Cloud region code<br />- Available values: `KR`, `SGN`, `JPN`, `USWN`, `DEN`                                                                                                                                                                                                                                 |
-| `accessKey`             | Access key for API calls to Naver Cloud<br />- Note. [How to Create an Access Key and Secret Key](/postgresql/agent-cloud-settings#access-key--secret-key-발급-방법)                                                                                                                                            |
+| `accessKey`             | Access key for API calls to Naver Cloud<br />- Note. [How to Create an Access Key and Secret Key](/postgresql/agent-cloud-settings#issue-accessKey)                                                                                                                                            |
 | `secretKey`             | Secret key for API calls to Naver Cloud                                                                                                                                                                                                                                                                      |
 | `instances`             | List of PostgreSQL instances to monitor<br />- Each instance contains the `name` and `domain` fields.                                                                                                                                                                                                        |
 | `instances[].name`      | Cloud DB for PostgreSQL (VPC) instance name<br />- It can be checked in DB Server > DB Server Name of the NAVER CLOUD PLATFORM console.<br />- e.g. `whatap-001-70ld`                                                                                                                                        |
@@ -162,7 +162,7 @@ output: # Enter the WhaTap information to receive the collected metrics.
 | `output.host`           | WhaTap server host address (IP) to transmit the collected data to                                                                                                                                                                                                                                            |
 
 
-#### How to Issue an Access Key / Secret Key
+#### How to Issue an Access Key / Secret Key {#issue-accessKey}
 
 1. Log in to the [NAVER CLOUD PLATFORM Console](https://www.ncloud.com).
 
