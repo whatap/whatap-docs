@@ -4426,14 +4426,17 @@ const sidebars = {
               label: 'Server',
               collapsible: true,
               collapsed: true,
-              className: 'new',
+              // className: 'new',
+              link: {
+                type: 'doc',
+                id: 'release-notes/server/index',
+              },
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/server/index',
+                  id: 'release-notes/server/download-server-agent',
                   //className: 'new',
                 },
-                'release-notes/server/download-server-agent',
               ],
             },
             {
