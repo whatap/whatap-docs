@@ -1,78 +1,79 @@
 ---
 id: stat-anr
-title: ANR 통계
-description: 에러 로드 통계는 전체 에러 현황 정보를 제공합니다.
-keywords: [ 브라우저 모니터링, 에러, 통계 ]
+title: ANR Statistics
+description: Error load statistics provide an overview of all error occurrences.
+keywords: [ Browser Monitoring, Error, Statistics ]
 ---
 
-ANR 통계 메뉴는 Android 앱에서 발생한 ANR(Application Not Responding) 이벤트를 분석하고 모니터링할 수 있는 대시보드입니다. ANR은 앱이 사용자 입력에 5초 이상 응답하지 않을 때 발생하는 심각한 성능 문제입니다.
-상단 영역에서는 조회 시간, 필터링 기능을 공통으로 제공합니다. 
+The ANR Statistics menu is a dashboard for analyzing and monitoring ANR (Application Not Responding) events in Android apps.  
+An ANR is a critical performance issue that occurs when an app does not respond to user input for more than 5 seconds.  
+The top section provides a common time range selector and filtering features.
 
-- **시간 범위**: 상단 시간 선택기에서 최근 5분부터 최대 7일까지 조회 가능
-- **필터**: ANR 발생 화면, 디바이스, 앱 버전 등으로 필터링
-- **성능 지표**: ANR 발생 시 경과 시간, 빈도 분석
+- **Time Range**: Select a range from the last 5 minutes up to 7 days  
+- **Filters**: Filter by screen, device, app version, etc.  
+- **Performance Metrics**: Elapsed time and frequency analysis at ANR occurrence  
 
-## 주요 구성
+## Main Components
 
-### ANR 추이 (Line Chart)
+### ANR Trend (Line Chart)
 
-- **표시**: 시간대별 ANR 발생 건수 추이  
-- **Y축**: ANR 발생 건수  
-- **X축**: 시간  
-- **상호작용**  
-  - 마우스 오버 → 해당 시점의 건수 표시  
-  - 드래그 → 특정 구간 확대  
-  - 클릭 → 해당 시점의 ANR 상세 정보 확인  
+- **Display**: Trend of ANR occurrences over time  
+- **Y-axis**: Number of ANR occurrences  
+- **X-axis**: Time  
+- **Interactions**  
+  - Mouse hover → Shows the number at that point  
+  - Drag → Zoom in on a specific range  
+  - Click → View detailed ANR information for that time  
 
-### 스크린별 ANR 경과시간 Top 10 (Bar Chart)
+### Top 10 ANR Elapsed Time by Screen (Bar Chart)
 
-- 평균 응답 지연 시간이 긴 상위 10개 스크린 표시  
-- **표시**: 스크린별 평균 ANR 지속 시간(ms)  
-- **활용**: 가장 심각한 ANR이 발생하는 화면 식별  
-- **범위**: 기본 5초 이상, 최대 측정 가능 시간까지  
+- Displays the top 10 screens with the longest average delay time  
+- **Display**: Average ANR duration (ms) per screen  
+- **Use**: Identify screens with the most severe ANR issues  
+- **Range**: Default is 5 seconds or more, up to the maximum measurable time  
 
-### 스크린별 ANR 건수 Top 10 (Bar Chart)
+### Top 10 ANR Occurrences by Screen (Bar Chart)
 
-- ANR 발생 빈도가 높은 상위 10개 스크린 표시  
-- **표시**: 스크린별 총 ANR 발생 횟수  
-- **활용**: 문제 빈도가 높은 화면의 우선순위 파악  
+- Displays the top 10 screens with the highest ANR frequency  
+- **Display**: Total number of ANRs per screen  
+- **Use**: Identify priority screens with frequent ANRs  
 
-### ANR 목록 테이블
+### ANR List Table
 
-| 컬럼 | 설명 |
+| Column | Description |
 | --- | --- |
-| 상세 | ANR 상세 분석 페이지 이동 |
-| 스크린 이름 | ANR이 발생한 Activity 이름 |
-| ANR 타입 | Input dispatching timeout, Service timeout 등 유형 |
-| 발생 시간 | ANR이 발생한 시각 |
-| 경과 시간 | ANR이 지속된 시간(ms) |
-| 앱 버전 | 발생한 앱 버전 |
-| 디바이스 | 발생한 기기 모델 |
-| OS 버전 | Android OS 버전 |
-| 메인 스레드 상태 | ANR 발생 시 메인 스레드 상태 |
+| Details | Navigate to detailed ANR analysis page |
+| Screen Name | Name of the Activity where ANR occurred |
+| ANR Type | Type such as Input dispatching timeout, Service timeout |
+| Occurrence Time | Time when the ANR occurred |
+| Elapsed Time | Duration of the ANR (ms) |
+| App Version | App version where ANR occurred |
+| Device | Device model where ANR occurred |
+| OS Version | Android OS version |
+| Main Thread State | Main thread state at the time of ANR |
 
-- **기능**  
-  - 컬럼별 정렬 (발생 시간, 경과 시간 등)  
-  - 텍스트 검색 (스크린 이름, 디바이스 등)  
-  - 컬럼 설정으로 표시 항목 선택  
-  - CSV 다운로드 지원  
+- **Functions**  
+  - Sort by columns (occurrence time, elapsed time, etc.)  
+  - Text search (screen name, device, etc.)  
+  - Select visible columns via settings  
+  - CSV download support  
 
-## 사용 가이드
+## Usage Guide
 
-- **시간 범위 설정**: 상단 시간 선택기에서 기간 설정 후 새로고침 버튼으로 최신 데이터 조회  
-- **ANR 필터링**: 스크린 이름 검색 또는 앱 버전, 디바이스, OS, ANR 타입 조건 지정  
-- **성능 지표 분석**: 평균·최대·최소 경과 시간 중 분석 기준 선택  
-- **차트 상호작용**  
-  - 추이 차트 클릭 → 특정 시점의 ANR 목록 표시  
-  - Top 10 차트 클릭 → 해당 스크린 ANR만 필터링  
-  - 드래그 → 구간 선택 후 상세 분석  
-- **상세 분석**: 목록에서 상세 버튼 클릭 → 스택 트레이스, 메인 스레드 상태, 대기 리소스 분석  
-- **데이터 내보내기**: 우측 상단 CSV 다운로드 버튼으로 현재 조건에 맞는 데이터 저장  
+- **Set Time Range**: Configure period in the selector and refresh to load latest data  
+- **Filter ANR**: Search by screen name or filter by app version, device, OS, ANR type  
+- **Analyze Metrics**: Choose from average, maximum, or minimum elapsed time  
+- **Chart Interactions**  
+  - Click trend chart → Show ANR list for that time  
+  - Click Top 10 chart → Filter ANRs for that screen  
+  - Drag → Select range for detailed analysis  
+- **Detailed Analysis**: Click details button → View stack trace, main thread state, waiting resources  
+- **Export Data**: Use the CSV download button to save current results  
 
 :::caution
 
-- ANR은 Android 전용 지표로 iOS에서는 수집되지 않습니다.
-- ANR 발생 시 시스템이 자동으로 앱을 종료할 수 있습니다.
-- 메인 스레드에서 장시간 작업을 수행하지 않도록 주의가 필요합니다.
+- ANR is an Android-only metric and is not collected on iOS.  
+- The system may automatically terminate the app when an ANR occurs.  
+- Avoid performing long tasks on the main thread.  
 
 :::

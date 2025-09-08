@@ -1,13 +1,13 @@
 ---
 id: apply-agent-android
-title: Android 에이전트 적용
-description: 웹 애플리케이션에 와탭 브라우저 에이전트를 적용하고 브라우저 모니터링을 시작하세요.
-keywords: [ 브라우저 모니터링, 에이전트 ]
+title: Android エージェント適用
+description: WebアプリケーションにWhaTapブラウザーエージェントを適用し、ブラウザーモニタリングを開始します。
+keywords: [ ブラウザーモニタリング, エージェント ]
 ---
 
 import TR from '@site/src/components/TR';
 
-와탭 Android 모바일 모니터링 서비스를 사용하기 위해서는 [회원 가입](https://www.whatap.io/ko/signup/) 후 프로젝트를 생성하고 Android 애플리케이션에 와탭 Android 에이전트를 적용해야 합니다.
+WhaTap Androidモバイルモニタリングサービスを利用するには、[会員登録](https://www.whatap.io/ko/signup/)後にプロジェクトを作成し、AndroidアプリケーションにWhaTap Androidエージェントを適用する必要があります。
 
 import Createprojectv2 from "../getting-started/_create-project-v2.mdx";
 
@@ -17,33 +17,34 @@ import Accesskey from "../getting-started/_accesskey.mdx";
 
 <Accesskey />
 
-## 설치 전 요구사항
+## インストール前の要件
 
-Android 에이전트를 설치하기 전에 다음 요구사항을 확인하세요.
+Androidエージェントをインストールする前に次の要件を確認してください。
 
-- **Android Min Sdk 21 이상**
-- **지원 환경**: Android 5.0(API Level 21)+, Java 17+, Android Gradle Plugin 7.0+, Gradle 7.0+ (지원 버전: AGP 7.0 ~ 8.x / Gradle 7.0 ~ 8.x)
+- **Android Min Sdk 21以上**
+- **対応環境**: Android 5.0(API Level 21)+, Java 17+, Android Gradle Plugin 7.0+, Gradle 7.0+ (対応バージョン: AGP 7.0 ～ 8.x / Gradle 7.0 ～ 8.x)
 
 :::note
 
-WhatapAgent Android SDK는 Android 애플리케이션의 성능 모니터링을 위한 SDK입니다. 버전 1.1.0부터 WhatapAndroidPlugin이 제공되어 별도 코드 없이 자동 수집이 가능합니다.
+WhatapAgent Android SDKは、Androidアプリケーションの性能モニタリングのためのSDKです。  
+バージョン1.1.0からWhatapAndroidPluginが提供され、追加コードなしで自動収集が可能です。
 
 :::
 
+## エージェントインストール
 
-## 에이전트 설치
+AndroidにWhaTapモバイルエージェントをインストールするには、次の手順で進めます。
 
-Android에 와탭 모바일 에이전트를 설치하려면 다음 순서로 진행합니다.  
+**Gradle設定 → SDK初期化 → Manifest設定 → ProGuard設定 → ScreenGroup設定**
 
-**Gradle 설정 → SDK 초기화 → Manifest 설정 → ProGuard 설정 → ScreenGroup 설정**
+### 1. Gradle設定
 
-### 1. Gradle 설정 
-
-에이전트를 설치하기 위해 프로젝트의 Gradle 파일을 수정해야 합니다. 프로젝트가 Kotlin DSL을 사용하는지 Groovy를 사용하는지에 따라 설정 방법이 다릅니다.
+エージェントをインストールするために、プロジェクトのGradleファイルを修正する必要があります。  
+プロジェクトがKotlin DSLを使用しているかGroovyを使用しているかによって設定方法が異なります。
 
 #### Kotlin DSL
 
-##### Project 레벨 build.gradle.kts
+##### Projectレベル build.gradle.kts
 
 ```kotlin
 plugins {
@@ -52,7 +53,7 @@ plugins {
 
 ```
 
-##### App 모듈 build.gradle.kts
+##### Appモジュール build.gradle.kts
 
 ```kotlin
 plugins {
@@ -68,7 +69,7 @@ dependencies {
 
 #### Groovy
 
-##### Project 레벨 build.gradle
+##### Projectレベル build.gradle
 
 ```groovy
 plugins {
@@ -77,7 +78,7 @@ plugins {
 
 ```
 
-##### App 모듈 build.gradle
+##### Appモジュール build.gradle
 
 ```groovy
 plugins {
@@ -91,9 +92,9 @@ dependencies {
 
 ```
 
-### 2. SDK 초기화
+### 2. SDK初期化
 
-Android 애플리케이션의 성능 데이터를 수집하기 위해 SDK를 초기화해야 합니다. Application 클래스에서 초기화하는 것을 권장합니다.
+Androidアプリケーションの性能データを収集するために、SDKを初期化する必要があります。Applicationクラスで初期化することを推奨します。
 
 #### Kotlin
 
@@ -132,7 +133,7 @@ public class MyApplication extends Application {
 
 ```
 
-### 3. Manifest 설정
+### 3. Manifest設定
 
 AndroidManifest.xml 파일에 필요한 권한과 Application 클래스를 설정해야 합니다.
 
@@ -150,7 +151,7 @@ AndroidManifest.xml 파일에 필요한 권한과 Application 클래스를 설�
 
 ```
 
-### 4. ProGuard 설정
+### 4. ProGuard設定
 
 ```
 # WhatapAgent
@@ -171,9 +172,9 @@ AndroidManifest.xml 파일에 필요한 권한과 Application 클래스를 설�
 
 ```
 
-### 5. ScreenGroup 설정
+### 5. ScreenGroup設定
 
-ChainView를 사용하여 화면 흐름을 그룹으로 관리할 수 있습니다.
+ChainViewを使用して画面フローをグループで管理できます。
 
 #### Kotlin
 
@@ -234,13 +235,14 @@ public class MainActivity extends AppCompatActivity {
 }
 
 ```
-## 문제 해결 및 지원
 
-### 문제 해결
+## トラブルシューティングとサポート
 
-#### Desugaring 관련 오류
+### トラブルシューティング
 
-`Dependency 'io.whatap.whatap-agent:0.3.3' 관련 오류 발생 시` 아래 설정을 추가합니다:
+#### Desugaring関連エラー
+
+`Dependency 'io.whatap.whatap-agent:0.3.3' に関連するエラーが発生した場合`、以下の設定を追加してください。
 
 ```groovy
 android {
@@ -257,9 +259,9 @@ dependencies {
 
 ```
 
-#### Plugin not found 오류
+#### Plugin not foundエラー
 
-Plugin을 찾을 수 없는 오류 발생 시 아래 설정을 추가합니다:
+「Plugin not found」エラーが発生した場合、以下の設定を追加してください。
 
 ```groovy
 pluginManagement {
@@ -272,9 +274,9 @@ pluginManagement {
 
 ```
 
-#### Java 버전 관련 오류
+#### Javaバージョン関連エラー
 
-Java 버전 관련 오류 발생 시 아래 설정을 확인합니다:
+Java バージョンに関連するエラーが発生した場合、以下の設定を確認してください。
 
 ```groovy
 android {
@@ -286,40 +288,39 @@ android {
 
 ```
 
-#### Namespace 경고
+#### Namespace 警告
 
-`Namespace 'io.whatap.android.agent' is used in multiple modules` 경고는 무시해도 됩니다.
+`Namespace 'io.whatap.android.agent' is used in multiple modules` 警告は無視して構いません。
 
-이는 라이브러리가 여러 모듈에서 사용되고 있음을 알리는 경고이며, 앱 실행에는 영향을 주지 않습니다.
+これはライブラリが複数のモジュールで使用されていることを知らせる警告であり、アプリの実行には影響しません。
 
-#### 빌드 오류 발생 시
+#### ビルドエラーが発生した場合
 
-- Gradle 버전과 Android Gradle Plugin 버전이 요구사항을 충족하는지 확인하세요.
-- 네트워크 연결 상태를 확인하고 프록시 설정이 필요한 경우 설정하세요.
-- 프로젝트 Clean & Rebuild를 시도해 보세요.
+- Gradle バージョンと Android Gradle Plugin バージョンが要件を満たしているか確認してください。  
+- ネットワーク接続状態を確認し、プロキシ設定が必要な場合は設定してください。  
+- プロジェクトの Clean & Rebuild を試してください。  
 
-#### 데이터가 수집되지 않을 때
+#### データが収集されない場合
 
-- 프로젝트 액세스 키가 올바르게 설정되었는지 확인하세요.
-- 인터넷 권한이 AndroidManifest.xml에 추가되었는지 확인하세요.
-- Application 클래스에서 SDK 초기화가 제대로 되었는지 확인하세요.
-- 프록시나 방화벽 설정으로 인해 데이터 전송이 차단되지 않았는지 확인하세요.
+- プロジェクトアクセスキーが正しく設定されているか確認してください。  
+- AndroidManifest.xml にインターネット権限が追加されているか確認してください。  
+- Application クラスで SDK が正しく初期化されているか確認してください。  
+- プロキシやファイアウォール設定によりデータ転送がブロックされていないか確認してください。  
 
-### 지원
+### サポート
 
-기술 지원 요청 시 다음 정보를 함께 제공하면 더 빠른 해결이 가능합니다:
+技術サポートを依頼する際は、以下の情報を提供すると迅速に対応できます:
 
-- 프로젝트 액세스 키
-- Android SDK 버전
-- Gradle 버전 및 Android Gradle Plugin 버전
-- 에러 로그 전문
-- build.gradle 파일 내용
-- 문제 재현 방법
+- プロジェクトアクセスキー  
+- Android SDK バージョン  
+- Gradle バージョンおよび Android Gradle Plugin バージョン  
+- エラーログ全文  
+- build.gradle ファイル内容  
+- 問題の再現手順  
 
-## 다음 단계
+## 次のステップ
 
+* **モニタリングを開始する**
 
-* **모니터링 시작하기**
-
-  [와탭 모니터링 서비스](https://service.whatap.io) 페이지로 이동해 브라우저 모니터링을 시작하세요. 
-  앞서 생성한 프로젝트를 선택한 다음 <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_dashboard" className="uitext" /> 메뉴로 이동하세요. 
+  [WhaTap モニタリングサービス](https://service.whatap.io) ページに移動し、ブラウザーモニタリングを開始してください。  
+  作成したプロジェクトを選択し、<Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_dashboard" className="uitext" /> メニューに移動します。  

@@ -1,38 +1,37 @@
 ---
 id: stat-crash
-title: 크래시 통계
-description: 크래시 통계는 모바일 앱에서 발생한 크래시와 예외를 다양한 기준으로 분석할 수 있는 대시보드입니다.
-keywords: [모바일 모니터링, 크래시, 예외, 통계]
+title: Crash Statistics
+description: The crash statistics dashboard provides analysis of crashes and exceptions in mobile apps based on various criteria.
+keywords: [Mobile Monitoring, Crash, Exception, Statistics]
 ---
 
-크래시 통계 메뉴는 모바일 앱에서 발생한 크래시와 예외를 다양한 기준으로 분석할 수 있는 대시보드입니다.  
-운영체제, 앱 버전, 디바이스, 예외 타입 등으로 그룹화하여 문제 패턴을 파악할 수 있습니다.  
-상단 영역에서는 조회 시간, 필터링 기능을 공통으로 제공합니다. 
+The Crash Statistics menu is a dashboard that allows analysis of crashes and exceptions occurring in mobile apps based on various criteria.  
+It helps identify issue patterns by grouping data by operating system, app version, device, and exception type.  
+The top section provides a common time range selector and filtering features.  
 
+## Main Components
 
-## 주요 구성
+### Grouping Options
 
-### 그룹화 선택
+- **Function**: Group by operating system, app version, device, exception type, etc.  
+- **Use**: Analyze crash patterns by specific criteria  
 
-- **기능**: 운영체제, 앱 버전, 디바이스, 예외 타입 등으로 그룹화  
-- **활용**: 특정 기준별 크래시 패턴 분석  
+### Crash Distribution (Pie Chart)
 
-### 크래시 분포 (Pie Chart)
+- **Display**: Proportion of crashes by grouping criteria  
+- **Tooltip**: Shows group name and count (%) on mouse hover  
+- **Interaction**: Click to filter crashes by group  
 
-- **표시**: 그룹화 기준에 따른 크래시 건수 비율  
-- **툴팁**: 마우스 오버 시 그룹명과 건수(%) 표시  
-- **상호작용**: 클릭 시 해당 그룹만 필터링  
+### Crash Trend Over Time (Bar Chart)
 
-### 시간별 크래시 추이 (Bar Chart)
+- **Display**: Number of crashes by time period  
+- **Unit**: 1 hour or auto-adjusted  
+- **Interactions**  
+  - Click bar → Highlight specific time range  
+  - Drag → Filter table by selected range  
 
-- **표시**: 시간대별 크래시 발생 건수  
-- **단위**: 1시간 또는 자동 조정  
-- **상호작용**  
-  - 바 클릭 → 특정 시간대 강조  
-  - 드래그 → 선택 구간으로 테이블 필터링  
+### Crash List Table
 
-### 크래시 목록 테이블
-
-- 컬럼별 정렬  
-- 텍스트 검색  
-- CSV 다운로드 지원  
+- Sort by columns  
+- Text search  
+- CSV download support  

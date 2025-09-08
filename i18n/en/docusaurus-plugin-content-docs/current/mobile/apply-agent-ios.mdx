@@ -1,13 +1,13 @@
 ---
 id: apply-agent-ios
-title: iOS 에이전트 적용
-description: 웹 애플리케이션에 와탭 브라우저 에이전트를 적용하고 브라우저 모니터링을 시작하세요.
-keywords: [ 브라우저 모니터링, 에이전트 ]
+title: Apply iOS Agent
+description: Apply the WhaTap browser agent to your web application and start browser monitoring.
+keywords: [ Browser Monitoring, Agent ]
 ---
 
 import TR from '@site/src/components/TR';
 
-와탭 iOS 모바일 모니터링 서비스를 사용하기 위해서는 [회원 가입](https://www.whatap.io/ko/signup/) 후 프로젝트를 생성하고 iOS 애플리케이션에 와탭 iOS 에이전트를 적용해야 합니다.
+To use the WhaTap iOS mobile monitoring service, you must [sign up](https://www.whatap.io/ko/signup/), create a project, and then apply the WhaTap iOS agent to your iOS application.
 
 import Createprojectv2 from "../getting-started/_create-project-v2.mdx";
 
@@ -17,68 +17,70 @@ import Accesskey from "../getting-started/_accesskey.mdx";
 
 <Accesskey />
 
-## 설치 전 요구사항
+## Prerequisites
 
-iOS 에이전트를 설치하기 전에 다음 요구사항을 확인하세요.
+Before installing the iOS agent, check the following requirements:
 
-- **iOS 14.0 이상**
-- **Xcode 14.0 이상**
-- **Swift 5.0 이상** 또는 **Objective-C**
+- **iOS 14.0 or higher**  
+- **Xcode 14.0 or higher**  
+- **Swift 5.0 or higher** or **Objective-C**
 
-## 에이전트 설치
+## Install Agent
 
-에이전트는 두 가지 방식으로 설치할 수 있습니다.  
+The agent can be installed in two ways:  
 
-- Swift Package Manager를 이용한 **자동 설치 방식**  
-- XCFramework을 이용한 **수동 설치 방식**  
+- **Automatic installation using Swift Package Manager**  
+- **Manual installation using XCFramework**  
 
-### Swift Package Manager 자동 설치
+### Automatic Installation with Swift Package Manager
 
-1. Xcode에서 프로젝트를 열고 **File → Add Package Dependencies**를 선택합니다.  
-2. 패키지 URL을 입력합니다.  
+1. Open the project in Xcode and select **File → Add Package Dependencies**.  
+2. Enter the package URL:  
     
     `https://github.com/whatap/WhatapIOSAgent-Release`
     
-3. 버전 선택 후 **Add Package**를 클릭합니다.
+3. Select the version and click **Add Package**.
 
-### XCFramework 수동 설치
+### Manual Installation with XCFramework
 
-1. XCFramework을 다운로드합니다. 
+1. Download the XCFramework.
     
     ```bash
     curl -O https://repo.whatap-mobile-agent.io/uploads/1.2.0/WhatapAgent.xcframework.zip
     unzip WhatapAgent.xcframework.zip
     ```
     
-2. Xcode 프로젝트에 추가:
-    - 프로젝트 타겟 선택 → **General** 탭
-    - **Frameworks, Libraries, and Embedded Content** 섹션
-    - **+** 버튼 → **Add Other** → **Add Files**
-    - `WhatapAgent.xcframework` 선택
-    - **Embed & Sign** 확인
-    - Objective-C 프로젝트는 Bridging Header 설정 필요
+2. Add to Xcode Project:
+    - Select the project target → **General** tab
+    - Go to the **Frameworks, Libraries, and Embedded Content** section
+    - Click the **+** button → **Add Other** → **Add Files**
+    - Select `WhatapAgent.xcframework`
+    - Ensure **Embed & Sign** is checked
+    - For Objective-C projects, set up a Bridging Header
 
-## Agent 초기화
+## Agent Initialization
 
-Whatap iOS SDK는 앱의 성능 데이터를 수집하기 위해 앱 시작 시점에 초기화되어야 합니다. SDK 초기화는 앱이 시작될 때 가장 먼저 실행되어야 하며, 이를 통해 앱의 전체 생명주기 동안 발생하는 이벤트를 추적할 수 있습니다.
+The WhaTap iOS SDK must be initialized at app startup to collect performance data.  
+SDK initialization should be executed as early as possible in the app lifecycle to capture events throughout the entire runtime.
 
 :::note
 
-중요: 초기화 시점
+Important: Initialization Timing
 
-iOS에서 가장 빠른 초기화 시점은 `main()` 함수나 `+load` 메서드입니다. Swift 환경과의 호환성 및 안정성을 고려하여 다음 시점을 권장합니다:
+The earliest initialization point in iOS is the `main()` function or the `+load` method.  
+For compatibility and stability, the following timing is recommended:
 
-- **SwiftUI**: `@main` struct의 `init()` - 앱 구조체가 생성되는 시점
-- **UIKit**: `application:willFinishLaunchingWithOptions:` - didFinishLaunching보다 먼저 호출됨
-- **Objective-C**: `+load` 메서드 또는 `application:willFinishLaunchingWithOptions:`
+- **SwiftUI**: `init()` of the `@main` struct – when the app struct is created  
+- **UIKit**: `application:willFinishLaunchingWithOptions:` – called before `didFinishLaunching`  
+- **Objective-C**: `+load` method or `application:willFinishLaunchingWithOptions:`
 
-초기화 시점이 늦어지면 앱 시작 초기의 중요한 성능 데이터(pre-main time, 초기 메모리 사용량 등)를 놓칠 수 있습니다.
+If initialization is delayed, critical performance data at app startup (such as pre-main time and initial memory usage) may be missed.
 
 :::
 
 ### Swift
 
-SwiftUI 앱에서는 `@main` struct의 `init()`에서 SDK를 초기화합니다.
+In a SwiftUI app, initialize the SDK in the `init()` of the `@main` struct.
 
 ```swift
 import SwiftUI
@@ -87,7 +89,7 @@ import WhatapAgent
 @main
 struct MyApp: App {
     init() {
-        *// 시작 시 SDK 초기화*
+        *// Initialize SDK at startup*
         let agent = WhatapAgentBuilder()
             .setProjectKey("x439k23s88411-x234p54k2k9ksch-z7j91dmvhielot")
             .setCode(3380)
@@ -105,7 +107,7 @@ struct MyApp: App {
 }
 ```
 
-UIKit 기반 앱에서는 `AppDelegate`의 `application:willFinishLaunchingWithOptions:`에서 SDK를 초기화하는 것을 권장합니다.
+In UIKit-based apps, it is recommended to initialize the SDK in the `application:willFinishLaunchingWithOptions:` of `AppDelegate`.
 
 ```swift
 import UIKit
@@ -117,7 +119,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, 
                     willFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
-        *// 가장 빠른 시점에 SDK 초기화 (권장)*
+        *// Initialize SDK at the earliest point (recommended)*
         let agent = WhatapAgentBuilder()
             .setProjectKey("x439k23s88411-x234p54k2k9ksch-z7j91dmvhielot")  
             .setCode(3380)
@@ -144,7 +146,7 @@ AppDelegate.m
 @implementation AppDelegate
 
 + (void)load {
-    *// 클래스가 메모리에 로드되는 시점 (main() 이전)*
+    *// At the point when the class is loaded into memory (before main())*
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         WhatapAgentBuilder *builder = [[WhatapAgentBuilder alloc] init];
@@ -160,9 +162,9 @@ AppDelegate.m
 @end
 ```
 
-`+load` 메서드는 앱이 실행되기 전에 호출되므로 복잡한 작업은 피해야 합니다. SDK 초기화만 수행하세요.
+Since the `+load` method is called before the app starts running, avoid performing complex tasks. Only perform SDK initialization.
 
-방법 2: willFinishLaunchingWithOptions 사용 (권장)
+Method 2: Use willFinishLaunchingWithOptions (recommended)
 
 AppDelegate.m
 
@@ -175,7 +177,7 @@ AppDelegate.m
 - (BOOL)application:(UIApplication *)application 
     willFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
-    *// didFinishLaunching보다 먼저 실행되는 SDK 초기화*
+    *// Initialize SDK before didFinishLaunching is executed* 
     WhatapAgentBuilder *builder = [[WhatapAgentBuilder alloc] init];
     [builder setProjectKey:@"x439k23s88411-x234p54k2k9ksch-z7j91dmvhielot"];
     [builder setCode:3380];
@@ -190,19 +192,19 @@ AppDelegate.m
 @end
 ```
 
+## Main Settings {#setting-agent}  
 
-## 주요 설정 {#setting-agent}
+### 1. WhaTap Service Settings (Project Key, Code, Server URL)
 
-### 1. 와탭 서비스 설정 (프로젝트키, 코드, 서버주소)
 
 **Swift**
 
 ```swift
 let agent = WhatapAgentBuilder()
-  .setProjectKey("프로젝트키")  // 필수
-  .setCode(3380)               // 필수
-  .setServerUrl("15.165.146.117") // 필수
-  .setSamplingRate(1.0)        // 선택 (0.0 ~ 1.0, 기본값: 1.0)
+  .setProjectKey("ProjectKey")      // Required
+  .setCode(3380)                    // Required
+  .setServerUrl("15.165.146.117")   // Required
+  .setSamplingRate(1.0)             // Optional (0.0 ~ 1.0, default: 1.0)
   .build()
 ```
 
@@ -210,24 +212,24 @@ let agent = WhatapAgentBuilder()
 
 ```objectivec
 WhatapAgentBuilder *builder = [[WhatapAgentBuilder alloc] init];
-[builder setProjectKey:@"프로젝트키"];  // 필수
-[builder setCode:3380];  // 필수
-[builder setServerUrl:@"15.165.146.117"];  // 필수
-[builder setSamplingRate:1.0];  // 선택 (0.0 ~ 1.0, 기본값: 1.0)
+[builder setProjectKey:@"ProjectKey"];      // Required
+[builder setCode:3380];                     // Required
+[builder setServerUrl:@"15.165.146.117"];   // Required
+[builder setSamplingRate:1.0];              // Optional (0.0 ~ 1.0, default: 1.0)
 WhatapIOSAgent *agent = [builder build];
 ```
 
-### 2. 화면 추적 설정
+### 2. Screen Tracking Settings
 
-화면 추적은 사용자가 앱 내에서 어떤 화면을 방문하고, 각 화면에서 얼마나 머무르는지를 모니터링하는 기능입니다.  
+Screen tracking monitors which screens users visit within the app and how long they stay on each screen.  
 
 :::tip
 
-**화면 추적의 이점**
-- 사용자의 화면 이동 경로(Screen Flow) 추적  
-- 화면별 체류 시간 자동 계산  
-- 화면 로딩/렌더링 시간 등 성능 지표 수집  
-- 가장 많이 방문한 화면 분석
+**Benefits of Screen Tracking**
+- Track user screen navigation path (Screen Flow)  
+- Automatically calculate dwell time per screen  
+- Collect performance metrics such as screen load/rendering time  
+- Analyze the most frequently visited screens  
 
 :::
 
@@ -268,15 +270,15 @@ class ViewController: UIViewController {
 @end
 ```
 
-### 3. 네트워크 모니터링
+### 3. Network Monitoring
 
-네트워크 요청은 자동으로 추적됩니다.  
-URLSession을 사용하는 경우 별도 설정이 필요하지 않습니다.
+Network requests are automatically tracked.  
+No additional configuration is required when using URLSession.
 
-### 4. 크래시 리포팅
+### 4. Crash Reporting
 
-크래시는 자동으로 수집됩니다.  
-비활성화하려면 다음과 같이 설정합니다.
+Crashes are automatically collected.  
+To disable, configure as follows.
 
 **Swift**
 
@@ -294,26 +296,26 @@ WhatapAgentBuilder *builder = [[WhatapAgentBuilder alloc] init];
 [builder build];
 ```
 
-### 5. ChainView 설정
+### 5. ChainView Settings
 
-ChainView는 사용자 행동을 체인으로 연결해 전체 플로우를 추적하는 기능입니다.
+ChainView is a feature that links user actions into a chain to track the entire flow.
 
 **Swift**
 
 ```swift
-// ChainView 시작 (로그인 플로우 예시)
+// Start ChainView (example: login flow)
 let chainId = WhatapIOSAgent.startChainView("LoginFlow")
 
-// 단계별 이벤트 추가
+// Add step-by-step events
 WhatapIOSAgent.addChainViewEvent(chainId, event: "EmailInput")
 WhatapIOSAgent.addChainViewEvent(chainId, event: "PasswordInput")
 WhatapIOSAgent.addChainViewEvent(chainId, event: "LoginButtonClick")
 WhatapIOSAgent.addChainViewEvent(chainId, event: "AuthenticationSuccess")
 
-// 종료
+// End
 WhatapIOSAgent.endChainView(chainId)
 
-// 간단한 사용 예시
+// Simple usage example
 WhatapIOSAgent.setChainView("UserAction", value: "AddToCart")
 WhatapIOSAgent.setChainView("UserAction", value: "Checkout")
 ```
@@ -321,26 +323,26 @@ WhatapIOSAgent.setChainView("UserAction", value: "Checkout")
 **Objective-C**
 
 ```objectivec
-// ChainView 시작 (로그인 플로우 예시)
+// Start ChainView (example: login flow)
 NSString *chainId = [WhatapIOSAgent startChainView:@"LoginFlow"];
 
-// 단계별 이벤트 추가
+// Add step-by-step events
 [WhatapIOSAgent addChainViewEvent:chainId event:@"EmailInput"];
 [WhatapIOSAgent addChainViewEvent:chainId event:@"PasswordInput"];
 [WhatapIOSAgent addChainViewEvent:chainId event:@"LoginButtonClick"];
 [WhatapIOSAgent addChainViewEvent:chainId event:@"AuthenticationSuccess"];
 
-// 종료
+// End
 [WhatapIOSAgent endChainView:chainId];
 
-// 간단한 사용 예시
+// Simple usage example
 [WhatapIOSAgent setChainView:@"UserAction" value:@"AddToCart"];
 [WhatapIOSAgent setChainView:@"UserAction" value:@"Checkout"];
 ```
 
-### 6. Extra 설정
+### 6. Extra Settings
 
-앱의 추가 정보를 설정하여 더 상세한 분석이 가능합니다.
+By configuring additional app information, you can enable more detailed analysis.
 
 **Swift**
 
@@ -360,9 +362,9 @@ WhatapIOSAgent.setExtra("version", value: "2.1.0")
 [WhatapIOSAgent setExtra:@"version" value:@"2.1.0"];
 ```
 
-### 7. 네트워크 보안 설정
+### 7. Network Security Settings
 
-iOS 14 이상에서는 네트워크 정책에 따라 Info.plist에 추가 설정이 필요할 수 있습니다.
+On iOS 14 or later, additional configurations may be required in Info.plist depending on network policies.
 
 ```xml
 <key>NSAppTransportSecurity</key>
@@ -382,65 +384,61 @@ iOS 14 이상에서는 네트워크 정책에 따라 Info.plist에 추가 설정
 
 :::note
 
-**ATS(App Transport Security) 설정**  
-- iOS 9부터 도입된 ATS는 네트워크 통신을 보호하기 위한 기능입니다.  
-- 와탭 에이전트는 HTTPS를 사용하지만, 특정 환경에서는 예외 설정이 필요할 수 있습니다.  
-- 프로덕션 환경에서는 반드시 필요한 도메인만 예외 처리하는 것을 권장합니다.
+**ATS (App Transport Security) Settings**  
+- Introduced in iOS 9, ATS is a feature to protect network communication.  
+- WhaTap Agent uses HTTPS, but in certain environments, exceptions may be required.  
+- In production environments, it is recommended to allow exceptions only for the necessary domains.  
 
 :::
 
 ---
 
-## 문제 해결 및 지원
+## Troubleshooting & Support
 
-### 문제 해결
+### Troubleshooting
 
+#### SDK Initialization Failure
 
-#### SDK 초기화 실패
+If SDK initialization fails, check the following:
 
-SDK 초기화가 실패하는 경우 다음 사항을 확인하세요.
+- **Verify Project Key and PCode**: Ensure the correct values are set.  
+- **Check Network Connectivity**: Verify the device is connected to the internet.  
+- **Verify Server URL**: Ensure the provided collector server address is correct.  
 
-- **프로젝트 키와 PCode 확인**: 올바른 값이 설정되었는지 확인합니다.
-- **네트워크 연결 상태 확인**: 디바이스가 인터넷에 연결되어 있는지 확인합니다.
-- **서버 URL이 올바른지 확인**: 제공받은 수집 서버 주소가 정확한지 확인합니다.
+#### Data Not Collected
 
+If monitoring data is not displayed on the dashboard, check the following:
 
+- **Check Sampling Rate**: Confirm it is set to `setSamplingRate(1.0)` for 100% collection.  
+- **Check Network Permissions in Info.plist**: Verify App Transport Security settings are correct.  
 
-#### 데이터가 수집되지 않음
+#### Crash Reports Not Sent
 
-모니터링 데이터가 대시보드에 표시되지 않는 경우 다음 사항을 확인하세요.
+If crash data is not collected, check the following:
 
-- **샘플링 비율 확인**: `setSamplingRate(1.0)`으로 100% 수집되도록 설정되어 있는지 확인합니다.
-- **Info.plist의 네트워크 권한 확인**: App Transport Security 설정이 올바른지 확인합니다.
+- **Restart Required**: Crash information is sent when the app restarts after a crash.  
+- **Simulator Limitations**: Some crashes may not be captured in the simulator; testing on a real device is recommended.  
 
+### Support
 
-#### 크래시 리포트가 전송되지 않음
+If issues occur, contact us through the following channels:
 
-크래시 데이터가 수집되지 않는 경우 다음 사항을 확인하세요.
+- **Email**: [support@whatap.io](mailto:support@whatap.io)  
+- **Technical Docs**: [https://docs.whatap.io](https://docs.whatap.io/)  
 
-- **앱을 재시작해야 이전 크래시가 전송됨**: 크래시 발생 후 앱이 다시 실행될 때 이전 크래시 정보가 전송됩니다.
-- **시뮬레이터에서는 일부 크래시가 캡처되지 않을 수 있음**: 실제 디바이스에서 테스트하는 것을 권장합니다.
+When requesting technical support, provide the following information for faster resolution:
 
+- Project Key  
+- iOS Version  
+- Xcode Version  
+- SDK Version  
+- Error messages or logs  
+- Steps to reproduce the issue  
 
-### 지원
+## Next Steps
 
-문제가 발생하면 다음 채널로 문의하세요.
+* **Start Monitoring**
 
-- **이메일**: [support@whatap.io](mailto:support@whatap.io)
-- **기술 문서**: [https://docs.whatap.io](https://docs.whatap.io/)
-
-기술 지원 요청 시 다음 정보를 함께 제공하면 더 빠른 해결이 가능합니다:
-
-- 프로젝트 키
-- iOS 버전
-- Xcode 버전
-- SDK 버전
-- 에러 메시지 또는 로그
-- 문제 재현 방법
-
-## 다음 단계
-
-* **모니터링 시작하기**
-
-  [와탭 모니터링 서비스](https://service.whatap.io) 페이지로 이동해 브라우저 모니터링을 시작하세요. 
-  앞서 생성한 프로젝트를 선택한 다음 <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_dashboard" className="uitext" /> 메뉴로 이동하세요. 
+  Go to the [WhaTap Monitoring Service](https://service.whatap.io) page to start browser monitoring.  
+  Select the project you created earlier, then navigate to  
+  <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_dashboard" className="uitext" />.  

@@ -1,43 +1,43 @@
 ---
 id: stat-screenload
-title: 스크린 로드 통계
-description: 에러 로드 통계는 전체 에러 현황 정보를 제공합니다.
-keywords: [ 브라우저 모니터링, 에러, 통계 ]
+title: Screen Load Statistics
+description: Error load statistics provide an overview of all error occurrences.
+keywords: [Browser Monitoring, Error, Statistics]
 ---
 
-스크린 로드 통계 메뉴는 모바일 앱 내 개별 스크린의 로드 성능과 호출 빈도를 종합적으로 모니터링할 수 있는 대시보드입니다.  
-상단 영역에서는 조회 시간, 필터링 기능을 공통으로 제공합니다. 
+The Screen Load Statistics menu is a dashboard for comprehensively monitoring screen load performance and call frequency within a mobile app.  
+The top section provides a common time range selector and filtering features.
 
-- **조회 시간 선택**: 최근 5분부터 최대 3일까지 선택 가능하며, 실시간 데이터는 우측 검색 버튼으로 확인  
-- **스크린 필터**: 화면 이름을 입력하면 자동완성 목록이 표시되며, 복수 선택 가능  
-- **성능 지표**: Elapsed time(전체 로드 시간), Render time(렌더링 시간), Response time(서버 응답 시간) 중 선택  
+- **Time Range Selection**: Select from the last 5 minutes up to 3 days; real-time data can be viewed with the search button on the right  
+- **Screen Filter**: Enter a screen name to display an autocomplete list; multiple selections are supported  
+- **Performance Metrics**: Choose among Elapsed time (total load time), Render time, and Response time (server response time)  
 
-## 주요 구성
+## Main Components
 
-### 스크린 로드 성능 추이
+### Screen Load Performance Trend
 
-- **표시**: 시간대별 평균 스크린 로드 시간 변화  
-- **Y축**: 로드 시간(ms)  
-- **X축**: 시간  
-- **상호작용**  
-  - 마우스 오버 → 해당 시점의 수치 표시  
-  - 드래그 → 특정 구간 확대  
-  - 더블클릭 → 전체 범위로 복원  
+- **Display**: Average screen load time changes over time  
+- **Y-axis**: Load time (ms)  
+- **X-axis**: Time  
+- **Interactions**  
+  - Mouse hover → Show value at that point  
+  - Drag → Zoom into a specific range  
+  - Double-click → Restore to full range  
 
-### 스크린 로드 시간 Top10
+### Top 10 Screen Load Times
 
-- 선택 구간 내 평균 로드 시간이 긴 상위 10개 스크린 표시  
-- **표시**: 스크린별 평균 로드 시간(ms)  
-- **활용**: 성능 최적화가 필요한 화면의 우선순위 파악  
+- Displays the top 10 screens with the longest average load times within the selected range  
+- **Display**: Average screen load time (ms) per screen  
+- **Use**: Identify priority screens requiring performance optimization  
 
-### 스크린 로드 수 Top10
+### Top 10 Screen Loads
 
-- 선택 구간 내 호출 빈도가 높은 상위 10개 스크린 표시  
-- **표시**: 스크린별 총 호출 횟수  
-- **활용**: 사용자가 자주 방문하는 주요 화면 식별  
+- Displays the top 10 screens with the highest call frequency within the selected range  
+- **Display**: Total call count per screen  
+- **Use**: Identify key screens most frequently visited by users  
 
-### 스크린 목록
+### Screen List
 
-- 컬럼 정렬 (오름차순/내림차순)  
-- Column Settings로 표시 컬럼 선택  
-- CSV 다운로드 지원  
+- Column sorting (ascending/descending)  
+- Select visible columns via Column Settings  
+- CSV download support  
