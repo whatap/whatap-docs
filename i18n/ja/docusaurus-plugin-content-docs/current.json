@@ -1907,57 +1907,10 @@
     "message": "アラート通知",
     "description": "The label for category 경고 알림 in sidebar cubridSidebar"
   },
-<<<<<<< HEAD
   "sidebar.cubridSidebar.category.실험실": {
     "message": "実験室",
     "description": "The label for category 실험실 in sidebar cubridSidebar"
   },
-  "sidebar.cubridV1Sidebar.category.CUBRID V1 모니터링": {
-    "message": "CUBRID V1モニタリング",
-    "description": "The label for category CUBRID V1 모니터링 in sidebar cubridV1Sidebar"
-  },
-  "sidebar.cubridV1Sidebar.category.설치하기": {
-    "message": "インストール",
-    "description": "The label for category 설치하기 in sidebar cubridV1Sidebar"
-  },
-  "sidebar.cubridV1Sidebar.category.설정하기": {
-    "message": "設定",
-    "description": "The label for category 설정하기 in sidebar cubridV1Sidebar"
-  },
-  "sidebar.cubridV1Sidebar.category.주요 메뉴 알아보기": {
-    "message": "メインメニュー",
-    "description": "The label for category 주요 메뉴 알아보기 in sidebar cubridV1Sidebar"
-  },
-  "sidebar.cubridV1Sidebar.category.대시보드": {
-    "message": "ダッシューボード",
-    "description": "The label for category 대시보드 in sidebar cubridV1Sidebar"
-  },
-  "sidebar.cubridV1Sidebar.category.Flex 보드": {
-    "message": "Flexボード",
-    "description": "The label for category Flex 보드 in sidebar cubridV1Sidebar"
-  },
-  "sidebar.cubridV1Sidebar.category.분석": {
-    "message": "分析",
-    "description": "The label for category 분석 in sidebar cubridV1Sidebar"
-  },
-  "sidebar.cubridV1Sidebar.category.메트릭스": {
-    "message": "メトリクス",
-    "description": "The label for category 메트릭스 in sidebar cubridV1Sidebar"
-  },
-  "sidebar.cubridV1Sidebar.category.통계/보고서": {
-    "message": "統計/レポート",
-    "description": "The label for category 통계/보고서 in sidebar cubridV1Sidebar"
-  },
-  "sidebar.cubridV1Sidebar.category.알림 설정하기": {
-    "message": "アラートの設定",
-    "description": "The label for category 알림 설정하기 in sidebar cubridV1Sidebar"
-  },
-  "sidebar.cubridV1Sidebar.doc.지원 환경": {
-    "message": "サポート環境",
-    "description": "The label for the doc item 지원 환경 in sidebar cubridV1Sidebar, linking to the doc cubrid-v1/monitoring-support"
-  },
-=======
->>>>>>> mobile@SERVICE-2865
   "sidebar.mongodbSidebar.category.경고 알림": {
     "message": "アラート通知",
     "description": "The label for category 경고 알림 in sidebar mongodbSidebar"
