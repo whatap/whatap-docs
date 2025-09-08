@@ -4269,26 +4269,9 @@ const sidebars = {
               items: [
                 {
                   type: 'doc',
-<<<<<<< HEAD
-<<<<<<< HEAD
                   id: 'release-notes/java/download-agent-java',
                   // className: 'new',
                 },
-=======
-                  id: 'release-notes/java/java-2_2_64',
-                  className: 'new',
-                },
-                'release-notes/java/java-2_2_63',
-                'release-notes/java/java-2_2_62',
-                'release-notes/java/java-2_2_61',
-                'release-notes/java/java-2_2_60',
-                'release-notes/java/java-previous',
->>>>>>> 38108acb50edc9bb2e60842c66672198ac99ca3d
-=======
-                  id: 'release-notes/java/download-agent-java',
-                  // className: 'new',
-                },
->>>>>>> e1b37bbaac2b1abb7a2b93b980e3dfbe06201b08
               ],
             },
             {
