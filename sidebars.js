@@ -1648,7 +1648,6 @@ const sidebars = {
             'db2/report-intro',
           ],
         },
-        'db2/integrated-report',
         {
           type: 'category',
           label: '로그',
@@ -1838,7 +1837,6 @@ const sidebars = {
             'sapase/report-intro',
           ],
         },
-        'sapase/integrated-report',
         {
           type: 'category',
           label: '로그',
@@ -2073,7 +2071,6 @@ const sidebars = {
             'postgresql/report-intro',
           ],
         },
-        'postgresql/integrated-report',
         {
           type: 'category',
           label: '로그',
@@ -2462,7 +2459,6 @@ const sidebars = {
             'oracle/top-sql',
           ],
         },
-        'oracle/integrated-report',
         {
           type: 'category',
           label: '로그',
@@ -2683,7 +2679,6 @@ const sidebars = {
             'oracle-pro/top-wait-sql'
           ],
         },
-        'oracle-pro/integrated-report',
         {
           type: 'category',
           label: '로그',
@@ -2918,7 +2913,6 @@ const sidebars = {
             'mysql/top-sql',
           ]
         },
-        'mysql/integrated-report',
         {
           type: 'category',
           label: '로그',
@@ -3147,7 +3141,6 @@ const sidebars = {
             'mssql/backup-recovery-history'
           ],
         },
-        'mssql/integrated-report',
         {
           type: 'category',
           label: '로그',
@@ -3508,7 +3501,6 @@ const sidebars = {
             'tibero/report-intro',
           ]
         },
-        'tibero/integrated-report',
         {
           type: 'category',
           label: '경고 알림',
@@ -3692,7 +3684,6 @@ const sidebars = {
             'cubrid/report-intro',
           ],
         },
-        'cubrid/integrated-report',
         {
           type: 'category',
           label: '로그',
@@ -4059,7 +4050,6 @@ const sidebars = {
             'altibase/report-intro',
           ]
         },
-        'altibase/integrated-report',
         {
           type: 'category',
           label: '로그',
