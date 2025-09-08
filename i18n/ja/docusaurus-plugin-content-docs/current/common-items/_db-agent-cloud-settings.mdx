@@ -151,7 +151,7 @@ output: # 収集したメトリックデータを受信するWhaTap情報を入�
 | `csp`                | クラウドサービスのプロバイダーとしてNaver Cloud Platform(`ncp`)使用を表す                                                                                                                                                               |
 | `namespace`          | モニタリング対象の区切り記号またはグループ名で使用される<br />-  例 `vpc_postgresql`                                                                                                                                                          |
 | `region`             | クラウドリージョン(region)コード<br />- 対応値: `KR`、`SGN`、`JPN`、`USWN`、`DEN`                                                                                                                                                   |
-| `accessKey`          | Naver CloudのAPI呼び出しのためのアクセスキー<br />- 参考 [Access Key / Secret Key発行方法](https://www.notion.so/1ee20702704a802492c9ee6dd6c179e1?pvs=21)                                                                             |
+| `accessKey`          | Naver CloudのAPI呼び出しのためのアクセスキー<br />- 参考 [Access Key / Secret Key発行方法](/postgresql/agent-cloud-settings#issue-accessKey)                                                                               |
 | `secretKey`          | Naver CloudのAPI呼び出しのためのシークレットキー                                                                                                                                                                                  |
 | `instances`          | モニタリング対象であるPostgreSQLインスタンスリスト<br />- 各インスタンスは`name`と`domain` フィールドを含む                                                                                                                                           |
 | `instances[].name`   | Cloud DB for PostgreSQL (VPC)インスタンス名<br />- NAVER CLOUD PLATFORMコンソールのDB Server > DB Server名項目で確認可能<br />- 例 `whatap-001-70ld`                                                                                   |
@@ -160,6 +160,16 @@ output: # 収集したメトリックデータを受信するWhaTap情報を入�
 | `output`             | 収集したメトリックデータを受信するWhaTap情報                                                                                                                                                                                        |
 | `output.license`     | 収集されたメトリックデータを転送するWhaTapのライセンスキー                                                                                                                                                                                 |
 | `output.host`        | 収集データを転送するWhaTapサーバーのホストアドレス(IP)                                                                                                                                                                                 |
+
+#### Access Key / Secret Key の発行方法 {#issue-accessKey}
+
+1. [NAVER CLOUD PLATFORM コンソール](https://www.ncloud.com)にログインします。
+
+1. 上部メニューから My Page > アカウント管理 に移動します。
+
+1. メニューで 認証キー管理 をクリックします。
+
+1. [キー生成] ボタンをクリックして、新しい Access Key と Secret Key を生成します。
 
 </InDoc>
 
