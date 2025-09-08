@@ -311,6 +311,10 @@
     "message": "Alert",
     "description": "The label for category 경고 알림 in sidebar postgreSidebar"
   },
+  "sidebar.postgreSidebar.category.관리": {
+    "message": "Management",
+    "description": "The label for category 관리 in sidebar postgreSidebar"
+  },
   "sidebar.postgreSidebar.doc.지원 환경": {
     "message": "Supported Environment",
     "description": "The label for the doc item 지원 환경 in sidebar postgreSidebar, linking to the doc postgresql/monitoring-support"
@@ -338,6 +342,10 @@
   "sidebar.dboracleSidebar.category.알림 설정하기": {
     "message": "Alert Settings",
     "description": "The label for category 알림 설정하기 in sidebar dboracleSidebar"
+  },
+  "sidebar.dboracleSidebar.category.관리": {
+    "message": "Management",
+    "description": "The label for category 관리 in sidebar dboracleSidebar"
   },
   "sidebar.dboracleSidebar.doc.지원 환경": {
     "message": "Supported Environment",
@@ -390,6 +398,10 @@
   "sidebar.mssqlSidebar.category.메트릭스": {
     "message": "Metrics",
     "description": "The label for category 메트릭스 in sidebar mssqlSidebar"
+  },
+  "sidebar.mssqlSidebar.category.실험실": {
+    "message": "Laboratory",
+    "description": "The label for category 실험실 in sidebar mssqlSidebar"
   },
   "sidebar.mssqlSidebar.doc.지원 환경": {
     "message": "Supported Environment",
@@ -447,6 +459,10 @@
     "message": "Metrics",
     "description": "The label for category 메트릭스 in sidebar cubridSidebar"
   },
+  "sidebar.cubridSidebar.category.실험실": {
+    "message": "Laboratory",
+    "description": "The label for category 실험실 in sidebar cubridSidebar"
+  },
   "sidebar.cubridSidebar.doc.지원 환경": {
     "message": "Supported Environment",
     "description": "The label for the doc item 지원 환경 in sidebar cubridSidebar, linking to the doc cubrid/monitoring-support"
@@ -470,6 +486,10 @@
   "sidebar.altibaseSidebar.category.메트릭스": {
     "message": "Metrics",
     "description": "The label for category 메트릭스 in sidebar altibaseSidebar"
+  },
+  "sidebar.altibaseSidebar.category.실험실": {
+    "message": "Laboratory",
+    "description": "The label for category 실험실 in sidebar altibaseSidebar"
   },
   "sidebar.altibaseSidebar.doc.지원 환경": {
     "message": "Supported Environment",
@@ -507,6 +527,10 @@
     "message": "Analysis",
     "description": "The label for category 분석 in sidebar redisSidebar"
   },
+  "sidebar.redisSidebar.category.실험실": {
+    "message": "Laboratory",
+    "description": "The label for category 실험실 in sidebar redisSidebar"
+  },
   "sidebar.redisSidebar.doc.지원 환경": {
     "message": "Supported Environment",
     "description": "The label for the doc item 지원 환경 in sidebar redisSidebar, linking to the doc redis/monitoring-support"
@@ -534,6 +558,10 @@
   "sidebar.mongodbSidebar.category.메트릭스": {
     "message": "Metrics",
     "description": "The label for category 메트릭스 in sidebar mongodbSidebar"
+  },
+  "sidebar.mongodbSidebar.category.실험실": {
+    "message": "Laboratory",
+    "description": "The label for category 실험실 in sidebar mongodbSidebar"
   },
   "sidebar.mongodbSidebar.doc.지원 환경": {
     "message": "Supported Environment",
@@ -786,6 +814,10 @@
   "sidebar.awslogSidebar.category.Flex 보드": {
     "message": "Flex Board",
     "description": "The label for category Flex 보드 in sidebar awslogSidebar"
+  },
+  "sidebar.awslogSidebar.doc.로그 탐색": {
+    "message": "Log Explorer",
+    "description": "The label for the doc item 로그 탐색 in sidebar awslogSidebar, linking to the doc aws-log/aws-log-explorer"
   },
   "sidebar.awslogSidebar.doc.자원 삭제하기": {
     "message": "Deleting resources",
@@ -1042,6 +1074,14 @@
   "sidebar.logSidebar.category.주요 메뉴 알아보기": {
     "message": "Learn about the main features",
     "description": "The label for category 주요 메뉴 알아보기 in sidebar logSidebar"
+  },
+  "sidebar.logSidebar.category.로그 탐색": {
+    "message": "Log Explorer",
+    "description": "The label for category 로그 탐색 in sidebar logSidebar"
+  },
+  "sidebar.logSidebar.category.로그 설정": {
+    "message": "Log Setting",
+    "description": "The label for category 로그 설정 in sidebar logSidebar"
   },
   "sidebar.logSidebar.doc.설정하기": {
     "message": "Configuration",
@@ -1623,6 +1663,10 @@
     "message": "Alert",
     "description": "The label for category 경고 알림 in sidebar dboracleV2Sidebar"
   },
+  "sidebar.dboracleV2Sidebar.category.관리": {
+    "message": "Management",
+    "description": "The label for category 관리 in sidebar dboracleV2Sidebar"
+  },
   "sidebar.dboracleV2Sidebar.doc.지원 환경": {
     "message": "Support Environment",
     "description": "The label for the doc item 지원 환경 in sidebar dboracleV2Sidebar, linking to the doc oracle/monitoring-support"
@@ -1666,6 +1710,10 @@
   "sidebar.dboracledmaSidebar.category.경고 알림": {
     "message": "Alert",
     "description": "The label for category 경고 알림 in sidebar dboracledmaSidebar"
+  },
+  "sidebar.dboracledmaSidebar.category.관리": {
+    "message": "Management",
+    "description": "The label for category 관리 in sidebar dboracledmaSidebar"
   },
   "sidebar.dboracledmaSidebar.doc.지원 환경": {
     "message": "Support Environment",
@@ -1802,6 +1850,10 @@
   "sidebar.tiberoSidebar.category.경고 알림": {
     "message": "Alert",
     "description": "The label for category 경고 알림 in sidebar tiberoSidebar"
+  },
+  "sidebar.tiberoSidebar.category.실험실": {
+    "message": "Laboratory",
+    "description": "The label for category 실험실 in sidebar tiberoSidebar"
   },
   "sidebar.cubridSidebar.category.CUBRID V2 모니터링": {
     "message": "CUBRID V2 Monitoring",
@@ -2099,6 +2151,10 @@
     "message": "Event Configuration",
     "description": "The label for category 이벤트 설정 in sidebar mysqlSidebar"
   },
+  "sidebar.mysqlSidebar.category.관리": {
+    "message": "Management",
+    "description": "The label for category 관리 in sidebar mysqlSidebar"
+  },
   "sidebar.mssqlSidebar.category.이벤트 설정": {
     "message": "Event Configuration",
     "description": "The label for category 이벤트 설정 in sidebar mssqlSidebar"
@@ -2187,6 +2243,10 @@
     "message": "Event Configuration",
     "description": "The label for category 이벤트 설정 in sidebar db2Sidebar"
   },
+  "sidebar.db2Sidebar.category.실험실": {
+    "message": "Laboratory",
+    "description": "The label for category 실험실 in sidebar db2Sidebar"
+  },
   "sidebar.db2Sidebar.doc.지원 환경": {
     "message": "Support Environment",
     "description": "The label for the doc item 지원 환경 in sidebar db2Sidebar, linking to the doc db2/monitoring-support"
@@ -2234,6 +2294,14 @@
   "sidebar.sapaseSidebar.category.이벤트 설정": {
     "message": "Event Configuration",
     "description": "The label for category 이벤트 설정 in sidebar sapaseSidebar"
+  },
+  "sidebar.sapaseSidebar.category.관리": {
+    "message": "Management",
+    "description": "The label for category 관리 in sidebar sapaseSidebar"
+  },
+  "sidebar.sapaseSidebar.category.실험실": {
+    "message": "Laboratory",
+    "description": "The label for category 실험실 in sidebar sapaseSidebar"
   },
   "sidebar.sapaseSidebar.doc.지원 환경": {
     "message": "Support Environment",

@@ -311,6 +311,10 @@
     "message": "경고 알림",
     "description": "The label for category 경고 알림 in sidebar postgreSidebar"
   },
+  "sidebar.postgreSidebar.category.관리": {
+    "message": "관리",
+    "description": "The label for category 관리 in sidebar postgreSidebar"
+  },
   "sidebar.postgreSidebar.doc.지원 환경": {
     "message": "지원 환경",
     "description": "The label for the doc item 지원 환경 in sidebar postgreSidebar, linking to the doc postgresql/monitoring-support"
