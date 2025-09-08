@@ -1,0 +1,32 @@
+---
+id: java-2_2_63
+title: Java Agent v2.2.63
+toc_max_heading_level: 2
+pagination_next: release-notes/java/java-2_2_62
+displayed_sidebar: releaseSidebar
+---
+
+August 8, 2025
+
+- <Status priority='1'>New</Status> Trace when calling Opensearch with apache httpclient
+
+    ```
+    # requires restart
+    weaving=opensearch
+    ```
+
+    ```
+    # default: true
+    # trace opensearch
+    trace_opensearch_enabled=true
+
+    # default: true
+    # add method step
+    trace_opensearch_step_method_enabled=true
+    ```
+
+- <Status priority='0'>Fixed</Status> Collect jboss connection pool data even when using lower versions of the ironjacamar-core-api library
+
+import DownloadJava from './_import_dl-java-agent.mdx';
+
+<DownloadJava ver="2.2.63" />
