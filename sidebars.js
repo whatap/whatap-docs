@@ -6762,9 +6762,9 @@ const sidebars = {
           collapsible: true,
           collapsed: false,
           items: [
-            'log/log-lt',
-            'log/log-exp',
-            'log/log-search',
+            'mobile/log-lt',
+            'mobile/log-exp',
+            'mobile/log-search',
           ],
         },
         {
@@ -6779,8 +6779,10 @@ const sidebars = {
               label: '이벤트 설정',  
             },
             'mobile/set-receive-event',
+            'mobile/set-event-history',
           ],
         },
+        'mobile/labs',
       ]
     }
   ],
