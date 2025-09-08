@@ -6288,9 +6288,9 @@ const sidebars = {
           collapsible: true,
           collapsed: false,
           items: [
-            'log/log-lt',
-            'log/log-exp',
-            'log/log-search',
+            'mobile/log-lt',
+            'mobile/log-exp',
+            'mobile/log-search',
           ],
         },
         {
@@ -6304,6 +6304,7 @@ const sidebars = {
             'mobile/set-event-history',
           ],
         },
+        'mobile/labs',
       ]
     }
   ],
