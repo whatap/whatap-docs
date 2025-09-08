@@ -1151,6 +1151,10 @@
     "message": "Browser Monitoring",
     "description": "The label for the doc item 브라우저 모니터링 in sidebar learningSidebar, linking to the doc best-practice-guides/using-browser-monitoring"
   },
+  "sidebar.mobileSidebar.category.Mobile 모니터링": {
+    "message": "Mobile Monitoring",
+    "description": "The label for category Mobile 모니터링 in sidebar mobileSidebar"
+  },
   "sidebar.indexSidebar.link.Browser": {
     "message": "Browser",
     "description": "The label for link Browser in sidebar indexSidebar, linking to browser"
@@ -1544,8 +1548,36 @@
     "description": "The label for the doc item v1.0.3 in sidebar releaseSidebar, linking to the doc release-notes/mobile/mobile-app-v1_0_3"
   },
   "sidebar.rumsSidebar.category.브라우저 에이전트 적용": {
-    "message": "ブラウザエージェントの適用",
+    "message": "ブラウザエージェント設定",
     "description": "The label for category 브라우저 에이전트 적용 in sidebar rumsSidebar"
+  },
+  "sidebar.mobileSidebar.category.에이전트 적용": {
+    "message": "エージェント設定",
+    "description": "The label for category 에이전트 적용 in sidebar mobileSidebar"
+  },
+  "sidebar.mobileSidebar.category.대시보드": {
+    "message": "ダッシュボード",
+    "description": "The label for category 대시보드 in sidebar mobileSidebar"
+  },
+  "sidebar.mobileSidebar.category.Flex 보드": {
+    "message": "Flex ボード",
+    "description": "The label for the doc item Flex 보드 in sidebar mobileSidebar"
+  },
+  "sidebar.mobileSidebar.category.통계": {
+    "message": "統計",
+    "description": "The label for category 통계 in sidebar mobileSidebar"
+  },
+  "sidebar.mobileSidebar.category.로그": {
+    "message": "ログ",
+    "description": "The label for category 로그 in sidebar mobileSidebar"
+  },
+  "sidebar.mobileSidebar.category.경고 알림": {
+    "message": "アラート通知",
+    "description": "The label for category 경고 알림 in sidebar mobileSidebar"
+  },
+  "sidebar.mobileSidebar.doc.이벤트 설정": {
+    "message": "イベント設定",
+    "description": "The label for the doc item 이벤트 설정 in sidebar mobileSidebar"
   },
   "sidebar.kubeSidebar.doc.설정하기": {
     "message": "設定",
@@ -1875,6 +1907,7 @@
     "message": "アラート通知",
     "description": "The label for category 경고 알림 in sidebar cubridSidebar"
   },
+<<<<<<< HEAD
   "sidebar.cubridSidebar.category.실험실": {
     "message": "実験室",
     "description": "The label for category 실험실 in sidebar cubridSidebar"
@@ -1923,6 +1956,8 @@
     "message": "サポート環境",
     "description": "The label for the doc item 지원 환경 in sidebar cubridV1Sidebar, linking to the doc cubrid-v1/monitoring-support"
   },
+=======
+>>>>>>> mobile@SERVICE-2865
   "sidebar.mongodbSidebar.category.경고 알림": {
     "message": "アラート通知",
     "description": "The label for category 경고 알림 in sidebar mongodbSidebar"
@@ -1974,50 +2009,6 @@
   "sidebar.mssqlSidebar.category.로그": {
     "message": "ログ",
     "description": "The label for category 로그 in sidebar mssqlSidebar"
-  },
-  "sidebar.mssqlV1Sidebar.category.SQL Server V1 모니터링": {
-    "message": "SQL Server V1モニタリング",
-    "description": "The label for category SQL Server V1 모니터링 in sidebar mssqlV1Sidebar"
-  },
-  "sidebar.mssqlV1Sidebar.category.설치하기": {
-    "message": "インストール",
-    "description": "The label for category 설치하기 in sidebar mssqlV1Sidebar"
-  },
-  "sidebar.mssqlV1Sidebar.category.설정하기": {
-    "message": "設定",
-    "description": "The label for category 설정하기 in sidebar mssqlV1Sidebar"
-  },
-  "sidebar.mssqlV1Sidebar.category.주요 메뉴 알아보기": {
-    "message": "メインメニュー",
-    "description": "The label for category 주요 메뉴 알아보기 in sidebar mssqlV1Sidebar"
-  },
-  "sidebar.mssqlV1Sidebar.category.대시보드": {
-    "message": "ダッシューボード",
-    "description": "The label for category 대시보드 in sidebar mssqlV1Sidebar"
-  },
-  "sidebar.mssqlV1Sidebar.category.Flex 보드": {
-    "message": "Flexボード",
-    "description": "The label for category Flex 보드 in sidebar mssqlV1Sidebar"
-  },
-  "sidebar.mssqlV1Sidebar.category.분석": {
-    "message": "分析",
-    "description": "The label for category 분석 in sidebar mssqlV1Sidebar"
-  },
-  "sidebar.mssqlV1Sidebar.category.메트릭스": {
-    "message": "メトリクス",
-    "description": "The label for category 메트릭스 in sidebar mssqlV1Sidebar"
-  },
-  "sidebar.mssqlV1Sidebar.category.통계/보고서": {
-    "message": "統計/レポート",
-    "description": "The label for category 통계/보고서 in sidebar mssqlV1Sidebar"
-  },
-  "sidebar.mssqlV1Sidebar.category.경고 알림": {
-    "message": "アラート通知",
-    "description": "The label for category 경고 알림 in sidebar mssqlV1Sidebar"
-  },
-  "sidebar.mssqlV1Sidebar.doc.지원 환경": {
-    "message": "サポート環境",
-    "description": "The label for the doc item 지원 환경 in sidebar mssqlV1Sidebar, linking to the doc mssql-v1/monitoring-support"
   },
   "sidebar.serverSidebar.category.서버 인벤토리 맵": {
     "message": "サーバーインベントリマップ",
@@ -2167,10 +2158,6 @@
     "message": "イベント設定",
     "description": "The label for category 이벤트 설정 in sidebar mssqlSidebar"
   },
-  "sidebar.mssqlV1Sidebar.category.이벤트 설정": {
-    "message": "イベント設定",
-    "description": "The label for category 이벤트 설정 in sidebar mssqlV1Sidebar"
-  },
   "sidebar.tiberoSidebar.category.이벤트 설정": {
     "message": "イベント設定",
     "description": "The label for category 이벤트 설정 in sidebar tiberoSidebar"
@@ -2178,10 +2165,6 @@
   "sidebar.cubridSidebar.category.이벤트 설정": {
     "message": "イベント設定",
     "description": "The label for category 이벤트 설정 in sidebar cubridSidebar"
-  },
-  "sidebar.cubridV1Sidebar.category.이벤트 설정": {
-    "message": "イベント設定",
-    "description": "The label for category 이벤트 설정 in sidebar cubridV1Sidebar"
   },
   "sidebar.altibaseSidebar.category.이벤트 설정": {
     "message": "イベント設定",

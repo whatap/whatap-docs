@@ -1,0 +1,74 @@
+---
+id: mobile-intro
+title: Mobile Monitoring
+description: Overview of WhaTap Mobile Monitoring and the main data it collects.
+displayed_sidebar: mobileSidebar
+hide_table_of_contents: false
+keywords: [ Mobile Monitoring, Website Check, Response Code, Response Time, Monitoring Overview ]
+---
+
+## Mobile Monitoring
+
+Mobile Monitoring collects and analyzes various performance metrics of mobile applications, such as app startup time, API response time, screen rendering performance, crashes, and ANR (Application Not Responding). With this data, you can identify and optimize bottlenecks or performance issues. It also provides insights into performance differences by OS version and device model, enabling you to deliver the best possible user experience.
+
+## Why Mobile Monitoring?
+
+### Delivering a Consistent User Experience Across Diverse Devices and OS Versions
+
+The mobile ecosystem consists of thousands of device models and various OS versions. From low-spec devices to the latest flagships, Android 8 to 14, and iOS 12 to 17, apps run in diverse environments. Features that work fine in development may fail on certain devices or OS versions. Real-time monitoring is essential to ensure a consistent experience across this fragmented environment.
+
+### Optimizing App Performance in Unstable Network Environments
+
+Mobile users switch between WiFi, 5G, LTE, and 3G while using apps. Apps must remain stable even in unstable environments such as subways, elevators, or remote areas. Monitoring disconnections, timeouts, and retries during network transitions helps improve perceived service quality.
+
+### Preventing User Dropouts Due to Crashes and ANRs
+
+When a crash or ANR occurs, users often quit the app immediately, leave negative reviews, or uninstall it. App store ratings directly affect new user acquisition. Detecting crashes in real time, analyzing their causes, and responding quickly minimizes user dropouts and helps maintain app store ratings.
+
+### Improving User Satisfaction by Optimizing Battery and Memory Usage
+
+Mobile devices have limited battery and memory resources. Excessive battery drain or memory leaks degrade device performance and cause user dissatisfaction. Monitoring CPU usage, memory consumption, and battery usage patterns allows you to build apps that use resources efficiently.
+
+### Improving App Startup and Screen Transition Performance
+
+Users expect apps to start quickly and run smoothly. Measuring cold start, warm start, and hot start times, as well as detecting delays or lags during screen transitions, helps improve perceived app speed. Continuous performance monitoring is crucial to gain an advantage over competing apps.
+
+### Stable Updates with Real-Time Deployment Monitoring
+
+Unexpected issues can occur after app updates are released. Monitoring crash rates, API error rates, and performance changes in real time right after release allows for quick responses before problems spread. During staged rollouts, monitoring metrics at each stage ensures safe deployment.
+
+## **Key Features**
+
+Mobile Monitoring comprehensively monitors app performance, stability, and usability in real user environments. Key features include:
+
+### **App Startup Performance Monitoring**
+
+Monitors how quickly the app starts. Measures cold start (launch from fully closed), warm start (resume from background), and hot start (resume from minimized). By analyzing the duration of each stage, you can identify bottlenecks and optimize startup performance.
+
+### **Network Request Performance Monitoring**
+
+Monitors the performance of all network requests, including response time, error rate, payload size, and retry count. It analyzes performance differences by network type (WiFi/Cellular) and tracks timeouts or failures in slow environments. This helps establish API optimization and offline strategies.
+
+### **Screen Performance Monitoring**
+
+Tracks the performance of all methods executed during screen load. Measures execution times of lifecycle methods (such as onCreate), data binding, layout inflation, and business logic. A method call tree shows which methods delay loading, helping identify heavy tasks blocking the main thread. You can build performance profiles per screen to prioritize optimizations.
+
+### **Crash and ANR Monitoring**
+
+Detects app crashes and ANRs in real time and collects detailed stack traces. It also captures device state (memory, battery, network), user flow, and app version at the time of crash, making reproduction and debugging easier. Crash trends can be monitored to quantitatively manage app stability.
+
+### **User Environment Analysis**
+
+Analyzes performance metrics by OS version, device model, app version, region, carrier, and network type. This helps quickly identify issues limited to specific devices or OS versions, and prioritize optimizations based on user distribution.
+
+## **Getting Started with Mobile Monitoring**
+
+Follow these steps to start mobile monitoring:
+
+1. If you don’t have a WhaTap account, [sign up](https://www.whatap.io/ko/signup/).  
+2. Check supported platforms and minimum requirements:  
+   - Android: minSdkVersion 21 or higher  
+   - iOS: iOS 11.0 or higher  
+3. Go to the [WhaTap Monitoring Service](https://service.whatap.io/) and create a mobile project.  
+4. Install the SDK for your platform and apply the initialization code.  
+5. Build and deploy the app to start real-time monitoring.  

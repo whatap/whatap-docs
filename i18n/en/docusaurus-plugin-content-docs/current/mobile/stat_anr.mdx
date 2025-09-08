@@ -1,0 +1,79 @@
+---
+id: stat-anr
+title: ANR Statistics
+description: Error load statistics provide an overview of all error occurrences.
+keywords: [ Browser Monitoring, Error, Statistics ]
+---
+
+The ANR Statistics menu is a dashboard for analyzing and monitoring ANR (Application Not Responding) events in Android apps.  
+An ANR is a critical performance issue that occurs when an app does not respond to user input for more than 5 seconds.  
+The top section provides a common time range selector and filtering features.
+
+- **Time Range**: Select a range from the last 5 minutes up to 7 days  
+- **Filters**: Filter by screen, device, app version, etc.  
+- **Performance Metrics**: Elapsed time and frequency analysis at ANR occurrence  
+
+## Main Components
+
+### ANR Trend (Line Chart)
+
+- **Display**: Trend of ANR occurrences over time  
+- **Y-axis**: Number of ANR occurrences  
+- **X-axis**: Time  
+- **Interactions**  
+  - Mouse hover → Shows the number at that point  
+  - Drag → Zoom in on a specific range  
+  - Click → View detailed ANR information for that time  
+
+### Top 10 ANR Elapsed Time by Screen (Bar Chart)
+
+- Displays the top 10 screens with the longest average delay time  
+- **Display**: Average ANR duration (ms) per screen  
+- **Use**: Identify screens with the most severe ANR issues  
+- **Range**: Default is 5 seconds or more, up to the maximum measurable time  
+
+### Top 10 ANR Occurrences by Screen (Bar Chart)
+
+- Displays the top 10 screens with the highest ANR frequency  
+- **Display**: Total number of ANRs per screen  
+- **Use**: Identify priority screens with frequent ANRs  
+
+### ANR List Table
+
+| Column | Description |
+| --- | --- |
+| Details | Navigate to detailed ANR analysis page |
+| Screen Name | Name of the Activity where ANR occurred |
+| ANR Type | Type such as Input dispatching timeout, Service timeout |
+| Occurrence Time | Time when the ANR occurred |
+| Elapsed Time | Duration of the ANR (ms) |
+| App Version | App version where ANR occurred |
+| Device | Device model where ANR occurred |
+| OS Version | Android OS version |
+| Main Thread State | Main thread state at the time of ANR |
+
+- **Functions**  
+  - Sort by columns (occurrence time, elapsed time, etc.)  
+  - Text search (screen name, device, etc.)  
+  - Select visible columns via settings  
+  - CSV download support  
+
+## Usage Guide
+
+- **Set Time Range**: Configure period in the selector and refresh to load latest data  
+- **Filter ANR**: Search by screen name or filter by app version, device, OS, ANR type  
+- **Analyze Metrics**: Choose from average, maximum, or minimum elapsed time  
+- **Chart Interactions**  
+  - Click trend chart → Show ANR list for that time  
+  - Click Top 10 chart → Filter ANRs for that screen  
+  - Drag → Select range for detailed analysis  
+- **Detailed Analysis**: Click details button → View stack trace, main thread state, waiting resources  
+- **Export Data**: Use the CSV download button to save current results  
+
+:::caution
+
+- ANR is an Android-only metric and is not collected on iOS.  
+- The system may automatically terminate the app when an ANR occurs.  
+- Avoid performing long tasks on the main thread.  
+
+:::
