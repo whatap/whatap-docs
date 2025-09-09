@@ -1,5 +1,102 @@
 [
   {
+    "ver": "v1.4.6",
+    "date": "2025-09-05",
+    "Lists": [
+      {
+        "ver": "v1.4.6",
+        "hash": "v146",
+        "product": "Server AIX Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Fixed an issue where the AIX <code>errpt redirect</code> option did not work after modification</p>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/release-notes/server-aix/server-aix-1_4_5",
+    "ver": "v1.4.5",
+    "date": "2025-05-23",
+    "Lists": [
+      {
+        "ver": "v1.4.5",
+        "hash": "v145",
+        "product": "Server AIX Agent",
+        "type": "New",
+        "desc": "<p><code class=\"New\" type=\"1\">New</code> Added an option to redirect AIX errpt system log file (for log alert usage)</p>"
+      },
+      {
+        "ver": "v1.4.5",
+        "hash": "v145",
+        "product": "Server AIX Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Fixed CPU usage mismatch when AIX type is Shared-SMT</p>"
+      },
+      {
+        "ver": "v1.4.5",
+        "hash": "v145",
+        "product": "Server AIX Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Added timeout handling when disk information collection takes too long</p>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/release-notes/server-aix/server-aix-1_4_4/",
+    "ver": "v1.4.4",
+    "date": "2025-04-23",
+    "Lists": [
+      {
+        "ver": "v1.4.4",
+        "hash": "v144",
+        "product": "Server AIX Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Fixed <em>whatap.conf</em> update error</p>"
+      },
+      {
+        "ver": "v1.4.4",
+        "hash": "v144",
+        "product": "Server AIX Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Added automatic agent restart function when the server is rebooted</p>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/release-notes/server-aix/server-aix-1_4_3/",
+    "ver": "v1.4.3",
+    "date": "2025-03-24",
+    "Lists": [
+      {
+        "ver": "v1.4.3",
+        "hash": "v143",
+        "product": "Server AIX Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Fixed timeout issue when collecting FileSystem information</p>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/release-notes/server-aix/server-aix-1_4_2/",
+    "ver": "v1.4.2",
+    "date": "2025-03-13",
+    "Lists": [
+      {
+        "ver": "v1.4.2",
+        "hash": "v142",
+        "product": "Server AIX Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Fixed an issue where Korean input was not possible in <code>oname</code> and <code>config</code> settings</p>"
+      },
+      {
+        "ver": "v1.4.2",
+        "hash": "v142",
+        "product": "Server AIX Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Fixed data type error occurring in <code>categoryv2</code></p>"
+      }
+    ]
+  },
+  {
     "url": "https://docs.whatap.io/en/release-notes/server-aix/server-aix-1_4_1",
     "ver": "v1.4.1",
     "date": "2025-02-13",
