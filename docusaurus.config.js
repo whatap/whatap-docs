@@ -302,66 +302,6 @@ const config = {
               },
               {
                 type: 'doc',
-                docId: 'postgresql/monitoring-intro',
-                label: 'PostgreSQL',
-              },
-              {
-                type: 'doc',
-                docId: 'oracle/monitoring-intro',
-                label: 'Oracle',
-              },
-              {
-                type: 'doc',
-                docId: 'oracle-pro/monitoring-intro',
-                label: 'Oracle Pro',
-              },
-              {
-                type: 'doc',
-                docId: 'mysql/monitoring-intro',
-                label: 'MySQL',
-              },
-              {
-                type: 'doc',
-                docId: 'mssql/monitoring-intro',
-                label: 'SQL Server',
-              },
-              {
-                type: 'doc',
-                docId: 'tibero/monitoring-intro',
-                label: 'Tibero',
-              },
-              {
-                type: 'doc',
-                docId: 'cubrid/monitoring-intro',
-                label: 'CUBRID',
-              },
-              {
-                type: 'doc',
-                docId: 'altibase/monitoring-intro',
-                label: 'Altibase',
-              },
-              {
-                type: 'doc',
-                docId: 'redis/monitoring-intro',
-                label: 'Redis',
-              },
-              {
-                type: 'doc',
-                docId: 'mongodb/monitoring-intro',
-                label: 'MongoDB',
-              },
-              {
-                type: 'doc',
-                docId: 'db2/monitoring-intro',
-                label: 'IBM DB2',
-              },
-              {
-                type: 'doc',
-                docId: 'sapase/monitoring-intro',
-                label: 'SAP ASE',
-              },
-              {
-                type: 'doc',
                 docId: 'url/url-intro',
                 label: 'URL',
               },
