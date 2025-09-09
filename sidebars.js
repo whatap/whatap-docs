@@ -6605,17 +6605,13 @@ const sidebars = {
         'nms/install-agent',
         {
           type: 'category',
-          label: '설정하기',
+          label: '네트워크 인사이트',
           collapsible: true,
           collapsed: true,
           items: [
-            'nms/conf-device-management',
-            'nms/conf-oid-management',
-            'nms/conf-trap-setting',
-            'nms/conf-syslog-setting',
+            'nms/network-insights-topology',
           ]
         },
-        'nms/device-dashboard',
         {
           type: 'category',
           label: 'Flex 보드',
@@ -6638,12 +6634,25 @@ const sidebars = {
         },
         {
           type: 'category',
-          label: '디바이스',
+          label: '디바이스 상태',
           collapsible: true,
           collapsed: true,
           items: [
-            'nms/device-trend',
             'nms/interface-status',
+            'nms/device-trend',
+          ]
+        },
+        'nms/conf-device-management',
+        'nms/device-dashboard',
+        'nms/conf-oid-management',
+        {
+          type: 'category',
+          label: '설정',
+          collapsible: true,
+          collapsed: true,
+          items: [
+            'nms/conf-trap-setting',
+            'nms/conf-syslog-setting',
           ]
         },
         // 현재 문서 없음 0205

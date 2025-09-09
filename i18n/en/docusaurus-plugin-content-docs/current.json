@@ -2303,6 +2303,10 @@
     "message": "Configuration",
     "description": "The label for category 설정하기 in sidebar nmsSidebar"
   },
+  "sidebar.nmsSidebar.category.네트워크 인사이트": {
+    "message": "Network Insights",
+    "description": "The label for category 네트워크 인사이트 in sidebar nmsSidebar"
+  },
   "sidebar.nmsSidebar.category.Flex 보드": {
     "message": "Flex Board",
     "description": "The label for category Flex 보드 in sidebar nmsSidebar"
