@@ -1,0 +1,444 @@
+---
+id: apply-agent-ios
+title: Apply iOS Agent
+description: Apply the WhaTap browser agent to your web application and start browser monitoring.
+keywords: [ Browser Monitoring, Agent ]
+---
+
+import TR from '@site/src/components/TR';
+
+To use the WhaTap iOS mobile monitoring service, you must [sign up](https://www.whatap.io/ko/signup/), create a project, and then apply the WhaTap iOS agent to your iOS application.
+
+import Createprojectv2 from "../getting-started/_create-project-v2.mdx";
+
+<Createprojectv2 />
+
+import Accesskey from "../getting-started/_accesskey.mdx";
+
+<Accesskey />
+
+## Prerequisites
+
+Before installing the iOS agent, check the following requirements:
+
+- **iOS 14.0 or higher**  
+- **Xcode 14.0 or higher**  
+- **Swift 5.0 or higher** or **Objective-C**
+
+## Install Agent
+
+The agent can be installed in two ways:  
+
+- **Automatic installation using Swift Package Manager**  
+- **Manual installation using XCFramework**  
+
+### Automatic Installation with Swift Package Manager
+
+1. Open the project in Xcode and select **File → Add Package Dependencies**.  
+2. Enter the package URL:  
+    
+    `https://github.com/whatap/WhatapIOSAgent-Release`
+    
+3. Select the version and click **Add Package**.
+
+### Manual Installation with XCFramework
+
+1. Download the XCFramework.
+    
+    ```bash
+    curl -O https://repo.whatap-mobile-agent.io/uploads/1.2.0/WhatapAgent.xcframework.zip
+    unzip WhatapAgent.xcframework.zip
+    ```
+    
+2. Add to Xcode Project:
+    - Select the project target → **General** tab
+    - Go to the **Frameworks, Libraries, and Embedded Content** section
+    - Click the **+** button → **Add Other** → **Add Files**
+    - Select `WhatapAgent.xcframework`
+    - Ensure **Embed & Sign** is checked
+    - For Objective-C projects, set up a Bridging Header
+
+## Agent Initialization
+
+The WhaTap iOS SDK must be initialized at app startup to collect performance data.  
+SDK initialization should be executed as early as possible in the app lifecycle to capture events throughout the entire runtime.
+
+:::note
+
+Important: Initialization Timing
+
+The earliest initialization point in iOS is the `main()` function or the `+load` method.  
+For compatibility and stability, the following timing is recommended:
+
+- **SwiftUI**: `init()` of the `@main` struct – when the app struct is created  
+- **UIKit**: `application:willFinishLaunchingWithOptions:` – called before `didFinishLaunching`  
+- **Objective-C**: `+load` method or `application:willFinishLaunchingWithOptions:`
+
+If initialization is delayed, critical performance data at app startup (such as pre-main time and initial memory usage) may be missed.
+
+:::
+
+### Swift
+
+In a SwiftUI app, initialize the SDK in the `init()` of the `@main` struct.
+
+```swift
+import SwiftUI
+import WhatapAgent
+
+@main
+struct MyApp: App {
+    init() {
+        *// Initialize SDK at startup*
+        let agent = WhatapAgentBuilder()
+            .setProjectKey("x439k23s88411-x234p54k2k9ksch-z7j91dmvhielot")
+            .setCode(3380)
+            .setServerUrl("15.165.146.117")
+            .build()
+        
+        agent.initialize()
+    }
+    
+    var body: some Scene {
+        WindowGroup {
+            ContentView()
+        }
+    }
+}
+```
+
+In UIKit-based apps, it is recommended to initialize the SDK in the `application:willFinishLaunchingWithOptions:` of `AppDelegate`.
+
+```swift
+import UIKit
+import WhatapAgent
+
+@main
+class AppDelegate: UIResponder, UIApplicationDelegate {
+
+    func application(_ application: UIApplication, 
+                    willFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        
+        *// Initialize SDK at the earliest point (recommended)*
+        let agent = WhatapAgentBuilder()
+            .setProjectKey("x439k23s88411-x234p54k2k9ksch-z7j91dmvhielot")  
+            .setCode(3380)
+            .setServerUrl("15.165.146.117")
+            .build()
+        
+        agent.initialize()
+        
+        return true
+    }
+}
+```
+
+### Objective-C
+
+방법 1: +load 메서드 사용 (가장 빠름)
+
+AppDelegate.m
+
+```objectivec
+#import "AppDelegate.h"
+@import WhatapAgent;
+
+@implementation AppDelegate
+
++ (void)load {
+    *// At the point when the class is loaded into memory (before main())*
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        WhatapAgentBuilder *builder = [[WhatapAgentBuilder alloc] init];
+        [builder setProjectKey:@"x439k23s88411-x234p54k2k9ksch-z7j91dmvhielot"];
+        [builder setCode:3380];
+        [builder setServerUrl:@"15.165.146.117"];
+        
+        WhatapIOSAgent *agent = [builder build];
+        [agent initialize];
+    });
+}
+
+@end
+```
+
+Since the `+load` method is called before the app starts running, avoid performing complex tasks. Only perform SDK initialization.
+
+Method 2: Use willFinishLaunchingWithOptions (recommended)
+
+AppDelegate.m
+
+```objectivec
+#import "AppDelegate.h"
+@import WhatapAgent;
+
+@implementation AppDelegate
+
+- (BOOL)application:(UIApplication *)application 
+    willFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    
+    *// Initialize SDK before didFinishLaunching is executed* 
+    WhatapAgentBuilder *builder = [[WhatapAgentBuilder alloc] init];
+    [builder setProjectKey:@"x439k23s88411-x234p54k2k9ksch-z7j91dmvhielot"];
+    [builder setCode:3380];
+    [builder setServerUrl:@"15.165.146.117"];
+    
+    WhatapIOSAgent *agent = [builder build];
+    [agent initialize];
+    
+    return YES;
+}
+
+@end
+```
+
+## Main Settings {#setting-agent}  
+
+### 1. WhaTap Service Settings (Project Key, Code, Server URL)
+
+
+**Swift**
+
+```swift
+let agent = WhatapAgentBuilder()
+  .setProjectKey("ProjectKey")      // Required
+  .setCode(3380)                    // Required
+  .setServerUrl("15.165.146.117")   // Required
+  .setSamplingRate(1.0)             // Optional (0.0 ~ 1.0, default: 1.0)
+  .build()
+```
+
+**Objective-C**
+
+```objectivec
+WhatapAgentBuilder *builder = [[WhatapAgentBuilder alloc] init];
+[builder setProjectKey:@"ProjectKey"];      // Required
+[builder setCode:3380];                     // Required
+[builder setServerUrl:@"15.165.146.117"];   // Required
+[builder setSamplingRate:1.0];              // Optional (0.0 ~ 1.0, default: 1.0)
+WhatapIOSAgent *agent = [builder build];
+```
+
+### 2. Screen Tracking Settings
+
+Screen tracking monitors which screens users visit within the app and how long they stay on each screen.  
+
+:::tip
+
+**Benefits of Screen Tracking**
+- Track user screen navigation path (Screen Flow)  
+- Automatically calculate dwell time per screen  
+- Collect performance metrics such as screen load/rendering time  
+- Analyze the most frequently visited screens  
+
+:::
+
+**SwiftUI**
+
+```swift
+struct ContentView: View {
+    var body: some View {
+        Text("Hello")
+            .onAppear {
+                WhatapIOSAgent.trackScreen("ContentView")
+            }
+    }
+}
+```
+
+**UIKit**
+
+```swift
+class ViewController: UIViewController {
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        WhatapIOSAgent.trackScreen("ViewController")
+    }
+}
+```
+
+**Objective-C**
+
+```objectivec
+@implementation ViewController
+
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    [WhatapIOSAgent trackScreen:@"ViewController"];
+}
+
+@end
+```
+
+### 3. Network Monitoring
+
+Network requests are automatically tracked.  
+No additional configuration is required when using URLSession.
+
+### 4. Crash Reporting
+
+Crashes are automatically collected.  
+To disable, configure as follows.
+
+**Swift**
+
+```swift
+WhatapAgentBuilder()
+  .setCrashReportingEnabled(false)
+  .build()
+```
+
+**Objective-C**
+
+```objectivec
+WhatapAgentBuilder *builder = [[WhatapAgentBuilder alloc] init];
+[builder setCrashReportingEnabled:NO];
+[builder build];
+```
+
+### 5. ChainView Settings
+
+ChainView is a feature that links user actions into a chain to track the entire flow.
+
+**Swift**
+
+```swift
+// Start ChainView (example: login flow)
+let chainId = WhatapIOSAgent.startChainView("LoginFlow")
+
+// Add step-by-step events
+WhatapIOSAgent.addChainViewEvent(chainId, event: "EmailInput")
+WhatapIOSAgent.addChainViewEvent(chainId, event: "PasswordInput")
+WhatapIOSAgent.addChainViewEvent(chainId, event: "LoginButtonClick")
+WhatapIOSAgent.addChainViewEvent(chainId, event: "AuthenticationSuccess")
+
+// End
+WhatapIOSAgent.endChainView(chainId)
+
+// Simple usage example
+WhatapIOSAgent.setChainView("UserAction", value: "AddToCart")
+WhatapIOSAgent.setChainView("UserAction", value: "Checkout")
+```
+
+**Objective-C**
+
+```objectivec
+// Start ChainView (example: login flow)
+NSString *chainId = [WhatapIOSAgent startChainView:@"LoginFlow"];
+
+// Add step-by-step events
+[WhatapIOSAgent addChainViewEvent:chainId event:@"EmailInput"];
+[WhatapIOSAgent addChainViewEvent:chainId event:@"PasswordInput"];
+[WhatapIOSAgent addChainViewEvent:chainId event:@"LoginButtonClick"];
+[WhatapIOSAgent addChainViewEvent:chainId event:@"AuthenticationSuccess"];
+
+// End
+[WhatapIOSAgent endChainView:chainId];
+
+// Simple usage example
+[WhatapIOSAgent setChainView:@"UserAction" value:@"AddToCart"];
+[WhatapIOSAgent setChainView:@"UserAction" value:@"Checkout"];
+```
+
+### 6. Extra Settings
+
+By configuring additional app information, you can enable more detailed analysis.
+
+**Swift**
+
+```swift
+WhatapIOSAgent.setUserId("user123")
+WhatapIOSAgent.setExtra("membership", value: "premium")
+WhatapIOSAgent.setExtra("region", value: "seoul")
+WhatapIOSAgent.setExtra("version", value: "2.1.0")
+```
+
+**Objective-C**
+
+```objectivec
+[WhatapIOSAgent setUserId:@"user123"];
+[WhatapIOSAgent setExtra:@"membership" value:@"premium"];
+[WhatapIOSAgent setExtra:@"region" value:@"seoul"];
+[WhatapIOSAgent setExtra:@"version" value:@"2.1.0"];
+```
+
+### 7. Network Security Settings
+
+On iOS 14 or later, additional configurations may be required in Info.plist depending on network policies.
+
+```xml
+<key>NSAppTransportSecurity</key>
+<dict>
+    <key>NSExceptionDomains</key>
+    <dict>
+        <key>whatap-mobile-agent.io</key>
+        <dict>
+            <key>NSExceptionAllowsInsecureHTTPLoads</key>
+            <true/>
+            <key>NSIncludesSubdomains</key>
+            <true/>
+        </dict>
+    </dict>
+</dict>
+```
+
+:::note
+
+**ATS (App Transport Security) Settings**  
+- Introduced in iOS 9, ATS is a feature to protect network communication.  
+- WhaTap Agent uses HTTPS, but in certain environments, exceptions may be required.  
+- In production environments, it is recommended to allow exceptions only for the necessary domains.  
+
+:::
+
+---
+
+## Troubleshooting & Support
+
+### Troubleshooting
+
+#### SDK Initialization Failure
+
+If SDK initialization fails, check the following:
+
+- **Verify Project Key and PCode**: Ensure the correct values are set.  
+- **Check Network Connectivity**: Verify the device is connected to the internet.  
+- **Verify Server URL**: Ensure the provided collector server address is correct.  
+
+#### Data Not Collected
+
+If monitoring data is not displayed on the dashboard, check the following:
+
+- **Check Sampling Rate**: Confirm it is set to `setSamplingRate(1.0)` for 100% collection.  
+- **Check Network Permissions in Info.plist**: Verify App Transport Security settings are correct.  
+
+#### Crash Reports Not Sent
+
+If crash data is not collected, check the following:
+
+- **Restart Required**: Crash information is sent when the app restarts after a crash.  
+- **Simulator Limitations**: Some crashes may not be captured in the simulator; testing on a real device is recommended.  
+
+### Support
+
+If issues occur, contact us through the following channels:
+
+- **Email**: [support@whatap.io](mailto:support@whatap.io)  
+- **Technical Docs**: [https://docs.whatap.io](https://docs.whatap.io/)  
+
+When requesting technical support, provide the following information for faster resolution:
+
+- Project Key  
+- iOS Version  
+- Xcode Version  
+- SDK Version  
+- Error messages or logs  
+- Steps to reproduce the issue  
+
+## Next Steps
+
+* **Start Monitoring**
+
+  Go to the [WhaTap Monitoring Service](https://service.whatap.io) page to start browser monitoring.  
+  Select the project you created earlier, then navigate to  
+  <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_dashboard" className="uitext" />.  

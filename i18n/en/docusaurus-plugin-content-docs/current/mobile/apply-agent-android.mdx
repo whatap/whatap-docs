@@ -1,0 +1,325 @@
+---
+id: apply-agent-android
+title: Apply Android Agent
+description: Apply the WhaTap browser agent to your web application and start browser monitoring.
+keywords: [ Browser Monitoring, Agent ]
+---
+
+import TR from '@site/src/components/TR';
+
+To use the WhaTap Android mobile monitoring service, you must [sign up](https://www.whatap.io/ko/signup/) and create a project, then apply the WhaTap Android agent to your Android application.
+
+import Createprojectv2 from "../getting-started/_create-project-v2.mdx";
+
+<Createprojectv2 />
+
+import Accesskey from "../getting-started/_accesskey.mdx";
+
+<Accesskey />
+
+## Prerequisites
+
+Before installing the Android agent, check the following requirements:
+
+- **Android Min Sdk 21 or higher**
+- **Supported environments**: Android 5.0(API Level 21)+, Java 17+, Android Gradle Plugin 7.0+, Gradle 7.0+ (Supported versions: AGP 7.0 ~ 8.x / Gradle 7.0 ~ 8.x)
+
+:::note
+
+The WhatapAgent Android SDK is an SDK for monitoring the performance of Android applications.  
+Starting from version 1.1.0, the WhatapAndroidPlugin is provided, enabling automatic collection without additional code.
+
+:::
+
+## Install Agent
+
+To install the WhaTap mobile agent on Android, follow these steps:
+
+**Gradle settings → SDK initialization → Manifest settings → ProGuard settings → ScreenGroup settings**
+
+### 1. Gradle Settings
+
+To install the agent, modify your project's Gradle files.  
+The configuration differs depending on whether the project uses Kotlin DSL or Groovy.
+
+#### Kotlin DSL
+
+##### Project-level build.gradle.kts
+```kotlin
+plugins {
+    id("io.whatap.android") version "2.1.0" apply false
+}
+```
+
+##### App module build.gradle.kts
+
+```kotlin
+plugins {
+    id("com.android.application")
+    id("io.whatap.android")
+}
+
+dependencies {
+    implementation("io.whatap.android:whatap-agent-bom:2.1.0")
+}
+
+```
+
+#### Groovy
+
+##### Project-level build.gradle
+
+```groovy
+plugins {
+    id 'io.whatap.android' version '2.1.0' apply false
+}
+
+```
+
+##### App module build.gradle
+
+```groovy
+plugins {
+    id 'com.android.application'
+    id 'io.whatap.android'
+}
+
+dependencies {
+    implementation 'io.whatap.android:whatap-agent-bom:2.1.0'
+}
+
+```
+
+### 2. SDK Initialization
+
+To collect performance data from the Android application, initialize the SDK.
+It is recommended to initialize in the Application class.
+
+#### Kotlin
+
+```kotlin
+import android.app.Application
+import io.whatap.android.agent.WhatapAgent
+
+class MyApplication : Application() {
+    override fun onCreate() {
+        super.onCreate()
+        WhatapAgent.builder()
+            .setProjectKey("x431422fk0h9a-x45fmbh3gj5v0u-x6bnq98q40qqtd")
+            .setServerUrl("15.165.146.117")
+            .build(this)
+    }
+}
+
+```
+
+#### Java
+
+```java
+import android.app.Application;
+import io.whatap.android.agent.WhatapAgent;
+
+public class MyApplication extends Application {
+    @Override
+    public void onCreate() {
+        super.onCreate();
+        new WhatapAgent.Builder()
+            .setProjectKey("x431422fk0h9a-x45fmbh3gj5v0u-x6bnq98q40qqtd")
+            .setServerUrl("15.165.146.117")
+            .build(this);
+    }
+}
+
+```
+
+### 3. Manifest Settings
+
+You must configure the required permissions and the Application class in the AndroidManifest.xml file.
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:name=".MyApplication"
+        ...>
+    </application>
+</manifest>
+
+```
+
+### 4. ProGuard Settings
+
+```
+# WhatapAgent
+-keep class io.whatap.** { *; }
+-keepclassmembers class io.whatap.** { *; }
+
+# Activity/Fragment
+-keep class * extends android.app.Activity
+-keep class * extends androidx.fragment.app.Fragment
+-keepclassmembers class * extends android.app.Activity {
+    public void *(android.view.View);
+}
+
+# WebView JavaScript Interface
+-keepclassmembers class * {
+    @android.webkit.JavascriptInterface <methods>;
+}
+
+```
+
+### 5. ScreenGroup Settings
+
+You can manage screen flows as groups using ChainView.
+
+#### Kotlin
+
+```kotlin
+import io.whatap.android.agent.instrumentation.screengroup.ChainView
+
+class LoginActivity : AppCompatActivity() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        val chainView = ChainView.getInstance()
+        chainView.startGroup("LoginFlow")
+    }
+
+    private fun onLoginSuccess() {
+        val chainView = ChainView.getInstance()
+        chainView.addTask("LoginSuccess")
+        startActivity(Intent(this, MainActivity::class.java))
+    }
+}
+
+class MainActivity : AppCompatActivity() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        val chainView = ChainView.getInstance()
+        chainView.endGroup("LoginFlow")
+    }
+}
+
+```
+
+#### Java
+
+```java
+import io.whatap.android.agent.instrumentation.screengroup.ChainView;
+
+public class LoginActivity extends AppCompatActivity {
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        ChainView chainView = ChainView.getInstance();
+        chainView.startGroup("LoginFlow");
+    }
+
+    private void onLoginSuccess() {
+        ChainView chainView = ChainView.getInstance();
+        chainView.addTask("LoginSuccess");
+        startActivity(new Intent(this, MainActivity.class));
+    }
+}
+
+public class MainActivity extends AppCompatActivity {
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        ChainView chainView = ChainView.getInstance();
+        chainView.endGroup("LoginFlow");
+    }
+}
+
+```
+## Troubleshooting & Support
+
+### Troubleshooting
+
+#### Desugaring-related error
+
+`Dependency 'io.whatap.whatap-agent:0.3.3' 관련 오류 발생 시` 아래 설정을 추가합니다:
+
+```groovy
+android {
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
+        isCoreLibraryDesugaringEnabled = true
+    }
+}
+
+dependencies {
+    coreLibraryDesugaring("com.android.tools:desugar_jdk_libs:2.1.2")
+}
+
+```
+
+#### Plugin not found error
+
+Plugin을 찾을 수 없는 오류 발생 시 아래 설정을 추가합니다:
+
+```groovy
+pluginManagement {
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+    }
+}
+
+```
+
+#### Java version error
+
+In case of Java version–related errors, check the following settings.
+
+```groovy
+android {
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
+    }
+}
+
+```
+
+#### Namespace warning
+
+`Namespace 'io.whatap.android.agent' is used in multiple modules` warning can be ignored.
+
+It indicates the library is used in multiple modules and does not affect app execution.
+
+#### Build errors
+
+- Verify Gradle and Android Gradle Plugin versions meet requirements.
+- Check network connections and proxy settings if necessary.
+- Try Project Clean & Rebuild.
+
+#### No data collected
+
+- Check if the project access key is set correctly.
+- Verify internet permission is added in AndroidManifest.xml.
+- Ensure SDK initialization in the Application class.
+- Check for proxy/firewall settings blocking data transfer.
+
+### Support
+
+When requesting technical support, provide the following information.
+
+- Project access key
+- Android SDK version
+- Gradle version and Android Gradle Plugin version
+- Full error log
+- build.gradle file contents
+- Steps to reproduce the issue
+
+## Next Steps
+
+* **Start Monitoring**
+
+Go to the [WhaTap Monitoring Service page](https://service.whatap.io) to start browser monitoring.
+Select the project you created earlier, then navigate to
+<Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_dashboard" className="uitext" />.

@@ -1,0 +1,326 @@
+---
+id: apply-agent-android
+title: Android エージェント適用
+description: WebアプリケーションにWhaTapブラウザーエージェントを適用し、ブラウザーモニタリングを開始します。
+keywords: [ ブラウザーモニタリング, エージェント ]
+---
+
+import TR from '@site/src/components/TR';
+
+WhaTap Androidモバイルモニタリングサービスを利用するには、[会員登録](https://www.whatap.io/ko/signup/)後にプロジェクトを作成し、AndroidアプリケーションにWhaTap Androidエージェントを適用する必要があります。
+
+import Createprojectv2 from "../getting-started/_create-project-v2.mdx";
+
+<Createprojectv2 />
+
+import Accesskey from "../getting-started/_accesskey.mdx";
+
+<Accesskey />
+
+## インストール前の要件
+
+Androidエージェントをインストールする前に次の要件を確認してください。
+
+- **Android Min Sdk 21以上**
+- **対応環境**: Android 5.0(API Level 21)+, Java 17+, Android Gradle Plugin 7.0+, Gradle 7.0+ (対応バージョン: AGP 7.0 ～ 8.x / Gradle 7.0 ～ 8.x)
+
+:::note
+
+WhatapAgent Android SDKは、Androidアプリケーションの性能モニタリングのためのSDKです。  
+バージョン1.1.0からWhatapAndroidPluginが提供され、追加コードなしで自動収集が可能です。
+
+:::
+
+## エージェントインストール
+
+AndroidにWhaTapモバイルエージェントをインストールするには、次の手順で進めます。
+
+**Gradle設定 → SDK初期化 → Manifest設定 → ProGuard設定 → ScreenGroup設定**
+
+### 1. Gradle設定
+
+エージェントをインストールするために、プロジェクトのGradleファイルを修正する必要があります。  
+プロジェクトがKotlin DSLを使用しているかGroovyを使用しているかによって設定方法が異なります。
+
+#### Kotlin DSL
+
+##### Projectレベル build.gradle.kts
+
+```kotlin
+plugins {
+    id("io.whatap.android") version "2.1.0" apply false
+}
+
+```
+
+##### Appモジュール build.gradle.kts
+
+```kotlin
+plugins {
+    id("com.android.application")
+    id("io.whatap.android")
+}
+
+dependencies {
+    implementation("io.whatap.android:whatap-agent-bom:2.1.0")
+}
+
+```
+
+#### Groovy
+
+##### Projectレベル build.gradle
+
+```groovy
+plugins {
+    id 'io.whatap.android' version '2.1.0' apply false
+}
+
+```
+
+##### Appモジュール build.gradle
+
+```groovy
+plugins {
+    id 'com.android.application'
+    id 'io.whatap.android'
+}
+
+dependencies {
+    implementation 'io.whatap.android:whatap-agent-bom:2.1.0'
+}
+
+```
+
+### 2. SDK初期化
+
+Androidアプリケーションの性能データを収集するために、SDKを初期化する必要があります。Applicationクラスで初期化することを推奨します。
+
+#### Kotlin
+
+```kotlin
+import android.app.Application
+import io.whatap.android.agent.WhatapAgent
+
+class MyApplication : Application() {
+    override fun onCreate() {
+        super.onCreate()
+        WhatapAgent.builder()
+            .setProjectKey("x431422fk0h9a-x45fmbh3gj5v0u-x6bnq98q40qqtd")
+            .setServerUrl("15.165.146.117")
+            .build(this)
+    }
+}
+
+```
+
+#### Java
+
+```java
+import android.app.Application;
+import io.whatap.android.agent.WhatapAgent;
+
+public class MyApplication extends Application {
+    @Override
+    public void onCreate() {
+        super.onCreate();
+        new WhatapAgent.Builder()
+            .setProjectKey("x431422fk0h9a-x45fmbh3gj5v0u-x6bnq98q40qqtd")
+            .setServerUrl("15.165.146.117")
+            .build(this);
+    }
+}
+
+```
+
+### 3. Manifest設定
+
+AndroidManifest.xml 파일에 필요한 권한과 Application 클래스를 설정해야 합니다.
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:name=".MyApplication"
+        ...>
+    </application>
+</manifest>
+
+```
+
+### 4. ProGuard設定
+
+```
+# WhatapAgent
+-keep class io.whatap.** { *; }
+-keepclassmembers class io.whatap.** { *; }
+
+# Activity/Fragment
+-keep class * extends android.app.Activity
+-keep class * extends androidx.fragment.app.Fragment
+-keepclassmembers class * extends android.app.Activity {
+    public void *(android.view.View);
+}
+
+# WebView JavaScript Interface
+-keepclassmembers class * {
+    @android.webkit.JavascriptInterface <methods>;
+}
+
+```
+
+### 5. ScreenGroup設定
+
+ChainViewを使用して画面フローをグループで管理できます。
+
+#### Kotlin
+
+```kotlin
+import io.whatap.android.agent.instrumentation.screengroup.ChainView
+
+class LoginActivity : AppCompatActivity() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        val chainView = ChainView.getInstance()
+        chainView.startGroup("LoginFlow")
+    }
+
+    private fun onLoginSuccess() {
+        val chainView = ChainView.getInstance()
+        chainView.addTask("LoginSuccess")
+        startActivity(Intent(this, MainActivity::class.java))
+    }
+}
+
+class MainActivity : AppCompatActivity() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        val chainView = ChainView.getInstance()
+        chainView.endGroup("LoginFlow")
+    }
+}
+
+```
+
+#### Java
+
+```java
+import io.whatap.android.agent.instrumentation.screengroup.ChainView;
+
+public class LoginActivity extends AppCompatActivity {
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        ChainView chainView = ChainView.getInstance();
+        chainView.startGroup("LoginFlow");
+    }
+
+    private void onLoginSuccess() {
+        ChainView chainView = ChainView.getInstance();
+        chainView.addTask("LoginSuccess");
+        startActivity(new Intent(this, MainActivity.class));
+    }
+}
+
+public class MainActivity extends AppCompatActivity {
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        ChainView chainView = ChainView.getInstance();
+        chainView.endGroup("LoginFlow");
+    }
+}
+
+```
+
+## トラブルシューティングとサポート
+
+### トラブルシューティング
+
+#### Desugaring関連エラー
+
+`Dependency 'io.whatap.whatap-agent:0.3.3' に関連するエラーが発生した場合`、以下の設定を追加してください。
+
+```groovy
+android {
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
+        isCoreLibraryDesugaringEnabled = true
+    }
+}
+
+dependencies {
+    coreLibraryDesugaring("com.android.tools:desugar_jdk_libs:2.1.2")
+}
+
+```
+
+#### Plugin not foundエラー
+
+「Plugin not found」エラーが発生した場合、以下の設定を追加してください。
+
+```groovy
+pluginManagement {
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+    }
+}
+
+```
+
+#### Javaバージョン関連エラー
+
+Java バージョンに関連するエラーが発生した場合、以下の設定を確認してください。
+
+```groovy
+android {
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
+    }
+}
+
+```
+
+#### Namespace 警告
+
+`Namespace 'io.whatap.android.agent' is used in multiple modules` 警告は無視して構いません。
+
+これはライブラリが複数のモジュールで使用されていることを知らせる警告であり、アプリの実行には影響しません。
+
+#### ビルドエラーが発生した場合
+
+- Gradle バージョンと Android Gradle Plugin バージョンが要件を満たしているか確認してください。  
+- ネットワーク接続状態を確認し、プロキシ設定が必要な場合は設定してください。  
+- プロジェクトの Clean & Rebuild を試してください。  
+
+#### データが収集されない場合
+
+- プロジェクトアクセスキーが正しく設定されているか確認してください。  
+- AndroidManifest.xml にインターネット権限が追加されているか確認してください。  
+- Application クラスで SDK が正しく初期化されているか確認してください。  
+- プロキシやファイアウォール設定によりデータ転送がブロックされていないか確認してください。  
+
+### サポート
+
+技術サポートを依頼する際は、以下の情報を提供すると迅速に対応できます:
+
+- プロジェクトアクセスキー  
+- Android SDK バージョン  
+- Gradle バージョンおよび Android Gradle Plugin バージョン  
+- エラーログ全文  
+- build.gradle ファイル内容  
+- 問題の再現手順  
+
+## 次のステップ
+
+* **モニタリングを開始する**
+
+  [WhaTap モニタリングサービス](https://service.whatap.io) ページに移動し、ブラウザーモニタリングを開始してください。  
+  作成したプロジェクトを選択し、<Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_dashboard" className="uitext" /> メニューに移動します。  

@@ -4442,14 +4442,9 @@ const sidebars = {
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/server-aix/server-aix-1_4_5',
+                  id: 'release-notes/server-aix/download-agent',
                   // className: 'new'
                 },
-                'release-notes/server-aix/server-aix-1_4_4',
-                'release-notes/server-aix/server-aix-1_4_3',
-                'release-notes/server-aix/server-aix-1_4_2',
-                'release-notes/server-aix/server-aix-1_4_1',
-                'release-notes/server-aix/server-aix-previous',
               ],
             },
             {
