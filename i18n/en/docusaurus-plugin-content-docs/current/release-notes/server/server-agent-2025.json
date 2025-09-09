@@ -1,5 +1,94 @@
 [
   {
+    "ver": "v2.9.3",
+    "date": "2025-09-05",
+    "Lists": [
+      {
+        "ver": "v2.9.3",
+        "hash": "v293",
+        "product": "Server Agent",
+        "type": "New",
+        "desc": "<p><code class=\"New\" type=\"1\">New</code> Added GPU Health Check feature</p>"
+      },
+      {
+        "ver": "v2.9.3",
+        "hash": "v293",
+        "product": "Server Agent",
+        "type": "New",
+        "desc": "<p><code class=\"New\" type=\"1\">New</code> Added Nutanix environment info collection for Server Type classification</p>"
+      },
+      {
+        "ver": "v2.9.3",
+        "hash": "v293",
+        "product": "Server Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Fixed cases where GPU data could not be collected</p>"
+      },
+      {
+        "ver": "v2.9.3",
+        "hash": "v293",
+        "product": "Server Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Fixed cases where InfiniBand data could not be collected</p>"
+      },
+      {
+        "ver": "v2.9.3",
+        "hash": "v293",
+        "product": "Server Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Fixed issue where CSP <code>instance-name</code> could not be collected</p>"
+      },
+      {
+        "ver": "v2.9.3",
+        "hash": "v293",
+        "product": "Server Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Fixed NFS concurrency error</p>"
+      },
+      {
+        "ver": "v2.9.3",
+        "hash": "v293",
+        "product": "Server Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Fixed issue where <code>zpool iostat</code> processes accumulated when no pool existed in ZFS environment</p>"
+      }
+    ]
+  },  
+  {
+    "ver": "v2.9.2",
+    "date": "2025-08-08",
+    "Lists": [
+      {
+        "ver": "v2.9.2",
+        "hash": "v292",
+        "product": "Server Agent",
+        "type": "New",
+        "desc": "<p><code class=\"New\" type=\"1\">New</code> Added data collection option based on GPU dcgm-exporter</p>"
+      },
+      {
+        "ver": "v2.9.2",
+        "hash": "v292",
+        "product": "Server Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Added exception handling for cases where some GPU metrics could not be collected</p>"
+      },
+      {
+        "ver": "v2.9.2",
+        "hash": "v292",
+        "product": "Server Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Added GPU SaaS environment metering information</p>"
+      },
+      {
+        "ver": "v2.9.2",
+        "hash": "v292",
+        "product": "Server Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Improved cases where process information collection caused overhead</p>"
+      }
+    ]
+  },
+  {
     "ver": "v2.9.1",
     "date": "2025-07-25",
     "Lists": [

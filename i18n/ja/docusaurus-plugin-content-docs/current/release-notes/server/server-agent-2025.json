@@ -1,5 +1,94 @@
 [
   {
+    "ver": "v2.9.3",
+    "date": "2025-09-05",
+    "Lists": [
+      {
+        "ver": "v2.9.3",
+        "hash": "v293",
+        "product": "Server AIX Agent",
+        "type": "New",
+        "desc": "<p><code class=\"New\" type=\"1\">New</code> GPU Health Check 機能を追加</p>"
+      },
+      {
+        "ver": "v2.9.3",
+        "hash": "v293",
+        "product": "Server Agent",
+        "type": "New",
+        "desc": "<p><code class=\"New\" type=\"1\">New</code> Server Type 分類時に Nutanix 環境情報の収集を追加</p>"
+      },
+      {
+        "ver": "v2.9.3",
+        "hash": "v293",
+        "product": "Server Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> GPU データを収集できないケースを修正</p>"
+      },
+      {
+        "ver": "v2.9.3",
+        "hash": "v293",
+        "product": "Server Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> InfiniBand データを収集できないケースを修正</p>"
+      },
+      {
+        "ver": "v2.9.3",
+        "hash": "v293",
+        "product": "Server Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> CSP <code>instance-name</code> を収集できないケースを修正</p>"
+      },
+      {
+        "ver": "v2.9.3",
+        "hash": "v293",
+        "product": "Server Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> NFS 同時実行エラーを修正</p>"
+      },
+      {
+        "ver": "v2.9.3",
+        "hash": "v293",
+        "product": "Server Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> ZFS 環境で pool が存在しない場合に <code>zpool iostat</code> プロセスが累積する問題を修正</p>"
+      }
+    ]
+  },
+  {
+    "ver": "v2.9.2",
+    "date": "2025-08-08",
+    "Lists": [
+      {
+        "ver": "v2.9.2",
+        "hash": "v292",
+        "product": "Server Agent",
+        "type": "New",
+        "desc": "<p><code class=\"New\" type=\"1\">New</code> GPU dcgm-exporter ベースのデータ収集オプションを追加</p>"
+      },
+      {
+        "ver": "v2.9.2",
+        "hash": "v292",
+        "product": "Server Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> 一部のGPUメトリクスを収集できないケースに対する例外処理を追加</p>"
+      },
+      {
+        "ver": "v2.9.2",
+        "hash": "v292",
+        "product": "Server Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> GPU SaaS環境のメータリング情報を追加</p>"
+      },
+      {
+        "ver": "v2.9.2",
+        "hash": "v292",
+        "product": "Server Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> プロセス情報収集過程で負荷が発生するケースを改善</p>"
+      }
+    ]
+  },  
+  {
     "ver": "v2.9.1",
     "date": "2025-07-25",
     "Lists": [
