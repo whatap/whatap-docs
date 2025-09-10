@@ -6594,14 +6594,13 @@ const sidebars = {
       label: 'Network 관리 시스템',
       collapsible: false,
       collapsed: false,
-      className: 'beta',
+      // className: 'beta',
       link: {
         type: 'doc',
         id: 'nms/introduction'
       },
       items: [
         'nms/supported-spec',
-        `nms/service-components-and-port-info`,
         'nms/install-agent',
         {
           type: 'category',
@@ -6622,6 +6621,7 @@ const sidebars = {
             id: 'nms/flex-board',
           },
           items: [
+            'nms/flexboard-guide',
             'nms/flexboard-template',
             'nms/flexboard-create',
             'nms/flexboard-manage',
