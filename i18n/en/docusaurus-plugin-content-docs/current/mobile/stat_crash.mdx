@@ -5,33 +5,45 @@ description: The crash statistics dashboard provides analysis of crashes and exc
 keywords: [Mobile Monitoring, Crash, Exception, Statistics]
 ---
 
-The Crash Statistics menu is a dashboard that allows analysis of crashes and exceptions occurring in mobile apps based on various criteria.  
-It helps identify issue patterns by grouping data by operating system, app version, device, and exception type.  
-The top section provides a common time range selector and filtering features.  
+**Crash Statistics Menu** is a dashboard that analyzes crashes and exceptions occurring in mobile apps by various criteria.  
+You can group data by operating system, app version, device, exception type, and more to identify problem patterns.  
+
+- Top area: Time range setting, common filters  
+- Bottom area:  
+  - Left: Grouping selection  
+  - Right: Detailed view by selected grouping (provides load count trends, crash trends, and crash list table)  
+
 
 ## Main Components
 
-### Grouping Options
+### Grouping Selection
 
-- **Function**: Group by operating system, app version, device, exception type, etc.  
-- **Use**: Analyze crash patterns by specific criteria  
+You can group results by various criteria.  
+Crash ratios per grouping item are shown in a **pie chart**, and the number of crashes over time is shown in a **bar chart**.  
+If no grouping is applied, the load count trend graph by project is displayed.
 
-### Crash Distribution (Pie Chart)
+| Item        | Description |
+| ----------- | ----------- |
+| App Version | Crash ratio and trends by app version |
+| OS          | Crash ratio and trends by operating system |
+| Device      | Crash ratio and trends by device |
+| Exception Type | Crash ratio and trends by exception class/type |
+| Thread Name | Analysis based on the ratio of crashes occurring in each thread |
+| Exception Message | Crash ratio and trends by exception message |
 
-- **Display**: Proportion of crashes by grouping criteria  
-- **Tooltip**: Shows group name and count (%) on mouse hover  
-- **Interaction**: Click to filter crashes by group  
-
-### Crash Trend Over Time (Bar Chart)
-
-- **Display**: Number of crashes by time period  
-- **Unit**: 1 hour or auto-adjusted  
-- **Interactions**  
-  - Click bar → Highlight specific time range  
-  - Drag → Filter table by selected range  
+**Usage**: Analyze crash patterns by specific criteria  
 
 ### Crash List Table
 
-- Sort by columns  
-- Text search  
-- CSV download support  
+Provides detailed tables of crashes.  
+
+| Item        | Description |
+| ----------- | ----------- |
+| Group       | Grouping value (e.g., iOS, Android) |
+| Exception Message | Exception class and message that occurred |
+| Count       | Total number of occurrences of the crash |
+| App Version | App version where the crash occurred |
+| OS          | Type of OS where the crash occurred |
+| Device      | Device where the crash occurred |
+| Exception Type | Classification of exception type |
+| Thread Name | Thread name where the exception occurred |
