@@ -1,0 +1,600 @@
+[
+    {
+      "url": "https://docs.whatap.io/release-notes/service/service-2_20_x",
+      "ver": "Service 2.20.7",
+      "date": "2025-09-11",
+      "Lists": [
+        {
+          "ver": "Service 2.20.7",
+          "hash": "service-2207",
+          "product": "Common",
+          "type": "Fixed",
+          "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Fixed an issue where the target list did not appear in a project's new Metrics chart</p>"
+        }
+      ]
+    },
+    {
+      "url": "https://docs.whatap.io/release-notes/service/service-2_20_x",
+      "ver": "Service 2.20.6",
+      "date": "2025-09-05",
+      "Lists": [
+        {
+          "ver": "Service 2.20.6",
+          "hash": "service-2206",
+          "product": "Application",
+          "type": "Fixed",
+          "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Support for deleting custom IP filters</p>"
+        },
+        {
+          "ver": "Service 2.20.6",
+          "hash": "service-2206",
+          "product": "Application",
+          "type": "Fixed",
+          "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Fixed an IP filter indexing error</p>"
+        }
+      ]
+    },
+    {
+      "url": "https://docs.whatap.io/release-notes/service/service-2_20_x",
+      "ver": "Service 2.20.3",
+      "date": "2025-09-02",
+      "Lists": [
+        {
+          "ver": "Service 2.20.3",
+          "hash": "service-2203",
+          "product": "Common",
+          "type": "Changed",
+          "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> Added a new feature guide panel and modal</p>"
+        },
+        {
+          "ver": "Service 2.20.3",
+          "hash": "service-2203",
+          "product": "Kubernetes",
+          "type": "Fixed",
+          "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Fixed an error that occurred when linking <span class=\"uitext\">GPU Inventory</span> data</p>"
+        }
+      ]
+    },
+    {
+      "url": "https://docs.whatap.io/release-notes/service/service-2_20_x",
+      "ver": "Service 2.20.1",
+      "date": "2025-08-27",
+      "Lists": [
+        {
+          "ver": "Service 2.20.1",
+          "hash": "service-2201",
+          "product": "Server",
+          "type": "Fixed",
+          "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Fixed an intermittent error that occurred when searching by keyword in the <span class=\"uitext\">Flex board</span> <span class=\"uitext\">Server details</span> server list</p>"
+        }
+      ]
+    },
+    {
+      "url": "https://docs.whatap.io/release-notes/service/service-2_20_x",
+      "ver": "Service 2.20.0",
+      "date": "2025-08-27",
+      "Lists": [
+        {
+          "ver": "Service 2.20.0",
+          "hash": "service-2200",
+          "product": "Common",
+          "type": "Feature",
+          "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">Account management</span> &gt; <strong>Account info</strong> Added support for changing the UTC offset</p>"
+        },
+        {
+          "ver": "Service 2.20.0",
+          "hash": "service-2200",
+          "product": "Common",
+          "type": "Feature",
+          "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> Added an Access control menu in <span class=\"uitext\">Account management</span> and added per-account IP access control</p>"
+        },
+        {
+          "ver": "Service 2.20.0",
+          "hash": "service-2200",
+          "product": "Common",
+          "type": "Feature",
+          "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> Added new usage metrics such as GPU, GPU MIG, Open Metric High, and Open Metric Low to invoices, billing, project subscriptions, and metering summary</p>"
+        },
+        {
+          "ver": "Service 2.20.0",
+          "hash": "service-2200",
+          "product": "Common",
+          "type": "Feature",
+          "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">Flex board</span> &gt; <strong>Filters</strong> Added a direct input option to Metrics filter and Tag selection</p>"
+        },
+        {
+          "ver": "Service 2.20.0",
+          "hash": "service-2200",
+          "product": "Common",
+          "type": "Feature",
+          "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">Flex board</span> Added a daily comparison widget</p>"
+        },
+        {
+          "ver": "Service 2.20.0",
+          "hash": "service-2200",
+          "product": "Application",
+          "type": "Feature",
+          "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">Dashboard</span> &gt; <span class=\"uitext\">Application dashboard</span> Added Active HTTPC and Active DB widgets</p>"
+        },
+        {
+          "ver": "Service 2.20.0",
+          "hash": "service-2200",
+          "product": "Application",
+          "type": "Feature",
+          "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">Statistics</span> &gt; <span class=\"uitext\">Transaction</span> Added a button to open topology</p>"
+        },
+        {
+          "ver": "Service 2.20.0",
+          "hash": "service-2200",
+          "product": "Application",
+          "type": "Feature",
+          "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">Dashboard</span> &gt; <strong>Business dashboard</strong> Added Details and Topology tabs</p>"
+        },
+        {
+          "ver": "Service 2.20.0",
+          "hash": "service-2200",
+          "product": "Application",
+          "type": "Feature",
+          "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">Dashboard</span> &gt; <span class=\"uitext\">Application dashboard</span> Added an Event widget</p>",
+          "details": "<ul>\n<li>Visualizes events by level and separates events by agent</li>\n</ul>"
+        },
+        {
+          "ver": "Service 2.20.0",
+          "hash": "service-2200",
+          "product": "Application",
+          "type": "Changed",
+          "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> <span class=\"uitext\">Application topology</span> <code class=\"Beta\">Beta</code> UI improvements</p>",
+          "details": "<ul>\n<li>\n<p>Added an edge label gauge and threshold colors for response time</p>\n</li>\n<li>\n<p>Specific node (Detail)</p>\n<ul>\n<li>\n<p>Added TX trace column settings and filters for All, Active, Multi transaction, and Error</p>\n</li>\n<li>\n<p>Added a pop out to show only nodes related to the selected node</p>\n</li>\n</ul>\n</li>\n</ul>"
+        },
+        {
+          "ver": "Service 2.20.0",
+          "hash": "service-2200",
+          "product": "Application",
+          "type": "Changed",
+          "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> Unified terminology related to <code>app_context_stat</code> (Context, By context to Business, By business)</p>"
+        },
+        {
+          "ver": "Service 2.20.0",
+          "hash": "service-2200",
+          "product": "Application",
+          "type": "Changed",
+          "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> Changed icon colors for Active stack and Multi transaction</p>",
+          "details": "<ul>\n<li>\n<p>Multi transaction: <span class=\"normal\">Blue</span> to Gray</p>\n</li>\n<li>\n<p>Active stack: <span class=\"vslow\">Red</span> to <span class=\"normal\">Blue</span></p>\n</li>\n</ul>"
+        },
+        {
+          "ver": "Service 2.20.0",
+          "hash": "service-2200",
+          "product": "Application",
+          "type": "Fixed",
+          "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">Dashboard</span> &gt; <strong>Business dashboard</strong> Fixed an issue where changes were not applied after deleting all aliases in alias settings and saving</p>"
+        },
+        {
+          "ver": "Service 2.20.0",
+          "hash": "service-2200",
+          "product": "Application",
+          "type": "Fixed",
+          "desc": "<li><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">Log</span> &gt; <span class=\"uitext\">Log settings</span> Corrected the Japanese translation of the '1. Check agent settings' item in the Start log monitoring tab</li>",
+          "category": "Java, Node.js, PHP"
+        },
+        {
+          "ver": "Service 2.20.0",
+          "hash": "service-2200",
+          "product": "Application",
+          "type": "Changed",
+          "desc": "<li><code class=\"Changed\" type=\"1\">Changed</code> Updated supported version information and OS information</li>",
+          "category": ".Net, Python"
+        },
+        {
+          "ver": "Service 2.20.0",
+          "hash": "service-2200",
+          "product": "Application",
+          "type": "Changed",
+          "desc": "<li><code class=\"Changed\" type=\"1\">Changed</code> Improved the <strong>Agent installation</strong> page</li>",
+          "category": "Java"
+        },
+        {
+          "ver": "Service 2.20.0",
+          "hash": "service-2200",
+          "product": "Server",
+          "type": "Feature",
+          "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <strong>GPU Inventory</strong> Added a keyword search filter</p>"
+        },
+        {
+          "ver": "Service 2.20.0",
+          "hash": "service-2200",
+          "product": "Server",
+          "type": "Feature",
+          "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <strong>GPU Performance summary</strong> Added tooltips that describe each field in column settings</p>"
+        },
+        {
+          "ver": "Service 2.20.0",
+          "hash": "service-2200",
+          "product": "Server",
+          "type": "Feature",
+          "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">Server details</span> Added a search input field to the server list</p>"
+        },
+        {
+          "ver": "Service 2.20.0",
+          "hash": "service-2200",
+          "product": "Server",
+          "type": "Feature",
+          "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">Dashboard</span> Made the auto resizing mode for widgets the default based on browser size and added a widget height auto adjust switch so widgets can be enlarged for proper viewing even when scrolling appears</p>"
+        },
+        {
+          "ver": "Service 2.20.0",
+          "hash": "service-2200",
+          "product": "Server",
+          "type": "Changed",
+          "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code>  <strong>GPU Performance summary</strong> Adjusted the GPU Status query time range from 5 minutes to 1 minute</p>"
+        },
+        {
+          "ver": "Service 2.20.0",
+          "hash": "service-2200",
+          "product": "Server",
+          "type": "Changed",
+          "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> <strong>GPU Performance summary</strong> Changed the <code>Performance_State</code> field values to display between P0 and P15</p>"
+        },
+        {
+          "ver": "Service 2.20.0",
+          "hash": "service-2200",
+          "product": "Server",
+          "type": "Changed",
+          "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> <strong>GPU Performance summary</strong> &gt; <span class=\"uitext\">Compare</span> panel</p>",
+          "details": "<ul>\n<li>\n<p>Changed charts with a bytes/s unit to automatically convert units</p>\n</li>\n<li>\n<p>Fixed the Y axis range of the <code>Performance_State</code> chart to P0 to P15</p>\n</li>\n</ul>"
+        },
+        {
+          "ver": "Service 2.20.0",
+          "hash": "service-2200",
+          "product": "Server",
+          "type": "Changed",
+          "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> Moved the <strong>GPU Inventory</strong> and <strong>GPU Performance summary</strong> menus under <strong>GPU</strong> beneath <strong>Server list</strong></p>"
+        },
+        {
+          "ver": "Service 2.20.0",
+          "hash": "service-2200",
+          "product": "Server",
+          "type": "Changed",
+          "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> <strong>Event v2</strong> When adding a metrics event rule, added validation to metric condition settings and added error messages when validation fails</p>"
+        },
+        {
+          "ver": "Service 2.20.0",
+          "hash": "service-2200",
+          "product": "Server",
+          "type": "Changed",
+          "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> Changed the minimum agent version for <strong>GPU Inventory</strong> and <strong>GPU Performance summary</strong> from 2.8.9 to 2.9.2</p>"
+        },
+        {
+          "ver": "Service 2.20.0",
+          "hash": "service-2200",
+          "product": "Server",
+          "type": "Fixed",
+          "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code>  <strong>Server list</strong> Fixed an issue where filter items were not selected when the item was an oid during keyword filter search</p>"
+        },
+        {
+          "ver": "Service 2.20.0",
+          "hash": "service-2200",
+          "product": "Server",
+          "type": "Fixed",
+          "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">Server details</span> Fixed an issue where hovering over the server list did not show it immediately after selecting a server and loading the page</p>"
+        },
+        {
+          "ver": "Service 2.20.0",
+          "hash": "service-2200",
+          "product": "Server",
+          "type": "Fixed",
+          "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">Metrics explorer</span> When selecting indicators under by GPU Process, modified the legend label format to display as <code>process_name, pid, (process_type) - index(uuid)</code></p>"
+        },
+        {
+          "ver": "Service 2.20.0",
+          "hash": "service-2200",
+          "product": "Server",
+          "type": "Fixed",
+          "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">Server inventory</span> Fixed an issue where the field name was not displayed in the table header when a new agent collection field was added</p>"
+        },
+        {
+          "ver": "Service 2.20.0",
+          "hash": "service-2200",
+          "product": "Server",
+          "type": "Fixed",
+          "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">Server details</span> Fixed an issue where the selected server reset to the default server when the chart detail drawer closed</p>"
+        },
+        {
+          "ver": "Service 2.20.0",
+          "hash": "service-2200",
+          "product": "Server",
+          "type": "Fixed",
+          "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <strong>Server list</strong> Fixed an issue where server status did not reflect events after clicking the full refresh button</p>"
+        },
+        {
+          "ver": "Service 2.20.0",
+          "hash": "service-2200",
+          "product": "Server",
+          "type": "Fixed",
+          "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <strong>GPU Performance summary</strong> &gt; <span class=\"uitext\">Compare</span> panel</p>",
+          "details": "<ul>\n<li>\n<p>Adjusted charts with a percent unit so the Y axis maximum does not exceed 100 percent</p>\n</li>\n<li>\n<p>Fixed an issue where empty parentheses appeared in titles on charts without units</p>\n</li>\n</ul>"
+        },
+        {
+          "ver": "Service 2.20.0",
+          "hash": "service-2200",
+          "product": "Kubernetes",
+          "type": "Feature",
+          "desc": "<li><code class=\"Feature\" type=\"1\">Feature</code> <strong>GPU</strong> &gt; <strong>GPU Trend</strong> menu added</li>"
+        },
+        {
+          "ver": "Service 2.20.0",
+          "hash": "service-2200",
+          "product": "Database",
+          "type": "Feature",
+          "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> Improved the single instance selector in database products</p>",
+          "category": "Common"
+        },
+        {
+          "ver": "Service 2.20.0",
+          "hash": "service-2200",
+          "product": "Database",
+          "type": "Feature",
+          "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">Flex board</span> Added an Open MX widget</p>",
+          "category": "Common"
+        },
+        {
+          "ver": "Service 2.20.0",
+          "hash": "service-2200",
+          "product": "Database",
+          "type": "Feature",
+          "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">Flex board</span> Added a query text limit option to the SQL Elapse Map widget</p>",
+          "category": "Common"
+        },
+        {
+          "ver": "Service 2.20.0",
+          "hash": "service-2200",
+          "product": "Database",
+          "type": "Feature",
+          "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">Labs</span> &gt; <strong>Open Metric explorer</strong> added</p>",
+          "category": "Common"
+        },
+        {
+          "ver": "Service 2.20.0",
+          "hash": "service-2200",
+          "product": "Database",
+          "type": "Feature",
+          "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">Flex board</span> <strong>Instance map</strong> widget can now be added</p>",
+          "category": "Common"
+        },
+        {
+          "ver": "Service 2.20.0",
+          "hash": "service-2200",
+          "product": "Database",
+          "type": "Feature",
+          "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <strong>Instance map</strong> Added role icons to instance icons</p>",
+          "category": "Common"
+        },
+        {
+          "ver": "Service 2.20.0",
+          "hash": "service-2200",
+          "product": "Database",
+          "type": "Feature",
+          "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <strong>Instance map</strong> &gt; <strong>Instance overview</strong> Added master and slave information</p>",
+          "category": "Common"
+        },
+        {
+          "ver": "Service 2.20.0",
+          "hash": "service-2200",
+          "product": "Database",
+          "type": "Changed",
+          "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> <span class=\"uitext\">Dashboard</span> &gt; <span class=\"uitext\">Instance list</span>, <span class=\"uitext\">Instance monitoring</span> Changed instance status colors to synchronize with ongoing events</p>",
+          "category": "Common"
+        },
+        {
+          "ver": "Service 2.20.0",
+          "hash": "service-2200",
+          "product": "Database",
+          "type": "Changed",
+          "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> <span class=\"uitext\">Management</span> &gt; <span class=\"uitext\">Agent list</span> Revised the header and data format of the downloaded CSV file</p>",
+          "category": "Common"
+        },
+        {
+          "ver": "Service 2.20.0",
+          "hash": "service-2200",
+          "product": "Database",
+          "type": "Changed",
+          "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> <span class=\"uitext\">Cloud settings</span> menu removed and replaced with 'Serverless agent settings' in the sitemap</p>",
+          "category": "Common"
+        },
+        {
+          "ver": "Service 2.20.0",
+          "hash": "service-2200",
+          "product": "Database",
+          "type": "Changed",
+          "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> <span class=\"uitext\">Log settings</span> Revised guidance text (excluding Tibero and Altibase)</p>",
+          "category": "Common"
+        },
+        {
+          "ver": "Service 2.20.0",
+          "hash": "service-2200",
+          "product": "Database",
+          "type": "Changed",
+          "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> <strong>DB</strong> <span class=\"uitext\">Agent installation</span> Added an example yaml log for item 8. Cloud agent</p>",
+          "category": "Common"
+        },
+        {
+          "ver": "Service 2.20.0",
+          "hash": "service-2200",
+          "product": "Database",
+          "type": "Feature",
+          "desc": "<li><code class=\"Feature\" type=\"1\">Feature</code> <strong>Instance map</strong> supported</li>",
+          "category": "Altibase, Cubrid, IBM DB2, MongoDB, Redis, SAP ASE, SQL Server"
+        },
+        {
+          "ver": "Service 2.20.0",
+          "hash": "service-2200",
+          "product": "Database",
+          "type": "Fixed",
+          "desc": "<li><code class=\"Fixed\" type=\"0\">Fixed</code> <strong>Top SQL</strong> Fixed an issue where the select box could not be clicked in the vertical filter pop out</li>",
+          "category": "MySQL V2, Oracle V2, Oracle Pro, PostgreSQL"
+        },
+        {
+          "ver": "Service 2.20.0",
+          "hash": "service-2200",
+          "product": "Database",
+          "type": "Changed",
+          "desc": "<li><code class=\"Changed\" type=\"1\">Changed</code> <span class=\"uitext\">Dashboard</span> &gt; <span class=\"uitext\">Multi instance monitoring</span> Changed the table view of the drawer that appears when dragging the Slow Query widget</li>",
+          "category": "CUBRID, MySQL, PostgreSQL"
+        },
+        {
+          "ver": "Service 2.20.0",
+          "hash": "service-2200",
+          "product": "Database",
+          "type": "Fixed",
+          "desc": "<li><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">Wait analysis</span> Fixed an error where the previous tooltip remained on the pie chart after requery</li>",
+          "category": "Oracle V2, Oracle Pro, PostgreSQL"
+        },
+        {
+          "ver": "Service 2.20.0",
+          "hash": "service-2200",
+          "product": "Database",
+          "type": "Changed",
+          "desc": "<li><code class=\"Changed\" type=\"1\">Changed</code> <span class=\"uitext\">Slow query</span> Updated guidance text</li>",
+          "category": "MySQL, PostgreSQL"
+        },
+        {
+          "ver": "Service 2.20.0",
+          "hash": "service-2200",
+          "product": "Database",
+          "type": "Fixed",
+          "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Fixed an issue where the lock tree <code>serial#</code> field did not appear in the DB detail window linked with APM</p>",
+          "category": "Oracle V2, Oracle Pro"
+        },
+        {
+          "ver": "Service 2.20.0",
+          "hash": "service-2200",
+          "product": "Database",
+          "type": "Changed",
+          "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> <strong>SQL details</strong> window design revised for the Plan tuning guide pop out</p>",
+          "category": "Oracle V2, Oracle Pro"
+        },
+        {
+          "ver": "Service 2.20.0",
+          "hash": "service-2200",
+          "product": "Database",
+          "type": "Feature",
+          "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">Analysis</span> &gt; <span class=\"uitext\">Top SQL comparison</span> added</p>",
+          "category": "DB2"
+        },
+        {
+          "ver": "Service 2.20.0",
+          "hash": "service-2200",
+          "product": "Database",
+          "type": "Feature",
+          "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <strong>SQL details</strong> window now supports plan viewing</p>",
+          "category": "DB2"
+        },
+        {
+          "ver": "Service 2.20.0",
+          "hash": "service-2200",
+          "product": "Database",
+          "type": "Feature",
+          "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">Script manager</span> added</p>",
+          "category": "DB2"
+        },
+        {
+          "ver": "Service 2.20.0",
+          "hash": "service-2200",
+          "product": "Database",
+          "type": "Feature",
+          "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">Statistics/Reports</span> &gt; <span class=\"uitext\">Tablespace size</span> Added table size lookup and object info lookup</p>",
+          "category": "DB2"
+        },
+        {
+          "ver": "Service 2.20.0",
+          "hash": "service-2200",
+          "product": "Database",
+          "type": "Feature",
+          "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">Active session</span> Added a session detail popup that shows session information when clicking a row in the table</p>",
+          "category": "DB2"
+        },
+        {
+          "ver": "Service 2.20.0",
+          "hash": "service-2200",
+          "product": "Database",
+          "type": "Feature",
+          "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <strong>SQL details</strong> window now shows a Plan tuning guide for specific keywords</p>",
+          "category": "Oracle V2"
+        },
+        {
+          "ver": "Service 2.20.0",
+          "hash": "service-2200",
+          "product": "Database",
+          "type": "Fixed",
+          "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">Wait analysis</span> Fixed an issue where active sessions were not displayed for multi DB</p>",
+          "category": "Oracle V2"
+        },
+        {
+          "ver": "Service 2.20.0",
+          "hash": "service-2200",
+          "product": "Database",
+          "type": "Feature",
+          "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">SQL details</span> window Added a Trend tab that shows the overall trend at a glance</p>",
+          "category": "Oracle Pro"
+        },
+        {
+          "ver": "Service 2.20.0",
+          "hash": "service-2200",
+          "product": "Database",
+          "type": "Feature",
+          "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">Statistics</span> &gt; <strong>Top SQL by Wait</strong>\nAdded filtering options so SQL List filters can use the same filter values as SQL Statistics</p>",
+          "category": "Oracle Pro"
+        },
+        {
+          "ver": "Service 2.20.0",
+          "hash": "service-2200",
+          "product": "Database",
+          "type": "Fixed",
+          "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">Wait analysis</span> Adjusted chart legends to fit screen size and removed horizontal scrolling</p>",
+          "category": "Oracle Pro"
+        },
+        {
+          "ver": "Service 2.20.0",
+          "hash": "service-2200",
+          "product": "Cloud",
+          "type": "Changed",
+          "desc": "<li><code class=\"Changed\" type=\"1\">Changed</code> <strong>Metrics</strong> &gt; <strong>Metrics cube</strong> menu removed</li>"
+        },
+        {
+          "ver": "Service 2.20.0",
+          "hash": "service-2200",
+          "product": "Browser",
+          "type": "Feature",
+          "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <strong>Browser user action heatmap</strong> Added a Performance tab</p>"
+        },
+        {
+          "ver": "Service 2.20.0",
+          "hash": "service-2200",
+          "product": "Browser",
+          "type": "Feature",
+          "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <strong>Mobile screen heatmap</strong> Added a Performance tab</p>"
+        },
+        {
+          "ver": "Service 2.20.0",
+          "hash": "service-2200",
+          "product": "Mobile",
+          "type": "New",
+          "desc": "<li><code class=\"New\" type=\"1\">New</code> <strong>Mobile monitoring</strong> released</li>"
+        },
+        {
+          "ver": "Service 2.20.0",
+          "hash": "service-2200",
+          "product": "Log",
+          "type": "Feature",
+          "desc": "<li><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">Management</span> &gt; <strong>Log filter settings</strong> added</li>"
+        },
+        {
+          "ver": "Service 2.20.0",
+          "hash": "service-2200",
+          "product": "WhaTap AI Chatbot",
+          "type": "Feature",
+          "desc": "<li><code class=\"Feature\" type=\"1\">Feature</code> Prompt suggestion added</li>"
+        }
+      ]
+    }
+  ]
+  
