@@ -10,14 +10,28 @@ keywords:
 
 Pythonアプリケーションサーバーに接続したユーザーの数を集計します。
 
-- **trace_user_enabled**(**\***) <span class='type'>Boolean</span>
+- **trace_http_client_ip_header_key** <span class='type'>String</span> <ScrollToLink anchor='trace_http_client_ip_header_key' />
+
+  クライアントIP(Remote IP)情報を特定HTTPヘッダーの値に変更して設定する機能です。プロキシ(Proxy) 環境では、`X-Forwarded-For`ヘッダーの値をクライアントIPとして設定できます。
+
+  WEB/WAS の前にL4 などのロードバランサーが設置されている場合、クライアントのIPアドレスではなく、L4 のIPアドレスがRemote Adressである場合があります。この状況でクライアントのIP情報がHTTPヘッダーに特定キーの値として記録される場合は、そのキー値に置き換えることができます。
+
+- **trace_user_enabled** <span class='type'>Boolean</span>
 
   既定値 `true`
 
   リアルタイムにユーザーの追跡有無を決定します。この値を有効にすると、既定値はIPになります。
 
-- **trace_user_using_ip**(**\***) <span class='type'>Boolean</span>
+- **trace_user_using_ip** <span class='type'>Boolean</span>
 
   既定値 `true`
 
   リアルタイムユーザーの分類を必要に応じて、IPの場合に設定します。このデータは、Real Time Userで使用できます。`user_header_ticket`オプションと排他的に設定を同時に適用することはできません。
+
+- **user_header_ticket** <span class='type'>String</span>
+
+  HTTP Headerの特定の値でユーザー数を集計する場合は、その対応するKey値を設定します。 モバイルクライアントの場合、ユーザ区分にheaderを使用する場合は、次のオプションが利用できます。
+
+  ```ini title='whatap.conf'
+  user_header_ticket=login
+  ```

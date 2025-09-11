@@ -10,14 +10,28 @@ keywords:
 
 It aggregates the numbers of users who connect to the Python web application server.
 
-- **trace_user_enabled**(**\***) <span class='type'>Boolean</span>
+- **trace_http_client_ip_header_key** <span class='type'>String</span> <ScrollToLink anchor='trace_http_client_ip_header_key' />
+
+  This function sets the client IP (remote IP) with a specific HTTP header value. In the proxy environment, the `X-Forwarded-For` header can be set with the client IP.
+
+  If the load balancer like L4 is located before WEB/WAS, in some cases, the IP address of L4 becomes the remote address instead of the IP address of the client. In this situation, if the actual client IP is recorded as a specific key value in the HTTP header, it can be replaced with the corresponding key value.
+
+- **trace_user_enabled** <span class='type'>Boolean</span>
 
   Default `true`
 
   It determines whether or not to trace real-time users. If this value is enabled, the default value is the IP.
 
-- **trace_user_using_ip**(**\***) <span class='type'>Boolean</span>
+- **trace_user_using_ip** <span class='type'>Boolean</span>
 
   Default `true`
 
   Enable to identify real-time users based on the IP address. The data can be checked in Real Time User. The `user_header_ticket` option and exclusive settings cannot be applied at the same time.
+
+- **user_header_ticket** <span class='type'>String</span>
+
+  To aggregate the numbers of users with a specific value in the HTTP header, set the key value. If headers are used to distinguish users in case of mobile clients, the following options are available.
+
+  ```ini title='whatap.conf'
+  user_header_ticket=login
+  ```
