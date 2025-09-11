@@ -6573,7 +6573,7 @@ const sidebars = {
       label: 'Network 관리 시스템',
       collapsible: false,
       collapsed: false,
-      className: 'beta',
+      // className: 'beta',
       link: {
         type: 'doc',
         id: 'nms/introduction'
