@@ -1,0 +1,600 @@
+[
+    {
+      "url": "https://docs.whatap.io/release-notes/service/service-2_20_x",
+      "ver": "Service 2.20.7",
+      "date": "2025-09-11",
+      "Lists": [
+        {
+          "ver": "Service 2.20.7",
+          "hash": "service-2207",
+          "product": "共通",
+          "type": "Fixed",
+          "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> 特定プロジェクトの新規メトリクスチャートで対象リストが表示されない問題を修正</p>"
+        }
+      ]
+    },
+    {
+      "url": "https://docs.whatap.io/release-notes/service/service-2_20_x",
+      "ver": "Service 2.20.6",
+      "date": "2025-09-05",
+      "Lists": [
+        {
+          "ver": "Service 2.20.6",
+          "hash": "service-2206",
+          "product": "Application",
+          "type": "Fixed",
+          "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> カスタムIPフィルターの削除に対応</p>"
+        },
+        {
+          "ver": "Service 2.20.6",
+          "hash": "service-2206",
+          "product": "Application",
+          "type": "Fixed",
+          "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> IPフィルターのインデックス作成エラーを修正</p>"
+        }
+      ]
+    },
+    {
+      "url": "https://docs.whatap.io/release-notes/service/service-2_20_x",
+      "ver": "Service 2.20.3",
+      "date": "2025-09-02",
+      "Lists": [
+        {
+          "ver": "Service 2.20.3",
+          "hash": "service-2203",
+          "product": "共通",
+          "type": "Changed",
+          "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> 新機能案内パネルとモーダルを追加</p>"
+        },
+        {
+          "ver": "Service 2.20.3",
+          "hash": "service-2203",
+          "product": "Kubernetes",
+          "type": "Fixed",
+          "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">GPUインベントリ</span> データ連携時のエラーを修正</p>"
+        }
+      ]
+    },
+    {
+      "url": "https://docs.whatap.io/release-notes/service/service-2_20_x",
+      "ver": "Service 2.20.1",
+      "date": "2025-08-27",
+      "Lists": [
+        {
+          "ver": "Service 2.20.1",
+          "hash": "service-2201",
+          "product": "Server",
+          "type": "Fixed",
+          "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">Flexボード</span> の <span class=\"uitext\">サーバー詳細</span> で、サーバー一覧のキーワード検索時に断続的に発生するエラーを修正</p>"
+        }
+      ]
+    },
+    {
+      "url": "https://docs.whatap.io/release-notes/service/service-2_20_x",
+      "ver": "Service 2.20.0",
+      "date": "2025-08-27",
+      "Lists": [
+        {
+          "ver": "Service 2.20.0",
+          "hash": "service-2200",
+          "product": "共通",
+          "type": "Feature",
+          "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">アカウント管理</span> &gt; <strong>アカウント情報</strong> UTCオフセット変更機能を追加</p>"
+        },
+        {
+          "ver": "Service 2.20.0",
+          "hash": "service-2200",
+          "product": "共通",
+          "type": "Feature",
+          "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">アカウント管理</span> にアクセス制御メニューを追加し、アカウント別IPアクセス制御を追加</p>"
+        },
+        {
+          "ver": "Service 2.20.0",
+          "hash": "service-2200",
+          "product": "共通",
+          "type": "Feature",
+          "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> GPU、GPU MIG、Open Metric High、Open Metric Low などの新しい利用量指標を、請求書、課金、プロジェクト購読、メータリング要約などに追加</p>"
+        },
+        {
+          "ver": "Service 2.20.0",
+          "hash": "service-2200",
+          "product": "共通",
+          "type": "Feature",
+          "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">Flexボード</span> &gt; <strong>フィルター</strong> メトリクスフィルターとタグ選択に直接入力オプションを追加</p>"
+        },
+        {
+          "ver": "Service 2.20.0",
+          "hash": "service-2200",
+          "product": "共通",
+          "type": "Feature",
+          "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">Flexボード</span> 日次比較ウィジェットを追加</p>"
+        },
+        {
+          "ver": "Service 2.20.0",
+          "hash": "service-2200",
+          "product": "Application",
+          "type": "Feature",
+          "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">ダッシュボード</span> &gt; <span class=\"uitext\">アプリケーションダッシュボード</span> Active HTTPC、Active DB ウィジェットを追加</p>"
+        },
+        {
+          "ver": "Service 2.20.0",
+          "hash": "service-2200",
+          "product": "Application",
+          "type": "Feature",
+          "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">統計</span> &gt; <span class=\"uitext\">トランザクション</span> トポロジを開くボタンを追加</p>"
+        },
+        {
+          "ver": "Service 2.20.0",
+          "hash": "service-2200",
+          "product": "Application",
+          "type": "Feature",
+          "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">ダッシュボード</span> &gt; <strong>ビジネスダッシュボード</strong> 詳細タブとトポロジタブを追加</p>"
+        },
+        {
+          "ver": "Service 2.20.0",
+          "hash": "service-2200",
+          "product": "Application",
+          "type": "Feature",
+          "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">ダッシュボード</span> &gt; <span class=\"uitext\">アプリケーションダッシュボード</span> イベントウィジェットを追加</p>",
+          "details": "<ul>\n<li>イベントをレベル別に可視化し、エージェント別に区分して表示</li>\n</ul>"
+        },
+        {
+          "ver": "Service 2.20.0",
+          "hash": "service-2200",
+          "product": "Application",
+          "type": "Changed",
+          "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> <span class=\"uitext\">アプリケーショントポロジ</span> <code class=\"Beta\">Beta</code> UIを改善</p>",
+          "details": "<ul>\n<li>\n<p>エッジラベルのゲージ表現を追加し、応答時間のしきい値カラー表示を追加</p>\n</li>\n<li>\n<p>特定ノード（詳細）</p>\n<ul>\n<li>\n<p>TXトレースのカラム設定を追加し、全体/アクティブ/マルチトランザクション/エラーフィルターを追加</p>\n</li>\n<li>\n<p>選択したノードに関連するノードのみ表示するポップアウトを追加</p>\n</li>\n</ul>\n</li>\n</ul>"
+        },
+        {
+          "ver": "Service 2.20.0",
+          "hash": "service-2200",
+          "product": "Application",
+          "type": "Changed",
+          "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> <code>app_context_stat</code> の用語を統一（コンテキスト、コンテキスト別 を 業務、業務別 に統一）</p>"
+        },
+        {
+          "ver": "Service 2.20.0",
+          "hash": "service-2200",
+          "product": "Application",
+          "type": "Changed",
+          "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> アクティブスタックとマルチトランザクションのアイコン色を変更</p>",
+          "details": "<ul>\n<li>\n<p>マルチトランザクション: <span class=\"normal\">青</span> から グレー</p>\n</li>\n<li>\n<p>アクティブスタック: <span class=\"vslow\">赤</span> から <span class=\"normal\">青</span></p>\n</li>\n</ul>"
+        },
+        {
+          "ver": "Service 2.20.0",
+          "hash": "service-2200",
+          "product": "Application",
+          "type": "Fixed",
+          "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">ダッシュボード</span> &gt; <strong>ビジネスダッシュボード</strong> 別名設定で全ての別名を削除して保存した後、変更が反映されない問題を修正</p>"
+        },
+        {
+          "ver": "Service 2.20.0",
+          "hash": "service-2200",
+          "product": "Application",
+          "type": "Fixed",
+          "desc": "<li><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">ログ</span> &gt; <span class=\"uitext\">ログ設定</span> ログ監視を開始するタブの「1. エージェント設定の確認」項目の日本語訳を修正</li>",
+          "category": "Java, Node.js, PHP"
+        },
+        {
+          "ver": "Service 2.20.0",
+          "hash": "service-2200",
+          "product": "Application",
+          "type": "Changed",
+          "desc": "<li><code class=\"Changed\" type=\"1\">Changed</code> 対応バージョン情報とOS情報を更新</li>",
+          "category": ".Net, Python"
+        },
+        {
+          "ver": "Service 2.20.0",
+          "hash": "service-2200",
+          "product": "Application",
+          "type": "Changed",
+          "desc": "<li><code class=\"Changed\" type=\"1\">Changed</code> <strong>エージェントインストール</strong> ページを改善</li>",
+          "category": "Java"
+        },
+        {
+          "ver": "Service 2.20.0",
+          "hash": "service-2200",
+          "product": "Server",
+          "type": "Feature",
+          "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <strong>GPUインベントリ</strong> キーワード検索フィルターを追加</p>"
+        },
+        {
+          "ver": "Service 2.20.0",
+          "hash": "service-2200",
+          "product": "Server",
+          "type": "Feature",
+          "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <strong>GPUパフォーマンスサマリー</strong> カラム設定に各フィールドの説明ツールチップを追加</p>"
+        },
+        {
+          "ver": "Service 2.20.0",
+          "hash": "service-2200",
+          "product": "Server",
+          "type": "Feature",
+          "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">サーバー詳細</span> サーバー一覧に検索入力フィールドを追加</p>"
+        },
+        {
+          "ver": "Service 2.20.0",
+          "hash": "service-2200",
+          "product": "Server",
+          "type": "Feature",
+          "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">ダッシュボード</span> ブラウザーサイズに応じたウィジェット自動調整モードをデフォルトにし、スクロールが発生しても拡大して正しく見られるようウィジェット高さの自動調整スイッチを追加</p>"
+        },
+        {
+          "ver": "Service 2.20.0",
+          "hash": "service-2200",
+          "product": "Server",
+          "type": "Changed",
+          "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code>  <strong>GPUパフォーマンスサマリー</strong> GPU Status の参照時間範囲を5分から1分に変更</p>"
+        },
+        {
+          "ver": "Service 2.20.0",
+          "hash": "service-2200",
+          "product": "Server",
+          "type": "Changed",
+          "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> <strong>GPUパフォーマンスサマリー</strong> <code>Performance_State</code> フィールドの値を P0 から P15 の範囲で表示するよう変更</p>"
+        },
+        {
+          "ver": "Service 2.20.0",
+          "hash": "service-2200",
+          "product": "Server",
+          "type": "Changed",
+          "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> <strong>GPUパフォーマンスサマリー</strong> &gt; <span class=\"uitext\">比較</span> パネル</p>",
+          "details": "<ul>\n<li>\n<p>単位が bytes/s のチャート値を自動単位変換に変更</p>\n</li>\n<li>\n<p><code>Performance_State</code> チャートのY軸範囲を P0 から P15 に固定</p>\n</li>\n</ul>"
+        },
+        {
+          "ver": "Service 2.20.0",
+          "hash": "service-2200",
+          "product": "Server",
+          "type": "Changed",
+          "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> <strong>サーバー一覧</strong> 配下の <strong>GPUインベントリ</strong> と <strong>GPUパフォーマンスサマリー</strong> メニューを <strong>GPU</strong> グループ配下へ移動</p>"
+        },
+        {
+          "ver": "Service 2.20.0",
+          "hash": "service-2200",
+          "product": "Server",
+          "type": "Changed",
+          "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> <strong>Event v2</strong> メトリクスイベントルール追加時、指標設定条件にバリデーションを追加し、問題がある場合はエラーメッセージを追加</p>"
+        },
+        {
+          "ver": "Service 2.20.0",
+          "hash": "service-2200",
+          "product": "Server",
+          "type": "Changed",
+          "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> <strong>GPUインベントリ</strong> と <strong>GPUパフォーマンスサマリー</strong> のエージェント最小バージョンを 2.8.9 から 2.9.2 に変更</p>"
+        },
+        {
+          "ver": "Service 2.20.0",
+          "hash": "service-2200",
+          "product": "Server",
+          "type": "Fixed",
+          "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code>  <strong>サーバー一覧</strong> キーワードフィルター検索時、項目が oid の場合にフィルター項目が選択されない問題を修正</p>"
+        },
+        {
+          "ver": "Service 2.20.0",
+          "hash": "service-2200",
+          "product": "Server",
+          "type": "Fixed",
+          "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">サーバー詳細</span> サーバー選択後のページ読み込み時に、サーバー一覧へマウスホバーしても即時表示されない問題を修正</p>"
+        },
+        {
+          "ver": "Service 2.20.0",
+          "hash": "service-2200",
+          "product": "Server",
+          "type": "Fixed",
+          "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">メトリクスエクスプローラー</span> by GPU Process 配下の指標選択時、チャート凡例ラベルの形式を <code>process_name, pid, (process_type) - index(uuid)</code> で表示するよう修正</p>"
+        },
+        {
+          "ver": "Service 2.20.0",
+          "hash": "service-2200",
+          "product": "Server",
+          "type": "Fixed",
+          "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">サーバーインベントリ</span> 新規エージェント収集フィールド追加時、テーブルヘッダーにフィールド名が表示されない現象を修正</p>"
+        },
+        {
+          "ver": "Service 2.20.0",
+          "hash": "service-2200",
+          "product": "Server",
+          "type": "Fixed",
+          "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">サーバー詳細</span> チャート詳細表示ドロワーを閉じた際、選択サーバーではなくデフォルトサーバー選択に初期化される問題を修正</p>"
+        },
+        {
+          "ver": "Service 2.20.0",
+          "hash": "service-2200",
+          "product": "Server",
+          "type": "Fixed",
+          "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <strong>サーバー一覧</strong> 全体リフレッシュボタンをクリックした際、イベント発生に応じたサーバー状態が反映されない問題を修正</p>"
+        },
+        {
+          "ver": "Service 2.20.0",
+          "hash": "service-2200",
+          "product": "Server",
+          "type": "Fixed",
+          "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <strong>GPUパフォーマンスサマリー</strong> &gt; <span class=\"uitext\">比較</span> パネル</p>",
+          "details": "<ul>\n<li>\n<p>単位が % のチャートでY軸の最大値が100%を超えないように調整</p>\n</li>\n<li>\n<p>単位なしのチャートでタイトルに空の括弧が表示される現象を修正</p>\n</li>\n</ul>"
+        },
+        {
+          "ver": "Service 2.20.0",
+          "hash": "service-2200",
+          "product": "Kubernetes",
+          "type": "Feature",
+          "desc": "<li><code class=\"Feature\" type=\"1\">Feature</code> <strong>GPU</strong> &gt; <strong>GPUトレンド</strong> メニューを追加</li>"
+        },
+        {
+          "ver": "Service 2.20.0",
+          "hash": "service-2200",
+          "product": "Database",
+          "type": "Feature",
+          "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> データベース製品の単一インスタンスセレクターを改善</p>",
+          "category": "共通"
+        },
+        {
+          "ver": "Service 2.20.0",
+          "hash": "service-2200",
+          "product": "Database",
+          "type": "Feature",
+          "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">Flexボード</span> Open MX ウィジェットを追加</p>",
+          "category": "共通"
+        },
+        {
+          "ver": "Service 2.20.0",
+          "hash": "service-2200",
+          "product": "Database",
+          "type": "Feature",
+          "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">Flexボード</span> SQL Elapse Map ウィジェットにクエリテキスト制限オプションを追加</p>",
+          "category": "共通"
+        },
+        {
+          "ver": "Service 2.20.0",
+          "hash": "service-2200",
+          "product": "Database",
+          "type": "Feature",
+          "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">ラボ</span> &gt; <strong>Open Metric エクスプローラー</strong> を追加</p>",
+          "category": "共通"
+        },
+        {
+          "ver": "Service 2.20.0",
+          "hash": "service-2200",
+          "product": "Database",
+          "type": "Feature",
+          "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">Flexボード</span> <strong>インスタンスマップ</strong> ウィジェットを追加可能に</p>",
+          "category": "共通"
+        },
+        {
+          "ver": "Service 2.20.0",
+          "hash": "service-2200",
+          "product": "Database",
+          "type": "Feature",
+          "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <strong>インスタンスマップ</strong> インスタンスアイコンに role アイコンを追加</p>",
+          "category": "共通"
+        },
+        {
+          "ver": "Service 2.20.0",
+          "hash": "service-2200",
+          "product": "Database",
+          "type": "Feature",
+          "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <strong>インスタンスマップ</strong> &gt; <strong>インスタンス概要</strong> に master と slave 情報を追加</p>",
+          "category": "共通"
+        },
+        {
+          "ver": "Service 2.20.0",
+          "hash": "service-2200",
+          "product": "Database",
+          "type": "Changed",
+          "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> <span class=\"uitext\">ダッシュボード</span> &gt; <span class=\"uitext\">インスタンス一覧</span>、<span class=\"uitext\">インスタンス監視</span> のインスタンス状態カラーを進行中のイベントと同期するよう変更</p>",
+          "category": "共通"
+        },
+        {
+          "ver": "Service 2.20.0",
+          "hash": "service-2200",
+          "product": "Database",
+          "type": "Changed",
+          "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> <span class=\"uitext\">管理</span> &gt; <span class=\"uitext\">エージェント一覧</span> ダウンロードCSVのヘッダーとデータ形式を修正</p>",
+          "category": "共通"
+        },
+        {
+          "ver": "Service 2.20.0",
+          "hash": "service-2200",
+          "product": "Database",
+          "type": "Changed",
+          "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> <span class=\"uitext\">クラウド設定</span> メニューを削除し、サイトマップでは「サーバーレスエージェント設定」に変更</p>",
+          "category": "共通"
+        },
+        {
+          "ver": "Service 2.20.0",
+          "hash": "service-2200",
+          "product": "Database",
+          "type": "Changed",
+          "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> <span class=\"uitext\">ログ設定</span> の案内文を修正（Tibero、Altibase を除く）</p>",
+          "category": "共通"
+        },
+        {
+          "ver": "Service 2.20.0",
+          "hash": "service-2200",
+          "product": "Database",
+          "type": "Changed",
+          "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> <strong>DB</strong> <span class=\"uitext\">エージェントインストール</span> の 8. クラウドエージェント項目に例示の yaml log を追加</p>",
+          "category": "共通"
+        },
+        {
+          "ver": "Service 2.20.0",
+          "hash": "service-2200",
+          "product": "Database",
+          "type": "Feature",
+          "desc": "<li><code class=\"Feature\" type=\"1\">Feature</code> <strong>インスタンスマップ</strong> をサポート</li>",
+          "category": "Altibase, Cubrid, IBM DB2, MongoDB, Redis, SAP ASE, SQL Server"
+        },
+        {
+          "ver": "Service 2.20.0",
+          "hash": "service-2200",
+          "product": "Database",
+          "type": "Fixed",
+          "desc": "<li><code class=\"Fixed\" type=\"0\">Fixed</code> <strong>Top SQL</strong> 縦フィルターポップアウトでセレクトボックスがクリックできない問題を修正</li>",
+          "category": "MySQL V2, Oracle V2, Oracle Pro, PostgreSQL"
+        },
+        {
+          "ver": "Service 2.20.0",
+          "hash": "service-2200",
+          "product": "Database",
+          "type": "Changed",
+          "desc": "<li><code class=\"Changed\" type=\"1\">Changed</code> <span class=\"uitext\">ダッシュボード</span> &gt; <span class=\"uitext\">マルチインスタンス監視</span> Slow Query ウィジェットをドラッグした際に表示されるドロワーのテーブルビューを変更</li>",
+          "category": "CUBRID, MySQL, PostgreSQL"
+        },
+        {
+          "ver": "Service 2.20.0",
+          "hash": "service-2200",
+          "product": "Database",
+          "type": "Fixed",
+          "desc": "<li><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">Wait 分析</span> 再照会時に円グラフの前回ツールチップが残るエラーを修正</li>",
+          "category": "Oracle V2, Oracle Pro, PostgreSQL"
+        },
+        {
+          "ver": "Service 2.20.0",
+          "hash": "service-2200",
+          "product": "Database",
+          "type": "Changed",
+          "desc": "<li><code class=\"Changed\" type=\"1\">Changed</code> <span class=\"uitext\">スロークエリ</span> の案内文を変更</li>",
+          "category": "MySQL, PostgreSQL"
+        },
+        {
+          "ver": "Service 2.20.0",
+          "hash": "service-2200",
+          "product": "Database",
+          "type": "Fixed",
+          "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> APM連携のDB詳細画面でロックツリーの <code>serial#</code> フィールドが表示されないエラーを修正</p>",
+          "category": "Oracle V2, Oracle Pro"
+        },
+        {
+          "ver": "Service 2.20.0",
+          "hash": "service-2200",
+          "product": "Database",
+          "type": "Changed",
+          "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> <strong>SQL詳細</strong> 画面のプランチューニングガイドのポップアウトデザインを修正</p>",
+          "category": "Oracle V2, Oracle Pro"
+        },
+        {
+          "ver": "Service 2.20.0",
+          "hash": "service-2200",
+          "product": "Database",
+          "type": "Feature",
+          "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">分析</span> &gt; <span class=\"uitext\">Top SQL 比較</span> を追加</p>",
+          "category": "DB2"
+        },
+        {
+          "ver": "Service 2.20.0",
+          "hash": "service-2200",
+          "product": "Database",
+          "type": "Feature",
+          "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <strong>SQL詳細</strong> 画面でプラン参照機能を追加</p>",
+          "category": "DB2"
+        },
+        {
+          "ver": "Service 2.20.0",
+          "hash": "service-2200",
+          "product": "Database",
+          "type": "Feature",
+          "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">スクリプトマネージャー</span> を追加</p>",
+          "category": "DB2"
+        },
+        {
+          "ver": "Service 2.20.0",
+          "hash": "service-2200",
+          "product": "Database",
+          "type": "Feature",
+          "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">統計/レポート</span> &gt; <span class=\"uitext\">テーブルスペースサイズ</span> テーブルサイズ参照とオブジェクト情報参照機能を追加</p>",
+          "category": "DB2"
+        },
+        {
+          "ver": "Service 2.20.0",
+          "hash": "service-2200",
+          "product": "Database",
+          "type": "Feature",
+          "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">アクティブセッション</span> テーブルの行をクリックするとセッション情報を確認できるセッション詳細ポップアップを追加</p>",
+          "category": "DB2"
+        },
+        {
+          "ver": "Service 2.20.0",
+          "hash": "service-2200",
+          "product": "Database",
+          "type": "Feature",
+          "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <strong>SQL詳細</strong> 画面で特定キーワードにプランチューニングガイドを表示するように修正</p>",
+          "category": "Oracle V2"
+        },
+        {
+          "ver": "Service 2.20.0",
+          "hash": "service-2200",
+          "product": "Database",
+          "type": "Fixed",
+          "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">Wait 分析</span> マルチDBの場合にアクティブセッションが表示されない問題を修正</p>",
+          "category": "Oracle V2"
+        },
+        {
+          "ver": "Service 2.20.0",
+          "hash": "service-2200",
+          "product": "Database",
+          "type": "Feature",
+          "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">SQL詳細</span> 画面に全体推移を一目で確認できる Trend タブを追加</p>",
+          "category": "Oracle Pro"
+        },
+        {
+          "ver": "Service 2.20.0",
+          "hash": "service-2200",
+          "product": "Database",
+          "type": "Feature",
+          "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">統計</span> &gt; <strong>Wait 別 Top SQL</strong>\nSQL List フィルターで SQL 統計と同じフィルター値を使えるようフィルタリングオプションを追加</p>",
+          "category": "Oracle Pro"
+        },
+        {
+          "ver": "Service 2.20.0",
+          "hash": "service-2200",
+          "product": "Database",
+          "type": "Fixed",
+          "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">Wait 分析</span> チャート凡例が画面サイズに合わせて調整されるように修正（横スクロールを削除）</p>",
+          "category": "Oracle Pro"
+        },
+        {
+          "ver": "Service 2.20.0",
+          "hash": "service-2200",
+          "product": "Cloud",
+          "type": "Changed",
+          "desc": "<li><code class=\"Changed\" type=\"1\">Changed</code> <strong>メトリクス</strong> &gt; <strong>メトリクスキューブ</strong> メニューを削除</li>"
+        },
+        {
+          "ver": "Service 2.20.0",
+          "hash": "service-2200",
+          "product": "Browser",
+          "type": "Feature",
+          "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <strong>ブラウザー利用者アクションヒートマップ</strong> に Performance タブを追加</p>"
+        },
+        {
+          "ver": "Service 2.20.0",
+          "hash": "service-2200",
+          "product": "Browser",
+          "type": "Feature",
+          "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <strong>モバイルスクリーンヒートマップ</strong> に Performance タブを追加</p>"
+        },
+        {
+          "ver": "Service 2.20.0",
+          "hash": "service-2200",
+          "product": "Mobile",
+          "type": "New",
+          "desc": "<li><code class=\"New\" type=\"1\">New</code> <strong>モバイルモニタリング</strong> をリリース</li>"
+        },
+        {
+          "ver": "Service 2.20.0",
+          "hash": "service-2200",
+          "product": "Log",
+          "type": "Feature",
+          "desc": "<li><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">管理</span> &gt; <strong>ログフィルター設定</strong> を追加</li>"
+        },
+        {
+          "ver": "Service 2.20.0",
+          "hash": "service-2200",
+          "product": "WhaTap AI Chatbot",
+          "type": "Feature",
+          "desc": "<li><code class=\"Feature\" type=\"1\">Feature</code> プロンプト推薦機能を追加</li>"
+        }
+      ]
+    }
+  ]
+  
