@@ -4842,7 +4842,19 @@ const sidebars = {
         // 'about-billing',
         // 'software-proxy',
         'main-ui-intro-v2',
-        'usage-ui',
+        {
+          type: 'category',
+          label: '제품 공통 UI',
+          collapsible: true,
+          collapsed: false,
+          link: {
+            type: 'doc',
+            id: 'usage-ui',
+          },
+          items: [
+            'widget-template',
+          ]
+        },
         'reference/data-collection-retention',
         {
           type: 'html',
@@ -6622,14 +6634,9 @@ const sidebars = {
           },
           items: [
             'nms/flexboard-guide',
-            'nms/flexboard-template',
-            'nms/flexboard-create',
-            'nms/flexboard-manage',
             'nms/flexboard-metric-widget',
             'nms/flexboard-widget-manage',
             'nms/flexboard-widget-template',
-            'nms/flexboard-mode',
-            'nms/flexboard-share',
           ],
         },
         {
