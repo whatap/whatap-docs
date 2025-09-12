@@ -12,15 +12,15 @@ displayed_sidebar: releaseSidebar
 
 - <Status priority='1'>New</Status> LLMメトリクス収集機能を追加
 
-    - **llm_stat_enabled**  
+    - **llm_stat_enabled** <span class='type'>Boolean</span>
         - `false`: デフォルト  
         - `true`: このオプションと **trace_llm_log_enabled**、**counter_thread_enabled** がすべて `true` の場合にメトリクス収集が有効化されます
 
-    - **llm_stat_interval**  
+    - **llm_stat_interval** <span class='type'>Number</span>
         - LLMメトリクスの収集間隔を秒単位で設定するオプション  
         - `5`: デフォルト
 
-- <Status priority='1'>Feature</Status> **counter_thread_enabled** オプションを追加  
+- <Status priority='1'>Feature</Status> **counter_thread_enabled** オプションを追加 <span class='type'>Boolean</span> 
 
     - `false`: デフォルト  
     - `true`: llm_stat と app_filedescriptor メトリクスを収集するスレッド（`counter_thread`）を有効化

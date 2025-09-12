@@ -17,14 +17,14 @@
         "product": "Python Agent",
         "type": "New",
         "desc": "<p><code class=\"New\" type=\"1\">New</code> LLMメトリクス収集機能を追加 </p>",
-        "details": "<ul><li><p><strong>llm_stat_enabled</strong><br />\n<ul><li><code>false</code>: デフォルト</li>\n<li><code>true</code>: このオプションと <strong>trace_llm_log_enabled</strong>、<strong>counter_thread_enabled</strong> がすべて <code>true</code> の場合にメトリクス収集が有効化されます</li></ul></p></li>\n<li><p><strong>llm_stat_interval</strong><br />\n<ul><li>LLMメトリクス収集間隔を秒単位で設定するオプション</li><li><code>5</code>: デフォルト</li></ul></p></li></ul>"
+        "details": "<ul><li><p><strong>llm_stat_enabled</strong> <span class='type'>Boolean</span> <br />\n<ul><li><code>false</code>: デフォルト</li>\n<li><code>true</code>: このオプションと <strong>trace_llm_log_enabled</strong>、<strong>counter_thread_enabled</strong> がすべて <code>true</code> の場合にメトリクス収集が有効化されます</li></ul></p></li>\n<li><p><strong>llm_stat_interval</strong> <span class='type'>Number</span> <br />\n<ul><li>LLMメトリクス収集間隔を秒単位で設定するオプション</li><li><code>5</code>: デフォルト</li></ul></p></li></ul>"
       },
       {
         "ver": "v1.8.12",
         "hash": "v1812",
         "product": "Python Agent",
         "type": "Feature",
-        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <strong>counter_thread_enabled</strong> オプションを追加 </p>",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <strong>counter_thread_enabled</strong> オプションを追加 <span class='type'>Boolean</span> </p>",
         "details": "<ul><li><p><code>false</code>: デフォルト</p></li>\n<li><p><code>true</code>: <strong>llm_stat</strong> と <strong>app_filedescriptor</strong> メトリクスを収集するスレッド（counter_thread）を有効化</p></li></ul>"
       },
       {
