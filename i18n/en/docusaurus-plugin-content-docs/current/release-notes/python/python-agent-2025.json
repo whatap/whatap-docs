@@ -17,14 +17,14 @@
         "product": "Python Agent",
         "type": "New",
         "desc": "<p><code class=\"New\" type=\"1\">New</code> Added LLM metrics collection feature </p>",
-        "details": "<ul><li><p><strong>llm_stat_enabled</strong><br />\n<ul><li><code>false</code>: default</li>\n<li><code>true</code>: metrics collection is enabled only when this option, <strong>trace_llm_log_enabled</strong>, and <strong>counter_thread_enabled</strong> are all set to <code>true</code></li></ul></p></li>\n<li><p><strong>llm_stat_interval</strong><br />\n<ul><li>Option to set the LLM metrics collection interval in seconds</li><li><code>5</code>: default</li></ul></p></li></ul>"
+        "details": "<ul><li><p><strong>llm_stat_enabled</strong> <span class='type'>Boolean</span> <br />\n<ul><li><code>false</code>: default</li>\n<li><code>true</code>: metrics collection is enabled only when this option, <strong>trace_llm_log_enabled</strong>, and <strong>counter_thread_enabled</strong> are all set to <code>true</code></li></ul></p></li>\n<li><p><strong>llm_stat_interval</strong> <span class='type'>Number</span> <br />\n<ul><li>Option to set the LLM metrics collection interval in seconds</li><li><code>5</code>: default</li></ul></p></li></ul>"
       },
       {
         "ver": "v1.8.12",
         "hash": "v1812",
         "product": "Python Agent",
         "type": "Feature",
-        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> Added <strong>counter_thread_enabled</strong> option </p>",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> Added <strong>counter_thread_enabled</strong> option <span class='type'>Boolean</span> </p>",
         "details": "<ul><li><p><code>false</code>: default</p></li>\n<li><p><code>true</code>: activates the thread (counter_thread) that collects <strong>llm_stat</strong> and <strong>app_filedescriptor</strong> metrics</p></li></ul>"
       },
       {

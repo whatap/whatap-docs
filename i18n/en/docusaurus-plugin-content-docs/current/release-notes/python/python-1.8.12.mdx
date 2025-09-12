@@ -12,15 +12,15 @@ September 12, 2025
 
 - <Status priority='1'>New</Status> Added LLM metrics collection feature
 
-    - **llm_stat_enabled**  
+    - **llm_stat_enabled** <span class='type'>Boolean</span>
         - `false`: default  
         - `true`: metrics collection is enabled only when this option, **trace_llm_log_enabled**, and **counter_thread_enabled** are all set to `true`
 
-    - **llm_stat_interval**  
+    - **llm_stat_interval** <span class='type'>Number</span>
         - Option to set the collection interval for LLM metrics in seconds  
         - `5`: default
 
-- <Status priority='1'>Feature</Status> Added **counter_thread_enabled** option  
+- <Status priority='1'>Feature</Status> Added **counter_thread_enabled** option <span class='type'>Boolean</span>
 
     - `false`: default  
     - `true`: activates the thread (`counter_thread`) that collects llm_stat and app_filedescriptor metrics
