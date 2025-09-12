@@ -840,6 +840,7 @@ const sidebars = {
             'python/agent-httpcapicall',
             'python/agent-number-of-user',
             'python/agent-static',
+            'python/set-llm-logs-metrics'
           ]
         },
         {

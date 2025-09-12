@@ -56,7 +56,16 @@ open_file_descriptor_enabled=true
 
 #Default value is set to 60 seconds when the collection cycle is omitted
 open_file_descriptor_interval=60
+
+#Enable metrics transfer thread
+counter_thread_enabled=true
 ```
+
+:::note
+
+The `counter_thread_enabled` option is supported starting from version 1.8.12. In versions earlier than 1.8.12, the metrics transfer thread is enabled automatically.
+
+:::
 
 ### Collection metrics
 
