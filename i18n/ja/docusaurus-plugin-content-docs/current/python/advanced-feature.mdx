@@ -56,7 +56,16 @@ open_file_descriptor_enabled=true
 
 #収集の周期設定で省略時、規定値60秒
 open_file_descriptor_interval=60
+
+#メトリクス送信スレッドを有効化
+counter_thread_enabled=true
 ```
+
+:::note
+
+`counter_thread_enabled` オプションは 1.8.12 以降でサポートされます。 1.8.12 未満のバージョンでは、メトリクス送信スレッドは自動的に有効化されています。
+
+:::
 
 ### 収集メトリクス
 

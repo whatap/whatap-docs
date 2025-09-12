@@ -1,0 +1,42 @@
+---
+id: set-llm-logs-metrics
+title: Configure LLM Log and Metrics Monitoring
+description: Configure settings to collect LLM logs for monitoring and viewing them in metrics charts.
+keywords: [ Python, configuration, log, LLM, metrics monitoring ]
+---
+
+Collect data from LLM APIs used inside your application. The collected data can be checked in log monitoring and metrics charts. 
+
+:::note
+
+**Requirements**
+
+WhaTap Python Agent version 1.8.12 or higher is required.
+
+:::
+
+## Option Settings
+
+- **trace_llm_log_enabled** <span class='type'>Boolean</span>  
+
+    Default: `False`  
+
+    Enables LLM log monitoring and collection.
+
+- **counter_thread_enabled** <span class='type'>Boolean</span>  
+
+    Default: `False`  
+
+    Enables the Python Agent’s metrics transfer thread.
+
+- **llm_stat_enabled** <span class='type'>Boolean</span>  
+
+    Default: `False`  
+
+    Enables LLM metrics collection. This requires **trace_llm_log_enabled** and **counter_thread_enabled** to also be set to `true`.
+
+- **llm_stat_interval** <span class='type'>Int</span>  
+
+    Default: `5` (in seconds)  
+
+    Sets the collection interval for LLM metrics.

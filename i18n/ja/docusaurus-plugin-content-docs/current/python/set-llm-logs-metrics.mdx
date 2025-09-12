@@ -1,0 +1,42 @@
+---
+id: set-llm-logs-metrics
+title: LLM ログおよびメトリクス監視の設定
+description: LLM ログを収集し、ログモニタリングやメトリクスチャートで確認するための設定です。
+keywords: [ Python, 設定, ログ, LLM, メトリクス監視 ]
+---
+
+アプリケーション内で使用される LLM API のデータを収集します。収集したデータはログモニタリングやメトリクスチャートで確認できます。  
+
+:::note
+
+**要件**
+
+WhaTap Python Agent 1.8.12 以上が必要です。
+
+:::
+
+## オプション設定
+
+- **trace_llm_log_enabled** <span class='type'>Boolean</span>  
+
+    デフォルト: `False`  
+
+    LLM ログモニタリング収集機能を有効化します。
+
+- **counter_thread_enabled** <span class='type'>Boolean</span>  
+
+    デフォルト: `False`  
+
+    Python Agent のメトリクス送信スレッドを有効化します。
+
+- **llm_stat_enabled** <span class='type'>Boolean</span>  
+
+    デフォルト: `False`  
+
+    LLM メトリクス収集機能を有効化します。**trace_llm_log_enabled** と **counter_thread_enabled** が `true` に設定されている必要があります。
+
+- **llm_stat_interval** <span class='type'>Int</span>  
+
+    デフォルト: `5` （秒単位）  
+
+    LLM メトリクスの収集間隔を設定します。
