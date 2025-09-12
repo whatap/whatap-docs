@@ -1,0 +1,38 @@
+---
+id: python-1_8_12
+title: Python Agent v1.8.12
+toc_max_heading_level: 2
+pagination_next: release-notes/python/python-1_8_11
+displayed_sidebar: releaseSidebar
+---
+
+September 12, 2025
+
+- <Status priority='1'>New</Status> Added `@step_id` field for LLM log monitoring
+
+- <Status priority='1'>New</Status> Added LLM metrics collection feature
+
+    - **llm_stat_enabled**  
+        - `false`: default  
+        - `true`: metrics collection is enabled only when this option, **trace_llm_log_enabled**, and **counter_thread_enabled** are all set to `true`
+
+    - **llm_stat_interval**  
+        - Option to set the collection interval for LLM metrics in seconds  
+        - `5`: default
+
+- <Status priority='1'>Feature</Status> Added **counter_thread_enabled** option  
+
+    - `false`: default  
+    - `true`: activates the thread (`counter_thread`) that collects llm_stat and app_filedescriptor metrics
+
+- <Status priority='1'>Changed</Status> Improved stability of the `psycopg_pool` tracing module
+
+- <Status priority='1'>Changed</Status> Improved asynchronous tracing stability for both `psycopg` and `psycopg_pool` modules
+
+- <Status priority='1'>Changed</Status> The **open_file_descriptor_enabled** option no longer affects whether `counter_thread` is enabled
+
+:::note
+
+Agent download: [whatap-python v1.8.12](https://pypi.org/project/whatap-python/1.8.12/)
+
+:::
