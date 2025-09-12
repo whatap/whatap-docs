@@ -1,5 +1,56 @@
 [
   {
+    "url": "https://docs.whatap.io/release-notes/python/python-1_8_12",
+    "ver": "v1.8.12",
+    "date": "2025-09-12",
+    "Lists": [
+      {
+        "ver": "v1.8.12",
+        "hash": "v1812",
+        "product": "Python Agent",
+        "type": "New",
+        "desc": "<p><code class=\"New\" type=\"1\">New</code> Added <code>@step_id</code> field for LLM log monitoring</p>"
+      },
+      {
+        "ver": "v1.8.12",
+        "hash": "v1812",
+        "product": "Python Agent",
+        "type": "New",
+        "desc": "<p><code class=\"New\" type=\"1\">New</code> Added LLM metrics collection feature </p>",
+        "details": "<ul><li><p><strong>llm_stat_enabled</strong><br />\n<ul><li><code>false</code>: default</li>\n<li><code>true</code>: metrics collection is enabled only when this option, <strong>trace_llm_log_enabled</strong>, and <strong>counter_thread_enabled</strong> are all set to <code>true</code></li></ul></p></li>\n<li><p><strong>llm_stat_interval</strong><br />\n<ul><li>Option to set the LLM metrics collection interval in seconds</li><li><code>5</code>: default</li></ul></p></li></ul>"
+      },
+      {
+        "ver": "v1.8.12",
+        "hash": "v1812",
+        "product": "Python Agent",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> Added <strong>counter_thread_enabled</strong> option </p>",
+        "details": "<ul><li><p><code>false</code>: default</p></li>\n<li><p><code>true</code>: activates the thread (counter_thread) that collects <strong>llm_stat</strong> and <strong>app_filedescriptor</strong> metrics</p></li></ul>"
+      },
+      {
+        "ver": "v1.8.12",
+        "hash": "v1812",
+        "product": "Python Agent",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> Improved stability of the <code>psycopg_pool</code> tracing module</p>"
+      },
+      {
+        "ver": "v1.8.12",
+        "hash": "v1812",
+        "product": "Python Agent",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> Improved asynchronous tracing stability for both <code>psycopg</code> and <code>psycopg_pool</code> modules</p>"
+      },
+      {
+        "ver": "v1.8.12",
+        "hash": "v1812",
+        "product": "Python Agent",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> The <strong>open_file_descriptor_enabled</strong> option no longer affects whether <code>counter_thread</code> is enabled </p>"
+      }
+    ]
+  },  
+  {
     "url": "https://docs.whatap.io/release-notes/python/python-1_8_11",
     "ver": "v1.8.11",
     "date": "2025-09-01",
@@ -33,6 +84,14 @@
         "type": "New",
         "desc": "<p><code class=\"New\" type=\"1\">New</code> <code>psycopg</code> module tracing feature added</p>"
       },
+      {
+        "ver": "v1.8.10",
+        "hash": "v1810",
+        "product": "Python Agent",
+        "type": "New",
+        "desc": "<p><code class=\"New\" type=\"1\">New</code> You can now specify the path to the <em>whatap_python</em> executable using the <code>WHATAP_PYTHON_AGENT_PATH</code> environment variable</p>",
+        "details": "<ul><li><p>If this environment variable is not set, it defaults to <code>WHATAP_HOME</code></p></li></ul>"
+      },      
       {
         "ver": "v1.8.10",
         "hash": "v1810",
