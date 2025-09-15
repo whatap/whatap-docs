@@ -1,0 +1,360 @@
+## Apply a preset template {#pre-template-flexboard}
+
+Use a preset template to speed up the initial setup, then modify it as needed.
+
+1. Select the <Cmdname sid="side_flexboard" className="uitext" /> menu.
+
+1. From the **Template** list on the left, select the template you want.
+
+1. When the <Cmdname sid="flexboard_management" className="uitext" /> window appears, enter a name in <Cmdname sid="rename" className="uitext" />.
+
+    * In <Cmdname sid="layout" className="uitext" />, select a widget and drag it to the position you want.
+
+1. Click the <Cmdname sid="save" className="uitext" /> button. A Flex board is created based on the selected template. 
+
+    * You can check the created board in the board list of <Cmdname sid="side_flexboard" className="uitext" />.
+
+
+## Create a Flex board {#createflexboard}
+
+You can create a Flex board and place widgets to build your own dashboard.
+
+1. In <Cmdname sid="side_flexboard" className="uitext" />, click the <Cmdname sid="create_dashboard" className="uitext" /> button at the top right.
+
+1. When the <Cmdname sid="create_dashboard" className="uitext" /> window appears, enter the dashboard <Cmdname sid="name" className="uitext" /> in the input box.
+
+1. Select a widget placement method, then click the <Cmdname sid="create_dashboard" className="uitext" /> button.
+
+    * <Cmdname sid="fixed_flexboard" className="uitext" />: free widget placement with pixel basis
+
+    * <Cmdname sid="flexible_flexboard" className="uitext" />: responsive grid layout based on browser size  
+    (configure the grid, then click the <Cmdname sid="create_dashboard" className="uitext" /> button)
+
+1. In the <Cmdname sid="widget_template" className="uitext" /> selection screen, choose the widgets to place on the dashboard. 
+
+    * To add metrics widgets, click the **All Metrics** button on the right of <Cmdname sid="widget_template" className="uitext" />.
+
+    :::note
+
+    * <Cmdname sid="widget_template" className="uitext" />: choose from a predefined widget list that summarizes key indicators commonly used in monitoring.
+    * <Cmdname sid="all_metrics" className="uitext" />: create widgets based on all metrics data collected in your project. For details about metrics widgets, see [the following document](flexboard-metric-widget).
+    
+    :::
+
+1. Move the placed widgets or adjust their size.
+
+    * When a crosshair cursor appears at the top of a widget, click and drag the widget to move it. 
+
+    * When an arrow cursor appears at the bottom right of a widget, click and drag to resize it. 
+
+1. After you finish placing widgets, select <Cmdname sid="view_mode" className="uitext" /> to review the layout. To edit the layout again, select <Cmdname sid="edit_mode" className="uitext" /> and adjust widget placement.
+
+1. When all steps are complete, click the ![Go to list icon](/img/ico-exit.svg) (<Cmdname sid="go_to_list" className="uitext" />) icon at the top right. 
+
+    * You can check the created board in <Cmdname sid="side_flexboard" className="uitext" /> under <Cmdname sid="dashboard_list" className="uitext" />. Select the created board to view the new Flex board.
+
+:::note
+
+We plan to add dashboard templates or widgets based on customer feedback. If you need a specific dashboard template or widget, contact us at [support@whatap.io](mailto:support@whatap.io).
+
+:::
+
+
+## Edit a Flex board {#editflexboard}
+
+:::note
+
+**Flex board edit permissions**
+
+* **Home** &gt; <Cmdname sid="side_integratedFlexboard" className="uitext" />: this is a personal account dashboard, so permissions do not apply; however, dashboards shared as read only cannot be edited. 
+
+* **Home &gt; Select project** &gt; <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_flexboard" className="uitext" />: users with project edit permission, project Flex board edit permission, or Site Admin permission can edit.
+
+For details on member permissions, see [the following document](../project/project-structure#member-auth).
+
+:::
+
+1. In <Cmdname sid="side_flexboard" className="uitext" /> under <Cmdname sid="dashboard_list" className="uitext" />, click the edit icon ![Edit icon](/img/ico-edit.svg). The **Flex board management** window appears on the right.
+
+1. In the **Flex board management** window, configure Name, Project, Layout, widget.json, and option.json.
+
+    * <Cmdname sid="rename" className="uitext" />: edit the dashboard name.
+
+    * <Cmdname sid="project" className="uitext" />: select the project from which widgets will fetch data.
+
+      :::caution
+
+      You can configure the <Cmdname sid="project" className="uitext" /> option only in **Home** &gt; <Cmdname sid="side_integratedFlexboard" className="uitext" />.  
+      If you entered from <Cmdname sid="side_integratedFlexboard" className="uitext" />, you can select the data source project for each widget. 
+      
+      1. Click the ![Add icon](/img/ico-add.svg) button at the top right of a widget, then search and select one or multiple projects.
+      
+      1. After selecting projects, click the <Cmdname sid="apply" className="uitext" /> button.
+      
+      :::
+
+    * <Cmdname sid="layout" className="uitext" />
+
+      * Drag widgets to move them.
+
+      * Click and drag the bottom right of a widget to resize it.
+
+      * To delete a widget, click the ![Delete icon](/img/ico-trash.svg) icon at the top right of the widget.
+
+    * <Cmdname sid="widget" className="uitext" /><UI>.json</UI>: import dashboard widget settings in JSON format. Click the ![Copy icon](/img/ico-copy.svg) icon to copy the JSON.
+
+    * <Cmdname sid="option" className="uitext" /><UI>.json</UI>: import dashboard option settings in JSON format. Click the ![Copy icon](/img/ico-copy.svg) icon to copy the JSON.
+
+## Delete a Flex board {#deleteflexboard}
+
+1. In <Cmdname sid="side_flexboard" className="uitext" /> &gt; <Cmdname sid="dashboard_list" className="uitext" />, click the ![Delete icon](/img/ico-trash.svg) icon for the item to delete. 
+
+1. In the confirmation message, click the <Cmdname sid="delete" className="uitext" /> button.
+
+:::caution
+
+Dashboard deletion behavior differs for owners and shared users.
+
+* If the dashboard owner deletes a dashboard, it is deleted for all user accounts with whom it was shared.
+
+* If a user who received a shared dashboard deletes it, it is deleted only from that user’s <Cmdname sid="dashboard_list" className="uitext" />. The original dashboard remains.
+
+:::
+
+## Share a Flex board {#shareflexboard}
+
+:::caution
+
+The Flex board sharing feature is available only in **Home > <Cmdname sid="integratedFlexboard" className="uitext" />**.  
+It is not provided in a project’s <Cmdname sid="flexboard" className="uitext" /> menu.
+
+:::
+
+:::info
+
+ **Difference between share and copy**
+
+![Difference between share and copy](/img/flexboard-compare-sharing-copy.png)
+
+* Share: all members you share with view the same dashboard.
+
+* Copy: if you copy a dashboard to another member or to yourself, you view a separate copied dashboard.
+
+* Dashboards shared or copied as <Cmdname sid="read_only" className="uitext" /> cannot be edited. They can be edited only if shared as **Edit mode**.
+
+* Members who receive a dashboard as <Cmdname sid="read_only" className="uitext" /> can also **re-share as read only** or **copy** that dashboard.
+
+* You can share a dashboard only with members who belong to at least **one** of the projects included in the dashboard. Check whether the member to share or copy to belongs to the relevant project.
+
+    <ImgLang img='flexboard-check-projects.png' desc='Dashboard list' />
+
+:::
+
+You can share a Flex board created in <Cmdname sid="integratedFlexboard" className="uitext" /> with other members. When the owner edits a shared dashboard, the changes apply to all members it was shared with.
+
+1. In <Cmdname sid="integratedFlexboard" className="uitext" /> under <Cmdname sid="dashboard_list" className="uitext" />, click the <LinkImage img="ico-flexboard-share.svg" className="ico" /> icon for the dashboard to share.
+
+1. When the <Cmdname sid="share_dashboard" className="uitext" /> window appears, select one or multiple members to share with, or enter accounts directly. 
+
+    * If you select <Cmdname sid="read_only" className="uitext" />, members cannot edit the shared dashboard.
+
+    * Share targets must belong to at least one of the projects included in the dashboard.
+
+1. Click the <Cmdname sid="BTN09441" className="uitext" /> button.
+
+    * Shared items display the <Cmdname sid="shared" className="uitext" /> tag. Hover over the <Cmdname sid="shared" className="uitext" /> tag to view information about the members you shared with. 
+    
+    * Items shared as read only display the <Cmdname sid="read_only" className="uitext" /> tag.
+
+    | When you receive a shared dashboard | When you share a dashboard (dashboard owner) |
+    | :----------------: | :---------------------------: |
+    | <ImgLang img="flexboard-share-04.png" desc="Share Flex board" /> | <ImgLang img="flexboard-share-05.png" desc="Share Flex board" /> |
+
+    :::tip
+
+    **Dashboard sharing conditions**
+
+    * The dashboard sharing feature is available only in **Home** &gt; <Cmdname sid="integratedFlexboard" className="uitext" />.
+
+    * Anyone can share their own dashboard, and you can re-share or copy a dashboard you received.
+
+    * Dashboards received as <Cmdname sid="read_only" className="uitext" /> cannot be edited; dashboards received as **Edit mode** can be edited.
+
+    * If the **owner** deletes a dashboard, it is deleted for all accounts that received it.
+
+    * If a **recipient** deletes a dashboard, it is removed only from that user’s <Cmdname sid="dashboard_list" className="uitext" /> and the original remains.
+
+    * For projects in a received dashboard where you do not have <Cmdname sid="view_and_analysis" className="b600" /> permission, you cannot view data.
+
+    :::
+
+### Copy a Flex board {#copyflexboard}
+
+Users can copy a Flex board and send it to other members.
+
+1. In <Cmdname sid="integratedFlexboard" className="uitext" /> under <Cmdname sid="dashboard_list" className="uitext" />, click the <LinkImage img="ico-copy.svg" className="ico" desc="Copy icon" /> icon. 
+
+1. Choose a copy option.
+
+    * <Cmdname sid="copy_to_me" className="uitext" />: copy to your own account.
+    
+        a. An item with the `_copied` suffix is added to <Cmdname sid="dashboard_list" className="uitext" />.
+
+    * <Cmdname sid="copy_to_others" className="uitext" />: copy to another member’s account. 
+
+        a. Click <LinkImage img="ico-add.svg" className="ico" /> <Cmdname sid="account" className="uitext" />.  
+        b. Select the email of the member to copy to and click the <Cmdname sid="copy_dashboard" className="uitext" /> button.  
+        c. An item with the `_copied` suffix is added to that member’s <Cmdname sid="dashboard_list" className="uitext" />.
+
+### Share as a JSON file {#share-flexboard-as-json}
+
+You can export Flex board settings to a JSON file to share with other members, or import settings from other members.
+
+#### Export
+
+1. Go to <Cmdname sid="integratedFlexboard" className="uitext" /> or a project’s <Cmdname sid="flexboard" className="uitext" /> menu.
+
+1. In <Cmdname sid="dashboard_list" className="uitext" />, click the <LinkImage img="ico-export.svg" desc="Export icon" className="ico" /> button.
+
+1. Choose an export option.
+
+    * <Cmdname sid="BTN07940" className="uitext" />: include dashboard project information in the JSON file when sharing.
+
+    * <Cmdname sid="BTN07941" className="uitext" />: share without including dashboard project information in the JSON file.
+
+1. Download the JSON file and send it to the member you want to share with.
+
+#### Import
+
+1. Go to <Cmdname sid="integratedFlexboard" className="uitext" /> or a project’s <Cmdname sid="flexboard" className="uitext" /> menu.
+
+1. Click the ![Import icon](/img/ico-import.svg) <Cmdname sid="import" className="uitext" /> button at the top right.
+
+1. Select the downloaded JSON file.
+
+:::note
+
+Only members with **Edit** permission for the project can use this feature.
+
+:::
+
+## Flex board screen modes {#flexboard-screen-modes}
+
+Features vary by Flex board screen mode.
+
+:::note
+
+**Accessible member permissions**
+
+Only users with **Edit** permission in a project’s <Cmdname sid="side_flexboard" className="uitext" /> menu can access <Cmdname sid="edit_mode" className="uitext" />, <Cmdname sid="admin" className="uitext" />, and <Cmdname sid="filter" className="uitext" />. For details on member permissions, see [the following document](../project/project-structure#member-auth).
+
+  * **Project Edit** permission 
+  
+  * <Cmdname sid="ITM06494" className="b600" /> permission
+  
+  * **Site Admin** permission
+
+:::
+
+### Modes 
+
+Available features differ by <Cmdname sid="side_flexboard" className="uitext" /> screen mode.
+
+* <Cmdname sid="edit_mode" className="uitext" />: place widgets from the widget template list on the Flex board layout; edit, delete, or reposition widgets.
+
+* <Cmdname sid="admin" className="uitext" />: manage widget properties in JSON format. Click the ![Code icon](/img/ico-custom-code.svg) button at the top right of a widget on the layout.
+
+* <Cmdname sid="view_mode" className="uitext" />: after finishing layout, sizing, and detailed options, monitor each widget’s data in real time like a dashboard.
+
+### Common features 
+
+* Data filtering
+* Real time data time range settings
+* Print mode
+* Flex board management
+* Data merge options
+
+#### Data filtering {#Filtering-data}
+
+Use data filtering to narrow monitoring targets and build an efficient Flex board.
+
+<ImgLang img='flexboard-filter.png' desc='Flex board - Filter' />
+
+1. At the top of the screen, click the ![Filter icon](/img/ico-filter.svg) <Cmdname sid="filter" className="uitext" /> tab. 
+
+1. In the <Cmdname sid="filter" className="uitext" /> window on the left, select filter targets. To select all filter targets, choose <Cmdname sid="select_all" className="uitext" />.
+
+    * <Cmdname sid="agent" className="uitext" /> option: select agent types or an application list, with <Cmdname sid="search" className="uitext" /> available
+
+    * <Cmdname sid="metrics" className="uitext" /> option: select a project or agent type; add <UI>+ And</UI> conditions, or auto select by string with <Cmdname sid="contain" className="uitext" /> or <Cmdname sid="exclude" className="uitext" /> 
+
+1. After selecting filter targets, click the <Cmdname sid="apply" className="uitext" /> button. 
+
+1. Save frequently used conditions with the <Cmdname sid="save_filter" className="uitext" /> button. 
+    
+    a. Enter a filter name and select <Cmdname sid="save" className="uitext" />. <Cmdname sid="saved_filter" className="uitext" /> appears at the bottom of the <Cmdname sid="filter" className="uitext" /> window.
+
+##### Filtering conditions {#filtering conditions}
+
+Filtering conditions are divided into agent type and metrics type.  
+Agents provide only basic monitoring targets as selectable options, while metrics provide selectable tags for all metrics data collected in the project. The metrics type is useful when you collect data in a non agent form and want to apply filtering. For details on metrics, see [the following document](metrics-intro).
+
+| Type | Agent | Metrics |
+| :---: | -------- | -------- |
+| Selection options | WhaTap project monitoring targets<br/>(applications, servers, databases,<br/>containers, Kubernetes PODs and NODEs) | All metrics tags including agents |
+| Scope | All widgets | All widgets that use metrics data |
+| Filtering method | Checkboxes | <Cmdname sid="equal" className="uitext" />, <Cmdname sid="contain" className="uitext" />, <Cmdname sid="exclude" className="uitext" /> |
+
+#### Set the lookup time {#setting-the-lookup-time}
+
+Use the time selector at the top right of <Cmdname sid="side_flexboard" className="uitext" /> to set data lookup time for widgets. 
+
+* ![Pause icon](/img/ic-pause-green.svg): stop real time mode and set a specific lookup time
+* ![Play icon](/img/ico-play-time.svg): switch back to real time mode 
+
+#### Print {#printing}
+
+You can save the Flex board screen as a PDF and print it. 
+
+1. On the Flex board screen, click the ![Print icon](/img/ico-print.svg) icon at the top right to switch to print mode. 
+
+1. Configure options.
+
+    * <Cmdname sid="filter_visible_msg" className="uitext" />: toggle filter options on the screen 
+    * <Cmdname sid="change_landscape_mode_msg" className="uitext" replace="horizontal" /> / <Cmdname sid="change_landscape_mode_msg" className="uitext" replace="vertical" />: change orientation to horizontal or vertical
+
+1. After finishing, select <UI>PDF</UI><Cmdname sid="download" className="uitext" />.
+
+1. To exit print mode, click the ![Exit icon](/img/ico-close.svg) <Cmdname sid="close_print_mode" className="uitext" /> at the top right.
+
+#### Flex board management {#flex-board-management}
+
+You can change the Flex board layout; move, resize, or rename widgets; and use other management features.
+You can also open <Cmdname sid="flexboard_management" className="uitext" /> by clicking the ![Edit icon](/img/ico-edit.svg) icon in <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_flexboard" className="uitext" /> under <Cmdname sid="dashboard_list" className="uitext" />.
+
+1. On the Flex board screen, click the ![Settings icon](/img/ico-setting.svg) icon at the top right to open the <Cmdname sid="flexboard_management" className="uitext" /> window. 
+
+    * <Cmdname sid="rename" className="uitext" />: change the Flex board name
+
+    * <Cmdname sid="layout" className="uitext" />: move, resize, and delete widgets
+
+    * <Cmdname sid="dont_allow_users_to_modify" className="uitext" />: restrict modifications
+
+        * Members with edit permission can edit, delete, and modify; if you enable the option, it changes to <Cmdname sid="dont_allow_users_to_modify" className="uitext" /><UI>: On</UI>
+
+    * <Cmdname sid="widget" className="uitext" /><UI>.json</UI>: edit and manage widgets on the Flex board in JSON
+
+    * <Cmdname sid="option" className="uitext" /><UI>.json</UI>: edit and manage Flex board settings in JSON (project info, Flex board filters, time selection, and other settings)
+
+        :::caution
+
+        The <Cmdname sid="widget" className="uitext" /><UI>.json</UI> and <Cmdname sid="option" className="uitext" /><UI>.json</UI> features are available only to dashboard administrators.
+
+        :::
+
+1. After completing all settings, click the <Cmdname sid="save" className="uitext" /> button.
+
+
+#### Add a dashboard to favorites {#add-favorite-dashboard}
+
+You can add a Flex board you created to favorites for quick access. In <Cmdname sid="side_dashboard" className="uitext" /> > <Cmdname sid="side_flexboard" className="uitext" /> under <Cmdname sid="dashboard_list" className="uitext" />, click the ![Favorite icon](/img/ico-favorite.svg) button for the dashboard to add. It changes to ![Favorite set icon](/img/ico-favorite-check.svg).

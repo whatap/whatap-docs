@@ -1,0 +1,102 @@
+---
+id: network-insights-topology
+title: Topology
+description: Visualize network devices and link structures.
+keywords: [ Topology ]
+---
+
+The **Network Insights** **Topology** view provides a visual representation of network devices and link structures.  
+
+It not only shows the structure but also immediately reflects real time events such as link down, allowing administrators to quickly understand the network status.
+
+Topology is available in two modes:
+
+* **Monitoring mode**: view mode to check the entire network structure and monitor real time events  
+* **Edit mode**: manage screen layout by creating areas or modifying node properties
+
+## Screen controls and settings
+
+At the top of the topology screen, you can switch modes, select managers, change display formats, and access other main control functions.
+
+<ImgLang img='nms-topology.png' desc='NMS Topology' />
+
+### Top menu
+
+| Menu | Description |
+| :---: | --- |
+| Mode selection | Choose the **Monitoring mode** or **Edit mode** tab <br /> - Monitoring mode: view mode to check the entire network structure and monitor real time events <br /> - Edit mode: create areas or modify node properties to manage screen layout |
+| Manager selection | Select the connected NMS manager |
+| Save position | Save the positions of devices and links adjusted by the user |
+| Display type | Switch between **Physical** and **Logical** topology <br />- Physical: view all ports actually connected between devices <br />- Logical: focus on logical connection structures between devices |
+| Display options | Choose whether to show node IPs |
+| Reset settings | Restore all screen settings to default |
+| Notification settings icon | Toggle ON / OFF to play a sound when an anomaly occurs in the topology |
+
+### Common functions
+
+* **Pan**: drag an empty area of the screen to move the view
+
+* **Zoom in/out**: use the mouse wheel to zoom in or out
+
+* **Move elements**: drag and drop elements on the topology to change their position
+
+## Monitoring mode
+
+In monitoring mode, you can view the network structure in real time and immediately detect event changes.
+
+1. Go to **Network Insights** &gt; **Topology**.  
+
+1. Click the **Monitoring mode** tab to view the main topology view and Recent Trap Messages.
+
+### Main topology view
+
+* Network devices are displayed as icons.
+
+* The icon shape differs depending on the device type, such as router, switch, or firewall.
+
+* Connections between devices are displayed as lines, with styles depending on status.
+
+    * Normal: gray solid line  
+    * Link down: red solid line  
+
+* If a device is powered off or disabled, the icon color changes so you can check the status immediately.
+
+* You can group devices by dividing areas with the custom grouping feature.
+
+### Recent Trap Messages
+
+The right panel displays trap messages collected in real time in sequence. You can check device and link events in **text log format**.
+
+* Example: specific link down, device activation or deactivation
+
+## Edit mode
+
+In edit mode, you can click elements to edit or add them. You can edit nodes and links through the NMS manager.
+
+1. Go to **Network Insights** &gt; **Topology**.  
+
+1. Click the **Edit mode** tab to add or edit elements as needed.
+
+### Add new element
+
+In the Edit mode tab, click the `Add new element` button in the top left to add a new element.
+
+:::note
+Currently, only **area** addition is supported. **Node** addition is disabled.
+:::
+
+### Edit area
+
+You can edit the properties of created areas. Change the **background color** and **border color** for easier visual distinction.
+
+* Click the ![Edit icon](/img/ic-edit.svg) icon to enter or change the area name.  
+
+* To remove an area, click the ![Delete icon](/img/ico-trash-red.svg) **Delete** button.
+
+### Edit node
+
+When you select a network device (node), you can edit its name and device type.
+
+* Click the ![Edit icon](/img/ic-edit.svg) icon to enter or change the network node name.  
+
+* Available device types: router, switch, hub, host, ap, phone, firewall, unknown

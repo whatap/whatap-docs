@@ -124,3 +124,35 @@ import Supportedbrowser from "../getting-started/_supported-browser.mdx";
 import Proxy from "../getting-started/_proxy.mdx";
 
 <Proxy />
+
+## サービス構成要素とポート
+
+### uvicorn.service
+
+`uvicorn.service`は、ローカル開発管理モードでウェブ及びAPIを提供するサービスです。 開発及びテスト環境でのアプリケーションの実行に使用します。
+
+- **使用ポート**: TCP 5000
+
+- **サービス開始及び中止**: 次のコマンドを通じて`uvicorn.service`を開始、停止、または再起動できます。 
+
+  ```bash
+  systemctl {start|restart|stop} uvicorn.service
+  ```
+
+### nmscore.service
+
+`nmscore.service`は、ネットワーク管理システム(NMS)のエンジンの役割をするサービスです。 ネットワーク機器とトラフィックのモニタリング、管理及びイベント処理機能を提供します。
+
+- **使用ポート**:
+
+  - **SNMP Trap**: UDP 162
+
+  - **Syslog**: UDP 514
+
+  - **SNMP Polling Interval**: 60秒 (デフォルト値)
+
+- **サービス開始及び中止**: 次のコマンドを通じて`nmscore.service`を開始、停止、または再起動できます。 
+
+  ```bash
+  systemctl {start|restart|stop} nmscore.service
+  ```
