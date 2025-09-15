@@ -34,7 +34,7 @@ It can provide snapshot information of all threads in the Java process. <Cmdname
 
 :::
 
-### Analyzing the thread dump {#thread-details}
+### Thread Dump Details {#thread-details}
 
 It guides you to individual thread dumps that can be checked in <Cmdname sid="thread_list" className="uitext" />.
 
@@ -94,3 +94,33 @@ For more information about the thread information, see [the following link](http
 ##### <Cmdname sid="stack_trace" />
 
 It displays the stack trace when any exception occurs. The stack frame list that contains information about the methods called by the code.
+
+### AI Thread Analysis {#ai-thread-analysis}
+
+In the thread dump detail screen, click the ![AI icon](/img/ico-chatbot.svg) <Cmdname sid="BTN10229" className="uitext" /> button.  
+
+AI-based analysis results are provided in a drawer.  
+
+#### Analysis Result Items
+- Summary  
+- Total number of threads  
+- Distribution by thread state  
+- Issues  
+- Recommendations  
+
+### Retry Thread Analysis
+Click the ![Refresh icon](/img/ic-refresh2.svg) button at the top of the drawer to analyze the same thread dump again.  
+
+The analysis results are displayed in the language set on the WhaTap page.  
+In some cases, results may be displayed in English.  
+
+Each project is limited to 20 analyses per day.  
+
+- Criteria for analysis count deduction  
+  - One analysis is deducted when analyzing a new thread dump  
+    - Application selection state changes  
+      - Selecting another application from the application list  
+    - Time value changes  
+      - Selecting another application (both selection state and time change)  
+      - Selecting the same application again (selection state remains, but time changes and the thread dump is updated)  
+  - One analysis is deducted even when retrying analysis on the same thread dump inside the drawer  
