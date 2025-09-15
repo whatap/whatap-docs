@@ -6634,8 +6634,8 @@ const sidebars = {
           },
           items: [
             'nms/flexboard-guide',
-            'nms/flexboard-metric-widget',
             'nms/flexboard-widget-manage',
+            'nms/flexboard-metric-widget',
             'nms/flexboard-widget-template',
           ],
         },
