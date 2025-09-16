@@ -586,7 +586,7 @@
     "message": "ウェブフレームワーク、サーバー、デプロイなど主要アプリケーションに適用でき、DBクエリ、外部呼び出しを追跡して遅延区間を識別できます。"
   },
   "index.pages.section.product.dotnet": {
-    "message": ".NETフレームワーク4.5に対応し、.NETベースのIIS、Console、サービス、Windowsアプリケーションをモニタリングします。"
+    "message": ".NETフレームワーク4.6.1に対応し、.NETベースのIIS、Console、サービス、Windowsアプリケーションをモニタリングします。"
   },
   "index.pages.section.product.go": {
     "message": "Go APIを利用して、Goアプリケーションのウェブリクエスト及びレスポンストランザクション、一般単位トランザクション、SQL、HTTP呼び出しなどを追跡できます。"

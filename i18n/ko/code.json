@@ -586,7 +586,7 @@
     "message": "웹 프레임워크, 서버, 배치 등 주요 애플리케이션에 적용 가능하며, DB 쿼리, 외부 호출을 추적해 지연 구간을 식별할 수 있습니다."
   },
   "index.pages.section.product.dotnet": {
-    "message": ".NET 프레임워크 4.5를 대응해 .NET 기반의 IIS, Console, 서비스, 윈도우 응용 프로그램을 모니터링합니다."
+    "message": ".NET 프레임워크 4.6.1를 대응해 .NET 기반의 IIS, Console, 서비스, 윈도우 응용 프로그램을 모니터링합니다."
   },
   "index.pages.section.product.go": {
     "message": "Go API를 이용해 Go 애플리케이션의 웹 요청 및 응답 트랜잭션, 일반 단위 트랜잭션, SQL, HTTP 호출 등을 추적할 수 있습니다."
