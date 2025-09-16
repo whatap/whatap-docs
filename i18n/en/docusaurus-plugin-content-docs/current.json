@@ -2299,9 +2299,9 @@
     "message": "Network Management System",
     "description": "The label for category Network 관리 시스템 in sidebar nmsSidebar"
   },
-  "sidebar.nmsSidebar.category.설정하기": {
+  "sidebar.nmsSidebar.category.설정": {
     "message": "Configuration",
-    "description": "The label for category 설정하기 in sidebar nmsSidebar"
+    "description": "The label for category 설정 in sidebar nmsSidebar"
   },
   "sidebar.nmsSidebar.category.네트워크 인사이트": {
     "message": "Network Insights",
@@ -2322,6 +2322,10 @@
   "sidebar.nmsSidebar.category.이벤트 설정": {
     "message": "Event Configuration",
     "description": "The label for category 이벤트 설정 in sidebar nmsSidebar"
+  },
+  "sidebar.nmsSidebar.category.디바이스 상태": {
+    "message": "Device Status",
+    "description": "The label for category 디바이스 상태 in sidebar nmsSidebar"
   },
   "sidebar.nmsSidebar.doc.Log 모니터링": {
     "message": "Log Monitoring",
