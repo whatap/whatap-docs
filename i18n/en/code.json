@@ -586,7 +586,7 @@
     "message": "It can be applied to major applications such as web frameworks, servers, and batches, and can identify delay sections by tracing DB queries and external calls."
   },
   "index.pages.section.product.dotnet": {
-    "message": "It monitors .NET-based IIS, console, services, and Windows applications that support .NET Framework 4.5."
+    "message": "It monitors .NET-based IIS, console, services, and Windows applications that support .NET Framework 4.6.1."
   },
   "index.pages.section.product.go": {
     "message": "The Go API allows you to trace web requests and response transactions, general unit transactions, SQLs, HTTP calls, and more in the Go applications."

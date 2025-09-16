@@ -419,7 +419,7 @@ export default function pages() {
                         <FlexCard icons="index-icon/product-dotnet-l.svg" product=".NET" type="Application" url="dotnet/introduction">
                             {translate({
                                 id: "index.pages.section.product.dotnet",
-                                message: ".NET 프레임워크 4.5를 대응해 .NET 기반의 IIS, Console, 서비스, 윈도우 응용 프로그램을 모니터링합니다."
+                                message: ".NET 프레임워크 4.6.1를 대응해 .NET 기반의 IIS, Console, 서비스, 윈도우 응용 프로그램을 모니터링합니다."
                             })}
                         </FlexCard>
 
