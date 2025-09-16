@@ -2231,7 +2231,6 @@
     "message": "Network 관리 시스템",
     "description": "The label for category Network 관리 시스템 in sidebar nmsSidebar"
   },
-<<<<<<< HEAD
   "sidebar.nmsSidebar.category.설정하기": {
     "message": "설정",
     "description": "The label for category 설정하기 in sidebar nmsSidebar"
@@ -2240,8 +2239,6 @@
     "message": "네트워크 인사이트",
     "description": "The label for category 네트워크 인사이트 in sidebar nmsSidebar"
   },
-=======
->>>>>>> 629a61713e52ffe84658cdd1f19b3e07faa5f627
   "sidebar.nmsSidebar.category.Flex 보드": {
     "message": "Flex 보드",
     "description": "The label for category Flex 보드 in sidebar nmsSidebar"
