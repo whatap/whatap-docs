@@ -2271,10 +2271,6 @@
     "message": "Network 관리 시스템",
     "description": "The label for category Network 관리 시스템 in sidebar nmsSidebar"
   },
-  "sidebar.nmsSidebar.category.설정하기": {
-    "message": "설정하기",
-    "description": "The label for category 설정하기 in sidebar nmsSidebar"
-  },
   "sidebar.nmsSidebar.category.Flex 보드": {
     "message": "Flex 보드",
     "description": "The label for category Flex 보드 in sidebar nmsSidebar"
@@ -2290,6 +2286,14 @@
   "sidebar.nmsSidebar.category.이벤트 설정": {
     "message": "이벤트 설정",
     "description": "The label for category 이벤트 설정 in sidebar nmsSidebar"
+  },
+  "sidebar.nmsSidebar.category.디바이스 상태": {
+    "message": "디바이스 상태",
+    "description": "The label for category 디바이스 상태 in sidebar nmsSidebar"
+  },
+  "sidebar.nmsSidebar.category.설정": {
+    "message": "설정",
+    "description": "The label for category 설정 in sidebar nmsSidebar"
   },
   "sidebar.nmsSidebar.doc.Log 모니터링": {
     "message": "Log 모니터링",
