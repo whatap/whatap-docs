@@ -6621,6 +6621,7 @@ const sidebars = {
           collapsed: true,
           items: [
             'nms/network-insights-topology',
+            'nms/network-insights-device-overview'
           ]
         },
         {
