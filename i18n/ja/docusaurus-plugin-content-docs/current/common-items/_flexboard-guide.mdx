@@ -1,0 +1,360 @@
+## 事前テンプレートを適用する {#pre-template-flexboard}
+
+事前構成テンプレートで初期設定を素早く進め、必要に応じて修正して活用してください。
+
+1. <Cmdname sid="side_flexboard" className="uitext" /> メニューを選択します。
+
+1. 左側の **テンプレート** 一覧から使用するテンプレートを選択します。
+
+1. <Cmdname sid="flexboard_management" className="uitext" /> ウィンドウが表示されたら、<Cmdname sid="rename" className="uitext" /> に希望の名前を入力します。
+
+    * <Cmdname sid="layout" className="uitext" /> でウィジェットを選択し、ドラッグして希望の位置へ移動できます。
+
+1. <Cmdname sid="save" className="uitext" /> ボタンをクリックします。選択したテンプレートを基準に Flex ボードを作成します。 
+
+    * 作成したボードは <Cmdname sid="side_flexboard" className="uitext" /> のボード一覧で確認できます。
+
+
+## Flex ボードを作成する {#createflexboard}
+
+Flex ボードを作成し、ウィジェットを配置して自分だけのダッシュボードを作れます。
+
+1. <Cmdname sid="side_flexboard" className="uitext" /> で右上の <Cmdname sid="create_dashboard" className="uitext" /> ボタンをクリックします。
+
+1. <Cmdname sid="create_dashboard" className="uitext" /> ウィンドウが表示されたら、入力ボックスにダッシュボードの <Cmdname sid="name" className="uitext" /> を入力します。
+
+1. ウィジェットの配置方式を選択し、<Cmdname sid="create_dashboard" className="uitext" /> ボタンをクリックします。
+
+    * <Cmdname sid="fixed_flexboard" className="uitext" />: ピクセル基準の自由配置
+
+    * <Cmdname sid="flexible_flexboard" className="uitext" />: ブラウザーサイズ基準のグリッドレスポンシブレイアウト  
+    （グリッドを設定してから <Cmdname sid="create_dashboard" className="uitext" /> ボタンをクリック）
+
+1. <Cmdname sid="widget_template" className="uitext" /> 選択画面で、ダッシュボードに配置するウィジェットを選択します。 
+
+    * メトリクスウィジェットを追加する場合は、<Cmdname sid="widget_template" className="uitext" /> の右側にある **すべてのメトリクス** ボタンをクリックします。
+
+    :::note
+
+    * <Cmdname sid="widget_template" className="uitext" />: 一般的な監視状況で重要となる指標を要約し、事前定義されたウィジェット一覧から選択できます。
+    * <Cmdname sid="all_metrics" className="uitext" />: ユーザーのプロジェクトで収集中のすべてのメトリクスデータを基準にウィジェットを作成します。メトリクスウィジェットの詳細は[次のドキュメント](flexboard-metric-widget)を参照してください。
+    
+    :::
+
+1. 配置したウィジェットの位置を移動したりサイズを調整します。
+
+    * ウィジェット上部で十字カーソルが表示されたら、クリックしたままドラッグして位置を移動します。 
+
+    * ウィジェット右下で矢印カーソルが表示されたら、クリックしたままドラッグしてサイズを調整します。 
+
+1. 追加するウィジェットの配置が完了したら、<Cmdname sid="view_mode" className="uitext" /> を選択してレイアウトを確認します。レイアウトを再編集する場合は、<Cmdname sid="edit_mode" className="uitext" /> を選択してウィジェット配置を変更します。
+
+1. すべての工程が完了したら、右上の ![一覧へ移動アイコン](/img/ico-exit.svg)（<Cmdname sid="go_to_list" className="uitext" />）アイコンをクリックします。 
+
+    * <Cmdname sid="side_flexboard" className="uitext" /> の <Cmdname sid="dashboard_list" className="uitext" /> で作成したボードを確認できます。作成したボードを選択して新しい Flex ボードを確認してください。
+
+:::note
+
+お客様のご要望を反映してダッシュボードテンプレートやウィジェットの追加を検討しています。必要なテンプレートまたはウィジェットがあれば [support@whatap.io](mailto:support@whatap.io) までご連絡ください。
+
+:::
+
+
+## Flex ボードを編集する {#editflexboard}
+
+:::note
+
+**Flex ボード編集権限**
+
+* **ホーム** &gt; <Cmdname sid="side_integratedFlexboard" className="uitext" />: 個人アカウントのダッシュボードで権限の影響はありませんが、閲覧専用で共有されたダッシュボードは編集できません。 
+
+* **ホーム &gt; プロジェクト選択** &gt; <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_flexboard" className="uitext" />: プロジェクトの編集権限、プロジェクトのフレックスボード編集権限、または Site Admin 権限のユーザーが編集できます。
+
+メンバー権限の詳細は[次のドキュメント](../project/project-structure#member-auth)を参照してください。
+
+:::
+
+1. <Cmdname sid="side_flexboard" className="uitext" /> の <Cmdname sid="dashboard_list" className="uitext" /> で、![編集アイコン](/img/ico-edit.svg) 編集アイコンをクリックします。画面右側に **Flex ボード管理** ウィンドウが表示されます。
+
+1. **Flex ボード管理** ウィンドウで、名前、プロジェクト、レイアウト、widget.json、option.json を設定します。
+
+    * <Cmdname sid="rename" className="uitext" />: ダッシュボード名を編集します。
+
+    * <Cmdname sid="project" className="uitext" />: ダッシュボードのウィジェットがデータを取得するプロジェクトを選択します。
+
+      :::caution
+
+      <Cmdname sid="project" className="uitext" /> オプションは **ホーム** &gt; <Cmdname sid="side_integratedFlexboard" className="uitext" /> メニューでのみ設定できます。  
+      <Cmdname sid="side_integratedFlexboard" className="uitext" /> から入った場合は、ウィジェットごとにデータ取得元のプロジェクトを選択できます。 
+      
+      1. ウィジェット右上の ![追加アイコン](/img/ico-add.svg) ボタンをクリックし、目的のプロジェクトを検索して単一または複数選択します。
+      
+      1. プロジェクトを選択したら <Cmdname sid="apply" className="uitext" /> ボタンをクリックします。
+      
+      :::
+
+    * <Cmdname sid="layout" className="uitext" />
+
+      * ウィジェットをドラッグして位置を移動します。
+
+      * ウィジェット右下をマウスでクリックしたままドラッグしてサイズを調整します。
+
+      * ウィジェットを削除するには、ウィジェット右上の ![削除アイコン](/img/ico-trash.svg) アイコンをクリックします。
+
+    * <Cmdname sid="widget" className="uitext" /><UI>.json</UI>: ダッシュボードのウィジェット設定を JSON 形式で読み込みます。![コピーアイコン](/img/ico-copy.svg) アイコンをクリックすると JSON をコピーします。
+
+    * <Cmdname sid="option" className="uitext" /><UI>.json</UI>: ダッシュボードのオプション設定を JSON 形式で読み込みます。![コピーアイコン](/img/ico-copy.svg) アイコンをクリックすると JSON をコピーします。
+
+## Flex ボードを削除する {#deleteflexboard}
+
+1. <Cmdname sid="side_flexboard" className="uitext" /> &gt; <Cmdname sid="dashboard_list" className="uitext" /> で、削除する項目の ![削除アイコン](/img/ico-trash.svg) アイコンをクリックします。 
+
+1. 確認メッセージで <Cmdname sid="delete" className="uitext" /> ボタンをクリックします。
+
+:::caution
+
+ダッシュボードの削除は所有者と共有を受けたユーザーで動作が異なります。
+
+* ダッシュボード所有者がダッシュボードを削除すると、共有されたすべてのユーザーアカウントでもそのダッシュボードが削除されます。
+
+* 共有を受けたユーザーがダッシュボードを削除すると、そのユーザーの <Cmdname sid="dashboard_list" className="uitext" /> のみから削除されます。元のダッシュボードは維持されます。
+
+:::
+
+## Flex ボードを共有する {#shareflexboard}
+
+:::caution
+
+Flex ボードの共有機能は **ホーム > <Cmdname sid="integratedFlexboard" className="uitext" />** メニューでのみ使用できます。  
+プロジェクトの <Cmdname sid="flexboard" className="uitext" /> メニューでは提供されません。
+
+:::
+
+:::info
+
+ **共有とコピーの違い**
+
+![共有とコピーの違い](/img/flexboard-compare-sharing-copy.png)
+
+* 共有: 共有されたメンバーは同じダッシュボードを閲覧します。
+
+* コピー: ダッシュボードを他のメンバーまたは自分にコピーすると、コピーされた別個のダッシュボードを閲覧します。
+
+* <Cmdname sid="read_only" className="uitext" /> で共有/コピーされたダッシュボードは編集できません。**編集モード** で共有/コピーされた場合のみ編集できます。
+
+* <Cmdname sid="read_only" className="uitext" /> で共有を受けたメンバーも、そのダッシュボードを **閲覧専用で再共有** したり **コピー** できます。
+
+* ダッシュボードに含まれるプロジェクトのうち **少なくとも1つ** のプロジェクトに所属しているメンバーにのみ共有できます。共有またはコピー先のメンバーがプロジェクトに所属しているか確認してください。
+
+    <ImgLang img='flexboard-check-projects.png' desc='ダッシュボード一覧' />
+
+:::
+
+<Cmdname sid="integratedFlexboard" className="uitext" /> で作成した Flex ボードを他のメンバーと共有できます。所有者が共有されたダッシュボードを編集すると、共有を受けたすべてのメンバーに同じ変更が反映されます。
+
+1. <Cmdname sid="integratedFlexboard" className="uitext" /> の <Cmdname sid="dashboard_list" className="uitext" /> で、共有するダッシュボードの <LinkImage img="ico-flexboard-share.svg" className="ico" /> アイコンをクリックします。
+
+1. <Cmdname sid="share_dashboard" className="uitext" /> ウィンドウが表示されたら、共有するメンバーを1名または複数名選択するか、アカウントを直接入力します。 
+
+    * <Cmdname sid="read_only" className="uitext" /> を選択すると、共有を受けたメンバーはダッシュボードを編集できません。
+
+    * 共有対象は、ダッシュボードに含まれるプロジェクトのうち少なくとも1つのプロジェクトに所属している必要があります。
+
+1. <Cmdname sid="BTN09441" className="uitext" /> ボタンをクリックします。
+
+    * 共有された項目には <Cmdname sid="shared" className="uitext" /> タグが表示されます。<Cmdname sid="shared" className="uitext" /> タグにマウスを載せると、共有したメンバー情報を確認できます。 
+    
+    * 閲覧専用で共有された項目には <Cmdname sid="read_only" className="uitext" /> タグが表示されます。
+
+    | ダッシュボードを共有で受け取った場合 | ダッシュボードを共有した場合（ダッシュボード所有者） |
+    | :----------------: | :---------------------------: |
+    | <ImgLang img="flexboard-share-04.png" desc="Flex ボード共有" /> | <ImgLang img="flexboard-share-05.png" desc="Flex ボード共有" /> |
+
+    :::tip
+
+    **ダッシュボード共有の条件**
+
+    * ダッシュボード共有機能は **ホーム** &gt; <Cmdname sid="integratedFlexboard" className="uitext" /> のみで提供します。
+
+    * だれでも自分のダッシュボードを共有でき、共有で受けたダッシュボードを再共有やコピーできます。
+
+    * <Cmdname sid="read_only" className="uitext" /> で受けたダッシュボードは編集できませんが、**編集モード** で受けた場合は編集できます。
+
+    * **所有者** がダッシュボードを削除すると、共有を受けたすべてのアカウントで該当ダッシュボードが削除されます。
+
+    * **共有を受けたユーザー** が削除した場合は、そのユーザーの <Cmdname sid="dashboard_list" className="uitext" /> のみから削除され、元のダッシュボードは維持されます。
+
+    * 共有で受けたダッシュボードに含まれるプロジェクトのうち、<Cmdname sid="view_and_analysis" className="b600" /> 権限がないプロジェクトはデータを参照できません。
+
+    :::
+
+### Flex ボードをコピーする {#copyflexboard}
+
+ユーザーは Flex ボードをコピーして他のメンバーに渡せます。
+
+1. <Cmdname sid="integratedFlexboard" className="uitext" /> の <Cmdname sid="dashboard_list" className="uitext" /> で、<LinkImage img="ico-copy.svg" className="ico" desc="コピーアイコン" /> アイコンをクリックします。 
+
+1. コピーオプションを選択します。
+
+    * <Cmdname sid="copy_to_me" className="uitext" />: 自分のアカウントにコピーします。
+    
+        a. `_copied` 接尾辞が付いた項目が <Cmdname sid="dashboard_list" className="uitext" /> に追加されます。
+
+    * <Cmdname sid="copy_to_others" className="uitext" />: 他のメンバーのアカウントにコピーします。 
+
+        a. <LinkImage img="ico-add.svg" className="ico" /> <Cmdname sid="account" className="uitext" /> をクリックします。  
+        b. コピー先メンバーのメールを選択し、<Cmdname sid="copy_dashboard" className="uitext" /> ボタンをクリックします。  
+        c. そのメンバーの <Cmdname sid="dashboard_list" className="uitext" /> に `_copied` 接尾辞が付いた項目が追加されます。
+
+### JSON ファイルで共有する {#share-flexboard-as-json}
+
+Flex ボードの設定を JSON ファイルとして他のメンバーに渡したり、他のメンバーの設定を取り込めます。
+
+#### エクスポート
+
+1. <Cmdname sid="integratedFlexboard" className="uitext" /> またはプロジェクトの <Cmdname sid="flexboard" className="uitext" /> メニューに移動します。
+
+1. <Cmdname sid="dashboard_list" className="uitext" /> で <LinkImage img="ico-export.svg" desc="エクスポートアイコン" className="ico" /> ボタンをクリックします。
+
+1. エクスポートオプションを選択します。
+
+    * <Cmdname sid="BTN07940" className="uitext" />: ダッシュボードに設定されたプロジェクト情報を JSON ファイルに含めて共有
+
+    * <Cmdname sid="BTN07941" className="uitext" />: ダッシュボードに設定されたプロジェクト情報を JSON ファイルに含めずに共有
+
+1. JSON ファイルをダウンロードし、共有先のメンバーに渡します。
+
+#### インポート
+
+1. <Cmdname sid="integratedFlexboard" className="uitext" /> またはプロジェクトの <Cmdname sid="flexboard" className="uitext" /> メニューに移動します。
+
+1. 画面右上の ![インポートアイコン](/img/ico-import.svg) <Cmdname sid="import" className="uitext" /> ボタンをクリックします。
+
+1. ダウンロードした JSON ファイルを選択します。
+
+:::note
+
+この機能は、プロジェクトの **編集** 権限を持つメンバーのみ利用できます。
+
+:::
+
+## Flex ボードの画面モード {#flexboard-screen-modes}
+
+Flex ボードの画面モードに応じて提供機能が異なります。
+
+:::note
+
+**アクセス可能なメンバー権限**
+
+プロジェクト内の <Cmdname sid="side_flexboard" className="uitext" /> メニューでは、**編集権限** のあるユーザーのみが <Cmdname sid="edit_mode" className="uitext" />、<Cmdname sid="admin" className="uitext" />、<Cmdname sid="filter" className="uitext" /> 機能にアクセスできます。メンバー権限の詳細は[次のドキュメント](../project/project-structure#member-auth)を参照してください。
+
+  * **プロジェクト編集** 権限 
+  
+  * <Cmdname sid="ITM06494" className="b600" /> 権限
+  
+  * **Site Admin** 権限
+
+:::
+
+### モード種類 
+
+<Cmdname sid="side_flexboard" className="uitext" /> は画面モードにより設定できる機能が異なります。
+
+* <Cmdname sid="edit_mode" className="uitext" />: ウィジェットテンプレート一覧からレイアウトにウィジェットを配置し、ウィジェットの編集、削除、位置調整ができます。
+
+* <Cmdname sid="admin" className="uitext" />: ウィジェットの詳細プロパティを JSON 形式で管理できます。レイアウトに配置したウィジェット右上の ![コードアイコン](/img/ico-custom-code.svg) ボタンを選択します。
+
+* <Cmdname sid="view_mode" className="uitext" />: ウィジェットの配置、サイズ調整、詳細オプションなどの設定を完了後、ダッシュボードのように各ウィジェットのデータをリアルタイムで監視できます。
+
+### 共通機能 
+
+* データフィルタリング
+* リアルタイムデータの参照範囲設定
+* 印刷モード
+* Flex ボード管理
+* データ結合オプション
+
+#### データフィルタリング {#Filtering-data}
+
+データフィルタリングで監視対象を絞り、効率的な Flex ボードを構成できます。
+
+<ImgLang img='flexboard-filter.png' desc='Flex ボード - フィルター' />
+
+1. 画面上部の ![フィルターアイコン](/img/ico-filter.svg) <Cmdname sid="filter" className="uitext" /> タブをクリックします。 
+
+1. 画面左に表示される <Cmdname sid="filter" className="uitext" /> ウィンドウでフィルタリング対象を選択します。すべて選択するには <Cmdname sid="select_all" className="uitext" /> を選択します。
+
+    * <Cmdname sid="agent" className="uitext" /> オプション: エージェント種別またはアプリケーション一覧を選択、<Cmdname sid="search" className="uitext" /> 機能あり
+
+    * <Cmdname sid="metrics" className="uitext" /> オプション: プロジェクトまたはエージェント種別を選択、<UI>+ And</UI> 条件の追加や、<Cmdname sid="contain" className="uitext" />、<Cmdname sid="exclude" className="uitext" /> による文字列ベースの自動選択が可能 
+
+1. フィルタリング対象を選択したら、<Cmdname sid="apply" className="uitext" /> ボタンをクリックします。 
+
+1. よく使う条件は <Cmdname sid="save_filter" className="uitext" /> ボタンで保存します。 
+    
+    a. フィルター名を入力し、<Cmdname sid="save" className="uitext" /> を選択します。<Cmdname sid="saved_filter" className="uitext" /> は <Cmdname sid="filter" className="uitext" /> ウィンドウ下部に表示されます。
+
+##### フィルタリング条件 {#filtering conditions}
+
+フィルタリング条件はエージェントタイプとメトリクスタイプに分かれます。  
+エージェントは基本的な監視対象のみ選択肢として提供し、メトリクスはプロジェクトで収集したすべてのメトリクスデータのタグを選択肢として提供します。メトリクスタイプは、非エージェント形式でデータを収集し、その後フィルタリングを適用する場合に有用です。メトリクスの詳細は[次のドキュメント](metrics-intro)を参照してください。
+
+| タイプ | エージェント | メトリクス |
+| :---: | -------- | -------- |
+| 選択オプション | WhaTap プロジェクトの監視対象<br/>(アプリケーション、サーバー、データベース、<br/>コンテナー、Kubernetes の POD と NODE) | エージェントを含むすべてのメトリクスタグ |
+| 適用範囲 | すべてのウィジェット | メトリクスデータを使用するすべてのウィジェット |
+| フィルタリング方式 | チェックボックス | <Cmdname sid="equal" className="uitext" />, <Cmdname sid="contain" className="uitext" />, <Cmdname sid="exclude" className="uitext" /> |
+
+#### 参照時間を設定する {#setting-the-lookup-time}
+
+<Cmdname sid="side_flexboard" className="uitext" /> の画面右上の時間セレクターで、ウィジェットのデータ参照時間を設定できます。 
+
+* ![一時停止アイコン](/img/ic-pause-green.svg): リアルタイムモードを停止して特定の参照時間に設定
+* ![再生アイコン](/img/ico-play-time.svg): リアルタイムモードに戻す 
+
+#### 印刷する {#printing}
+
+Flex ボード画面を PDF で保存して印刷できます。 
+
+1. Flex ボード画面の右上にある ![印刷アイコン](/img/ico-print.svg) アイコンをクリックして印刷モードに切り替えます。 
+
+1. オプションを設定します。
+
+    * <Cmdname sid="filter_visible_msg" className="uitext" />: 画面のフィルターオプションを表示/非表示に切り替え 
+    * <Cmdname sid="change_landscape_mode_msg" className="uitext" replace="horizontal" /> / <Cmdname sid="change_landscape_mode_msg" className="uitext" replace="vertical" />: 画面を横向きまたは縦向きに変更
+
+1. 完了後、<UI>PDF</UI><Cmdname sid="download" className="uitext" /> を選択します。
+
+1. 印刷モードを終了するには、右上の ![終了アイコン](/img/ico-close.svg) <Cmdname sid="close_print_mode" className="uitext" /> をクリックします。
+
+#### Flex ボード管理 {#flex-board-management}
+
+Flex ボードのレイアウト変更、ウィジェットの位置移動やサイズ調整、名称変更などの管理機能を提供します。
+<Cmdname sid="flexboard_management" className="uitext" /> 機能は、<Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_flexboard" className="uitext" /> メニューの <Cmdname sid="dashboard_list" className="uitext" /> で ![編集アイコン](/img/ico-edit.svg) アイコンをクリックして入ることもできます。
+
+1. Flex ボード画面の右上の ![設定アイコン](/img/ico-setting.svg) アイコンをクリックすると、<Cmdname sid="flexboard_management" className="uitext" /> ウィンドウが開きます。 
+
+    * <Cmdname sid="rename" className="uitext" />: Flex ボード名の変更
+
+    * <Cmdname sid="layout" className="uitext" />: ウィジェットの位置・サイズ調整および削除
+
+    * <Cmdname sid="dont_allow_users_to_modify" className="uitext" />: 変更制限オプション
+
+        * 編集権限のあるメンバーは編集・削除・変更が可能で、オプションを有効化すると <Cmdname sid="dont_allow_users_to_modify" className="uitext" /><UI>: On</UI> に変更されます
+
+    * <Cmdname sid="widget" className="uitext" /><UI>.json</UI>: Flex ボードに含まれるウィジェットを JSON 形式で編集・管理
+
+    * <Cmdname sid="option" className="uitext" /><UI>.json</UI>: Flex ボードの設定を JSON 形式で編集・管理（プロジェクト情報、Flex ボードフィルター、時間選択などの設定値）
+
+        :::caution
+
+        <Cmdname sid="widget" className="uitext" /><UI>.json</UI> と <Cmdname sid="option" className="uitext" /><UI>.json</UI> 機能は、ダッシュボード管理者権限のユーザーにのみ提供します。
+
+        :::
+
+1. すべての設定を完了し、<Cmdname sid="save" className="uitext" /> ボタンをクリックします。
+
+
+#### ダッシュボードをお気に入りに登録する {#add-favorite-dashboard}
+
+作成した Flex ボードはお気に入りに登録して素早くアクセスできます。<Cmdname sid="side_dashboard" className="uitext" /> > <Cmdname sid="side_flexboard" className="uitext" /> の <Cmdname sid="dashboard_list" className="uitext" /> で、お気に入り登録するダッシュボードの ![お気に入りアイコン](/img/ico-favorite.svg) ボタンをクリックすると、![お気に入り設定アイコン](/img/ico-favorite-check.svg) に変わります。

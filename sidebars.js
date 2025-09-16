@@ -4837,7 +4837,19 @@ const sidebars = {
         // 'about-billing',
         // 'software-proxy',
         'main-ui-intro-v2',
-        'usage-ui',
+        {
+          type: 'category',
+          label: '제품 공통 UI',
+          collapsible: true,
+          collapsed: false,
+          link: {
+            type: 'doc',
+            id: 'usage-ui',
+          },
+          items: [
+            'widget-template',
+          ]
+        },
         'reference/data-collection-retention',
         {
           type: 'html',
@@ -6596,21 +6608,16 @@ const sidebars = {
       },
       items: [
         'nms/supported-spec',
-        `nms/service-components-and-port-info`,
         'nms/install-agent',
         {
           type: 'category',
-          label: '설정하기',
+          label: '네트워크 인사이트',
           collapsible: true,
           collapsed: true,
           items: [
-            'nms/conf-device-management',
-            'nms/conf-oid-management',
-            'nms/conf-trap-setting',
-            'nms/conf-syslog-setting',
+            'nms/network-insights-topology',
           ]
         },
-        'nms/device-dashboard',
         {
           type: 'category',
           label: 'Flex 보드',
@@ -6621,24 +6628,33 @@ const sidebars = {
             id: 'nms/flex-board',
           },
           items: [
-            'nms/flexboard-template',
-            'nms/flexboard-create',
-            'nms/flexboard-manage',
-            'nms/flexboard-metric-widget',
+            'nms/flexboard-guide',
             'nms/flexboard-widget-manage',
+            'nms/flexboard-metric-widget',
             'nms/flexboard-widget-template',
-            'nms/flexboard-mode',
-            'nms/flexboard-share',
           ],
         },
         {
           type: 'category',
-          label: '디바이스',
+          label: '디바이스 상태',
           collapsible: true,
           collapsed: true,
           items: [
-            'nms/device-trend',
             'nms/interface-status',
+            'nms/device-trend',
+          ]
+        },
+        'nms/conf-device-management',
+        'nms/device-dashboard',
+        'nms/conf-oid-management',
+        {
+          type: 'category',
+          label: '설정',
+          collapsible: true,
+          collapsed: true,
+          items: [
+            'nms/conf-trap-setting',
+            'nms/conf-syslog-setting',
           ]
         },
         // 현재 문서 없음 0205
