@@ -584,6 +584,764 @@ paths:
               -H "Content-Type: application/json" \
               -H "x-whatap-token: {{ACCOUNT_API_TOKEN}}" \
               "https://api.whatap.io/open/api/json/group/{groupKey}/projects"
+  /open/api/json/event/v2/settings:
+    get:
+      summary: 이벤트 설정 조회
+      description: 이벤트 설정 New 메뉴의 [JSON 일괄 다운로드]와 같은 데이터를 조회할 수 있습니다.
+      tags:
+        - 이벤트 기록
+      parameters:
+        - $ref: '#/components/parameters/WhatapAccoutTokenHeader'
+        - $ref: '#/components/parameters/WhatapPcodeHeader'
+      responses:
+        '200':
+          description: 조회 성공
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  productType:
+                    type: string
+                    description: 프로젝트의 제품 유형
+                  platform:
+                    type: string
+                    description: 프로젝트의 제품 플랫폼
+                  events:
+                    type: object
+                    description: 이벤트 타입별 설정 리스트
+                    properties:
+                      BASIC:
+                        type: array
+                        description: |
+                          이벤트 설정[New] 기본 이벤트
+                        items:
+                          type: object
+                          properties:
+                            criticalEnabled:
+                              type: boolean
+                              description: Critical 레벨 경고 사용 여부 (version == 1 일 때 사용되는 값)
+                            warningEnabled:
+                              type: boolean
+                              description: Warning 레벨 경고 사용 여부 (version == 1 일 때 사용되는 값)
+                            silentPeriod:
+                              type: integer
+                              description: 무음 시간
+                            metaId:
+                              type: string
+                              description: 템플릿 고유 식별자
+                            displayName:
+                              type: string
+                              description: 사용자 정의 이벤트 제목
+                            criticalThreshold:
+                              type: string
+                              description: Critical 레벨 이벤트 발생 조건 (version == 1 일 때 사용되는 값)
+                            warningThreshold:
+                              type: string
+                              description: Warning 레벨 이벤트 발생 조건 (version == 1 일 때 사용되는 값)
+                            message:
+                              type: string
+                              description: 사용자 정의 이벤트 메시지
+                            version:
+                              type: integer
+                              description: 이벤트 설정의 버전
+                            enabled:
+                              type: boolean
+                              description: 이벤트 규칙 활성화 여부
+                            repeatDuration:
+                              type: long
+                              description: 반복 횟수 체크 시간
+                            id:
+                              type: string
+                              description: 이벤트 규칙 고유 식별자
+                            conditions:
+                              type: array
+                              description: 레벨별 이벤트 발생 조건 (version ≥ 2 일 때 사용되는 값)
+                            selectCondition:
+                              type: object
+                              description: 이벤트 대상 필터링 조건 (key=[value1, value2] 형태로 저장)
+                            stateful:
+                              type: boolean
+                              description: 상태 기반 이벤트 기능 사용 여부
+                            repeatCount:
+                              type: integer
+                              description: 반복 횟수
+                      METRICS:
+                        type: array
+                        description: |
+                          메트릭스 이벤트
+                        items:
+                          type: object
+                          properties:
+                            eventMessage:
+                              type: string
+                              description: 사용자 정의 이벤트 메시지
+                            select:
+                              type: string
+                              description: 이벤트 대상 필터링 조건
+                            alertLabel:
+                              type: array
+                              description: 이벤트 상태 관리용 PK
+                              items:
+                                type: string
+                            rule:
+                              type: string
+                              description: 이벤트 발생 규칙 (version == 0 일 때 사용)
+                            silentSec:
+                              type: integer
+                              description: 무음 시간(초)
+                            version:
+                              type: integer
+                              description: 이벤트 설정의 버전
+                            enabled:
+                              type: boolean
+                              description: 이벤트 규칙 활성화 여부
+                            eventTitle:
+                              type: string
+                              description: 사용자 정의 이벤트 제목
+                            repeatDuration:
+                              type: long
+                              description: 반복 횟수 체크 시간
+                            eventLevel:
+                              type: integer
+                              description: 이벤트 레벨 (version == 0 일 때 사용)
+                            id:
+                              type: string
+                              description: 이벤트 규칙 고유 식별자
+                            category:
+                              type: string
+                              description: 데이터 수집 카테고리
+                            conditions:
+                              type: array
+                              description: 레벨별 이벤트 발생 조건 (version ≥ 1 일 때 사용)
+                            stateful:
+                              type: boolean
+                              description: 상태 기반 이벤트 기능 사용 여부
+                            repeatCount:
+                              type: integer
+                              description: 반복 횟수
+                      COMPOSITE_METRICS:
+                        type: array
+                        description: |
+                          복합 메트릭스 이벤트
+                        items:
+                          type: object
+                          properties:
+                            interval_sec:
+                              type: integer
+                              description: 쿼리 실행 주기
+                            query:
+                              type: string
+                              description: MXQL 쿼리
+                            rule:
+                              type: string
+                              description: 이벤트 발생 규칙
+                            event_title:
+                              type: string
+                              description: 사용자 정의 이벤트 제목
+                            enabled:
+                              type: boolean
+                              description: 이벤트 규칙 활성화 여부
+                            silent_sec:
+                              type: integer
+                              description: 무음 시간(초)
+                            event_level:
+                              type: integer
+                              description: 이벤트 레벨
+                            id:
+                              type: string
+                              description: 이벤트 규칙 고유 식별자
+                            time_trim:
+                              type: integer
+                              description: 쿼리 실행 시 시간 단위 절삭 간격(ms)
+                            event_message:
+                              type: string
+                              description: 사용자 정의 이벤트 메시지
+                            time_period:
+                              type: long
+                              description: 데이터 조회 범위
+                            stateful:
+                              type: boolean
+                              description: 상태 기반 이벤트 기능 사용 여부
+                            desc:
+                              type: string
+                              description: 메타성 정보
+                      LOG_REALTIME:
+                        type: array
+                        description: |
+                          실시간 로그 이벤트
+                        items:
+                          type: object
+                          properties:
+                            skiptime:
+                              type: long
+                              description: 무음 시간
+                            field:
+                              type: string
+                              description: 검색 키
+                            event_level:
+                              type: integer
+                              description: 이벤트 레벨
+                            event_title:
+                              type: string
+                              description: 사용자 정의 이벤트 제목
+                            tag_select_rule:
+                              type: string
+                              description: 이벤트 대상 필터링 조건
+                            id:
+                              type: string
+                              description: 이벤트 규칙 고유 식별자
+                            event_message:
+                              type: string
+                              description: 사용자 정의 이벤트 메시지
+                            category:
+                              type: string
+                              description: 로그 카테고리
+                            keyword:
+                              type: string
+                              description: 검색 값
+                            enabled:
+                              type: boolean
+                              description: 이벤트 규칙 활성화 여부
+                      COMPOSITE_LOG:
+                        type: array
+                        description: |
+                          복합 로그 이벤트
+                        items:
+                          type: object
+                          properties:
+                            id:
+                              type: string
+                              description: 이벤트 규칙 고유 식별자
+                            enabled:
+                              type: boolean
+                              description: 이벤트 규칙 활성화 여부
+                            query:
+                              type: string
+                              description: 저장된 로그 경로
+                            query_inject:
+                              type: object
+                              nullable: true
+                              description: null
+                            query_param:
+                              type: object
+                              description: 상세 조회 조건
+                              properties:
+                                $category:
+                                  type: string
+                                  description: 로그 카테고리
+                                $filter_excludes:
+                                  type: string
+                                  description: 제외/포함 여부 (`true` 제외, `false` 포함)
+                                $filter_keys:
+                                  type: string
+                                  description: 검색 키
+                                $filter_values:
+                                  type: string
+                                  description: 검색 값
+                                $group_keys:
+                                  type: string
+                                  description: 데이터 그룹핑 기준 (pcode 고정)
+                                $group_time_unit:
+                                  type: string
+                                  description: 시간 그룹핑 범위 (1d 고정)
+                            time_period:
+                              type: long
+                              description: 데이터 조회 범위
+                            rule:
+                              type: string
+                              description: 이벤트 발생 조건
+                            interval_sec:
+                              type: integer
+                              description: 쿼리 실행 주기
+                            silent_sec:
+                              type: integer
+                              description: 무음 시간(초)
+                            event_level_text:
+                              type: string
+                              description: 이벤트 레벨
+                            event_title:
+                              type: string
+                              description: 사용자 정의 이벤트 제목
+                            event_message:
+                              type: string
+                              description: 사용자 정의 이벤트 메시지
+                            stateful:
+                              type: boolean
+                              description: 상태 기반 이벤트 사용 여부
+                            desc:
+                              type: string
+                              description: 메타성 정보
+                      SERVER_LOG_FILE:
+                        type: array
+                        description: |
+                          서버 로그파일/윈도우 이벤트
+                        items:
+                          type: object
+                          properties:
+                            displayname:
+                              type: string
+                              description: 사용자 정의 이벤트 제목
+                            name:
+                              type: string
+                              description: 이벤트 규칙 고유 식별자
+                            logdefault:
+                              type: boolean
+                              description: 기본 로그 설정 여부
+                              default: false
+                            id:
+                              type: string
+                              description: 이벤트 규칙 고유 식별자
+                            conditions:
+                              type: array
+                              description: 이벤트 조건 리스트
+                            conditions.FilePath:
+                              type: string
+                              description: 감시할 파일의 경로 (eventSource == 1 또는 5일 때 사용)
+                            conditions.elapsedSecond:
+                              type: integer
+                              description: >-
+                                n초 동안 수정이 없을 경우 이벤트 발생 (checkTypes가
+                                MTIME_UNCHANGED이고 eventSource == 5일 때 사용)
+                            conditions.SearchStringRepeatCount:
+                              type: integer
+                              description: 반복(회) (eventSource == 1 또는 2일 때 사용)
+                            conditions.Severity:
+                              type: integer
+                              description: '이벤트 레벨(위험도) — 3: warning, 5: critical'
+                              enum:
+                                - 3
+                                - 5
+                            conditions.WinEventCode:
+                              type: integer
+                              description: 윈도우 이벤트 ID (eventSource == 2일 때 사용)
+                            conditions.WinEventMsgRegexExclude:
+                              type: string
+                              description: 검출 제외 문자열 (eventSource == 2일 때 사용)
+                            conditions.EventSource:
+                              type: integer
+                              description: >-
+                                로그 이벤트 종류 — 1: 로그 파일 키워드 이벤트, 2: 윈도우 이벤트, 5: 로그
+                                파일 감시 이벤트
+                              enum:
+                                - 1
+                                - 2
+                                - 5
+                            conditions.checkTypes:
+                              type: array
+                              description: 파일 감시 타입 (eventSource == 5일 때 사용)
+                              items:
+                                type: string
+                                enum:
+                                  - USER
+                                  - GROUP
+                                  - PERMISSION
+                                  - FILE_NOT_FOUND
+                                  - MTIME_CHANGED
+                                  - MTIME_UNCHANGED
+                            conditions.FileRegex:
+                              type: string
+                              description: 검색 키워드 (eventSource == 1일 때 사용)
+                            conditions.FileRegexExclude:
+                              type: string
+                              description: 검출 제외 문자열 (eventSource == 1일 때 사용)
+                            conditions.WinType:
+                              type: integer
+                              description: 수준 (eventSource == 2일 때 사용)
+                            conditions.WinSourceName:
+                              type: string
+                              description: 원본 (eventSource == 2일 때 사용)
+                            conditions.WinLogFile:
+                              type: string
+                              description: 로그명 (eventSource == 2일 때 사용)
+                              enum:
+                                - Application
+                                - Security
+                                - Setup
+                                - System
+                                - ForwardedEvents
+                            conditions.WinEventMsgRegex:
+                              type: string
+                              description: 검색 키워드 (eventSource == 2일 때 사용)
+                            conditions.SearchStringRepeatDuration:
+                              type: integer
+                              description: 기간(초) (eventSource == 1 또는 2일 때 사용)
+                            enabled:
+                              type: boolean
+                              description: 이벤트 규칙 활성화 여부
+                      Transaction:
+                        type: array
+                        description: |
+                          트랜잭션 이벤트
+                        items:
+                          type: object
+                          properties:
+                            silentTime:
+                              type: long
+                              description: 무음 시간
+                            appCtx:
+                              type: array
+                              description: 업무명 패턴 리스트
+                              items:
+                                type: string
+                            excludeStatus:
+                              type: array
+                              description: 상태코드 제외 패턴 리스트
+                              items:
+                                type: string
+                            errorClass:
+                              type: array
+                              description: 에러 클래스 패턴 리스트
+                              items:
+                                type: string
+                            errorMessage:
+                              type: array
+                              description: 에러 메시지 패턴 리스트
+                              items:
+                                type: string
+                            excludeErrorMessage:
+                              type: array
+                              description: 에러 메시지 제외 패턴 리스트
+                              items:
+                                type: string
+                            enabled:
+                              type: boolean
+                              description: 이벤트 규칙 활성화 여부
+                            url:
+                              type: array
+                              description: URL 패턴 리스트
+                              items:
+                                type: string
+                            excludeUrl:
+                              type: array
+                              description: URL 제외 패턴 리스트
+                              items:
+                                type: string
+                            excludeErrorClass:
+                              type: array
+                              description: 에러 클래스 제외 패턴 리스트
+                              items:
+                                type: string
+                            eventTitle:
+                              type: string
+                              description: 사용자 정의 이벤트 제목
+                            eventLevel:
+                              type: string
+                              description: 이벤트 레벨
+                            limit:
+                              type: integer
+                              description: 발생 횟수
+                            conditionValue:
+                              type: string
+                              description: >-
+                                조건 유형에 따른 기준 값 (`conditionType == elapsed`인 경우에만
+                                사용)
+                            conditionType:
+                              type: string
+                              description: 조건 유형
+                              enum:
+                                - elapsed
+                                - error
+                                - none
+                            id:
+                              type: string
+                              description: 이벤트 규칙 고유 식별자
+                            resultType:
+                              type: string
+                              description: 집계 기준
+                              enum:
+                                - per-agent
+                                - per-url
+                                - per-agent-url
+                                - per-error
+                                - per-agent-error
+                                - per-appctx
+                                - per-agent-appctx
+                                - total
+                            excludeAppCtx:
+                              type: array
+                              description: 업무명 제외 패턴 리스트
+                              items:
+                                type: string
+                            status:
+                              type: array
+                              description: 상태 코드 패턴 리스트
+                              items:
+                                type: string
+                      ANOMALY:
+                        type: array
+                        description: |
+                          이상치 탐지 이벤트
+                        items:
+                          type: object
+                          properties:
+                            id:
+                              type: string
+                              description: 이벤트 규칙 고유 식별자
+                            pcode:
+                              type: long
+                              description: 프로젝트 코드
+                            category:
+                              type: string
+                              description: 데이터 수집 카테고리
+                            enabled:
+                              type: boolean
+                              description: 이벤트 규칙 활성화 여부
+                            eventMessage:
+                              type: string
+                              description: 사용자 정의 이벤트 메시지
+                            eventLevelText:
+                              type: string
+                              description: 이벤트 레벨
+                            repeatCount:
+                              type: integer
+                              description: 반복 횟수
+                            silentSec:
+                              type: integer
+                              description: 무음 시간(초)
+                            tags:
+                              type: object
+                              description: 대상 필터링 조건(에이전트 선택)
+                              additionalProperties:
+                                type: array
+                                items:
+                                  type: string
+                            fields:
+                              type: array
+                              description: 필드
+                              items:
+                                type: string
+                            width:
+                              type: number
+                              format: float
+                              description: '*고정값*'
+                            negativeScore:
+                              type: number
+                              format: float
+                              description: 하락 패턴 민감도
+                            positiveScore:
+                              type: number
+                              format: float
+                              description: 상승 패턴 민감도
+                            ignoreNegative:
+                              type: boolean
+                              description: 하락 패턴 무시 여부
+                            ignorePositive:
+                              type: boolean
+                              description: 상승 패턴 무시 여부
+                            objectMerge:
+                              type: string
+                              description: 에이전트별 데이터 병합 방식
+                            filter:
+                              type: object
+                              deprecated: true
+                              description: '*Deprecated*'
+                      HITMAP:
+                        type: array
+                        description: |
+                          히트맵 패턴 이벤트
+                        items:
+                          type: object
+                          properties:
+                            pcode:
+                              type: long
+                              description: 프로젝트 코드
+                            config:
+                              type: object
+                              description: '패턴별 설정값 (`key`: 패턴 키, `value`: 패턴 설정값)'
+                              properties:
+                                horizontal:
+                                  type: object
+                                  description: 히트맵 가로라인 패턴 설정
+                                  properties:
+                                    enabled:
+                                      type: boolean
+                                      description: 패턴 활성화 여부
+                                    silent:
+                                      type: long
+                                      description: 무음 시간
+                                flying:
+                                  type: object
+                                  description: 히트맵 플라잉 패턴 설정
+                                  properties:
+                                    enabled:
+                                      type: boolean
+                                      description: 패턴 활성화 여부
+                                    silent:
+                                      type: long
+                                      description: 무음 시간
+                                vertical:
+                                  type: object
+                                  description: 히트맵 세로라인 패턴 설정
+                                  properties:
+                                    enabled:
+                                      type: boolean
+                                      description: 패턴 활성화 여부
+                                    silent:
+                                      type: long
+                                      description: 무음 시간
+                                overload:
+                                  type: object
+                                  description: 히트맵 과부하 패턴 설정
+                                  properties:
+                                    enabled:
+                                      type: boolean
+                                      description: 패턴 활성화 여부
+                                    silent:
+                                      type: long
+                                      description: 무음 시간
+                                flood:
+                                  type: object
+                                  description: 히트맵 폭주 패턴 설정
+                                  properties:
+                                    enabled:
+                                      type: boolean
+                                      description: 패턴 활성화 여부
+                                    silent:
+                                      type: long
+                                      description: 무음 시간
+                            exceptTime:
+                              type: long
+                              description: 탐지 제외 시간
+                      config 공통 구조:
+                        type: array
+                        items:
+                          type: object
+                          properties:
+                            enabled:
+                              type: boolean
+                              description: 패턴 활성화 여부
+                            silent:
+                              type: long
+                              description: 무음 시간
+              example:
+                - productType: APM
+                  platform: JAVA
+                  events:
+                    - LOG_REALTIME: []
+                      METRICS:
+                        - eventMessage: '메트릭스: tx_count: ${tx_count}'
+                          select: ${oname} == 'eureka'
+                          alertLabel: []
+                          rule: ${tx_count} >= 120
+                          silentSec: 0
+                          version: 0
+                          enabled: true
+                          eventTitle: 트랜잭션 개수 120 초과
+                          repeatDuration: 0
+                          eventLevel: 30
+                          id: z9jqlbn0217eml
+                          category: app_counter
+                          conditions:
+                            - level: 30
+                              rule: ${tx_count} >= 120
+                              enabled: true
+                          stateful: true
+                          repeatCount: 0
+                      TRANSACTION:
+                        - silentTime: 60000,
+                          appCtx: []
+                          excludeStatus:
+                            - gg
+                          errorClass: []
+                          errorMessage: []
+                          excludeErrorMessage: []
+                          enabled: true
+                          url:
+                            - '**/pusan'
+                          excludeUrl:
+                            - '*add*'
+                          excludeErrorClass: []
+                          eventTitle: 트랜잭션 이벤트
+                          eventLevel: 20
+                          limit: 1
+                          conditionValue: 0
+                          conditionType: none
+                          id: z8c3sdrt04jpcs
+                          resultType: per-agent
+                          excludeAppCtx: []
+                          status: []
+                      COMPOSITE_LOG: []
+                      BASIC:
+                        - criticalEnabled: false
+                          warningEnabled: true
+                          silentPeriod: 300000
+                          metaId: java004
+                          displayName: Active Transaction
+                          criticalThreshold: ''
+                          warningThreshold: active_tx_count > 100
+                          message: Active Transaction = ${active_tx_count}
+                          version: 2
+                          enabled: false
+                          repeatDuration: 0
+                          id: x3gpgkfnnc3f39
+                          conditions:
+                            - level: 20
+                              rule: active_tx_count > 100
+                              enabled: true
+                          selectCondition: {}
+                          stateful: false
+                          repeatCount: 1
+                        - criticalEnabled: true
+                          warningEnabled: true
+                          silentPeriod: 300000
+                          metaId: java002
+                          displayName: Server Memory
+                          criticalThreshold: mem > 90
+                          warningThreshold: mem > 70
+                          message: Server Memory = ${mem}
+                          version: 2
+                          enabled: false
+                          repeatDuration: 0
+                          id: xc1l4q6pdefcf
+                          conditions:
+                            - level: 30
+                              rule: mem > 90
+                              enabled: true
+                            - level: 20
+                              rule: mem > 70
+                              enabled: true
+                          selectCondition: {}
+                          stateful: false
+                          repeatCount: 1
+                      COMPOSITE_METRICS:
+                        - interval_sec: 60
+                          query: |-
+                            CATEGORY app_counter
+                            TAGLOAD
+                            SELECT
+                            GROUP { timeunit:1m, merge:"tx_count", pk:"oid" }
+                            CREATE { key: _pk_, value: "oid" }
+                          rule: tx_count > 5
+                          event_title: key oid
+                          enabled: false
+                          silent_sec: 60
+                          event_level: 20
+                          id: z8aadoam9thlqp
+                          time_trim: 5000
+                          event_message: 'tx_count : ${tx_count}'
+                          time_period: 60000
+                          stateful: true
+                          desc: >-
+                            {"widgetType":"EXPERT","supports":[],"isExpertEditable":false,"flexEventWidget":{"widgetType":"FLEX_EVENT","id":"composite_metrics_widget","requestApi":"LAST","option":{"stime":1751591820000,"etime":1751595420000,"isLive":false,"liveUpdateIntervalSec":0,"globalTime":false,"chart":"SERIES","pcodes":[4],"flex_event":{"category":"app_counter","tagPksGroup":{"pks":["oid"],"timeunit":5000},"fieldsWithMerges":[{"key":"httpc_count","timeMerge":"AVG","objectMerge":"AVG","unit":"COUNT","_label":"92a1f326-b9b7-45c7-8c9f-6bc4b023ac0f"}]},"chartAside":{"chart":"TABLE"},"timeAction":"CUSTOM"},"metrics":[{"mql":"INJECT
+                            timepast\nHEADER { \"httpc_count$\":\"COUNT\"
+                            }\nOIDSET { oid:$oid, okind:$okind, onode:$onode
+                            }\nCATEGORY \"app_counter\"\nTAGLOAD\nINJECT
+                            default\nUPDATE {key: httpc_count, value:
+                            avg}\nGROUP {pk:[oid], timeunit: 5000}\nUPDATE {key:
+                            httpc_count, value: avg}\nCREATE {key: _id_,
+                            expr:\"oid\"}\nCREATE {key: _name_, expr:\"oid\"}
+                            \nSELECT [_name_, _id_, time, oid,
+                            httpc_count]\n"}]},"pcode":4}
+      x-codeSamples:
+        - lang: curl
+          source: |
+            curl --location \
+            -w "\n" \
+            -H "Content-Type: application/json" \
+            -H 'x-whatap-token: {{PROJECT_API_TOKEN}}' \
+            -H 'x-whatap-pcode: {{projectCode}}' \
+            "https://api.whatap.io/open/api/json/event/v2/settings"
   /open/api/json/event/history:
     get:
       summary: 이벤트 기록 조회
@@ -638,8 +1396,7 @@ paths:
                     type: integer
                     description: 처리 내역 개수
                   eventTime:
-                    type: integer
-                    format: int64
+                    type: long
                     description: 이벤트 발생 시간
                   disabled:
                     type: boolean
@@ -665,8 +1422,7 @@ paths:
                     type: string
                     description: 경고 레벨
                   updateTime:
-                    type: integer
-                    format: int64
+                    type: long
                     description: 이벤트 업데이트 시간
                   message:
                     type: string
@@ -814,12 +1570,10 @@ paths:
               type: object
               properties:
                 stime:
-                  type: integer
-                  format: int64
+                  type: long
                   description: 조회 시작 시간(UNIX epoch time, millisecond)
                 etime:
-                  type: integer
-                  format: int64
+                  type: long
                   description: 조회 종료 시간(UNIX epoch time, millisecond)
             example:
               stime: 1690850183000
@@ -836,16 +1590,13 @@ paths:
                 type: object
                 properties:
                   stime:
-                    type: integer
-                    format: int64
+                    type: long
                     description: 조회 시작 시간(UNIX epoch time, millisecond)
                   etime:
-                    type: integer
-                    format: int64
+                    type: long
                     description: 조회 종료 시간(UNIX epoch time, millisecond)
                   timestamp:
-                    type: integer
-                    format: int64
+                    type: long
                     description: 데이터 생성 시간(UNIX epoch time, millisecond)
                   data:
                     type: array
@@ -2301,8 +3052,7 @@ paths:
                   type: object
                   properties:
                     stime:
-                      type: interger
-                      format: int64
+                      type: long
                       description: 조회 시작 시간(UNIX epoch time, millisecond)
                     filter:
                       type: object
