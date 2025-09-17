@@ -6600,6 +6600,7 @@ const sidebars = {
           collapsed: true,
           items: [
             'nms/network-insights-topology',
+            'nms/network-insights-device-overview'
           ]
         },
         {
@@ -6614,8 +6615,6 @@ const sidebars = {
           items: [
             'nms/flexboard-guide',
             'nms/flexboard-widget-manage',
-            'nms/flexboard-metric-widget',
-            'nms/flexboard-widget-template',
           ],
         },
         {
@@ -6629,7 +6628,6 @@ const sidebars = {
           ]
         },
         'nms/conf-device-management',
-        'nms/device-dashboard',
         'nms/conf-oid-management',
         {
           type: 'category',
@@ -6691,7 +6689,7 @@ const sidebars = {
         },
         {
           type: 'doc',
-          label: 'Log 모니터링',
+          label: '로그',
           id: 'log/introduction'
         },
       ]

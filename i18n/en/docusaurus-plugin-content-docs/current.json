@@ -2315,6 +2315,10 @@
     "message": "Device",
     "description": "The label for category 디바이스 in sidebar nmsSidebar"
   },
+  "sidebar.nmsSidebar.category.디바이스 인벤토리": {
+    "message": "Device Inventory",
+    "description": "The label for category 디바이스 인벤토리 in sidebar nmsSidebar"
+  },
   "sidebar.nmsSidebar.category.경고 알림": {
     "message": "Alert",
     "description": "The label for category 경고 알림 in sidebar nmsSidebar"
