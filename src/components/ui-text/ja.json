@@ -10126,6 +10126,7 @@
   "side_healthCheckStatus": "ヘルスチェックステータス",
   "side_device": "デバイス",
   "side_deviceTrend": "デバイスの状態",
+  "side_usageStatus": "使用状況",
   "side_interfaceStatus": "インターフェース状態",
   "side_mibUpload": "MIBアップロード",
   "side_oidManagement": "SNMP OID 管理",

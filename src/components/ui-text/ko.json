@@ -10125,6 +10125,7 @@
   "side_healthCheckStatus": "헬스 체크 상태",
   "side_device": "디바이스",
   "side_deviceTrend": "디바이스 상태",
+  "side_usageStatus": "사용량 현황",
   "side_interfaceStatus": "인터페이스 상태",
   "side_mibUpload": "MIB 업로드",
   "side_oidManagement": "SNMP OID 관리",

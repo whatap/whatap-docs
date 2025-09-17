@@ -7,6 +7,12 @@ keywords: [ NMS, Topology, Device Overview ]
 
 <Cmdname sid="device_overview" className="uitext" /> is a dashboard composed of [Common options](#common-options) and [Widgets](#widget). It provides an at-a-glance view of the status and performance metrics of network devices in a project. Administrators can check key operational data such as interface status, traffic handling, ICMP HealthCheck, Syslog, Trap events, and real time logs in widget form.
 
+:::note 
+
+***Device Dashboard*** is a real-time dedicated monitoring screen and does not provide the feature to select and view a past specific time point.
+
+:::
+
 ## Common options {#common-options}
 
 These features apply across the entire Overview screen and allow you to set the data query range, select managers, and save widget layouts.
@@ -25,29 +31,28 @@ These features apply across the entire Overview screen and allow you to set the 
 
 ### Device status
 
-Check the total number of interfaces and the number of active ones. When hovering over a device, status information is displayed. Clicking the device moves you to the interface detail screen.
+The number of active interfaces is displayed as **Connected** / **Total Interfaces**, allowing you to check how many interfaces are active. When hovering over a device, status information is displayed. Clicking the device takes you to <Cmdname sid="side_usageStatus" className="uitext" />.  
 
 * Example: `8 / 22` → 8 active out of 22 total
 
 :::note
-Interface information requires collecting SNMP ifTable (1.3.6.1.2.1.2.2) and ifXTable (1.3.6.1.2.1.31.1.1) data. Support may differ by device.
+Interface information requires collecting SNMP ifTable (1.3.6.1.2.1.2.2) and ifXTable (1.3.6.1.2.1.31.1.1) data. Support may vary by device.
 :::
 
 ### ICMP HealthCheck
 
-The ICMP HealthCheck widget displays network jitter and maximum round trip time (Max RTT) in a graph. If status is abnormal, the corresponding IP address is shown in <span class='vslow'>red</span>. Monitoring results are updated in 10 minute intervals.
+The ICMP HealthCheck widget displays network jitter and maximum round trip time (Max RTT) in a graph. If the status is abnormal, the corresponding IP address is shown in <span class='vslow'>red</span>. Monitoring results are updated in 10 minute intervals.
 
-1. Go to **Device inventory** and click the ![Edit icon](/img/ic-edit.svg) icon of the device you want to configure.
-
-1. In the device settings screen, use the **Health Check** tab to configure.
+1. Go to **Device inventory** and click the ![Edit icon](/img/ic-edit.svg) icon of the device you want to configure.  
+1. In the device settings screen, configure it under the **Health Check** tab.
 
 ### Today’s Syslog
 
-Syslog events occurring today are displayed in a pie chart by severity level, categorized from Emergency to Debug. This allows you to intuitively check frequency and severity distribution.
+Syslog events generated today are displayed in a pie chart by severity level, categorized from Emergency to Debug. This lets you intuitively check log frequency and severity distribution.
 
 ### Top 10 devices by Trap events
 
-Displays the devices with the highest number of Trap messages in the last 24 hours, sorted in descending order of event frequency. This helps quickly identify devices where events are concentrated.
+Displays the devices with the most Trap messages in the last 24 hours, sorted in descending order by event frequency. This helps quickly identify devices with concentrated events.
 
 ### Maximum throughput interface
 
@@ -57,10 +62,10 @@ Displays the interface with the maximum throughput recorded in the last 24 hours
 
 ### Maximum PPS interface
 
-Displays the interface with the maximum PPS recorded in the last 24 hours.
+Displays the interface with the maximum Packets Per Second (PPS) recorded in the last 24 hours.
 
 * Example: `5.56K PPS (FastEthernet8, 2025-08-27 16:50:36)`
 
 ### Real time log events
 
-Logs generated within the project are displayed in a real time table, showing time, host, and log details. New logs appear instantly in live tail format.
+Logs generated in the project are displayed in a real time table showing time, host, and log details. New logs appear instantly in live tail format. By analyzing logs in real time, you can quickly detect system failures and abnormal signs.
