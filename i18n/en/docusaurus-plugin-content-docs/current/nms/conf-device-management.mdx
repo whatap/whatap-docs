@@ -2,48 +2,127 @@
 id: conf-device-management
 title: Device Inventory
 description: It guides you to the device inventory menu.
+toc_max_heading_level: 4
 keywords:
   - NMS
   - Configuration
   - Device Inventory
 ---
 
-{/* 다국어 이미지 미작업 */}
+<Cmdname sid="side_deviceInventory" className="uitext" /> manages the registration of network devices and monitoring settings. Devices can be automatically discovered using the Auto Discovery feature provided by the manager or manually added as needed. Each registered device can be configured with SNMP based monitoring and Health Check to monitor real time status. This allows integrated management of devices to be monitored in the network management system.
 
-Home &gt; Select Project &gt; <Cmdname sid="side_deviceInventory" className="uitext" />
+## Default screen guide
 
-In <Cmdname sid="side_deviceInventory" className="uitext" />, the devices to monitor are registered and managed to activate the network management system.
+In <Cmdname sid="side_deviceInventory" className="uitext" />, you can view all registered network devices in a table.
 
-## Basic screen guide
+The top menu provides key functions related to device registration and management.
 
-<ImgLang img="nms-conf-device-mng.png" desc="Device Management" />
+* **Manager selection**: select the connected NMS Manager instance
 
-### Adding a device
+* ![Add icon](/img/ico-add.svg) **Add device**: manually add a new network device
 
-To register a device, select an agent on the upper left and then click <UI>+</UI> <Cmdname sid="BTN09017" className="uitext" />. In the <Cmdname sid="BTN09017" className="uitext" /> window, enter the following items: 
+* **Auto Discovery**: automatically detect and add network devices through the NMS Manager
 
-<ImgLang img="nms-conf-device-mng-add.png" desc="Add Device" />
+| Device list column | Description |
+| :-------------: | ------------------------------ |
+| **Alias** | Device alias |
+| **Host** | IP address |
+| **Hostname** | Device hostname |
+| **Description** | Device description (model name, usage, etc.) |
+| **Manufacturer** | Manufacturer (Cisco Systems, America, etc.) |
+| **Location** | Installation location (floor, rack, etc.) |
+| **Contact** | Contact person information |
+| **Host Type** | Device type (Switch, Router, Server, etc.) |
+| **Role** | Device role |
+| **Serial No.** | Serial number |
+| **Firmware** | Firmware version |
+| **SNMP** | SNMP enabled status (Enabled/Disabled) |
 
-- ***Host***: Enter the IP address of the target device.
+### ![Add icon](/img/ico-add.svg) Add device
 
-- ***Port***: Set the port number to be used for SNMP communication. The port 161 is used by default.
+You can manually register a new network device.
 
-- ***Alias***: Set the alias of the device. This allows the administrator to easily identify each device.
+1. On the <Cmdname sid="side_deviceInventory" className="uitext" /> screen, click the ![Add icon](/img/ico-add.svg) <Cmdname sid="BTN09017" className="uitext" /> button.  
 
-- ***Version***: Select an SNMP protocol version (v1, v2c, v3). Each version has different security features and functionality.
+1. In <Cmdname sid="BTN09017" className="uitext" />, enter information in the **Device Info** tab.
 
-- ***Community***: Enter the SNMP community string. This string defines access rights to SNMP data.
+    * **Host** (`Required`): device IP address  
+    * **Host Name**: device hostname  
+    * **Manufacturer**: manufacturer information  
+    * **Contact**: contact person information  
+    * **Role**: role in the network  
+    * **Alias**: management alias  
+    * **Description**: detailed description  
+    * **Location**: physical installation location  
+    * **Host Type**: device type  
+    * **Serial No.**: serial number  
 
-- ***OIDs***: Set the list of OIDs to collect via SNMP polling. Basically it contains IF-MIB::ifTable OID. OIDs are used to trace various performance metrics for the network equipment.
+1. Click the **Add** button.
 
-- ***Active***: Enable or disable the SNMP polling collection by the toggle.
+### Device details management
 
-- ***Description***: Enter additional description for the device, such as device's intention.
+1. Click the ![Edit icon](/img/ic-edit.svg) for a registered device.  
 
-- ***SysContact***: Enter the contact information of the device administrator or the person in charge.
+1. In the details window, check or edit information in the **Device Info, SNMP Polling, Health Check** tabs, then click the **Manage** button.
 
-- ***SysLocation***: Enter the physical location of the device.
+#### Device Info tab
 
-### Modifying and deleting a device
+Configure basic information for the device.
 
-To modify the device information or delete a device, click the Edit or Delete icon in the ***Edit*** column on the left of the device list. 
+#### SNMP Polling tab
+
+Manage settings to periodically collect performance and status data from the device using the SNMP protocol. After editing, click **Save** to apply.
+
+* **Port** (`Required`): SNMP port (default: 161)  
+* **Community** (`Required`): SNMP v1/v2c community string (default: public)  
+* **Version** (`Required`): SNMP version (v1, v2c, v3)  
+* **User Name**: SNMPv3 username  
+* **Security Level**: security level (noAuthNoPriv, authNoPriv, authPriv)  
+* **Authentication Protocol**: authentication protocol  
+    * **Authentication Key**: authentication key  
+* **Privacy Protocol**: encryption protocol  
+    * **Privacy Key**: encryption key  
+
+##### OID selection and management
+
+1. Click the **Edit OID** button and select the MIB information to collect from the OID list.
+
+    | OID list column | Description |
+    | :---: | --- |
+    | **OID** | SNMP OID value |
+    | **MIB Information** | MIB name and details |
+    | **Manufacturer** | Manufacturer |
+    | **Category** | Metric type |
+    | **Description** | Detailed description |
+
+1. Click the **OK** button.
+
+##### Set collection interval
+
+* **Custom Polling Interval**: configure data collection interval (unit: seconds, default: 60)  
+* **Activate**: enable or disable SNMP Polling  
+
+#### Health Check tab
+
+Monitor the availability of network devices in real time.
+
+| Health Check column | Description |
+| :--: | --- |
+| **Activate** | Health check activation status |
+| **Target Host** | Target IP address or FQDN |
+| **Protocol** | Health check protocol (ICMP, etc.) |
+| **Memo** | Note or description |
+| **Actions** | Edit (![Edit icon](/img/ico-edit.svg)) or delete (![Delete icon](/img/ico-trash-red.svg)) health check targets |
+
+##### Add health check target
+
+1. In the **Health Check** tab, click the ![Add icon](/img/ic-s-plus.svg) **Add** button.  
+
+1. In the **Add health check target** popup, enter the following information:
+
+    * **Target Host**: enter IP address or FQDN  
+    * **Protocol**: select ICMP (dropdown)  
+    * **Memo**: optional note  
+    * **Activate**: choose whether to activate immediately  
+
+1. Click the **OK** button to save.

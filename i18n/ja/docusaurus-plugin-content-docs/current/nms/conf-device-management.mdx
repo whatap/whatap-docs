@@ -2,48 +2,122 @@
 id: conf-device-management
 title: デバイスインベントリ
 description: デバイスインベントリメニューを案内します。
+toc_max_heading_level: 4
 keywords:
   - NMS
   - 設定
   - デバイスインベントリ
 ---
 
-{/* 다국어 이미지 미작업 */}
+<Cmdname sid="side_deviceInventory" className="uitext" /> はネットワーク上の機器登録と監視設定を管理します。機器はマネージャが提供する Auto Discovery 機能で自動検出するか、必要に応じて手動で追加できます。登録された各機器は SNMP ベースの監視と Health Check を設定して、リアルタイム状態を確認できます。これによりネットワーク管理システムで監視対象デバイスを一元管理できます。
 
-ホーム画面 &gt; プロジェクト選択 &gt; <Cmdname sid="side_deviceInventory" className="uitext" />
+## 基本画面案内
 
-<Cmdname sid="side_deviceInventory" className="uitext" />メニューでネットワーク管理システムを活性化するためにモニタリングするデバイスを登録・管理します。
+<Cmdname sid="side_deviceInventory" className="uitext" /> では登録済みネットワーク機器の一覧をテーブル形式で確認できます。
 
-## 基本画面ガイド
+上部メニューでは機器登録と管理に関連する主要機能を提供します。
 
-{/* <ImgLang img="nms-conf-device-mng.png" desc="Device Management" /> */}
+* **マネージャ選択**: 接続された NMS Manager インスタンスを選択  
+* ![追加アイコン](/img/ico-add.svg) **デバイス追加**: 新しいネットワーク機器を手動で追加  
+* **Auto Discovery**: NMS Manager を通じてネットワーク機器を自動検出して追加  
 
-### デバイス追加
+| デバイス一覧項目 | 説明 |
+| :-------------: | ------------------------------ |
+| **Alias** | 機器エイリアス |
+| **Host** | IP アドレス |
+| **Hostname** | 機器のホスト名 |
+| **Description** | 機器の説明 (モデル名、用途など) |
+| **Manufacturer** | 製造元 (Cisco Systems, America など) |
+| **Location** | 設置場所 (階数、ラック位置など) |
+| **Contact** | 担当者情報 |
+| **Host Type** | 機器タイプ (Switch, Router, Server など) |
+| **Role** | 機器の役割 |
+| **Serial No.** | シリアル番号 |
+| **Firmware** | ファームウェアバージョン |
+| **SNMP** | SNMP 有効状態 (Enabled/Disabled) |
 
-デバイスを登録するには、左上でエージェントを選択し<UI>+</UI> <Cmdname sid="BTN09017" className="uitext" />ボタンをクリックします。 <Cmdname sid="BTN09017" className="uitext" />画面で次の情報を入力します。 
+### ![追加アイコン](/img/ico-add.svg) デバイス追加
 
-{/*  <ImgLang img="nms-conf-device-mng-add.png" desc="デバイス追加" /> */}
+新しいネットワーク機器を手動で登録できます。
 
-- **Host**: 対象デバイスのIPアドレスを入力します。
+1. <Cmdname sid="side_deviceInventory" className="uitext" /> 画面で ![追加アイコン](/img/ico-add.svg) <Cmdname sid="BTN09017" className="uitext" /> ボタンをクリック。  
+1. <Cmdname sid="BTN09017" className="uitext" /> の **Device Info** タブで情報を入力。  
 
-- **Port**: SNMP通信に使用されるポート番号を設定します。 基本的には、161番ポートが使用されます。
+    * **Host** (`必須`): 機器の IP アドレス  
+    * **Host Name**: 機器のホスト名  
+    * **Manufacturer**: 製造元情報  
+    * **Contact**: 担当者情報  
+    * **Role**: ネットワーク上の役割  
+    * **Alias**: 管理用エイリアス  
+    * **Description**: 機器詳細説明  
+    * **Location**: 物理設置場所  
+    * **Host Type**: 機器タイプ  
+    * **Serial No.**: シリアル番号  
 
-- **Alias**: そのデバイスのエイリアスを設定します。 これにより、管理者は各デバイスを簡単に識別できます。
+1. **追加** ボタンをクリック。  
 
-- **Version**: SNMPプロトコルバージョン(v1、v2c、v3)を選択します。 各バージョンは、セキュリティ機能と機能に違いがあります。
+### デバイス詳細管理
 
-- **Community**: SNMPコミュニティ文字列を入力します。 この文字列は、SNMPデータへのアクセス権限を定義します。
+1. 登録済み機器の ![編集アイコン](/img/ic-edit.svg) をクリック。  
+1. 詳細情報画面の **Device Info, SNMP Polling, Health Check** タブで情報を確認または修正し、**管理** ボタンをクリック。  
 
-- **OIDs**: SNMP Pollingを通じて収集するOIDリストを設定します。 基本的にIF-MIB::ifTable OIDが入っています。 OIDは、ネットワーク機器の様々な性能指標を追跡するために使用されます。
+#### Device Info タブ
 
-- **Active**: トグルを通じてSNMP Polling収集を活性化・非活性化します。
+機器の基本情報を設定。
 
-- **Description**: そのデバイスについて、機器の用途などの追加の説明を入力します。
+#### SNMP Polling タブ
 
-- **SysContact**: デバイス管理者またはその機器の責任者の連絡先情報を入力します。
+SNMP プロトコルを使って機器の性能と状態を定期的に収集する設定を管理。修正後、**保存** ボタンで反映。
 
-- **SysLocation**: デバイスの物理的位置を入力します。
+* **Port** (`必須`): SNMP ポート (デフォルト: 161)  
+* **Community** (`必須`): SNMP v1/v2c コミュニティ文字列 (デフォルト: public)  
+* **Version** (`必須`): SNMP バージョン (v1, v2c, v3)  
+* **User Name**: SNMPv3 ユーザー名  
+* **Security Level**: セキュリティレベル (noAuthNoPriv, authNoPriv, authPriv)  
+* **Authentication Protocol**: 認証プロトコル  
+    * **Authentication Key**: 認証キー  
+* **Privacy Protocol**: 暗号化プロトコル  
+    * **Privacy Key**: 暗号化キー  
 
-### デバイスの修正・削除
+##### OID 選択と管理
 
-デバイス情報を修正するか、デバイスを削除するには、デバイスリストの左側の**Edit**カラムで修正または削除アイコンをクリックします。 
+1. **Edit OID** ボタンをクリックし、OID リストから収集する MIB 情報を選択。  
+
+    | OID リスト項目 | 説明 |
+    | :---: | --- |
+    | **OID** | SNMP OID 値 |
+    | **MIB Information** | MIB 名称と情報 |
+    | **Manufacturer** | 製造元 |
+    | **Category** | 指標カテゴリ |
+    | **Description** | 詳細説明 |
+
+1. **OK** ボタンをクリック。  
+
+##### 収集間隔設定
+
+* **Custom Polling Interval**: データ収集間隔を設定 (秒単位、デフォルト: 60)  
+* **Activate**: SNMP Polling の有効/無効  
+
+#### Health Check タブ
+
+ネットワーク機器の可用性をリアルタイムで監視。
+
+| Health Check 項目 | 説明 |
+| :--: | --- |
+| **Activate** | ヘルスチェック有効状態 |
+| **Target Host** | 監視対象 IP アドレスまたは FQDN |
+| **Protocol** | ヘルスチェックプロトコル (ICMP など) |
+| **Memo** | メモや説明 |
+| **Actions** | 監視対象の編集 (![編集アイコン](/img/ico-edit.svg))、削除 (![削除アイコン](/img/ico-trash-red.svg)) |
+
+##### ヘルスチェック対象の追加
+
+1. **Health Check** タブで ![追加アイコン](/img/ic-s-plus.svg) **追加** ボタンをクリック。  
+1. **ヘルスチェック対象追加** ポップアップで情報を入力。  
+
+    * **Target Host**: IP アドレスまたは FQDN を入力  
+    * **Protocol**: ICMP を選択 (ドロップダウン)  
+    * **Memo**: 任意のメモ入力  
+    * **Activate**: 即時有効化の有無を選択  
+
+1. **OK** ボタンをクリックして保存。
