@@ -94,7 +94,7 @@ x-tagGroups:
       - プロジェク
       - グループ
       - エージェント
-      - イベント履歴
+      - イベント
   - name: Appication
     tags:
       - APM Spot情報照会
@@ -530,12 +530,538 @@ paths:
               -w "\n" \
               -H "x-whatap-token: {{ACCOUNT_API_TOKEN}}" \
               "https://api.whatap.io/open/api/json/group/{groupKey}/projects"
+  /open/api/json/event/v2/settings:
+    get:
+      summary: イベント設定の取得
+      description: イベント設定（New）メニューの［JSON 一括ダウンロード］と同じデータを取得します。
+      tags:
+        - イベント
+      parameters:
+        - $ref: 'parameters.yaml#/WhatapTokenHeader' 
+        - $ref: 'parameters.yaml#/WhatapPcodeHeader'
+      responses:
+        '200':
+          description: 取得成功
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  productType:
+                    type: string
+                    description: プロジェクトの製品タイプ
+                  platform:
+                    type: string
+                    description: プロジェクトの製品プラットフォーム
+                  events:
+                    type: object
+                    description: イベントタイプ別の設定リスト
+                    properties:
+                      BASIC:
+                        type: array
+                        description: |
+                          イベント設定［New］— 基本イベント
+                        items:
+                          type: object
+                          properties:
+                            criticalEnabled:
+                              type: boolean
+                              description: Critical レベルのアラートを使用するか（version == 1 の場合に使用）
+                            warningEnabled:
+                              type: boolean
+                              description: Warning レベルのアラートを使用するか（version == 1 の場合に使用）
+                            silentPeriod:
+                              type: integer
+                              description: ミュート時間
+                            metaId:
+                              type: string
+                              description: テンプレート一意識別子
+                            displayName:
+                              type: string
+                              description: ユーザー定義のイベントタイトル
+                            criticalThreshold:
+                              type: string
+                              description: Critical レベルの発生条件（version == 1 の場合に使用）
+                            warningThreshold:
+                              type: string
+                              description: Warning レベルの発生条件（version == 1 の場合に使用）
+                            message:
+                              type: string
+                              description: ユーザー定義のイベントメッセージ
+                            version:
+                              type: integer
+                              description: イベント設定のバージョン
+                            enabled:
+                              type: boolean
+                              description: イベントルールを有効化するか
+                            repeatDuration:
+                              type: long
+                              description: 繰り返し回数の判定ウィンドウ
+                            id:
+                              type: string
+                              description: イベントルール一意識別子
+                            conditions:
+                              type: array
+                              description: レベル別の発生条件（version ≥ 2 の場合に使用）
+                            selectCondition:
+                              type: object
+                              description: 対象フィルター条件（key=[value1, value2] 形式で保存）
+                            stateful:
+                              type: boolean
+                              description: 状態ベースのイベントを使用するか
+                            repeatCount:
+                              type: integer
+                              description: 繰り返し回数
+                      METRICS:
+                        type: array
+                        description: |
+                          メトリクスイベント
+                        items:
+                          type: object
+                          properties:
+                            eventMessage:
+                              type: string
+                              description: ユーザー定義のイベントメッセージ
+                            select:
+                              type: string
+                              description: 対象フィルター条件
+                            alertLabel:
+                              type: array
+                              description: イベント状態管理用 PK
+                              items:
+                                type: string
+                            rule:
+                              type: string
+                              description: 発生ルール（version == 0 で使用）
+                            silentSec:
+                              type: integer
+                              description: ミュート時間（秒）
+                            version:
+                              type: integer
+                              description: イベント設定のバージョン
+                            enabled:
+                              type: boolean
+                              description: イベントルールを有効化するか
+                            eventTitle:
+                              type: string
+                              description: ユーザー定義のイベントタイトル
+                            repeatDuration:
+                              type: long
+                              description: 繰り返し回数の判定ウィンドウ
+                            eventLevel:
+                              type: integer
+                              description: イベントレベル（version == 0 で使用）
+                            id:
+                              type: string
+                              description: イベントルール一意識別子
+                            category:
+                              type: string
+                              description: データ収集カテゴリ
+                            conditions:
+                              type: array
+                              description: レベル別の発生条件（version ≥ 1 で使用）
+                            stateful:
+                              type: boolean
+                              description: 状態ベースのイベントを使用するか
+                            repeatCount:
+                              type: integer
+                              description: 繰り返し回数
+                      COMPOSITE_METRICS:
+                        type: array
+                        description: |
+                          複合メトリクスイベント
+                        items:
+                          type: object
+                          properties:
+                            interval_sec:
+                              type: integer
+                              description: クエリ実行間隔
+                            query:
+                              type: string
+                              description: MXQL クエリ
+                            rule:
+                              type: string
+                              description: 発生ルール
+                            event_title:
+                              type: string
+                              description: ユーザー定義のイベントタイトル
+                            enabled:
+                              type: boolean
+                              description: イベントルールを有効化するか
+                            silent_sec:
+                              type: integer
+                              description: ミュート時間（秒）
+                            event_level:
+                              type: integer
+                              description: イベントレベル
+                            id:
+                              type: string
+                              description: イベントルール一意識別子
+                            time_trim:
+                              type: integer
+                              description: クエリ実行時の時間単位切り捨て間隔（ms）
+                            event_message:
+                              type: string
+                              description: ユーザー定義のイベントメッセージ
+                            time_period:
+                              type: long
+                              description: データ参照範囲
+                            stateful:
+                              type: boolean
+                              description: 状態ベースのイベントを使用するか
+                            desc:
+                              type: string
+                              description: メタ情報
+                      LOG_REALTIME:
+                        type: array
+                        description: |
+                          リアルタイムログイベント
+                        items:
+                          type: object
+                          properties:
+                            skiptime:
+                              type: long
+                              description: ミュート時間
+                            field:
+                              type: string
+                              description: 検索キー
+                            event_level:
+                              type: integer
+                              description: イベントレベル
+                            event_title:
+                              type: string
+                              description: ユーザー定義のイベントタイトル
+                            tag_select_rule:
+                              type: string
+                              description: 対象フィルター条件
+                            id:
+                              type: string
+                              description: イベントルール一意識別子
+                            event_message:
+                              type: string
+                              description: ユーザー定義のイベントメッセージ
+                            category:
+                              type: string
+                              description: ログカテゴリ
+                            keyword:
+                              type: string
+                              description: 検索値
+                            enabled:
+                              type: boolean
+                              description: イベントルールを有効化するか
+                      COMPOSITE_LOG:
+                        type: array
+                        description: |
+                          複合ログイベント
+                        items:
+                          type: object
+                          properties:
+                            id:
+                              type: string
+                              description: イベントルール一意識別子
+                            enabled:
+                              type: boolean
+                              description: イベントルールを有効化するか
+                            query:
+                              type: string
+                              description: 保存済みログパス
+                            query_inject:
+                              type: object
+                              nullable: true
+                              description: null
+                            query_param:
+                              type: object
+                              description: 詳細検索条件
+                              properties:
+                                "$category":
+                                  type: string
+                                  description: ログカテゴリ
+                                "$filter_excludes":
+                                  type: string
+                                  description: 除外/含むの指定（`true` 除外、`false` 含む）
+                                "$filter_keys":
+                                  type: string
+                                  description: 検索キー
+                                "$filter_values":
+                                  type: string
+                                  description: 検索値
+                                "$group_keys":
+                                  type: string
+                                  description: グルーピング基準（pcode 固定）
+                                "$group_time_unit":
+                                  type: string
+                                  description: 時間グルーピング範囲（1d 固定）
+                            time_period:
+                              type: long
+                              description: データ参照範囲
+                            rule:
+                              type: string
+                              description: 発生条件
+                            interval_sec:
+                              type: integer
+                              description: クエリ実行間隔
+                            silent_sec:
+                              type: integer
+                              description: ミュート時間（秒）
+                            event_level_text:
+                              type: string
+                              description: イベントレベル
+                            event_title:
+                              type: string
+                              description: ユーザー定義のイベントタイトル
+                            event_message:
+                              type: string
+                              description: ユーザー定義のイベントメッセージ
+                            stateful:
+                              type: boolean
+                              description: 状態ベースのイベントを使用するか
+                            desc:
+                              type: string
+                              description: メタ情報
+                      SERVER_LOG_FILE:
+                        type: array
+                        description: |
+                          サーバーログファイル／Windows イベント
+                        items:
+                          type: object
+                          properties:
+                            displayname:
+                              type: string
+                              description: ユーザー定義のイベントタイトル
+                            name:
+                              type: string
+                              description: イベントルール一意識別子
+                            logdefault:
+                              type: boolean
+                              description: 既定のログ設定を使用するか
+                              default: false
+                            id:
+                              type: string
+                              description: イベントルール一意識別子
+                            conditions:
+                              type: array
+                              description: イベント条件リスト
+                            conditions.FilePath:
+                              type: string
+                              description: 監視するファイルパス（eventSource == 1 または 5 の場合）
+                            conditions.elapsedSecond:
+                              type: integer
+                              description: n 秒間変更がなければ発生（checkTypes が MTIME_UNCHANGED かつ eventSource == 5 の場合）
+                            conditions.SearchStringRepeatCount:
+                              type: integer
+                              description: 繰り返し回数（eventSource == 1 または 2 の場合）
+                            conditions.Severity:
+                              type: integer
+                              description: "イベントレベル（危険度）— 3: warning, 5: critical"
+                              enum: [3, 5]
+                            conditions.WinEventCode:
+                              type: integer
+                              description: Windows イベント ID（eventSource == 2 の場合）
+                            conditions.WinEventMsgRegexExclude:
+                              type: string
+                              description: 除外キーワード（eventSource == 2 の場合）
+                            conditions.EventSource:
+                              type: integer
+                              description: "ログイベント種別 — 1: ログファイルキーワード, 2: Windows イベント, 5: ログファイル監視"
+                              enum: [1, 2, 5]
+                            conditions.checkTypes:
+                              type: array
+                              description: ファイル監視タイプ（eventSource == 5 の場合）
+                              items:
+                                type: string
+                                enum:
+                                  - USER
+                                  - GROUP
+                                  - PERMISSION
+                                  - FILE_NOT_FOUND
+                                  - MTIME_CHANGED
+                                  - MTIME_UNCHANGED
+                            conditions.FileRegex:
+                              type: string
+                              description: 検索キーワード（eventSource == 1 の場合）
+                            conditions.FileRegexExclude:
+                              type: string
+                              description: 除外キーワード（eventSource == 1 の場合）
+                            conditions.WinType:
+                              type: integer
+                              description: レベル（eventSource == 2 の場合）
+                            conditions.WinSourceName:
+                              type: string
+                              description: ソース（eventSource == 2 の場合）
+                            conditions.WinLogFile:
+                              type: string
+                              description: "ログ名（eventSource == 2 の場合）"
+                              enum:
+                                - Application
+                                - Security
+                                - Setup
+                                - System
+                                - ForwardedEvents
+                            conditions.WinEventMsgRegex:
+                              type: string
+                              description: 検索キーワード（eventSource == 2 の場合）
+                            conditions.SearchStringRepeatDuration:
+                              type: integer
+                              description: 期間（秒）（eventSource == 1 または 2 の場合）
+                            enabled:
+                              type: boolean
+                              description: イベントルールを有効化するか
+                      Transaction:
+                        type: array
+                        description: |
+                          トランザクションイベント
+                        items:
+                          type: object
+                          properties:
+                            silentTime:
+                              type: long
+                              description: ミュート時間
+                            appCtx:
+                              type: array
+                              description: ビジネス名のパターンリスト
+                              items:
+                                type: string
+                            excludeStatus:
+                              type: array
+                              description: ステータスコードの除外パターン
+                              items:
+                                type: string
+                            errorClass:
+                              type: array
+                              description: エラークラスのパターン
+                              items:
+                                type: string
+                            errorMessage:
+                              type: array
+                              description: エラーメッセージのパターン
+                              items:
+                                type: string
+                            excludeErrorMessage:
+                              type: array
+                              description: エラーメッセージの除外パターン
+                              items:
+                                type: string
+                            enabled:
+                              type: boolean
+                              description: イベントルールを有効化するか
+                            url:
+                              type: array
+                              description: URL パターン
+                              items:
+                                type: string
+                            excludeUrl:
+                              type: array
+                              description: URL の除外パターン
+                              items:
+                                type: string
+                            excludeErrorClass:
+                              type: array
+                              description: エラークラスの除外パターン
+                              items:
+                                type: string
+                            eventTitle:
+                              type: string
+                              description: ユーザー定義のイベントタイトル
+                            eventLevel:
+                              type: string
+                              description: イベントレベル
+                            limit:
+                              type: integer
+                              description: 発生回数
+                            conditionValue:
+                              type: string
+                              description: 条件タイプに応じた基準値（`conditionType == elapsed` の場合のみ使用）
+                            conditionType:
+                              type: string
+                              description: 条件タイプ
+                              enum: [elapsed, error, none]
+                            id:
+                              type: string
+                              description: イベントルール一意識別子
+                            resultType:
+                              type: string
+                              description: 集計基準
+                              enum:
+                                - per-agent        # エージェント別
+                                - per-url          # URL 別
+                                - per-agent-url    # 各エージェントの URL 別
+                                - per-error        # エラークラス別
+                                - per-agent-error  # 各エージェントのエラークラス別
+                                - per-appctx       # ビジネス別
+                                - per-agent-appctx # 各エージェントのビジネス別
+                                - total            # 全体
+                            excludeAppCtx:
+                              type: array
+                              description: ビジネス名の除外パターン
+                              items:
+                                type: string
+                            status:
+                              type: array
+                              description: ステータスコードのパターン
+                              items:
+                                type: string
+                      ANOMALY:
+                        type: array
+                        description: |
+                          異常検知イベント
+                        items:
+                          type: object
+                          properties:
+                            id:
+                              type: string
+                              description: イベントルール一意識別子
+                            pcode:
+                              type: long
+                              description: プロジェクトコード
+                            category:
+                              type: string
+                              description: データ収集カテゴリ
+                            enabled:
+                              type: boolean
+                              description: イベントルールを有効化するか
+                            eventMessage:
+                              type: string
+                              description: ユーザー定義のイベントメッセージ
+                            eventLevelText:
+                              type: string
+                              description: イベントレベル
+                            repeatCount:
+                              type: integer
+                              description: 繰り返し回数
+                            silentSec:
+                              type: integer
+                              description: ミュート時間（秒）
+                            tags:
+                              type: object
+                              description: 対象フィルター条件（エージェント選択）
+                              additionalProperties:
+                                type: array
+                                items:
+                                  type: string
+                            fields:
+                              type: array
+                              description: フィールド
+                              items:
+                                type: string
+                            width:
+                              type: number
+                              format: float
+                              description: "*固定値*"
+                            negativeScore:
+                              type: number
+                              format: float
+                              description: 下降パターンの感度
+                            positiveScore:
+                              type: number
+                              format: float
+                              description: 上昇パターンの感度
+
   /open/api/json/event/history:
     get:
       summary: イベント記録照会
       description: プロジェクトで発生したイベント履歴を照会できます。
       tags:
-        - イベント履歴
+        - イベント
       parameters:
         - $ref: 'parameters.yaml#/WhatapAccoutTokenHeader'
         - $ref: 'parameters.yaml#/WhatapPcodeHeader'
