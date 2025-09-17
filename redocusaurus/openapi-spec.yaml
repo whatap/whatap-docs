@@ -1203,17 +1203,6 @@ paths:
                             exceptTime:
                               type: long
                               description: 탐지 제외 시간
-                      config 공통 구조:
-                        type: array
-                        items:
-                          type: object
-                          properties:
-                            enabled:
-                              type: boolean
-                              description: 패턴 활성화 여부
-                            silent:
-                              type: long
-                              description: 무음 시간
               example:
                 - productType: APM
                   platform: JAVA
