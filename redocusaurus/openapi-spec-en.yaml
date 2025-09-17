@@ -172,7 +172,7 @@ x-tagGroups:
       - Project
       - Group
       - Agent
-      - Event History
+      - Event
   - name: Appication
     tags:
       - APM spot information API
@@ -612,14 +612,784 @@ paths:
               -w "\n" \
               -H "x-whatap-token: {{ACCOUNT_API_TOKEN}}" \
               "https://api.whatap.io/open/api/json/group/{groupKey}/projects"
+  /open/api/json/event/v2/settings:
+    get:
+      summary: Get event settings
+      description: >-
+        Retrieves the same data as [JSON Bulk Download] in the Event Settings
+        (New) menu.
+      tags:
+        - Event
+      parameters:
+        - $ref: '#/components/parameters/WhatapTokenHeader'
+        - $ref: '#/components/parameters/WhatapPcodeHeader'
+      responses:
+        '200':
+          description: Retrieval succeeded
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  productType:
+                    type: string
+                    description: Project product type
+                  platform:
+                    type: string
+                    description: Project product platform
+                  events:
+                    type: object
+                    description: Settings list by event type
+                    properties:
+                      BASIC:
+                        type: array
+                        description: |
+                          Event Settings [New] – Basic events
+                        items:
+                          type: object
+                          properties:
+                            criticalEnabled:
+                              type: boolean
+                              description: >-
+                                Whether to use Critical-level alerts (used when
+                                version == 1)
+                            warningEnabled:
+                              type: boolean
+                              description: >-
+                                Whether to use Warning-level alerts (used when
+                                version == 1)
+                            silentPeriod:
+                              type: integer
+                              description: Mute duration
+                            metaId:
+                              type: string
+                              description: Template unique identifier
+                            displayName:
+                              type: string
+                              description: User-defined event title
+                            criticalThreshold:
+                              type: string
+                              description: >-
+                                Critical-level trigger condition (used when
+                                version == 1)
+                            warningThreshold:
+                              type: string
+                              description: >-
+                                Warning-level trigger condition (used when
+                                version == 1)
+                            message:
+                              type: string
+                              description: User-defined event message
+                            version:
+                              type: integer
+                              description: Version of the event setting
+                            enabled:
+                              type: boolean
+                              description: Whether the event rule is enabled
+                            repeatDuration:
+                              type: long
+                              description: Time window for counting repeats
+                            id:
+                              type: string
+                              description: Event rule unique identifier
+                            conditions:
+                              type: array
+                              description: >-
+                                Per-level trigger conditions (used when version
+                                ≥ 2)
+                            selectCondition:
+                              type: object
+                              description: >-
+                                Target filter condition (stored as key=[value1,
+                                value2])
+                            stateful:
+                              type: boolean
+                              description: Whether to use state-based events
+                            repeatCount:
+                              type: integer
+                              description: Repeat count
+                      METRICS:
+                        type: array
+                        description: |
+                          Metrics events
+                        items:
+                          type: object
+                          properties:
+                            eventMessage:
+                              type: string
+                              description: User-defined event message
+                            select:
+                              type: string
+                              description: Target filter condition
+                            alertLabel:
+                              type: array
+                              description: PK for event state management
+                              items:
+                                type: string
+                            rule:
+                              type: string
+                              description: Trigger rule (used when version == 0)
+                            silentSec:
+                              type: integer
+                              description: Mute duration (seconds)
+                            version:
+                              type: integer
+                              description: Version of the event setting
+                            enabled:
+                              type: boolean
+                              description: Whether the event rule is enabled
+                            eventTitle:
+                              type: string
+                              description: User-defined event title
+                            repeatDuration:
+                              type: long
+                              description: Time window for counting repeats
+                            eventLevel:
+                              type: integer
+                              description: Event level (used when version == 0)
+                            id:
+                              type: string
+                              description: Event rule unique identifier
+                            category:
+                              type: string
+                              description: Data collection category
+                            conditions:
+                              type: array
+                              description: >-
+                                Per-level trigger conditions (used when version
+                                ≥ 1)
+                            stateful:
+                              type: boolean
+                              description: Whether to use state-based events
+                            repeatCount:
+                              type: integer
+                              description: Repeat count
+                      COMPOSITE_METRICS:
+                        type: array
+                        description: |
+                          Composite metrics events
+                        items:
+                          type: object
+                          properties:
+                            interval_sec:
+                              type: integer
+                              description: Query execution interval
+                            query:
+                              type: string
+                              description: MXQL query
+                            rule:
+                              type: string
+                              description: Trigger rule
+                            event_title:
+                              type: string
+                              description: User-defined event title
+                            enabled:
+                              type: boolean
+                              description: Whether the event rule is enabled
+                            silent_sec:
+                              type: integer
+                              description: Mute duration (seconds)
+                            event_level:
+                              type: integer
+                              description: Event level
+                            id:
+                              type: string
+                              description: Event rule unique identifier
+                            time_trim:
+                              type: integer
+                              description: Time-unit trim interval for query execution (ms)
+                            event_message:
+                              type: string
+                              description: User-defined event message
+                            time_period:
+                              type: long
+                              description: Data lookback range
+                            stateful:
+                              type: boolean
+                              description: Whether to use state-based events
+                            desc:
+                              type: string
+                              description: Meta information
+                      LOG_REALTIME:
+                        type: array
+                        description: |
+                          Real-time log events
+                        items:
+                          type: object
+                          properties:
+                            skiptime:
+                              type: long
+                              description: Mute duration
+                            field:
+                              type: string
+                              description: Search key
+                            event_level:
+                              type: integer
+                              description: Event level
+                            event_title:
+                              type: string
+                              description: User-defined event title
+                            tag_select_rule:
+                              type: string
+                              description: Target filter condition
+                            id:
+                              type: string
+                              description: Event rule unique identifier
+                            event_message:
+                              type: string
+                              description: User-defined event message
+                            category:
+                              type: string
+                              description: Log category
+                            keyword:
+                              type: string
+                              description: Search value
+                            enabled:
+                              type: boolean
+                              description: Whether the event rule is enabled
+                      COMPOSITE_LOG:
+                        type: array
+                        description: |
+                          Composite log events
+                        items:
+                          type: object
+                          properties:
+                            id:
+                              type: string
+                              description: Event rule unique identifier
+                            enabled:
+                              type: boolean
+                              description: Whether the event rule is enabled
+                            query:
+                              type: string
+                              description: Saved log path
+                            query_inject:
+                              type: object
+                              nullable: true
+                              description: null
+                            query_param:
+                              type: object
+                              description: Detailed query conditions
+                              properties:
+                                $category:
+                                  type: string
+                                  description: Log category
+                                $filter_excludes:
+                                  type: string
+                                  description: >-
+                                    Exclude/include flag (`true` exclude,
+                                    `false` include)
+                                $filter_keys:
+                                  type: string
+                                  description: Search key
+                                $filter_values:
+                                  type: string
+                                  description: Search value
+                                $group_keys:
+                                  type: string
+                                  description: Grouping key (fixed to pcode)
+                                $group_time_unit:
+                                  type: string
+                                  description: Time grouping range (fixed to 1d)
+                            time_period:
+                              type: long
+                              description: Data lookback range
+                            rule:
+                              type: string
+                              description: Trigger condition
+                            interval_sec:
+                              type: integer
+                              description: Query execution interval
+                            silent_sec:
+                              type: integer
+                              description: Mute duration (seconds)
+                            event_level_text:
+                              type: string
+                              description: Event level
+                            event_title:
+                              type: string
+                              description: User-defined event title
+                            event_message:
+                              type: string
+                              description: User-defined event message
+                            stateful:
+                              type: boolean
+                              description: Whether to use state-based events
+                            desc:
+                              type: string
+                              description: Meta information
+                      SERVER_LOG_FILE:
+                        type: array
+                        description: |
+                          Server log file / Windows Event
+                        items:
+                          type: object
+                          properties:
+                            displayname:
+                              type: string
+                              description: User-defined event title
+                            name:
+                              type: string
+                              description: Event rule unique identifier
+                            logdefault:
+                              type: boolean
+                              description: Whether to use the default log configuration
+                              default: false
+                            id:
+                              type: string
+                              description: Event rule unique identifier
+                            conditions:
+                              type: array
+                              description: List of event conditions
+                            conditions.FilePath:
+                              type: string
+                              description: >-
+                                Path of the file to watch (used when eventSource
+                                == 1 or 5)
+                            conditions.elapsedSecond:
+                              type: integer
+                              description: >-
+                                Trigger if no modification for n seconds (used
+                                when checkTypes is MTIME_UNCHANGED and
+                                eventSource == 5)
+                            conditions.SearchStringRepeatCount:
+                              type: integer
+                              description: Repeat count (used when eventSource == 1 or 2)
+                            conditions.Severity:
+                              type: integer
+                              description: 'Event level (severity) — 3: warning, 5: critical'
+                              enum:
+                                - 3
+                                - 5
+                            conditions.WinEventCode:
+                              type: integer
+                              description: Windows Event ID (used when eventSource == 2)
+                            conditions.WinEventMsgRegexExclude:
+                              type: string
+                              description: Exclusion keyword (used when eventSource == 2)
+                            conditions.EventSource:
+                              type: integer
+                              description: >-
+                                Log event type — 1: Log file keyword event, 2:
+                                Windows Event, 5: Log file watch event
+                              enum:
+                                - 1
+                                - 2
+                                - 5
+                            conditions.checkTypes:
+                              type: array
+                              description: File watch types (used when eventSource == 5)
+                              items:
+                                type: string
+                                enum:
+                                  - USER
+                                  - GROUP
+                                  - PERMISSION
+                                  - FILE_NOT_FOUND
+                                  - MTIME_CHANGED
+                                  - MTIME_UNCHANGED
+                            conditions.FileRegex:
+                              type: string
+                              description: Search keyword (used when eventSource == 1)
+                            conditions.FileRegexExclude:
+                              type: string
+                              description: Exclusion keyword (used when eventSource == 1)
+                            conditions.WinType:
+                              type: integer
+                              description: Level (used when eventSource == 2)
+                            conditions.WinSourceName:
+                              type: string
+                              description: Source (used when eventSource == 2)
+                            conditions.WinLogFile:
+                              type: string
+                              description: Log name (used when eventSource == 2)
+                              enum:
+                                - Application
+                                - Security
+                                - Setup
+                                - System
+                                - ForwardedEvents
+                            conditions.WinEventMsgRegex:
+                              type: string
+                              description: Search keyword (used when eventSource == 2)
+                            conditions.SearchStringRepeatDuration:
+                              type: integer
+                              description: >-
+                                Duration (seconds) (used when eventSource == 1
+                                or 2)
+                            enabled:
+                              type: boolean
+                              description: Whether the event rule is enabled
+                      Transaction:
+                        type: array
+                        description: |
+                          Transaction events
+                        items:
+                          type: object
+                          properties:
+                            silentTime:
+                              type: long
+                              description: Mute duration
+                            appCtx:
+                              type: array
+                              description: Business name pattern list
+                              items:
+                                type: string
+                            excludeStatus:
+                              type: array
+                              description: Status code exclude patterns
+                              items:
+                                type: string
+                            errorClass:
+                              type: array
+                              description: Error class patterns
+                              items:
+                                type: string
+                            errorMessage:
+                              type: array
+                              description: Error message patterns
+                              items:
+                                type: string
+                            excludeErrorMessage:
+                              type: array
+                              description: Error message exclude patterns
+                              items:
+                                type: string
+                            enabled:
+                              type: boolean
+                              description: Whether the event rule is enabled
+                            url:
+                              type: array
+                              description: URL patterns
+                              items:
+                                type: string
+                            excludeUrl:
+                              type: array
+                              description: URL exclude patterns
+                              items:
+                                type: string
+                            excludeErrorClass:
+                              type: array
+                              description: Error class exclude patterns
+                              items:
+                                type: string
+                            eventTitle:
+                              type: string
+                              description: User-defined event title
+                            eventLevel:
+                              type: string
+                              description: Event level
+                            limit:
+                              type: integer
+                              description: Occurrence count
+                            conditionValue:
+                              type: string
+                              description: >-
+                                Baseline value according to condition type (used
+                                only when `conditionType == elapsed`)
+                            conditionType:
+                              type: string
+                              description: Condition type
+                              enum:
+                                - elapsed
+                                - error
+                                - none
+                            id:
+                              type: string
+                              description: Event rule unique identifier
+                            resultType:
+                              type: string
+                              description: Aggregation scope
+                              enum:
+                                - per-agent
+                                - per-url
+                                - per-agent-url
+                                - per-error
+                                - per-agent-error
+                                - per-appctx
+                                - per-agent-appctx
+                                - total
+                            excludeAppCtx:
+                              type: array
+                              description: Business name exclude patterns
+                              items:
+                                type: string
+                            status:
+                              type: array
+                              description: Status code patterns
+                              items:
+                                type: string
+                      ANOMALY:
+                        type: array
+                        description: |
+                          Anomaly detection events
+                        items:
+                          type: object
+                          properties:
+                            id:
+                              type: string
+                              description: Event rule unique identifier
+                            pcode:
+                              type: long
+                              description: Project code
+                            category:
+                              type: string
+                              description: Data collection category
+                            enabled:
+                              type: boolean
+                              description: Whether the event rule is enabled
+                            eventMessage:
+                              type: string
+                              description: User-defined event message
+                            eventLevelText:
+                              type: string
+                              description: Event level
+                            repeatCount:
+                              type: integer
+                              description: Repeat count
+                            silentSec:
+                              type: integer
+                              description: Mute duration (seconds)
+                            tags:
+                              type: object
+                              description: Target filter condition (agent selection)
+                              additionalProperties:
+                                type: array
+                                items:
+                                  type: string
+                            fields:
+                              type: array
+                              description: Fields
+                              items:
+                                type: string
+                            width:
+                              type: number
+                              format: float
+                              description: '*Fixed value*'
+                            negativeScore:
+                              type: number
+                              format: float
+                              description: Sensitivity for downward patterns
+                            positiveScore:
+                              type: number
+                              format: float
+                              description: Sensitivity for upward patterns
+                            ignoreNegative:
+                              type: boolean
+                              description: Whether to ignore downward patterns
+                            ignorePositive:
+                              type: boolean
+                              description: Whether to ignore upward patterns
+                            objectMerge:
+                              type: string
+                              description: Data merge method per agent
+                            filter:
+                              type: object
+                              deprecated: true
+                              description: '*Deprecated*'
+                      HITMAP:
+                        type: array
+                        description: |
+                          Heatmap pattern events
+                        items:
+                          type: object
+                          properties:
+                            pcode:
+                              type: long
+                              description: Project code
+                            config:
+                              type: object
+                              description: >-
+                                Per-pattern settings (`key`: pattern key,
+                                `value`: pattern settings)
+                              properties:
+                                horizontal:
+                                  type: object
+                                  description: Heatmap horizontal-line pattern settings
+                                  properties:
+                                    enabled:
+                                      type: boolean
+                                      description: Whether the pattern is enabled
+                                    silent:
+                                      type: long
+                                      description: Mute duration
+                                flying:
+                                  type: object
+                                  description: Heatmap flying pattern settings
+                                  properties:
+                                    enabled:
+                                      type: boolean
+                                      description: Whether the pattern is enabled
+                                    silent:
+                                      type: long
+                                      description: Mute duration
+                                vertical:
+                                  type: object
+                                  description: Heatmap vertical-line pattern settings
+                                  properties:
+                                    enabled:
+                                      type: boolean
+                                      description: Whether the pattern is enabled
+                                    silent:
+                                      type: long
+                                      description: Mute duration
+                                overload:
+                                  type: object
+                                  description: Heatmap overload pattern settings
+                                  properties:
+                                    enabled:
+                                      type: boolean
+                                      description: Whether the pattern is enabled
+                                    silent:
+                                      type: long
+                                      description: Mute duration
+                                flood:
+                                  type: object
+                                  description: Heatmap flood pattern settings
+                                  properties:
+                                    enabled:
+                                      type: boolean
+                                      description: Whether the pattern is enabled
+                                    silent:
+                                      type: long
+                                      description: Mute duration
+                            exceptTime:
+                              type: long
+                              description: Detection exclude duration
+              example:
+                - productType: APM
+                  platform: JAVA
+                  events:
+                    - BASIC:
+                        - criticalEnabled: false
+                          warningEnabled: true
+                          silentPeriod: 300000
+                          metaId: java004
+                          displayName: Active Transaction
+                          criticalThreshold: ''
+                          warningThreshold: active_tx_count > 100
+                          message: Active Transaction = ${active_tx_count}
+                          version: 2
+                          enabled: false
+                          repeatDuration: 0
+                          id: x3gpgkfnnc3f39
+                          conditions:
+                            - level: 20
+                              rule: active_tx_count > 100
+                              enabled: true
+                          selectCondition: {}
+                          stateful: false
+                          repeatCount: 1
+                        - criticalEnabled: true
+                          warningEnabled: true
+                          silentPeriod: 300000
+                          metaId: java002
+                          displayName: Server Memory
+                          criticalThreshold: mem > 90
+                          warningThreshold: mem > 70
+                          message: Server Memory = ${mem}
+                          version: 2
+                          enabled: false
+                          repeatDuration: 0
+                          id: xc1l4q6pdefcf
+                          conditions:
+                            - level: 30
+                              rule: mem > 90
+                              enabled: true
+                            - level: 20
+                              rule: mem > 70
+                              enabled: true
+                          selectCondition: {}
+                          stateful: false
+                          repeatCount: 1
+                      METRICS:
+                        - eventMessage: 'Metrics: tx_count: ${tx_count}'
+                          select: ${oname} == 'eureka'
+                          alertLabel: []
+                          rule: ${tx_count} >= 120
+                          silentSec: 0
+                          version: 0
+                          enabled: true
+                          eventTitle: Transaction count exceeds 120
+                          repeatDuration: 0
+                          eventLevel: 30
+                          id: z9jqlbn0217eml
+                          category: app_counter
+                          conditions:
+                            - level: 30
+                              rule: ${tx_count} >= 120
+                              enabled: true
+                          stateful: true
+                          repeatCount: 0
+                      COMPOSITE_METRICS:
+                        - interval_sec: 60
+                          query: |-
+                            CATEGORY app_counter
+                            TAGLOAD
+                            SELECT
+                            GROUP { timeunit:1m, merge:"tx_count", pk:"oid" }
+                            CREATE { key: _pk_, value: "oid" }
+                          rule: tx_count > 5
+                          event_title: key oid
+                          enabled: false
+                          silent_sec: 60
+                          event_level: 20
+                          id: z8aadoam9thlqp
+                          time_trim: 5000
+                          event_message: 'tx_count : ${tx_count}'
+                          time_period: 60000
+                          stateful: true
+                          desc: >-
+                            {"widgetType":"EXPERT","supports":[],"isExpertEditable":false,"flexEventWidget":{"widgetType":"FLEX_EVENT","id":"composite_metrics_widget","requestApi":"LAST","option":{"stime":1751591820000,"etime":1751595420000,"isLive":false,"liveUpdateIntervalSec":0,"globalTime":false,"chart":"SERIES","pcodes":[4],"flex_event":{"category":"app_counter","tagPksGroup":{"pks":["oid"],"timeunit":5000},"fieldsWithMerges":[{"key":"httpc_count","timeMerge":"AVG","objectMerge":"AVG","unit":"COUNT","_label":"92a1f326-b9b7-45c7-8c9f-6bc4b023ac0f"}]},"chartAside":{"chart":"TABLE"},"timeAction":"CUSTOM"},"metrics":[{"mql":"INJECT
+                            timepast\nHEADER { \"httpc_count$\":\"COUNT\"
+                            }\nOIDSET { oid:$oid, okind:$okind, onode:$onode
+                            }\nCATEGORY \"app_counter\"\nTAGLOAD\nINJECT
+                            default\nUPDATE {key: httpc_count, value:
+                            avg}\nGROUP {pk:[oid], timeunit: 5000}\nUPDATE {key:
+                            httpc_count, value: avg}\nCREATE {key: _id_,
+                            expr:\"oid\"}\nCREATE {key: _name_, expr:\"oid\"}
+                            \nSELECT [_name_, _id_, time, oid,
+                            httpc_count]\n"}]},"pcode":4}
+                      TRANSACTION:
+                        - silentTime: 60000,
+                          appCtx: []
+                          excludeStatus:
+                            - gg
+                          errorClass: []
+                          errorMessage: []
+                          excludeErrorMessage: []
+                          enabled: true
+                          url:
+                            - '**/pusan'
+                          excludeUrl:
+                            - '*add*'
+                          excludeErrorClass: []
+                          eventTitle: Transaction event
+                          eventLevel: 20
+                          limit: 1
+                          conditionValue: 0
+                          conditionType: none
+                          id: z8c3sdrt04jpcs
+                          resultType: per-agent
+                          excludeAppCtx: []
+                          status: []
+    x-codeSamples:
+      - lang: curl
+        source: |
+          curl --location \
+          -w "\n" \
+          -H "Content-Type: application/json" \
+          -H 'x-whatap-token: {{PROJECT_API_TOKEN}}' \
+          -H 'x-whatap-pcode: {{projectCode}}' \
+          "https://api.whatap.io/open/api/json/event/v2/settings"
   /open/api/json/event/history:
     get:
       summary: Querying the event history
       description: You can querying the event records that occurred in the project.
       tags:
-        - Event History
+        - Event
       parameters:
-        - $ref: '#/components/parameters/WhatapAccoutTokenHeader'
+        - $ref: '#/components/parameters/WhatapTokenHeader'
         - $ref: '#/components/parameters/WhatapPcodeHeader'
         - $ref: '#/components/parameters/StartTimeQuery'
         - $ref: '#/components/parameters/EndTimeQuery'
