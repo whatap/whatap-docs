@@ -1,58 +1,63 @@
-Flexボードでダッシュボードに配置できるウィジェットの種類を案内します。 ウィジェットはダッシュボードの構成要素であり、モニタリング対象のデータ全体を可視化して連携できます。 <Cmdname sid="side_integratedFlexboard" className="uitext" />または<Cmdname sid="side_flexboard" className="uitext" />メニューでダッシュボードを選択し、<Cmdname sid="edit_mode" className="uitext" />へ移動します。 <Cmdname sid="widget_template" className="uitext" />で、ダッシュボードに配置できるウィジェット一覧を確認できます。
+Flex ボードではウィジェットでダッシュボードを構成し、監視対象の全データを可視化して連携できます。<Cmdname sid="side_integratedFlexboard" className="uitext" /> または <Cmdname sid="side_flexboard" className="uitext" /> メニューでダッシュボードを選択してから <Cmdname sid="edit_mode" className="uitext" /> に移動すると、<Cmdname sid="widget_template" className="uitext" /> で利用可能なウィジェットを確認できます。
 
-|        <Cmdname sid="side_integratedFlexboard" className="uitext" />       |           <Cmdname sid="side_flexboard" className="uitext" />           |
-| :------------------------------------------------------------------------: | :---------------------------------------------------------------------: |
-| <ImgLang img='flexboad-integrated-widget-template.png' desc='統合Flexボード' /> | <ImgLang img='flexboad-project-widget-template.png' desc='統合Flexボード' /> |
+* <Cmdname sid="side_integratedFlexboard" className="uitext" />: 所属するすべてのプロジェクトの製品タイプに該当するウィジェットを選択可能  
+* <Cmdname sid="side_flexboard" className="uitext" />: 該当プロジェクトの製品タイプに該当するウィジェットのみ選択可能  
 
-<Cmdname sid="side_integratedFlexboard" className="uitext" />メニューでは、ユーザーが所属するプロジェクトのすべての商品タイプに該当するウィジェットを選択できますが、<Cmdname sid="side_flexboard" className="uitext" />メニューでは、そのプロジェクトの商品タイプに該当するウィジェットのみ選択できます。
+| <Cmdname sid="side_integratedFlexboard" className="uitext" /> | <Cmdname sid="side_flexboard" className="uitext" /> |
+| :--: | :--: |
+| <ImgLang img='flexboad-integrated-widget-template.png' desc='統合 Flexboard' /> | <ImgLang img='flexboad-project-widget-template.png' desc='統合 Flexboard' /> |
 
 :::note
 
-- プロジェクトの商品タイプによって<Cmdname sid="widget_template" className="uitext" />で選択できるウィジェットは異なる場合があります。
+プロジェクトの製品タイプにより、<Cmdname sid="widget_template" className="uitext" /> で選択できるウィジェットは異なる場合があります。
 
-- ウィジェット右上で利用できる共通オプションの詳細については、[次の文書](flexboard-widget-manage)を参照してください。
+* ウィジェット右上の共通オプションの詳細は、製品別の **Flex ボード > ウィジェット管理** ドキュメントを参照してください。
 
-- メンバー権限によってウィジェットの機能が利用できない場合があります。 メンバー権限の詳細については、[次の文書](../project/project-structure#project-auth)を参照してください。
+* メンバー権限によりウィジェット機能は制限されることがあります。詳細は [プロジェクト構造とメンバー権限](../project/project-structure#project-auth) ドキュメントを参照してください。
 
 :::
 
-## グラフ{#graph}
+## グラフ系ウィジェット {#graph}
 
-ダッシュボードに配置できるデータグラフ型のウィジェットです。
+時間推移や指標間の関係を可視化し、性能変化・分布・比較を一目で把握します。
 
-### ![](/img/ico-normal-graph.svg)時系列{#timeseries}
+### ![](/img/ico-normal-graph.svg) 時系列 {#timeseries}
 
-時系列チャートウィジェットを使用して、時間の経過に伴うメトリクスの変化を確認できます。 
+時系列チャートウィジェットは、時間経過に伴う指標変化を確認する基本チャートです。  
 
 ![時系列チャート](/img/fb-time-series-widget.png)
 
-時系列チャートウィジェットは、以前の時間と比較できる機能を提供します。 ウィジェット右上の![Historyアイコン](/img/ic-history.svg)ボタンを選択します。
+時系列チャートウィジェットは前の時間と比較できます。
 
-<ImgLang img="fb-time-series-widget-compare-time.png" desc="前回と比較" />
+<ImgLang img="fb-time-series-widget-compare-time.png" desc="以前の時間と比較" />
 
-ご希望の時間単位を設定した上で、<Cmdname sid="apply" className="uitext" />ボタンを選択します。 マウスをチャートの上にかざすと、比較したデータを確認できます。
+1. ウィジェット右上の ![履歴アイコン](/img/ic-history.svg) をクリックします。
+
+1. 希望の時間単位を設定し、<Cmdname sid="apply" className="uitext" /> ボタンをクリックします。チャートにマウスを乗せると、ツールチップで比較データを確認できます。
 
 :::note
+<Cmdname sid="compare_with_previous_time" className="uitext" /> はすべてのウィジェットで提供される機能ではなく、<Cmdname sid="edit_mode" className="uitext" /> でのみ使用できます。
 
-- データマージオプションの詳細については、[次の文書](flexboard-widget-manage#datamerge-option)を参照してください。
-
-- ウィジェットによって、<Cmdname sid="compare_with_previous_time" className="uitext" />機能は提供しない場合があります。 この機能は<Cmdname sid="edit_mode" className="uitext" />で利用できます。
-
+* データ結合オプションの詳細は、製品別の **Flex ボード > ウィジェット管理** ドキュメントを参照してください。
 :::
 
-### ![](/img/ico-topn-graph.svg) TopN時系列{#topn}
+### ![](/img/ico-topn-graph.svg) Top N 時系列 {#topn}
 
-時間によるメトリクスの変化とともに、モニタリング対象のメトリクス順位を確認できるウィジェットです。
+時間に伴う指標変化と監視対象の指標順位を確認できるウィジェットです。
 
-![TopN時系列チャート](/img/fb-time-series-topn-widget.png)
+![TopN 時系列チャート](/img/fb-time-series-topn-widget.png)
 
-チャートに表示する上位N個の数を設定できます。 <Cmdname sid="edit_mode" className="uitext" />でのウィジェットの右上にある詳細を見る(![アイコン](/img/ico-more.svg))ボタンを選択した後、<Cmdname sid="top_rank" className="uitext" /><UI>N</UI>項目をクリックします。
+チャートに表示する上位 N 件を設定できます。
 
-<ImgLang img="fb-time-series-topn-widget-setting.png" desc="TopN" />
+1. <Cmdname sid="edit_mode" className="uitext" /> でウィジェット右上のその他 (![アイコン](/img/ico-more.svg)) をクリックします。
+
+1. <Cmdname sid="top_rank" className="uitext" /><UI>N</UI> をクリックし、表示する上位 N 件を選択します。
+
+<ImgLang img="fb-time-series-topn-widget-setting.png" desc="Top N" />
 
 ### ![](/img/ic-line-text-chart.svg) Apdex {#apdex}
 
-[Application Performance Index(Apdex)](https://www.apdex.org/)、アプリケーションの性能メトリクスを確認できるウィジェットです。
+[Application Performance Index(Apdex)](https://www.apdex.org/) によるアプリケーション性能指標を確認できるウィジェットです。
 
 ![Apdex](/img/fb-apdex-widget.png)
 
@@ -60,7 +65,7 @@ Flexボードでダッシュボードに配置できるウィジェットの種�
 
 :::note
 
-**Apdex**ウィジェットは、アプリケーションモニタリングの製品群で利用でき、詳細は[次の文書](dashboard#apdex)を参照してください。
+**Apdex** ウィジェットはアプリケーション監視製品群で利用可能です。詳細は[次のドキュメント](dashboard#apdex)を参照してください。
 
 :::
 
@@ -70,25 +75,25 @@ Flexボードでダッシュボードに配置できるウィジェットの種�
 
 :::note
 
-**Apdex**ウィジェットは、アプリケーションモニタリングの製品群で利用できます。
+**Apdex** ウィジェットはアプリケーション監視製品群で利用可能です。
 
 :::
 
 </Xclude>
 
-### ![](/img/ic-pie-chart.svg)円形{#piechart}
+### ![](/img/ic-pie-chart.svg) 円 {#piechart}
 
 <Columns>
 
 <Column className="text--left width--50">
 
-![円形チャートウィジェット](/img/fb-pie-chart-widget.png)
+![円グラフウィジェット](/img/fb-pie-chart-widget.png)
 
 </Column>
 
 <Column className="text--left">
 
-円形チャートウィジェットです。 収集したデータの全体比部門構成比を確認するのに役立ちます。 CPUおよびメモリ使用率、エラー件数などの数値を確認するのに活用できます。
+円グラフウィジェットです。収集データの全体に対する構成比を確認するのに有用です。CPU とメモリ使用率、エラー件数などを確認できます。
 
 </Column>
 
@@ -96,19 +101,21 @@ Flexボードでダッシュボードに配置できるウィジェットの種�
 
 ### ![](/img/ic-dashboard-hitmap.svg) ヒットマップ {#hitmap}
 
-終了したトランザクション応答時間を分布図で表現した<Cmdname sid="AA005" className="uitext" />ウィジェットです。
+完了トランザクションの応答時間を分布で表す <Cmdname sid="AA005" className="uitext" /> ウィジェットです。
 
 <ImgLang img="fb-hitmap-widget.png" desc="Hitmap" />
 
-<Cmdname sid="AA005" className="uitext" />チャートは、終了したトランザクションの応答時間を分布図で表現します。 横軸はトランザクションの終了時間です。 縦軸は実行時間です。 応答時間が伸びたトランザクションは、分布図の上段に位置します。 <Cmdname sid="AA005" className="uitext" />チャートの中の領域をドラッグすると、詳細なトランザクション情報が確認できる<Cmdname sid="TTL06209" className="uitext" />画面が表示されます。
+横軸はトランザクション終了時刻、縦軸は実行時間です。実行時間が長いトランザクションは分布の上部に表示されます。<Cmdname sid="AA005" className="uitext" /> のチャート領域をドラッグすると、詳細トランザクション情報を確認できる <Cmdname sid="TTL06209" className="uitext" /> 画面が表示されます。
+
+横軸は**終了時刻**、縦軸は**実行時間**です。チャート領域をドラッグすると、詳細トランザクションを表示する <Cmdname sid="TTL06209" className="uitext" /> 画面が開きます。
 
 <InDoc product="java,php,python,nodejs,dotnet,golang,kubernetes">
 
 :::note
 
-- <Cmdname sid="AA005" className="uitext" />ウィジェットの詳細については、[次の文書](dashboard#AA005)を参照してください。
+* <Cmdname sid="AA005" className="uitext" /> ウィジェットの詳細は[次のドキュメント](dashboard#AA005)を参照してください。
 
-- <Cmdname sid="TTL06209" className="uitext" />の詳細については [次の文書](dashboard-hitmap-trace)を参照してください。
+* <Cmdname sid="TTL06209" className="uitext" /> の詳細は[次のドキュメント](dashboard-hitmap-trace)を参照してください。
 
 :::
 
@@ -118,37 +125,37 @@ Flexボードでダッシュボードに配置できるウィジェットの種�
 
 :::note
 
-- <Cmdname sid="AA005" className="uitext" />ウィジェットは、アプリケーションモニタリングの製品群で利用できます。
+<Cmdname sid="AA005" className="uitext" /> ウィジェットはアプリケーション監視製品群で利用可能です。
 
 :::
 
 </Xclude>
 
-### ![](/img/ic-equalizer-chart.svg)棒{#bar}
+### ![](/img/ic-equalizer-chart.svg) 棒 {#bar}
 
-モニタリング対象で収集されるデータの現状を比較するのに有用な棒チャートのウィジェットです。
+監視対象から収集されるデータの状況を比較するのに有用な棒グラフウィジェットです。
 
 <Columns>
 
 <Column className="text--left width--50">
 
-![縦型棒チャート](/img/fb-bar-chart-vertical.png)
+![縦棒グラフ](/img/fb-bar-chart-vertical.png)
 
 </Column>
 
 <Column className="text--left">
 
-![横型棒チャート](/img/fb-bar-chart-horizon.png)
+![横棒グラフ](/img/fb-bar-chart-horizon.png)
 
 </Column>
 
 </Columns>
 
-縦型棒チャートをデフォルトで提供しますが、横型に変更できます。 <Cmdname sid="edit_mode" className="uitext" />でウィジェットの右上にある詳細を見る(![アイコン](/img/ico-more.svg))ボタンを選択した後![横型アイコン](/img/ic-bar-chart-h.svg)ボタンをクリックします。
+縦棒グラフがデフォルトですが、横棒に変更できます。<Cmdname sid="edit_mode" className="uitext" /> でウィジェット右上のその他 (![アイコン](/img/ico-more.svg)) を選び、![横棒アイコン](/img/ic-bar-chart-h.svg) をクリックします。
 
 ### ![](/img/ic-ark-chart.svg) アークイコライザー {#arc}
 
-モニタリング対象で発生するトランザクション状況をエージェント別に比較できるよう、視覚化したアークイコライザーのチャートウィジェットです。
+監視対象で発生するトランザクション状況をエージェント別に比較できるアークイコライザーチャートウィジェットです。
 
 <Columns>
 
@@ -166,13 +173,13 @@ Flexボードでダッシュボードに配置できるウィジェットの種�
 
 </Columns>
 
-アークイコライザーチャートをデフォルトで提供しますが、縦型の棒グラフに変更できます。 <Cmdname sid="edit_mode" className="uitext" />でのウィジェットの右上にある詳細を見る(![アイコン](/img/ico-more.svg))ボタンを選択した後、![縦型アイコン](/img/ic-equalizer-chart.svg)ボタンをクリックします。
+アークイコライザーがデフォルトですが、縦棒グラフに変更できます。<Cmdname sid="edit_mode" className="uitext" /> でウィジェット右上のその他 (![アイコン](/img/ico-more.svg)) を選び、![縦棒アイコン](/img/ic-equalizer-chart.svg) をクリックします。
 
 <InDoc product="java,php,python,nodejs,dotnet,golang,kubernetes">
 
 :::note
 
-アークイコライザーチャートは、アプリケーションモニタリング製品群で利用できる<Cmdname sid="AA002" className="uitext" />ウィジェットです。詳細は[次の文書](dashboard#active-trs)を参照してください。
+アークイコライザーチャートはアプリケーション監視製品群で利用可能な <Cmdname sid="AA002" className="uitext" /> ウィジェットです。詳細は[次のドキュメント](dashboard#active-trs)を参照してください。
 
 :::
 
@@ -182,15 +189,15 @@ Flexボードでダッシュボードに配置できるウィジェットの種�
 
 :::note
 
-アークイコライザーのチャートウィジェットは、アプリケーションモニタリング製品群で利用できます。
+アークイコライザーチャートウィジェットはアプリケーション監視製品群で利用可能です。
 
 :::
 
 </Xclude>
 
-### ![](/img/ic-grid-chart.svg)ツリーマップ{#treemap}
+### ![](/img/ic-grid-chart.svg) ツリーマップ {#treemap}
 
-サーバーのディスクまたはメモリ使用量を視覚的に確認できるウィジェットです。 各ブロックのサイズと色は、使用量と状況を意味します。
+サーバーのディスクまたはメモリ使用量を可視化するウィジェットです。各ブロックの大きさと色は使用量と状態を表します。
 
 <Columns>
 
@@ -208,33 +215,31 @@ Flexボードでダッシュボードに配置できるウィジェットの種�
 
 </Columns>
 
-提供するデフォルトのチャートで、マウスをブロックにかざすと、そのブロックの数値を確認できるツールチップが表示されます。 個々のブロックの数値が表示されるチャートに変更するには、ウィジェットの右上にある詳細(![アイコン](/img/ico-more.svg))ボタンを選択した後、![アイコン](/img/ic-pageload.svg)ボタンをクリックします。
+デフォルトのチャートでブロックにマウスを乗せると、そのブロックの値を示すツールチップが表示されます。各ブロック内に値を表示するチャートに切り替えるには、ウィジェット右上のその他 (![アイコン](/img/ico-more.svg)) を選び、![アイコン](/img/ic-pageload.svg) をクリックします。
 
-### ![](/img/ic-dot-chart.svg) 散布図{#scatter}
+### ![](/img/ic-dot-chart.svg) 散布図 {#scatter}
 
-散布図は、2つの変数間の関係を視覚的に表すために使用され、それぞれの点はデータポイントを表します。 また、大規模なデータセットでパターンや傾向を識別するのに有用であり、データポイントがどのように分布しているかを視覚的に確認できます。 これにより、特定の時間帯に発生する性能問題を識別できます。
+散布図は二つの変数間の関係を可視化するために使用し、各点はデータポイントを表します。大規模データセットでパターンや傾向を識別するのに有用で、データポイントの分布を視覚的に確認できます。これにより特定時間帯に発生する性能問題を特定できます。
 
 ![分布図チャート](/img/fb-scatter-plot-chart-widget.png)
 
-- x軸: 時間を表し、そのデータポイントで記録された時間を意味します。
+* x 軸: データポイントが記録された時間  
+* y 軸: 処理時間  
+* チャートの一部をドラッグすると詳細を確認できます。
 
-- y軸: 処理時間を表し、データポイントでかかった時間を意味します。
+### ![](/img/ic-map.svg) ジオマップ {#geomap}
 
-- チャートの一部の領域をドラッグすると、詳細を確認できます。
-
-### ![](/img/ic-map.svg) ジオマップ{#geomap}
-
-地図型チャートの一種で、空間的なデータを視覚的に確認できるウィジェットです。 このウィジェットにより、データ値を地理的位置と結合して視覚化することで、地域ごとの性能差を把握し、分析するのに役立ちます。
+地図型チャートの一種で、空間データを視覚的に確認できるウィジェットです。データ値を地理的な位置と組み合わせて可視化し、地域別の性能差を把握して分析できます。
 
 ![ジオマップ](/img/fb-geomap-chart-widget.png)
 
-- マウスをスクロールしたり、スライダーを使用して地図を拡大または縮小したりできます。
+* マウスホイールまたはスライダーで地図を拡大または縮小できます。
 
-- 世界地図を見るには![地球アイコン](/img/ic-network.svg)ボタンを選択します。 特定の国を選択すると、地域ごとにデータを確認できます。
+* 世界地図を表示するには ![地球アイコン](/img/ic-network.svg) を選択します。特定の国を選んで地域別データを確認できます。
 
-- テーブルの形でデータを確認するには![テーブルアイコン](/img/ic-table.svg)ボタンを選択します。 地図の形に戻るには、![地図アイコン](/img/ic-map.svg)ボタンを選択します。
+* データをテーブルで確認するには ![テーブルアイコン](/img/ic-table.svg) を選択します。地図表示に戻るには ![地図アイコン](/img/ic-map.svg) を選択します。
 
-- 地域別マップの場合、上位の行政区画に基づいてデータを表示します。 (韓国標準：州、広域市)
+* 地域別地図は上位の行政区分を基準にデータを表示します。(韓国基準: 道、広域市)
 
 :::info
 
@@ -244,7 +249,7 @@ This site or product includes IP2Location LITE data available from [https://lite
 
 ### ![](/img/ic-speed-tx-3.svg) スピードチャート {#speed}
 
-モニタリング対象で発生するアクティブトランザクションの速度を視覚化する**スピードチャート**ウィジェットです。 このウィジェットは、モニタリング対象の性能状態を視覚的に表現し、要求処理時間や応答時間などの性能メトリクスを分析するのに役立ちます。
+監視対象で発生するアクティブトランザクションの速度を可視化する **スピードチャート** ウィジェットです。監視対象の性能状態を視覚的に表し、要求処理時間や応答時間などの性能指標の分析に有用です。
 
 ![スピードチャート](/img/fb-speed-chart-widget.png)
 
@@ -252,7 +257,7 @@ This site or product includes IP2Location LITE data available from [https://lite
 
 :::note
 
-**スピードチャート**ウィジェットは、アプリケーションモニタリングの製品群で利用でき、詳細は[次の文書](dashboard#active-trs-speed)を参照してください。
+**スピードチャート** ウィジェットはアプリケーション監視製品群で利用可能です。詳細は[次のドキュメント](dashboard#active-trs-speed)を参照してください。
 
 :::
 
@@ -262,15 +267,15 @@ This site or product includes IP2Location LITE data available from [https://lite
 
 :::note
 
-**スピードチャート**ウィジェットは、アプリケーションモニタリングの製品群で利用できます。
+**スピードチャート** ウィジェットはアプリケーション監視製品群で利用可能です。
 
 :::
 
 </Xclude>
 
-### ![](/img/ic-honeycomb.svg)ハニカム型{#jfhoneycomb}
+### ![](/img/ic-honeycomb.svg) ハニカム {#jfhoneycomb}
 
-モニタリング対象の性能と安定性を確認できるハニカムチャートウィジェットです。 各色は、モニタリング対象の性能と安定性を意味します。 青色は正常な状態を意味し、オレンジ色は警告、赤色は速度が遅い場合、灰色は非活性化を意味します。
+監視対象の性能と安定性を確認できるハニカムチャートウィジェットです。各色は性能と安定性を表します。青は正常。オレンジは警告。赤は遅い状態。灰色は無効状態です。
 
 <Columns>
 
@@ -290,77 +295,76 @@ This site or product includes IP2Location LITE data available from [https://lite
 
 :::note
 
-モニタリング製品群によって収集されるデータの種類と色の意味は異なる場合があります。
+監視製品群により収集データの種類や色の意味は異なる場合があります。
 
 :::
 
-## リスト型{#list}
+## 一覧系ウィジェット {#list}
 
-### ![](/img/ic-table.svg)テーブル{#table}
+### ![](/img/ic-table.svg) テーブル {#table}
 
-テーブル形式でリストを表示するウィジェットです。 それぞれ異なるモニタリングの対象から収集したデータの数値と状況を把握するのに便利です。 リストに表示される項目ごとにカラムを通じて、関連する追加情報を確認できます。 リストの各項目の文字色は、性能の状況を意味します。
+一覧をテーブル形式で表示するウィジェットです。異なる監視対象から収集したデータの値と状況を把握するのに有用です。各項目では列を通じて関連情報を追加で確認できます。一覧内のテキスト色は性能状態を表します。
 
 ![テーブルウィジェット](/img/fb-table-chart-widget.png)
 
-ウィジェットの右上にある詳細(![アイコン](/img/ico-more.svg))ボタンを選択すると、次の機能を追加で利用できます。
+ウィジェット右上のその他 (![アイコン](/img/ico-more.svg)) を選ぶと、次の機能を利用できます。
 
-- ![フィルターアイコン](/img/ico-filter.svg) : 必要なデータのみを表示できるように、フィルターオプションを設定できます。
+* ![フィルターアイコン](/img/ico-filter.svg) : フィルターオプションを設定して必要なデータのみ表示  
+* ![カラムアイコン](/img/ic-column.svg) : 必要な列を追加または除外し、順序を変更
 
-- ![カラムアイコン](/img/ic-column.svg) : カラムを追加で配置または既存項目を除外でき、表示順を変更できます。
+### ![](/img/ic-templete.svg) グループウィジェット {#group}
 
-## ![](/img/ic-templete.svg) グループウィジェット {#group}
-
-複数のウィジェットを1つのグループにまとめて表示できるウィジェットです。
+複数のウィジェットを一つのグループとしてまとめて表示するウィジェットです.
 
 ![グループウィジェット](/img/fb-group-widget-apm.png)
 
-### グループウィジェットの配置{#addgroup}
+#### グループウィジェットの配置 {#addgroup}
 
-1. <Cmdname sid="widget_template" className="uitext" />リストから<Cmdname sid="etc" className="uitext" /> &gt; <Cmdname sid="group" className="uitext" /> <Cmdname sid="widget" className="uitext" />を選択します。
+1. <Cmdname sid="widget_template" className="uitext" /> 一覧で <Cmdname sid="etc" className="uitext" /> &gt; <Cmdname sid="group" className="uitext" /> <Cmdname sid="widget" className="uitext" /> を選択します。
 
-2. 配置されたグループウィジェットの右上にある<Cmdname sid="project_selection" className="uitext" />ボタンを選択し、データを呼び出すプロジェクトを選択します。
+1. 配置したグループウィジェット右上の <Cmdname sid="project_selection" className="uitext" /> を選択し、データを取得するプロジェクトを選びます。
 
-3. グループウィジェットの右上にある<Cmdname sid="grid" className="uitext" />ボタンを選択してレイアウトを設定します。
+1. グループウィジェット右上の <Cmdname sid="grid" className="uitext" /> を選択し、希望のレイアウトを設定します。
 
-4. <Cmdname sid="apply" className="uitext" />ボタンを選択してレイアウト設定を完了します。
+1. <Cmdname sid="apply" className="uitext" /> を選択してレイアウト設定を完了します。
 
-5. グループウィジェットの右上にある<Cmdname sid="add_widget" className="uitext" />ボタンを選択します。
+1. グループウィジェット右上の <Cmdname sid="add_widget" className="uitext" /> を選択します。
 
-6. 画面の右側にある<Cmdname sid="widget_template" className="uitext" />リストが表示されたら、必要なウィジェットを選択して配置します。
+1. 画面右側に <Cmdname sid="widget_template" className="uitext" /> 一覧が表示されたら、必要なウィジェットを順に選択します。
 
 :::note
 
-- グループウィジェットでは、1つのプロジェクトのみを選択できます。
+* グループウィジェットでは 1 件のプロジェクトのみ選択できます。
 
-- ウィジェットは、追加された順番で配置されます。 ウィジェットの表示順を変更するには、ウィジェット名をクリックしたまま、希望の位置にドラッグします。
+* ウィジェットは追加順に配置されます。順序を変更する場合は、ウィジェット名をドラッグして位置を変更します。
 
-- グループウィジェットに配置できるウィジェットの数は最大36個です。 <Cmdname sid="grid" className="uitext" />オプションで設定した数以上のウィジェットを追加できません。
+* グループウィジェットに配置できるウィジェット数は最大 36 個です。<Cmdname sid="grid" className="uitext" /> で設定した数を超えて追加できません。
 
-- 追加できるウィジェットの数をすべて配置すると、<Cmdname sid="grid" className="uitext" />ボタンは非活性化になります。
+* 最大数を配置すると <Cmdname sid="grid" className="uitext" /> ボタンは無効化されます。
 
-- グループウィジェットは、新しい画面を開いて確認できます。 <Cmdname sid="view_mode" className="uitext" />画面を開き、ウィジェット右上にある![ポップアップアイコン](/img/ic-popup.svg)ボタンを選択します。
+* グループウィジェットは新しいウィンドウで確認できます。<Cmdname sid="view_mode" className="uitext" /> に入り、ウィジェット右上の ![ポップアップアイコン](/img/ic-popup.svg) を選択します。
 
 :::
 
-### グループウィジェットからウィジェットを削除する{#removewidget}
+#### グループウィジェット内のウィジェット削除 {#removewidget}
 
-グループウィジェットに配置されたウィジェットを削除するには、ウィジェット右上にある詳細(![アイコン](/img/ico-more.svg))ボタンを選択した後、![削除アイコン](/img/ico-remove.svg)ボタンを選択します。
+グループウィジェットに配置された個々のウィジェットを削除するには、ウィジェット右上のその他 (![アイコン](/img/ico-more.svg)) を選択し、![削除アイコン](/img/ico-remove.svg) を選択します。
 
-### グループウィジェットを閉じる/開く
+#### グループウィジェットの折りたたみと展開
 
-グループウィジェットを閉じたり開いたりできます。 ウィジェット右上にある![閉じるアイコン](/img/ic-caret-down.svg)または![開くアイコン](/img/ic-caret-up.svg)ボタンを選択します。
+グループウィジェットは折りたたみと展開ができます。ウィジェット右上の ![折りたたみアイコン](/img/ic-caret-down.svg) または ![展開アイコン](/img/ic-caret-up.svg) を選択します。
 
 ![Group widget](/img/fb-group-widget-fold.png)
 
-ダッシュボードに多くのウィジェットが配置されている場合、この機能により画面を効率的に活用できます。 また、必要な情報を必要な時に開いて確認できます。
+ダッシュボードに多数のウィジェットが配置されている場合にこの機能で画面を効率的に使えます。必要なときだけ展開して確認できます。
 
-## 通知とステータスの確認{#checkevent}
+## アラートと状態確認ウィジェット {#checkevent}
 
 ### ![](/img/ic-alert.svg) <Cmdname sid="side_event" /> {#event}
 
 #### <Cmdname sid="event_list" /> {#eventlist}
 
-1つまたは複数のプロジェクトで発生した通知履歴をリアルタイムで把握したり、特定の照会時間を設定して確認できます。
+一つまたは複数プロジェクトで発生したアラート履歴をリアルタイムで把握するか、特定の参照時間を設定して確認できます。
 
 ##### <Cmdname sid="edit_mode" />
 
@@ -368,29 +372,29 @@ This site or product includes IP2Location LITE data available from [https://lite
 
 <Column className="text--center width--50">
 
-![アラートリスト](/img/fb-alert-list-widget.png)
+![アラート一覧](/img/fb-alert-list-widget.png)
 
 </Column>
 
 <Column className="text--center">
 
-![アラートリスト](/img/fb-alert-list-widget-time-selector.png)
+![アラート一覧](/img/fb-alert-list-widget-time-selector.png)
 
 </Column>
 
 </Columns>
 
-- <Cmdname sid="edit_mode" className="uitext" />では、<Cmdname sid="title" className="uitext" />、<Cmdname sid="project" className="uitext" />、<Cmdname sid="application" className="uitext" />ごとにグループ化してソートできます。 グループ化を解除するには、<Cmdname sid="timeline" className="uitext" />ボタンを選択します。
+* <Cmdname sid="edit_mode" className="uitext" /> では <Cmdname sid="title" className="uitext" />、<Cmdname sid="project" className="uitext" />、<Cmdname sid="application" className="uitext" /> 別にグループ化して並び替えできます。グループ化を解除するには <Cmdname sid="timeline" className="uitext" /> を選択します。
 
-- 解消されたイベントのリストを含めて確認するには<Cmdname sid="ITM08413" className="uitext" />オプションを活性化します。
+* 解消済みイベントを含めて確認するには <Cmdname sid="ITM08413" className="uitext" /> を有効化します。
 
-- ダッシュボードに設定された照会時間ではなく、別の時間を設定できます。 ![時計のアイコン](/img/ic-custom-time.svg)ボタンを選択します。 <Cmdname sid="select_time_title" className="uitext" />ポップアップが表示されたら<Cmdname sid="use_dashboard_settings" className="uitext" />オプションのチェックボックスを削除します。
+* ダッシュボードの参照時間とは別の時間を設定できます。![時計アイコン](/img/ic-custom-time.svg) を選択します。<Cmdname sid="select_time_title" className="uitext" /> ポップアップが表示されたら、<Cmdname sid="use_dashboard_settings" className="uitext" /> のチェックを外します.
 
 :::note
 
-- <Cmdname sid="select_time_title" className="uitext" />オプションの利用方法の詳細については。
+* <Cmdname sid="select_time_title" className="uitext" /> の使い方は[次のドキュメント](/usage-ui#timeselector)を参照してください。
 
-- 通知が発生した場合、サウンドをオンまたはオフにするには![音アイコン](/img/ico-noti-sound.svg)ボタンを選択します。
+* アラート発生時のサウンドを切り替えるには ![サウンドアイコン](/img/ico-noti-sound.svg) を選択します。
 
 :::
 
@@ -400,17 +404,17 @@ This site or product includes IP2Location LITE data available from [https://lite
 
 <Column className="text--center width--50">
 
-![アラートリスト](/img/fb-alert-list-widget-view-mode.png)
+![アラート一覧](/img/fb-alert-list-widget-view-mode.png)
 
 </Column>
 
 <Column className="text--left">
 
-<Cmdname sid="view_mode" className="uitext" />では<Cmdname sid="edit_mode" className="uitext" />の設定内容を基準に通知発生状況を確認できます。
+<Cmdname sid="view_mode" className="uitext" /> では <Cmdname sid="edit_mode" className="uitext" /> の設定内容に基づいてアラート状況を確認できます。
 
-- 通知一覧を全画面サイズで確認するには![全画面アイコン](/img/ic-fullscreen.svg)ボタンを選択します。
+* 一覧を全画面で表示するには ![全画面アイコン](/img/ic-fullscreen.svg) を選択します。
 
-- 通知一覧を新しいウィンドウで開いて確認するには![新しいウィンドウアイコン](/img/ic-popup.svg)ボタンを選択します。
+* 一覧を新しいウィンドウで開くには ![ポップアップアイコン](/img/ic-popup.svg) を選択します。
 
 </Column>
 
@@ -418,7 +422,7 @@ This site or product includes IP2Location LITE data available from [https://lite
 
 #### <Cmdname sid="event" /> <Cmdname sid="timeline" /> {#eventtimeline}
 
-1つまたは複数のプロジェクトで発生した時間帯別の通知履歴をチャート形式で確認できます。
+一つまたは複数プロジェクトで発生した時間帯別のアラート履歴をチャートで確認できます。
 
 <Columns>
 
@@ -440,49 +444,47 @@ This site or product includes IP2Location LITE data available from [https://lite
 
 </Columns>
 
-- <Cmdname sid="edit_mode" className="uitext" />ではダッシュボードに設定された照会時間ではなく、別の時間を設定できます。 ![時計のアイコン](/img/ic-custom-time.svg)ボタンを選択します。 <Cmdname sid="select_time_title" className="uitext" />ポップアップが表示されたら<Cmdname sid="use_dashboard_settings" className="uitext" />オプションのチェックボックスを削除します。
+* <Cmdname sid="edit_mode" className="uitext" /> ではダッシュボードの参照時間とは別の時間を設定できます。![時計アイコン](/img/ic-custom-time.svg) を選択します。<Cmdname sid="select_time_title" className="uitext" /> ポップアップが表示されたら、<Cmdname sid="use_dashboard_settings" className="uitext" /> のチェックを外します。
 
-- <Cmdname sid="view_mode" className="uitext" />で全画面サイズで確認するには![全画面アイコン](/img/ic-fullscreen.svg)ボタンを選択します。 新しいウィンドウを開いて確認するには![新しいウィンドウアイコン](/img/ic-popup.svg)ボタンを選択します。
+* <Cmdname sid="view_mode" className="uitext" /> で全画面表示するには ![全画面アイコン](/img/ic-fullscreen.svg) を選択します。新しいウィンドウで開くには ![ポップアップアイコン](/img/ic-popup.svg) を選択します。
 
-### ![](/img/ic-agent.svg)ステータスの確認{#checkstatus}
+### ![](/img/ic-agent.svg) 状態確認 {#checkstatus}
 
-モニタリング対象から収集したデータを通じて、現在のステータスと結果を表示するウィジェットです。 特定のサービスの増加または減少をモニタリングできます。
+監視対象から収集したデータに基づいて現在の状態と結果を表示するウィジェットです。特定サービスの増減を監視できます。
 
-![ステータス情報のウィジェット](/img/fb-status-widget.png)
+![状態情報ウィジェット](/img/fb-status-widget.png)
 
-ウィジェットの右上にある詳細(![アイコン](/img/ico-more.svg))ボタンを選択すると、次の機能を追加で利用できます。
+ウィジェット右上のその他 (![アイコン](/img/ico-more.svg)) を選択すると、次の機能を利用できます。
 
-- ![カラムアイコン](/img/ic-column.svg) : 必要なデータを追加で配置または、既存のデータを除外でき、表示順を変更できます。
+* ![カラムアイコン](/img/ic-column.svg) : 必要なデータを追加または除外し、順序を変更  
+* ![テキストアイコン](/img/ic-text-widget.svg) : グラフを除きテキスト情報のみ表示  
+* ![チャートアイコン](/img/ic-speed-chart.svg) : テキスト情報とグラフを併せて表示
 
-- ![テキストアイコン](/img/ic-text-widget.svg) : グラフチャートを除いて、テキスト情報のみを表示できます。
+## 情報ウィジェット {#infomation}
 
-- ![チャートアイコン](/img/ic-speed-chart.svg) : テキスト情報とグラフチャートを一緒に表示できます。
+### ![](/img/ic-text-widget.svg) テキスト {#text}
 
-## 情報{#infomation}
-
-### ![](/img/ic-text-widget.svg)テキスト{#text}
-
-メトリクスの数値をテキスト形式で表示するウィジェットです。
+指標の値をテキスト形式で表示するウィジェットです。
 
 ![テキストウィジェット](/img/fb-text-widget.png)
 
-ウィジェットの右上にある詳細(![アイコン](/img/ico-more.svg))ボタンを選択した後、![カラムアイコン](/img/ic-column.svg)ボタンをクリックして、必要なデータを追加したり、除外したりして表示順を変更できます。
+ウィジェット右上のその他 (![アイコン](/img/ico-more.svg)) を選択し、![カラムアイコン](/img/ic-column.svg) をクリックして必要なデータを追加または除外し、順序を変更できます。
 
-### ![](/img/ic-vital-chart.svg)要約情報{#overview}
+### ![](/img/ic-vital-chart.svg) 概要 {#overview}
 
-プロジェクトに要約情報や特定のメトリクスの説明を案内するウィジェットです。
+プロジェクトの概要や特定指標の説明を案内するウィジェットです。
 
-![プロジェクト要約](/img/fb-project-overview-widget.png)
+![プロジェクト概要](/img/fb-project-overview-widget.png)
 
 :::note
 
-選択したプロジェクトの製品の種類によって、表示される要約情報は異なる場合があります。
+選択したプロジェクトの製品種類により表示される概要情報は異なる場合があります。
 
 :::
 
 ### ![](/img/ic-pageload.svg) <Cmdname sid="page_load,timeline" /> {#pageloadtimeline}
 
-**Browser**製品専用ウィジェットにより<Cmdname sid="page_load,timeline" className="uitext" />情報を確認できます。
+**Browser** 製品専用ウィジェットで、<Cmdname sid="page_load,timeline" className="uitext" /> 情報を確認できます。
 
 ![ページロードタイムライン](/img/fb-browser-pageload-timeline-widget.png)
 
@@ -490,7 +492,7 @@ This site or product includes IP2Location LITE data available from [https://lite
 
 :::note
 
-<Cmdname sid="page_load,timeline" className="uitext" />についての詳細は、[次の文書](../browser/dashboard#pageloadtimeline)を参照してください。
+<Cmdname sid="page_load,timeline" className="uitext" /> の詳細は[次のドキュメント](../browser/dashboard#pageloadtimeline)を参照してください。
 
 :::
 
@@ -500,48 +502,48 @@ This site or product includes IP2Location LITE data available from [https://lite
 
 :::note
 
-<Cmdname sid="page_load,timeline" className="uitext" />についての詳細は、[次の文書](dashboard#pageloadtimeline)を参照してください。
+<Cmdname sid="page_load,timeline" className="uitext" /> の詳細は[次のドキュメント](dashboard#pageloadtimeline)を参照してください。
 
 :::
 
 </InDoc>
 
-## その他
+## その他のウィジェット
 
 ### ![](/img/ic-note.svg) <Cmdname sid="rich_text" /> {#richtext}
 
-テキストを入力して、ウィジェットで配置できます。
+任意のテキストを入力してウィジェットとして配置できます。
 
-![リーチテキスト](/img/fb-rich-text-widget.png)
+![リッチテキスト](/img/fb-rich-text-widget.png)
 
-ウィジェットの右上にあるオプションで、テキストの修正や書式の設定などができます。
+ウィジェット右上のオプションでテキストを編集したり書式設定を行えます。
 
-- ![カラーアイコン](/img/ic-colors.svg) : <Cmdname sid="edit_widget" className="uitext" />オプションでウィジェットの背景と線、フォントの色を設定できます。 設定を完了した後、<Cmdname sid="save" className="uitext" />ボタンを選択します。
+* ![カラーアイコン](/img/ic-colors.svg) : <Cmdname sid="edit_widget" className="uitext" /> でウィジェットの背景と枠線、フォント色を設定できます。設定後に <Cmdname sid="save" className="uitext" /> を選択します。
 
-- ![修正アイコン](/img/ic-edit.svg) : 画面の右側に <Cmdname sid="rich_text" className="uitext" />画面が表示され、テキストを追加または修正できます。 また、提供されるツールバーを使用して書式を設定できます。
+* ![編集アイコン](/img/ic-edit.svg) : 画面右側に <Cmdname sid="rich_text" className="uitext" /> 画面が表示され、テキストを追加または編集できます。提供ツールバーで書式を設定できます。
 
 ### ![](/img/ic-tool.svg) メンテナンス計画
 
-選択したプロジェクトのメンテナンス計画の履歴を確認できるウィジェットです。
+選択したプロジェクトのメンテナンス計画を確認できるウィジェットです。
 
 ![メンテナンス計画](/img/fb-maintenance-plan-widget.png)
 
 :::note
 
-- 1時間以内に予定されているメンテナンス計画のみがウィジェットに表示されます。
+* 1 時間以内に予定されたメンテナンスのみウィジェットに表示されます。
 
-- <Cmdname sid="side_maintenancePlan" className="uitext" />メニューの詳細は[次の文書](../management/maintenance)を参照してください。
+* <Cmdname sid="side_maintenancePlan" className="uitext" /> メニューの詳細は[次のドキュメント](../management/maintenance)を参照してください。
 
 :::
 
 ### ![](/img/ic-s-list.svg) <Cmdname sid="url_list" /> {#urllist}
 
-**URL**モニタリングのウィジェットで、登録したURLのリストと状況を確認できます。
+**URL** 製品専用ウィジェットで、登録した URL の一覧と状態を確認できます。
 
 ![URL List](/img/fb-url-list-widget.png)
 
 :::note
 
-**URL**モニタリングの詳細は、[次の文書](../url/url-intro)を参照してください。
+**URL** 監視の詳細は[次のドキュメント](../url/url-intro)を参照してください。
 
 :::
