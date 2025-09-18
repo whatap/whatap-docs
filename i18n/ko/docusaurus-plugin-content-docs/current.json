@@ -2259,6 +2259,14 @@
     "message": "이벤트 설정",
     "description": "The label for category 이벤트 설정 in sidebar nmsSidebar"
   },
+  "sidebar.nmsSidebar.category.디바이스 상태": {
+    "message": "디바이스 상태",
+    "description": "The label for category 디바이스 상태 in sidebar nmsSidebar"
+  },
+  "sidebar.nmsSidebar.category.설정": {
+    "message": "설정",
+    "description": "The label for category 설정 in sidebar nmsSidebar"
+  },
   "sidebar.nmsSidebar.doc.Log 모니터링": {
     "message": "Log 모니터링",
     "description": "The label for the doc item Log 모니터링 in sidebar nmsSidebar, linking to the doc log/introduction"

@@ -27,94 +27,80 @@ Select a desired OS on the <Cmdname sid="side_agentInstall" className="uitext" /
 
    In the <Cmdname sid="server_installAgent_add_whatapRepo" className="uitext" /> tab, copy the command and enter it.
 
-<Tabs>
-<TabItem value="du" label="Debian / Ubuntu" default>
+   <Tabs>
+   <TabItem value="du" label="Debian / Ubuntu" default>
 
-````
-```bash title=SH
-curl -s https://repo.whatap.io/debian/release.gpg | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/whatap-release.gpg > /dev/null
-echo "deb [signed-by=/etc/apt/trusted.gpg.d/whatap-release.gpg] https://repo.whatap.io/debian unstable/" | sudo tee /etc/apt/sources.list.d/whatap.list
-sudo apt-get update
-```
-````
+   ```bash title=SH
+   curl -s https://repo.whatap.io/debian/release.gpg | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/whatap-release.gpg > /dev/null
+   echo "deb [signed-by=/etc/apt/trusted.gpg.d/whatap-release.gpg] https://repo.whatap.io/debian unstable/" | sudo tee /etc/apt/sources.list.d/whatap.list
+   sudo apt-get update
+   ```
 
-</TabItem>
-<TabItem value="suse" label="SUSE">
+   </TabItem>
+   <TabItem value="suse" label="SUSE">
 
-````
-```bash title=SH
-sudo rpm --import http://repo.whatap.io/suse/release.gpg
-echo "[whatap]" | sudo tee /etc/zypp/repos.d/whatap.repo > /dev/null
-echo "name=whatap packages for enterprise linux" | sudo tee -a /etc/zypp/repos.d/whatap.repo > /dev/null
-echo "baseurl=http://repo.whatap.io/suse/12/x86_64" | sudo tee -a /etc/zypp/repos.d/whatap.repo > /dev/null
-echo "enabled=1" | sudo tee -a /etc/zypp/repos.d/whatap.repo > /dev/null
-echo "gpgcheck=1" | sudo tee -a /etc/zypp/repos.d/whatap.repo > /dev/null
-sudo zypper refresh
-```
-````
+   ```bash title=SH
+   sudo rpm --import http://repo.whatap.io/suse/release.gpg
+   echo "[whatap]" | sudo tee /etc/zypp/repos.d/whatap.repo > /dev/null
+   echo "name=whatap packages for enterprise linux" | sudo tee -a /etc/zypp/repos.d/whatap.repo > /dev/null
+   echo "baseurl=http://repo.whatap.io/suse/12/x86_64" | sudo tee -a /etc/zypp/repos.d/whatap.repo > /dev/null
+   echo "enabled=1" | sudo tee -a /etc/zypp/repos.d/whatap.repo > /dev/null
+   echo "gpgcheck=1" | sudo tee -a /etc/zypp/repos.d/whatap.repo > /dev/null
+   sudo zypper refresh
+   ```
 
-</TabItem>
-<TabItem value="co" label="CentOS">
+   </TabItem>
+   <TabItem value="co" label="CentOS">
 
-````
-```bash title=SH
-sudo rpm --import http://repo.whatap.io/centos/release.gpg
-sudo rpm -Uvh http://repo.whatap.io/centos/5/noarch/whatap-repo-1.0-1.noarch.rpm
-```
-````
+   ```bash title=SH
+   sudo rpm --import http://repo.whatap.io/centos/release.gpg
+   sudo rpm -Uvh http://repo.whatap.io/centos/5/noarch/whatap-repo-1.0-1.noarch.rpm
+   ```
 
-</TabItem>
-<TabItem value="al" label="Amazon Linux">
+   </TabItem>
+   <TabItem value="al" label="Amazon Linux">
 
-````
-```bash title=SH
-sudo rpm --import http://repo.whatap.io/centos/release.gpg
-echo "[whatap]" | sudo tee /etc/yum.repos.d/whatap.repo > /dev/null
-echo "name=whatap packages for enterprise linux" | sudo tee -a /etc/yum.repos.d/whatap.repo > /dev/null
-echo "baseurl=http://repo.whatap.io/centos/latest/\$basearch" | sudo tee -a /etc/yum.repos.d/whatap.repo > /dev/null
-echo "enabled=1" | sudo tee -a /etc/yum.repos.d/whatap.repo > /dev/null
-echo "gpgcheck=0" | sudo tee -a /etc/yum.repos.d/whatap.repo > /dev/null
-```
-````
+   ```bash title=SH
+   sudo rpm --import http://repo.whatap.io/centos/release.gpg
+   echo "[whatap]" | sudo tee /etc/yum.repos.d/whatap.repo > /dev/null
+   echo "name=whatap packages for enterprise linux" | sudo tee -a /etc/yum.repos.d/whatap.repo > /dev/null
+   echo "baseurl=http://repo.whatap.io/centos/latest/\$basearch" | sudo tee -a /etc/yum.repos.d/whatap.repo > /dev/null
+   echo "enabled=1" | sudo tee -a /etc/yum.repos.d/whatap.repo > /dev/null
+   echo "gpgcheck=0" | sudo tee -a /etc/yum.repos.d/whatap.repo > /dev/null
+   ```
 
-</TabItem>
-</Tabs>
+   </TabItem>
+   </Tabs>
 
 1. Install the **package** with the following command.
 
    In the <Cmdname sid="server_installAgent_installPackages" className="uitext" /> tab, copy the command and enter it.
 
-<Tabs>
-<TabItem value="du" label="Debian / Ubuntu" default>
+   <Tabs>
+   <TabItem value="du" label="Debian / Ubuntu" default>
 
-````
-```bash title=SH
-sudo apt-get install whatap-infra
-```
-````
+   ```bash title=SH
+   sudo apt-get install whatap-infra
+   ```
 
-</TabItem>
-<TabItem value="suse" label="SUSE">
+   </TabItem>
+   <TabItem value="suse" label="SUSE">
 
-````
-```bash title=SH
-sudo zypper install whatap-infra
-```
-````
+   ```bash title=SH
+   sudo zypper install whatap-infra
+   ```
 
-</TabItem>
+   </TabItem>
 
-<TabItem value="cax" label="CentOS / Amazon Linux">
+   <TabItem value="cax" label="CentOS / Amazon Linux">
 
-````
-```bash title=SH
-sudo yum install whatap-infra
-```
-````
+   ```bash title=SH
+   sudo yum install whatap-infra
+   ```
 
-</TabItem>
+   </TabItem>
 
-</Tabs>
+   </Tabs>
 
 1. Run the **configuration script**.
 
