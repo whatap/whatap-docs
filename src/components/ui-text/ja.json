@@ -4156,6 +4156,8 @@
   "packet": "パケット",
   "traffic": "トラフィック",
   "openFileDescriptors": "ファイル識別子を開く",
+  "openmetrics": "オープンメトリクス",
+  "openmetrics_explorer": "オープンメトリクスエクスプローラー",
   "server_process": "サーバープロセス",
   "server_process_rw": "サーバープロセス読取り/書込み",
   "pattern": "パターン",

@@ -4156,6 +4156,8 @@
   "packet": "패킷",
   "traffic": "트래픽",
   "openFileDescriptors": "Open File Descriptors",
+  "openmetrics": "오픈메트릭",
+  "openmetrics_explorer": "오픈메트릭 탐색기",
   "server_process": "서버 프로세스",
   "server_process_rw": "서버 프로세스 Read/Write",
   "pattern": "패턴",
