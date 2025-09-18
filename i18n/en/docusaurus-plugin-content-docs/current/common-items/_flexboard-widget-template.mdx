@@ -1,58 +1,63 @@
-It provides the types of widgets you can place on the dashboard from the Flex board. Widgets are components of a dashboard that allow you to visualize and connect the overall data for monitoring targets. Select a dashboard from <Cmdname sid="side_integratedFlexboard" className="uitext" /> or <Cmdname sid="side_flexboard" className="uitext" /> and then go to <Cmdname sid="edit_mode" className="uitext" />. In <Cmdname sid="widget_template" className="uitext" />, you can see a list of widgets that can be placed on the dashboard.
+Flex boards let you build dashboards with widgets to visualize and link all data for monitoring targets. After selecting a dashboard in the <Cmdname sid="side_integratedFlexboard" className="uitext" /> or <Cmdname sid="side_flexboard" className="uitext" /> menu and moving to <Cmdname sid="edit_mode" className="uitext" />, you can check available widgets in <Cmdname sid="widget_template" className="uitext" />.
 
-|              <Cmdname sid="side_integratedFlexboard" className="uitext" />             |                 <Cmdname sid="side_flexboard" className="uitext" />                 |
-| :------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------: |
-| <ImgLang img='flexboad-integrated-widget-template.png' desc='Integrated Flex Board' /> | <ImgLang img='flexboad-project-widget-template.png' desc='Integrated Flex Board' /> |
+* <Cmdname sid="side_integratedFlexboard" className="uitext" />: you can choose widgets for all product types in projects you belong to  
+* <Cmdname sid="side_flexboard" className="uitext" />: you can choose only widgets for the product types of that project  
 
-In <Cmdname sid="side_integratedFlexboard" className="uitext" />, users can select widgets for all products in the project they belong to. In <Cmdname sid="side_flexboard" className="uitext" />, users can select the widgets only for the product type of the project.
+| <Cmdname sid="side_integratedFlexboard" className="uitext" /> | <Cmdname sid="side_flexboard" className="uitext" /> |
+| :--: | :--: |
+| <ImgLang img='flexboad-integrated-widget-template.png' desc='Integrated Flexboard' /> | <ImgLang img='flexboad-project-widget-template.png' desc='Integrated Flexboard' /> |
 
 :::note
 
-- Depending on the product type of the project, the widgets that can be selected in <Cmdname sid="widget_template" className="uitext" /> may differ.
+Available widgets in <Cmdname sid="widget_template" className="uitext" /> may differ by a project’s product type.
 
-- For more information about the common options available on the upper right of the widget, see [the following](flexboard-widget-manage).
+* For details on common options in the top right of a widget, see the product specific **Flex board > Managing widgets** document.
 
-- Depending on the assigned role, you may not use the widget's features. For more information about the member roles, see [the following](../project/project-structure#project-auth).
+* Widget features may be limited by member permission. For details, see the [Project structure and member permissions](../project/project-structure#project-auth) document.
 
 :::
 
-## Graph {#graph}
+## Graph widgets {#graph}
 
-This data graph widget can be placed on the dashboard.
+Visualize change over time or relationships between metrics to see performance change, distribution, and comparisons at a glance.
 
 ### ![](/img/ico-normal-graph.svg) Time series {#timeseries}
 
-You can use the time series chart widget to observe changes in metrics over time. 
+The time series chart widget is the basic chart for checking metric change over time.  
 
 ![Time series chart](/img/fb-time-series-widget.png)
 
-The time series chart widget provides the feature to compare with previous periods. Select ![History icon](/img/ic-history.svg) on the upper right of the widget.
+The time series chart widget can compare with a previous time.
 
 <ImgLang img="fb-time-series-widget-compare-time.png" desc="Compare with previous time" />
 
-Select a desired time unit and then select <Cmdname sid="apply" className="uitext" />. By hovering the mouse pointer over the chart, you can view the data compared through a tooltip.
+1. Click the ![History icon](/img/ic-history.svg) icon in the top right of the widget.
+
+1. Set the time unit you want and click the <Cmdname sid="apply" className="uitext" /> button. When you hover the mouse pointer over the chart, you can check comparison data in a tooltip.
 
 :::note
+<Cmdname sid="compare_with_previous_time" className="uitext" /> is not provided by every widget and is available only in <Cmdname sid="edit_mode" className="uitext" />.
 
-- For more information about the data merge options, see [the following](flexboard-widget-manage#datamerge-option).
-
-- According to the widget, the <Cmdname sid="compare_with_previous_time" className="uitext" /> feature may not be provided. This feature can be used in <Cmdname sid="edit_mode" className="uitext" />.
-
+* For details on data merge options, see the product specific **Flex board > Managing widgets** document.
 :::
 
-### ![](/img/ico-topn-graph.svg) TopN time series {#topn}
+### ![](/img/ico-topn-graph.svg) Top N time series {#topn}
 
-Using this widget, you can check the ranking of metrics of the monitored targets along with metric changes over time.
+This widget shows metric change over time and metric rankings for monitoring targets.
 
-![TopN time series chart](/img/fb-time-series-topn-widget.png)
+![Top N time series chart](/img/fb-time-series-topn-widget.png)
 
-You can set the top N number to display on the chart. In <Cmdname sid="edit_mode" className="uitext" />, select the More (![Icon](/img/ico-more.svg)) button on the upper right of the widget, and then click <Cmdname sid="top_rank" className="uitext" /><UI>N</UI>.
+You can set the number of top N items to display in the chart.
 
-<ImgLang img="fb-time-series-topn-widget-setting.png" desc="TopN" />
+1. In <Cmdname sid="edit_mode" className="uitext" />, click the more icon (![아이콘](/img/ico-more.svg)) in the top right of the widget.
+
+1. Click <Cmdname sid="top_rank" className="uitext" /><UI>N</UI> and choose how many top N items to display.
+
+<ImgLang img="fb-time-series-topn-widget-setting.png" desc="Top N" />
 
 ### ![](/img/ic-line-text-chart.svg) Apdex {#apdex}
 
-The [Application Performance Index(Apdex)](https://www.apdex.org/) widget can check the application performance index.
+The [Application Performance Index (Apdex)](https://www.apdex.org/) widget shows application performance metrics.
 
 ![Apdex](/img/fb-apdex-widget.png)
 
@@ -60,7 +65,7 @@ The [Application Performance Index(Apdex)](https://www.apdex.org/) widget can ch
 
 :::note
 
-The **Apdex** widget can be used in the application monitoring suite of products. For more information, see [the following](dashboard#apdex).
+The **Apdex** widget is available in the application monitoring product family. For details, see the [next document](dashboard#apdex).
 
 :::
 
@@ -70,7 +75,7 @@ The **Apdex** widget can be used in the application monitoring suite of products
 
 :::note
 
-The **Apdex** widget can be used in the application monitoring suite of products.
+The **Apdex** widget is available in the application monitoring product family.
 
 :::
 
@@ -88,7 +93,7 @@ The **Apdex** widget can be used in the application monitoring suite of products
 
 <Column className="text--left">
 
-It is the pie chart widget. It is useful for checking the proportion of each segment compared to the overall collected data. It can be used to check figures such as CPU and memory usage, number of errors, and such.
+This pie chart widget is useful for checking composition ratios against the whole of collected data. You can check values such as CPU and memory usage and error counts.
 
 </Column>
 
@@ -96,19 +101,21 @@ It is the pie chart widget. It is useful for checking the proportion of each seg
 
 ### ![](/img/ic-dashboard-hitmap.svg) Hitmap {#hitmap}
 
-The <Cmdname sid="AA005" className="uitext" /> widget displays the response time of terminated transactions as a distribution chart.
+The <Cmdname sid="AA005" className="uitext" /> widget shows a distribution of response times for completed transactions.
 
 <ImgLang img="fb-hitmap-widget.png" desc="Hitmap" />
 
-The <Cmdname sid="AA005" className="uitext" /> chart represents the distribution of response times of completed transactions. The horizontal axis is the transaction end time. The vertical axis is the execution time. Transactions with longer execution times are at the top of the distribution. If you drag the chart area in <Cmdname sid="AA005" className="uitext" />, the <Cmdname sid="TTL06209" className="uitext" /> window appears that you can see the transaction information details.
+The horizontal axis is transaction end time and the vertical axis is execution time. Transactions with longer execution time are located at the top of the distribution. When you drag within the chart area in <Cmdname sid="AA005" className="uitext" />, the <Cmdname sid="TTL06209" className="uitext" /> window appears where you can check detailed transaction information.
+
+The horizontal axis is **end time** and the vertical axis is **execution time**. Drag in the chart area to open the <Cmdname sid="TTL06209" className="uitext" /> window for detailed transactions.
 
 <InDoc product="java,php,python,nodejs,dotnet,golang,kubernetes">
 
 :::note
 
-- For more information about <Cmdname sid="AA005" className="uitext" /> widget, see [the following](dashboard#AA005).
+* For details on the <Cmdname sid="AA005" className="uitext" /> widget, see the [next document](dashboard#AA005).
 
-- For more information about <Cmdname sid="TTL06209" className="uitext" />, see [the following](dashboard-hitmap-trace).
+* For details on <Cmdname sid="TTL06209" className="uitext" />, see the [next document](dashboard-hitmap-trace).
 
 :::
 
@@ -118,7 +125,7 @@ The <Cmdname sid="AA005" className="uitext" /> chart represents the distribution
 
 :::note
 
-- The <Cmdname sid="AA005" className="uitext" /> widget can be used in the application monitoring suite of products.
+The <Cmdname sid="AA005" className="uitext" /> widget is available in the application monitoring product family.
 
 :::
 
@@ -126,7 +133,7 @@ The <Cmdname sid="AA005" className="uitext" /> chart represents the distribution
 
 ### ![](/img/ic-equalizer-chart.svg) Bar {#bar}
 
-This bar chart widget is useful for comparing the data collected from monitoring targets.
+This bar chart widget is useful for comparing the status of data collected from monitoring targets.
 
 <Columns>
 
@@ -144,11 +151,11 @@ This bar chart widget is useful for comparing the data collected from monitoring
 
 </Columns>
 
-The vertical bar chart is provided by default, but you can change it to horizontal one. In <Cmdname sid="edit_mode" className="uitext" />, select the More (![Icon](/img/ico-more.svg)) button on the upper right of the widget, and then click ![Horizontal icon](/img/ic-bar-chart-h.svg).
+A vertical bar chart is provided by default, but you can switch to a horizontal layout. In <Cmdname sid="edit_mode" className="uitext" />, click the more button (![아이콘](/img/ico-more.svg)) in the top right of the widget, then click the ![Horizontal icon](/img/ic-bar-chart-h.svg) button.
 
 ### ![](/img/ic-ark-chart.svg) Arc equalizer {#arc}
 
-This arc equalizer chart widget visualizes the transactions occurring from the monitored targets and allows comparison by agent.
+This arc equalizer chart widget visualizes and compares transaction status by agent for monitoring targets.
 
 <Columns>
 
@@ -166,13 +173,13 @@ This arc equalizer chart widget visualizes the transactions occurring from the m
 
 </Columns>
 
-The arc equalizer chart is provided by default, but you can change it to a vertical one. In <Cmdname sid="edit_mode" className="uitext" />, select the More (![Icon](/img/ico-more.svg)) button on the upper right of the widget, and then click ![Vertical icon](/img/ic-equalizer-chart.svg).
+An arc equalizer chart is provided by default, but you can switch to a vertical bar chart. In <Cmdname sid="edit_mode" className="uitext" />, click the more button (![아이콘](/img/ico-more.svg)) in the top right of the widget, then click the ![Vertical icon](/img/ic-equalizer-chart.svg) button.
 
 <InDoc product="java,php,python,nodejs,dotnet,golang,kubernetes">
 
 :::note
 
-This <Cmdname sid="AA002" className="uitext" /> arc equalizer chart can be used in the application monitoring suite of products. For more information, see [the following](dashboard#active-trs).
+The arc equalizer chart is the <Cmdname sid="AA002" className="uitext" /> widget available in the application monitoring product family. For details, see the [next document](dashboard#active-trs).
 
 :::
 
@@ -182,15 +189,15 @@ This <Cmdname sid="AA002" className="uitext" /> arc equalizer chart can be used 
 
 :::note
 
-The arc equalizer chart widget can be used in the application monitoring suite of products.
+The arc equalizer chart widget is available in the application monitoring product family.
 
 :::
 
 </Xclude>
 
-### ![](/img/ic-grid-chart.svg) Tree map {#treemap}
+### ![](/img/ic-grid-chart.svg) Treemap {#treemap}
 
-This widget allows you to visually check the disk or memory usage of the server. The size and color of each block indicate its usage and status.
+This widget visualizes server disk or memory usage. Each block’s size and color indicate usage and status.
 
 <Columns>
 
@@ -208,33 +215,33 @@ This widget allows you to visually check the disk or memory usage of the server.
 
 </Columns>
 
-When you hover your mouse pointer over a block on the default chart, a tooltip appears displaying the value ​​of the block. To change the chart to display the numbers for individual blocks, select the More (![icon](/img/ico-more.svg)) button on the upper right of the widget, and then click ![Icon](/img/ic-pageload.svg).
+When you hover the mouse pointer over blocks in the default chart, a tooltip shows that block’s value. To switch to a chart that displays values inside each block, click the more button (![아이콘](/img/ico-more.svg)) in the top right of the widget, then click the ![Icon](/img/ic-pageload.svg) button.
 
-### ![](/img/ic-dot-chart.svg) Scatter plot {#scatter}
+### ![](/img/ic-dot-chart.svg) Scatter {#scatter}
 
-A scatter plot is used to visually display the relationship between two variables, with each point representing a data point. It is also useful for identifying patterns or trends in large datasets, providing a visual distribution of data points. Through this, you can identify performance issues occurring at specific time periods.
+A scatter plot visualizes the relationship between two variables. Each point represents a data point. It is useful for identifying patterns or trends in large datasets and for visually checking how data points are distributed. You can identify performance issues that occur at specific times.
 
-![Distribution chart](/img/fb-scatter-plot-chart-widget.png)
+![Scatter plot chart](/img/fb-scatter-plot-chart-widget.png)
 
-- x-axis: It represents time and indicates the moment when the data point has been recorded.
+* The x axis represents time and shows when the data point was recorded.
 
-- y-axis: It represents the processed time and indicates the duration taken by the data point.
+* The y axis represents processing time and shows how long the data point took.
 
-- By dragging over a part of the chart, you can see the detailed information.
+* Drag a region of the chart to view details.
 
-### ![](/img/ic-map.svg) Geographic map {#geomap}
+### ![](/img/ic-map.svg) Geomap {#geomap}
 
-It is a type of map chart widget that allows you to visually see the spatial data. This widget helps you identify and analyze regional performance differences by visualizing data values ​​combined with geographic locations.
+This map chart widget visualizes spatial data. By combining data values with geographic locations, it helps you identify and analyze regional performance differences.
 
-![Geo map](/img/fb-geomap-chart-widget.png)
+![Geomap](/img/fb-geomap-chart-widget.png)
 
-- You can scroll the mouse wheel or use the slider to zoom in or out on the map.
+* Use the mouse wheel or the slider to zoom in or out.
 
-- To view the world map, select ![Earth icon](/img/ic-network.svg). You can select a country to see its regional data.
+* To view the world map, select the ![Globe icon](/img/ic-network.svg) button. You can select a specific country to check regional data.
 
-- To see the data in a table format, select ![Table icon](/img/ic-table.svg). To return to the map format, select ![Map icon](/img/ic-map.svg).
+* To view the data in a table, select the ![Table icon](/img/ic-table.svg) button. To return to the map view, select the ![Map icon](/img/ic-map.svg) button.
 
-- In case of regional maps, data appears based on the upper administrative district. (Korea: province or metropolitan city)
+* For regional maps, data is displayed by top level administrative divisions. (Korea: provinces and metropolitan cities)
 
 :::info
 
@@ -244,7 +251,7 @@ This site or product includes IP2Location LITE data available from [https://lite
 
 ### ![](/img/ic-speed-tx-3.svg) Speed chart {#speed}
 
-This \*speed ​​chart\*\* widget visualizes the speed of active transactions occurring in the monitored objects. This widget provides a visual representation of the performance status of the monitored objects and is useful for analyzing performance metrics such as request processing time or response time.
+The **Speed chart** widget visualizes the speed of active transactions that occur on the monitoring target. It shows the performance status of the monitoring target and is useful for analyzing performance metrics such as request processing time and response time.
 
 ![Speed chart](/img/fb-speed-chart-widget.png)
 
@@ -252,7 +259,7 @@ This \*speed ​​chart\*\* widget visualizes the speed of active transactions 
 
 :::note
 
-The **speed chart** widget can be used in the application monitoring suite of products. For more information, see [the following](dashboard#active-trs-speed).
+The **Speed chart** widget is available in the application monitoring product family. For details, see the [next document](dashboard#active-trs-speed).
 
 :::
 
@@ -262,27 +269,27 @@ The **speed chart** widget can be used in the application monitoring suite of pr
 
 :::note
 
-The **speed chart** widget can be used in the application monitoring suite of products.
+The **Speed chart** widget is available in the application monitoring product family.
 
 :::
 
 </Xclude>
 
-### ![](/img/ic-honeycomb.svg) Honey comb type {#jfhoneycomb}
+### ![](/img/ic-honeycomb.svg) Honeycomb {#jfhoneycomb}
 
-The honeycomb chart widget allows you to check the performance and stability for the monitoring targets. Each color represents the performance and stability of the monitored objects. Blue means normal, orange means warning, red means slow, and gray means disabled.
+This honeycomb chart widget shows performance and stability for monitoring targets. Each color indicates performance and stability. Blue means normal. Orange means warning. Red means slow. Gray means disabled.
 
 <Columns>
 
 <Column className="text--left width--50">
 
-![Honey comb chart](/img/fb-honey-chart-widget.png)
+![Honeycomb chart](/img/fb-honey-chart-widget.png)
 
 </Column>
 
 <Column className="text--left">
 
-![Honey comb chart](/img/fb-db-honey-chart-widget.png)
+![Honeycomb chart](/img/fb-db-honey-chart-widget.png)
 
 </Column>
 
@@ -290,77 +297,77 @@ The honeycomb chart widget allows you to check the performance and stability for
 
 :::note
 
-Depending on the monitoring product group, the types of collected data and the meanings of colors may differ.
+Collected data types and color meaning can differ by monitoring product family.
 
 :::
 
-## List type {#list}
+## List widgets {#list}
 
 ### ![](/img/ic-table.svg) Table {#table}
 
-This widget displays a list in table format. It is useful to understand the numerical values ​​and status of the data collected from different monitored targets. For each item displayed in the list, you can see additional information through the columns. The color of the text in the list indicates its performance status.
+This widget displays a list in table form. It is useful for checking values and status of data collected from different monitoring targets. For each listed item, you can check additional related information through columns. Text color in the list indicates performance status.
 
 ![Table widget](/img/fb-table-chart-widget.png)
 
-If you select ![More icon](/img/ico-more.svg) on the upper right of the widget, you can additionally use the following features.
+Click the more button (![아이콘](/img/ico-more.svg)) in the top right of the widget to use the following features.
 
-- ![Filter icon](/img/ico-filter.svg): You can set filter options to display only the desired data.
+* ![Filter icon](/img/ico-filter.svg) : set filter options to display only the data you want
 
-- ![Column icon](/img/ic-column.svg): You can add or exclude desired columns and change their order.
+* ![Column icon](/img/ic-column.svg) : add or remove columns and change their order
 
-## ![](/img/ic-templete.svg) Group widget {#group}
+### ![](/img/ic-templete.svg) Group widget {#group}
 
-This widget allows you to display multiple widgets as a single group.
+This widget groups multiple widgets into one composite.
 
 ![Group widget](/img/fb-group-widget-apm.png)
 
-### Placing group widgets {#addgroup}
+#### Place a group widget {#addgroup}
 
 1. In the <Cmdname sid="widget_template" className="uitext" /> list, select <Cmdname sid="etc" className="uitext" /> &gt; <Cmdname sid="group" className="uitext" /> <Cmdname sid="widget" className="uitext" />.
 
-2. Select a project from which you want to call data by selecting <Cmdname sid="project_selection" className="uitext" /> on the upper right of the placed group widget.
+1. In the top right of the placed group widget, select the <Cmdname sid="project_selection" className="uitext" /> button and choose the project that will provide data.
 
-3. Set a layout by selecting <Cmdname sid="grid" className="uitext" /> on the upper right of the group widget.
+1. In the top right of the group widget, select the <Cmdname sid="grid" className="uitext" /> button and set the layout you want.
 
-4. Finish the layout configuration by selecting <Cmdname sid="apply" className="uitext" />.
+1. Select the <Cmdname sid="apply" className="uitext" /> button to complete layout settings.
 
-5. Select <Cmdname sid="add_widget" className="uitext" /> on the upper right of the group widget.
+1. In the top right of the group widget, select the <Cmdname sid="add_widget" className="uitext" /> button.
 
-6. When the <Cmdname sid="widget_template" className="uitext" /> list appears on the right of the screen, select desired widgets one by one.
+1. When the <Cmdname sid="widget_template" className="uitext" /> list appears on the right, choose the widgets you want in order.
 
 :::note
 
-- In the group widget, only one project can be selected.
+* Only one project can be selected in a group widget.
 
-- Widgets are placed in the order they have been added. To change the order of widgets, click and hold a widget name and drag it to the desired position.
+* Widgets are placed in the order added. To change order, click and drag the widget name to the desired position.
 
-- The maximum number of widgets that can be placed in the group widget is 36. You cannot add widgets more than the number set in the <Cmdname sid="grid" className="uitext" /> option.
+* You can place up to 36 widgets in a group widget. You cannot add more widgets than the number set in the <Cmdname sid="grid" className="uitext" /> option.
 
-- Once you have placed all the widgets you can add, the <Cmdname sid="grid" className="uitext" /> button is disabled.
+* When you have placed the maximum number of widgets, the <Cmdname sid="grid" className="uitext" /> button becomes disabled.
 
-- Group widgets can be viewed by opening a new window. Go to <Cmdname sid="view_mode" className="uitext" /> and then select ![Pop-up icon](/img/ic-popup.svg) on the upper right of the widget.
+* You can open a group widget in a new window. Enter <Cmdname sid="view_mode" className="uitext" />, then click the ![Popup icon](/img/ic-popup.svg) button in the top right of the widget.
 
 :::
 
-### Removing widgets in the group widget {#removewidget}
+#### Remove a widget in a group widget {#removewidget}
 
-To remove an individual widget placed in a group widget, select the More (![icon](/img/ico-more.svg)) button on the upper right of the widget, and then select ![Remove icon](/img/ico-remove.svg).
+To delete an individual widget placed in a group widget, click the more button (![아이콘](/img/ico-more.svg)) in the top right of the widget, then click the ![Delete icon](/img/ico-remove.svg) button.
 
-### Collapsing/expanding the group widget
+#### Collapse or expand a group widget
 
-The group widget can be collapsed or expanded. Select the ![Collapse icon](/img/ic-caret-down.svg) or ![Expand icon](/img/ic-caret-up.svg) button on the upper right of the widget.
+You can collapse or expand a group widget. Click the ![Collapse icon](/img/ic-caret-down.svg) or ![Expand icon](/img/ic-caret-up.svg) button in the top right of the widget.
 
 ![Group widget](/img/fb-group-widget-fold.png)
 
-If you have a lot of widgets placed on the dashboard, this feature can help you use the screen efficiently. Additionally, you can expand and view only the information you need.
+This feature helps you use space efficiently when many widgets are placed on a dashboard. You can also expand only when you want to view information.
 
-## Checking notifications and status {#checkevent}
+## Alert and status widgets {#checkevent}
 
 ### ![](/img/ic-alert.svg) <Cmdname sid="side_event" /> {#event}
 
 #### <Cmdname sid="event_list" /> {#eventlist}
 
-You can check the notification history that occurred in one or more projects in real time or set a specific inquiry time.
+You can track alerts in real time or set a specific query time for one or multiple projects.
 
 ##### <Cmdname sid="edit_mode" />
 
@@ -380,17 +387,17 @@ You can check the notification history that occurred in one or more projects in 
 
 </Columns>
 
-- In <Cmdname sid="edit_mode" className="uitext" />, sorting is possible by grouping by <Cmdname sid="title" className="uitext" />, <Cmdname sid="project" className="uitext" />, or <Cmdname sid="application" className="uitext" />. To perform ungrouping, select <Cmdname sid="timeline" className="uitext" />.
+* In <Cmdname sid="edit_mode" className="uitext" />, you can group and sort by <Cmdname sid="title" className="uitext" />, <Cmdname sid="project" className="uitext" />, and <Cmdname sid="application" className="uitext" />. To disable grouping, select the <Cmdname sid="timeline" className="uitext" /> button.
 
-- Enable the <Cmdname sid="ITM08413" className="uitext" /> option to check including the list of resolved events.
+* To include resolved events, enable the <Cmdname sid="ITM08413" className="uitext" /> option.
 
-- You can set a separate time other than the query time set on the dashboard. Select ![Clock icon](/img/ic-custom-time.svg). When the <Cmdname sid="select_time_title" className="uitext" /> pop-up appears, uncheck the <Cmdname sid="use_dashboard_settings" className="uitext" /> option.
+* You can set a separate time from the dashboard’s query time. Select the ![Clock icon](/img/ic-custom-time.svg) button. When the <Cmdname sid="select_time_title" className="uitext" /> popup appears, uncheck the <Cmdname sid="use_dashboard_settings" className="uitext" /> option.
 
 :::note
 
-- For more information on how to use the <Cmdname sid="select_time_title" className="uitext" /> option.
+* For details on the <Cmdname sid="select_time_title" className="uitext" /> option, see the [next document](/usage-ui#timeselector).
 
-- To turn the sound on or off when a notification occurs, select ![Sound icon](/img/ico-noti-sound.svg).
+* To toggle alert sounds on or off when alerts occur, select the ![Sound icon](/img/ico-noti-sound.svg) button.
 
 :::
 
@@ -406,11 +413,11 @@ You can check the notification history that occurred in one or more projects in 
 
 <Column className="text--left">
 
-In <Cmdname sid="view_mode" className="uitext" />, you can check the notification occurrence status based on the setting of <Cmdname sid="edit_mode" className="uitext" />.
+In <Cmdname sid="view_mode" className="uitext" />, you can check alert status based on the settings from <Cmdname sid="edit_mode" className="uitext" />.
 
-- To view the notification list in full screen, select ![Full screen icon](/img/ic-fullscreen.svg).
+* To view the alert list in full screen, select the ![Full screen icon](/img/ic-fullscreen.svg) button.
 
-- To open the notification list in a new window for checking, select ![New window icon](/img/ic-popup.svg).
+* To open the alert list in a new window, select the ![Popup icon](/img/ic-popup.svg) button.
 
 </Column>
 
@@ -418,13 +425,13 @@ In <Cmdname sid="view_mode" className="uitext" />, you can check the notificatio
 
 #### <Cmdname sid="event" /> <Cmdname sid="timeline" /> {#eventtimeline}
 
-You can view the time-based notification history for one or more projects in chart format.
+You can check alerts by time for one or multiple projects in chart form.
 
 <Columns>
 
 <Column className="text--center width--50">
 
-![Event tilmeline](/img/fb-event-timeline-widget.png)
+![Event timeline](/img/fb-event-timeline-widget.png)
 
 <Cmdname sid="edit_mode" />
 
@@ -432,7 +439,7 @@ You can view the time-based notification history for one or more projects in cha
 
 <Column className="text--center">
 
-![Event tilmeline](/img/fb-event-timeline-widget-view-mode.png)
+![Event timeline](/img/fb-event-timeline-widget-view-mode.png)
 
 <Cmdname sid="view_mode" />
 
@@ -440,57 +447,57 @@ You can view the time-based notification history for one or more projects in cha
 
 </Columns>
 
-- In <Cmdname sid="edit_mode" className="uitext" />, you can set a separate time other than the query time set in the dashboard. Select ![Clock icon](/img/ic-custom-time.svg). When the <Cmdname sid="select_time_title" className="uitext" /> pop-up appears, uncheck the <Cmdname sid="use_dashboard_settings" className="uitext" /> option.
+* In <Cmdname sid="edit_mode" className="uitext" />, you can set a separate time from the dashboard’s query time. Select the ![Clock icon](/img/ic-custom-time.svg) button. When the <Cmdname sid="select_time_title" className="uitext" /> popup appears, uncheck the <Cmdname sid="use_dashboard_settings" className="uitext" /> option.
 
-- To display a full screen in <Cmdname sid="view_mode" className="uitext" />, select ![Full screen icon](/img/ic-fullscreen.svg). To check in a new window, select ![New window icon](/img/ic-popup.svg).
+* In <Cmdname sid="view_mode" className="uitext" />, to view full screen, select the ![Full screen icon](/img/ic-fullscreen.svg) button. To open in a new window, select the ![Popup icon](/img/ic-popup.svg) button.
 
-### ![](/img/ic-agent.svg) Checking status {#checkstatus}
+### ![](/img/ic-agent.svg) Status check {#checkstatus}
 
-This widget displays the current status and results through the data collected from the monitored targets. You can monitor the increase or decrease of specific services.
+This widget displays current status and results based on data collected from monitoring targets. You can monitor increase or decrease for a specific service.
 
-![Status info widget](/img/fb-status-widget.png)
+![Status widget](/img/fb-status-widget.png)
 
-If you select ![More icon](/img/ico-more.svg) on the upper right of the widget, you can additionally use the following features.
+Click the more button (![아이콘](/img/ico-more.svg)) in the top right of the widget to use the following features.
 
-- ![Column icon](/img/ic-column.svg): You can add or exclude desired data and change their order.
+* ![Column icon](/img/ic-column.svg) : add or remove the data you want and change order
 
-- ![Text icon](/img/ic-text-widget.svg): Only text can be displayed, excluding any graph chart.
+* ![Text icon](/img/ic-text-widget.svg) : show only text information without the graph chart
 
-- ![Chart icon](/img/ic-speed-chart.svg): You can display the text and graph chart together.
+* ![Chart icon](/img/ic-speed-chart.svg) : show text information with the graph chart
 
-## Information {#infomation}
+## Information widgets {#infomation}
 
 ### ![](/img/ic-text-widget.svg) Text {#text}
 
-This widget displays numerical values ​​for a metric in text format.
+This widget displays metric values in text form.
 
 ![Text widget](/img/fb-text-widget.png)
 
-You can add or exclude desired data and change the order by selecting the More (![icon](/img/ico-more.svg)) button on the upper right of the widget and then clicking the ![Column icon](/img/ic-column.svg) button.
+Click the more button (![아이콘](/img/ico-more.svg)) in the top right of the widget, then click the ![Column icon](/img/ic-column.svg) button to add or remove the data you want and change order.
 
-### ![](/img/ic-vital-chart.svg) Summary information {#overview}
+### ![](/img/ic-vital-chart.svg) Overview {#overview}
 
-This widget provides summary information or description for a specific metric in the project.
+This widget presents project summaries or explanations of specific metrics.
 
 ![Project overview](/img/fb-project-overview-widget.png)
 
 :::note
 
-The displayed summary may differ depending on the product type of the selected project.
+Displayed summaries differ by the selected project’s product type.
 
 :::
 
 ### ![](/img/ic-pageload.svg) <Cmdname sid="page_load,timeline" /> {#pageloadtimeline}
 
-**Browser** This product-specific widget displays the <Cmdname sid="page_load,timeline" className="uitext" /> information.
+This is a **Browser** product only widget that shows <Cmdname sid="page_load,timeline" className="uitext" /> information.
 
-![Pageload timeline](/img/fb-browser-pageload-timeline-widget.png)
+![Page load timeline](/img/fb-browser-pageload-timeline-widget.png)
 
 <Xclude product="browser">
 
 :::note
 
-For more information about <Cmdname sid="page_load,timeline" className="uitext" />, see [the following](../browser/dashboard#pageloadtimeline).
+For details on <Cmdname sid="page_load,timeline" className="uitext" />, see the [next document](../browser/dashboard#pageloadtimeline).
 
 :::
 
@@ -500,48 +507,48 @@ For more information about <Cmdname sid="page_load,timeline" className="uitext" 
 
 :::note
 
-For more information about <Cmdname sid="page_load,timeline" className="uitext" />, see [the following](dashboard#pageloadtimeline).
+For details on <Cmdname sid="page_load,timeline" className="uitext" />, see the [next document](dashboard#pageloadtimeline).
 
 :::
 
 </InDoc>
 
-## ETC
+## Other widgets
 
 ### ![](/img/ic-note.svg) <Cmdname sid="rich_text" /> {#richtext}
 
-You can enter the desired text and place it as a widget.
+You can enter any text and place it as a widget.
 
 ![Rich text](/img/fb-rich-text-widget.png)
 
-You can modify the text or set the template through the options provided on the upper right of the widget.
+You can edit text and set formatting using options provided in the top right of the widget.
 
-- ![Color icon](/img/ic-colors.svg): You can set the background, outline, and font colors by using the <Cmdname sid="edit_widget" className="uitext" /> option. After all settings are finished, select <Cmdname sid="save" className="uitext" />.
+* ![Color icon](/img/ic-colors.svg) : use the <Cmdname sid="edit_widget" className="uitext" /> option to set widget background and border and font color. After finishing, select the <Cmdname sid="save" className="uitext" /> button.
 
-- ![Modify icon](/img/ic-edit.svg): In the <Cmdname sid="rich_text" className="uitext" /> pop-up window on the right of the screen, you can add or modify the text. You can also set the template by using the provided toolbar.
+* ![Edit icon](/img/ic-edit.svg) : a <Cmdname sid="rich_text" className="uitext" /> window appears on the right. You can add or edit text and use the provided toolbar to set formatting.
 
 ### ![](/img/ic-tool.svg) Maintenance plan
 
-This widget allows you to check the maintenance plan details of the selected project.
+This widget shows maintenance plans for the selected project.
 
-![Maintenance Plan](/img/fb-maintenance-plan-widget.png)
+![Maintenance plan](/img/fb-maintenance-plan-widget.png)
 
 :::note
 
-- Only the maintenance plans scheduled within 1 hour are displayed on the widget.
+* Only maintenance plans scheduled within 1 hour are displayed in the widget.
 
-- For more information about <Cmdname sid="side_maintenancePlan" className="uitext" />, see [the following](../management/maintenance).
+* For details on the <Cmdname sid="side_maintenancePlan" className="uitext" /> menu, see the [next document](../management/maintenance).
 
 :::
 
 ### ![](/img/ic-s-list.svg) <Cmdname sid="url_list" /> {#urllist}
 
-**URL** This product-specific widget allows you to check the list and status of registered URLs.
+This is a **URL** product only widget that shows the list and status of registered URLs.
 
 ![URL List](/img/fb-url-list-widget.png)
 
 :::note
 
-For more information about the **URL** monitoring, see [the following](../url/url-intro).
+For details on **URL** monitoring, see the [next document](../url/url-intro).
 
 :::
