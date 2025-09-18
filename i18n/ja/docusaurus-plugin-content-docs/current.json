@@ -751,6 +751,10 @@
     "message": "参照文書",
     "description": "The label for link 참조 문서 in sidebar indexSidebar, linking to reference"
   },
+  "sidebar.indexSidebar.link.공통 UI": {
+    "message": "UIの使い方",
+    "description": "The label for link 공통 UI in sidebar indexSidebar, linking to reference"
+  },
   "sidebar.indexSidebar.link.릴리스 노트": {
     "message": "リリースノート",
     "description": "The label for link 릴리스 노트 in sidebar indexSidebar, linking to release-notes"
