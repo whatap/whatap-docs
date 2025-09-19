@@ -147,7 +147,7 @@ features:
 
 - **動作**： `true`に設定すると、すべてのメトリクスに`node`ラベルが追加され、オブジェクトが実行されているノード名が値として付加されます。
 
-```yaml title='사용예제'
+```yaml title='使用例'
 # ターゲットレベルで addNodeLabel を設定
 - targetName: node-exporter
   type: PodMonitor
@@ -239,7 +239,7 @@ insecureSkipVerify\` オプションは、サーバー証明書の有効性検�
 
 ### 設定例
 
-```yaml title='ServiceMonitor에서 TLS 설정 예제'
+```yaml title='ServiceMonitor에서 TLS 設定例'
 - targetName: kube-apiserver
   type: ServiceMonitor
   namespaceSelector:
@@ -266,7 +266,7 @@ insecureSkipVerify\` オプションは、サーバー証明書の有効性検�
           action: replace
 ```
 
-## ### メトリック再ラベリング設定 {#metricRelabelConfigs}
+## メトリック再ラベリング設定 {#metricRelabelConfigs}
 
 OpenAgent は、Prometheus の `metric_relabel_configs` に類似したメトリック再ラベリング機能をサポートしています。この機能を使用すると、スクレイピング後のメトリクスをフィルタリングしたり、ラベルを変更したりできます。
 
@@ -476,7 +476,7 @@ apiserver_request_total{code="200", resource="pods", verb="GET", http_verb="GET"
 
 - metricRelabelConfigs を使用して apiserver_request_total メトリクスのみを収集し、verb ラベルを http_verb ラベルに変換し、すべてのメトリクスに metric_src="whatap-open-agent" という静的ラベルを追加するよう指定できます。
 
-```yaml title='쿠버네티스 메트릭 수집 예제'
+```yaml title='Kubernetes メトリクス収集例'
 # scrape_config.yaml
 features:
   openAgent:
@@ -503,7 +503,7 @@ features:
                 target_label: http_verb
                 replacement: "${1}"
                 action: replace
-              # 정적 레이블 추가
+              # 静的ラベルの追加
               - target_label: metric_src
                 replacement: "whatap-open-agent"
                 action: replace
