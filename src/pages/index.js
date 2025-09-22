@@ -230,31 +230,31 @@ function RecommendedDoc() {
     if (currentLocale == "ko") {
         return (
             <>
-                <Link to={useBaseUrl("kubernetes/install-master-node-agent-v2#custom-resource-features")} className={clsx(styles.white, styles.underline)}>Custom Resource 모니터링 활성화</Link>,&nbsp;
-                <Link to={useBaseUrl("server/server-inventory-map")} className={clsx(styles.white, styles.underline)}>서버 인벤토리 맵</Link>,&nbsp;
-                <Link to={useBaseUrl("oracle/analysis-lock-and-deadlock")} className={clsx(styles.white, styles.underline)}>락 트리</Link>,&nbsp;
-                <Link to={useBaseUrl("oracle/usage-ui#check-default-db-id-values-planuid")} className={clsx(styles.white, styles.underline)}>디폴트 플랜 조회</Link>,&nbsp;
-                <Link to={useBaseUrl("browser/errorload-stat")} className={clsx(styles.white, styles.underline)}>에러 로드 통계</Link>
+                <Link to={useBaseUrl("management/ai-chatbot")} className={clsx(styles.white, styles.underline)}>와탭 AI 챗봇</Link>,&nbsp;
+                <Link to={useBaseUrl("kubernetes/dashboard-gpu")} className={clsx(styles.white, styles.underline)}>GPU 대시보드</Link>,&nbsp;
+                <Link to={useBaseUrl("java/instance-performance-analysis#ai-thread-analysis")} className={clsx(styles.white, styles.underline)}>APM: AI 스레드 분석</Link>,&nbsp;
+                <Link to={useBaseUrl("server/server-inventory")} className={clsx(styles.white, styles.underline)}>서버 인벤토리</Link>,&nbsp;
+                <Link to={useBaseUrl("openmetrics_cardinality")} className={clsx(styles.white, styles.underline)}>OpenMetrics 카디널리티</Link>
             </>
         );
     } else if (currentLocale == "en") {
         return (
             <>
-                <Link to={useBaseUrl("server/server-inventory-map")} className={clsx(styles.white, styles.underline)}>Server inventory map</Link>,&nbsp;
-                <Link to={useBaseUrl("kubernetes/node-map")} className={clsx(styles.white, styles.underline)}>Node Map</Link>,&nbsp;
-                <Link to={useBaseUrl("mssql/monitoring-intro")} className={clsx(styles.white, styles.underline)}>SQL Server V2</Link>,&nbsp;
-                <Link to={useBaseUrl("java/linked-projects")} className={clsx(styles.white, styles.underline)}>APM: Correlated project management</Link>,&nbsp;
-                <Link to={useBaseUrl("postgresql/cloudsettings")} className={clsx(styles.white, styles.underline)}>DB: Cloud Settings</Link>
+                <Link to={useBaseUrl("management/ai-chatbot")} className={clsx(styles.white, styles.underline)}>WhaTap AI Chatbot</Link>,&nbsp;
+                <Link to={useBaseUrl("kubernetes/dashboard-gpu")} className={clsx(styles.white, styles.underline)}>GPU Dashboard</Link>,&nbsp;
+                <Link to={useBaseUrl("java/instance-performance-analysis#ai-thread-analysis")} className={clsx(styles.white, styles.underline)}>APM: AI Thread Analysis</Link>,&nbsp;
+                <Link to={useBaseUrl("server/server-inventory")} className={clsx(styles.white, styles.underline)}>Server Inventory</Link>,&nbsp;
+                <Link to={useBaseUrl("openmetrics_cardinality")} className={clsx(styles.white, styles.underline)}>OpenMetrics Cardinality</Link>
             </>
         );
     } else if (currentLocale == "ja") {
         return (
             <>
-                <Link to={useBaseUrl("server/server-inventory-map")} className={clsx(styles.white, styles.underline)}>サーバーインベントリマップ</Link>,&nbsp;
-                <Link to={useBaseUrl("kubernetes/node-map")} className={clsx(styles.white, styles.underline)}>ノードマップ</Link>,&nbsp;
-                <Link to={useBaseUrl("mssql/monitoring-intro")} className={clsx(styles.white, styles.underline)}>SQL Server V2</Link>,&nbsp;
-                <Link to={useBaseUrl("java/linked-projects")} className={clsx(styles.white, styles.underline)}>APM: 連携プロジェクト管理</Link>,&nbsp;
-                <Link to={useBaseUrl("postgresql/cloudsettings")} className={clsx(styles.white, styles.underline)}>DB: クラウド設定</Link>
+                <Link to={useBaseUrl("management/ai-chatbot")} className={clsx(styles.white, styles.underline)}>WhaTap AIチャットボット</Link>,&nbsp;
+                <Link to={useBaseUrl("kubernetes/dashboard-gpu")} className={clsx(styles.white, styles.underline)}>GPUダッシュボード</Link>,&nbsp;
+                <Link to={useBaseUrl("java/instance-performance-analysis#ai-thread-analysis")} className={clsx(styles.white, styles.underline)}>APM: AI スレッド分析</Link>,&nbsp;
+                <Link to={useBaseUrl("server/server-inventory")} className={clsx(styles.white, styles.underline)}>サーバーインベントリ</Link>,&nbsp;
+                <Link to={useBaseUrl("openmetrics_cardinality")} className={clsx(styles.white, styles.underline)}>OpenMetrics カーディナリティ</Link>
             </>
         );
     }
