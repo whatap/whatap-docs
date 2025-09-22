@@ -34,8 +34,7 @@ WhaTap is designed on the premise of collecting monitoring data from public netw
 4. The WhaTap agent establishes the TCP session with the server.
 5. Request a security key for a new session by encrypting data with the private key for communication included in the **Project access key**.
 6. The server creates a new security key for the session requested by the agent and sends it down to the agent.
-7. The security key of the session has two encryption keys. They are encryption keys for the ASC algorithm and the simple password.
-8. Afterwards, the agent uses the ASC secret key for sensitive data such as text and control data. Relatively secure data such as numeric value undergoes simple encryption before transmission to the server.
+8. After that, the agent encrypts data such as text and numbers and sends it to the server.
 
 :::note
 
