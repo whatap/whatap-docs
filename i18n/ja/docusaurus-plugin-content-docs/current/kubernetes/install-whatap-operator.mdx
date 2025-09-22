@@ -138,7 +138,7 @@ spec:
     #   gpuMonitoring:
     #     enabled: true                 # GPU モニタリング有効化（NVIDIA DCGM-EXPORTER が whatap-node-agent サイドカーとしてインストールされます）
     
-    ### オープンメトリクス（Prometheus 形式のメトリクス収集）使用時はコメントを解除
+    ### OpenMetrics（Prometheus 形式のメトリクス収集）使用時はコメントを解除
     # openAgent:
     #     enabled: true                 # OpenAgent 有効化
     #     targets:
@@ -175,7 +175,7 @@ Kubernetesモニタリングエージェントをインストールせず、WhaT
 
 :::note
 
-ノードエージェントに内蔵されたサイドカーではなく、直接 DCGM-EXPORTER を構成した場合は、[OpenAgent（オープンエージェント）構成](openagent) ドキュメントを参照して dcgm オープンメトリクスを収集することができます。
+ノードエージェントに内蔵されたサイドカーではなく、直接 DCGM-EXPORTER を構成した場合は、[OpenAgent（オープンエージェント）構成](openagent) ドキュメントを参照して dcgm OpenMetricsを収集することができます。
 
 :::
 
