@@ -126,26 +126,20 @@ const sidebars = {
               id: 'java/dashboard-business', 
               className: 'new' 
             },
-          ],
-        },
-        {
-          type: 'category',
-          label: 'Flex 보드',
-          collapsible: true,
-          collapsed: true,
-          link: {
-            type: 'doc',
-            id: 'java/flex-board',
-          },
-          items: [
-            'java/flexboard-template',
-            'java/flexboard-create',
-            'java/flexboard-manage',
-            'java/flexboard-metric-widget',
-            'java/flexboard-widget-manage',
-            'java/flexboard-widget-template',
-            'java/flexboard-mode',
-            'java/flexboard-share',
+            {
+              type: 'category',
+              label: 'Flex 보드',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'java/flex-board',
+              },
+              items: [
+                'java/flexboard-guide',
+                'java/flexboard-widget-manage',
+              ],
+            },
           ],
         },
         {
@@ -5363,14 +5357,8 @@ const sidebars = {
             id: 'aws-log/flexboard',
           },
           items: [
-            'aws-log/flexboard-template',
-            'aws-log/flexboard-create',
-            'aws-log/flexboard-manage',
-            'aws-log/flexboard-metric-widget',
+            'aws-log/flexboard-guide',
             'aws-log/flexboard-widget-manage',
-            'aws-log/flexboard-widget-template',
-            'aws-log/flexboard-mode',
-            'aws-log/flexboard-share',
           ],
         },
         {
@@ -5498,14 +5486,8 @@ const sidebars = {
                 id: 'amazon-ecs/flexboard',
               },
               items: [
-                'amazon-ecs/flexboard-template',
-                'amazon-ecs/flexboard-create',
-                'amazon-ecs/flexboard-manage',
-                'amazon-ecs/flexboard-metric-widget',
+                'amazon-ecs/flexboard-guide',
                 'amazon-ecs/flexboard-widget-manage',
-                'amazon-ecs/flexboard-widget-template',
-                'amazon-ecs/flexboard-mode',
-                'amazon-ecs/flexboard-share',
               ]
             },
             {
@@ -5568,14 +5550,8 @@ const sidebars = {
                 id: 'amazon-cloudwatch/flexboard',
               },
               items: [
-                'amazon-cloudwatch/flexboard-template',
-                'amazon-cloudwatch/flexboard-create',
-                'amazon-cloudwatch/flexboard-manage',
-                'amazon-cloudwatch/flexboard-metric-widget',
+                'amazon-cloudwatch/flexboard-guide',
                 'amazon-cloudwatch/flexboard-widget-manage',
-                'amazon-cloudwatch/flexboard-widget-template',
-                'amazon-cloudwatch/flexboard-mode',
-                'amazon-cloudwatch/flexboard-share',
               ]
             },
             {
@@ -5637,14 +5613,8 @@ const sidebars = {
             id: 'azure/flexboard',
           },
           items: [
-            'azure/flexboard-template',
-            'azure/flexboard-create',
-            'azure/flexboard-manage',
-            'azure/flexboard-metric-widget',
+            'azure/flexboard-guide',
             'azure/flexboard-widget-manage',
-            'azure/flexboard-widget-template',
-            'azure/flexboard-mode',
-            'azure/flexboard-share',
           ]
         },
         {
@@ -5706,14 +5676,8 @@ const sidebars = {
             id: 'ncloud/flexboard',
           },
           items: [
-            'ncloud/flexboard-template',
-            'ncloud/flexboard-create',
-            'ncloud/flexboard-manage',
-            'ncloud/flexboard-metric-widget',
+            'ncloud/flexboard-guide',
             'ncloud/flexboard-widget-manage',
-            'ncloud/flexboard-widget-template',
-            'ncloud/flexboard-mode',
-            'ncloud/flexboard-share',
           ]
         },
         {
@@ -5775,14 +5739,8 @@ const sidebars = {
             id: 'oracle-cloud/flexboard',
           },
           items: [
-            'oracle-cloud/flexboard-template',
-            'oracle-cloud/flexboard-create',
-            'oracle-cloud/flexboard-manage',
-            'oracle-cloud/flexboard-metric-widget',
+            'oracle-cloud/flexboard-guide',
             'oracle-cloud/flexboard-widget-manage',
-            'oracle-cloud/flexboard-widget-template',
-            'oracle-cloud/flexboard-mode',
-            'oracle-cloud/flexboard-share',
           ]
         },
         {
