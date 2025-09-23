@@ -2271,6 +2271,10 @@
     "message": "설정",
     "description": "The label for category 설정 in sidebar nmsSidebar"
   },
+  "sidebar.nmsSidebar.category.로그": {
+    "message": "로그",
+    "description": "The label for category 로그 in sidebar nmsSidebar"
+  },
   "sidebar.nmsSidebar.doc.Log 모니터링": {
     "message": "Log 모니터링",
     "description": "The label for the doc item Log 모니터링 in sidebar nmsSidebar, linking to the doc log/introduction"
