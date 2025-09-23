@@ -6816,25 +6816,25 @@ const sidebars = {
                 'kubernetes/container-group',
                 'kubernetes/container-status',
                 'kubernetes/foreign-project',
+                {
+                  type: 'category',
+                  label: '컨테이너 맵 상세 분석',
+                  collapsible: true,
+                  collapsed: true,
+                  link: {
+                    type: 'doc',
+                    id: 'kubernetes/container-map-detail-mode'
+                  },
+                  items: [
+                    'kubernetes/container-map-target-info',
+                    'kubernetes/container-map-trace',
+                    'kubernetes/container-map-metrics',
+                    'kubernetes/container-map-log',
+                    'kubernetes/container-map-event',
+                    'kubernetes/container-map-call-information',
+                  ],
+                }
               ]
-            },
-            {
-              type: 'category',
-              label: '컨테이너 맵 상세 분석',
-              collapsible: true,
-              collapsed: true,
-              link: {
-                type: 'doc',
-                id: 'kubernetes/container-map-detail-mode'
-              },
-              items: [
-                'kubernetes/container-map-target-info',
-                'kubernetes/container-map-trace',
-                'kubernetes/container-map-metrics',
-                'kubernetes/container-map-log',
-                'kubernetes/container-map-event',
-                'kubernetes/container-map-call-information',
-              ],
             },
             'kubernetes/node-map',
             'kubernetes/performance-summary',
@@ -6859,6 +6859,15 @@ const sidebars = {
               ],
             },
           ]
+        },
+        {
+          type: 'category',
+          label: 'OpenMetrics',
+          collapsible: true,
+          collapsed: true, 
+          items: [
+            'kubernetes/openmetrics_explorer',
+          ],
         },
         {
           type: 'category',
@@ -6967,29 +6976,28 @@ const sidebars = {
             'kubernetes/multiservice-hitmap',
             'kubernetes/analysis-msa',
             'kubernetes/analysis-stack',
-            'kubernetes/openmetrics_explorer',
-          ],
-        },
-        {
-          type: 'category',
-          label: '메트릭스',
-          collapsible: true,
-          collapsed: true,
-          link: {
-            type: 'doc',
-            id: 'kubernetes/metrics-intro'
-          },
-          items: [
-            'kubernetes/metrics-kubernetes',
-            'kubernetes/metrics-search',
             {
-              type: 'doc',
-              id: 'kubernetes/metrics-chart-v2',
-              className: 'newfunc'
+              type: 'category',
+              label: '메트릭스',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'kubernetes/metrics-intro'
+              },
+              items: [
+                'kubernetes/metrics-kubernetes',
+                {
+                  type: 'doc',
+                  id: 'kubernetes/metrics-chart-v2',
+                  className: 'newfunc'
+                },
+                'kubernetes/metrics-chart',
+                'kubernetes/metrics-detect-anormal',
+                'kubernetes/metrics-search',
+              ]
             },
-            'kubernetes/metrics-chart',
-            'kubernetes/metrics-detect-anormal',
-          ]
+          ],
         },
         'kubernetes/log',
         'kubernetes/report-intro',
