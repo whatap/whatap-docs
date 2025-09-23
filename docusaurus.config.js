@@ -297,6 +297,11 @@ const config = {
               },
               {
                 type: 'doc',
+                docId: 'dpm/monitoring-intro',
+                label: 'Database',
+              },
+              {
+                type: 'doc',
                 docId: 'kubernetes/introduction',
                 label: 'Kubernetes',
               },
@@ -433,6 +438,13 @@ const config = {
             docId: 'kubernetes/introduction',
             position: "left",
             label: 'Kubernetes 모니터링',
+            className: 'hidden',
+          },
+          {
+            type: 'doc',
+            docId: 'dpm/monitoring-intro',
+            position: "left",
+            label: 'Database 모니터링',
             className: 'hidden',
           },
           {

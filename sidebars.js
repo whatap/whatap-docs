@@ -1539,17 +1539,15 @@ const sidebars = {
         id: 'dpm/monitoring-intro'
       },
       items: [
-        {
-          type: 'doc',
-          label: '지원 환경',
-          id: 'dpm/monitoring-support',
-        },
+        'dpm/monitoring-support',
         {
           type: 'category',
           label: '설치하기',
           collapsible: true,
           collapsed: true,
           items: [
+            'dpm/create-db-user',
+            'dpm/agent-deployment',
             'dpm/install-agent',
             'dpm/after-install-agent',
             'dpm/troubleshooting',
@@ -3158,75 +3156,6 @@ const sidebars = {
           ]
         },
         'ncloud/labs'
-      ]
-    }
-  ],
-  oracleSidebar: [
-    {
-      type: 'category',
-      label: 'Oracle Cloud Monitor',
-      collapsible: false,
-      collapsed: false,
-      // link: {
-      //   type: 'doc',
-      //   id: 'amazon-cloudwatch/amazon-cloudwatch-intro'
-      // },
-      items: [
-        'oracle-cloud/install-agent',
-        // 'oracle-cloud/dashboard',
-        {
-          type: 'category',
-          label: 'Flex 보드',
-          collapsible: true,
-          collapsed: true,
-          link: {
-            type: 'doc',
-            id: 'oracle-cloud/flexboard',
-          },
-          items: [
-            'oracle-cloud/flexboard-template',
-            'oracle-cloud/flexboard-create',
-            'oracle-cloud/flexboard-manage',
-            'oracle-cloud/flexboard-metric-widget',
-            'oracle-cloud/flexboard-widget-manage',
-            'oracle-cloud/flexboard-widget-template',
-            'oracle-cloud/flexboard-mode',
-            'oracle-cloud/flexboard-share',
-          ]
-        },
-        {
-          type: 'category',
-          label: '메트릭스',
-          collapsible: true,
-          collapsed: true,
-          link: {
-            type: 'doc',
-            id: 'oracle-cloud/metrics-intro',
-          },
-          items: [
-            'oracle-cloud/metrics-search',
-            'oracle-cloud/metrics-chart',
-            'oracle-cloud/metrics-detect-anormal',
-          ]
-        },
-        {
-          type: 'category',
-          label: '경고 알림',
-          collapsible: true,
-          collapsed: true,
-          link: {
-            type: 'doc',
-            id: 'oracle-cloud/set-notice',
-          },
-          items: [
-            'oracle-cloud/metric-warning-notice',
-            'oracle-cloud/set-receive-event',
-            'oracle-cloud/set-event-history',
-            'oracle-cloud/real-time-notification',
-            'oracle-cloud/common-alert'
-          ]
-        },
-        'oracle-cloud/labs'
       ]
     }
   ],
