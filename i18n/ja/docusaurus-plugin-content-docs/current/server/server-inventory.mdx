@@ -182,13 +182,13 @@ cp /tmp/whatap.conf /usr/whatap/infra/conf/whatap.conf
 
 ### フィルター
 
-上部の ![ガイド1](/img/number-01.png) フィルター入力欄をクリックし、目的の **フィルターキー** と **条件** を選択して値を入力し、**適用** ボタンをクリックしてください。 ![指示線 2](/img/number-02.png)サーバー インベントリ一覧領域でフィルタリングされた一覧を照会できます。 
+フィルター入力欄をクリックし、目的の **フィルターキー** と **条件** を選択して値を入力し、**適用** ボタンをクリックしてください。サーバーインベントリ一覧領域でフィルタリングされた一覧を確認できます。
 
 <ServerInventoryFilter />
 
 ### ソート
 
-![指示線2](/img/number-02.png)領域上部のソートオプションを使用して、最大3段階の複数ソートを提供します。 カスタムカラムを含め、希望する項目を基準にソートできます。 デフォルトのソート設定は<Cmdname sid="TTL08087" className="uitext" /> &gt; <Cmdname sid="TTL08099" className="uitext" /> &gt; <Cmdname sid="TTL08100" className="uitext" />です。 
+ソートオプションによって最大3段階のマルチソートが可能です。 カスタムカラムを含め、希望する項目を基準にソートできます。 デフォルトのソート設定は<Cmdname sid="TTL08087" className="uitext" /> &gt; <Cmdname sid="TTL08099" className="uitext" /> &gt; <Cmdname sid="TTL08100" className="uitext" />です。 
 
 :::note 
 
@@ -196,9 +196,46 @@ cp /tmp/whatap.conf /usr/whatap/infra/conf/whatap.conf
 
 :::
 
+### ヒストリー照会
+
+サーバーインベントリの過去データ照会、変更履歴照会、日別比較を通じてサーバーの変化過程を追跡できます。
+
+#### 過去データ照会
+
+毎日午前0時基準で保存されたスナップショットデータを呼び出し、過去データや特定フィールドの変更履歴を確認できます。
+
+1. YYYY/MM/DD ![カレンダーアイコン](/img/ic-start-date.svg) ボタンをクリックします。
+
+1. 照会する過去の日付を選択し、**確認** ボタンをクリックして照会します。
+
+:::caution
+
+過去データ照会時、**修正**、**CSVアップロード**、**カラム設定** 機能は使用できません。  
+テーブルの Connection フィールドは自動的に非表示になります。
+
+:::
+
+#### 変更履歴照会
+
+選択したサーバーの特定フィールド値が照会区間の間、日ごとにどのように変更されたかを確認でき、そのフィールドの生成および削除履歴もあわせて照会できます。
+
+1. <Cmdname sid="side_serverInventory" className="uitext" />で ![時間アイコン](/img/ico-timing.svg) **変更履歴照会** ボタンをクリックします。 
+
+1. **インベントリ変更履歴検索** ウィンドウで照会する日付、サーバー、カラム名を選択します。 
+
+1. 選択した条件に従って日別の変更履歴を確認します。
+
+#### 日別比較
+
+選択したサーバーの2つの日付を指定し、データ変更内容やフィールドの生成・削除有無を比較できます。
+
+1. 比較するサーバーの **History** ![時間アイコン](/img/ico-timing.svg) アイコンをクリックします。 
+
+1. **ヒストリー照会**で **基準日** と **比較日** を選択してデータを比較します。
+
 ### カラム設定
 
-![指示線2](/img/number-02.png)領域上段の![カラムアイコン](/img/ic-column.svg)<Cmdname sid="column_settings" className="uitext" />ボタンをクリックします。 次のようにカラムを選択してカスタムカラムを追加した後、下にある<Cmdname sid="BTN06053" className="uitext" />ボタンをクリックしてカラムの設定を保存します。 
+<Cmdname sid="column_settings" className="uitext" /> ボタンをクリックしてください。 次のようにカラムを選択してカスタムカラムを追加した後、下にある<Cmdname sid="BTN06053" className="uitext" />ボタンをクリックしてカラムの設定を保存します。 
 
 <ImgLang img='server-inventory-cl.png' desc='サーバーインベントリのカラム設定' />
 
@@ -220,13 +257,13 @@ cp /tmp/whatap.conf /usr/whatap/infra/conf/whatap.conf
 
 #### CSVダウンロード{#csvdownload}
 
-![指示線2](/img/number-02.png)領域上段の![ダウンロードアイコン](/img/ico-download.svg) <Cmdname sid="download" className="uitext" />ボタンを選択して、収集されたサーバーインベントリを*CSV*ファイル形式でダウンロードできます。 
+![ダウンロードアイコン](/img/ico-download.svg) <Cmdname sid="download" className="uitext" /> ボタンを選択して、収集されたサーバーインベントリを *CSV* ファイル形式でダウンロードできます。
 
 #### CSVアップロード{#csvupload}
 
 サーバー構成情報を大量に入力する必要がある場合、個々のデータを手作業で入力するのに多くの時間がかかります。 *CSVファイル*アップロード機能により、大量のデータ入力を効率的に処理できます。 ダウンロードした*CSV*ファイルを修正してアップロード機能を活用してみてください。 
 
-1. [ガイド2](/img/number-02.png) 領域上部の ![アップロードアイコン](/img/ico-upload.svg) **CSV** <Cmdname sid="upload" className="uitext" /> ボタンをクリックし、アップロードする *CSV* ファイルを選択してください。 
+1. ![アップロードアイコン](/img/ico-upload.svg) **CSV** <Cmdname sid="upload" className="uitext" /> ボタンをクリックし、アップロードする *CSV* ファイルを選択してください。
 
 2. **CSV検証** ウィンドウで、アップロードされたデータの検証結果を確認してください。 
 
@@ -250,7 +287,7 @@ cp /tmp/whatap.conf /usr/whatap/infra/conf/whatap.conf
 
 ### 修正
 
-![指示線2](/img/number-02.png)領域上段の![修正アイコン](/img/ic-edit.svg) <Cmdname sid="edit" className="uitext" />ボタンを選択して、サーバーインベントリの一覧を修正できます。 
+![修正アイコン](/img/ic-edit.svg) <Cmdname sid="edit" className="uitext" /> ボタンを選択して、サーバーインベントリ一覧を修正できます。
 
 - <Cmdname sid="TTL08183" className="uitext" />と<Cmdname sid="TTL08184" className="uitext" />カラムの内容を設定できます。
 
