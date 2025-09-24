@@ -28,7 +28,7 @@ export default function Cover() {
           MySQL Monitoring
         </h1>
         <p className={styles.date}>
-            release date. 2025.07.23.
+            release date. 2025.09.24.
         </p>
         <img className={styles.background} src={bgPath} />
       </div>
