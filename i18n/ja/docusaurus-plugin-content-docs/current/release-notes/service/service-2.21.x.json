@@ -1,0 +1,448 @@
+[
+  {
+    "url": "https://docs.whatap.io/release-notes/service/service-2_21_x",
+    "ver": "Service 2.21.1",
+    "date": "2025-09-24",
+    "Lists": [
+      {
+        "ver": "Service 2.21.1",
+        "hash": "service-2211",
+        "product": "データベース",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">ダッシュボード</span> &gt; <span class=\"uitext\">マルチインスタンスモニタリング</span> スロークエリウィジェットが正しく表示されない問題を修正</p>",
+        "category": "MySQL"
+      }
+    ]
+  },  
+  {
+      "url": "https://docs.whatap.io/release-notes/service/service-2_21_x",
+      "ver": "Service 2.21.0",
+      "date": "2025-09-24",
+      "Lists": [
+        {
+          "ver": "Service 2.21.0",
+          "hash": "service-2210",
+          "product": "共通",
+          "type": "Changed",
+          "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> <strong>サイト管理者</strong> &gt; <strong>リージョン</strong> リージョン管理リストにルーター項目を追加</p>"
+        },
+        {
+          "ver": "Service 2.21.0",
+          "hash": "service-2210",
+          "product": "課金",
+          "type": "Changed",
+          "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> プロモーションAPI応答の変更に伴い割引表示ロジックを修正（+商品コード表示）</p>"
+        },
+        {
+          "ver": "Service 2.21.0",
+          "hash": "service-2210",
+          "product": "課金",
+          "type": "Changed",
+          "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> Cloud、ECS製品の課金集計ロジックを変更（API下位互換性対応）</p>",
+          "details": "<ul><li>請求および支払い履歴 &gt; 詳細 - 課金集計量</li><li>請求書プレビュー - 課金集計量</li><li>プロジェクト使用量プレビュー - 課金集計量</li></ul>"
+        },
+        {
+          "ver": "Service 2.21.0",
+          "hash": "service-2210",
+          "product": "課金",
+          "type": "Fixed",
+          "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> サーバー無料利用超過案内ポップアップで、決済手段が登録済みの場合でも登録案内が表示される問題を修正</p>"
+        },
+        {
+          "ver": "Service 2.21.0",
+          "hash": "service-2210",
+          "product": "OpenMetrics",
+          "type": "Feature",
+          "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <strong>OpenMetricsダッシュボードリスト</strong>を追加</p>",
+          "details": "<ul><li>事前定義されたダッシュボードを提供: Istio、Nginx</li></ul>"
+        },
+        {
+          "ver": "Service 2.21.0",
+          "hash": "service-2210",
+          "product": "OpenMetrics",
+          "type": "Changed",
+          "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> <strong>OpenMetricsエクスプローラー</strong>での照会可能期間を変更</p>"
+        },
+        {
+          "ver": "Service 2.21.0",
+          "hash": "service-2210",
+          "product": "アプリケーション",
+          "type": "Changed",
+          "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> <span class=\"uitext\">管理</span> エージェントリストとテーブルカラム名称を修正</p>",
+          "details": "<ul><li>開始時間 → アプリケーション開始時刻</li><li>活性/非活性 → エージェント活性/非活性時刻</li></ul>"
+        },
+        {
+          "ver": "Service 2.21.0",
+          "hash": "service-2210",
+          "product": "アプリケーション",
+          "type": "Fixed",
+          "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">アプリケーションダッシュボード</span> 今日のウィジェットで比較日付データがない場合、基準日データが灰色で表示される問題を修正</p>"
+        },
+        {
+          "ver": "Service 2.21.0",
+          "hash": "service-2210",
+          "product": "サーバー",
+          "type": "Feature",
+          "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">サーバーインベントリ</span> 履歴照会機能を追加</p>",
+          "details": "<ul><li>インベントリ過去データ照会</li><li>変更履歴照会</li><li>サーバー履歴日別比較</li></ul>"
+        },
+        {
+          "ver": "Service 2.21.0",
+          "hash": "service-2210",
+          "product": "サーバー",
+          "type": "Feature",
+          "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">サーバーインベントリ</span> 選択されたテーブルカラム対象のデータ検索入力欄を追加</p>"
+        },
+        {
+          "ver": "Service 2.21.0",
+          "hash": "service-2210",
+          "product": "サーバー",
+          "type": "Feature",
+          "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">エージェントインストール</span> Windows 2008 R2用ZIP、EXEファイルダウンロードボタンを追加</p>"
+        },
+        {
+          "ver": "Service 2.21.0",
+          "hash": "service-2210",
+          "product": "サーバー",
+          "type": "Changed",
+          "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> <strong>GPUインベントリ</strong>、<strong>GPU性能サマリ</strong> Linuxエージェント最小バージョンを変更(2.9.2 → 2.9.3)</p>"
+        },
+        {
+          "ver": "Service 2.21.0",
+          "hash": "service-2210",
+          "product": "サーバー",
+          "type": "Changed",
+          "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> <span class=\"uitext\">サーバー詳細</span> &gt; <strong>プロセスリスト</strong> 「ディスクI/O」を「プロセスI/O」に名称変更</p>"
+        },
+        {
+          "ver": "Service 2.21.0",
+          "hash": "service-2210",
+          "product": "サーバー",
+          "type": "Changed",
+          "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> <span class=\"uitext\">サーバー詳細</span> &gt; <strong>プロセス詳細</strong> 「ディスクI/O (Bps)」を「プロセスI/O (Bps)」に名称変更</p>"
+        },
+        {
+          "ver": "Service 2.21.0",
+          "hash": "service-2210",
+          "product": "サーバー",
+          "type": "Changed",
+          "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> <strong>GPUインベントリ</strong> &gt; <span class=\"uitext\">カラム設定</span> 初期化時に自動収集カラムを全選択し、基本カラム順序を調整</p>"
+        },
+        {
+          "ver": "Service 2.21.0",
+          "hash": "service-2210",
+          "product": "サーバー",
+          "type": "Fixed",
+          "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <strong>GPUインベントリ</strong> Physical GPUのMIG Mode Current値がDisabledの場合、下位MIGインスタンスを非表示に処理</p>"
+        },
+      {
+        "ver": "Service 2.21.0",
+        "hash": "service-2210",
+        "product": "Kubernetes",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">Application</span> &gt; <span class=\"uitext\">Dashboard</span> &gt; <strong>Business Dashboard</strong> added</p>"
+      },
+      {
+        "ver": "Service 2.21.0",
+        "hash": "service-2210",
+        "product": "Kubernetes",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">Management</span> &gt; <strong>Agent Installation</strong> Added operator installation method</p>"
+      },
+      {
+        "ver": "Service 2.21.0",
+        "hash": "service-2210",
+        "product": "Database",
+        "category": "Common",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">Analysis</span> &gt; <span class=\"uitext\">Script Manager</span> Added CSV download function</p>"
+      },
+      {
+        "ver": "Service 2.21.0",
+        "hash": "service-2210",
+        "product": "Database",
+        "category": "Common",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">Dashboard</span> &gt; <span class=\"uitext\">Instance Monitoring</span><code class=\"newfunc\">New</code> Added daily comparison widget</p>"
+      },
+      {
+        "ver": "Service 2.21.0",
+        "hash": "service-2210",
+        "product": "Database",
+        "category": "Common",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">Dashboard</span> &gt; <span class=\"uitext\">Instance Monitoring Analysis</span>, <span class=\"uitext\">Analysis</span> &gt; <span class=\"uitext\">Count Trend</span> Improved `dbname` selector when using multi-DB configuration</p>"
+      },
+      {
+        "ver": "Service 2.21.0",
+        "hash": "service-2210",
+        "product": "Database",
+        "category": "Common",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">Management</span> &gt; <strong>Agent List</strong> Added agent pause function (dbx agent version 2.55.03 or higher supported)</p>"
+      },
+      {
+        "ver": "Service 2.21.0",
+        "hash": "service-2210",
+        "product": "Database",
+        "category": "Common",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">Integrated Flex Board</span> Added instance list widget</p>"
+      },
+      {
+        "ver": "Service 2.21.0",
+        "hash": "service-2210",
+        "product": "Database",
+        "category": "Common",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> Added dbxc Linux download copy box</p>"
+      },
+      {
+        "ver": "Service 2.21.0",
+        "hash": "service-2210",
+        "product": "Database",
+        "category": "Common",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> <span class=\"uitext\">Analysis</span> &gt; <span class=\"uitext\">Metrics Lookup</span>, <span class=\"uitext\">Metrics Anomaly Detection</span> moved to sitemap</p>"
+      },
+      {
+        "ver": "Service 2.21.0",
+        "hash": "service-2210",
+        "product": "Database",
+        "category": "Common",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">Dashboard</span> &gt; <span class=\"uitext\">Instance List</span> Fixed an issue where M/S/C icons were not updating correctly when replication or cluster state changed</p>"
+      },
+      {
+        "ver": "Service 2.21.0",
+        "hash": "service-2210",
+        "product": "Database",
+        "category": "Common",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">Dashboard</span> &gt; <strong>Instance Map</strong> Modified to show Top SQL tab only for database products that support Top SQL</p>"
+      },
+      {
+        "ver": "Service 2.21.0",
+        "hash": "service-2210",
+        "product": "Database",
+        "category": "MySQL, Oracle, Oracle Pro, PostgreSQL, SQL Server",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <strong>SQL Details</strong> Added SQL tuning guide</p>",
+        "details": "<ul><li><strong>PostgreSQL</strong>, <strong>MySQL</strong>, <strong>SQL Server</strong> require execution plan lookup</li></ul>"
+      },
+      {
+        "ver": "Service 2.21.0",
+        "hash": "service-2210",
+        "product": "Database",
+        "category": "MySQL, PostgreSQL, SQL Server",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <strong>SQL Details</strong> Added statistics trend chart</p>"
+      },
+      {
+        "ver": "Service 2.21.0",
+        "hash": "service-2210",
+        "product": "Kubernetes",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">アプリケーション</span> &gt; <span class=\"uitext\">ダッシュボード</span> &gt; <strong>ビジネスダッシュボード</strong> を追加</p>"
+      },
+      {
+        "ver": "Service 2.21.0",
+        "hash": "service-2210",
+        "product": "Kubernetes",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">管理</span> &gt; <strong>エージェントインストール</strong> オペレーターインストール方法を追加</p>"
+      },
+      {
+        "ver": "Service 2.21.0",
+        "hash": "service-2210",
+        "product": "データベース",
+        "category": "共通",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">分析</span> &gt; <span class=\"uitext\">スクリプトマネージャ</span> CSVダウンロード機能を追加</p>"
+      },
+      {
+        "ver": "Service 2.21.0",
+        "hash": "service-2210",
+        "product": "データベース",
+        "category": "共通",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">ダッシュボード</span> &gt; <span class=\"uitext\">インスタンスモニタリング</span><code class=\"newfunc\">New</code> 日次比較ウィジェットを追加</p>"
+      },
+      {
+        "ver": "Service 2.21.0",
+        "hash": "service-2210",
+        "product": "データベース",
+        "category": "共通",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">ダッシュボード</span> &gt; <span class=\"uitext\">インスタンスモニタリング分析</span>, <span class=\"uitext\">分析</span> &gt; <span class=\"uitext\">カウント推移</span> マルチDB構成時の`dbname`セレクタを改善</p>"
+      },
+      {
+        "ver": "Service 2.21.0",
+        "hash": "service-2210",
+        "product": "データベース",
+        "category": "共通",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">管理</span> &gt; <strong>エージェントリスト</strong> エージェント一時停止機能を追加(dbxエージェントバージョン2.55.03以上対応)</p>"
+      },
+      {
+        "ver": "Service 2.21.0",
+        "hash": "service-2210",
+        "product": "データベース",
+        "category": "共通",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">統合Flexボード</span> インスタンスリストウィジェットを追加</p>"
+      },
+      {
+        "ver": "Service 2.21.0",
+        "hash": "service-2210",
+        "product": "データベース",
+        "category": "共通",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> dbxc LinuxダウンロードコピーBOXを追加</p>"
+      },
+      {
+        "ver": "Service 2.21.0",
+        "hash": "service-2210",
+        "product": "データベース",
+        "category": "共通",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> <span class=\"uitext\">分析</span> &gt; <span class=\"uitext\">メトリクス照会</span>, <span class=\"uitext\">メトリクス異常検知</span> をサイトマップに移動</p>"
+      },
+      {
+        "ver": "Service 2.21.0",
+        "hash": "service-2210",
+        "product": "データベース",
+        "category": "共通",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">ダッシュボード</span> &gt; <span class=\"uitext\">インスタンスリスト</span> レプリケーションまたはクラスタ状態変更時にM/S/Cアイコンが正しく更新されない問題を修正</p>"
+      },
+      {
+        "ver": "Service 2.21.0",
+        "hash": "service-2210",
+        "product": "データベース",
+        "category": "共通",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">ダッシュボード</span> &gt; <strong>インスタンスマップ</strong> Top SQLをサポートするデータベース製品のみTop SQLタブが表示されるよう修正</p>"
+      },
+      {
+        "ver": "Service 2.21.0",
+        "hash": "service-2210",
+        "product": "データベース",
+        "category": "MySQL, Oracle, Oracle Pro, PostgreSQL, SQL Server",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <strong>SQL詳細</strong> SQLチューニングガイドを追加</p>",
+        "details": "<ul><li><strong>PostgreSQL</strong>・<strong>MySQL</strong>・<strong>SQL Server</strong>は実行計画の照会が必須</li></ul>"
+      },
+      {
+        "ver": "Service 2.21.0",
+        "hash": "service-2210",
+        "product": "データベース",
+        "category": "MySQL, PostgreSQL, SQL Server",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <strong>SQL詳細</strong> 統計推移チャートを追加</p>"
+      },
+      {
+        "ver": "Service 2.21.0",
+        "hash": "service-2210",
+        "product": "データベース",
+        "category": "MySQL, PostgreSQL",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">統計/レポート</span> &gt; <span class=\"uitext\">PG SQL統計</span>, <span class=\"uitext\">MySQL SQL統計</span> インスタンスセレクタが正しく動作しない問題を修正</p>"
+      },
+      {
+        "ver": "Service 2.21.0",
+        "hash": "service-2210",
+        "product": "データベース",
+        "category": "MySQL, PostgreSQL",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <strong>SQL詳細</strong> プラン照会失敗時にエラーメッセージを表示するよう修正</p>"
+      },
+      {
+        "ver": "Service 2.21.0",
+        "hash": "service-2210",
+        "product": "データベース",
+        "category": "MySQL, PostgreSQL",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <strong>SQL詳細</strong> JSONプランがデフォルトで表示されるよう修正</p>"
+      },
+      {
+        "ver": "Service 2.21.0",
+        "hash": "service-2210",
+        "product": "データベース",
+        "category": "DB2",
+        "type": "New",
+        "desc": "<p><code class=\"New\" type=\"1\">New</code> <span class=\"uitext\">ダッシュボード</span> &gt; <strong>Butterfulモニタリング</strong> を追加</p>"
+      },
+      {
+        "ver": "Service 2.21.0",
+        "hash": "service-2210",
+        "product": "データベース",
+        "category": "DB2",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">ダッシュボード</span> &gt; <span class=\"uitext\">インスタンスモニタリング</span>, <span class=\"uitext\">マルチインスタンスモニタリング</span> アクティブセッションテーブルのセッション詳細ポップアウト画面を改善</p>"
+      },
+      {
+        "ver": "Service 2.21.0",
+        "hash": "service-2210",
+        "product": "データベース",
+        "category": "Oracle",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <strong>SQL詳細</strong> Trendタブを追加</p>"
+      },
+      {
+        "ver": "Service 2.21.0",
+        "hash": "service-2210",
+        "product": "データベース",
+        "category": "Oracle",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> <strong>SQL詳細</strong>画面でオブジェクト詳細照会時にColumn/Index、Partition、SubPartitionを順番に照会できるよう変更(dbxエージェント2.56.05以上対応)</p>"
+      },
+      {
+        "ver": "Service 2.21.0",
+        "hash": "service-2210",
+        "product": "データベース",
+        "category": "Oracle Pro",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <strong>Wait別Top SQL</strong></p>",
+        "details": "<ul><li>CPU、MEM値のY軸最大値を100%で表示するよう修正</li><li>上部タイムラインチャートの時間を累積秒単位で表示するよう修正</li><li>Y軸にundefinedが表示されるエラーを修正</li><li>画面負荷を改善</li></ul>"
+      },
+      {
+        "ver": "Service 2.21.0",
+        "hash": "service-2210",
+        "product": "データベース",
+        "category": "PostgreSQL",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> <span class=\"uitext\">警告通知</span> &gt; <span class=\"uitext\">イベント設定</span> 複合メトリクステンプレートを変更</p>"
+      },
+      {
+        "ver": "Service 2.21.0",
+        "hash": "service-2210",
+        "product": "ネットワーク",
+        "category": "ネットワーク性能モニタリング",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">ダッシュボード</span> &gt; <span class=\"uitext\">ネットワークトポロジー</span> ノードクリック時にノード接続情報画面でInbound、Outbound詳細を表示する機能を追加</p>"
+      },
+      {
+        "ver": "Service 2.21.0",
+        "hash": "service-2210",
+        "product": "ログ",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">ログ</span> &gt; <strong>ログ探索</strong> フィルターのフィールド候補値に<code>not</code>オプションを追加</p>"
+      },
+      {
+        "ver": "Service 2.21.0",
+        "hash": "service-2210",
+        "product": "ログ",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <strong>ログ設定</strong> &gt; <strong>ログ一次パーサー</strong>, <strong>ログ二次パーサー</strong> パーサー別名を追加</p>"
+      },
+      {
+        "ver": "Service 2.21.0",
+        "hash": "service-2210",
+        "product": "ログ",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> ログキーワードのハイライトを改善</p>"
+      }
+    ]
+  }
+]
