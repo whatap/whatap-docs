@@ -31,7 +31,7 @@ The following explains how to configure the AWS Aurora and RDS, and NCP Cloud DB
 input:
   csp: "aws" # Enter the Cloud Service Provider.
   namespace: "rds"
-  region: "ap-northeast-2"
+  region: "ap-northeast-1"
   instances: # The specified instances are collected always. Instances listed under this property are collected at all times, regardless of the autoscaling setting.
     - name: "mysql-rds"
       slow_query: true # To use the slow query page, set it to true. This feature is avaiable only in MySQL and PostgreSQL instances.
@@ -47,6 +47,11 @@ input:
     - "FreeableMemory"
     - "ReadLatency"
     - "WriteLatency"
+  logs:
+    enabled: false # Can be enabled/disabled. Select true/false.
+    groups: # Add the desired AWS log groups.
+      - "/aws/rds/cluster/database-cluster-name/error"
+      - "/aws/lambda/MyLambda"
 
 output: # Enter the WhaTap information to receive the collected metrics.
   license: "abcdefg-higjgkgjk-zxcvnbnbmc"
@@ -96,9 +101,14 @@ input:
     - "ReadLatency"   
     - "WriteLatency"  
     - "DatabaseConnections"
+  logs:
+    enabled: false # Can be enabled/disabled. Select true/false.
+    groups: # Add the desired AWS log groups.
+      - "/aws/rds/cluster/docdb-cluster-name/error"
+      - "/aws/lambda/MyLambda"
 
 output: # Enter the WhaTap information to receive the collected metrics.
-  license: "4544ee05-wfwefwefb205-2987709519af"
+  license: "abcdefg-higjgkgjk-zxcvnbnbmc"
   host: "127.0.0.1"
 ```
 
