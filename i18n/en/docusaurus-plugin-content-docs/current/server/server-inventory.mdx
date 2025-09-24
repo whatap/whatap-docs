@@ -182,13 +182,13 @@ The <Cmdname sid="side_serverInventory" className="uitext" /> menu provides key 
 
 ### Filtering
 
-Click the ![Leader line 1](/img/number-01.png) filter input window at the top, select the desired ***filter key*** and ***condition***, enter values, and then click ***Apply***. In the ![Leader line 2](/img/number-02.png) server inventory list area, you can view the filtered list. 
+Click the filter input field, select the desired **filter key** and **condition**, enter values, and then click **Apply**. In the server inventory list area, you can view the filtered list.
 
 <ServerInventoryFilter />
 
 ### Align
 
-Through the sorting option at the top of ![Leader line 2](/img/number-02.png), multi-alignment is provided up to 3 levels. You can sort by any desired criteria including custom columns. The default settings for sorting are <Cmdname sid="TTL08087" className="uitext" /> &gt; <Cmdname sid="TTL08099" className="uitext" /> &gt; <Cmdname sid="TTL08100" className="uitext" />. 
+Sorting options allow up to 3 levels of multi-sorting. You can sort by any desired criteria including custom columns. The default settings for sorting are <Cmdname sid="TTL08087" className="uitext" /> &gt; <Cmdname sid="TTL08099" className="uitext" /> &gt; <Cmdname sid="TTL08100" className="uitext" />. 
 
 :::note 
 
@@ -196,9 +196,46 @@ Sorting is reset when moving and refreshing the menu.
 
 :::
 
+### History Lookup
+
+You can track server changes by checking past data in the server inventory, viewing change history, and comparing by date.
+
+#### Past Data Lookup
+
+You can load snapshot data saved at midnight each day to check past data or the change history of specific fields.
+
+1. Click the YYYY/MM/DD ![Calendar icon](/img/ic-start-date.svg) button.
+
+1. Select the past date you want to query, then click the **OK** button to view the data.
+
+:::caution
+
+When viewing past data, the **Edit**, **CSV Upload**, and **Column Settings** functions are not available.  
+The Connection field in the table is automatically hidden.
+
+:::
+
+#### Change History Lookup
+
+You can check how the value of a specific field in the selected server changed by date during the query period, as well as view creation and deletion history of that field.
+
+1. In <Cmdname sid="side_serverInventory" className="uitext" />, click the ![Time icon](/img/ico-timing.svg) **Change History Lookup** button.
+
+1. In the **Inventory Change History Search** window, select the date, server, and column name to query.
+
+1. Review the change history by date according to the selected conditions.
+
+#### Date Comparison
+
+You can compare two dates of a selected server to check data changes and whether fields were created or deleted.
+
+1. Click the **History** ![Time icon](/img/ico-timing.svg) icon of the server to compare.
+
+1. In **History Lookup**, select the **Base Date** and **Comparison Date** to compare the data.
+
 ### Column Settings
 
-Click ![Column Icon](/img/ic-column.svg) <Cmdname sid="column_settings" className="uitext" /> at the top of the ![Leader line 2](/img/number-02.png) area. Select columns and add custom columns as shown below, and then select <Cmdname sid="BTN06053" className="uitext" /> at the bottom to save the column settings. 
+Click ![Column Icon](/img/ic-column.svg) <Cmdname sid="column_settings" className="uitext" />. Select columns and add custom columns as shown below, and then select <Cmdname sid="BTN06053" className="uitext" /> at the bottom to save the column settings. 
 
 <ImgLang img='server-inventory-cl.png' desc='Server Inventory Column Configuration' />
 
@@ -220,15 +257,15 @@ Click ![Column Icon](/img/ic-column.svg) <Cmdname sid="column_settings" classNam
 
 #### CSV downloading {#csvdownload}
 
-By selecting ![Download icon](/img/ico-download.svg) <Cmdname sid="download" className="uitext" /> at the top of the ![Leader line 2](/img/number-02.png) area, you can download the collected server inventory in *CSV* file format. 
+By selecting the ![Download icon](/img/ico-download.svg) <Cmdname sid="download" className="uitext" /> button, you can download the collected server inventory in *CSV* file format.
 
 #### CSV uploading {#csvupload}
 
 When you need to enter server configuration information in bulk, manually entering individual pieces of data can be time-consuming. The *CSV file* uploading feature allows efficient handling of bulk data entry. Try modifying the downloaded *CSV* file and using the upload feature. 
 
-1. At the top of the ![Leader line 2](/img/number-02.png) area, click ![Upload icon](/img/ico-upload.svg) ***CSV*** <Cmdname sid="upload" className="uitext" /> and then select the *CSV* file to upload. 
+1. Click the ![Upload icon](/img/ico-upload.svg) **CSV** <Cmdname sid="upload" className="uitext" /> button, then select the *CSV* file to upload.
 
-2. Through the ***CSV verification*** window, check the verified results for the uploaded data. 
+2. Through the **CSV verification** window, check the verified results for the uploaded data. 
 
    - You can check the numbers of changes and errors.
 
@@ -238,7 +275,7 @@ When you need to enter server configuration information in bulk, manually enteri
 
      <ImgLang img='server-inventory-csv-error.png' desc='Server Inventory CSV Preview2' />
 
-3. If there is no issue found after verifying the data, click ***Apply*** to apply the server configuration information from the selected *CSV* file. 
+3. If there is no issue found after verifying the data, click **Apply** to apply the server configuration information from the selected *CSV* file. 
 
 :::note 
 
@@ -250,7 +287,7 @@ When you need to enter server configuration information in bulk, manually enteri
 
 ### Modification
 
-You can edit the server inventory list by selecting ![Edit icon](/img/ic-edit.svg) <Cmdname sid="edit" className="uitext" /> at the top of the ![Leader line 2](/img/number-02.png) area. 
+Select the ![Edit icon](/img/ic-edit.svg) <Cmdname sid="edit" className="uitext" /> button to edit the server inventory list.
 
 - You can configure the settings for the <Cmdname sid="TTL08183" className="uitext" /> and <Cmdname sid="TTL08184" className="uitext" /> columns.
 
