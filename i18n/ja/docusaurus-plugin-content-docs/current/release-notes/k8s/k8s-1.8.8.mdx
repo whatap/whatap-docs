@@ -14,7 +14,7 @@ displayed_sidebar: releaseSidebar
 
     コンテナマップにアプリケーション情報が表示されない場合、APM がインストールされたコンテナマニフェスト (*YAML*) の環境変数に、コンテナ内エージェントの絶対パスを指定するオプションを追加します。  
 
-    言語ごとのオプションは以下の通りです:
+    ##### 言語別オプション
 
     - **Java**
 
@@ -62,6 +62,13 @@ displayed_sidebar: releaseSidebar
     - **Go**
 
         `WHATAP_GO_AGENT_PATH`
+
+    ##### コンテナ設定オプション
+
+    * `WHATAP_CONTAINER_CONF_PATH` <span class='type'>String</span>  
+
+        コンテナ情報を記録するための `container.conf` ファイルの生成場所を指定します。  
+        このファイルにはコンテナID値が保存されます。
 
 :::info
 
