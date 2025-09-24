@@ -4410,14 +4410,9 @@ const sidebars = {
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/golang/golang-0_4_3',
-                  // className: 'new'
+                  id: 'release-notes/golang/download-go-agent',
+                  // className: 'new',
                 },
-                'release-notes/golang/golang-0_4_2',
-                'release-notes/golang/golang-0_4_1',
-                'release-notes/golang/golang-0_4_0',
-                'release-notes/golang/golang-0_3_3',
-                'release-notes/golang/golang-previous',
               ],
             },
             {

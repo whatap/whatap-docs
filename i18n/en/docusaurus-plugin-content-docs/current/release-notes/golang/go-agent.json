@@ -1,5 +1,33 @@
 [
   {
+    "ver": "v0.4.5",
+    "date": "2025-09-12",
+    "Lists": [
+      {
+        "ver": "v0.4.5",
+        "hash": "v045",
+        "product": "Go Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Fixed transaction collection error</p>",
+        "details": "<ul>\n<li>Issue where error message collection caused transactions not to be collected properly has been fixed</li>\n<li>Changed default values of problematic options to false</li>\n<li>txtext_txname_enabled=false</li>\n<li>txtext_error_enabled=false</li>\n<li>If using v0.4.4, disabling these options resolves the issue</li>\n</ul>"
+      }
+    ]
+  },
+  {
+    "ver": "v0.4.4",
+    "date": "2025-09-08",
+    "Lists": [
+      {
+        "ver": "v0.4.4",
+        "hash": "v044",
+        "product": "Go Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Fixed duplicate calculation issue when collecting CPU core metering information from multiple containers in Docker environment</p>",
+        "details": "<ul>\n<li>Fixed issue where metering information was mixed with other data during transmission</li>\n<li>Corrected error where duplicate calculation was not prevented based on Linux UUID</li>\n</ul>"
+      }
+    ]
+  },
+  {
     "url": "https://docs.whatap.io/en/release-notes/golang/golang-0_4_1",
     "ver": "v0.4.1",
     "date": "2024-08-28",
