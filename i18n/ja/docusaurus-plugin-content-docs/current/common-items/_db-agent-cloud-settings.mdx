@@ -29,11 +29,11 @@ AWS Aurora and RDSとNCP Cloud DB for PostgreSQLの設定方法です。
 
 ```yaml title='config.yaml'
 input:
-  csp: "aws" # クラウドサービスプロバイダーを入力します。
+  csp: "aws" # クラウドサービスのプロバイダーを入力します。
   namespace: "rds"
-  region: "ap-northeast-2"
+  region: "ap-northeast-1" # インスタンスが位置するリージョンを設定します。
   instances: # 明示されたインスタンスは常に収集します。クラスター内のインスタンスをこの属性に明示すると、オートスケール有無に関係なく常に収集します。
-    - name: "mysql-rds"
+    - name: "mysql-rds" # インスタンス名
       slow_query: true # スロークエリーページを使用するには、trueに設定します。該当機能はMySQL及びPostgreSQLインスタンスでのみ対応されています。
   clusters:
     autoscale:
@@ -47,6 +47,11 @@ input:
     - "FreeableMemory"
     - "ReadLatency"
     - "WriteLatency"
+  logs:
+    enabled: false # ログ収集の有無を設定します。true/falseで設定できます。
+    groups: # 収集するAWSロググループを入力します。
+      - "/aws/rds/cluster/database-cluster-name/error"
+      - "/aws/lambda/MyLambda"
 
 output: # 収集したメトリックデータを受信するWhaTap情報を入力します。
   license: "abcdefg-higjgkgjk-zxcvnbnbmc"
@@ -79,23 +84,29 @@ AWS DocumentDBエージェントの設定方法です。
 
 ```yaml title='config.yaml'
 input:
-  csp: "aws" # クラウドサービスプロバイダーを入力します。
+  csp: "aws" # クラウドサービスのプロバイダーを入力します。
   namespace: "docdb"
-  region: "ap-northeast-2"
-  instances: # 明示されたインスタンスは常に収集します。クラスター内のインスタンスをこの属性に明示すると、オートスケール有無に関係なく常に収集します。
-    - name: "docdb-instance-name"
+  region: "ap-northeast-1" # インスタンスが位置するリージョンを設定します。
+  instances: # 指定したインスタンスは常に収集されます。クラスター内のインスタンスをここに指定すると、オートスケールに関係なく収集されます。
+    - name: "docdb-instance-name" # インスタンス名
+      slow_query: true # スロークエリページを利用する場合は true に設定してください。
   clusters:
     autoscale:
-      enabled: false # オートスケールが活性化されると、オートスケールされたインスタンスを収集対象から追加または削除します。
-      interval: 60 # 明示されたクラスターのオートスケールチェック周期です。 (単位: 秒)
+      enabled: false # オートスケールが有効な場合、スケーリングされたインスタンスを収集対象に追加または削除します。
+      interval: 60 # 指定したクラスターのオートスケール確認間隔です。（単位: 秒）
     names:
       - "docdb-cluster-name"
-  metrics: # 収集するメトリックを入力します。
+  metrics: # 収集するメトリクスを入力します。
     - "CPUUtilization"
+    - "FreeStorageSpace"
     - "FreeableMemory"
-    - "ReadLatency"   
-    - "WriteLatency"  
-    - "DatabaseConnections"
+    - "ReadLatency"
+    - "WriteLatency"
+  logs:
+    enabled: false # ログ収集の有無を設定します。true/falseで設定できます。
+    groups: # 収集するAWSロググループを入力します。
+      - "/aws/rds/cluster/docdb-cluster-name/error"
+      - "/aws/lambda/MyLambda"
 
 output: # 収集したメトリックデータを受信するWhaTap情報を入力します。
   license: "4544ee05-wfwefwefb205-2987709519af"
