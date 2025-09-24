@@ -1,0 +1,346 @@
+[
+  {
+    "url": "https://docs.whatap.io/release-notes/service/service-2_21_x",
+    "ver": "Service 2.21.1",
+    "date": "2025-09-24",
+    "Lists": [
+      {
+        "ver": "Service 2.21.1",
+        "hash": "service-2211",
+        "product": "Database",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">Dashboard</span> &gt; <span class=\"uitext\">Multi-Instance Monitoring</span> Fixed an issue where the slow query widget was not displayed correctly</p>",
+        "category": "MySQL"
+      }
+    ]
+  },  
+    {
+      "url": "https://docs.whatap.io/release-notes/service/service-2_21_x",
+      "ver": "Service 2.21.0",
+      "date": "2025-09-24",
+      "Lists": [
+        {
+          "ver": "Service 2.21.0",
+          "hash": "service-2210",
+          "product": "Common",
+          "type": "Changed",
+          "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> <strong>Site Manager</strong> &gt; <strong>Region</strong> Added router item to region management list</p>"
+        },
+        {
+          "ver": "Service 2.21.0",
+          "hash": "service-2210",
+          "product": "Billing",
+          "type": "Changed",
+          "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> Updated discount display logic due to promotion API response change (+ product code display)</p>"
+        },
+        {
+          "ver": "Service 2.21.0",
+          "hash": "service-2210",
+          "product": "Billing",
+          "type": "Changed",
+          "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> Modified billing aggregation logic for Cloud and ECS products (API backward compatibility support)</p>",
+          "details": "<ul><li>Billing & Payment History &gt; Details - Billing Aggregation</li><li>Invoice Preview - Billing Aggregation</li><li>Project Usage Preview - Billing Aggregation</li></ul>"
+        },
+        {
+          "ver": "Service 2.21.0",
+          "hash": "service-2210",
+          "product": "Billing",
+          "type": "Fixed",
+          "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Fixed an issue where the payment method registration notice was shown even when a payment method was already registered in the server overuse notice popup</p>"
+        },
+        {
+          "ver": "Service 2.21.0",
+          "hash": "service-2210",
+          "product": "OpenMetrics",
+          "type": "Feature",
+          "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> Added <strong>OpenMetrics Dashboard List</strong></p>",
+          "details": "<ul><li>Predefined dashboards provided: Istio, Nginx</li></ul>"
+        },
+        {
+          "ver": "Service 2.21.0",
+          "hash": "service-2210",
+          "product": "OpenMetrics",
+          "type": "Changed",
+          "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> Changed available query period in <strong>OpenMetrics Explorer</strong></p>"
+        },
+        {
+          "ver": "Service 2.21.0",
+          "hash": "service-2210",
+          "product": "Application",
+          "type": "Changed",
+          "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> <span class=\"uitext\">Management</span> agent list and table column names updated</p>",
+          "details": "<ul><li>Start Time → Application Start Time</li><li>Active/Inactive → Agent Active/Inactive Time</li></ul>"
+        },
+        {
+          "ver": "Service 2.21.0",
+          "hash": "service-2210",
+          "product": "Application",
+          "type": "Fixed",
+          "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Fixed an issue where the reference date data was displayed in gray when comparison date data was missing in <span class=\"uitext\">Application Dashboard</span> Today widget</p>"
+        },
+        {
+          "ver": "Service 2.21.0",
+          "hash": "service-2210",
+          "product": "Server",
+          "type": "Feature",
+          "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> Added <span class=\"uitext\">Server Inventory</span> history lookup</p>",
+          "details": "<ul><li>View past inventory data</li><li>Check change history</li><li>Compare server history by date</li></ul>"
+        },
+        {
+          "ver": "Service 2.21.0",
+          "hash": "service-2210",
+          "product": "Server",
+          "type": "Feature",
+          "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> Added data search input box for selected table columns in <span class=\"uitext\">Server Inventory</span></p>"
+        },
+        {
+          "ver": "Service 2.21.0",
+          "hash": "service-2210",
+          "product": "Server",
+          "type": "Feature",
+          "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> Added download buttons for Windows 2008 R2 ZIP and EXE files in <span class=\"uitext\">Agent Installation</span></p>"
+        },
+        {
+          "ver": "Service 2.21.0",
+          "hash": "service-2210",
+          "product": "Server",
+          "type": "Changed",
+          "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> Updated minimum Linux agent version for <strong>GPU Inventory</strong> and <strong>GPU Performance Summary</strong> (2.9.2 → 2.9.3)</p>"
+        },
+        {
+          "ver": "Service 2.21.0",
+          "hash": "service-2210",
+          "product": "Server",
+          "type": "Changed",
+          "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> <span class=\"uitext\">Server Details</span> &gt; <strong>Process List</strong> Renamed 'Disk I/O' to 'Process I/O'</p>"
+        },
+        {
+          "ver": "Service 2.21.0",
+          "hash": "service-2210",
+          "product": "Server",
+          "type": "Changed",
+          "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> <span class=\"uitext\">Server Details</span> &gt; <strong>Process Details</strong> Renamed 'Disk I/O (Bps)' to 'Process I/O (Bps)'</p>"
+        },
+        {
+          "ver": "Service 2.21.0",
+          "hash": "service-2210",
+          "product": "Server",
+          "type": "Changed",
+          "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> <strong>GPU Inventory</strong> &gt; <span class=\"uitext\">Column Settings</span> Changed to select all auto-collected columns on reset and adjusted default column order</p>"
+        },
+        {
+          "ver": "Service 2.21.0",
+          "hash": "service-2210",
+          "product": "Server",
+          "type": "Fixed",
+          "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <strong>GPU Inventory</strong> When the Physical GPU MIG Mode Current value is Disabled, sub-MIG instances are now hidden</p>"
+        },
+        {
+            "ver": "Service 2.21.0",
+            "hash": "service-2210",
+            "product": "Kubernetes",
+            "type": "Feature",
+            "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">Application</span> &gt; <span class=\"uitext\">Dashboard</span> &gt; <strong>Business Dashboard</strong> added</p>"
+          },
+          {
+            "ver": "Service 2.21.0",
+            "hash": "service-2210",
+            "product": "Kubernetes",
+            "type": "Feature",
+            "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">Management</span> &gt; <strong>Agent Installation</strong> Added operator installation method</p>"
+          },
+          {
+            "ver": "Service 2.21.0",
+            "hash": "service-2210",
+            "product": "Database",
+            "category": "Common",
+            "type": "Feature",
+            "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">Analysis</span> &gt; <span class=\"uitext\">Script Manager</span> Added CSV download function</p>"
+          },
+          {
+            "ver": "Service 2.21.0",
+            "hash": "service-2210",
+            "product": "Database",
+            "category": "Common",
+            "type": "Feature",
+            "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">Dashboard</span> &gt; <span class=\"uitext\">Instance Monitoring</span><code class=\"newfunc\">New</code> Added daily comparison widget</p>"
+          },
+          {
+            "ver": "Service 2.21.0",
+            "hash": "service-2210",
+            "product": "Database",
+            "category": "Common",
+            "type": "Feature",
+            "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">Dashboard</span> &gt; <span class=\"uitext\">Instance Monitoring Analysis</span>, <span class=\"uitext\">Analysis</span> &gt; <span class=\"uitext\">Count Trend</span> Improved `dbname` selector when using multi-DB configuration</p>"
+          },
+          {
+            "ver": "Service 2.21.0",
+            "hash": "service-2210",
+            "product": "Database",
+            "category": "Common",
+            "type": "Feature",
+            "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">Management</span> &gt; <strong>Agent List</strong> Added agent pause function (dbx agent version 2.55.03 or higher supported)</p>"
+          },
+          {
+            "ver": "Service 2.21.0",
+            "hash": "service-2210",
+            "product": "Database",
+            "category": "Common",
+            "type": "Feature",
+            "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">Integrated Flex Board</span> Added instance list widget</p>"
+          },
+          {
+            "ver": "Service 2.21.0",
+            "hash": "service-2210",
+            "product": "Database",
+            "category": "Common",
+            "type": "Feature",
+            "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> Added dbxc Linux download copy box</p>"
+          },
+          {
+            "ver": "Service 2.21.0",
+            "hash": "service-2210",
+            "product": "Database",
+            "category": "Common",
+            "type": "Changed",
+            "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> <span class=\"uitext\">Analysis</span> &gt; <span class=\"uitext\">Metrics Lookup</span>, <span class=\"uitext\">Metrics Anomaly Detection</span> moved to sitemap</p>"
+          },
+          {
+            "ver": "Service 2.21.0",
+            "hash": "service-2210",
+            "product": "Database",
+            "category": "Common",
+            "type": "Fixed",
+            "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">Dashboard</span> &gt; <span class=\"uitext\">Instance List</span> Fixed an issue where M/S/C icons were not updating correctly when replication or cluster state changed</p>"
+          },
+          {
+            "ver": "Service 2.21.0",
+            "hash": "service-2210",
+            "product": "Database",
+            "category": "Common",
+            "type": "Fixed",
+            "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">Dashboard</span> &gt; <strong>Instance Map</strong> Modified to show Top SQL tab only for database products that support Top SQL</p>"
+          },
+          {
+            "ver": "Service 2.21.0",
+            "hash": "service-2210",
+            "product": "Database",
+            "category": "MySQL, Oracle, Oracle Pro, PostgreSQL, SQL Server",
+            "type": "Feature",
+            "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <strong>SQL Details</strong> Added SQL tuning guide</p>",
+            "details": "<ul><li><strong>PostgreSQL</strong>, <strong>MySQL</strong>, <strong>SQL Server</strong> require execution plan lookup</li></ul>"
+          },
+          {
+            "ver": "Service 2.21.0",
+            "hash": "service-2210",
+            "product": "Database",
+            "category": "MySQL, PostgreSQL, SQL Server",
+            "type": "Feature",
+            "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <strong>SQL Details</strong> Added statistics trend chart</p>"
+          },
+          {
+            "ver": "Service 2.21.0",
+            "hash": "service-2210",
+            "product": "Database",
+            "category": "MySQL, PostgreSQL",
+            "type": "Fixed",
+            "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">Statistics/Reports</span> &gt; <span class=\"uitext\">PG SQL Statistics</span>, <span class=\"uitext\">MySQL SQL Statistics</span> Fixed issue where instance selector did not work as intended</p>"
+          },
+          {
+            "ver": "Service 2.21.0",
+            "hash": "service-2210",
+            "product": "Database",
+            "category": "MySQL, PostgreSQL",
+            "type": "Fixed",
+            "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <strong>SQL Details</strong> Modified to display error message when plan lookup fails</p>"
+          },
+          {
+            "ver": "Service 2.21.0",
+            "hash": "service-2210",
+            "product": "Database",
+            "category": "MySQL, PostgreSQL",
+            "type": "Fixed",
+            "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <strong>SQL Details</strong> Modified to display JSON plan by default</p>"
+          },
+          {
+            "ver": "Service 2.21.0",
+            "hash": "service-2210",
+            "product": "Database",
+            "category": "DB2",
+            "type": "New",
+            "desc": "<p><code class=\"New\" type=\"1\">New</code> <span class=\"uitext\">Dashboard</span> &gt; <strong>Butterful Monitoring</strong> added</p>"
+          },
+          {
+            "ver": "Service 2.21.0",
+            "hash": "service-2210",
+            "product": "Database",
+            "category": "DB2",
+            "type": "Feature",
+            "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">Dashboard</span> &gt; <span class=\"uitext\">Instance Monitoring</span>, <span class=\"uitext\">Multi-Instance Monitoring</span> Improved session detail popout screen in active session table</p>"
+          },
+          {
+            "ver": "Service 2.21.0",
+            "hash": "service-2210",
+            "product": "Database",
+            "category": "Oracle",
+            "type": "Feature",
+            "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <strong>SQL Details</strong> Added Trend tab</p>"
+          },
+          {
+            "ver": "Service 2.21.0",
+            "hash": "service-2210",
+            "product": "Database",
+            "category": "Oracle",
+            "type": "Changed",
+            "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> In <strong>SQL Details</strong> window, modified to query Column/Index, Partition, SubPartition sequentially when checking object details (supported from dbx agent version 2.56.05)</p>"
+          },
+          {
+            "ver": "Service 2.21.0",
+            "hash": "service-2210",
+            "product": "Database",
+            "category": "Oracle Pro",
+            "type": "Fixed",
+            "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <strong>Wait Top SQL</strong></p>",
+            "details": "<ul><li>Modified to display Y-axis max of CPU, MEM values as 100%</li><li>Timeline chart at the top now shows time in cumulative seconds</li><li>Fixed error where undefined was displayed on Y-axis</li><li>Fixed screen load issue</li></ul>"
+          },
+          {
+            "ver": "Service 2.21.0",
+            "hash": "service-2210",
+            "product": "Database",
+            "category": "PostgreSQL",
+            "type": "Changed",
+            "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> <span class=\"uitext\">Alert Notification</span> &gt; <span class=\"uitext\">Event Settings</span> Modified composite metrics setting template</p>"
+          },
+          {
+            "ver": "Service 2.21.0",
+            "hash": "service-2210",
+            "product": "Network",
+            "category": "Network Performance Monitoring",
+            "type": "Feature",
+            "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">Dashboard</span> &gt; <span class=\"uitext\">Network Topology</span> Added inbound and outbound detail info in node connection popup when clicking a node</p>"
+          },
+          {
+            "ver": "Service 2.21.0",
+            "hash": "service-2210",
+            "product": "Log",
+            "type": "Feature",
+            "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">Log</span> &gt; <strong>Log Explorer</strong> Added <code>not</code> option to field suggestion values in filters</p>"
+          },
+          {
+            "ver": "Service 2.21.0",
+            "hash": "service-2210",
+            "product": "Log",
+            "type": "Feature",
+            "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <strong>Log Settings</strong> &gt; <strong>Log Primary Parser</strong>, <strong>Log Secondary Parser</strong> Added parser aliases</p>"
+          },
+          {
+            "ver": "Service 2.21.0",
+            "hash": "service-2210",
+            "product": "Log",
+            "type": "Feature",
+            "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> Improved log keyword highlighting</p>"
+          }
+      ]
+    }
+  ]
+  
