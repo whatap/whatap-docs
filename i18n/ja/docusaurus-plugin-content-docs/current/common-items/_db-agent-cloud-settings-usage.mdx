@@ -47,11 +47,11 @@ drwxr-xr-x  4 kyw  staff       128  7 18 20:23 configs
 
 ```bash title="yml 例"
 input:
-  csp: "aws" # クラウドサービスプロバイダーを入力します。
+  csp: "aws" # クラウドサービスのプロバイダーを入力します。
   namespace: "rds"
-  region: "ap-northeast-2"
+  region: "ap-northeast-1" # インスタンスが位置するリージョンを設定します。
   instances: # 指定したインスタンスは常に収集されます。クラスター内のインスタンスをここに指定すると、オートスケールに関係なく収集されます。
-    - name: "mysql-rds"
+    - name: "mysql-rds" # インスタンス名
       slow_query: true # スロークエリページを利用する場合は true に設定してください。
   clusters:
     autoscale:
@@ -66,14 +66,14 @@ input:
     - "ReadLatency"
     - "WriteLatency"
   logs:
-    enabled: false # 有効化/無効化が可能。true/false を選択してください。
-    groups: # 任意のAWSロググループを追加できます。
-      - "/aws/rds/cluster/test-letsgo/error"
+    enabled: false # ログ収集の有無を設定します。true/falseで設定できます。
+    groups: # 収集するAWSロググループを入力します。
+      - "/aws/rds/cluster/database-cluster-name/error"
       - "/aws/lambda/MyLambda"
 
 output: # 収集したメトリクスを送信する WhaTap 情報を入力します。
-  license: "x42u920rpstnp-z5sv3qlhn3tcn-z39qoj8fvv8123"
-  host: "15.165.146.117"
+  license: "abcdefg-higjgkgjk-zxcvnbnbmc"
+  host: "127.0.0.1"
 ```
 
 ## エージェント実行および制御コマンド
