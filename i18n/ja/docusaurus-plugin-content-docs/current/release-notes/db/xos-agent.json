@@ -1,5 +1,45 @@
 [
   {
+    "ver": "v1.2.0r",
+    "date": "2025-09-22",
+    "Lists": [
+      {
+        "ver": "v1.2.0r",
+        "hash": "v120r",
+        "product": "XOS",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> whatap.confでdeltaオプションを指定した際にdisk_ioに適用されないバグを修正</p>"
+      }
+    ]
+  },
+  {
+    "ver": "v1.2.0p",
+    "date": "2025-08-25",
+    "Lists": [
+      {
+        "ver": "v1.2.0p",
+        "hash": "v120p",
+        "product": "XOS",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> pg slowquery logで&lt;unnamed&gt;の代わりにカーソル名が表示される場合を処理</p>"
+      },
+      {
+        "ver": "v1.2.0p",
+        "hash": "v120p",
+        "product": "XOS",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> 通信問題によりDBXとの通信がブロッキングされた場合に再接続するように処理（main thread監視）</p>"
+      },
+      {
+        "ver": "v1.2.0p",
+        "hash": "v120p",
+        "product": "XOS",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> logモニタリング（logsink）でpacket sizeの問題によりDBX送信時に例外が発生しXOS収集が停止する問題を修正（TtaenggyeoyoサイトのXOS収集停止問題を解決）</p>"
+      }
+    ]
+  },  
+  {
     "ver": "v1.2.0k",
     "date": "2025-07-18",
     "Lists": [
