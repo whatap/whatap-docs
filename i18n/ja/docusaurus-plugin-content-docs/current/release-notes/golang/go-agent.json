@@ -1,5 +1,33 @@
 [
   {
+    "ver": "v0.4.5",
+    "date": "2025-09-12",
+    "Lists": [
+      {
+        "ver": "v0.4.5",
+        "hash": "v045",
+        "product": "Go Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> トランザクション収集エラーを修正</p>",
+        "details": "<ul>\n<li>エラーメッセージを収集する過程でエラーが発生し、トランザクションが正常に収集されない問題を修正</li>\n<li>問題となるオプションのデフォルト値をfalseに変更</li>\n<li>txtext_txname_enabled=false</li>\n<li>txtext_error_enabled=false</li>\n<li>v0.4.4を使用している場合、これらのオプションを無効にすることで問題を解決可能</li>\n</ul>"
+      }
+    ]
+  },
+  {
+    "ver": "v0.4.4",
+    "date": "2025-09-08",
+    "Lists": [
+      {
+        "ver": "v0.4.4",
+        "hash": "v044",
+        "product": "Go Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Docker環境で複数コンテナのCPUコア収集（メータリング情報）が重複計算される問題を修正</p>",
+        "details": "<ul>\n<li>メータリング情報を伝達する過程で他のデータと混合される問題を修正</li>\n<li>Linux UUIDを基準に重複計算が防止されない不具合を修正</li>\n</ul>"
+      }
+    ]
+  },
+  {
     "url": "https://docs.whatap.io/ja/release-notes/golang/golang-0_3_1",
     "ver": "v0.3.1",
     "date": "2024-01-24",
