@@ -1,5 +1,179 @@
 [
   {
+    "ver": "v2.56.06",
+    "date": "2025-09-22",
+    "Lists": [
+      {
+        "ver": "v2.56.06",
+        "hash": "v25606",
+        "product": "DBX",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> Added 1-minute SQL statistics option (sqlstat_send_interval=1)</p>",
+        "category": "MS SQL Server"
+      },
+      {
+        "ver": "v2.56.06",
+        "hash": "v25606",
+        "product": "DBX",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> Added option to change metric delta calculation (5s -&gt; 1s)</p>",
+        "category": "Oracle Pro, Oracle, PostgreSQL",
+        "details": "<ul>\n<li>Add delta=1 in whatap.conf</li>\n</ul>"
+      },
+      {
+        "ver": "v2.56.06",
+        "hash": "v25606",
+        "product": "DBX",
+        "type": "Change",
+        "desc": "<p><code class=\"Change\" type=\"0\">Change</code> Changed active session cpu_time unit (ms -&gt; s)</p>",
+        "category": "MS SQL Server"
+      },
+      {
+        "ver": "v2.56.06",
+        "hash": "v25606",
+        "product": "DBX",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Fixed bug where Galera cluster was not recognized</p>",
+        "category": "MySQL"
+      }
+    ]
+  },
+  {
+    "ver": "v2.56.05",
+    "date": "2025-09-19",
+    "Lists": [
+      {
+        "ver": "v2.56.05",
+        "hash": "v25605",
+        "product": "DBX",
+        "type": "Change",
+        "desc": "<p><code class=\"Change\" type=\"0\">Change</code> Changed object layout real-time query to retrieve partition information separately instead of integrated call</p>",
+        "category": "Oracle"
+      }
+    ]
+  },
+  {
+    "ver": "v2.56.04",
+    "date": "2025-09-05",
+    "Lists": [
+      {
+        "ver": "v2.56.04",
+        "hash": "v25604",
+        "product": "DBX",
+        "type": "Change",
+        "desc": "<p><code class=\"Change\" type=\"0\">Change</code> Modified time_waited unit in wait event to seconds and reorganized</p>",
+        "category": "Oracle"
+      },
+      {
+        "ver": "v2.56.04",
+        "hash": "v25604",
+        "product": "DBX",
+        "type": "Change",
+        "desc": "<p><code class=\"Change\" type=\"0\">Change</code> Excluded idle values from wait event</p>",
+        "category": "Oracle"
+      },
+      {
+        "ver": "v2.56.04",
+        "hash": "v25604",
+        "product": "DBX",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Fixed DB statistics calculation logic</p>",
+        "category": "Oracle",
+        "details": "<ul>\n<li>buffer cache hit ratio, soft parse ratio, hard parse ratio, shared_pool_free_mem_ratio</li>\n</ul>"
+      }
+    ]
+  },
+  {
+    "ver": "v2.56.03",
+    "date": "2025-09-04",
+    "Lists": [
+      {
+        "ver": "v2.56.03",
+        "hash": "v25603",
+        "product": "DBX",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> Added Innodb Cluster group replication node_state, replication_delay</p>",
+        "category": "MySQL"
+      }
+    ]
+  },
+  {
+    "ver": "v2.56.02",
+    "date": "2025-09-01",
+    "Lists": [
+      {
+        "ver": "v2.56.02",
+        "hash": "v25602",
+        "product": "DBX",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Fixed SQL statistics wait time processing logic</p>",
+        "category": "Oracle"
+      },
+      {
+        "ver": "v2.56.02",
+        "hash": "v25602",
+        "product": "DBX",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Fixed error where pg SQL statistics were collected every 5 minutes instead of every hour</p>",
+        "category": "PostgreSQL"
+      }
+    ]
+  },
+  {
+    "ver": "v2.56.01",
+    "date": "2025-08-27",
+    "Lists": [
+      {
+        "ver": "v2.56.01",
+        "hash": "v25601",
+        "product": "DBX",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> Added plan and table information</p>",
+        "category": "DB2"
+      },
+      {
+        "ver": "v2.56.01",
+        "hash": "v25601",
+        "product": "DBX",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> Added real-time object query function</p>",
+        "category": "DB2",
+        "details": "<ul>\n<li>Real-time query for table, index, column, table partition, index partition layout information</li>\n</ul>"
+      },
+      {
+        "ver": "v2.56.01",
+        "hash": "v25601",
+        "product": "DBX",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> Added and modified metrics</p>",
+        "category": "DB2",
+        "details": "<ul>\n<li>Added mem_db_heap</li>\n<li>Modified max_connections</li>\n<li>Modified bufferpool metrics</li>\n</ul>"
+      }
+    ]
+  },
+  {
+    "ver": "v2.55.05",
+    "date": "2025-08-26",
+    "Lists": [
+      {
+        "ver": "v2.55.05",
+        "hash": "v25505",
+        "product": "DBX",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> Added skipped time count log in whatap.log</p>",
+        "category": "Common"
+      },
+      {
+        "ver": "v2.55.05",
+        "hash": "v25505",
+        "product": "DBX",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> Added nohup.out as default file in log file viewer</p>",
+        "category": "Common"
+      }
+    ]
+  },
+  {
     "ver": "v2.55.04",
     "date": "2025-08-11",
     "Lists": [

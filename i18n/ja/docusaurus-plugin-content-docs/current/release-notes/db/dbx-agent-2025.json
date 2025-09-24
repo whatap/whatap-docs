@@ -1,5 +1,179 @@
 [
   {
+    "ver": "v2.56.06",
+    "date": "2025-09-22",
+    "Lists": [
+      {
+        "ver": "v2.56.06",
+        "hash": "v25606",
+        "product": "DBX",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> 1分SQL統計オプションを追加 (sqlstat_send_interval=1)</p>",
+        "category": "MS SQL Server"
+      },
+      {
+        "ver": "v2.56.06",
+        "hash": "v25606",
+        "product": "DBX",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> メトリックデルタ計算変更オプションを追加 (5秒 -&gt; 1秒)</p>",
+        "category": "Oracle Pro, Oracle, PostgreSQL",
+        "details": "<ul>\n<li>whatap.confに delta=1 を追加</li>\n</ul>"
+      },
+      {
+        "ver": "v2.56.06",
+        "hash": "v25606",
+        "product": "DBX",
+        "type": "Change",
+        "desc": "<p><code class=\"Change\" type=\"0\">Change</code> アクティブセッションのcpu_time単位を変更 (ms -&gt; s)</p>",
+        "category": "MS SQL Server"
+      },
+      {
+        "ver": "v2.56.06",
+        "hash": "v25606",
+        "product": "DBX",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Galeraクラスタを認識できないバグを修正</p>",
+        "category": "MySQL"
+      }
+    ]
+  },
+  {
+    "ver": "v2.56.05",
+    "date": "2025-09-19",
+    "Lists": [
+      {
+        "ver": "v2.56.05",
+        "hash": "v25605",
+        "product": "DBX",
+        "type": "Change",
+        "desc": "<p><code class=\"Change\" type=\"0\">Change</code> オブジェクトレイアウトのリアルタイム参照で、パーティション情報を統合呼び出しから分離し、個別に参照する方式に変更</p>",
+        "category": "Oracle"
+      }
+    ]
+  },
+  {
+    "ver": "v2.56.04",
+    "date": "2025-09-05",
+    "Lists": [
+      {
+        "ver": "v2.56.04",
+        "hash": "v25604",
+        "product": "DBX",
+        "type": "Change",
+        "desc": "<p><code class=\"Change\" type=\"0\">Change</code> wait eventのtime_waited単位を秒に修正し整理</p>",
+        "category": "Oracle"
+      },
+      {
+        "ver": "v2.56.04",
+        "hash": "v25604",
+        "product": "DBX",
+        "type": "Change",
+        "desc": "<p><code class=\"Change\" type=\"0\">Change</code> wait eventからidle値を除外</p>",
+        "category": "Oracle"
+      },
+      {
+        "ver": "v2.56.04",
+        "hash": "v25604",
+        "product": "DBX",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> DB統計計算ロジックを修正</p>",
+        "category": "Oracle",
+        "details": "<ul>\n<li>buffer cache hit ratio, soft parse ratio, hard parse ratio, shared_pool_free_mem_ratio</li>\n</ul>"
+      }
+    ]
+  },
+  {
+    "ver": "v2.56.03",
+    "date": "2025-09-04",
+    "Lists": [
+      {
+        "ver": "v2.56.03",
+        "hash": "v25603",
+        "product": "DBX",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> Innodb Cluster group replicationのnode_state, replication_delayを追加</p>",
+        "category": "MySQL"
+      }
+    ]
+  },
+  {
+    "ver": "v2.56.02",
+    "date": "2025-09-01",
+    "Lists": [
+      {
+        "ver": "v2.56.02",
+        "hash": "v25602",
+        "product": "DBX",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> SQL統計のwait time処理ロジックを修正</p>",
+        "category": "Oracle"
+      },
+      {
+        "ver": "v2.56.02",
+        "hash": "v25602",
+        "product": "DBX",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> pg SQL統計が5分ごとに収集される不具合を修正し、1時間ごとに収集されるよう変更</p>",
+        "category": "PostgreSQL"
+      }
+    ]
+  },
+  {
+    "ver": "v2.56.01",
+    "date": "2025-08-27",
+    "Lists": [
+      {
+        "ver": "v2.56.01",
+        "hash": "v25601",
+        "product": "DBX",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> plan、table情報を追加</p>",
+        "category": "DB2"
+      },
+      {
+        "ver": "v2.56.01",
+        "hash": "v25601",
+        "product": "DBX",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> オブジェクトのリアルタイム参照機能を追加</p>",
+        "category": "DB2",
+        "details": "<ul>\n<li>table, index, column, table partition, index partitionレイアウト情報をリアルタイムで参照</li>\n</ul>"
+      },
+      {
+        "ver": "v2.56.01",
+        "hash": "v25601",
+        "product": "DBX",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> メトリックの追加と変更</p>",
+        "category": "DB2",
+        "details": "<ul>\n<li>mem_db_heapを追加</li>\n<li>max_connectionsを修正</li>\n<li>bufferpoolメトリックを修正</li>\n</ul>"
+      }
+    ]
+  },
+  {
+    "ver": "v2.55.05",
+    "date": "2025-08-26",
+    "Lists": [
+      {
+        "ver": "v2.55.05",
+        "hash": "v25505",
+        "product": "DBX",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> whatap.logにskipped timeのcountログを追加</p>",
+        "category": "共通"
+      },
+      {
+        "ver": "v2.55.05",
+        "hash": "v25505",
+        "product": "DBX",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> ログファイルビューアのデフォルトファイルにnohup.outを追加</p>",
+        "category": "共通"
+      }
+    ]
+  },  
+  {
     "ver": "v2.55.04",
     "date": "2025-08-11",
     "Lists": [
