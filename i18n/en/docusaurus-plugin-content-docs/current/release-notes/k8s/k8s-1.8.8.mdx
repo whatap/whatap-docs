@@ -14,7 +14,7 @@ September 4, 2025
 
     If application information is not displayed in the container map, add an option to the environment variables of the container manifest (*YAML*) where APM is installed. This option specifies the absolute path of the agent inside the container.
 
-    Options by language are as follows:
+    ##### Language-Specific Options
 
     - **Java**
 
@@ -62,6 +62,14 @@ September 4, 2025
     - **Go**
 
         `WHATAP_GO_AGENT_PATH`
+
+    ##### Container Configuration Options
+
+    * `WHATAP_CONTAINER_CONF_PATH` <span class='type'>String</span>  
+
+        Specifies the location where the `container.conf` file is created to record container information.  
+        The container ID value is stored in this file.
+
 
 :::info
 
