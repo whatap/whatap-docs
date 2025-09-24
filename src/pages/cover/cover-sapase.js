@@ -28,11 +28,7 @@ export default function Cover() {
           SAP ASE Monitoring
         </h1>
         <p className={styles.date}>
-<<<<<<< HEAD
-            release date. 2025.08.27.
-=======
             release date. 2025.09.24.
->>>>>>> 06a317f32d98c4bc8f8dda1ccabe247ac0588af0
         </p>
         <img className={styles.background} src={bgPath} />
       </div>
