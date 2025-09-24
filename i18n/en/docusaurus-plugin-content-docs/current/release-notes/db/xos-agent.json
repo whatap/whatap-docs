@@ -1,5 +1,45 @@
 [
   {
+    "ver": "v1.2.0r",
+    "date": "2025-09-22",
+    "Lists": [
+      {
+        "ver": "v1.2.0r",
+        "hash": "v120r",
+        "product": "XOS",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Fixed bug where delta option in whatap.conf was not applied to disk_io</p>"
+      }
+    ]
+  },
+  {
+    "ver": "v1.2.0p",
+    "date": "2025-08-25",
+    "Lists": [
+      {
+        "ver": "v1.2.0p",
+        "hash": "v120p",
+        "product": "XOS",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Handled case where cursor name appears instead of &lt;unnamed&gt; in pg slowquery log</p>"
+      },
+      {
+        "ver": "v1.2.0p",
+        "hash": "v120p",
+        "product": "XOS",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Added reconnection handling when communication with DBX is blocked due to network issues (main thread monitoring)</p>"
+      },
+      {
+        "ver": "v1.2.0p",
+        "hash": "v120p",
+        "product": "XOS",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Fixed XOS collection stop issue caused by exception during DBX transmission in log monitoring (logsink) due to packet size problem (resolved XOS collection stop at Ttaenggyeoyo site)</p>"
+      }
+    ]
+  },  
+  {
     "ver": "v1.2.0k",
     "date": "2025-07-18",
     "Lists": [
