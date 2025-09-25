@@ -296,11 +296,7 @@
     "description": "The label for category 설정하기 in sidebar postgreSidebar"
   },
   "sidebar.postgreSidebar.category.클라우드 에이전트 설정": {
-<<<<<<< HEAD
-    "message": "クラウドエージェント",
-=======
     "message": "クラウドエージェント設定",
->>>>>>> mobile@SERVICE-2920
     "description": "The label for category 클라우드 에이전트 설정 in sidebar postgreSidebar"
   },
   "sidebar.postgreSidebar.category.주요 메뉴 알아보기": {
