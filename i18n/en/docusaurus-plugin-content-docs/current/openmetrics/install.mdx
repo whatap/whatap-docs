@@ -12,7 +12,7 @@ For installation in a Kubernetes environment, refer to the [OpenAgent Configurat
 
 :::
 
-## OpenAgent Binary Execution File Installation Guide
+## OpenAgent Binary Execution File Installation
 
 All files must be located in a single directory.
 
@@ -365,7 +365,7 @@ After applying the metricRelabelConfigs above, the final collected metrics are a
 
     - The `some_other_metric` metric is dropped.
 
-2. Apply the second rule (`replace verb` -> `http_verb`) :
+2. Apply the second rule (`replace verb` → `http_verb`) :
 
     - The kept `apiserver_request_total` metric has a verb label, so its value (GET) is copied to a new label named `http_verb`.
 
