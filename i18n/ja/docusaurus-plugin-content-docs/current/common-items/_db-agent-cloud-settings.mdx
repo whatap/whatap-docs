@@ -101,7 +101,12 @@ input:
     - "ReadLatency"   
     - "WriteLatency"  
     - "DatabaseConnections"
-
+  logs:
+    enabled: false # ログ収集の有無を設定します。true/falseで設定できます。
+    groups: # 収集するAWSロググループを入力します。
+      - "/aws/rds/cluster/docdb-cluster-name/error"
+      - "/aws/lambda/MyLambda"
+      
 output: # 収集したメトリックデータを受信するWhaTap情報を入力します。
   license: "abcdefg-higjgkgjk-zxcvnbnbmc"
   host: "127.0.0.1"
