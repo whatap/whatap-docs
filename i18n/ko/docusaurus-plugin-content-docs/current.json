@@ -2318,5 +2318,9 @@
   "sidebar.logSidebar.category.로그 탐색": {
     "message": "로그 탐색",
     "description": "The label for category 로그 탐색 in sidebar logSidebar"
+  },
+  "sidebar.omSidebar.category.OpenMetrics 설치": {
+    "message": "OpenMetrics 설치",
+    "description": "The label for category OpenMetrics 설치 in sidebar omSidebar"
   }
 }
