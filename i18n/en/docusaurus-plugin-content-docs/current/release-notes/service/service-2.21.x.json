@@ -23,6 +23,13 @@
           "ver": "Service 2.21.0",
           "hash": "service-2210",
           "product": "Common",
+          "type": "Feature",
+          "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <strong>Display settings by user group</strong> &gt; <strong>Region</strong> Added</p>"
+        },
+        {
+          "ver": "Service 2.21.0",
+          "hash": "service-2210",
+          "product": "Common",
           "type": "Changed",
           "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> <strong>Site Manager</strong> &gt; <strong>Region</strong> Added router item to region management list</p>"
         },
