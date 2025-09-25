@@ -2366,5 +2366,9 @@
   "sidebar.dboracledmaSidebar.category.설정하기": {
     "message": "Configuration",
     "description": "The label for category 설정하기 in sidebar dboracledmaSidebar"
+  },
+  "sidebar.omSidebar.category.OpenMetrics 설치": {
+    "message": "OpenMetrics Installation",
+    "description": "The label for category OpenMetrics 설치 in sidebar omSidebar"
   }
 }
