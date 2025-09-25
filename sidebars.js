@@ -5458,6 +5458,21 @@ const sidebars = {
       ],
     }
   ],
+  omSidebar: [
+    {
+      type: 'category',
+      label: 'OpenMetics',
+      collapsible: true,
+      collapsed: true,
+      link: {
+        type: 'doc',
+        id: 'openmetrics/introduction'
+      },
+      items: [
+        'openmetrics/install'
+      ],
+    }
+  ],
   awsecsSidebar: [
     {
       type: 'category',

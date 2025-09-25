@@ -336,7 +336,7 @@
     "description": "The label for category 설정하기 in sidebar dboracleSidebar"
   },
   "sidebar.dboracleSidebar.category.클라우드 에이전트 설정": {
-    "message": "ログ収集設定",
+    "message": "クラウドエージェント",
     "description": "The label for category 클라우드 에이전트 설정 in sidebar dboracleSidebar"
   },
   "sidebar.dboracleSidebar.category.주요 메뉴 알아보기": {
@@ -372,7 +372,7 @@
     "description": "The label for category 설정하기 in sidebar mysqlSidebar"
   },
   "sidebar.mysqlSidebar.category.클라우드 에이전트 설정": {
-    "message": "ログ収集設定",
+    "message": "クラウドエージェント",
     "description": "The label for category 클라우드 에이전트 설정 in sidebar mysqlSidebar"
   },
   "sidebar.mysqlSidebar.category.주요 메뉴 알아보기": {
@@ -408,7 +408,7 @@
     "description": "The label for category 설정하기 in sidebar mssqlSidebar"
   },
   "sidebar.mssqlSidebar.category.클라우드 에이전트 설정": {
-    "message": "ログ収集設定",
+    "message": "クラウドエージェント",
     "description": "The label for category 클라우드 에이전트 설정 in sidebar mssqlSidebar"
   },
   "sidebar.mssqlSidebar.category.주요 메뉴 알아보기": {
@@ -560,7 +560,7 @@
     "description": "The label for category 설정하기 in sidebar mongodbSidebar"
   },
   "sidebar.mongodbSidebar.category.클라우드 에이전트 설정": {
-    "message": "ログ収集設定",
+    "message": "クラウドエージェント",
     "description": "The label for category 클라우드 에이전트 설정 in sidebar mongodbSidebar"
   },
   "sidebar.mongodbSidebar.category.주요 메뉴 알아보기": {
@@ -1668,7 +1668,7 @@
     "description": "The label for category 설정하기 in sidebar dboracleV2Sidebar"
   },
   "sidebar.dboracleV2Sidebar.category.클라우드 에이전트 설정": {
-    "message": "ログ収集設定",
+    "message": "クラウドエージェント",
     "description": "The label for category 클라우드 에이전트 설정 in sidebar dboracleV2Sidebar"
   },
   "sidebar.dboracleV2Sidebar.category.주요 메뉴 알아보기": {

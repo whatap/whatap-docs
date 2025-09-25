@@ -111,14 +111,24 @@ input:
     - "CPUUtilization"
     - "FreeStorageSpace"
     - "FreeableMemory"
+<<<<<<< HEAD
+    - "ReadLatency"   
+    - "WriteLatency"  
+    - "DatabaseConnections"
+=======
     - "ReadLatency"
     - "WriteLatency"
+>>>>>>> mobile@SERVICE-2920
   logs:
     enabled: false # ログ収集の有無を設定します。true/falseで設定できます。
     groups: # 収集するAWSロググループを入力します。
       - "/aws/rds/cluster/docdb-cluster-name/error"
       - "/aws/lambda/MyLambda"
+<<<<<<< HEAD
+      
+=======
 
+>>>>>>> mobile@SERVICE-2920
 output: # 収集したメトリックデータを受信するWhaTap情報を入力します。
   license: "abcdefg-higjgkgjk-zxcvnbnbmc"
   host: "127.0.0.1"

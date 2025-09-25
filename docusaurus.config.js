@@ -443,6 +443,11 @@ const config = {
                 docId: 'extensions',
                 label: 'Extensions'
               },
+              {
+                type: 'doc',
+                docId: 'openmetrics/introduction',
+                label: 'OpenMetrics'
+              },
             ]
           },
           // 여기부터 검색 시 문서 경로 표현을 위한 보이지 않는 메뉴
@@ -675,6 +680,13 @@ const config = {
             docId: 'opentelemetry/introduction',
             position: 'left',
             label: 'OpenTelemetry',
+            className: 'hidden'
+          },
+          {
+            type: 'doc',
+            docId: 'openmetrics/introduction',
+            position: 'left',
+            label: 'OpenMetrics',
             className: 'hidden'
           },
           // 여기까지 검색 시 문서 경로 표현을 위한 보이지 않는 메뉴 
