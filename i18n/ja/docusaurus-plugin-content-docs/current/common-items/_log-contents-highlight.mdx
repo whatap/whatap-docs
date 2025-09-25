@@ -1,19 +1,22 @@
-ログのコンテンツの中で、目的のキーワードを簡単に識別するためのハイライト機能を提供します。
-
+ログのコンテンツ内で目的のキーワードを簡単に識別できるよう、ハイライト機能を提供します。単一または複数のキーワードでフィルタリングできます。
 
 <InDoc pages="log-lt,aws-log-lt">
 <ImgLang img='log-content-search-highlight.png' desc='ログTailコンテンツのハイライト'/>
 </InDoc>
 
-- キーワード入力欄にハイライトさせるキーワードを入力後![検索アイコン](/img/ic-search.svg) <Cmdname sid="search" className="uitext" />アイコンをクリックします。
+1. ハイライトしたいキーワードをキーワード入力欄に入力します。  
+    * 例: `select`
 
-  > 例）`select`
+1. 検索したキーワードがログリストのContent内でハイライト表示されます。
 
-- 例のイメージのようにログ一覧で、Content内のキーワードがハイライトされます。
+    * ![全画面アイコン](/img/ic-fullscreen.svg) <Cmdname sid="TLT06869" className="uitext" /> アイコンをクリックすると、<Cmdname sid="log" className="uitext" /> と <Cmdname sid="TTL06444" className="uitext" /> を全画面で確認できます。
 
-- １つまたは複数のキーワードでフィルタリングできます。
+    * ハイライトされたキーワード間の移動はショートカットで操作できます。
 
-- ![フルスクリーンアイコン](/img/ic-fullscreen.svg) <Cmdname sid="TLT06869" className="uitext" />アイコンを選択すると<Cmdname sid="log" className="uitext" />と<Cmdname sid="TTL06444" className="uitext" />をフルスクリーンで確認できます。
+        * `Enter`: 次の行へ移動  
+        * `Shift+Enter`: 前の行へ移動  
+        * ![上矢印アイコン](/img/ic-s-up.svg) / ![下矢印アイコン](/img/ic-s-down.svg) アイコン: 行の移動  
+        * `Cmd`+`F`(Mac) / `Ctrl`+`F`(Windows): キーワード検索
 
 ### 複数キーワード条件
 
