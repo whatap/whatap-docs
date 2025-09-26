@@ -76,10 +76,12 @@ Start the container by setting the collection server IP and access key in the en
 ```bash
 export WHATAP_LICENSE={access Key}
 export WHATAP_SERVER_HOST={collection server IP}
+export WHATAP_HOME={application root path}
 
 $ docker run --rm -p 3500:3500 \
-    -e whatap_server_host=$WHATAP_SERVER_HOST \
-    -e license=$WHATAP_LICENSE \
+    -e WHATAP_SERVER_HOST=$WHATAP_SERVER_HOST \
+    -e WHATAP_LICENSE=$WHATAP_LICENSE \
+    -e WHATAP_HOME=$WHATAP_HOME
     sampleapp/nodejs:0503
 ```
 

@@ -1,5 +1,20 @@
 [
   {
+    "url": "https://docs.whatap.io/release-notes/nodejs/nodejs-1_0_3/",
+    "ver": "v1.0.3",
+    "date": "2025-09-25",
+    "Lists": [
+      {
+        "ver": "v1.0.3",
+        "hash": "v103",
+        "product": "Node.js Agent",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> 独立した収集プロセスを導入</p>",
+        "details": "<ul><li><p>アプリケーション名の設定</p></li>\n\n<li><p>新しいデータ収集アーキテクチャ</p></li>\n\n<li><p>PM2クラスタモード対応の改善</p></li></ul>"
+      }
+    ]
+  },  
+  {
     "url": "https://docs.whatap.io/release-notes/nodejs/nodejs-0_5_25/",
     "ver": "v0.5.25",
     "date": "2025-08-22",
