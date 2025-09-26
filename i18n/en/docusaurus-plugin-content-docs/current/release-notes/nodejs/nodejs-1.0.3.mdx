@@ -1,0 +1,51 @@
+---
+id: nodejs-1_0_3
+title: Node.js Agent v1.0.3
+toc_max_heading_level: 2
+pagination_next: release-notes/nodejs/nodejs-0_5_25
+displayed_sidebar: releaseSidebar
+---
+
+September 24, 2025
+
+<Status priority='1'>Changed</Status> Applied Go module
+
+- **Improved application name configuration**
+
+    - ONAME setting: You can specify the application name with the `app_name` setting in *whatap.conf*.
+
+        ```bash
+        ## whatap.conf
+        app_name=MyNodeApp              # Application name
+        app_process_name=node           # Process name, default: NODE
+
+        ## Enter the application's root path in the WHATAP_HOME environment variable.
+        ## Default: process.cwd()
+        export WHATAP_HOME={app_root_path}
+        ```
+
+- **New data collection architecture**
+
+    - Independent collector process: A separate `whatap_nodejs` process aggregates data and sends it to the collection server.
+    - Improved performance: It runs as a process independent of the Node.js application, which minimizes impact on main application performance.
+
+- **Improved PM2 cluster mode support**
+
+    - Unified monitoring: When two or more instances run in PM2 cluster mode, they are consolidated and displayed under one `app_name`.
+    - Efficient resource management: A single collector process handles data from multiple instances to optimize resource usage.
+
+    :::note
+    **Note**  
+    Even when you run with PM2, set `app_process_name` to `node`. This is for identification in WhaTap monitoring rather than the actual process name.
+    :::
+
+- **Compatibility**
+    - **Node.js version**: 17.0.0 or higher
+    - **Platform**: macOS (64bit), Linux (64bit)
+    - **Supported frameworks**: Express, Koa, Fastify, Socket.IO, WebSocket, GraphQL
+    - **Supported databases**: MySQL, PostgreSQL, MSSQL, Oracle, MariaDB, MongoDB, Redis
+
+
+import DownloadNode2 from './_import_dl-nodejs-agent3.mdx';
+
+<DownloadNode2 ver="1.0.3" />
