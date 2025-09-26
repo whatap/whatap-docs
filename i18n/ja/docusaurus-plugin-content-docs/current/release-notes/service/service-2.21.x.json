@@ -1,6 +1,21 @@
 [
   {
     "url": "https://docs.whatap.io/release-notes/service/service-2_21_x",
+    "ver": "Service 2.21.2",
+    "date": "2025-09-26",
+    "Lists": [
+      {
+        "ver": "Service 2.21.2",
+        "hash": "service-2212",
+        "product": "アプリケーション",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> 対応Node.jsバージョンを更新 (Node.js 16.4.0 → Node.js 17.0.0)、インストールガイドを改訂</p>",
+        "category": "Node.js"
+      }
+    ]
+  },  
+  {
+    "url": "https://docs.whatap.io/release-notes/service/service-2_21_x",
     "ver": "Service 2.21.1",
     "date": "2025-09-24",
     "Lists": [
