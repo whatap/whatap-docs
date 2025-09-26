@@ -1,0 +1,369 @@
+---
+id: install
+title: OpenMetrics インストール
+description:  OpenMetrics インストールガイドです。
+toc_max_heading_level: 4
+keywords: [ OpenMetrics インストール ]
+---
+
+:::note
+
+Kubernetes環境でインストールする場合は [OpenAgent構成](https://docs.whatap.io/kubernetes/openagent) ドキュメントを参照してください。
+
+:::
+
+## OpenAgent バイナリ実行ファイル インストールガイド
+
+すべてのファイルは1つのディレクトリに配置する必要があります。
+
+```bash
+## 例
+/opt/whatap/openagent/
+├── openagent          # 実行ファイル
+├── whatap.conf        # 設定ファイル
+└── scrape_config.yaml # スクレイピング設定ファイル
+```
+
+**ディレクトリ移動および実行ファイルのダウンロード**
+
+```bash
+mkdir -p /opt/whatap/openagent
+cd /opt/whatap/openagent
+
+## AMD64 (Intel/AMD 64ビットプロセッサ)
+wget https://repo.whatap.io/openagent/latest/amd/openagent
+
+## ARM64 (Linux環境のARMプロセッサ)
+## ⚠️ macOS Apple Silicon非対応
+wget https://repo.whatap.io/openagent/latest/arm/openagent
+```
+
+**実行権限の設定**
+
+```bash
+chmod +x openagent
+```
+
+**設定ファイル作成(whatap.conf)**
+
+```bash
+# 実際の値に置き換えて入力してください
+echo "WHATAP_LICENSE=your-whatap-license" >> whatap.conf
+echo "WHATAP_HOST=your-whatap-host" >> whatap.conf  
+echo "WHATAP_PORT=your-whatap-port" >> whatap.conf
+
+# デバッグ時
+# echo "debug=true" >> whatap.conf
+# echo "log_level=debug" >> whatap.conf
+```
+
+**スクレイピング設定ファイル作成(scrape_config.yaml)**
+
+`scrape_config.yaml` を変更すると、OpenAgentが自動的に変更を検知して設定をリロードします。再起動は不要です。
+
+```yaml
+#scrape_config.yaml
+features:
+  openAgent:
+    enabled: true
+    targets:
+     - targetName: dcgm-exporter
+       type: StaticEndpoints
+       # Target is enabled by default (enabled: true), this can be omitted
+       enabled: true
+       endpoints:
+         - address: "192.168.49.2:30400"
+           path: "/metrics"
+           scheme: "http"
+           interval: "30s"
+           metricRelabelConfigs:
+             - source_labels: [ __name__ ]
+               regex: "DCGM.*"
+               action: keep
+```
+
+**基本実行**
+
+```bash
+./openagent standalone
+```
+
+**バックグラウンド実行**
+
+```yaml
+nohup ./openagent standalone > openagent.log 2>&1 &
+```
+
+**ログ確認**
+
+```bash
+tail -f openagent.log
+```
+
+**プロセス管理**
+
+```bash
+# プロセス確認
+ps aux | grep openagent
+
+# プロセス終了
+pkill openagent
+```
+
+### StaticEndpoints 設定要素
+
+* **targetName**: ターゲット識別子
+
+* **type**: ターゲットタイプ ("StaticEndpoints")
+
+* **endpoints**: 収集対象
+
+    * `address`: IP:PORT または HOSTNAME:PORT
+
+    * `path`: メトリクスパス (デフォルト: /metrics)
+
+    * `scheme`: プロトコル (http または https、デフォルト: http)
+
+    * `interval`: 収集周期 (デフォルト: 60s)
+
+    * `metricRelabelConfigs`: メトリクス再ラベル設定
+
+### params 機能設定
+
+OpenAgentで params 機能を使用すると、HTTPスクレイピング時にURLへクエリパラメータを追加できます。Azure Monitor Exporter など外部サービス連携時に有用です。
+
+```yaml
+endpoints:
+  - address: "192.168.49.2:30400"
+    path: "/metrics"
+    scheme: "http"
+    interval: "30s"
+    params:
+      subscription: ["50d91b57-a280-45b5-8d7c-be8005662738"]
+      resourceGroup: ["WhaTap-Data-KR-MID"]
+      target: ["/subscriptions/50d91b57-a280-45b5-8d7c-be8005662738/resourceGroups/WhaTap-Data-KR-MID/providers/Microsoft.Sql/managedInstances/openmetrics-instance-01"]
+      metric: ["avg_cpu_percent,virtual_core_count,memory_usage_percent"]
+      interval: ["PT1M"]
+      aggregation: ["average"]
+```
+
+* **サポートされるパラメータ値タイプ**
+
+    * **文字列**: 単一値
+    * **文字列配列**: 複数値をカンマで連結
+    * **その他のタイプ**: 自動的に文字列へ変換
+
+### 例
+
+```yaml title="例. Azure Monitor スタイル"
+params:
+  subscription: ["50d91b57-a280-45b5-8d7c-be8005662738"]
+  target: ["/subscriptions/50d91b57-a280-45b5-8d7c-be8005662738/resourceGroups/MyRG/providers/Microsoft.Compute/virtualMachines/vm1"]
+  metric: ["Percentage CPU,Available Memory Bytes"]
+  interval: ["PT5M"]
+  aggregation: ["average,maximum"]
+```
+
+```yaml title="例。単純パラメータ"
+params:
+  format: "prometheus"
+  version: "v1"
+  debug: true
+```
+
+## メトリクス再ラベル設定 (metricRelabelConfigs)
+
+OpenAgentは Prometheus の `metric_relabel_configs` に類似したメトリクス再ラベル機能を提供し、スクレイピング後にメトリクスをフィルタリングしたりラベルを変更できます。
+
+### 再ラベル設定項目
+
+- **source_labels**: ソースラベルのリスト(配列)
+- **separator**: ソースラベル値を連結する際の区切り文字(デフォルト: `;`)
+- **target_label**: 対象ラベル(結果を格納するラベル)
+- **regex**: ソースラベル値に適用する正規表現
+- **replacement**: 置換値(正規表現のキャプチャグループ参照可、例: `${1}`)
+- **action**: 実行する操作(keep, drop, replace)
+
+### サポートされる操作タイプ(action)
+
+- **keep**: 正規表現に一致するメトリクスのみ保持
+- **drop**: 正規表現に一致するメトリクスを削除
+- **replace**: 対象ラベルの値を置換値に変更
+
+### 特殊ラベル
+
+- **name**: メトリクス名を表す特殊ラベル
+
+### 例1. すべてのメトリクスを収集
+
+```yaml
+metricRelabelConfigs:
+  - source_labels: [__name__]
+    regex: ".*"
+    action: keep
+  - source_labels: [__name__]
+    regex: "node.*"
+    action: drop
+```
+
+### 例2. 特定メトリクスのみ保持
+
+この設定は `http_requests_total` メトリクスのみ保持し、残りはすべて削除します。
+
+```yaml
+metricRelabelConfigs:
+  - source_labels: [__name__]
+    regex: "http_requests_total"
+    action: keep
+```
+
+**動作例**
+
+以下のメトリクスが収集されたと仮定します。
+
+```
+http_requests_total{method="GET", status="200"} 100
+http_errors_total{method="GET", status="500"} 5
+node_cpu_seconds_total{cpu="0", mode="idle"} 1000
+```
+
+上記の metricRelabelConfigs を適用すると、`http_requests_total` メトリクスのみ保持され、その他のメトリクスはすべて削除されます。
+
+```
+http_requests_total{method="GET", status="200"} 100
+```
+
+### 例3. 正規表現を用いたメトリクスフィルタリング
+
+この設定は `node_cpu` または `node_memory` で始まるメトリクスのみ保持します。
+
+```yaml
+metricRelabelConfigs:
+  - source_labels: [__name__]
+    regex: "node_(cpu|memory).*"
+    action: keep
+```
+
+**動作例**
+
+以下のメトリクスが収集されたと仮定します。
+
+```
+node_cpu_seconds_total{cpu="0", mode="idle"} 1000
+node_memory_MemTotal_bytes{} 16777216
+node_disk_io_time_seconds_total{device="sda"} 100
+http_requests_total{method="GET", status="200"} 100
+```
+
+上記の metricRelabelConfigs を適用すると、`node_cpu` または `node_memory` で始まるメトリクスのみ保持され、その他はすべて削除されます。正規表現を用いて複数のメトリクスパターンを一括でフィルタリングできます。
+
+```
+node_cpu_seconds_total{cpu="0", mode="idle"} 1000
+node_memory_MemTotal_bytes{} 16777216
+```
+
+### 例4. ラベル名の変更
+
+この設定は `method` ラベルの値を `http_method` ラベルへコピーします。
+
+```yaml
+metricRelabelConfigs:
+  - source_labels: [method]
+    target_label: http_method
+    replacement: "${1}"
+    action: replace
+```
+
+**動作例**
+
+以下のメトリクスが収集されたと仮定します。
+
+```
+http_requests_total{method="GET", path="/api", status="200"} 100
+http_requests_total{method="POST", path="/api/users", status="201"} 50
+```
+
+上記の metricRelabelConfigs を適用すると、各メトリクスに  `method` ラベルの値をコピーした `http_method` ラベルが追加されます。元のラベルは保持され、新しいラベルが追加されます。`${1}`はソースラベルの値を参照します。
+
+```
+http_requests_total{method="GET", path="/api", status="200", http_method="GET"} 100
+http_requests_total{method="POST", path="/api/users", status="201", http_method="POST"} 50
+```
+
+### 例5. 複数ソースラベルの組み合わせ
+
+この設定は、`http_requests_total` メトリクスのうち `status` ラベルが `200` または `500` のものだけを保持します。
+
+```yaml
+metricRelabelConfigs:
+  - source_labels: [__name__, status]
+    regex: "http_requests_total;(200|500)"
+    action: keep
+```
+
+**動作例**
+
+以下のメトリクスが収集されたと仮定します。
+
+```
+http_requests_total{method="GET", path="/api", status="200"} 100
+http_requests_total{method="POST", path="/api/users", status="201"} 50
+http_requests_total{method="GET", path="/api/error", status="500"} 10
+http_requests_total{method="GET", path="/api/error", status="404"} 5
+```
+
+上記の metricRelabelConfigs を適用すると、`http_requests_total` のうち `status` ラベルが `200` または `500` のメトリクスのみ保持されます。複数のソースラベルを組み合わせる場合、デフォルトでは `;` 区切りで連結され、`separator` フィールドで変更可能です。
+
+```
+http_requests_total{method="GET", path="/api", status="200"} 100
+http_requests_total{method="GET", path="/api/error", status="500"} 10
+```
+
+### 例6. 静的ラベルの追加
+
+この設定は、すべてのメトリクスに `metric_src="whatap-open-agent"` ラベルを追加します。ソースラベルを指定しない場合、`replacement` の値がそのままラベル値として使用されます。環境、リージョン、アプリケーション名などの静的ラベルを全メトリクスに付与する用途に有用です。
+
+```yaml
+metricRelabelConfigs:
+  - target_label: metric_src
+    replacement: "whatap-open-agent"
+    action: replace
+```
+
+**動作例**
+
+以下のメトリクスが収集されたと仮定します。
+
+```
+http_requests_total{method="GET", path="/api", status="200"} 100
+node_cpu_seconds_total{cpu="0", mode="idle"} 1000
+```
+
+上記の metricRelabelConfigs を適用すると、すべてのメトリクスに `metric_src="whatap-open-agent"` ラベルが追加されます。これはメトリクスの出所、環境(例: production, staging)、リージョン(例: us-east, eu-west)、アプリケーション名などを示すのに役立ちます。
+
+```
+http_requests_total{method="GET", path="/api", status="200", metric_src="whatap-open-agent"} 100
+node_cpu_seconds_total{cpu="0", mode="idle", metric_src="whatap-open-agent"} 1000
+```
+
+### 例. 総合的な動作
+
+以下のメトリクスが収集されたと仮定します。
+
+```
+apiserver_request_total{code="200", resource="pods", verb="GET"} 100
+some_other_metric{label="value"} 50
+```
+
+上記の metricRelabelConfigs を適用すると、最終的に収集されるメトリクスは次のとおりです。
+
+1. 最初のルール(`keep apiserver_request_total`)を適用
+    - `apiserver_request_total` メトリクスは保持されます。
+    - `some_other_metric` メトリクスはドロップされます。
+
+2. 2番目のルール(`replace verb` → `http_verb`)を適用
+    - 保持された `apiserver_request_total` メトリクスに verb ラベルがあるため、その値(GET)が `http_verb` という新しいラベルにコピーされます。
+
+```
+apiserver_request_total{code="200", resource="pods", verb="GET", http_verb="GET"} 100
+```
