@@ -1,0 +1,51 @@
+---
+id: nodejs-1_0_3
+title: Node.js Agent v1.0.3
+toc_max_heading_level: 2
+pagination_next: release-notes/nodejs/nodejs-0_5_25
+displayed_sidebar: releaseSidebar
+---
+
+2025年09月24日
+
+<Status priority='1'>Changed</Status> Goモジュールを適用
+
+- **アプリケーション名設定の改善**
+
+    - ONAME 設定: *whatap.conf* の `app_name` 設定でアプリケーション名を指定できます。
+
+        ```bash
+        ## whatap.conf
+        app_name=MyNodeApp              # アプリケーション名
+        app_process_name=node           # プロセス名、デフォルト: NODE
+
+        ## アプリケーションのルートパスを環境変数 WHATAP_HOME に設定します。
+        ## デフォルト: process.cwd()
+        export WHATAP_HOME={app_root_path}
+        ```
+
+- **新しいデータ収集アーキテクチャ**
+
+    - 独立した収集プロセス: 別プロセスの `whatap_nodejs` がデータを集約し収集サーバーへ送信します。
+    - 性能向上: Node.js アプリケーションとは独立したプロセスで動作し、メインアプリケーション性能への影響を最小化します。
+
+- **PM2 クラスタモード対応の改善**
+
+    - 統合モニタリング: PM2 クラスタモードで2つ以上のインスタンスを実行する場合、1つの `app_name` に統合して表示します。
+    - 効率的なリソース管理: 複数インスタンスのデータを1つの収集プロセスで処理し、リソース使用量を最適化します。
+
+    :::note
+    **参考**  
+    PM2 で実行する場合でも `app_process_name` は `node` に設定します。これは実際のプロセス名ではなく、WhaTap モニタリングでの識別目的です。
+    :::
+
+- **互換性**
+    - **Node.js バージョン**: 17.0.0 以上
+    - **プラットフォーム**: macOS (64bit), Linux (64bit)
+    - **対応フレームワーク**: Express, Koa, Fastify, Socket.IO, WebSocket, GraphQL
+    - **対応データベース**: MySQL, PostgreSQL, MSSQL, Oracle, MariaDB, MongoDB, Redis
+
+
+import DownloadNode2 from './_import_dl-nodejs-agent3.mdx';
+
+<DownloadNode2 ver="1.0.3" />

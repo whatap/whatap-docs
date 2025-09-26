@@ -4337,13 +4337,12 @@ const sidebars = {
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/nodejs/nodejs-0_5_25',
+                  id: 'release-notes/nodejs/nodejs-1_0_3',
                   className: 'new',
                 },
+                'release-notes/nodejs/nodejs-0_5_25',
                 'release-notes/nodejs/nodejs-0_5_23',
                 'release-notes/nodejs/nodejs-0_5_22',
-                'release-notes/nodejs/nodejs-0_5_21',
-                'release-notes/nodejs/nodejs-0_5_19',
                 'release-notes/nodejs/nodejs-previous',
               ]
             },
@@ -5461,7 +5460,7 @@ const sidebars = {
   omSidebar: [
     {
       type: 'category',
-      label: 'OpenMetics',
+      label: 'OpenMetrics',
       collapsible: true,
       collapsed: true,
       link: {
