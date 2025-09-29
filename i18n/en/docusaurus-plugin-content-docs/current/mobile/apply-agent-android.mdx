@@ -62,7 +62,6 @@ plugins {
 dependencies {
     implementation("io.whatap.android:whatap-android-agent:2.1.0")
 }
-
 ```
 
 #### Groovy
@@ -73,7 +72,6 @@ dependencies {
 plugins {
     id 'io.whatap.android' version '2.1.0' apply false
 }
-
 ```
 
 ##### App module build.gradle
@@ -87,7 +85,6 @@ plugins {
 dependencies {
     implementation 'io.whatap.android:whatap-agent-bom:2.1.0'
 }
-
 ```
 
 ### 2. SDK Initialization
@@ -105,12 +102,12 @@ class MyApplication : Application() {
     override fun onCreate() {
         super.onCreate()
         WhatapAgent.Builder()
-            .setProjectKey("x431422fk0h9a-x45fmbh3gj5v0u-x6bnq98q40qqtd")
-            .setServerUrl("15.165.146.117")
+            .setProjectKey("YOUR_PROJECT_ACCESS_KEY")
+            .setServerUrl("https://YOUR_SERVER_URL")
+            .setPCode(YOUR_PCODE)
             .build(this)
     }
 }
-
 ```
 
 #### Java
@@ -124,12 +121,12 @@ public class MyApplication extends Application {
     public void onCreate() {
         super.onCreate();
         new WhatapAgent.Builder()
-            .setProjectKey("x431422fk0h9a-x45fmbh3gj5v0u-x6bnq98q40qqtd")
-            .setServerUrl("15.165.146.117")
+            .setProjectKey("YOUR_PROJECT_ACCESS_KEY")
+            .setServerUrl("https://YOUR_SERVER_URL")
+            .setPCode(YOUR_PCODE)
             .build(this);
     }
 }
-
 ```
 
 ### 3. Manifest Settings
@@ -147,7 +144,6 @@ You must configure the required permissions and the Application class in the And
         ...>
     </application>
 </manifest>
-
 ```
 
 ### 4. ProGuard Settings
@@ -168,7 +164,6 @@ You must configure the required permissions and the Application class in the And
 -keepclassmembers class * {
     @android.webkit.JavascriptInterface <methods>;
 }
-
 ```
 
 ### 5. ScreenGroup Settings
@@ -201,7 +196,6 @@ class MainActivity : AppCompatActivity() {
         chainView.endGroup("LoginFlow")
     }
 }
-
 ```
 
 #### Java
@@ -232,8 +226,8 @@ public class MainActivity extends AppCompatActivity {
         chainView.endGroup("LoginFlow");
     }
 }
-
 ```
+
 ## Troubleshooting & Support
 
 ### Troubleshooting
@@ -255,7 +249,6 @@ android {
 dependencies {
     coreLibraryDesugaring("com.android.tools:desugar_jdk_libs:2.1.2")
 }
-
 ```
 
 #### Plugin not found error
@@ -270,7 +263,6 @@ pluginManagement {
         gradlePluginPortal()
     }
 }
-
 ```
 
 #### Java version error
@@ -284,7 +276,6 @@ android {
         targetCompatibility = JavaVersion.VERSION_17
     }
 }
-
 ```
 
 #### Namespace warning
