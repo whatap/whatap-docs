@@ -34,7 +34,7 @@ input:
   region: "ap-northeast-1" # インスタンスが位置するリージョンを設定します。
   instances: # 設定したインスタンスは常に収集します。クラスター内のインスタンスをここに指定すると、オートスケールに関係なく収集されます。
     - name: "mysql-rds" # インスタンス名
-      slow_query: true # スロークエリページを利用する場合は true に設定してください。
+      slow_query: true # スロークエリーページを使用するには、trueに設定します。該当機能はMySQL及びPostgreSQLインスタンスでのみ対応されています。
   clusters:
     autoscale:
       enabled: false # オートスケールが有効な場合、スケーリングされたインスタンスを収集対象に追加または削除します。
@@ -96,12 +96,13 @@ input:
     - name: "docdb-instance-name" # インスタンス名
   clusters:
     autoscale:
-      enabled: false # オートスケールが活性化されると、オートスケールされたインスタンスを収集対象から追加または削除します。
-      interval: 60 # 明示されたクラスターのオートスケールチェック周期です。 (単位: 秒)
+      enabled: false # オートスケールが有効な場合、スケーリングされたインスタンスを収集対象に追加または削除します。
+      interval: 60 # 指定したクラスターのオートスケール確認間隔です。（単位: 秒）
     names:
       - "docdb-cluster-name"
-  metrics: # 収集するメトリックを入力します。
+  metrics: # 収集するメトリクスを入力します。
     - "CPUUtilization"
+    - "FreeStorageSpace"
     - "FreeableMemory"
     - "ReadLatency"   
     - "WriteLatency"  
