@@ -89,11 +89,11 @@ import WhatapAgent
 @main
 struct MyApp: App {
     init() {
-        *// 起動時に SDK を初期化*
+        // 起動時に SDK を初期化
         let agent = WhatapAgentBuilder()
-            .setProjectKey("x439k23s88411-x234p54k2k9ksch-z7j91dmvhielot")
-            .setCode(3380)
-            .setServerUrl("15.165.146.117")
+            .setProjectKey(<YOUR_PROJECT_ACCESS_KEY>)
+            .setPCode(<YOUR_PCODE>)
+            .setServerUrl(<YOUR_SERVER_URL>)
             .build()
         
         agent.initialize()
@@ -119,11 +119,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, 
                     willFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
-        *// 最も早いタイミングで SDK を初期化（推奨）*
+        // 最も早いタイミングで SDK を初期化（推奨）
         let agent = WhatapAgentBuilder()
-            .setProjectKey("x439k23s88411-x234p54k2k9ksch-z7j91dmvhielot")  
-            .setCode(3380)
-            .setServerUrl("15.165.146.117")
+            .setProjectKey(<YOUR_PROJECT_ACCESS_KEY>)
+            .setPCode(<YOUR_PCODE>)
+            .setServerUrl(<YOUR_SERVER_URL>)
             .build()
         
         agent.initialize()
@@ -146,13 +146,13 @@ AppDelegate.m
 @implementation AppDelegate
 
 + (void)load {
-    *// クラスがメモリにロードされるタイミング（main() の前）*
+    // クラスがメモリにロードされるタイミング（main() の前）
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         WhatapAgentBuilder *builder = [[WhatapAgentBuilder alloc] init];
-        [builder setProjectKey:@"x439k23s88411-x234p54k2k9ksch-z7j91dmvhielot"];
-        [builder setCode:3380];
-        [builder setServerUrl:@"15.165.146.117"];
+        [builder setProjectKey:@"<YOUR_PROJECT_ACCESS_KEY>"];
+        [builder setPCode:<YOUR_PCODE>];
+        [builder setServerUrl:@"<YOUR_SERVER_URL>"];
         
         WhatapIOSAgent *agent = [builder build];
         [agent initialize];
@@ -177,11 +177,11 @@ AppDelegate.m
 - (BOOL)application:(UIApplication *)application 
     willFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
-    *// didFinishLaunching より前に実行される SDK 初期化*
+    // didFinishLaunching より前に実行される SDK 初期化
     WhatapAgentBuilder *builder = [[WhatapAgentBuilder alloc] init];
-    [builder setProjectKey:@"x439k23s88411-x234p54k2k9ksch-z7j91dmvhielot"];
-    [builder setCode:3380];
-    [builder setServerUrl:@"15.165.146.117"];
+    [builder setProjectKey:@"<YOUR_PROJECT_ACCESS_KEY>"];
+    [builder setPCode:<YOUR_PCODE>];
+    [builder setServerUrl:@"<YOUR_SERVER_URL>"];
     
     WhatapIOSAgent *agent = [builder build];
     [agent initialize];
@@ -200,9 +200,9 @@ AppDelegate.m
 
 ```swift
 let agent = WhatapAgentBuilder()
-  .setProjectKey("プロジェクトキー")     // 必須
-  .setCode(3380)                    // 必須
-  .setServerUrl("15.165.146.117")   // 必須
+  .setProjectKey(<YOUR_PROJECT_ACCESS_KEY>)  // 必須
+  .setPCode(<YOUR_PCODE>)             // 必須
+  .setServerUrl(<YOUR_SERVER_URL>)   // 必須
   .setSamplingRate(1.0)             // 任意 (0.0 ~ 1.0, デフォルト: 1.0)
   .build()
 ```
@@ -211,9 +211,9 @@ let agent = WhatapAgentBuilder()
 
 ```objectivec
 WhatapAgentBuilder *builder = [[WhatapAgentBuilder alloc] init];
-[builder setProjectKey:@"プロジェクトキー"];    // 必須
-[builder setCode:3380];                     // 必須
-[builder setServerUrl:@"15.165.146.117"];   // 必須
+[builder setProjectKey:@"<YOUR_PROJECT_ACCESS_KEY>"];   // 必須
+[builder setPCode:<YOUR_PCODE>];   // 必須
+[builder setServerUrl:@"<YOUR_SERVER_URL>"];    // 必須
 [builder setSamplingRate:1.0];              // 任意 (0.0 ~ 1.0, デフォルト: 1.0)
 WhatapIOSAgent *agent = [builder build];
 ```
