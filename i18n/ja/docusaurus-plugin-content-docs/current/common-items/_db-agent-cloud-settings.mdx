@@ -32,15 +32,9 @@ input:
   csp: "aws" # クラウドサービスのプロバイダーを入力します。
   namespace: "rds"
   region: "ap-northeast-1" # インスタンスが位置するリージョンを設定します。
-<<<<<<< HEAD
-  instances: # 指定したインスタンスは常に収集されます。クラスター内のインスタンスをここに指定すると、オートスケールに関係なく収集されます。
+  instances: # 設定したインスタンスは常に収集します。クラスター内のインスタンスをここに指定すると、オートスケールに関係なく収集されます。
     - name: "mysql-rds" # インスタンス名
-      slow_query: true # スロークエリページを利用する場合は true に設定してください。
-=======
-  instances: # 明示されたインスタンスは常に収集します。クラスター内のインスタンスをこの属性に明示すると、オートスケール有無に関係なく常に収集します。
-    - name: "mysql-rds" # インスタンス名
-      slow_query: true # スロークエリーページを使用するには、trueに設定します。該当機能はMySQL及びPostgreSQLインスタンスでのみ対応されています。
->>>>>>> mobile@SERVICE-2920
+      slow_query: true # # スロークエリーページを使用するには、trueに設定します。該当機能はMySQL及びPostgreSQLインスタンスでのみ対応されています。
   clusters:
     autoscale:
       enabled: false # オートスケールが有効な場合、スケーリングされたインスタンスを収集対象に追加または削除します。
@@ -53,13 +47,18 @@ input:
     - "FreeableMemory"
     - "ReadLatency"
     - "WriteLatency"
+    - "ReadIOPS"
+    - "WriteIOPS"
+    - "NetworkReceiveThroughput"
+    - "NetworkTransmitThroughput"
+    - "FreeLocalStorage"
   logs:
     enabled: false # ログ収集の有無を設定します。true/falseで設定できます。
     groups: # 収集するAWSロググループを入力します。
       - "/aws/rds/cluster/database-cluster-name/error"
       - "/aws/lambda/MyLambda"
 
-output: # 収集したメトリックデータを受信するWhaTap情報を入力します。
+output: # 収集したメトリクスデータを受信するWhaTap情報を入力します。
   license: "abcdefg-higjgkgjk-zxcvnbnbmc"
   host: "127.0.0.1"
 ```
@@ -68,7 +67,7 @@ output: # 収集したメトリックデータを受信するWhaTap情報を入�
 | ------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `csp`                           | クラウドサービスの提供者として`aws`(Amazon Web Services)を意味                                                                                                                                                         |
 | `namespace`                     | 収集対象サービスのネームスペース<br />- 固定値: Aurora and RDSの設定時、`rds`を入力                                                                                                                                             |
-| `region`                        | AWSリージョンコード<br />- 例 `ap-northeast-2` (ソウルリージョン)                                                                                                                                                     |
+| `region`                        | AWSリージョンコード<br />- 例 `ap-northeast-1` (東京リージョン)                                                                                                                                                     |
 | `instances`                     | 常に収集するインスタンスの一覧で、オートスケール有無に関係なく、指定されたインスタンスは無条件に収集する                                                                                                                                                 |
 | `instances[].name`              | RDSインスタンス名<br />- 例 `mysql-rds`                                                                                                                                                                      |
 | `instances[].slow_query`        | 該当インスタンスのスロークエリーを収集するかどうか、**MySQL及びPostgreSQLインスタンスでのみ対応** <br />- `true`: 収集<br />- `false`: 非収集<br />                                                                                              |
@@ -93,14 +92,8 @@ input:
   csp: "aws" # クラウドサービスのプロバイダーを入力します。
   namespace: "docdb"
   region: "ap-northeast-1" # インスタンスが位置するリージョンを設定します。
-<<<<<<< HEAD
   instances: # 明示されたインスタンスは常に収集します。クラスター内のインスタンスをこの属性に明示すると、オートスケール有無に関係なく常に収集します。
     - name: "docdb-instance-name" # インスタンス名
-=======
-  instances: # 指定したインスタンスは常に収集されます。クラスター内のインスタンスをここに指定すると、オートスケールに関係なく収集されます。
-    - name: "docdb-instance-name" # インスタンス名
-      slow_query: true # スロークエリページを利用する場合は true に設定してください。
->>>>>>> mobile@SERVICE-2920
   clusters:
     autoscale:
       enabled: false # オートスケールが有効な場合、スケーリングされたインスタンスを収集対象に追加または削除します。
@@ -111,24 +104,15 @@ input:
     - "CPUUtilization"
     - "FreeStorageSpace"
     - "FreeableMemory"
-<<<<<<< HEAD
     - "ReadLatency"   
     - "WriteLatency"  
     - "DatabaseConnections"
-=======
-    - "ReadLatency"
-    - "WriteLatency"
->>>>>>> mobile@SERVICE-2920
   logs:
     enabled: false # ログ収集の有無を設定します。true/falseで設定できます。
     groups: # 収集するAWSロググループを入力します。
       - "/aws/rds/cluster/docdb-cluster-name/error"
       - "/aws/lambda/MyLambda"
-<<<<<<< HEAD
       
-=======
-
->>>>>>> mobile@SERVICE-2920
 output: # 収集したメトリックデータを受信するWhaTap情報を入力します。
   license: "abcdefg-higjgkgjk-zxcvnbnbmc"
   host: "127.0.0.1"
@@ -138,7 +122,7 @@ output: # 収集したメトリックデータを受信するWhaTap情報を入�
 | ------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `csp`                           | クラウドサービスの提供者として`aws`(Amazon Web Services)を意味                                                                                                                                    |
 | `namespace`                     | 収集対象サービスのネームスペース<br />- AWS DocumentDB設定時**固定値**で`docdb`入力                                                                                                                      |
-| `region`                        | AWSリージョンコード<br />- 例:`ap-northeast-2` (ソウルリージョン)                                                                                                                                |
+| `region`                        | AWSリージョンコード<br />- 例:`ap-northeast-1` (東京リージョン)                                                                                                                                |
 | `instances`                     | 常に収集するインスタンスの一覧で、オートスケール有無に関係なく、指定されたインスタンスは無条件に収集する                                                                                                                            |
 | `instances[].name`              | DocumentDBインスタンス名<br />- 例 `docdb-2025-04-08-01-21-05`                                                                                                                          |
 | `clusters`                      | DocumentDBクラスター関連設定                                                                                                                                                             |
