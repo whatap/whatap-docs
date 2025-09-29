@@ -31,7 +31,7 @@ The following explains how to configure the AWS Aurora and RDS, and NCP Cloud DB
 input:
   csp: "aws" # Enter the Cloud Service Provider.
   namespace: "rds"
-  region: "ap-northeast-1"
+  region: "us-east-1" # Set the region where the instance is located.
   instances: # The specified instances are collected always. Instances listed under this property are collected at all times, regardless of the autoscaling setting.
     - name: "mysql-rds"
       slow_query: true # To use the slow query page, set it to true. This feature is avaiable only in MySQL and PostgreSQL instances.
@@ -47,6 +47,11 @@ input:
     - "FreeableMemory"
     - "ReadLatency"
     - "WriteLatency"
+    - "ReadIOPS"
+    - "WriteIOPS"
+    - "NetworkReceiveThroughput"
+    - "NetworkTransmitThroughput"
+    - "FreeLocalStorage"
   logs:
     enabled: false # Can be enabled/disabled. Select true/false.
     groups: # Add the desired AWS log groups.
@@ -62,7 +67,7 @@ output: # Enter the WhaTap information to receive the collected metrics.
 | ------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `csp`                           | Indicates `aws` (Amazon Web Services) as a cloud service provider.                                                                                                                                                                                        |
 | `namespace`                     | Namespace of the service to be collected<br />- Fixed value: Enter `rds` when configuring Aurora and RDS.                                                                                                                                                 |
-| `region`                        | AWS Region code<br />- e.g. `ap-northeast-2` (Seoul Region)                                                                                                                                                                                               |
+| `region`                        | AWS Region code<br />- e.g. `us-east-1` (Virginia Region)                                                                                                                                                                                               |
 | `instances`                     | It always collects the specified instances regardless of whether they are auto-scaled, as long as they are in the list of instances to collect.                                                                                                           |
 | `instances[].name`              | RDS InstanceName<br />- e.g. `mysql-rds`                                                                                                                                                                                                                  |
 | `instances[].slow_query`        | Whether to collect slow queries for the instance. It is ** available only in MySQL and PostgreSQL instances.** <br />- `true`: To be collected<br />- `false`: Not to be collected<br />                                                                  |
@@ -86,7 +91,7 @@ The following explains how to configure the AWS DocumentDB Agent.
 input:
   csp: "aws" # Enter the Cloud Service Provider.
   namespace: "docdb"
-  region: "ap-northeast-2"
+  region: "us-east-1" # Set the region where the instance is located.
   instances: # The specified instances are always collected. When the instances within the cluster are specified in this property, collection is applied regardless of the autoscaling status.
     - name: "docdb-instance-name"
   clusters:
@@ -116,7 +121,7 @@ output: # Enter the WhaTap information to receive the collected metrics.
 | ------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `csp`                           | Indicates `aws` (Amazon Web Services) as the cloud service provider.                                                                                                                                                              |
 | `namespace`                     | Namespace of the collection target service<br />- When AWS DocumentDB is set, enter `docdb` as the **fixed value**.                                                                                                               |
-| `region`                        | AWS Region code<br />- e.g. `ap-northeast-2` (Seoul Region)                                                                                                                                                                       |
+| `region`                        | AWS Region code<br />- e.g. `us-east-1` (Virginia Region)                                                                                                                                                                       |
 | `instances`                     | It always collects the specified instances regardless of whether they are auto-scaled, as long as they are in the list of instances to collect.                                                                                   |
 | `instances[].name`              | DocumentDB InstanceName<br />- e.g. `docdb-2025-04-08-01-21-05`                                                                                                                                                                   |
 | `clusters`                      | DocumentDB cluster-related settings                                                                                                                                                                                               |
