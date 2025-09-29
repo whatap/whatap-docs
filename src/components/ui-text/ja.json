@@ -4159,6 +4159,7 @@
   "openFileDescriptors": "ファイル識別子を開く",
   "openmetrics": "OpenMetrics",
   "openmetrics_explorer": "OpenMetrics エクスプローラー",
+  "openmetrics_dashboard-list":"OpenMetricsダッシュボード一覧",
   "server_process": "サーバープロセス",
   "server_process_rw": "サーバープロセス読取り/書込み",
   "pattern": "パターン",
