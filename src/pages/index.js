@@ -605,6 +605,13 @@ export default function pages() {
                             })}
                         </FlexCard>
 
+                        <FlexCard icons="index-icon/product-openmetrics.svg" product="OpenMetrics" type="OpenMetrics" url="openmetrics/introduction" >
+                            {translate({
+                                id: "index.pages.section.product.OpenMetrics",
+                                message: " Prometheus 기반의 OpenMetrics 지표를 자동 수집하여, 복잡한 설정 없이 손쉽게 통합 모니터링 환경을 구축할 수 있는 솔루션입니다."
+                            })}
+                        </FlexCard>
+
                     </div>
                 </section>
 
