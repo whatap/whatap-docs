@@ -1,6 +1,41 @@
 [
   {
     "url": "https://docs.whatap.io/release-notes/service/service-2_21_x",
+    "ver": "Service 2.21.6",
+    "date": "2025-09-30",
+    "Lists": [
+      {
+        "ver": "Service 2.21.6",
+        "hash": "service-2216",
+        "product": "Common",
+        "type": "Fixed",
+        "desc": "<p><p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">Event Settings</span> &gt; <span class=\"uitext\">Metrics Event</span> &gt; <span class=\"uitext\">Add Event</span> button: fixed a whiteout issue in the drawer when switching from Direct Input to Selection Input</p>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/release-notes/service/service-2_21_x",
+    "ver": "Service 2.21.3",
+    "date": "2025-09-29",
+    "Lists": [
+      {
+        "ver": "Service 2.21.3",
+        "hash": "service-2213",
+        "product": "Application",
+        "type": "Fixed",
+        "desc": "<p><p><code class=\"Fixed\" type=\"0\">Fixed</code> Fixed an error that occurred when clicking the <strong>Business Dashboard</strong> detail button</p>"
+      },
+      {
+        "ver": "Service 2.21.3",
+        "hash": "service-2213",
+        "product": "Mobile",
+        "type": "Fixed",
+        "desc": "<p><p><code class=\"Fixed\" type=\"0\">Fixed</code> Fixed the omission of pcode guidance in the installation guide</p>"
+      }
+    ]
+  },  
+  {
+    "url": "https://docs.whatap.io/release-notes/service/service-2_21_x",
     "ver": "Service 2.21.2",
     "date": "2025-09-26",
     "Lists": [
