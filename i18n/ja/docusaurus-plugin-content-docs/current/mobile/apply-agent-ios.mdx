@@ -91,9 +91,9 @@ struct MyApp: App {
     init() {
         // 起動時に SDK を初期化
         let agent = WhatapAgentBuilder()
-            .setProjectKey(<YOUR_PROJECT_ACCESS_KEY>)
+            .setProjectKey("<YOUR_PROJECT_ACCESS_KEY>")
+            .setServerUrl("<YOUR_SERVER_URL>")
             .setPCode(<YOUR_PCODE>)
-            .setServerUrl(<YOUR_SERVER_URL>)
             .build()
         
         agent.initialize()
@@ -121,9 +121,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         // 最も早いタイミングで SDK を初期化（推奨）
         let agent = WhatapAgentBuilder()
-            .setProjectKey(<YOUR_PROJECT_ACCESS_KEY>)
+            .setProjectKey("<YOUR_PROJECT_ACCESS_KEY>")
+            .setServerUrl("<YOUR_SERVER_URL>")
             .setPCode(<YOUR_PCODE>)
-            .setServerUrl(<YOUR_SERVER_URL>)
             .build()
         
         agent.initialize()
@@ -151,8 +151,8 @@ AppDelegate.m
     dispatch_once(&onceToken, ^{
         WhatapAgentBuilder *builder = [[WhatapAgentBuilder alloc] init];
         [builder setProjectKey:@"<YOUR_PROJECT_ACCESS_KEY>"];
-        [builder setPCode:<YOUR_PCODE>];
         [builder setServerUrl:@"<YOUR_SERVER_URL>"];
+        [builder setPCode:<YOUR_PCODE>];
         
         WhatapIOSAgent *agent = [builder build];
         [agent initialize];
@@ -180,8 +180,8 @@ AppDelegate.m
     // didFinishLaunching より前に実行される SDK 初期化
     WhatapAgentBuilder *builder = [[WhatapAgentBuilder alloc] init];
     [builder setProjectKey:@"<YOUR_PROJECT_ACCESS_KEY>"];
-    [builder setPCode:<YOUR_PCODE>];
     [builder setServerUrl:@"<YOUR_SERVER_URL>"];
+    [builder setPCode:<YOUR_PCODE>];
     
     WhatapIOSAgent *agent = [builder build];
     [agent initialize];
@@ -200,9 +200,9 @@ AppDelegate.m
 
 ```swift
 let agent = WhatapAgentBuilder()
-  .setProjectKey(<YOUR_PROJECT_ACCESS_KEY>)  // 必須
+  .setProjectKey("<YOUR_PROJECT_ACCESS_KEY>")  // 必須
+  .setServerUrl("<YOUR_SERVER_URL>")   // 必須
   .setPCode(<YOUR_PCODE>)             // 必須
-  .setServerUrl(<YOUR_SERVER_URL>)   // 必須
   .setSamplingRate(1.0)             // 任意 (0.0 ~ 1.0, デフォルト: 1.0)
   .build()
 ```
@@ -212,8 +212,8 @@ let agent = WhatapAgentBuilder()
 ```objectivec
 WhatapAgentBuilder *builder = [[WhatapAgentBuilder alloc] init];
 [builder setProjectKey:@"<YOUR_PROJECT_ACCESS_KEY>"];   // 必須
-[builder setPCode:<YOUR_PCODE>];   // 必須
 [builder setServerUrl:@"<YOUR_SERVER_URL>"];    // 必須
+[builder setPCode:<YOUR_PCODE>];   // 必須
 [builder setSamplingRate:1.0];              // 任意 (0.0 ~ 1.0, デフォルト: 1.0)
 WhatapIOSAgent *agent = [builder build];
 ```
