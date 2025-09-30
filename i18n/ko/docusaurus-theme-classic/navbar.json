@@ -307,6 +307,10 @@
     "message": "SAP ASE",
     "description": "Navbar item with label SAP ASE"
   },
+  "item.label.OpenMetrics": {
+    "message": "OpenMetrics",
+    "description": "Navbar item with label OpenMetrics"
+  },
   "item.label.Network Management System": {
     "message": "Network Management System",
     "description": "Navbar item with label Network Management System"
