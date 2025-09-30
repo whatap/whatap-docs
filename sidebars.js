@@ -5473,7 +5473,7 @@ const sidebars = {
         id: 'openmetrics/introduction'
       },
       items: [
-        'openmetrics/install'
+        'openmetrics/install',
       ],
     }
   ],
