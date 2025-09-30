@@ -102,8 +102,8 @@ class MyApplication : Application() {
     override fun onCreate() {
         super.onCreate()
         WhatapAgent.Builder()
-            .setProjectKey(<YOUR_PROJECT_ACCESS_KEY>)
-            .setServerUrl(<YOUR_SERVER_URL>)
+            .setProjectKey("<YOUR_PROJECT_ACCESS_KEY>")
+            .setServerUrl("<YOUR_SERVER_URL>")
             .setPCode(<YOUR_PCODE>)
             .build(this)
     }
