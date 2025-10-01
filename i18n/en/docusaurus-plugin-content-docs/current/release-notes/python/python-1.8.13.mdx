@@ -1,0 +1,37 @@
+---
+id: python-1_8_13
+title: Python Agent v1.8.13
+toc_max_heading_level: 2
+pagination_next: release-notes/python/python-1_8_12
+displayed_sidebar: releaseSidebar
+---
+
+October 1, 2025
+
+- <Status priority='0'>Fixed</Status> Updated the `fastapi` module
+
+    - Fixed an issue where certain functions executed more than once
+
+- <Status priority='0'>Fixed</Status> Updated the `httpx` module
+
+    - Fixed a tracing error that occurred when invoked in streaming mode
+
+- <Status priority='0'>Fixed</Status> Updated the `psycopg` module
+
+    - Fixed an error when accessing the `rowcount` attribute
+    - Improved stability of the logic for extracting connection information
+
+- <Status priority='0'>Fixed</Status> Fixed an issue where the Container ID was not mapped in Kubernetes container environments
+
+    :::caution
+
+    **Caution**  
+    Supported from Kubernetes agent v1.8.9 or higher
+
+    :::
+
+:::note
+
+Agent download: [whatap-python v1.8.13](https://pypi.org/project/whatap-python/1.8.13/)
+
+:::

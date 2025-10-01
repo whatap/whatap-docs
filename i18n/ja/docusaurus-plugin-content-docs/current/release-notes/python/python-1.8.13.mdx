@@ -1,0 +1,37 @@
+---
+id: python-1_8_13
+title: Python Agent v1.8.13
+toc_max_heading_level: 2
+pagination_next: release-notes/python/python-1_8_12
+displayed_sidebar: releaseSidebar
+---
+
+2025年10月1日
+
+- <Status priority='0'>Fixed</Status> `fastapi` モジュールを修正
+
+    - 特定の関数が二回以上実行される問題を修正
+
+- <Status priority='0'>Fixed</Status> `httpx` モジュールを修正
+
+    - Streaming 方式で呼び出した際に発生するトレースエラーを修正
+
+- <Status priority='0'>Fixed</Status> `psycopg` モジュールを修正
+
+    - `rowcount` 属性アクセスエラーを修正
+    - 接続情報抽出ロジックの安定性を向上
+
+- <Status priority='0'>Fixed</Status> Kubernetes コンテナ環境で Container ID がマッピングされない問題を修正
+
+    :::caution
+
+    **注意**  
+    Kubernetes エージェント v1.8.9 以上でサポート
+
+    :::
+
+:::note
+
+エージェントのダウンロード: [whatap-python v1.8.13](https://pypi.org/project/whatap-python/1.8.13/)
+
+:::
