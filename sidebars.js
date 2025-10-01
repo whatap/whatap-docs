@@ -6714,6 +6714,7 @@ const sidebars = {
                 id: 'kubernetes/whatap-operator',
               },
               items: [
+                'kubernetes/whatap-cr-configuration-options',
                 'kubernetes/install-whatap-operator',
                 'kubernetes/install-auto-application-agent',
                 'kubernetes/openagent',
