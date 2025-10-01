@@ -6726,6 +6726,7 @@ const sidebars = {
                 'kubernetes/install-whatap-operator',
                 'kubernetes/install-auto-application-agent',
                 'kubernetes/openagent',
+                'kubernetes/whatap-cr-configuration-options',
               ],
             },
             'kubernetes/install-master-node-agent-v2',

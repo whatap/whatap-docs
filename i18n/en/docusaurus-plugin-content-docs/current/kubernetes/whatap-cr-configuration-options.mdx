@@ -1,0 +1,300 @@
+---
+id: whatap-cr-configuration-options
+title: WhaTap CR configuration options
+description: Guide to WhaTap CR configuration options.
+keywords: [ WhaTap Operator, WhaTap CR configuration options ]
+toc_max_heading_level: 4
+---
+
+WhaTap CR configuration options provide ways to control agent behavior by precisely specifying image, environment variables, resources, scheduling, authentication, and priority.
+
+### Image configuration
+
+```yaml
+apiVersion: monitoring.whatap.com/v2alpha1
+kind: WhatapAgent
+metadata:
+  name: whatap
+spec:
+  features:
+    k8sAgent:
+      # Full image name
+      customImageFullName: public.ecr.aws/whatap/kube_agent:1.8.8
+      masterAgent:
+        enabled: true
+        masterAgentContainer:
+          # Overridable per container
+          customImageFullName: public.ecr.aws/whatap/kube_agent:1.8.8
+      nodeAgent:
+        enabled: true
+        nodeAgentContainer:
+          # Overridable per container
+          customImageFullName: public.ecr.aws/whatap/kube_agent:1.8.8
+        nodeHelperContainer:
+          # Overridable per container
+          customImageFullName: public.ecr.aws/whatap/kube_agent:1.8.8
+    openAgent:
+      enabled: true
+      # Overridable per container
+      customImageFullName: public.ecr.aws/whatap/open_agent:latest
+```
+
+#### 1. Set options via container env
+
+The Kubernetes agent can set options through container env variables.
+
+- The operator automatically adds default env variables (WHATAP_LICENSE/HOST/PORT, WHATAP_MEM_LIMIT, and so on). Values you put under `nodeAgent.nodeAgentContainer.envs` are merged after the defaults.
+
+```yaml
+# When configuring the whatap-node-agent container options in the WhaTap node agent DaemonSet
+apiVersion: monitoring.whatap.com/v2alpha1
+kind: WhatapAgent
+metadata:
+  name: whatap
+spec:
+  features:
+    k8sAgent:
+      masterAgent:
+        enabled: true
+      nodeAgent:
+        enabled: true
+        nodeAgentContainer:
+          envs:
+            - name: debug
+              value: "true"
+      gpuMonitoring:
+        enabled: false
+```
+
+#### 2. Configure resources
+
+The operator includes default values for k8s agent installation.
+
+```yaml
+# When configuring the whatap-node-agent container options in the WhaTap node agent DaemonSet
+apiVersion: monitoring.whatap.com/v2alpha1
+kind: WhatapAgent
+metadata:
+  name: whatap
+spec:
+  features:
+    k8sAgent:
+      masterAgent:
+        enabled: true
+        # Master agent container resources (container-level override)
+        masterAgentContainer:
+          resources:
+            requests:
+              cpu: "150m"
+              memory: "256Mi"
+            limits:
+              cpu: "300m"
+              memory: "512Mi"
+      nodeAgent:
+        enabled: true
+        # Node agent component-level default resources
+        resources:
+          requests:
+            cpu: "100m"
+            memory: "300Mi"
+          limits:
+            cpu: "200m"
+            memory: "350Mi"
+        # Node agent container override
+        nodeAgentContainer:
+          resources:
+            requests:
+              cpu: "150m"
+              memory: "350Mi"
+            limits:
+              cpu: "300m"
+              memory: "512Mi"
+        # Helper container override
+        nodeHelperContainer:
+          resources:
+            requests:
+              cpu: "100m"
+              memory: "100Mi"
+            limits:
+              cpu: "200m"
+              memory: "350Mi"
+      gpuMonitoring:
+        enabled: false
+```
+
+- If a container defines `resources`, those values override the component defaults for that container.
+
+| Container | requests | limits |
+| --- | --- | --- |
+| whatap-master-agent | cpu: 100m <br /> memory: 300Mi | cpu: 200m <br /> memory: 350Mi |
+| whatap-node-agent | request: 100m <br /> limit: 300Mi | request: 200Mi <br /> limit: 350Mi |
+| whatap-node-helper | request: 100m <br /> limit: 100m | request:200Mi <br /> limit: 350Mi |
+
+#### 3. tolerations, affinity, nodeSelector
+
+##### tolerations
+
+```yaml
+spec:
+  features:
+    k8sAgent:
+      masterAgent:
+        enabled: true
+        tolerations:
+          - key: "node.kubernetes.io/not-ready"
+            operator: "Exists"
+            effect: "NoExecute"
+            tolerationSeconds: 300
+      nodeAgent:
+        enabled: true
+        tolerations:
+          - key: "dedicated"
+            operator: "Equal"
+            value: "observability"
+            effect: "NoSchedule"
+```
+
+##### affinity
+
+The master and node agents have the following default tolerations built in; values set in the CR are merged after these defaults.
+
+- `node-role.kubernetes.io/master:NoSchedule`
+- `node-role.kubernetes.io/control-plane:NoSchedule`
+
+```yaml
+spec:
+  features:
+    k8sAgent:
+      masterAgent:
+        enabled: true
+        affinity:
+          nodeAffinity:
+            requiredDuringSchedulingIgnoredDuringExecution:
+              nodeSelectorTerms:
+                - matchExpressions:
+                    - key: kubernetes.io/os
+                      operator: In
+                      values: ["linux"]
+      nodeAgent:
+        enabled: true
+        affinity:
+          podAntiAffinity:
+            preferredDuringSchedulingIgnoredDuringExecution:
+              - weight: 100
+                podAffinityTerm:
+                  topologyKey: kubernetes.io/hostname
+                  labelSelector:
+                    matchLabels:
+                      name: whatap-node-agent
+```
+
+##### nodeSelector
+
+- Apply nodeSelector to the master agent
+
+```yaml
+spec:
+  features:
+    k8sAgent:
+      masterAgent:
+        enabled: true
+        nodeSelector:
+          nodepool: system            # Example: pin to the system node pool
+          kubernetes.io/os: linux     # Linux nodes only
+```
+
+- Apply `nodeSelector` to the node agent (DaemonSet)
+    
+    ```yaml
+    spec:
+      features:
+        k8sAgent:
+          nodeAgent:
+            enabled: true
+            nodeSelector:
+              nodepool: worker            # Example: worker nodes only
+              kubernetes.io/arch: amd64   # AMD64 architecture nodes only
+    ```
+    
+    :::note
+
+    The node agent is a DaemonSet deployed to all nodes. If you set `nodeSelector`, Pods are created only on nodes that satisfy the conditions.
+
+    :::
+
+    - In a GPU cluster, to deploy only to GPU nodes, use the following:
+        
+        ```yaml
+        spec:
+          features:
+            k8sAgent:
+              nodeAgent:
+                enabled: true
+                nodeSelector:
+                  nvidia.com/gpu.present: "true"
+              gpuMonitoring:
+                enabled: true
+        ```
+
+- Apply `nodeSelector` to OpenAgent
+    
+    ```yaml
+    spec:
+      features:
+        openAgent:
+          enabled: true
+          nodeSelector:
+            nodepool: system              # Pin OpenAgent to the system node pool
+            kubernetes.io/os: linux
+          # Optional: combine with affinity for finer scheduling
+          affinity:
+            nodeAffinity:
+              requiredDuringSchedulingIgnoredDuringExecution:
+                nodeSelectorTerms:
+                  - matchExpressions:
+                      - key: kubernetes.io/hostname
+                        operator: In
+                        values: ["ip-10-0-0-12"]
+    ```
+
+#### 4. imagePullSecret
+
+```yaml
+spec:
+  features:
+    k8sAgent:
+      # Global pull secret (default for both master and node)
+      imagePullSecrets:
+        - name: global-regcred
+      masterAgent:
+        enabled: true
+        # Master-only override
+        imagePullSecrets:
+          - name: master-regcred
+      nodeAgent:
+        enabled: true
+        # Node-only override
+        imagePullSecrets:
+          - name: node-regcred
+    openAgent:
+      enabled: true
+      imagePullSecrets:
+        - name: openagent-regcred
+```
+
+#### 5. PriorityClassName
+
+```yaml
+spec:
+  features:
+    k8sAgent:
+      masterAgent:
+        enabled: true
+        priorityClassName: system-cluster-critical
+      nodeAgent:
+        enabled: true
+        priorityClassName: system-node-critical
+    openAgent:
+      enabled: true
+      priorityClassName: system-cluster-critical
+```
