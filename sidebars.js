@@ -4353,9 +4353,10 @@ const sidebars = {
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/python/python-1_8_12',
+                  id: 'release-notes/python/python-1_8_13',
                   className: 'new',
                 },
+                'release-notes/python/python-1_8_12',
                 'release-notes/python/python-1_8_11',
                 'release-notes/python/python-1_8_10',
                 'release-notes/python/python-1_8_9',
@@ -5456,7 +5457,7 @@ const sidebars = {
         id: 'openmetrics/introduction'
       },
       items: [
-        'openmetrics/install'
+        'openmetrics/install',
       ],
     }
   ],
