@@ -40,6 +40,79 @@ toc_max_heading_level: 3
    helm install whatap-operator whatap/whatap-operator --namespace whatap-monitoring
    ```
 
+    :::tip
+
+    **高度な設定**
+
+    **イメージレジストリとプルシークレット**
+
+    プライベートレジストリを使用する場合、またはイメージタグや pullPolicy を調整する必要がある場合は、*values.yaml* で次の値を設定します。
+
+    ```yaml
+      image:
+      repository: public.ecr.aws/whatap/whatap-operator
+      tag: latest
+      pullPolicy: Always
+
+      # プライベートレジストリを使用する場合の設定
+      imagePullSecret:
+      name: <your-registry-secret-name>
+    ```
+
+    <br />
+
+    **スケジューリング/優先度オプション**
+
+    オペレーターPodのスケジューリング制約と優先度を制御できます。値を指定した場合にのみテンプレートへレンダリングされ、既存ユーザーとの互換性が保たれます。
+
+    ```yaml
+      priorityClassName: ""   # 例: system-cluster-critical
+      nodeName: ""            # 特定ノードへ固定スケジューリングが必要な場合
+      nodeSelector: {}        # 例: { kubernetes.io/os: linux }
+      affinity: {}            # 標準の K8s Affinity スキーマ
+      tolerations: []         # 標準の K8s Toleration リスト
+    ```
+
+    - **例**
+
+    ```yaml
+      priorityClassName: "high-priority"
+      nodeSelector:
+        nodepool: system
+
+      affinity:
+        nodeAffinity:
+            requiredDuringSchedulingIgnoredDuringExecution:
+            nodeSelectorTerms:
+              - matchExpressions:
+                  - key: kubernetes.io/os
+                    operator: In
+                    values: ["linux"]
+
+      tolerations:
+        - key: "node-role.kubernetes.io/control-plane"
+          effect: NoSchedule
+      ```
+
+    <br />
+
+    デフォルトの *values.yaml* ではなくカスタム設定で使用する場合は、次のコマンドでオペレーターをインストールします。
+
+    - すでにネームスペースがある場合
+
+      ```yaml
+      helm install whatap-operator whatap/whatap-operator -n whatap-monitoring -f custom-values.yaml
+      ```
+
+    - ネームスペースがない場合は自動作成してインストール
+
+      ```yaml
+      helm upgrade --install whatap-operator whatap/whatap-operator -n whatap-monitoring --create-namespace -f custom-values.yaml
+      ```
+
+    :::
+
+
    - 既存のWhaTap Kubernetesエージェントのユーザーは、次のコマンドを実行してエージェントをインストールします。
 
    ```yaml
@@ -99,6 +172,12 @@ spec:
 最小構成でインストールすると、以下のように `whatap-master-agent`, `whatap-node-agent` が追加でインストールされます。
 
 <ImgLang img='whatap-operator-whatapagent-cr.png' desc='whatap-master-agent, whatap-node-agent' />
+
+:::note
+
+オペレーターで WhaTap エージェントをインストールする場合、CR 設定（リソース制約、tolerations、imagePullSecret）の詳細は [WhaTap CR 設定オプション](whatap-cr-configuration-options) を参照してください。
+
+:::
 
 ### 基本構成
 
