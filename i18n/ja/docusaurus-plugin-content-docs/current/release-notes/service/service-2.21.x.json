@@ -1,6 +1,20 @@
 [
   {
     "url": "https://docs.whatap.io/release-notes/service/service-2_21_x",
+    "ver": "Service 2.21.8",
+    "date": "2025-10-02",
+    "Lists": [
+      {
+        "ver": "Service 2.21.8",
+        "hash": "service-2218",
+        "product": "アプリケーション",
+        "type": "Fixed",
+        "desc": "<p><p><code class=\"Fixed\" type=\"0\">Fixed</code> 言語が英語に設定されている場合に APM Python プロジェクトのエージェントインストールページへアクセスすると発生していたホワイトアウトの問題を修正</p>"
+      }
+    ]
+  },  
+  {
+    "url": "https://docs.whatap.io/release-notes/service/service-2_21_x",
     "ver": "Service 2.21.6",
     "date": "2025-09-30",
     "Lists": [
