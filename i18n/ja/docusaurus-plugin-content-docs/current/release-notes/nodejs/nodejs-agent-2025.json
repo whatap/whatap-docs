@@ -8,9 +8,25 @@
         "ver": "v1.0.3",
         "hash": "v103",
         "product": "Node.js Agent",
+        "type": "New",
+        "desc": "<p><code class=\"New\" type=\"1\">New</code> <strong>exit_with_parent_process_enabled</strong></p>",
+        "details": "<ul><li><p>デフォルト: <code>false</code></p></li>\n\n<li><p><code>true</code> の場合、アプリケーション終了時に whatap_nodejs プロセスが終了します</p></li>\n<div class=\"theme-admonition theme-admonition-caution alert alert--warning\">\n  <div class=\"admonition-heading\">\n    <strong>注意</strong>\n  </div>\n  <div class=\"admonition-content\">\n    <p>Node.js エージェント v1.0.3 以上</p>\n  </div>\n</div></ul>"
+      },
+      {
+        "ver": "v1.0.3",
+        "hash": "v103",
+        "product": "Node.js Agent",
         "type": "Changed",
         "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> 独立した収集プロセスを導入</p>",
-        "details": "<ul><li><p>アプリケーション名の設定</p></li>\n\n<li><p>新しいデータ収集アーキテクチャ</p></li>\n\n<li><p>PM2クラスタモード対応の改善</p></li></ul>"
+        "details": "<ul><li><p>アプリケーション名の設定</p></li>\n\n<li><p>新しいデータ収集アーキテクチャ</p></li>\n\n<li><p>PM2 クラスタモード対応の改善</p></li></ul>"
+      },
+      {
+        "ver": "v1.0.3",
+        "hash": "v103",
+        "product": "Node.js Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Kubernetes コンテナ環境で Container ID がマッピングされない問題を修正</p>",
+        "details": "<ul><div class=\"theme-admonition theme-admonition-caution alert alert--warning\">\n  <div class=\"admonition-heading\">\n    <strong>注意</strong>\n  </div>\n  <div class=\"admonition-content\">\n    <p>Kubernetes エージェント v1.8.8 以上でサポート</p>\n  </div>\n</div></ul>"
       }
     ]
   },  
