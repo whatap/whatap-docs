@@ -83,6 +83,24 @@ import Accesskeyv2 from "../getting-started/_accesskey-v2.mdx";
 
 ## 活用方法
 
+### WHATAP_HOME 環境変数を設定する
+
+アプリケーションディレクトリのパスを WHATAP_HOME 環境変数に設定してください。指定しない場合は既定で現在の実行ディレクトリ(process.cwd())が使用されます。
+
+```bash
+export WHATAP_HOME={app_root_path}
+```
+
+WHATAP_HOME のパスに *whatap.conf* ファイルを作成し、次の値を設定してください。
+
+```bash
+# whatap.conf
+app_name=MyNodeApp              # アプリケーション名、デフォルト: NODE
+app_process_name=node           # プロセス名（例: node）
+```
+
+### エージェントを設定する
+
 アプリケーションの進入点(メインモジュール)ファイルの最上段に次のコードを追加します。例えばExpress.jsアプリケーションでは*app.js*または*server.js*ファイルが進入点(メインモジュール)です。Nest.jsといったフレームワークを使用する場合は、*main.ts*ファイルなどです。
 
 <Tabs groupId="javascript">
@@ -116,9 +134,8 @@ WhatapAgent.NodeAgent;
 
 アプリケーションの各環境に合わせた設定を適用すべき時は、*whatap.conf*ファイルの代わりに、アプリケーションのエントリポイントファイルから設定を変更できます。以下のコードを参考にして環境に合わせた設定を適用します。
 
-```javascript
-process.env.WHATAP_CONF = 'whatapdev'; // Setting for development environment
-process.env.WHATAP_NAME = 'NodeAgent-{ip2}-{ip3}-{cluster}'; //Dynamically configure agent name with IP and cluster info
+```jsx
+process.env.WHATAP_CONF = 'whatap_dev.conf'; // Setting for development environment
 var WhatapAgent = require('whatap').NodeAgent;
 ```
 
@@ -132,44 +149,18 @@ var WhatapAgent = require('whatap').NodeAgent;
 
 - **PM2のクラスター モードでアプリケーションを実行する場合**： 
 
-  クラスター モードで複数のアプリケーションインスタンスを実行する時、個々のインスタンスごとに別途のエージェントオプションを適用できます。この場合も、設定ファイルの代わりにエントリーポイントファイルで環境別設定を適用し、柔軟なモニタリングを構成できます。
-
-:::note
-
-`WHATAP_NAME`オプションで設定できる引数は次のとおりです。
-
-- **ipN**：ip0、ip1、ip2、ip3
-
-- **cluster**：cluster ID
-
-- **pid**：process ID
-
-- **hostname**：ホスト名
-
-:::
+  クラスターモードで複数のアプリケーションインスタンスを実行すると、単一の `app_name(WHATAP_HOME)` に統合して表示されます。
 
 ### エージェントのグループ単位の機能を使用する
 
 エージェントのグループ単位の機能には、グループトポロジ、統合トポロジなどがあります。次のコードは、`{グループ識別子}`の部分をエージェントグループ名に置き換えて使用してください。
 
-```javascript
+```jsx
 process.env.WHATAP_OKIND = '{グループ識別子}';
 var WhatapAgent = require('whatap').NodeAgent;
-```
 
-## PaaSのアプリケーション環境
-
-### デフォルトの環境変数設定
-
-PaaSアプリケーションからエージェントをインストールする場合は、すべての設定をソース(*app.js*)ファイルで設定する必要があります。*whatap.conf*ファイルは使用できません。
-
-アクセスキー(`WHATAP_LICENSE`)収集サーバーIP(`WHATAP_SERVER_HOST`)を環境変数として設定してください。
-
-```javascript title='app.js'
-process.env.WHATAP_LICENSE={アクセスキー};
-process.env.WHATAP_SERVER_HOST={収集サーバーIP};
-var whatap=require('whatap').NodeAgent;
-...
+// または whatap.conf に次のように記述
+whatap.okind = {グループ識別子}
 ```
 
 ### 環境変数として設定可能なオプション
