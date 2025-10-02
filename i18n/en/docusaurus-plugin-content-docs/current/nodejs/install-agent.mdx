@@ -163,21 +163,6 @@ var WhatapAgent = require('whatap').NodeAgent;
 whatap.okind = {group identifier}
 ```
 
-## PaaS application environment
-
-### Configuring the default environment variables
-
-When installing the agent in the PaaS application, all settings must be configured in the source file (_app.js_). The *whatap.conf* file cannot be used.
-
-Set the access key (`WHATAP_LICENSE`) and collection server IP (`WHATAP_SERVER_HOST`) as environment variables.
-
-```javascript title='app.js'
-process.env.WHATAP_LICENSE={Access Key};
-process.env.WHATAP_SERVER_HOST={Collection Server IP};
-var whatap=require('whatap').NodeAgent;
-...
-```
-
 ### Options that can be configured as environment variables
 
 Because you cannot use the *whatap.conf* file, set the WhaTap agent options as environment variables in the source file.

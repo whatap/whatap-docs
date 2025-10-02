@@ -163,21 +163,6 @@ var WhatapAgent = require('whatap').NodeAgent;
 whatap.okind = {グループ識別子}
 ```
 
-## PaaSのアプリケーション環境
-
-### デフォルトの環境変数設定
-
-PaaSアプリケーションからエージェントをインストールする場合は、すべての設定をソース(*app.js*)ファイルで設定する必要があります。*whatap.conf*ファイルは使用できません。
-
-アクセスキー(`WHATAP_LICENSE`)収集サーバーIP(`WHATAP_SERVER_HOST`)を環境変数として設定してください。
-
-```javascript title='app.js'
-process.env.WHATAP_LICENSE={アクセスキー};
-process.env.WHATAP_SERVER_HOST={収集サーバーIP};
-var whatap=require('whatap').NodeAgent;
-...
-```
-
 ### 環境変数として設定可能なオプション
 
 *whatap.conf*ファイルが使用できないため、ソースファイルに環境変数としてWhaTapエージェントオプションを設定する必要があります。
