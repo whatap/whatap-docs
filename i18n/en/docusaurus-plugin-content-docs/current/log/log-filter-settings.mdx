@@ -48,6 +48,14 @@ Only one filter can be set per category.
     For more details on filter conditions, see [WhaTap log search query syntax](https://docs.whatap.io/log/log-search-query).
     
     :::
+
+    - **Example**
+        - **Include**: `oid : 123`
+            - Collect only logs whose oid is 123.
+        - **Exclude**: `not oid : 123`
+            - Collect only logs whose oid is **not** 123.
+        - **Include all**: leave the filter condition empty
+        - **Exclude all**: `not content : *`
     
 1. Click **Add** to review and edit the filter settings in the **Preview Results** screen.
 
