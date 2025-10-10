@@ -1055,6 +1055,10 @@
     "message": "분석",
     "description": "The label for category 분석 in sidebar kubeSidebar"
   },
+  "sidebar.kubeSidebar.category.WhaTap CR 설정 옵션": {
+    "message": "WhaTap CR 설정 옵션",
+    "description": "The label for category WhaTap CR 설정 옵션 in sidebar kubeSidebar"
+  },
   "sidebar.logSidebar.category.Log 모니터링": {
     "message": "Log 모니터링",
     "description": "The label for category Log 모니터링 in sidebar logSidebar"
