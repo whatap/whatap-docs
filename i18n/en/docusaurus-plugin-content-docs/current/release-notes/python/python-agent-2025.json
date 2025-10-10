@@ -1,5 +1,44 @@
 [
   {
+    "url": "https://docs.whatap.io/release-notes/python/python-1_8_13",
+    "ver": "v1.8.13",
+    "date": "2025-10-01",
+    "Lists": [
+      {
+        "ver": "v1.8.13",
+        "hash": "v1813",
+        "product": "Python Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Updated the <code>fastapi</code> module</p>",
+        "details": "<ul><li><p>Fixed an issue where certain functions executed more than once</p></li></ul>"
+      },
+      {
+        "ver": "v1.8.13",
+        "hash": "v1813",
+        "product": "Python Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Updated the <code>httpx</code> module</p>",
+        "details": "<ul><li><p>Fixed a tracing error that occurred when invoked in streaming mode</p></li></ul>"
+      },
+      {
+        "ver": "v1.8.13",
+        "hash": "v1813",
+        "product": "Python Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Updated the <code>psycopg</code> module</p>",
+        "details": "<ul><li><p>Fixed an error when accessing the <code>rowcount</code> attribute</p></li>\n\n<li><p>Improved stability of the logic for extracting connection information</p></li></ul>"
+      },
+      {
+        "ver": "v1.8.13",
+        "hash": "v1813",
+        "product": "Python Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Fixed an issue where Container ID was not mapped in Kubernetes container environments</p>",
+        "details": "<ul><div class=\"theme-admonition theme-admonition-caution alert alert--warning\">\n  <div class=\"admonition-heading\">\n <strong>Caution</strong>\n  </div>\n  <div class=\"admonition-content\">\n    <p>Supported from Kubernetes agent v1.8.9 or higher</p>\n  </div>\n</div></ul>"
+      }
+    ]
+  },  
+  {
     "url": "https://docs.whatap.io/release-notes/python/python-1_8_12",
     "ver": "v1.8.12",
     "date": "2025-09-12",

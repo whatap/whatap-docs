@@ -1,6 +1,55 @@
 [
   {
     "url": "https://docs.whatap.io/release-notes/service/service-2_21_x",
+    "ver": "Service 2.21.8",
+    "date": "2025-10-02",
+    "Lists": [
+      {
+        "ver": "Service 2.21.8",
+        "hash": "service-2218",
+        "product": "アプリケーション",
+        "type": "Fixed",
+        "desc": "<p><p><code class=\"Fixed\" type=\"0\">Fixed</code> 言語が英語に設定されている場合に APM Python プロジェクトのエージェントインストールページへアクセスすると発生していたホワイトアウトの問題を修正</p>"
+      }
+    ]
+  },  
+  {
+    "url": "https://docs.whatap.io/release-notes/service/service-2_21_x",
+    "ver": "Service 2.21.6",
+    "date": "2025-09-30",
+    "Lists": [
+      {
+        "ver": "Service 2.21.6",
+        "hash": "service-2216",
+        "product": "共通",
+        "type": "Fixed",
+        "desc": "<p><p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">イベント設定</span> &gt; <span class=\"uitext\">メトリクスイベント</span> &gt; <span class=\"uitext\">イベント追加</span> ボタンをクリックし、ドロワーで手入力から選択入力へ切り替える際に発生するホワイトアウト問題を修正</p>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/release-notes/service/service-2_21_x",
+    "ver": "Service 2.21.3",
+    "date": "2025-09-29",
+    "Lists": [
+      {
+        "ver": "Service 2.21.3",
+        "hash": "service-2213",
+        "product": "アプリケーション",
+        "type": "Fixed",
+        "desc": "<p><p><code class=\"Fixed\" type=\"0\">Fixed</code> <strong>ビジネスダッシュボード</strong> の詳細ボタンをクリックした際にエラーが発生する問題を修正</p>"
+      },
+      {
+        "ver": "Service 2.21.3",
+        "hash": "service-2213",
+        "product": "モバイル",
+        "type": "Fixed",
+        "desc": "<p><p><code class=\"Fixed\" type=\"0\">Fixed</code> インストールガイドの pcode 案内の欠落を修正</p>"
+      }
+    ]
+  },  
+  {
+    "url": "https://docs.whatap.io/release-notes/service/service-2_21_x",
     "ver": "Service 2.21.2",
     "date": "2025-09-26",
     "Lists": [

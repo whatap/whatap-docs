@@ -1,0 +1,300 @@
+---
+id: whatap-cr-configuration-options
+title: WhaTap CR 設定オプション
+description: WhaTap CR の設定オプションをご案内します。
+keywords: [ WhaTap オペレーター, WhaTap CR 設定オプション ]
+toc_max_heading_level: 4
+---
+
+WhaTap CR の設定オプションは、イメージ、環境変数、リソース、スケジューリング、認証、優先度などを細かく指定してエージェント動作を制御する方法を提供します。
+
+### イメージ構成
+
+```yaml
+apiVersion: monitoring.whatap.com/v2alpha1
+kind: WhatapAgent
+metadata:
+  name: whatap
+spec:
+  features:
+    k8sAgent:
+      # フルイメージ名
+      customImageFullName: public.ecr.aws/whatap/kube_agent:1.8.8
+      masterAgent:
+        enabled: true
+        masterAgentContainer:
+          # コンテナ単位で上書き可能
+          customImageFullName: public.ecr.aws/whatap/kube_agent:1.8.8
+      nodeAgent:
+        enabled: true
+        nodeAgentContainer:
+          # コンテナ単位で上書き可能
+          customImageFullName: public.ecr.aws/whatap/kube_agent:1.8.8
+        nodeHelperContainer:
+          # コンテナ単位で上書き可能
+          customImageFullName: public.ecr.aws/whatap/kube_agent:1.8.8
+    openAgent:
+      enabled: true
+      # コンテナ単位で上書き可能
+      customImageFullName: public.ecr.aws/whatap/open_agent:latest
+```
+
+#### 1. コンテナ env でオプションを設定
+
+Kubernetes エージェントはコンテナの環境変数でオプションを設定できます。
+
+- オペレーターは既定の環境変数(WHATAP_LICENSE/HOST/PORT、WHATAP_MEM_LIMIT など)を自動で追加します。`nodeAgent.nodeAgentContainer.envs` に指定した値は既定値の後にマージされます。
+
+```yaml
+# WhaTap ノードエージェント DaemonSet の whatap-node-agent コンテナオプションを設定する場合
+apiVersion: monitoring.whatap.com/v2alpha1
+kind: WhatapAgent
+metadata:
+  name: whatap
+spec:
+  features:
+    k8sAgent:
+      masterAgent:
+        enabled: true
+      nodeAgent:
+        enabled: true
+        nodeAgentContainer:
+          envs:
+            - name: debug
+              value: "true"
+      gpuMonitoring:
+        enabled: false
+```
+
+#### 2. resources の設定方法
+
+オペレーターには k8s エージェント導入の既定値が含まれています。
+
+```yaml
+# WhaTap ノードエージェント DaemonSet の whatap-node-agent コンテナオプションを設定する場合
+apiVersion: monitoring.whatap.com/v2alpha1
+kind: WhatapAgent
+metadata:
+  name: whatap
+spec:
+  features:
+    k8sAgent:
+      masterAgent:
+        enabled: true
+        # マスターエージェントのコンテナリソース(コンテナ単位の上書き)
+        masterAgentContainer:
+          resources:
+            requests:
+              cpu: "150m"
+              memory: "256Mi"
+            limits:
+              cpu: "300m"
+              memory: "512Mi"
+      nodeAgent:
+        enabled: true
+        # ノードエージェントのコンポーネントレベル既定リソース
+        resources:
+          requests:
+            cpu: "100m"
+            memory: "300Mi"
+          limits:
+            cpu: "200m"
+            memory: "350Mi"
+        # ノードエージェントのコンテナ上書き
+        nodeAgentContainer:
+          resources:
+            requests:
+              cpu: "150m"
+              memory: "350Mi"
+            limits:
+              cpu: "300m"
+              memory: "512Mi"
+        # ヘルパーコンテナ上書き
+        nodeHelperContainer:
+          resources:
+            requests:
+              cpu: "100m"
+              memory: "100Mi"
+            limits:
+              cpu: "200m"
+              memory: "350Mi"
+      gpuMonitoring:
+        enabled: false
+```
+
+- コンテナごとに `resources` を定義した場合、その値が当該コンテナのコンポーネント既定値を上書きします。
+
+| コンテナ | requests | limits |
+| --- | --- | --- |
+| whatap-master-agent | cpu: 100m <br /> memory: 300Mi | cpu: 200m <br /> memory: 350Mi |
+| whatap-node-agent | request: 100m <br /> limit: 300Mi | request: 200Mi <br /> limit: 350Mi |
+| whatap-node-helper | request: 100m <br /> limit: 100m | request:200Mi <br /> limit: 350Mi |
+
+#### 3. tolerations、affinity、nodeSelector
+
+##### tolerations
+
+```yaml
+spec:
+  features:
+    k8sAgent:
+      masterAgent:
+        enabled: true
+        tolerations:
+          - key: "node.kubernetes.io/not-ready"
+            operator: "Exists"
+            effect: "NoExecute"
+            tolerationSeconds: 300
+      nodeAgent:
+        enabled: true
+        tolerations:
+          - key: "dedicated"
+            operator: "Equal"
+            value: "observability"
+            effect: "NoSchedule"
+```
+
+##### affinity
+
+マスターおよびノードエージェントには次の既定の tolerations が内蔵されています。CR で設定した値はこれらの既定値の後にマージされます。
+
+- `node-role.kubernetes.io/master:NoSchedule`
+- `node-role.kubernetes.io/control-plane:NoSchedule`
+
+```yaml
+spec:
+  features:
+    k8sAgent:
+      masterAgent:
+        enabled: true
+        affinity:
+          nodeAffinity:
+            requiredDuringSchedulingIgnoredDuringExecution:
+              nodeSelectorTerms:
+                - matchExpressions:
+                    - key: kubernetes.io/os
+                      operator: In
+                      values: ["linux"]
+      nodeAgent:
+        enabled: true
+        affinity:
+          podAntiAffinity:
+            preferredDuringSchedulingIgnoredDuringExecution:
+              - weight: 100
+                podAffinityTerm:
+                  topologyKey: kubernetes.io/hostname
+                  labelSelector:
+                    matchLabels:
+                      name: whatap-node-agent
+```
+
+##### nodeSelector
+
+- マスターエージェントに nodeSelector を適用
+
+```yaml
+spec:
+  features:
+    k8sAgent:
+      masterAgent:
+        enabled: true
+        nodeSelector:
+          nodepool: system            # 例) system ノードプールへ固定
+          kubernetes.io/os: linux     # Linux ノードのみ
+```
+
+- ノードエージェント(DaemonSet) に `nodeSelector` を適用
+    
+    ```yaml
+    spec:
+      features:
+        k8sAgent:
+          nodeAgent:
+            enabled: true
+            nodeSelector:
+              nodepool: worker            # 例) ワーカーノードのみ
+              kubernetes.io/arch: amd64   # AMD64 アーキテクチャノードのみ
+    ```
+    
+    :::note
+
+    ノードエージェントは全ノードに配備される DaemonSet です。`nodeSelector` を設定すると、条件を満たすノードにのみ Pod が作成されます。
+
+    :::
+
+    - GPU クラスタで GPU ノードのみに配備したい場合は次のように設定します。
+        
+        ```yaml
+        spec:
+          features:
+            k8sAgent:
+              nodeAgent:
+                enabled: true
+                nodeSelector:
+                  nvidia.com/gpu.present: "true"
+              gpuMonitoring:
+                enabled: true
+        ```
+
+- OpenAgent に `nodeSelector` を適用
+    
+    ```yaml
+    spec:
+      features:
+        openAgent:
+          enabled: true
+          nodeSelector:
+            nodepool: system              # OpenAgent を system ノードプールへ固定
+            kubernetes.io/os: linux
+          # 任意: より細かなスケジューリングには affinity と併用
+          affinity:
+            nodeAffinity:
+              requiredDuringSchedulingIgnoredDuringExecution:
+                nodeSelectorTerms:
+                  - matchExpressions:
+                      - key: kubernetes.io/hostname
+                        operator: In
+                        values: ["ip-10-0-0-12"]
+    ```
+
+#### 4. imagePullSecret
+
+```yaml
+spec:
+  features:
+    k8sAgent:
+      # グローバル pull secret(マスター/ノード共通の既定)
+      imagePullSecrets:
+        - name: global-regcred
+      masterAgent:
+        enabled: true
+        # マスター専用の上書き
+        imagePullSecrets:
+          - name: master-regcred
+      nodeAgent:
+        enabled: true
+        # ノード専用の上書き
+        imagePullSecrets:
+          - name: node-regcred
+    openAgent:
+      enabled: true
+      imagePullSecrets:
+        - name: openagent-regcred
+```
+
+#### 5. PriorityClassName
+
+```yaml
+spec:
+  features:
+    k8sAgent:
+      masterAgent:
+        enabled: true
+        priorityClassName: system-cluster-critical
+      nodeAgent:
+        enabled: true
+        priorityClassName: system-node-critical
+    openAgent:
+      enabled: true
+      priorityClassName: system-cluster-critical
+```

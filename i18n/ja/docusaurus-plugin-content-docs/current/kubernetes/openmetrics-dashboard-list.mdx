@@ -1,0 +1,63 @@
+---
+id: openmetrics-dashboard-list
+title: OpenMetrics ダッシュボード一覧
+description: OpenMetrics の可視化ダッシュボードです。
+toc_max_heading_level: 4
+keywords: [ OpenMetrics, OpenMetrics ダッシュボード, Kubernetes 監視 ]
+---
+
+<Cmdname sid="openmetrics" className="uitext" /> を初めて使うユーザーが複雑な設定なしで素早くメトリクスを収集・可視化できるよう、デフォルトテンプレートと事前定義ダッシュボードを提供します。これにより、よく使われるオープンソースメトリクスを簡単に適用でき、初期導入のハードルを下げ、運用者が拡張可能なモニタリング環境を構築できるよう支援します。
+
+## ダッシュボード一覧
+
+<Cmdname sid="openmetrics_dashboard-list" className="uitext" /> はデフォルトテンプレートを提供するオープンソースのダッシュボードカードを提供します。各カードに概要、ダッシュボードへの移動、収集手順を表示します。
+
+* ![右矢印アイコン](/img/ic-arrow-right.svg) **ダッシュボード**: クリックすると対象ダッシュボードへ直接移動します。
+* ![情報アイコン](/img/ic-info-circle.svg) **収集案内**: クリックするとデータ収集の設定方法を表示します。
+
+### Nginx ダッシュボード {#nginx-dashboard}
+
+Apache Nginx を監視し、Webサーバーの性能をリアルタイムに追跡・分析できます。
+
+### Istio ダッシュボード {#istio-dashboard}
+
+Istio サービスメッシュ環境におけるサービス間の関係とトラフィックフローを可視化し、WhaTap APM データと連携して統合モニタリング環境をダッシュボードとして提供します。画面右上のボタンでダッシュボードを拡大または縮小できます。
+
+<ImgLang img='openmetrics-dashboard-istio.png' desc='OpenMetrics ダッシュボード istio' />
+
+#### 凡例 {#legend}
+
+画面右上の ![情報アイコン](/img/ic-info-circle.svg) ボタンをクリックすると凡例を確認できます。 
+
+##### ノード形状 {#nod-shapes}
+
+* 三角形: Kubernetes サービス
+* 円: ワークロード
+* 四角形: アプリケーション
+* 小さな円: Pod
+
+##### ノード状態 {#nod-status}
+
+HTTP リクエスト・レスポンス全体におけるエラー比率(4xx, 5xx)
+
+* *緑*: エラー率 5% 未満
+* <span class='slow'>橙</span>: エラー率 5% 以上
+* <span class='vslow'>赤</span>: エラー率 10% 以上
+* グレー: リクエストなし
+
+##### Pod ノード状態 {#pod-status}
+
+Kubernetes Pod のフェーズ
+
+* *緑*: Running 状態の Pod
+* <span class='slow'>橙</span>: Pending 状態の Pod
+* <span class='vslow'>赤</span>: Failed 状態の Pod
+
+##### エッジの色 {#edge-colors}
+
+2 つのノード間の HTTP リクエストで発生したエラー比率(4xx, 5xx)
+
+* *緑*: エラー率 10% 未満
+* <span class='slow'>橙</span>: エラー率 10% 以上
+* <span class='vslow'>赤</span>: エラー率 20% 以上
+* <span class='normal'>青</span>: TCP 通信

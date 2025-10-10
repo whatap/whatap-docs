@@ -8,42 +8,62 @@ displayed_sidebar: releaseSidebar
 
 2025年09月25日
 
-<Status priority='1'>Changed</Status> 独立した収集プロセスを導入
+- <Status priority='1'>New</Status> **exit_with_parent_process_enabled**
+    - `false`: デフォルト
+    - `true`: アプリケーション終了時に whatap_nodejs プロセスが終了します
 
-- **アプリケーション名設定の改善**
+        :::caution
 
-    - ONAME 設定: *whatap.conf* の `app_name` 設定でアプリケーション名を指定できます。
+        **注意**  
+        Node.js エージェント v1.0.3 以上
 
-        ```bash
-        ## whatap.conf
-        app_name=MyNodeApp              # アプリケーション名
-        app_process_name=node           # プロセス名、デフォルト: NODE
+        :::
 
-        ## アプリケーションのルートパスを環境変数 WHATAP_HOME に設定します。
-        ## デフォルト: process.cwd()
-        export WHATAP_HOME={app_root_path}
-        ```
+- <Status priority='1'>Changed</Status> 独立した収集プロセスを導入
 
-- **新しいデータ収集アーキテクチャ**
+    - **アプリケーション名設定の改善**
 
-    - 独立した収集プロセス: 別プロセスの `whatap_nodejs` がデータを集約し収集サーバーへ送信します。
-    - 性能向上: Node.js アプリケーションとは独立したプロセスで動作し、メインアプリケーション性能への影響を最小化します。
+        - ONAME 設定: *whatap.conf* の `app_name` 設定でアプリケーション名を指定できます。
 
-- **PM2 クラスタモード対応の改善**
+            ```bash
+            ## whatap.conf
+            app_name=MyNodeApp              # アプリケーション名, デフォルト: NODE
+            app_process_name=node           # プロセス名 (例: node)
 
-    - 統合モニタリング: PM2 クラスタモードで2つ以上のインスタンスを実行する場合、1つの `app_name` に統合して表示します。
-    - 効率的なリソース管理: 複数インスタンスのデータを1つの収集プロセスで処理し、リソース使用量を最適化します。
+            ## アプリケーションのルートパスを環境変数 WHATAP_HOME に設定します。
+            ## デフォルト: process.cwd()
+            export WHATAP_HOME={app_root_path}
+            ```
 
-    :::note
-    **参考**  
-    PM2 で実行する場合でも `app_process_name` は `node` に設定します。これは実際のプロセス名ではなく、WhaTap モニタリングでの識別目的です。
+    - **新しいデータ収集アーキテクチャ**
+
+        - 独立した収集プロセス: 別プロセスの `whatap_nodejs` がデータを集約し収集サーバーへ送信します。
+        - 性能向上: Node.js アプリケーションとは独立したプロセスで動作し、メインアプリケーション性能への影響を最小化します。
+
+    - **PM2 クラスタモード対応の改善**
+
+        - 統合モニタリング: PM2 クラスタモードで2つ以上のインスタンスを実行する場合、1つの `app_name` に統合して表示します。
+        - 効率的なリソース管理: 複数インスタンスのデータを1つの収集プロセスで処理し、リソース使用量を最適化します。
+
+        :::note
+        **参考**  
+        PM2 で実行する場合でも `app_process_name` は `node` に設定します。これは実際のプロセス名ではなく、WhaTap モニタリングでの識別目的です。
+        :::
+
+    - **互換性**
+        - **Node.js バージョン**: 17.0.0 以上
+        - **プラットフォーム**: macOS (64bit), Linux (64bit)
+        - **対応フレームワーク**: Express, Koa, Fastify, Socket.IO, WebSocket, GraphQL
+        - **対応データベース**: MySQL, PostgreSQL, MSSQL, Oracle, MariaDB, MongoDB, Redis
+
+- <Status priority='0'>Fixed</Status> Kubernetes コンテナ環境で Container ID がマッピングされない問題を修正
+
+    :::caution
+
+    **注意**  
+    Kubernetes エージェント v1.8.8 以上でサポート
+
     :::
-
-- **互換性**
-    - **Node.js バージョン**: 17.0.0 以上
-    - **プラットフォーム**: macOS (64bit), Linux (64bit)
-    - **対応フレームワーク**: Express, Koa, Fastify, Socket.IO, WebSocket, GraphQL
-    - **対応データベース**: MySQL, PostgreSQL, MSSQL, Oracle, MariaDB, MongoDB, Redis
 
 
 import DownloadNode2 from './_import_dl-nodejs-agent3.mdx';

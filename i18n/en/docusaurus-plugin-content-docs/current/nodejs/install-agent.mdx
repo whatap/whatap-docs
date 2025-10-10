@@ -83,7 +83,25 @@ Server-side rendering (SSR) frameworks such as **Next.js** and **Nuxt.js** requi
 
 ## Using
 
-Add the following code at the top of the entry point (main module) file of the application. For example, in the Express.js application, _app.js_ and _server.js_ are the entry points (main module). When using a framework like Nest.js, _main.ts_ is the entry point.
+### Set the WHATAP_HOME environment variable
+
+Set the application directory path to the WHATAP_HOME environment variable. If you do not specify it, the current working directory (process.cwd()) is used by default.
+
+```bash
+export WHATAP_HOME={app_root_path}
+```
+
+Create a *whatap.conf* file in the WHATAP_HOME path and set the following values.
+
+```bash
+# whatap.conf
+app_name=MyNodeApp              # Application name, default: NODE
+app_process_name=node           # Process name (for example, node)
+```
+
+### Configure the agent
+
+Add the following code at the top of the entry point (main module) file of the application. For example, in the Express.js application, *app.js* and *server.js* are the entry points (main module). When using a framework like Nest.js, *main.ts* is the entry point.
 
 <Tabs groupId="javascript">
 
@@ -116,9 +134,8 @@ Because the agent executable code needs to be run first after starting node.js, 
 
 To apply settings tailored to each environment of the application, you can modify the settings in the entry point file of the application instead of the *whatap.conf* file. Noting the code below, apply the settings tailored to your environment.
 
-```javascript
-process.env.WHATAP_CONF = 'whatapdev'; // Setting for development environment
-process.env.WHATAP_NAME = 'NodeAgent-{ip2}-{ip3}-{cluster}'; //Dynamically configure agent name with IP and cluster info
+```jsx
+process.env.WHATAP_CONF = 'whatap_dev.conf'; // Setting for development environment
 var WhatapAgent = require('whatap').NodeAgent;
 ```
 
@@ -132,44 +149,18 @@ var WhatapAgent = require('whatap').NodeAgent;
 
 - **In case of running applications in cluster mode for PM2** 
 
-  When running multiple application instances in cluster mode, you can apply separate agent options to each individual instance. In this case, you can also configure a flexible monitoring by applying environment-specific settings in the entry point file instead of the configuration file.
-
-:::note
-
-The arguments that can be set by the `WHATAP_NAME` option are as follows.
-
-- **ipN**: ip0, ip1, ip2, ip3
-
-- **cluster**: Cluster ID
-
-- **pid**: Process ID
-
-- **hostname**: Host name
-
-:::
+  When you run multiple application instances in cluster mode, the system consolidates them and displays them under a single `app_name(WHATAP_HOME)`.
 
 ### Using the agent group unit function
 
 Agent group unit function includes group topology and integrated topology. Replace `{group identifier}` with agent group name in the following code.
 
-```javascript
+```jsx
 process.env.WHATAP_OKIND = '{group identifier}';
 var WhatapAgent = require('whatap').NodeAgent;
-```
 
-## PaaS application environment
-
-### Configuring the default environment variables
-
-When installing the agent in the PaaS application, all settings must be configured in the source file (_app.js_). The *whatap.conf* file cannot be used.
-
-Set the access key (`WHATAP_LICENSE`) and collection server IP (`WHATAP_SERVER_HOST`) as environment variables.
-
-```javascript title='app.js'
-process.env.WHATAP_LICENSE={Access Key};
-process.env.WHATAP_SERVER_HOST={Collection Server IP};
-var whatap=require('whatap').NodeAgent;
-...
+// Or write the following in whatap.conf
+whatap.okind = {group identifier}
 ```
 
 ### Options that can be configured as environment variables

@@ -8,12 +8,28 @@
         "ver": "v1.0.3",
         "hash": "v103",
         "product": "Node.js Agent",
+        "type": "New",
+        "desc": "<p><code class=\"New\" type=\"1\">New</code> <strong>exit_with_parent_process_enabled</strong></p>",
+        "details": "<ul><li><p>Default: <code>false</code></p></li>\n\n<li><p>If set to <code>true</code>, the whatap_nodejs process terminates when the application exits</p></li>\n<div class=\"theme-admonition theme-admonition-caution alert alert--warning\">\n  <div class=\"admonition-heading\">\n    <strong>Caution</strong>\n  </div>\n  <div class=\"admonition-content\">\n    <p>Node.js Agent v1.0.3 or higher</p>\n  </div>\n</div></ul>"
+      },
+      {
+        "ver": "v1.0.3",
+        "hash": "v103",
+        "product": "Node.js Agent",
         "type": "Changed",
         "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> Introduced an independent collector process</p>",
         "details": "<ul><li><p>Application name configuration</p></li>\n\n<li><p>New data collection architecture</p></li>\n\n<li><p>Improved PM2 cluster mode support</p></li></ul>"
+      },
+      {
+        "ver": "v1.0.3",
+        "hash": "v103",
+        "product": "Node.js Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Fixed an issue where the Container ID was not mapped in Kubernetes container environments</p>",
+        "details": "<ul><div class=\"theme-admonition theme-admonition-caution alert alert--warning\">\n  <div class=\"admonition-heading\">\n    <strong>Caution</strong>\n  </div>\n  <div class=\"admonition-content\">\n    <p>Supported from Kubernetes agent v1.8.8 or higher</p>\n  </div>\n</div></ul>"
       }
     ]
-  },  
+  },    
   {
     "url": "https://docs.whatap.io/release-notes/nodejs/nodejs-0_5_25/",
     "ver": "v0.5.25",

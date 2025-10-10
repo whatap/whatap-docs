@@ -35,6 +35,77 @@ Follow the steps below to install the WhaTap Operator and create the `WhatapAgen
     kubectl create secret generic whatap-credentials --namespace whatap-monitoring --from-literal WHATAP_LICENSE=$WHATAP_LICENSE --from-literal WHATAP_HOST=$WHATAP_HOST --from-literal WHATAP_PORT=$WHATAP_PORT
     helm install whatap-operator whatap/whatap-operator --namespace whatap-monitoring
     ```
+    :::tip
+
+    **Advanced configuration**
+
+    **Image registry and pull secret**
+
+    If you use a private registry or need to adjust image tags or the pull policy, set the following values in *values.yaml*.
+
+    ```yaml
+      image:
+      repository: public.ecr.aws/whatap/whatap-operator
+      tag: latest
+      pullPolicy: Always
+
+      # For private registry
+      imagePullSecret:
+      name: <your-registry-secret-name>
+    ```
+
+    <br />
+
+    **Scheduling and priority options**
+
+    You can control scheduling constraints and priority for the operator Pod. The template renders only when a value is specified, which preserves compatibility with existing users.
+
+    ```yaml
+      priorityClassName: ""   # Example: system-cluster-critical
+      nodeName: ""            # When you need fixed scheduling on a specific node
+      nodeSelector: {}        # Example: { kubernetes.io/os: linux }
+      affinity: {}            # Standard K8s Affinity schema
+      tolerations: []         # Standard K8s Toleration list
+    ```
+
+    * **Example**
+
+    ```yaml
+      priorityClassName: "high-priority"
+      nodeSelector:
+        nodepool: system
+
+      affinity:
+        nodeAffinity:
+            requiredDuringSchedulingIgnoredDuringExecution:
+            nodeSelectorTerms:
+              - matchExpressions:
+                  - key: kubernetes.io/os
+                    operator: In
+                    values: ["linux"]
+
+      tolerations:
+        - key: "node-role.kubernetes.io/control-plane"
+          effect: NoSchedule
+      ```
+
+    <br />
+
+    If you use a custom configuration instead of the default *values.yaml*, install the operator with the following commands.
+
+    * If the namespace already exists
+
+      ```yaml
+      helm install whatap-operator whatap/whatap-operator -n whatap-monitoring -f custom-values.yaml
+      ```
+
+    * If the namespace does not exist, create it automatically and install
+
+      ```yaml
+      helm upgrade --install whatap-operator whatap/whatap-operator -n whatap-monitoring --create-namespace -f custom-values.yaml
+      ```
+
+    :::
     
     * If you were previously using the WhaTap Kubernetes agent, run the following commands to install the agent:
 
@@ -95,6 +166,12 @@ spec:
 When installed with the minimal configuration, `whatap-master-agent` and `whatap-node-agent` are additionally deployed as shown below.
 
 <ImgLang img='whatap-operator-whatapagent-cr.png' desc='whatap-master-agent, whatap-node-agent' />
+
+:::note
+
+When installing the WhaTap agent with the operator, refer to [WhaTap CR configuration options](whatap-cr-configuration-options) for details on CR settings (resource constraints, tolerations, imagePullSecret).
+
+:::
 
 ### Default Configuration
 
