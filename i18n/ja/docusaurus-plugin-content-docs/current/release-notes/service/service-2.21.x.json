@@ -1,6 +1,21 @@
 [
   {
     "url": "https://docs.whatap.io/release-notes/service/service-2_21_x",
+    "ver": "Service 2.21.9",
+    "date": "2025-10-13",
+    "Lists": [
+      {
+        "ver": "Service 2.21.9",
+        "hash": "service-2219",
+        "product": "Database",
+        "category": "MySQL",
+        "type": "Fixed",
+        "desc": "<p><p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">ダッシュボード</span> &gt; <span class=\"uitext\">DBモニタリング</span> <code class=\"newfunc\">New</code> Default プリセットを選択した際、一部の指標が表示されない問題を修正しました。</p>"
+      }
+    ]
+  },  
+  {
+    "url": "https://docs.whatap.io/release-notes/service/service-2_21_x",
     "ver": "Service 2.21.8",
     "date": "2025-10-02",
     "Lists": [
