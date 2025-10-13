@@ -128,6 +128,11 @@ npx docusaurus-prince-pdf -u https://docs.whatap.io/cover-npm --prince-args="--j
 
 pdfcpu annot remove -pages 1 ./pdf/whatap-network-performance-monitoring.pdf
 
+npx docusaurus-prince-pdf -u https://docs.whatap.io/cover-nms --prince-args="--javascript --page-size='a4' --page-margin='10mm' --style='$PATH_NAME/print.css'" -o ./pdf/whatap-network-management-system-monitoring.pdf
+ --dest ./pdf --include-index
+
+pdfcpu annot remove -pages 1 ./pdf/whatap-network-management-system-monitoring.pdf
+
 # npx docusaurus-prince-pdf -u https://docs.whatap.io/cover-openapi --prince-args="--javascript --page-size='a4' --page-margin='10mm' --style='$PATH_NAME/print.css'" -o ./pdf/whatap-open-api.pdf --dest ./pdf --include-index
 
 # pdfcpu annot remove -pages 1 ./pdf/whatap-open-api.pdf
