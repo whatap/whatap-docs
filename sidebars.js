@@ -1564,6 +1564,7 @@ const sidebars = {
           },
           items: [
             'dpm/agent-dbx-settings',
+            'dpm/agent-dmx-settings',
             'dpm/agent-xos-settings',
             {
               type: 'category',
