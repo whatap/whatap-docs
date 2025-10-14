@@ -5463,6 +5463,7 @@ const sidebars = {
       },
       items: [
         'openmetrics/install',
+        'openmetrics/openmetrics-explorer',
       ],
     }
   ],
