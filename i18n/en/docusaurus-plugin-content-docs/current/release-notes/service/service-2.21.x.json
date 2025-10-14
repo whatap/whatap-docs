@@ -1,6 +1,20 @@
 [
   {
     "url": "https://docs.whatap.io/release-notes/service/service-2_21_x",
+    "ver": "Service 2.21.10",
+    "date": "2025-10-14",
+    "Lists": [
+      {
+        "ver": "Service 2.21.10",
+        "hash": "service-22110",
+        "product": "Server",
+        "type": "Fixed",
+        "desc": "<p><p><code class=\"Fixed\" type=\"0\">Fixed</code> Modified to allow report menu permissions to be configured in <span class=\"uitext\">User Group Display Settings</span>.</p>"
+      }
+    ]
+  },  
+  {
+    "url": "https://docs.whatap.io/release-notes/service/service-2_21_x",
     "ver": "Service 2.21.9",
     "date": "2025-10-13",
     "Lists": [
