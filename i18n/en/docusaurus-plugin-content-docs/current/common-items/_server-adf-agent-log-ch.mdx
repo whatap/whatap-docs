@@ -1,3 +1,5 @@
+### Log Location
+
 Change the path of the WhaTap agent logs (`whatap_infrad.log`, `whatap_infra.log`, `whatap_infrad.fork.stdout.log`). If the specified path does not exist, the WhaTap agent attempts to create the path. It is available in the agent 2.0.6 or later.
 
 <Tabs groupId='server-user-script'>
@@ -22,3 +24,36 @@ Add-Content -Path "C:\Program Files\WhatapInfra\whatap.conf" -Value "agent.log.p
 In case of Windows, enter "\\" as the path delimiter.
 
 :::
+
+### Log Output Control Options
+
+The server monitoring agent logs are stored under the `/var/log` directory by default.  
+You can adjust the log file size limit and the number of backup files using the following options.
+
+<Tabs groupId='server-log-option'>
+<TabItem value="linux-windows" label="Linux / Windows">
+
+- Linux / Windows  
+    - agent.log.size  
+        - Default: 10 (unit: MB)  
+    - agent.log.backupfile  
+        - Default: 2 (unit: count)  
+
+</TabItem>
+
+<TabItem value="unix" label="Unix (AIX, HPUX, Solaris)">
+
+- Unix (AIX, HPUX, Solaris)  
+    - log.size  
+        - Default: 4 (unit: MB)  
+    - log.backup  
+        - Default: 3 (unit: count)  
+
+- AIX additional log options (errpt collection log)  
+    - aix.errpt.log.size=4  
+        - Default: 4 (unit: MB)  
+    - aix.errpt.log.backup=3  
+        - Default: 3 (unit: count)  
+
+</TabItem>
+</Tabs>
