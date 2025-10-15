@@ -1,5 +1,19 @@
 [
   {
+    "ver": "v2.12.0",
+    "date": "2025-10-15",
+    "Lists": [
+      {
+        "ver": "v2.12.0",
+        "hash": "v2120",
+        "product": "PHP Agent",
+        "type": "Change",
+        "desc": "<p><code class=\"Change\" type=\"0\">Change</code> PHP内部関数のフック方式を変更</p>",
+        "details": "<ul>\n<li>従来の<code>zend_execute_internal</code>を使用する方式では、すべての関数を確認するため、内部関数呼び出しが多い場合にCPU負荷が発生する可能性がありました。</li>\n<li>必要なPHP内部関数のハンドラーのみを置き換える方式に変更し、特定の関数のみを選択してトランザクション情報を収集します。</li>\n<li>関連オプションを追加:</li>\n<ul>\n<li><code>whatap.ext.hook_overwrite_internal_function_enabled</code><br>デフォルト値: <code>true</code><br>必要なPHP内部関数のハンドラーを置き換える方式で、特定の関数のみを選択してトランザクション情報を収集します。<br><code>whatap.ext.hook_zend_execute_internal_enabled</code>と重複設定しないように注意してください。<br>サービスの再起動が必要です（Apache または php-fpmの再起動）。</li>\n<li><code>whatap.ext.hook_zend_execute_internal_enabled</code><br>デフォルト値: <code>false</code><br>従来方式で、<code>zend_execute_internal</code>を通じてトランザクションデータを収集します。<br>サービスの再起動が必要です（Apache または php-fpmの再起動）。</li>\n<li><code>whatap.ext.hook_zend_execute_ex_enabled</code><br>デフォルト値: <code>true</code><br>PHPユーザー関数を<code>zend_execute_ex</code>を通じてデータを収集します。<br>サービスの再起動が必要です（Apache または php-fpmの再起動）。</li>\n</ul>\n</ul>"
+      }
+    ]
+  },  
+  {
     "ver": "v2.11.2",
     "date": "2025-07-23",
     "Lists": [
