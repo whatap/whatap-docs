@@ -203,9 +203,6 @@ metricRelabelConfigs:
   - source_labels: [__name__]
     regex: ".*"
     action: keep
-  - source_labels: [__name__]
-    regex: "node.*"
-    action: drop
 ```
 
 ### Example 2. Keep Only Specific Metric

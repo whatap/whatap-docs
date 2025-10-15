@@ -4673,6 +4673,19 @@ const sidebars = {
         },
         {
           type: 'category',
+          label: 'OpenMetrics',
+          collapsible: true,
+          collapsed: false,
+          items: [
+            {
+              type: 'doc',
+              label: 'OpenMetrics 탐색기 가이드',
+              id: 'best-practice-guides/about-openmetrics-explorer',
+            },
+          ]
+        },
+        {
+          type: 'category',
           label: '대시보드 분석',
           collapsible: true,
           collapsed: false,
@@ -5459,7 +5472,6 @@ const sidebars = {
       },
       items: [
         'openmetrics/install',
-        'openmetrics/openmetrics-explorer',
       ],
     }
   ],

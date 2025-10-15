@@ -1,0 +1,673 @@
+---
+id: about-openmetrics-explorer
+title: OpenMetrics エクスプローラー
+description: OpenMetrics エクスプローラーのガイドです。
+toc_max_heading_level: 3
+keywords: [ OpenMetrics エクスプローラー ]
+---
+
+<Cmdname sid="openmetrics_explorer" className="uitext" /> は WhaTap が提供するメトリクスデータの照会と可視化ツールです。
+収集したメトリクスを PromQL で照会し、結果をチャート(Graph) とテーブル(Table) で可視化します。
+
+#### 主な機能
+
+- PromQL クエリによるメトリクス照会
+- Graph と Table ビューでのデータ可視化
+- 時間範囲を選択すると PromQL に時間が自動入力
+- リアルタイムのメトリクス監視
+
+#### 画面構成
+
+- 上部: 時間範囲セレクター、クエリ入力欄
+- 中央: Graph、Table、Stacked Bar のビュー切替ボタン
+- 下部: 照会結果の表示（グラフまたはテーブル）
+
+---
+
+#### なぜ PromQL が必要か
+
+OpenMetrics は Prometheus のメトリクス形式に基づき、さまざまなシステムやアプリケーションの時系列指標を収集します。Prometheus はオープンソースの監視ツールで、CPU 使用率、メモリ使用量、HTTP リクエスト数、エラー率などの時間ベース数値データをメトリクス指標として保存します。
+
+これらの指標は多くが数秒間隔で継続的に収集され、時間とともに絶えず変化する時系列データの形を取ります。
+
+単にデータを集めるだけでは、今サービスが正常か、エラー率が通常より高くなったか、どの API が遅くなったかといった意味ある分析は難しいです。
+
+そのため <Cmdname sid="openmetrics_explorer" className="uitext" /> には収集メトリクスを分析するためのクエリ言語が必要で、その役割を担うのが <strong>PromQL（Prometheus Query Language）</strong> です。
+
+PromQL を使うと次の分析が可能です。
+
+- **リアルタイム監視**: 現在のシステム状態を即時に確認（現在の CPU 使用率、アクティブユーザー数）
+- **トレンド分析**: 時間に伴う変化パターンの把握（直近1時間の毎秒リクエスト増加率）
+- **比較分析**: サーバーやサービス間の指標比較（サーバー別エラー率、地域別応答時間）
+- **集計と計算**: 複雑な数式や統計計算（全体エラー率、平均応答時間、遅い API 上位10件）
+- **アラート条件設定**: しきい値超過時の自動通知（エラー率5%以上、メモリ使用率90%以上）
+
+--- 
+
+## PromQL ユーザーガイド
+
+### クエリ実行方式
+
+| クエリ | 説明 |
+| --- | --- |
+| **Instant Query** | 特定時点のデータを取得。Table タブで使用 |
+| **Range Query** | 開始時間と終了時間の間を一定間隔で取得 |
+
+### データ型
+
+PromQL の式は 4 種類の型に評価されます。
+
+| 型 | 説明 |
+| --- | --- |
+| **Instant Vector** | 各時系列が単一サンプルを含む集合（すべて同じタイムスタンプ） |
+| **Range Vector** | 各時系列が時間範囲のデータポイントを含む集合 |
+| **Scalar** | 単一の数値 |
+| **String** | 単一の文字列 |
+
+### 基本的な使い方
+
+#### 1. メトリクス選択（Instant Vector セレクター）
+
+**基本メトリクス照会**
+
+```
+nginx_http_response_count_total
+```
+
+**ラベルフィルタリング**
+
+```
+nginx_http_response_count_total{status="200"}
+```
+
+**複数ラベル条件**
+
+```
+nginx_http_response_count_total{method="GET", status="200"}
+```
+
+#### 2. ラベルマッチ演算子
+
+| 演算子 | 説明 |
+| :--: | --- |
+| = | ラベル値が完全一致 |
+| != | ラベル値が不一致 |
+| =~ | ラベル値が正規表現に一致 |
+| !~ | ラベル値が正規表現に不一致 |
+
+**正規表現例**
+
+```
+# staging, testing, development 環境のみ取得
+nginx_http_response_count_total{environment=~"staging|testing|development"}
+
+# GET メソッドを除外
+nginx_http_response_count_total{method!="GET"}
+
+# "rep" で始まる replica を取得
+nginx_http_response_count_total{replica=~"rep.*"}
+```
+
+#### 3. Range Vector セレクター
+
+現在から過去の特定期間のデータを選択します。
+
+```
+# 直近5分のデータ
+nginx_http_response_count_total[5m]
+
+# 直近1時間のデータ
+nginx_http_response_count_total{status="200"}[1h]
+```
+
+#### 4. Offset モディファイア
+
+過去の特定時点のデータを取得します。
+
+```
+# 5分前の値
+nginx_http_response_count_total offset 5m
+
+# 1週間前の5分レート
+rate(nginx_http_response_count_total[5m] offset 1w)
+
+# 未来比較（負の offset）
+rate(nginx_http_response_count_total[5m] offset -1w)
+```
+
+### 実用例
+
+**例1: ステータスコード別リクエスト数**
+
+```
+nginx_http_response_count_total{instance="http://192.168.100.122:4040/metrics"}
+```
+
+**例2: 特定ステータスコードのみ取得**
+
+```
+# 200 応答のみ
+nginx_http_response_count_total{status="200"}
+
+# 4xx エラーのみ（正規表現）
+nginx_http_response_count_total{status=~"4.."}
+
+# 5xx エラーのみ
+nginx_http_response_count_total{status=~"5.."}
+```
+
+**例3: メソッドとステータスコードの組み合わせ**
+
+```
+# GET リクエストで 200 応答
+nginx_http_response_count_total{method="GET", status="200"}
+
+# POST, PUT, DELETE リクエストの中で 404 応答
+nginx_http_response_count_total{method=~"POST|PUT|DELETE", status="404"}
+```
+
+**例4: メトリクス名で検索**
+
+```
+# "job:" で始まるすべてのメトリクス
+{__name__=~"job:.*"}
+
+# "nginx" で始まるすべてのメトリクス
+{__name__=~"nginx.*"}
+```
+
+**例5: 直近の時間範囲データ**
+
+```
+# 直近5分間の nginx 応答
+nginx_http_response_count_total{status="200"}[5m]
+
+# 直近1時間の 404 エラー
+nginx_http_response_count_total{status="404"}[1h]
+```
+
+**例6: 時間帯比較**
+
+```
+# 現在値と1時間前の値を比較
+nginx_http_response_count_total{status="200"}
+nginx_http_response_count_total{status="200"} offset 1h
+
+# 昨日の同時刻のデータ
+nginx_http_response_count_total offset 1d
+```
+
+### 集計関数
+
+集計関数（Aggregation Functions）は、複数の時系列データを一つに結合して計算します。
+
+#### sum()
+
+すべての時系列の値を合計します。
+
+```
+# 全インスタンスのリクエスト数の合計
+sum(nginx_http_response_count_total)
+
+# ステータスコード別にグループ化して合計
+sum by (status) (nginx_http_response_count_total)
+
+# インスタンス別にグループ化して合計
+sum by (instance) (nginx_http_response_count_total)
+```
+
+#### avg()
+
+すべての時系列の **平均** 値を計算します。
+
+```
+# 全インスタンスの平均応答数
+avg(nginx_http_response_count_total)
+
+# ステータスコード別の平均
+avg by (status) (nginx_http_response_count_total)
+```
+
+#### count()
+
+時系列の **件数** を数えます。
+
+```
+# 全体の時系列件数
+count(nginx_http_response_count_total)
+
+# ステータスコード別の時系列件数
+count by (status) (nginx_http_response_count_total)
+```
+
+#### max() / min()
+
+時系列の **最大値と最小値** を計算します。
+
+```
+# 最大値
+max(nginx_http_response_count_total)
+
+# 最小値
+min(nginx_http_response_count_total)
+
+# ステータスコード別最大値
+max by (status) (nginx_http_response_count_total)
+```
+
+#### topk() / bottomk()
+
+指定した数 (K) の **上位** または **下位** の時系列を返します。
+
+```
+# 上位5件の時系列
+topk(5, nginx_http_response_count_total)
+
+# 下位3件の時系列
+bottomk(3, nginx_http_response_count_total)
+
+# ステータスコード別上位3件
+topk(3, sum by (status) (nginx_http_response_count_total))
+```
+
+### 時系列関数
+
+#### rate()
+
+**最もよく使用される関数** であり、Counter メトリクスの **毎秒平均増加率** を計算します。
+
+```
+# 直近5分間の毎秒平均リクエスト数
+rate(nginx_http_response_count_total[5m])
+
+# ステータスコード200の毎秒平均リクエスト数
+rate(nginx_http_response_count_total{status="200"}[5m])
+
+# 全インスタンスの毎秒総リクエスト数
+sum(rate(nginx_http_response_count_total[5m]))
+```
+
+:::caution 
+
+**注意事項**
+
+- Counter メトリクス専用  
+- 時間範囲はスクレイプ間隔の少なくとも2倍を推奨（例: スクレイプ間隔30秒 → [1m] 以上）  
+- カウンターリセット（サーバー再起動など）を自動的に処理  
+
+:::
+
+#### increase()
+
+指定した時間範囲内の **総増加量** を計算します。
+
+```
+# 直近5分間の総リクエスト数
+increase(nginx_http_response_count_total[5m])
+
+# 直近1時間のエラー数
+increase(nginx_http_response_count_total{status=~"5.."}[1h])
+```
+
+**rate() と increase() の関係**
+
+`increase(v[5m]) = rate(v[5m]) × 300秒`
+
+- rate(): 毎秒レート  
+- increase(): 絶対増加量  
+
+#### irate()
+
+最後の2つのデータポイントに基づいて **瞬間毎秒増加率** を計算します。
+
+```
+# 瞬間増加率
+irate(nginx_http_response_count_total[5m])
+```
+
+**irate() vs rate()**
+
+- irate(): 変化が速いカウンターに適し、短いスパイクを検出するのに有効  
+- rate(): アラートや緩やかに変化するカウンターに適し、平均値を提供  
+
+### 時間範囲関数
+
+特定の時間範囲内の値を集計します。
+
+#### avg_over_time()
+
+**時間範囲の平均** を計算する関数です。
+
+```
+# 直近10分間の平均値
+avg_over_time(nginx_http_response_count_total[10m])
+```
+
+#### max_over_time() / min_over_time() 
+
+指定した時間範囲内の **最大値／最小値** を計算します。
+
+```
+# 直近1時間の最大値
+max_over_time(nginx_http_response_count_total[1h])
+
+# 直近1時間の最小値
+min_over_time(nginx_http_response_count_total[1h])
+```
+
+#### sum_over_time() 
+
+指定した期間の値を合計する **時間範囲合計** 関数です。
+
+```
+# 直近5分間のすべての値の合計
+sum_over_time(nginx_http_response_count_total[5m])
+```
+
+### 重要ルール: Rate then Sum
+
+このルールは、Counter メトリクスで `rate()`、`increase()`、`irate()` などの時系列関数を使用する際に、すべての集計関数（sum、avg、max、min、count など）に適用されます。
+
+:::caution
+
+**常に rate() を先に、その後 sum()**
+
+Counter メトリクスを集計する際は必ずこの順序を守ってください。
+
+:::
+
+🔵 **正しい方法**
+
+```
+# 先に rate() を適用し、その後 sum()
+sum(rate(nginx_http_response_count_total[5m]))
+```
+
+❌ **誤った方法**
+
+```
+# 先に sum() を適用するとカウンターリセット時に問題が発生
+rate(sum(nginx_http_response_count_total[5m]))
+```
+
+`sum()` を先に適用すると、各サーバーのカウンターリセット（再起動）を検出できなくなります。サーバーが1台再起動すると合計値が急減し、`rate()` はそれを負の増加率や異常なスパイクとして誤って計算します。一方、`rate()` を先に適用すれば、サーバーごとのカウンターリセットを正確に検出し、正しく処理できます。
+
+### 実践例
+
+**例1. 毎秒リクエスト数 (RPS) の計算**
+
+```
+# 全体の RPS
+sum(rate(nginx_http_response_count_total[5m]))
+
+# ステータスコード別 RPS
+sum by (status) (rate(nginx_http_response_count_total[5m]))
+
+# メソッド別 RPS
+sum by (method) (rate(nginx_http_response_count_total[5m]))
+```
+
+:::info
+
+**合計 Requests Per Second (RPS) PromQL の説明**
+
+なぜ `sum(rate(nginx_http_response_count_total[5m]))` が RPS なのか？
+
+1. `nginx_http_response_count_total` とは？  
+   - Counter メトリクス: サーバー起動以降の累積応答数  
+   - 例: 1000 → 1050 → 1120 → 1180 → 1250...
+
+2. `rate(...[5m])` は何をする？  
+   - 直近5分のデータを見て毎秒平均増加率を計算する。  
+   - 例:  
+     5分前: 1000  
+     現在: 1300  
+     差分: 300 （5分 = 300秒）  
+     rate = 300 ÷ 300秒 = 1.0 requests/second  
+
+   → `rate()` の結果 = 毎秒リクエスト数 (RPS)
+
+3. なぜ `sum()` が必要？  
+   - 複数サーバーやラベルの rate 値を合算するため。  
+   - 例:  
+     server1, status=200 → 10 req/s  
+     server1, status=404 → 2 req/s  
+     server2, status=200 → 15 req/s  
+     server2, status=404 → 3 req/s  
+     合計 = 30 req/s  
+
+**結論:**  
+`sum(rate(nginx_http_response_count_total[5m]))` = すべてのサーバーの合計毎秒リクエスト数 (RPS)  
+
+<br />
+
+> **補足:** 5分間の総リクエスト数を求める場合は `increase()` を使用。  
+`sum(increase(nginx_http_response_count_total[5m]))` = 5分間の総リクエスト数
+
+:::
+
+**例2. エラー率の計算**
+
+```
+# 全リクエストに対する 5xx エラーの割合
+sum(rate(nginx_http_response_count_total{status=~"5.."}[5m])) / sum(rate(nginx_http_response_count_total[5m])) * 100
+
+# 全リクエストに対する 4xx エラーの割合
+sum(rate(nginx_http_response_count_total{status=~"4.."}[5m])) / sum(rate(nginx_http_response_count_total[5m]))
+```
+
+**例3. 上位 N インスタンスの検出**
+
+```
+# リクエスト数が最も多い上位5インスタンス
+topk(5, sum by (instance) (rate(nginx_http_response_count_total[5m])))
+
+# エラーが最も多い上位3インスタンス
+topk(3, sum by (instance) (rate(nginx_http_response_count_total{status=~"5.."}[5m])))
+```
+
+**例4. 時間帯ごとの比較**
+
+```
+# 現在の RPS
+sum(rate(nginx_http_response_count_total[5m]))
+
+# 1時間前の RPS
+sum(rate(nginx_http_response_count_total[5m] offset 1h))
+
+# 昨日の同時刻の RPS
+sum(rate(nginx_http_response_count_total[5m] offset 1d))
+```
+
+**例5. 平均応答数**
+
+```
+# インスタンス別平均応答数
+avg by (instance) (rate(nginx_http_response_count_total[5m]))
+
+# ステータスコード別平均
+avg by (status) (rate(nginx_http_response_count_total[5m]))
+```
+
+### 数学演算子
+
+#### 算術演算
+
+```
+# 加算
+sum(rate(nginx_http_response_count_total{status="200"}[5m]))
++
+sum(rate(nginx_http_response_count_total{status="201"}[5m]))
+
+# 減算
+sum(rate(nginx_http_response_count_total[5m])) - sum(rate(nginx_http_response_count_total{status=~"5.."}[5m]))
+
+# 乗算（バイトを MB に変換）
+nginx_http_response_size_bytes / 1024 / 1024
+
+# 除算（比率を計算）
+sum(rate(nginx_http_response_count_total{status=~"5.."}[5m])) / sum(rate(nginx_http_response_count_total[5m]))
+
+```
+
+#### 比較演算
+
+```
+# 100 より大きい値
+nginx_http_response_count_total > 100
+
+# 特定の値と等しい場合
+nginx_http_response_count_total == 200
+
+# 範囲指定
+nginx_http_response_count_total > 100 and nginx_http_response_count_total < 1000
+```
+
+### 実践のヒント
+
+**1. スクレイプ間隔に応じた時間範囲の選択**
+
+| スクレイプ間隔 | 最小時間範囲 | 推奨時間範囲 | 理由 |
+| :---: | :---: | :---: | --- |
+| 15秒 | [30s] | [1m] 以上 | 2〜4個のデータポイントを確保 |
+| 30秒 | [1m] | [2m] 以上 | 2〜4個のデータポイントを確保 |
+| 1分 | [2m] | [5m] 以上 | 2〜4個のデータポイントを確保 |
+
+**2. グルーピングラベルの選択**
+
+```
+# 細分化しすぎ（時系列が多すぎる）
+sum by (instance, method, status, path) (rate(nginx_http_response_count_total[5m]))
+
+# 適切なグルーピング
+sum by (status) (rate(nginx_http_response_count_total[5m]))
+```
+
+**3. アラートルール作成時**
+
+```
+# 直近5分間のエラー率が5%以上の場合
+sum(rate(nginx_http_response_count_total{status=~"5.."}[5m])) / sum(rate(nginx_http_response_count_total[5m]))
+> 0.05
+```
+
+**4. 関数の組み合わせ順序**
+
+```
+# 1. rate() を先に
+# 2. 集計関数（sum, avg など）
+# 3. 数学演算
+
+# 正しい順序
+sum(rate(nginx_http_response_count_total[5m])) * 100
+```
+
+### その他の関数
+
+#### abs()
+
+値の **絶対値** を返す関数です。
+
+```
+abs(rate(nginx_http_response_count_total[5m]) - 100)
+```
+
+#### round()
+
+値を最も近い整数または指定した単位に **丸めます**。
+
+```
+# 小数点を丸める
+round(sum(rate(nginx_http_response_count_total[5m])))
+
+# 10単位で丸める
+round(sum(rate(nginx_http_response_count_total[5m])), 10)
+```
+
+#### clamp_max() / clamp_min()
+
+指定した **最大値** または **最小値** を超えないように制限します。
+
+```
+# 最大値を1000に制限
+clamp_max(nginx_http_response_count_total, 1000)
+
+# 最小値を0に制限
+clamp_min(nginx_http_response_count_total, 0)
+```
+
+### 注意事項
+
+#### 空のラベル値のマッチ
+
+空のラベル値を指定すると、そのラベルが設定されていないすべての時系列も選択されます。
+
+```
+# environment ラベルが存在しない、または空のすべての時系列
+nginx_http_response_count_total{environment=""}
+```
+
+#### 必須セレクター
+
+ベクターセレクターには、メトリクス名または空文字列に一致しないラベルマッチャーを少なくとも1つ指定する必要があります。
+
+```
+# ❌ 誤った例
+{job=~".*"}
+
+# ✅ 正しい例
+{job=~".+"}
+{job=~".*", method="get"}
+```
+
+
+#### パフォーマンス上の考慮
+
+**効率的なクエリのためのヒント**
+
+メトリクス名のみを使用すると、数千の時系列が選択される可能性があります。  
+- 常に適切なラベルフィルターを使用して結果を絞り込みましょう。  
+- まず Table ビューで結果を確認し、適切な範囲に絞った後にグラフビューに切り替えましょう。  
+- 数百件以下の時系列が理想的です。
+
+#### Staleness（古いデータ）
+
+時系列が収集されなくなると「stale」とマークされます。  
+- stale とマークされると、クエリ結果に含まれなくなります。  
+- 既定では、5分間データが収集されないと stale と見なされます。
+
+### 正規表現
+
+Prometheus は RE2 構文を使用します。  
+- すべての正規表現は完全にアンカーされます（`^` と `$` が自動的に追加されます）。  
+- `env=~"foo"` は `env=~"^foo$"` と同じ意味です。
+
+### コメント
+
+```
+# これはコメントです
+nginx_http_response_count_total{status="200"} # 行末コメントも可能です
+```
+
+
+<br />
+
+:::tip
+
+**学習の推奨順序**
+
+- 基礎: rate(), sum(), avg()  
+- 中級: increase(), irate(), topk()  
+- 上級: 複雑な比率計算や複数関数の組み合わせ  
+
+:::
+
+:::note
+
+**参考資料**
+
+- [PromQL 基本ドキュメント](https://prometheus.io/docs/prometheus/latest/querying/basics/)  
+- [PromQL 関数ドキュメント](https://prometheus.io/docs/prometheus/latest/querying/functions/)  
+- [PromQL 使用例](https://prometheus.io/docs/prometheus/latest/querying/examples/)  
+
+:::
