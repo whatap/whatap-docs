@@ -1,3 +1,5 @@
+### ログの保存場所
+
 WhaTapエージェントログ(`whatap_infrad.log`、`whatap_infra.log`、`whatap_infrad.fork.stdout.log`)のパスを変更します。指定パスがない場合は、WhaTapエージェントは指定パスの作成を試みます。エージェント2.0.6バージョン以降に対応されています。
 
 <Tabs groupId='server-user-script'>
@@ -22,3 +24,36 @@ Add-Content -Path "C:\Program Files\WhatapInfra\whatap.conf" -Value "agent.log.p
 Windowsの場合、パスの区切り文字を`\\`と入力できます。
 
 :::
+
+### ログ出力制御オプション
+
+サーバーモニタリングエージェントのログは、デフォルトで `/var/log` ディレクトリ配下に保存されます。  
+以下のオプションを使用して、ログファイルのサイズ上限およびバックアップファイル数を調整できます。
+
+<Tabs groupId='server-log-option'>
+<TabItem value="linux-windows" label="Linux / Windows">
+
+- Linux / Windows  
+    - agent.log.size  
+        - デフォルト値：10（単位：MB）  
+    - agent.log.backupfile  
+        - デフォルト値：2（単位：個数）  
+
+</TabItem>
+
+<TabItem value="unix" label="Unix (AIX, HPUX, Solaris)">
+
+- Unix（AIX、HPUX、Solaris）  
+    - log.size  
+        - デフォルト値：4（単位：MB）  
+    - log.backup  
+        - デフォルト値：3（単位：個数）  
+
+- AIX 追加ログオプション（errpt 収集ログ）  
+    - aix.errpt.log.size=4  
+        - デフォルト値：4（単位：MB）  
+    - aix.errpt.log.backup=3  
+        - デフォルト値：3（単位：個数）  
+
+</TabItem>
+</Tabs>
