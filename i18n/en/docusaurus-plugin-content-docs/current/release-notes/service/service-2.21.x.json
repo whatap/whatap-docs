@@ -7,6 +7,13 @@
       {
         "ver": "Service 2.21.12",
         "hash": "service-22112",
+        "product": "Common",
+        "type": "Fixed",
+        "desc": "<p><p><code class=\"Fixed\" type=\"0\">Fixed</code> Fixed an issue where the organization selection was reset when clicking the intro icon on the left sidebar.</p>"
+      },      
+      {
+        "ver": "Service 2.21.12",
+        "hash": "service-22112",
         "product": "Server",
         "type": "Fixed",
         "desc": "<p><p><code class=\"Fixed\" type=\"0\">Fixed</code> Modified <span class=\"uitext\">User Group Display Settings</span> so that if a user cannot view any submenus under a main menu, the main menu will also be hidden.</p>"

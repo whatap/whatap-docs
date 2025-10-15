@@ -7,6 +7,13 @@
       {
         "ver": "Service 2.21.12",
         "hash": "service-22112",
+        "product": "共通",
+        "type": "Fixed",
+        "desc": "<p><p><code class=\"Fixed\" type=\"0\">Fixed</code> 左側のイントロアイコンをクリックした際に、組織の選択が解除される問題を修正しました。</p>"
+      },      
+      {
+        "ver": "Service 2.21.12",
+        "hash": "service-22112",
         "product": "Server",
         "type": "Fixed",
         "desc": "<p><p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">ユーザーグループ別表示設定</span> において、大メニュー配下のサブメニューが一切表示されないユーザーの場合、大メニューも表示しないように修正しました。</p>"
