@@ -1,5 +1,46 @@
 [
   {
+    "ver": "v2.9.4",
+    "date": "2025-10-14",
+    "Lists": [
+      {
+        "ver": "v2.9.4",
+        "hash": "v294",
+        "product": "Server Agent",
+        "type": "New",
+        "desc": "<p><code class=\"New\" type=\"1\">New</code> Added file monitoring alarm feature</p>"
+      },
+      {
+        "ver": "v2.9.4",
+        "hash": "v294",
+        "product": "Server Agent",
+        "type": "New",
+        "desc": "<p><code class=\"New\" type=\"1\">New</code> Added web proxy support for communication between agent and collection server</p>"
+      },
+      {
+        "ver": "v2.9.4",
+        "hash": "v294",
+        "product": "Server Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Fixed issue where multiple error logs were printed when using the ntpq option</p>"
+      },
+      {
+        "ver": "v2.9.4",
+        "hash": "v294",
+        "product": "Server Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Fixed incorrect data issue in nvidia-smi v1</p>"
+      },
+      {
+        "ver": "v2.9.4",
+        "hash": "v294",
+        "product": "Server Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Added exception handling for null reference cases during data transmission</p>"
+      }
+    ]
+  },  
+  {
     "ver": "v2.9.3",
     "date": "2025-09-05",
     "Lists": [
