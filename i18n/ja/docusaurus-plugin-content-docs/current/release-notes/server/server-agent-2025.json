@@ -1,5 +1,46 @@
 [
   {
+    "ver": "v2.9.4",
+    "date": "2025-10-14",
+    "Lists": [
+      {
+        "ver": "v2.9.4",
+        "hash": "v294",
+        "product": "Server Agent",
+        "type": "New",
+        "desc": "<p><code class=\"New\" type=\"1\">New</code> ファイル監視アラーム機能を追加</p>"
+      },
+      {
+        "ver": "v2.9.4",
+        "hash": "v294",
+        "product": "Server Agent",
+        "type": "New",
+        "desc": "<p><code class=\"New\" type=\"1\">New</code> エージェントと収集サーバー間の通信にWebプロキシ経由機能を追加</p>"
+      },
+      {
+        "ver": "v2.9.4",
+        "hash": "v294",
+        "product": "Server Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> ntpqオプション使用時に多数のエラーログが出力される問題を修正</p>"
+      },
+      {
+        "ver": "v2.9.4",
+        "hash": "v294",
+        "product": "Server Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> nvidia-smi v1データの誤りケースを修正</p>"
+      },
+      {
+        "ver": "v2.9.4",
+        "hash": "v294",
+        "product": "Server Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> データ送信区間でのnull参照ケースに対する例外処理を追加</p>"
+      }
+    ]
+  },  
+  {
     "ver": "v2.9.3",
     "date": "2025-09-05",
     "Lists": [
