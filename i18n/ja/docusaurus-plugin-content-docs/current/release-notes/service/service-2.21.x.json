@@ -1,6 +1,20 @@
 [
   {
     "url": "https://docs.whatap.io/release-notes/service/service-2_21_x",
+    "ver": "Service 2.21.12",
+    "date": "2025-10-15",
+    "Lists": [
+      {
+        "ver": "Service 2.21.12",
+        "hash": "service-22112",
+        "product": "Server",
+        "type": "Fixed",
+        "desc": "<p><p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">ユーザーグループ別表示設定</span> において、大メニュー配下のサブメニューが一切表示されないユーザーの場合、大メニューも表示しないように修正しました。</p>"
+      }
+    ]
+  },  
+  {
+    "url": "https://docs.whatap.io/release-notes/service/service-2_21_x",
     "ver": "Service 2.21.10",
     "date": "2025-10-14",
     "Lists": [

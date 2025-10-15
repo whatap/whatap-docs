@@ -1,6 +1,20 @@
 [
   {
     "url": "https://docs.whatap.io/release-notes/service/service-2_21_x",
+    "ver": "Service 2.21.12",
+    "date": "2025-10-15",
+    "Lists": [
+      {
+        "ver": "Service 2.21.12",
+        "hash": "service-22112",
+        "product": "Server",
+        "type": "Fixed",
+        "desc": "<p><p><code class=\"Fixed\" type=\"0\">Fixed</code> Modified <span class=\"uitext\">User Group Display Settings</span> so that if a user cannot view any submenus under a main menu, the main menu will also be hidden.</p>"
+      }
+    ]
+  },  
+  {
+    "url": "https://docs.whatap.io/release-notes/service/service-2_21_x",
     "ver": "Service 2.21.10",
     "date": "2025-10-14",
     "Lists": [
