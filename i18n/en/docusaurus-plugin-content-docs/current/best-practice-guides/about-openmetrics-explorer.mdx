@@ -1,0 +1,675 @@
+---
+id: about-openmetrics-explorer
+title: OpenMetrics Explorer
+description: OpenMetrics Explorer guide.
+toc_max_heading_level: 3
+keywords: [ OpenMetrics Explorer ]
+---
+
+<Cmdname sid="openmetrics_explorer" className="uitext" /> is a metric data query and visualization tool provided by WhaTap.
+You can query collected metrics with PromQL and visualize the results as a chart (Graph) and a table (Table).
+
+#### Key features
+
+- Metric query with PromQL
+- Data visualization in Graph or Table view
+- When you select a time range, the time is automatically inserted into PromQL
+- Real-time metric monitoring
+
+#### Screen layout
+
+- Top: time range picker, query input
+- Middle: Graph, Table, and Stacked Bar view switch buttons
+- Bottom: query results display (graph or table)
+
+---
+
+#### Why do we need PromQL?
+
+OpenMetrics collects time series indicators for diverse systems and applications based on the Prometheus metric format. Prometheus is an open source monitoring tool that stores time based numeric data such as CPU usage, memory usage, HTTP request count, and error rate as metric indicators.
+
+Most of these indicators are collected every few seconds. They keep changing over time and take the form of time series data.
+
+Simple collection is not enough to answer questions like whether the service is healthy now, whether the error rate became higher than usual, or which API became slow.
+
+This is why <Cmdname sid="openmetrics_explorer" className="uitext" /> needs a query language to analyze collected metrics. That role is performed by <strong>PromQL (Prometheus Query Language)</strong>.
+
+With PromQL you can run the following analysis:
+
+- **Real-time monitoring**: check current system status immediately (current CPU usage, active user count)
+- **Trend analysis**: identify change patterns over time (increase rate of requests per second during the last hour)
+- **Comparison analysis**: compare indicators across servers or services (error rate by server, response time by region)
+- **Aggregation and calculation**: perform complex math and statistics (overall error rate, average response time, top 10 slow APIs)
+- **Alert condition setup**: receive automatic alerts when thresholds are exceeded (error rate at least 5 percent, memory usage at least 90 percent)
+
+--- 
+
+## PromQL User Guide
+
+### Query Execution Types
+
+| Query | Description |
+| --- | --- |
+| **Instant Query** | Retrieves data at a specific point in time. Used in the Table tab. |
+| **Range Query** | Retrieves data at regular intervals between a start time and an end time. |
+
+### Data Types
+
+PromQL expressions evaluate to four types.
+
+| Type | Description |
+| --- | --- |
+| **Instant Vector** | A set of time series that each contain a single sample, all with the same timestamp |
+| **Range Vector** | A set of time series that each contain data points over a time range |
+| **Scalar** | A single numeric value |
+| **String** | A single string value |
+
+### Basic Usage
+
+#### 1. Metric Selection (Instant Vector Selectors)
+
+**Basic Metric Query**
+
+```
+nginx_http_response_count_total
+```
+
+**Label Filtering**
+
+```
+nginx_http_response_count_total{status="200"}
+```
+
+**Multiple Label Conditions**
+
+```
+nginx_http_response_count_total{method="GET", status="200"}
+```
+
+#### 2. Label Match Operators
+
+| Operator | Description |
+| :--: | --- |
+| = | Label value matches exactly |
+| != | Label value does not match |
+| =~ | Label value matches a regular expression |
+| !~ | Label value does not match a regular expression |
+
+**Regular Expression Examples**
+
+```
+# Query only staging, testing, and development environments
+nginx_http_response_count_total{environment=~"staging|testing|development"}
+
+# All methods except GET
+nginx_http_response_count_total{method!="GET"}
+
+# Query replicas starting with "rep"
+nginx_http_response_count_total{replica=~"rep.*"}
+```
+
+#### 3. Range Vector Selectors
+
+Selects data from a specific time window going back from the current moment.
+
+```
+# Data from the last 5 minutes
+nginx_http_response_count_total[5m]
+
+# Data from the last 1 hour
+nginx_http_response_count_total{status="200"}[1h]
+```
+
+#### 4. Offset Modifier
+
+Retrieves data from a specific past point in time.
+
+```
+# Value 5 minutes ago
+nginx_http_response_count_total offset 5m
+
+# 5-minute rate from 1 week ago
+rate(nginx_http_response_count_total[5m] offset 1w)
+
+# Future comparison (negative offset)
+rate(nginx_http_response_count_total[5m] offset -1w)
+```
+
+### Practical Examples
+
+**Example 1: Requests by Status Code**
+
+```
+nginx_http_response_count_total{instance="http://192.168.100.122:4040/metrics"}
+```
+
+**Example 2: Specific Status Codes**
+
+```
+# Only 200 responses
+nginx_http_response_count_total{status="200"}
+
+# Only 4xx errors (regex)
+nginx_http_response_count_total{status=~"4.."}
+
+# Only 5xx errors
+nginx_http_response_count_total{status=~"5.."}
+```
+
+**Example 3: Method and Status Code Combination**
+
+```
+# GET requests with 200 responses
+nginx_http_response_count_total{method="GET", status="200"}
+
+# 404 responses among POST, PUT, DELETE requests
+nginx_http_response_count_total{method=~"POST|PUT|DELETE", status="404"}
+```
+
+**Example 4: Search by Metric Name**
+
+```
+# All metrics that start with "job:"
+{__name__=~"job:.*"}
+
+# All metrics that start with "nginx"
+{__name__=~"nginx.*"}
+
+```
+
+**Example 5: Recent Time Range Data**
+
+```
+# nginx responses from the last 5 minutes
+nginx_http_response_count_total{status="200"}[5m]
+
+# 404 errors from the last 1 hour
+nginx_http_response_count_total{status="404"}[1h]
+```
+
+**Example 6: Time Comparison**
+
+```
+# Compare current value with value from 1 hour ago
+nginx_http_response_count_total{status="200"}
+nginx_http_response_count_total{status="200"} offset 1h
+
+# Data from the same time yesterday
+nginx_http_response_count_total offset 1d
+```
+
+### Aggregation Functions
+
+Aggregation functions combine multiple time series into a single result.
+
+#### sum()
+
+Adds all values across time series.
+
+```
+# Total number of requests across all instances
+sum(nginx_http_response_count_total)
+
+# Sum grouped by status code
+sum by (status) (nginx_http_response_count_total)
+
+# Sum grouped by instance
+sum by (instance) (nginx_http_response_count_total)
+```
+
+#### avg()
+
+Calculates the **average** value across all time series.
+
+```
+# Average number of responses across all instances
+avg(nginx_http_response_count_total)
+
+# Average by status code
+avg by (status) (nginx_http_response_count_total)
+```
+
+#### count()
+
+Counts the **number** of time series.
+
+```
+# Total number of time series
+count(nginx_http_response_count_total)
+
+# Number of time series grouped by status code
+count by (status) (nginx_http_response_count_total)
+```
+
+#### max() / min()
+
+Calculates the **maximum and minimum** values of time series.
+
+```
+# Maximum value
+max(nginx_http_response_count_total)
+
+# Minimum value
+min(nginx_http_response_count_total)
+
+# Maximum value by status code
+max by (status) (nginx_http_response_count_total)
+```
+
+#### topk() / bottomk()
+
+Returns the **top** or **bottom** K time series.
+
+```
+# Top 5 time series
+topk(5, nginx_http_response_count_total)
+
+# Bottom 3 time series
+bottomk(3, nginx_http_response_count_total)
+
+# Top 3 by status code
+topk(3, sum by (status) (nginx_http_response_count_total))
+```
+
+### Time Series Functions
+
+#### rate()
+
+The **most commonly used function**, `rate()` calculates the **per-second average increase** of a Counter metric.
+
+```
+# Per-second average number of requests over the last 5 minutes
+rate(nginx_http_response_count_total[5m])
+
+# Per-second average number of 200-status requests
+rate(nginx_http_response_count_total{status="200"}[5m])
+
+# Total requests per second across all instances
+sum(rate(nginx_http_response_count_total[5m]))
+```
+
+:::caution 
+
+**Cautions**
+
+- Use only with Counter metrics  
+- The time range should be at least twice the scrape interval (for example, scrape interval 30 seconds → [1m] or longer)  
+- Automatically handles counter resets (such as server restarts)
+
+:::
+
+#### increase()
+
+Calculates the **total increase** over a specified time range.
+
+```
+# Total number of requests in the last 5 minutes
+increase(nginx_http_response_count_total[5m])
+
+# Total number of errors in the last 1 hour
+increase(nginx_http_response_count_total{status=~"5.."}[1h])
+```
+
+**Relationship between rate() and increase()**
+
+`increase(v[5m]) = rate(v[5m]) × 300 seconds`
+
+- rate(): per-second rate  
+- increase(): absolute increase  
+
+#### irate()
+
+Calculates the **instantaneous per-second rate of increase** based on the last two data points.
+
+```
+# Instantaneous rate
+irate(nginx_http_response_count_total[5m])
+```
+
+**irate() vs rate()**
+
+- irate(): suitable for fast-changing counters, useful for detecting short spikes  
+- rate(): suitable for alerts and slowly changing counters, provides an average value  
+
+### Time Range Functions
+
+Aggregates values within a specific time window.
+
+#### avg_over_time()
+
+Calculates the **average value** over a given time range.
+
+```
+# Average value over the last 10 minutes
+avg_over_time(nginx_http_response_count_total[10m])
+```
+
+#### max_over_time() / min_over_time() 
+
+Calculates the **maximum or minimum value** over a specified time range.
+
+```
+# Maximum value during the last 1 hour
+max_over_time(nginx_http_response_count_total[1h])
+
+# Minimum value during the last 1 hour
+min_over_time(nginx_http_response_count_total[1h])
+```
+
+#### sum_over_time() 
+
+Calculates the **sum of all values** within a specified time range.
+
+```
+# Sum of all values in the last 5 minutes
+sum_over_time(nginx_http_response_count_total[5m])
+```
+
+### Important Rule: Rate then Sum
+
+This rule applies when using time series functions such as `rate()`, `increase()`, and `irate()` with Counter metrics. It must be followed for all aggregation functions (sum, avg, max, min, count, etc.).
+
+:::caution
+
+**Always apply rate() first, then sum()**
+
+When aggregating Counter metrics, always maintain this order.
+
+:::
+
+🔵 **Correct Method**
+
+```
+# Apply rate() first, then sum()
+sum(rate(nginx_http_response_count_total[5m]))
+```
+
+❌ **Incorrect Method**
+
+```
+# Applying sum() first causes issues when counters reset
+rate(sum(nginx_http_response_count_total[5m]))
+```
+
+If you apply `sum()` before `rate()`, counter resets on individual servers cannot be detected.  
+When one server restarts, the total sum suddenly decreases, and `rate()` miscalculates it as a negative increase or abnormal spike.  
+Applying `rate()` first ensures that counter resets are detected and handled correctly for each server.
+
+### Practical Examples
+
+**Example 1. Requests Per Second (RPS) Calculation**
+
+```
+# Total RPS
+sum(rate(nginx_http_response_count_total[5m]))
+
+# RPS by status code
+sum by (status) (rate(nginx_http_response_count_total[5m]))
+
+# RPS by method
+sum by (method) (rate(nginx_http_response_count_total[5m]))
+```
+
+
+:::info
+
+**Explanation of the PromQL for Total Requests Per Second (RPS)**
+
+Why does `sum(rate(nginx_http_response_count_total[5m]))` represent RPS?
+
+1. What is `nginx_http_response_count_total`?  
+   - A Counter metric: the cumulative number of responses since the server started  
+   - Example: 1000 → 1050 → 1120 → 1180 → 1250...
+
+2. What does `rate(...[5m])` do?  
+   - It looks at data from the last 5 minutes and calculates the per-second average increase.  
+   - Example:  
+     5 minutes ago: 1000  
+     Now: 1300  
+     Difference: 300 (5 minutes = 300 seconds)  
+     rate = 300 ÷ 300 seconds = 1.0 requests/second  
+
+   → The result of `rate()` = requests per second (RPS)
+
+3. Why is `sum()` needed?  
+   - It adds the rate values from multiple servers or labels.  
+   - Example:  
+     server1, status=200 → 10 req/s  
+     server1, status=404 → 2 req/s  
+     server2, status=200 → 15 req/s  
+     server2, status=404 → 3 req/s  
+     Total = 30 req/s  
+
+**Conclusion:**  
+`sum(rate(nginx_http_response_count_total[5m]))` = total requests per second (RPS) across all servers.  
+
+<br />
+
+> **Tip:** To calculate the total number of requests over 5 minutes, use `increase()` instead.  
+`sum(increase(nginx_http_response_count_total[5m]))` = total number of requests in 5 minutes.
+
+:::
+
+**Example 2. Error Rate Calculation**
+
+```
+# Percentage of 5xx errors out of all requests
+sum(rate(nginx_http_response_count_total{status=~"5.."}[5m])) / sum(rate(nginx_http_response_count_total[5m])) * 100
+
+# Ratio of 4xx errors out of all requests
+sum(rate(nginx_http_response_count_total{status=~"4.."}[5m])) / sum(rate(nginx_http_response_count_total[5m]))
+```
+
+**Example 3. Find Top N Instances**
+
+```
+# Top 5 instances with the highest number of requests
+topk(5, sum by (instance) (rate(nginx_http_response_count_total[5m])))
+
+# Top 3 instances with the most errors
+topk(3, sum by (instance) (rate(nginx_http_response_count_total{status=~"5.."}[5m])))
+```
+
+**Example 4. Time-based Comparison**
+
+```
+# Current RPS
+sum(rate(nginx_http_response_count_total[5m]))
+
+# RPS from 1 hour ago
+sum(rate(nginx_http_response_count_total[5m] offset 1h))
+
+# RPS from the same time yesterday
+sum(rate(nginx_http_response_count_total[5m] offset 1d))
+```
+
+**Example 5. Average Responses**
+
+```
+# Average responses per instance
+avg by (instance) (rate(nginx_http_response_count_total[5m]))
+
+# Average by status code
+avg by (status) (rate(nginx_http_response_count_total[5m]))
+```
+
+### Math Operators
+
+#### Arithmetic Operations
+
+```
+# Addition
+sum(rate(nginx_http_response_count_total{status="200"}[5m]))
++
+sum(rate(nginx_http_response_count_total{status="201"}[5m]))
+
+# Subtraction
+sum(rate(nginx_http_response_count_total[5m])) - sum(rate(nginx_http_response_count_total{status=~"5.."}[5m]))
+
+# Multiplication (convert bytes to MB)
+nginx_http_response_size_bytes / 1024 / 1024
+
+# Division (calculate ratio)
+sum(rate(nginx_http_response_count_total{status=~"5.."}[5m])) / sum(rate(nginx_http_response_count_total[5m]))
+```
+
+#### Comparison Operations
+
+```
+# Values greater than 100
+nginx_http_response_count_total > 100
+
+# Values equal to a specific number
+nginx_http_response_count_total == 200
+
+# Range condition
+nginx_http_response_count_total > 100 and nginx_http_response_count_total < 1000
+```
+
+### Practical Tips
+
+**1. Choosing Time Range Based on Scrape Interval**
+
+| Scrape Interval | Minimum Range | Recommended Range | Reason |
+| :---: | :---: | :---: | --- |
+| 15s | [30s] | [1m] or more | Ensures 2~4 data points |
+| 30s | [1m] | [2m] or more | Ensures 2~4 data points |
+| 1m | [2m] | [5m] or more | Ensures 2~4 data points |
+
+**2. Choosing Grouping Labels**
+
+```
+# Too granular (too many time series)
+sum by (instance, method, status, path) (rate(nginx_http_response_count_total[5m]))
+
+# Appropriate grouping
+sum by (status) (rate(nginx_http_response_count_total[5m]))
+```
+
+**3. Writing Alert Rules**
+
+```
+# When the error rate exceeds 5% during the last 5 minutes
+sum(rate(nginx_http_response_count_total{status=~"5.."}[5m])) / sum(rate(nginx_http_response_count_total[5m]))
+> 0.05
+```
+
+**4. Function Combination Order**
+
+```
+# 1. rate() first
+# 2. Aggregation function (sum, avg, etc.)
+# 3. Arithmetic operation
+
+#Correct order
+sum(rate(nginx_http_response_count_total[5m])) * 100
+```
+
+### Other Functions
+
+#### abs()
+
+Returns the **absolute value** of a number.
+
+```
+abs(rate(nginx_http_response_count_total[5m]) - 100)
+```
+
+#### round()
+
+Rounds a value to the nearest integer or a specified unit.
+
+```
+# Round to the nearest integer
+round(sum(rate(nginx_http_response_count_total[5m])))
+
+# Round to the nearest 10
+round(sum(rate(nginx_http_response_count_total[5m])), 10)
+```
+
+#### clamp_max() / clamp_min()
+
+Restricts values so that they do not exceed the specified **maximum** or fall below the **minimum**.
+
+```
+# Limit the maximum to 1000
+clamp_max(nginx_http_response_count_total, 1000)
+
+# Limit the minimum to 0
+clamp_min(nginx_http_response_count_total, 0)
+```
+
+### Notes
+
+#### Matching Empty Label Values
+
+When you match an empty label value, all series that either lack the label or have an empty value are also selected.
+
+```
+# Select all series without the "environment" label or with an empty value
+nginx_http_response_count_total{environment=""}
+```
+
+#### Required Selectors
+
+A vector selector must specify at least one metric name or a label matcher that does not match an empty string.
+
+```
+# ❌ Incorrect example
+{job=~".*"}
+
+# ✅ Correct examples
+{job=~".+"}
+{job=~".*", method="get"}
+```
+
+
+#### Performance Considerations
+
+**Tips for Efficient Queries**
+
+If you use only the metric name, thousands of time series may be selected.  
+- Always use appropriate label filters to narrow down the results.  
+- Start with the Table view to check the output, then filter appropriately before switching to the Chart view.  
+- Ideally, the result should contain fewer than a few hundred series.
+
+#### Staleness (Outdated Data)
+
+If a time series is no longer being scraped, it becomes marked as "stale."  
+- Once marked stale, it is excluded from query results.  
+- By default, if no data is collected for 5 minutes, it is considered stale.
+
+### Regular Expressions
+
+Prometheus uses RE2 syntax.  
+- All regular expressions are fully anchored (Prometheus automatically adds `^` and `$`).  
+- `env=~"foo"` is equivalent to `env=~"^foo$"`.
+
+### Comments
+
+```
+# This is a comment
+nginx_http_response_count_total{status="200"} # End-of-line comments are also supported
+```
+
+<br />
+
+:::tip
+
+**Recommended Learning Order**
+
+- Basic: rate(), sum(), avg()  
+- Intermediate: increase(), irate(), topk()  
+- Advanced: complex ratio calculations, combining multiple functions  
+
+:::
+
+:::note
+
+**References**
+
+- [PromQL Basics](https://prometheus.io/docs/prometheus/latest/querying/basics/)  
+- [PromQL Functions](https://prometheus.io/docs/prometheus/latest/querying/functions/)  
+- [PromQL Examples](https://prometheus.io/docs/prometheus/latest/querying/examples/)  
+
+:::
