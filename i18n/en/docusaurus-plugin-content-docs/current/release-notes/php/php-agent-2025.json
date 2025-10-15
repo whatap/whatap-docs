@@ -1,5 +1,19 @@
 [
   {
+    "ver": "v2.12.0",
+    "date": "2025-10-15",
+    "Lists": [
+      {
+        "ver": "v2.12.0",
+        "hash": "v2120",
+        "product": "PHP Agent",
+        "type": "Change",
+        "desc": "<p><code class=\"Change\" type=\"0\">Change</code> Changed the hooking method for PHP internal functions</p>",
+        "details": "<ul>\n<li>The previous method using <code>zend_execute_internal</code> checked all functions, which could cause CPU overhead when there were many internal function calls.</li>\n<li>The new method replaces handlers for only the necessary PHP internal functions to selectively collect transaction data.</li>\n<li>Added related configuration options:</li>\n<ul>\n<li><code>whatap.ext.hook_overwrite_internal_function_enabled</code><br>Default: <code>true</code><br>Replaces handlers of only the necessary PHP internal functions to selectively collect transaction data.<br>Should not be enabled together with <code>whatap.ext.hook_zend_execute_internal_enabled</code>.<br>Requires service restart (Apache or php-fpm).</li>\n<li><code>whatap.ext.hook_zend_execute_internal_enabled</code><br>Default: <code>false</code><br>Uses the existing method, collecting transaction data through <code>zend_execute_internal</code>.<br>Requires service restart (Apache or php-fpm).</li>\n<li><code>whatap.ext.hook_zend_execute_ex_enabled</code><br>Default: <code>true</code><br>Collects data for PHP user functions using <code>zend_execute_ex</code>.<br>Requires service restart (Apache or php-fpm).</li>\n</ul>\n</ul>"
+      }
+    ]
+  },  
+  {
     "ver": "v2.11.2",
     "date": "2025-07-23",
     "Lists": [
