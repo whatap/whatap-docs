@@ -1,6 +1,27 @@
 [
   {
     "url": "https://docs.whatap.io/release-notes/service/service-2_21_x",
+    "ver": "Service 2.21.14",
+    "date": "2025-10-17",
+    "Lists": [
+      {
+        "ver": "Service 2.21.14",
+        "hash": "service-22114",
+        "product": "Server",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Fixed an issue where the same server displayed different <code>ipAddress</code> values.</p>"
+      },
+      {
+        "ver": "Service 2.21.14",
+        "hash": "service-22114",
+        "product": "Server",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Fixed an issue in <span class=\"uitext\">Metrics Explorer</span> where the chart legend displayed <code>folded_id</code> when selecting metrics from the by GPU Process category.</p>"
+      }
+    ]
+  },  
+  {
+    "url": "https://docs.whatap.io/release-notes/service/service-2_21_x",
     "ver": "Service 2.21.13",
     "date": "2025-10-16",
     "Lists": [
