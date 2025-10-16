@@ -1563,9 +1563,18 @@ const sidebars = {
             id: 'dpm/agent-settings'
           },
           items: [
-            'dpm/agent-dbx-settings',
-            'dpm/agent-dmx-settings',
-            'dpm/agent-xos-settings',
+            'dpm/setup-altibase',
+            'dpm/setup-cubrid',
+            'dpm/setup-db2',
+            'dpm/setup-mongodb',
+            'dpm/setup-mssql',
+            'dpm/setup-mysql',
+            'dpm/setup-oracle',
+            'dpm/setup-oracle-pro',
+            'dpm/setup-postgresql',
+            'dpm/setup-redis',
+            'dpm/setup-sapase',
+            'dpm/setup-tibero',
             {
               type: 'category',
               label: '클라우드 에이전트 설정',
