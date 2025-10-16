@@ -1,6 +1,41 @@
 [
   {
     "url": "https://docs.whatap.io/release-notes/service/service-2_21_x",
+    "ver": "Service 2.21.13",
+    "date": "2025-10-16",
+    "Lists": [
+      {
+        "ver": "Service 2.21.13",
+        "hash": "service-22113",
+        "product": "Server",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> Added <span class=\"uitext\">GPU Inventory</span> table columns: Connection, External IP, and OS Version.</p>"
+      },
+      {
+        "ver": "Service 2.21.13",
+        "hash": "service-22113",
+        "product": "Server",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> Added a time range selector to the performance metric comparison chart in <span class=\"uitext\">GPU Performance Summary</span>.</p>"
+      },
+      {
+        "ver": "Service 2.21.13",
+        "hash": "service-22113",
+        "product": "Server",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Modified <span class=\"uitext\">Metrics Explorer</span> so that when selecting metrics in the Infiniband category, the chart legend displays interfaceName instead of folded_id.</p>"
+      },
+      {
+        "ver": "Service 2.21.13",
+        "hash": "service-22113",
+        "product": "Kubernetes",
+        "type": "Deprecated",
+        "desc": "<p><code class=\"Deprecated\" type=\"1\">Deprecated</code> In <span class=\"uitext\">Management</span> > <span class=\"uitext\">Kubernetes Agent Installation</span>, when installing the agent using the operator method, kube-apiserver is no longer provided as an additional feature.</p>"
+      }
+    ]
+  },  
+  {
+    "url": "https://docs.whatap.io/release-notes/service/service-2_21_x",
     "ver": "Service 2.21.12",
     "date": "2025-10-15",
     "Lists": [

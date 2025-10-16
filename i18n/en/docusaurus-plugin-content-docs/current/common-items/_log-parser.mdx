@@ -101,7 +101,7 @@ Any semantic word can be replaced with a regular expression. The GROK parser all
   - regular expression: `.*?`
 
 ```text title='GROK parsing pattern'
-[%{TIMESTAMP_ISO8601:date}\sGMT][%{LOGLEVEL:level}\s][%{DATA:caller}]
+\[%{TIMESTAMP_ISO8601:date}\sGMT\]\[%{LOGLEVEL:level}\s\]\[%{DATA:caller}\] 
 ```
 
 If you parse with the above syntax, you can extract tags as follows. In this way, GROK's `%{SYNTAX:SEMANTIC}` syntax helps you apply complex and long regular expressions easily and concisely.

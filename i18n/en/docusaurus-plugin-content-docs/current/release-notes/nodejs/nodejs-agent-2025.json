@@ -1,5 +1,28 @@
 [
   {
+    "url": "https://docs.whatap.io/release-notes/nodejs/nodejs-1_0_4/",
+    "ver": "v1.0.4",
+    "date": "2025-10-16",
+    "Lists": [
+      {
+        "ver": "v1.0.4",
+        "hash": "v104",
+        "product": "Node.js Agent",
+        "type": "New",
+        "desc": "<p><code class=\"New\" type=\"1\">New</code> <strong>hook_method_patterns</strong></p>",
+        "details": "<ul><li>Option that allows monitoring of specific methods in user applications.</li>\n<li>When the method path is specified in the configuration file, the execution time and call arguments of that method are collected.</li>\n<li>Default: <code>false</code></li>\n<div class=\"theme-admonition theme-admonition-caution alert alert--warning\">\n  <div class=\"admonition-heading\">\n    <strong>Caution</strong>\n  </div>\n  <div class=\"admonition-content\">\n    <p>For TypeScript projects, specify the built file path (e.g. <code>./dist/services/user.service</code>).</p>\n  </div>\n</div></ul>"
+      },
+      {
+        "ver": "v1.0.4",
+        "hash": "v104",
+        "product": "Node.js Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Improved process management for the <code>whatap_nodejs</code> module when running multiple instances in PM2 cluster mode.</p>",
+        "details": "<ul><li><p>Only the first instance starts the <code>whatap_nodejs</code> agent.</p></li>\n<li><p>The remaining instances automatically connect to the already running agent.</p></li></ul>"
+      }
+    ]
+  },  
+  {
     "url": "https://docs.whatap.io/release-notes/nodejs/nodejs-1_0_3/",
     "ver": "v1.0.3",
     "date": "2025-09-25",
