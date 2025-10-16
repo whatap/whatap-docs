@@ -6,6 +6,28 @@ pagination_next: release-notes/service/service-2_20_x
 displayed_sidebar: releaseSidebar
 ---
 
+## Service 2.21.13
+
+October 16, 2025
+
+<div class='indentTab'>
+
+### `Server`
+
+- <Status priority='1'>Feature</Status> Added **Connection**, **External IP**, and **OS Version** columns to the **GPU Inventory** table.
+
+- <Status priority='1'>Feature</Status> Added a time range selector to the performance metric comparison chart in **GPU Performance Summary**.
+
+- <Status priority='0'>Fixed</Status> Modified <Cmdname sid="side_serverMetricsExplorer" className="uitext" /> so that when selecting metrics in the Infiniband category, the chart legend displays `interfaceName` instead of `folded_id`.
+
+---
+
+### `Kubernetes`
+
+- <Status priority='1'>Deprecated</Status> In <Cmdname sid="management" className="uitext" /> > <Cmdname sid="BTN07266" className="uitext" />, when installing the agent via the operator method, **kube-apiserver** is no longer provided as an additional feature.
+
+</div>
+
 ## Service 2.21.12
 
 October 15, 2025

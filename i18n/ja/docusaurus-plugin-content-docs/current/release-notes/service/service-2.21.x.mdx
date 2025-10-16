@@ -6,6 +6,28 @@ pagination_next: release-notes/service/service-2_20_x
 displayed_sidebar: releaseSidebar
 ---
 
+## Service 2.21.13
+
+2025年10月16日
+
+<div class='indentTab'>
+
+### `Server`
+
+- <Status priority='1'>Feature</Status> **GPU インベントリ** テーブルに **Connection**、**External IP**、**OS Version** カラムを追加しました。
+
+- <Status priority='1'>Feature</Status> **GPU パフォーマンスサマリー** の性能指標比較チャート領域に期間選択セレクターを追加しました。
+
+- <Status priority='0'>Fixed</Status> <Cmdname sid="side_serverMetricsExplorer" className="uitext" /> の Infiniband カテゴリでメトリクスを選択した際、チャート凡例に `folded_id` ではなく `interfaceName` が表示されるように修正しました。
+
+---
+
+### `Kubernetes`
+
+- <Status priority='1'>Deprecated</Status> <Cmdname sid="management" className="uitext" /> > <Cmdname sid="BTN07266" className="uitext" /> において、オペレーター方式でエージェントをインストールする場合、追加機能として **kube-apiserver** は提供されなくなりました。
+
+</div>
+
 ## Service 2.21.12
 
 2025年10月15日

@@ -1,6 +1,41 @@
 [
   {
     "url": "https://docs.whatap.io/release-notes/service/service-2_21_x",
+    "ver": "Service 2.21.13",
+    "date": "2025-10-16",
+    "Lists": [
+      {
+        "ver": "Service 2.21.13",
+        "hash": "service-22113",
+        "product": "Server",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">GPU インベントリ</span> テーブルに Connection、External IP、OS Version カラムを追加しました。</p>"
+      },
+      {
+        "ver": "Service 2.21.13",
+        "hash": "service-22113",
+        "product": "Server",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">GPU パフォーマンスサマリー</span> の性能指標比較チャート領域に期間選択セレクターを追加しました。</p>"
+      },
+      {
+        "ver": "Service 2.21.13",
+        "hash": "service-22113",
+        "product": "Server",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">メトリクスエクスプローラー</span> の Infiniband カテゴリでメトリクスを選択した際、チャート凡例に folded_id ではなく interfaceName が表示されるように修正しました。</p>"
+      },
+      {
+        "ver": "Service 2.21.13",
+        "hash": "service-22113",
+        "product": "Kubernetes",
+        "type": "Deprecated",
+        "desc": "<p><code class=\"Deprecated\" type=\"1\">Deprecated</code> <span class=\"uitext\">管理</span> > <span class=\"uitext\">Kubernetes エージェントインストール</span> において、オペレーター方式でエージェントをインストールする場合、追加機能として kube-apiserver は提供されなくなりました。</p>"
+      }
+    ]
+  },  
+  {
+    "url": "https://docs.whatap.io/release-notes/service/service-2_21_x",
     "ver": "Service 2.21.12",
     "date": "2025-10-15",
     "Lists": [
