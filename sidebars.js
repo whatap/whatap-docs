@@ -4269,11 +4269,7 @@ const sidebars = {
               items: [
                 {
                   type: 'doc',
-<<<<<<< HEAD
-                  id: 'release-notes/java/download-agent-java',
-=======
                   id: 'release-notes/java/java-2_2_64',
->>>>>>> 70bcf59baa7a6500a243eab8b2a5cbd505c8dbbb
                   // className: 'new',
                 },
               ],
