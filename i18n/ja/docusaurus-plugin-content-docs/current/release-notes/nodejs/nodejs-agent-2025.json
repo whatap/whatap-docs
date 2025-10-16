@@ -1,5 +1,28 @@
 [
   {
+    "url": "https://docs.whatap.io/release-notes/nodejs/nodejs-1_0_4/",
+    "ver": "v1.0.4",
+    "date": "2025-10-16",
+    "Lists": [
+      {
+        "ver": "v1.0.4",
+        "hash": "v104",
+        "product": "Node.js Agent",
+        "type": "New",
+        "desc": "<p><code class=\"New\" type=\"1\">New</code> <strong>hook_method_patterns</strong></p>",
+        "details": "<ul><li>ユーザーアプリケーション内の特定メソッドを監視できるオプションです。</li>\n<li>設定ファイルにメソッドパスを指定すると、そのメソッドの実行時間と呼び出し引数が収集されます。</li>\n<li>デフォルト: <code>false</code></li>\n<div class=\"theme-admonition theme-admonition-caution alert alert--warning\">\n  <div class=\"admonition-heading\">\n    <strong>注意</strong>\n  </div>\n  <div class=\"admonition-content\">\n    <p>TypeScript プロジェクトの場合は、ビルドされたファイルパスを指定してください（例: <code>./dist/services/user.service</code>）。</p>\n  </div>\n</div></ul>"
+      },
+      {
+        "ver": "v1.0.4",
+        "hash": "v104",
+        "product": "Node.js Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> PM2 クラスターモードで複数インスタンスを実行する際、<code>whatap_nodejs</code> モジュールプロセスの管理を改善しました。</p>",
+        "details": "<ul><li><p>最初のインスタンスのみが <code>whatap_nodejs</code> エージェントを起動します。</p></li>\n<li><p>残りのインスタンスは、すでに実行中のエージェントに自動的に接続されます。</p></li></ul>"
+      }
+    ]
+  },  
+  {
     "url": "https://docs.whatap.io/release-notes/nodejs/nodejs-1_0_3/",
     "ver": "v1.0.3",
     "date": "2025-09-25",
