@@ -1,6 +1,27 @@
 [
   {
     "url": "https://docs.whatap.io/release-notes/service/service-2_21_x",
+    "ver": "Service 2.21.14",
+    "date": "2025-10-17",
+    "Lists": [
+      {
+        "ver": "Service 2.21.14",
+        "hash": "service-22114",
+        "product": "Server",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> 同じサーバーの <code>ipAddress</code> が異なって表示される問題を修正しました。</p>"
+      },
+      {
+        "ver": "Service 2.21.14",
+        "hash": "service-22114",
+        "product": "Server",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">メトリクスエクスプローラー</span> の by GPU Process カテゴリでメトリクスを選択した際、チャート凡例に <code>folded_id</code> が表示される問題を修正しました。</p>"
+      }
+    ]
+  },  
+  {
+    "url": "https://docs.whatap.io/release-notes/service/service-2_21_x",
     "ver": "Service 2.21.13",
     "date": "2025-10-16",
     "Lists": [
