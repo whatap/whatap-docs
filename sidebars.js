@@ -4260,7 +4260,7 @@ const sidebars = {
               label: 'Java',
               collapsible: true,
               collapsed: true,
-              className: 'new',
+              // className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/java/index',
@@ -4269,7 +4269,7 @@ const sidebars = {
                 {
                   type: 'doc',
                   id: 'release-notes/java/java-2_2_64',
-                  className: 'new',
+                  // className: 'new',
                 },
                 'release-notes/java/java-2_2_63',
                 'release-notes/java/java-2_2_62',
@@ -4310,7 +4310,7 @@ const sidebars = {
               label: 'PHP',
               collapsible: true,
               collapsed: true,
-              // className: 'new',
+              className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/php/index',
@@ -4319,7 +4319,7 @@ const sidebars = {
                 {
                   type: 'doc',
                   id: 'release-notes/php/download-php-agent',
-                  // className: 'new',
+                  //className: 'new',
                 }
               ],
             },
@@ -4336,12 +4336,11 @@ const sidebars = {
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/nodejs/nodejs-1_0_3',
+                  id: 'release-notes/nodejs/nodejs-1_0_4',
                   className: 'new',
                 },
+                'release-notes/nodejs/nodejs-1_0_3',
                 'release-notes/nodejs/nodejs-0_5_25',
-                'release-notes/nodejs/nodejs-0_5_23',
-                'release-notes/nodejs/nodejs-0_5_22',
                 'release-notes/nodejs/nodejs-previous',
               ]
             },
@@ -4373,7 +4372,7 @@ const sidebars = {
               label: '.NET',
               collapsible: true,
               collapsed: true,
-              className: 'new',
+              //className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/dotnet/index',
@@ -4382,7 +4381,7 @@ const sidebars = {
                 {
                   type: 'doc',
                   id: 'release-notes/dotnet/dotnet-2_4_4',
-                  className: 'new',
+                  //className: 'new',
                 },
                 'release-notes/dotnet/dotnet-2_4_3',
                 'release-notes/dotnet/dotnet-2_4_2',
@@ -4423,7 +4422,6 @@ const sidebars = {
                 {
                   type: 'doc',
                   id: 'release-notes/server/download-server-agent',
-                  //className: 'new',
                 },
               ],
             },
@@ -4441,7 +4439,6 @@ const sidebars = {
                 {
                   type: 'doc',
                   id: 'release-notes/server-aix/download-agent',
-                  // className: 'new'
                 },
               ],
             },
@@ -4450,7 +4447,7 @@ const sidebars = {
               label: 'Server Solaris',
               collapsible: true,
               collapsed: true,
-              className: 'new',
+              // className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/server-solaris/index'
@@ -4459,7 +4456,7 @@ const sidebars = {
                 {
                   type: 'doc',
                   id: 'release-notes/server-solaris/server-solaris-1_4_5',
-                  className: 'new'
+                  // className: 'new'
                 },
                 'release-notes/server-solaris/server-solaris-1_4_4',
                 'release-notes/server-solaris/server-solaris-1_4_2',
@@ -4474,13 +4471,15 @@ const sidebars = {
               collapsible: true,
               collapsed: true,
               //className: 'new',
+              link: {
+                type: 'doc',
+                id: 'release-notes/server-hpux/index',
+              },
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/server-hpux/index',
-                  //className: 'new',
+                  id: 'release-notes/server-hpux/download-hpux-agent',
                 },
-                'release-notes/server-hpux/download-hpux-agent',
               ],
             },
             {
@@ -4488,7 +4487,7 @@ const sidebars = {
               label: 'Kubernetes',
               collapsible: true,
               collapsed: true,
-              className: 'new',
+              // className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/k8s/index',
@@ -4497,7 +4496,7 @@ const sidebars = {
                 {
                   type: 'doc',
                   id: 'release-notes/k8s/k8s-1_8_8',
-                  className: 'new',
+                  // className: 'new',
                 },
                 'release-notes/k8s/k8s-1_8_7',
                 'release-notes/k8s/k8s-1_8_6',
