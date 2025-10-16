@@ -101,7 +101,7 @@ semanticな単語すべて、正規表現に書き換えできます。 GROKパ�
   - regular expression: `.*?`
 
 ```text title='GROK parsing pattern'
-[%{TIMESTAMP_ISO8601:date}\sGMT][%{LOGLEVEL:level}\s][%{DATA:caller}]
+\[%{TIMESTAMP_ISO8601:date}\sGMT\]\[%{LOGLEVEL:level}\s\]\[%{DATA:caller}\] 
 ```
 
 上記の内容でパーシングすると、次のようにタグを抽出できます。 このようにGROKの`%{SYNTAX:SEMANTIC}`パターンは、複雑で長い正規表現を簡単に適用できる機能を提供します。
