@@ -1,8 +1,22 @@
 [
   {
     "url": "https://docs.whatap.io/release-notes/service/service-2_21_x",
+    "ver": "Service 2.21.15",
+    "date": "2025-10-16",
+    "Lists": [
+      {
+        "ver": "Service 2.21.15",
+        "hash": "service-22115",
+        "product": "Database",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Fixed an issue in <span class=\"uitext\">Agent List</span> where the page would white out when an instance was in a deactivated state.</p>"
+      }
+    ]
+  },  
+  {
+    "url": "https://docs.whatap.io/release-notes/service/service-2_21_x",
     "ver": "Service 2.21.14",
-    "date": "2025-10-17",
+    "date": "2025-10-16",
     "Lists": [
       {
         "ver": "Service 2.21.14",
