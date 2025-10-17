@@ -389,26 +389,20 @@ const sidebars = {
               id: 'php/dashboard-business', 
               className: 'new' 
             },
-          ],
-        },
-        {
-          type: 'category',
-          label: 'Flex 보드',
-          collapsible: true,
-          collapsed: true,
-          link: {
-            type: 'doc',
-            id: 'php/flex-board',
-          },
-          items: [
-            'php/flexboard-template',
-            'php/flexboard-create',
-            'php/flexboard-manage',
-            'php/flexboard-metric-widget',
-            'php/flexboard-widget-manage',
-            'php/flexboard-widget-template',
-            'php/flexboard-mode',
-            'php/flexboard-share',
+            {
+              type: 'category',
+              label: 'Flex 보드',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'php/flex-board',
+              },
+              items: [
+                'php/flexboard-guide',
+                'php/flexboard-widget-manage',
+              ],
+            },
           ],
         },
         {
@@ -631,26 +625,20 @@ const sidebars = {
             'nodejs/dashboard-transactionmap',
             'nodejs/dashboard-active-transaction',
             'nodejs/dashboard-hitmap-trace',
-          ],
-        },
-        {
-          type: 'category',
-          label: 'Flex 보드',
-          collapsible: true,
-          collapsed: true,
-          link: {
-            type: 'doc',
-            id: 'nodejs/flex-board',
-          },
-          items: [
-            'nodejs/flexboard-template',
-            'nodejs/flexboard-create',
-            'nodejs/flexboard-manage',
-            'nodejs/flexboard-metric-widget',
-            'nodejs/flexboard-widget-manage',
-            'nodejs/flexboard-widget-template',
-            'nodejs/flexboard-mode',
-            'nodejs/flexboard-share',
+            {
+              type: 'category',
+              label: 'Flex 보드',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'nodejs/flex-board',
+              },
+              items: [
+                'nodejs/flexboard-guide',
+                'nodejs/flexboard-widget-manage',
+              ],
+            },
           ],
         },
         {
@@ -879,26 +867,20 @@ const sidebars = {
               id: 'python/dashboard-business', 
               className: 'new' 
             },
-          ],
-        },
-        {
-          type: 'category',
-          label: 'Flex 보드',
-          collapsible: true,
-          collapsed: true,
-          link: {
-            type: 'doc',
-            id: 'python/flex-board',
-          },
-          items: [
-            'python/flexboard-template',
-            'python/flexboard-create',
-            'python/flexboard-manage',
-            'python/flexboard-metric-widget',
-            'python/flexboard-widget-manage',
-            'python/flexboard-widget-template',
-            'python/flexboard-mode',
-            'python/flexboard-share',
+            {
+              type: 'category',
+              label: 'Flex 보드',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'python/flex-board',
+              },
+              items: [
+                'python/flexboard-guide',
+                'python/flexboard-widget-manage',
+              ],
+            },
           ],
         },
         {
@@ -1128,26 +1110,20 @@ const sidebars = {
               id: 'dotnet/dashboard-business', 
               className: 'new' 
             },
-          ],
-        },
-        {
-          type: 'category',
-          label: 'Flex 보드',
-          collapsible: true,
-          collapsed: true,
-          link: {
-            type: 'doc',
-            id: 'dotnet/flex-board',
-          },
-          items: [
-            'dotnet/flexboard-template',
-            'dotnet/flexboard-create',
-            'dotnet/flexboard-manage',
-            'dotnet/flexboard-metric-widget',
-            'dotnet/flexboard-widget-manage',
-            'dotnet/flexboard-widget-template',
-            'dotnet/flexboard-mode',
-            'dotnet/flexboard-share',
+            {
+              type: 'category',
+              label: 'Flex 보드',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'dotnet/flex-board',
+              },
+              items: [
+                'dotnet/flexboard-guide',
+                'dotnet/flexboard-widget-manage',
+              ],
+            },
           ],
         },
         {
@@ -1355,26 +1331,20 @@ const sidebars = {
             'golang/dashboard-transactionmap',
             'golang/dashboard-active-transaction',
             'golang/dashboard-hitmap-trace',
-          ],
-        },
-        {
-          type: 'category',
-          label: 'Flex 보드',
-          collapsible: true,
-          collapsed: true,
-          link: {
-            type: 'doc',
-            id: 'golang/flex-board',
-          },
-          items: [
-            'golang/flexboard-template',
-            'golang/flexboard-create',
-            'golang/flexboard-manage',
-            'golang/flexboard-metric-widget',
-            'golang/flexboard-widget-manage',
-            'golang/flexboard-widget-template',
-            'golang/flexboard-mode',
-            'golang/flexboard-share',
+            {
+              type: 'category',
+              label: 'Flex 보드',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'golang/flex-board',
+              },
+              items: [
+                'golang/flexboard-guide',
+                'golang/flexboard-widget-manage',
+              ],
+            },
           ],
         },
         {
@@ -6084,26 +6054,20 @@ const sidebars = {
             'browser/resource-dashboard',
             'browser/ajax-dashboard',
             'browser/dashboard-widget-setting',
-          ],
-        },
-        {
-          type: 'category',
-          label: 'Flex 보드',
-          collapsible: true,
-          collapsed: true,
-          link: {
-            type: 'doc',
-            id: 'browser/flex-board',
-          },
-          items: [
-            'browser/flexboard-template',
-            'browser/flexboard-create',
-            'browser/flexboard-manage',
-            'browser/flexboard-metric-widget',
-            'browser/flexboard-widget-manage',
-            'browser/flexboard-widget-template',
-            'browser/flexboard-mode',
-            'browser/flexboard-share',
+            {
+              type: 'category',
+              label: 'Flex 보드',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'browser/flex-board',
+              },
+              items: [
+                'browser/flexboard-guide',
+                'browser/flexboard-widget-manage',
+              ],
+            },
           ],
         },
         {
@@ -6239,15 +6203,9 @@ const sidebars = {
                 id: 'mobile/flex-board',
               },
               items: [
-                'mobile/flexboard-template',
-                'mobile/flexboard-create',
-                'mobile/flexboard-manage',
-                'mobile/flexboard-metric-widget',
+                'mobile/flexboard-guide',
                 'mobile/flexboard-widget-manage',
-                'mobile/flexboard-widget-template',
-                'mobile/flexboard-mode',
-                'mobile/flexboard-share',
-              ]
+              ],
             },
           ],
         },
@@ -6395,26 +6353,20 @@ const sidebars = {
                 `server/server-inventory-map-group`
               ]
             }, 
-          ]
-        },
-        {
-          type: 'category',
-          label: 'Flex 보드',
-          collapsible: true,
-          collapsed: true,
-          link: {
-            type: 'doc',
-            id: 'server/flex-board',
-          },
-          items: [
-            'server/flexboard-template',
-            'server/flexboard-create',
-            'server/flexboard-manage',
-            'server/flexboard-metric-widget',
-            'server/flexboard-widget-manage',
-            'server/flexboard-widget-template',
-            'server/flexboard-mode',
-            'server/flexboard-share',
+            {
+              type: 'category',
+              label: 'Flex 보드',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'server/flex-board',
+              },
+              items: [
+                'server/flexboard-guide',
+                'server/flexboard-widget-manage',
+              ],
+            },
           ]
         },
         {
@@ -6838,14 +6790,8 @@ const sidebars = {
                 id: 'kubernetes/flex-board',
               },
               items: [
-                'kubernetes/flexboard-template',
-                'kubernetes/flexboard-create',
-                'kubernetes/flexboard-manage',
-                'kubernetes/flexboard-metric-widget',
+                'kubernetes/flexboard-guide',
                 'kubernetes/flexboard-widget-manage',
-                'kubernetes/flexboard-widget-template',
-                'kubernetes/flexboard-mode',
-                'kubernetes/flexboard-share',
               ],
             },
           ]
