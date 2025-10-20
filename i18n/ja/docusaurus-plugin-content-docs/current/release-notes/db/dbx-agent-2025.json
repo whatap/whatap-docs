@@ -1,5 +1,109 @@
 [
   {
+    "ver": "v2.57.04",
+    "date": "2025-10-15",
+    "Lists": [
+      {
+        "ver": "v2.57.04",
+        "hash": "v25704",
+        "product": "DBX",
+        "category": "共通",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> disk mountのlsizeが0で渡された場合にskip処理を追加</p>"
+      },
+      {
+        "ver": "v2.57.04",
+        "hash": "v25704",
+        "product": "DBX",
+        "category": "Oracle",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> オブジェクトレイアウトの照会を修正: <code>tableinfo</code>および<code>indexinfo</code>にサブパーティションキーを追加し、<code>subpartitionstat</code>にサブパーティション数を追加</p>"
+      }
+    ]
+  },
+  {
+    "ver": "v2.57.03",
+    "date": "2025-10-01",
+    "Lists": [
+      {
+        "ver": "v2.57.03",
+        "hash": "v25703",
+        "product": "DBX",
+        "category": "共通",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> クイックインストール機能で<code>whatap.server.host</code>に「/」区切りで2つのIPを入力した場合に発生するバグを修正</p>"
+      }
+    ]
+  },
+  {
+    "ver": "v2.57.02",
+    "date": "2025-09-29",
+    "Lists": [
+      {
+        "ver": "v2.57.02",
+        "hash": "v25702",
+        "product": "DBX",
+        "category": "DB2",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> counterメトリックのタイプエラーを修正</p>"
+      }
+    ]
+  },
+  {
+    "ver": "v2.57.01",
+    "date": "2025-09-25",
+    "Lists": [
+      {
+        "ver": "v2.57.01",
+        "hash": "v25701",
+        "product": "DBX",
+        "category": "DB2",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> active session収集時にbufferpool関連メトリックを追加</p>"
+      },
+      {
+        "ver": "v2.57.01",
+        "hash": "v25701",
+        "product": "DBX",
+        "category": "DB2",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <code>db_db2_counter</code>メトリックを追加（maxguage、spacemonに対応）</p>"
+      },
+      {
+        "ver": "v2.57.01",
+        "hash": "v25701",
+        "product": "DBX",
+        "category": "DB2",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> bufferpoolカテゴリを追加</p>"
+      },
+      {
+        "ver": "v2.57.01",
+        "hash": "v25701",
+        "product": "DBX",
+        "category": "DB2",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> tablespaceおよびbufferpool収集時にDB2 9.7および10.1バージョンの処理を追加</p>"
+      },
+      {
+        "ver": "v2.57.01",
+        "hash": "v25701",
+        "product": "DBX",
+        "category": "DB2",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> インスタンスレベルパラメータ収集を追加: 「dbm.パラメータ名」として追加</p>"
+      },
+      {
+        "ver": "v2.57.01",
+        "hash": "v25701",
+        "product": "DBX",
+        "category": "DB2",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> tablespaceのオーバーフローバグを修正</p>"
+      }
+    ]
+  },
+  {
     "ver": "v2.56.06",
     "date": "2025-09-22",
     "Lists": [
