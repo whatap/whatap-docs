@@ -5437,8 +5437,8 @@ const sidebars = {
     {
       type: 'category',
       label: 'OpenMetrics',
-      collapsible: true,
-      collapsed: true,
+      collapsible: false,
+      collapsed: false,
       link: {
         type: 'doc',
         id: 'openmetrics/introduction'
