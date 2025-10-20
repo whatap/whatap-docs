@@ -1,5 +1,109 @@
 [
   {
+    "ver": "v2.57.04",
+    "date": "2025-10-15",
+    "Lists": [
+      {
+        "ver": "v2.57.04",
+        "hash": "v25704",
+        "product": "DBX",
+        "category": "Common",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Skip processing when the lsize of disk mount is delivered as 0</p>"
+      },
+      {
+        "ver": "v2.57.04",
+        "hash": "v25704",
+        "product": "DBX",
+        "category": "Oracle",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> Modified object layout view: added subpartition key to <code>tableinfo</code> and <code>indexinfo</code>, and added subpartition count to <code>subpartitionstat</code></p>"
+      }
+    ]
+  },
+  {
+    "ver": "v2.57.03",
+    "date": "2025-10-01",
+    "Lists": [
+      {
+        "ver": "v2.57.03",
+        "hash": "v25703",
+        "product": "DBX",
+        "category": "Common",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Fixed a bug where entering two IPs separated by '/' in <code>whatap.server.host</code> caused an error during quick installation</p>"
+      }
+    ]
+  },
+  {
+    "ver": "v2.57.02",
+    "date": "2025-09-29",
+    "Lists": [
+      {
+        "ver": "v2.57.02",
+        "hash": "v25702",
+        "product": "DBX",
+        "category": "DB2",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Fixed counter metric type error</p>"
+      }
+    ]
+  },
+  {
+    "ver": "v2.57.01",
+    "date": "2025-09-25",
+    "Lists": [
+      {
+        "ver": "v2.57.01",
+        "hash": "v25701",
+        "product": "DBX",
+        "category": "DB2",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> Added bufferpool-related metrics when collecting active session data</p>"
+      },
+      {
+        "ver": "v2.57.01",
+        "hash": "v25701",
+        "product": "DBX",
+        "category": "DB2",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> Added <code>db_db2_counter</code> metric (supports maxguage, spacemon)</p>"
+      },
+      {
+        "ver": "v2.57.01",
+        "hash": "v25701",
+        "product": "DBX",
+        "category": "DB2",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> Added bufferpool category</p>"
+      },
+      {
+        "ver": "v2.57.01",
+        "hash": "v25701",
+        "product": "DBX",
+        "category": "DB2",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> Added handling for DB2 9.7 and 10.1 versions in tablespace and bufferpool collection</p>"
+      },
+      {
+        "ver": "v2.57.01",
+        "hash": "v25701",
+        "product": "DBX",
+        "category": "DB2",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> Added instance-level parameter collection: added as ‘dbm.parameter_name’</p>"
+      },
+      {
+        "ver": "v2.57.01",
+        "hash": "v25701",
+        "product": "DBX",
+        "category": "DB2",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Fixed tablespace overflow bug</p>"
+      }
+    ]
+  },
+  {
     "ver": "v2.56.06",
     "date": "2025-09-22",
     "Lists": [
