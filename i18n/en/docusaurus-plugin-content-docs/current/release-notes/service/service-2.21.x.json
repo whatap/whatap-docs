@@ -1,6 +1,20 @@
 [
   {
     "url": "https://docs.whatap.io/release-notes/service/service-2_21_x",
+    "ver": "Service 2.21.17",
+    "date": "2025-10-20",
+    "Lists": [
+      {
+        "ver": "Service 2.21.17",
+        "hash": "service-22117",
+        "product": "Browser",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Fixed an issue with statistical data errors.</p>"
+      }
+    ]
+  },  
+  {
+    "url": "https://docs.whatap.io/release-notes/service/service-2_21_x",
     "ver": "Service 2.21.15",
     "date": "2025-10-16",
     "Lists": [
