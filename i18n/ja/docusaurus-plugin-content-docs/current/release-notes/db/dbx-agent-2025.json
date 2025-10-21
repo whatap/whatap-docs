@@ -1,5 +1,19 @@
 [
   {
+    "ver": "v2.57.05",
+    "date": "2025-10-17",
+    "Lists": [
+      {
+        "ver": "v2.57.05",
+        "hash": "v25705",
+        "product": "DBX",
+        "category": "Oracle",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> オブジェクトレイアウト参照クエリを修正</p>"
+      }
+    ]
+  },  
+  {
     "ver": "v2.57.04",
     "date": "2025-10-15",
     "Lists": [

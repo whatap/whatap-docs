@@ -1,5 +1,59 @@
 [
   {
+    "ver": "v1.0.6",
+    "date": "2025-10-20",
+    "Lists": [
+      {
+        "ver": "v1.0.6",
+        "hash": "v106",
+        "product": "DMX",
+        "category": "Oracle Pro",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <code>SqlStat</code>でSQLテキストが欠落する問題を修正</p>"
+      },
+      {
+        "ver": "v1.0.6",
+        "hash": "v106",
+        "product": "DMX",
+        "category": "Oracle Pro",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <code>db_oracle_dma_wait_class</code>の<code>time_waited</code>の単位を秒に変更</p>"
+      },
+      {
+        "ver": "v1.0.6",
+        "hash": "v106",
+        "product": "DMX",
+        "category": "Oracle Pro",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <code>db_oracle_dma_wait_class</code>からIdleイベントを除外</p>"
+      },
+      {
+        "ver": "v1.0.6",
+        "hash": "v106",
+        "product": "DMX",
+        "category": "Oracle Pro",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <code>db_oracle_dma_wait_class</code>カテゴリに5分・1時間の統計を追加</p>"
+      },
+      {
+        "ver": "v1.0.6",
+        "hash": "v106",
+        "product": "DMX",
+        "category": "Oracle Pro",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> event topの<code>time_waited</code>の単位を秒に変更</p>"
+      },
+      {
+        "ver": "v1.0.6",
+        "hash": "v106",
+        "product": "DMX",
+        "category": "Oracle Pro",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> オブジェクトレイアウト参照時にpartition情報を取得可能に変更</p>"
+      }
+    ]
+  },  
+  {
     "ver": "v1.0.5m",
     "date": "2025-08-18",
     "Lists": [
