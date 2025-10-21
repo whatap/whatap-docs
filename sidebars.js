@@ -1540,17 +1540,30 @@ const sidebars = {
       },
       items: [
         'dpm/monitoring-support',
+        'dpm/agent-deployment',
         {
-          type: 'category',
           label: '설치하기',
-          collapsible: true,
-          collapsed: true,
+          type: 'category',
           items: [
-            'dpm/create-db-user',
-            'dpm/agent-deployment',
-            'dpm/install-agent',
-            'dpm/after-install-agent',
-            'dpm/troubleshooting',
+            'dpm/dpm-service-setup',
+            {
+              label: '에이전트 설치',
+              type: 'category',
+              items: [
+                'dpm/install-altibase',
+                'dpm/install-cubrid',
+                'dpm/install-db2',
+                'dpm/install-mongodb',
+                'dpm/install-mssql',
+                'dpm/install-mysql',
+                'dpm/install-oracle',
+                'dpm/install-oracle-pro',
+                'dpm/install-postgresql',
+                'dpm/install-redis',
+                'dpm/install-sapase',
+                'dpm/install-tibero',
+              ],
+            },
           ],
         },
         {
