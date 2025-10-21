@@ -5448,6 +5448,38 @@ const sidebars = {
       ],
     }
   ],
+  cloudSidebar: [
+    {
+      type: 'category',
+      label: 'Cloud Monitoring',
+      collapsible: false,
+      collapsed: false,
+      link: {
+        type: 'doc',
+        id: 'cloud-monitoring/introduction',
+      },
+      items: [
+        'cloud-monitoring/getting-started',
+        {
+          type: 'category',
+          label: '설치하기',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'cloud-monitoring/install-agent/overview',
+          },
+          items: [
+            'cloud-monitoring/install-agent/amazon-cloudwatch',
+            'cloud-monitoring/install-agent/amazon-ecs',
+            'cloud-monitoring/install-agent/azure',
+            'cloud-monitoring/install-agent/naver-cloud',
+            'cloud-monitoring/install-agent/oracle-cloud',
+          ]
+        },
+      ],
+    }
+  ],
   awsecsSidebar: [
     {
       type: 'category',
