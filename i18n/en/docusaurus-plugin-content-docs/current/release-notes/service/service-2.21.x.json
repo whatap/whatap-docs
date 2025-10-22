@@ -1,6 +1,20 @@
 [
   {
     "url": "https://docs.whatap.io/release-notes/service/service-2_21_x",
+    "ver": "Service 2.21.18",
+    "date": "2025-10-22",
+    "Lists": [
+      {
+        "ver": "Service 2.21.18",
+        "hash": "service-22118",
+        "product": "Common",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Fixed an issue in <span class=\"uitext\">User Group Display Settings</span> where menus with more than three levels were not displayed in Kubernetes environments.</p>"
+      }
+    ]
+  },  
+  {
+    "url": "https://docs.whatap.io/release-notes/service/service-2_21_x",
     "ver": "Service 2.21.17",
     "date": "2025-10-20",
     "Lists": [
