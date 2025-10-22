@@ -1588,6 +1588,7 @@ const sidebars = {
             'dpm/setup-redis',
             'dpm/setup-sapase',
             'dpm/setup-tibero',
+            'dpm/agent-xos-settings',
             {
               type: 'category',
               label: '클라우드 에이전트 설정',
