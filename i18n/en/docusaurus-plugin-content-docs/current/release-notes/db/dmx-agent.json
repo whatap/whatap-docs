@@ -1,5 +1,59 @@
 [
   {
+    "ver": "v1.0.6",
+    "date": "2025-10-20",
+    "Lists": [
+      {
+        "ver": "v1.0.6",
+        "hash": "v106",
+        "product": "DMX",
+        "category": "Oracle Pro",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Fixed an issue where SQL text was missing in <code>SqlStat</code></p>"
+      },
+      {
+        "ver": "v1.0.6",
+        "hash": "v106",
+        "product": "DMX",
+        "category": "Oracle Pro",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> Changed the unit of <code>time_waited</code> in <code>db_oracle_dma_wait_class</code> to seconds</p>"
+      },
+      {
+        "ver": "v1.0.6",
+        "hash": "v106",
+        "product": "DMX",
+        "category": "Oracle Pro",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> Excluded Idle events from <code>db_oracle_dma_wait_class</code></p>"
+      },
+      {
+        "ver": "v1.0.6",
+        "hash": "v106",
+        "product": "DMX",
+        "category": "Oracle Pro",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> Added 5-minute and 1-hour statistics for <code>db_oracle_dma_wait_class</code> category</p>"
+      },
+      {
+        "ver": "v1.0.6",
+        "hash": "v106",
+        "product": "DMX",
+        "category": "Oracle Pro",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> Changed the unit of <code>time_waited</code> in event top to seconds</p>"
+      },
+      {
+        "ver": "v1.0.6",
+        "hash": "v106",
+        "product": "DMX",
+        "category": "Oracle Pro",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> Added partition information to object layout lookup</p>"
+      }
+    ]
+  },  
+  {
     "ver": "v1.0.5m",
     "date": "2025-08-18",
     "Lists": [
