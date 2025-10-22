@@ -5464,7 +5464,7 @@ const sidebars = {
           type: 'category',
           label: '설치하기',
           collapsible: true,
-          collapsed: true,
+          collapsed: false,
           link: {
             type: 'doc',
             id: 'cloud-monitoring/install-agent/overview',
@@ -5475,6 +5475,49 @@ const sidebars = {
             'cloud-monitoring/install-agent/azure',
             'cloud-monitoring/install-agent/naver-cloud',
             'cloud-monitoring/install-agent/oracle-cloud',
+          ]
+        },
+        {
+          type: 'category',
+          label: 'Flex 보드',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'cloud-monitoring/flexboard',
+          },
+          items: [
+            'cloud-monitoring/flexboard-guide',
+            'cloud-monitoring/flexboard-widget-manage',
+          ]
+        },
+        'cloud-monitoring/dashboard',
+        {
+          type: 'category',
+          label: '메트릭스',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'cloud-monitoring/metrics/overview',
+          },
+          items: [
+            'cloud-monitoring/metrics/metrics-chart',
+            'cloud-monitoring/metrics/metrics-detect-anormal',
+            'cloud-monitoring/metrics/metrics-search',
+            {
+              type: 'category',
+              label: '지표',
+              collapsible: true,
+              collapsed: false,
+              link: {
+                type: 'doc',
+                id: 'cloud-monitoring/metrics/metrics-cloud',
+              },
+              items: [
+                'cloud-monitoring/metrics/metrics-ecs',
+              ]
+            },
           ]
         },
       ],
