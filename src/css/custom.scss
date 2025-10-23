@@ -883,6 +883,9 @@ div[class*='announcementBar']:not([class*='Placeholder']) {
       font-size: 15px;
       font-weight: 500;
       background: none;
+      flex-wrap: wrap;
+      text-align: center;
+      gap: 8px;
       width: 100%; 
       // span#bar {
       //  background-color: #fff;
