@@ -883,8 +883,6 @@ div[class*='announcementBar']:not([class*='Placeholder']) {
       font-size: 15px;
       font-weight: 500;
       background: none;
-      flex-wrap: wrap;
-      text-align: center;
       gap: 8px;
       width: 100%; 
       // span#bar {
@@ -907,6 +905,18 @@ div[class*='announcementBar']:not([class*='Placeholder']) {
     }
   }
 }
+@media (max-width: 768px) {
+    #announce-banner {
+      justify-content: center !important;
+    }
+    #announce-banner .right {
+      display: none !important;
+    }
+    #announce-banner .left {
+      width: 100%;
+      text-align: center;
+    }
+  }
 article div[class*='fbsharebutton'] {
   display: none;
 }
