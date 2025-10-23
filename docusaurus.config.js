@@ -223,13 +223,14 @@ const config = {
       mermaid: {
         theme: {light: 'neutral', dark: 'forest'},
       },
-      // announcementBar: {
-      //   id: 'moniday-banner',
-      //   content: '<div id="moniday-banner">🎙️ 10월 19일, IT 현대화에 적합한 모니터링 플랫폼이 궁금하다면? <span id="bar"></span> <a class="btn-white-file" href="https://www.whatap.io/ko/moniDay" target="_blank">WhaTap Moni Day 신청하기</a></div>',
-      //   backgroundColor: 'none',
-      //   textColor: '#ffffff',
-      //   isCloseable: true,
-      // },
+        announcementBar: {
+          id: 'moniday-banner',
+          content: '<div id="moniday-banner"> <span class="left">WhaTap Observe Summit 2025 등록 오픈 🚀</span> <a class="right" href="https://event.whatap.io/ko/summit_/index.html#" target="_blank"> 11월 21일(금) 09:00, 삼성동 COEX ↗ </a> </div>',
+          // content: '<div id="moniday-banner">WhaTap Observe Summit 2025 등록 오픈 🚀 <span id="bar"></span> <a class="btn-white-file" href="https://event.whatap.io/ko/summit_/index.html#" target="_blank">11월 21일(금) 08:00, 삼성동 COEX ↗</a></div>',
+          backgroundColor: 'none',
+          textColor: '#ffffff',
+          isCloseable: true,
+      },
       blog: {
         sidebar: {
           groupByYear: false
