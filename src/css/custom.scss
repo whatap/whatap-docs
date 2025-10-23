@@ -869,11 +869,15 @@ button.DocSearch-Button:hover {
   padding-top: 0;
   padding-bottom: 0;
 }
-div[class*='announcementBar'] {
+div[class*='announcementBar']:not([class*='Placeholder']) {
   background: linear-gradient(155.02deg, #3a52ff 1.78%, #5b7bff 84.11%);
+  height: 50px !important;
   div[class*='announcementBarContent'] {
     background: none;
-    #moniday-banner {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    #announce-banner {
       display: flex;
       justify-content: space-between;
       font-size: 15px;
