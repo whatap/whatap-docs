@@ -1,6 +1,27 @@
 [
   {
     "url": "https://docs.whatap.io/release-notes/service/service-2_21_x",
+    "ver": "Service 2.21.20",
+    "date": "2025-10-27",
+    "Lists": [
+      {
+        "ver": "Service 2.21.20",
+        "hash": "service-22120",
+        "product": "Server",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Fixed an intermittent issue in <span class=\"uitext\">GPU Inventory</span> where all data was deleted when modifying custom column data.</p>"
+      },
+      {
+        "ver": "Service 2.21.20",
+        "hash": "service-22120",
+        "product": "Server",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Fixed an issue in <span class=\"uitext\">GPU Inventory</span> where the result count did not update after applying filters.</p>"
+      }
+    ]
+  },  
+  {
+    "url": "https://docs.whatap.io/release-notes/service/service-2_21_x",
     "ver": "Service 2.21.18",
     "date": "2025-10-22",
     "Lists": [
