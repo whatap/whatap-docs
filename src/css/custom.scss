@@ -872,19 +872,25 @@ button.DocSearch-Button:hover {
 div[class*='announcementBar']:not([class*='Placeholder']) {
   background: linear-gradient(155.02deg, #3a52ff 1.78%, #5b7bff 84.11%);
   height: 50px !important;
+}
   div[class*='announcementBarContent'] {
-    background: none;
+    background: transparent !important;  
     height: 100%;
     display: flex;
     align-items: center;
+    box-sizing: border-box;
+    padding: 0 10px !important;
+    max-width: 1440px;  
+    margin: 0 auto; 
     #announce-banner {
       display: flex;
       justify-content: space-between;
+      align-items: center;
+      background: none;
+      width: 100%;
+      margin: 0 auto; 
       font-size: 15px;
       font-weight: 500;
-      background: none;
-      gap: 8px;
-      width: 100%; 
       // span#bar {
       //  background-color: #fff;
       //  display: inline-block;
@@ -904,7 +910,6 @@ div[class*='announcementBar']:not([class*='Placeholder']) {
       }
     }
   }
-}
 @media (max-width: 768px) {
     #announce-banner {
       justify-content: center !important;
@@ -916,7 +921,7 @@ div[class*='announcementBar']:not([class*='Placeholder']) {
       width: 100%;
       text-align: center;
     }
-  }
+}
 article div[class*='fbsharebutton'] {
   display: none;
 }
