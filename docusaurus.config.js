@@ -216,6 +216,7 @@ const config = {
       },
     ]
   ],
+  clientModules: [require.resolve('./src/modules/announcement-reset.js')],
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
@@ -225,7 +226,7 @@ const config = {
       },
         announcementBar: {
           id: 'announce-banner',
-          content: '<div id="announce-banner"> <span class="left">WhaTap Observe Summit 2025 등록 오픈 🚀</span> <a class="right" href="https://event.whatap.io/ko/summit_/index.html#" target="_blank"> 11월 21일(금) 09:00, 삼성동 COEX ↗ </a> </div>',
+          content: '<div id="announce-banner"> <a class="left" href="https://event.whatap.io/ko/summit_/index.html#" target="_blank"> WhaTap Observe Summit 2025 등록 오픈 🚀 </a> <a class="right" href="https://event.whatap.io/ko/summit_/index.html#" target="_blank"> 11월 21일(금) 09:00, 삼성동 COEX ↗ </a> </div>',
           // content: '<div id="announce-banner">WhaTap Observe Summit 2025 등록 오픈 🚀 <span id="bar"></span> <a class="btn-white-file" href="https://event.whatap.io/ko/summit_/index.html#" target="_blank">11월 21일(금) 08:00, 삼성동 COEX ↗</a></div>',
           backgroundColor: 'none',
           textColor: '#ffffff',
