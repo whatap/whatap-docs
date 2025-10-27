@@ -4223,7 +4223,7 @@ const sidebars = {
           type: 'category',
           label: '에이전트',
           collapsible: true,
-          collapsed: false,
+          collapsed: true,
           items: [
             {
               type: 'category',
@@ -4553,6 +4553,12 @@ const sidebars = {
             },
           ],
         },
+        {
+          type: 'doc',
+          id: 'release-notes/docs/release-note',
+          label: 'WhaTap Docs',
+          className: 'new',
+        }
       ]
     }
   ],
