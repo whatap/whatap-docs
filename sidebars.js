@@ -5407,26 +5407,24 @@ const sidebars = {
             },
             'telegraf/telegraf-usage',
           ]
+        },
+        {
+          type: 'category',
+          label: 'OpenTelemetry',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'opentelemetry/introduction'
+          },
+          items: [
+            'opentelemetry/install-agent',
+            'opentelemetry/set-agent',
+            'release-notes/otel/index',
+            'opentelemetry/download-agent',
+          ],
         }
       ]
-    }
-  ],
-  otelSidebar: [
-    {
-      type: 'category',
-      label: 'OpenTelemetry',
-      collapsible: true,
-      collapsed: true,
-      link: {
-        type: 'doc',
-        id: 'opentelemetry/introduction'
-      },
-      items: [
-        'opentelemetry/install-agent',
-        'opentelemetry/set-agent',
-        'release-notes/otel/index',
-        'opentelemetry/download-agent',
-      ],
     }
   ],
   omSidebar: [
@@ -7086,7 +7084,7 @@ const sidebars = {
       items: [
         'reference/changes-db-xos-metrics-guide',
         'reference/cloudwatch-metric-guide',
-        'reference/script-manager',
+        // 'reference/script-manager',
         {
           type: 'link',
           href: '../db-support-functions',

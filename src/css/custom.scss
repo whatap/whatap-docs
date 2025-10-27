@@ -869,26 +869,40 @@ button.DocSearch-Button:hover {
   padding-top: 0;
   padding-bottom: 0;
 }
-div[class*='announcementBar'] {
-  background: linear-gradient(155.02deg, #db582c 1.78%, #ff7a5f 84.11%);
+div[class*='announcementBar']:not([class*='Placeholder']) {
+  background: linear-gradient(155.02deg, #3a52ff 1.78%, #5b7bff 84.11%);
+  height: 50px !important;
+}
   div[class*='announcementBarContent'] {
-    background: none;
-    #moniday-banner {
+    background: transparent !important;  
+    height: 100%;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 0 10px !important;
+    max-width: 1440px;  
+    margin: 0 auto; 
+    #announce-banner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: none;
+      width: 100%;
+      margin: 0 auto; 
       font-size: 15px;
       font-weight: 500;
-      background: none;
-      span#bar {
-        background-color: #fff;
-        display: inline-block;
-        width: 1px;
-        font-size: 0px;
-        height: 15px;
-        vertical-align: middle;
-        margin: 0 6px;
-      }
+      // span#bar {
+      //  background-color: #fff;
+      //  display: inline-block;
+      //  width: 1px;
+      //  font-size: 0px;
+      //  height: 15px;
+      //  vertical-align: middle;
+      //  margin: 0 6px;
+      //}
       a {
-        background-color: #fff;
-        color: #3868F6;
+        // background-color: #3d5afe ;
+        color: #fff;
         display: inline-block;
         padding: 0px 12px;
         border-radius: 40px;
@@ -896,6 +910,17 @@ div[class*='announcementBar'] {
       }
     }
   }
+@media (max-width: 768px) {
+    #announce-banner {
+      justify-content: center !important;
+    }
+    #announce-banner .right {
+      display: none !important;
+    }
+    #announce-banner .left {
+      width: 100%;
+      text-align: center;
+    }
 }
 article div[class*='fbsharebutton'] {
   display: none;
