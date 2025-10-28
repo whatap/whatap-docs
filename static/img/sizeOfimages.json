@@ -5295,69 +5295,9 @@
     "width": 1200,
     "height": 706
   },
-  "db-analysis-sql-access-object-filter-add-en.png": {
-    "width": 600,
-    "height": 281
-  },
-  "db-analysis-sql-access-object-filter-add-ja.png": {
-    "width": 600,
-    "height": 281
-  },
-  "db-analysis-sql-access-object-filter-add.png": {
-    "width": 600,
-    "height": 281
-  },
-  "db-analysis-sql-access-object-filter-edit-en.png": {
-    "width": 600,
-    "height": 233
-  },
-  "db-analysis-sql-access-object-filter-edit-ja.png": {
-    "width": 600,
-    "height": 230
-  },
-  "db-analysis-sql-access-object-filter-edit.png": {
-    "width": 600,
-    "height": 233
-  },
-  "db-analysis-sql-access-statistics-en.png": {
-    "width": 1200,
-    "height": 615
-  },
-  "db-analysis-sql-access-statistics-filter-en.png": {
-    "width": 400,
-    "height": 217
-  },
-  "db-analysis-sql-access-statistics-filter-ja.png": {
-    "width": 400,
-    "height": 214
-  },
-  "db-analysis-sql-access-statistics-filter.png": {
-    "width": 400,
-    "height": 216
-  },
-  "db-analysis-sql-access-statistics-ja.png": {
-    "width": 1200,
-    "height": 612
-  },
   "db-analysis-sql-access-statistics-op-count.png": {
     "width": 600,
     "height": 311
-  },
-  "db-analysis-sql-access-statistics.png": {
-    "width": 1200,
-    "height": 610
-  },
-  "db-analysis-sql-plan-change-filter-01-en.png": {
-    "width": 400,
-    "height": 244
-  },
-  "db-analysis-sql-plan-change-filter-01-ja.png": {
-    "width": 400,
-    "height": 244
-  },
-  "db-analysis-sql-plan-change-filter-01.png": {
-    "width": 400,
-    "height": 244
   },
   "db-analysis-sql-plan-change-filter-en.png": {
     "width": 400,
@@ -5382,18 +5322,6 @@
   "db-analysis-sql-plan-change-history-diff.png": {
     "width": 1200,
     "height": 1055
-  },
-  "db-analysis-sql-plan-change-history-en.png": {
-    "width": 1200,
-    "height": 694
-  },
-  "db-analysis-sql-plan-change-history-ja.png": {
-    "width": 1200,
-    "height": 694
-  },
-  "db-analysis-sql-plan-change-history.png": {
-    "width": 1200,
-    "height": 693
   },
   "db-analysis-wait-class-oracle.png": {
     "width": 400,
@@ -8530,18 +8458,6 @@
   "db-sql-analysis-filter-condition-color.png": {
     "width": 400,
     "height": 40
-  },
-  "db-sql-analysis-filter-modify-en.png": {
-    "width": 400,
-    "height": 213
-  },
-  "db-sql-analysis-filter-modify-ja.png": {
-    "width": 400,
-    "height": 213
-  },
-  "db-sql-analysis-filter-modify.png": {
-    "width": 400,
-    "height": 213
   },
   "db-sql-details-common-en.png": {
     "width": 1200,

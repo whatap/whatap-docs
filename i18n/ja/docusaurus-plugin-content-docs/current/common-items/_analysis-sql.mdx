@@ -1,24 +1,29 @@
 ホーム画面 &gt; プロジェクト選択 &gt; <Cmdname sid="side_analysis" className="uitext" /> &gt; <Cmdname sid="side_dbSqlAnalysis" className="uitext" />
 
-データベースで実行されるSQL文を分析し、性能問題を診断するのに有用な資料を提供します。 <Cmdname sid="side_dbSqlAnalysis" className="uitext" />メニューは、2つの主要なタブで構成されています。 
-
-- **Access Statistics**: 性能低下の原因となり得るFull Scanが発生したSQLを確認できます。
-
-- **Plan Change History**: 同一のSQL IDを持つSQL文がオプティマイザによって他の実行プランに変更された場合を感知します。 これは性能に影響を与える可能性があるため、モニタリングが必要です。
+データベースで実行される SQL 文を分析し、パフォーマンス問題を診断するための有用な情報を提供します。  
+<Cmdname sid="side_dbSqlPlanAnalysis" className="uitext" /> は [Access Statistics](#access_statistics) タブと [Plan Change History](#plan_change_history) タブで構成されています。
 
 ## Access Statistics {#access_statistics}
 
-性能低下の原因となり得るFull Scanが発生したSQLを確認できます。 時間別、タイプ別のFull Scan発生回数を確認できます。 これにより、Full Scanを頻繁に発生させるSQL文を最適化し、不要なFull Scanを減らすことで資源使用量を最適化できます。 また、Full ScanをIndex Scanに置き換えてクエリー性能を向上させる方法を考えてみてください。
+**Access Statistics** タブでは、SQL ごとの Full Scan の発生時点、種類、回数を確認できます。  
+頻繁に Full Scan が発生するクエリは、インデックスを使用するように修正することで、パフォーマンスを改善し、リソース使用量を削減できます。
 
-<ImgLang img="db-analysis-sql-access-statistics.png" desc="AccessStatistics" />
+1. <Cmdname sid="side_analysis" className="uitext" /> > <Cmdname sid="side_dbSqlPlanAnalysis" className="uitext" /> の **Access Statistics** タブに移動します。
 
-画面上で照会時間と対象を選択します。 <Cmdname sid="time" className="uitext" />と<Cmdname sid="instance" className="uitext" />オプションを設定した後![検索アイコン](/img/ico-btn-search.png)ボタンを選択します。 必要な場合、<Cmdname sid="filter" className="uitext" />オプションを設定して、目的の照会結果をフィルタリングできます。
+1. 照会時間とインスタンスを選択します。
 
-- **Access Count**: 時間帯別のFull Scanの発生回数を確認できる棒グラフチャートです。 特定の時間帯を選択すると、選択した時間に実行されたSQLリストが画面の下のリストと右の**Operation Count** チャートに表示されます。
+1. <Cmdname sid="time" className="uitext" /> および <Cmdname sid="instance" className="uitext" /> オプションを設定し、![検索アイコン](/img/ico-btn-search.png) ボタンをクリックします。  
+   必要に応じて、<Cmdname sid="filter" className="uitext" /> オプションを設定して結果をフィルタリングできます。
 
-- **Operation Count**: Full Scanが発生したタイプとその数を確認できます。 各バーにマウスオーバーすると、オブジェクト名を確認できます。
+1. **Access Count** と **Operation Count** セクションで検索結果を確認します。
 
-  ![Operation Count](/img/db-analysis-sql-access-statistics-op-count.png)
+    * **Access Count**: 時間帯ごとの Full Scan 発生回数を表示する棒グラフです。  
+      特定の時間帯を選択すると、その時間に実行された SQL の一覧が画面下部に表示され、右側の **Operation Count** チャートも更新されます。
+
+    * **Operation Count**: Full Scan が発生した種類とその回数を確認できます。  
+      各バーにマウスを重ねるとオブジェクト名が表示されます。
+
+        ![Operation Count](/img/db-analysis-sql-access-statistics-op-count.png)
 
 import QueryDetails from "../common-items/_db-query-details.mdx";
 
@@ -40,27 +45,21 @@ import QueryDetails from "../common-items/_db-query-details.mdx";
 
 ### 参照結果フィルタリング
 
-照会された結果で次の項目の値に基づいて、希望する結果をフィルタリングできます。
+取得結果は次の基準でフィルタリングできます。
 
-:::info
+* **Access Type**: **Full Scan** または **Index Scan** を基準に結果をフィルタリング 
 
-- **Access Type**: **Full Scan**または**Index Scan**に基づいて結果をフィルタリングできます。
-
-- **Object Name**: オブジェクト名に基づいてフィルタリングできます。
-
-:::
+* **Object Name**: オブジェクト名を基準にフィルタリング
 
 #### Access Typeフィルター条件を追加する
 
-1. <Cmdname sid="filter" className="uitext" />オプションを選択します。
+1. 画面上部の <Cmdname sid="filter" className="uitext" /> オプションで、<LinkImage img="ico-add.svg" className="ico" /> ボタンをクリックします。
 
-   <ImgLang img="db-analysis-sql-access-statistics-filter.png" desc="フィルター" />
+1. <Cmdname sid="TTL06737" className="uitext" /> で **Access Type** 項目と <Cmdname sid="equal" className="uitext" /> 条件を選択し、**FULL** または **INDEX** を選びます。
 
-2. <Cmdname sid="TTL06737" className="uitext" />で**FULL**または**INDEX**項目を選択します。
+1. <Cmdname sid="apply" className="uitext" /> ボタンをクリックします。
 
-3. <Cmdname sid="apply" className="uitext" />ボタンを選択します。
-
-4. 選択した条件をSQLリストに反映するには、![検索アイコン](/img/ico-btn-search.png)ボタンを選択します。
+1. 選択した条件を SQL 一覧に反映するには、![検索アイコン](/img/ico-btn-search.png) ボタンをクリックします。
 
 :::note
 
@@ -70,50 +69,56 @@ Full Scan、Index Scanをすべて検索するには、<Cmdname sid="TTL06737" c
 
 #### Object Nameフィルター条件を追加する
 
-<ImgLang img="db-analysis-sql-access-object-filter-add.png" desc="フィルター" />
+1. 画面上部の <Cmdname sid="filter" className="uitext" /> オプションで、<LinkImage img="ico-add.svg" className="ico" /> ボタンをクリックします。
 
-1. <Cmdname sid="filter" className="uitext" />オプションで<LinkImage img="ico-add.svg" className="ico" />ボタンを選択します。
+1. <Cmdname sid="TTL06617" className="uitext" /> で **Object Name** 項目と <Cmdname sid="equal" className="uitext" /> 条件を選択します。
 
-2. <Cmdname sid="TTL06617" className="uitext" />ポップアップで**Object Name**項目と<Cmdname sid="equal" className="uitext" />条件を選択します。
+1. 空の入力欄をクリックし、表示されたオブジェクトリストから目的のオブジェクト名を選択します。
 
-3. 空の入力欄を選択し、表示されるオブジェクトの一覧から目的のオブジェクト名を選択します。
+1. <Cmdname sid="apply" className="uitext" /> ボタンをクリックします。
 
-4. <Cmdname sid="apply" className="uitext" />ボタンを選択します。
-
-5. 選択した条件をSQLリストに反映するには、![検索アイコン](/img/ico-btn-search.png)ボタンを選択します。
+1. 選択した条件を SQL 一覧に反映するには、![検索アイコン](/img/ico-btn-search.png) ボタンをクリックします。
 
 :::note
 
-- フィルタリング条件を追加するには、<Cmdname sid="bsm_button_add" className="uitext" />ボタンを選択し、1 ~ 5の手順を繰り返します。 追加した条件は、AND(`&&`) 条件として適用されます。
+**フィルター条件の追加と削除**
 
-- 条件を追加する時に一部の項目を削除するには、フィルター条件の右側の![削除アイコン](/img/ico-trash.svg)ボタンを選択します。 全体の条件を削除するには、![削除アイコン](/img/ico-trash.svg) <Cmdname sid="BTN06616" className="uitext" />ボタンを選択します。
+* フィルタリング条件を追加するには、<Cmdname sid="bsm_button_add" className="uitext" /> ボタンをクリックし、手順 1～5 を繰り返します。追加された条件は AND（`&&`）条件として適用されます。
 
-- <Cmdname sid="filter" className="uitext" />オプションに適用された条件をすばやく削除するには、<LinkImage img="ico-close.svg" className="ico" />ボタンを選択します。
+* 条件追加中に一部の項目を削除する場合は、フィルター条件の右側にある ![削除アイコン](/img/ico-trash.svg) ボタンをクリックします。すべての条件を削除するには、![削除アイコン](/img/ico-trash.svg) <Cmdname sid="BTN06616" className="uitext" /> ボタンをクリックします。
+
+* <Cmdname sid="filter" className="uitext" /> オプションに適用された条件をすばやく削除するには、<LinkImage img="ico-close.svg" className="ico" /> ボタンをクリックします。
 
 :::
 
 #### フィルター条件を修正する
 
-<ImgLang img="db-analysis-sql-access-object-filter-edit.png" desc="フィルターの修正" />
+1. 画面上部の <Cmdname sid="filter" className="uitext" /> オプションで、適用されている項目をクリックします。
 
-<Cmdname sid="filter" className="uitext" />オプションに適用されている項目をクリックします。 <Cmdname sid="TTL06737" className="uitext" />画面が表示されたら、必要な項目を修正し<Cmdname sid="apply" className="uitext" />ボタンを選択します。
+1. <Cmdname sid="TTL06737" className="uitext" /> ウィンドウで目的の項目を修正し、<Cmdname sid="apply" className="uitext" /> ボタンをクリックします。
 
 ## Plan Change History {#plan_change_history}
 
-同一のSQL IDを持つSQL文がオプティマイザによって他の実行プランに変更された場合を感知します。 これは性能に影響を与える可能性があるため、モニタリングが必要です。 プラン変更による性能変化を感知して対応し、不要なプラン変更を識別してSQL性能の一貫性を維持できます。
+**Plan Change History** タブでは、同じ SQL ID でも実行計画が変更されるとパフォーマンスに影響を与える可能性があります。  
+オプティマイザーによるプラン変更を検知・監視することで、不要な変更を防ぎ、SQL パフォーマンスの一貫性を維持できます。
 
-<ImgLang img="db-analysis-sql-plan-change-history.png" desc="Plan Change History" />
+1. <Cmdname sid="side_analysis" className="uitext" /> > <Cmdname sid="side_dbSqlPlanAnalysis" className="uitext" /> の **Plan Change Historys** タブに移動します。
 
-画面上で照会時間と対象を選択します。 <Cmdname sid="time" className="uitext" />と<Cmdname sid="instance" className="uitext" />オプションを設定した後![検索アイコン](/img/ico-btn-search.png)ボタンを選択します。
+1. 照会時間とインスタンスを選択します。
 
-**Plan Change Count**セクションは、時間帯別のプラン変更が起きた回数を確認できる棒グラフチャートです。 特定の時間帯を選択すると、選択した時間のプラン変更の一覧を表示します。
+1. <Cmdname sid="time" className="uitext" /> および <Cmdname sid="instance" className="uitext" /> オプションを設定し、![検索アイコン](/img/ico-btn-search.png) ボタンをクリックします。
+
+1. **Plan Change Count** セクションで特定の時間帯を選択すると、その時間に発生したプラン変更の一覧が表示されます。
+
+   - **Plan Change Count** セクション: 時間帯ごとに発生したプラン変更の回数を確認できる棒グラフチャートです。
 
 ### Plan変更事項を確認する
 
-画面下部の一覧で特定の変更項目を選択すると、画面下にプラン変更前後の詳細が確認できる**Query**セクションが表示されます。 プラン変更前後の相違点を詳細に比較することにより、どの変更が性能に影響したかを把握できます。
+1. <Cmdname sid="side_dbSqlPlanAnalysis" className="uitext" /> の **Plan Change Historys** タブの一覧から特定の変更項目をクリックします。
 
-<ImgLang img="db-analysis-sql-plan-change-history-diff.png" desc="Plan Change History" />
+1. **Query** セクションに、プラン変更前後の詳細が表示されます。  
+   プランの差分を比較して、パフォーマンス変化の原因を特定できます。
 
-- **Query**セクションで右上の![新しいウィンドウのアイコン](/img/ic-popup.svg)ボタンを選択すると、そのセクションを新しいウィンドウに開いて確認できます。
+    * **Query** セクションの右上にある ![新しいウィンドウアイコン](/img/ic-popup.svg) ボタンをクリックすると、そのセクションを新しいウィンドウで確認できます。
 
-- **Query**セクションを閉じるには、右上の![閉じるアイコン](/img/ico-close.svg)ボタンを選択します。
+1. **Query** セクションを閉じるには、右上の ![閉じるアイコン](/img/ico-close.svg) ボタンをクリックします。
