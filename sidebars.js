@@ -7085,7 +7085,7 @@ const sidebars = {
       items: [
         'reference/changes-db-xos-metrics-guide',
         'reference/cloudwatch-metric-guide',
-        'reference/script-manager',
+        // 'reference/script-manager',
         {
           type: 'link',
           href: '../db-support-functions',

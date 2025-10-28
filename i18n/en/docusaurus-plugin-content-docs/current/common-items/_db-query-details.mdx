@@ -2,27 +2,30 @@
 
 <InDoc pages="instance-monitoring,multi-instance-monitoring">
 
-To check the SQL query information of the executing session, select the **_query_** (or **_sql_text_**) column in the <Cmdname sid="active_sessions" className="uitext" /> section. The <Cmdname sid="TTL06224" className="uitext" /> window appears. You can check the SQL query statements and plan information.
+To check the SQL query information of the executing session, select the **query** (or **sql_text**) column in the <Cmdname sid="active_sessions" className="uitext" /> section. The <Cmdname sid="TTL06224" className="uitext" /> window appears. You can check the SQL query statements and plan information.
 
 </InDoc>
 
 <InDoc pages="analysis-compare-top-sql">
 
-To see the detailed SQL information, select the **_query_** column in the SQL ranking table. The <Cmdname sid="TTL06224" className="uitext" /> window appears. You can check the SQL query statements and plan information.
+To see the detailed SQL information, select the **query** column in the SQL ranking table. The <Cmdname sid="TTL06224" className="uitext" /> window appears. You can check the SQL query statements and plan information.
 
 </InDoc>
 
 <InDoc pages="slow-query">
 
-To check the SQL query information of the current running session, select the **_SQL_** column in the **_Slow Query List_** section. The <Cmdname sid="TTL06224" className="uitext" /> window appears. You can check the SQL query statements and plan information.
+To check the SQL query information of the current running session, select the **SQL** column in the **Slow Query List** section. The <Cmdname sid="TTL06224" className="uitext" /> window appears. You can check the SQL query statements and plan information.
 
 </InDoc>
 
 <InDoc pages="analysis-sql">
 
-If you select the **_query_** column from the SQL list at the bottom of the screen, the <Cmdname sid="TTL06224" className="uitext" /> window appears. You can check the SQL query statements and plan information.
+If you select the **query** column from the SQL list at the bottom of the screen, the <Cmdname sid="TTL06224" className="uitext" /> window appears. You can check the SQL query statements and plan information.
 
 </InDoc>
+
+Click the <Cmdname sid="BTN06225" className="uitext" /> **→** button to move to <Cmdname sid="statistics_sql" className="uitext" />,  
+where you can view statistical information related to the selected SQL query.
 
 <InDoc product="oracle-pro,oracle"><ImgLang img="db-sql-details-oracle-pro.png" desc="SQL details" /></InDoc>
 
@@ -34,35 +37,33 @@ If you select the **_query_** column from the SQL list at the bottom of the scre
 
 <Xclude product="postgresql,mysql,oracle-pro,oracle,mssql,db2,sapase"><ImgLang img="db-sql-details-common.png" desc="SQL details" /></Xclude>
 
-- <Cmdname sid="BTN06225" className="uitext" />: You can go to the <Cmdname sid="statistics_sql" className="uitext" /> menu where you can check statistical information related to the SQL query statement.
-
 <InDoc product='postgresql,mysql,altibase,cubrid,mssql,db2'>
 
-- **_Default Bind_**: You can bind the part set as a variable in the query sentence to the default value.
+- **Default Bind**: You can bind the part set as a variable in the query sentence to the default value.
 
-- **_Reset Bind_**: You can release the bound default value and check the variable.
+- **Reset Bind**: You can release the bound default value and check the variable.
 
-- **_Formatting_**: You can improve readability by applying indentation and formatting to a SQL query statement.
+- **Formatting**: You can improve readability by applying indentation and formatting to a SQL query statement.
 
 </InDoc>
 
 <InDoc product="altibase,cubrid,mssql">
 
-- **_Plan_**: To check plan information, enter **DB Name**, **User Name**, and **Password**, and then select ![Search icon](/img/ico-btn-search.png).
+- **Plan**: To check plan information, enter **DB Name**, **User Name**, and **Password**, and then select ![Search icon](/img/ico-btn-search.png).
 
 </InDoc>
 
 <InDoc product='postgresql'>
 
-- **_Plan_**: To check plan information, enter **DB Name**, **User Name**, and **Password**, and then select ![Search icon](/img/ico-btn-search.png).
+- **Plan**: To check plan information, enter **DB Name**, **User Name**, and **Password**, and then select ![Search icon](/img/ico-btn-search.png).
 
-  - **_Text_**: You can check plan information in text format.
+  - **Text**: You can check plan information in text format.
 
-  - **_JSON_**: By viewing the plan information in Json format, you can quickly find the points where bottlenecks occur.
+  - **JSON**: By viewing the plan information in Json format, you can quickly find the points where bottlenecks occur.
 
   :::note
 
-  The function to view plan information in **_JSON_** format is supported only in DBX agent 1.6.12 or later.
+  The function to view plan information in **JSON** format is supported only in DBX agent 1.6.12 or later.
 
   :::
 
@@ -70,15 +71,15 @@ If you select the **_query_** column from the SQL list at the bottom of the scre
 
 <InDoc product='mysql'>
 
-- **_Plan_**: To check plan information, enter **DB Name**, **User Name**, and **Password**, and then select ![Search icon](/img/ico-btn-search.png).
+- **Plan**: To check plan information, enter **DB Name**, **User Name**, and **Password**, and then select ![Search icon](/img/ico-btn-search.png).
 
-  - **_Text_**: You can check plan information in text format.
+  - **Text**: You can check plan information in text format.
 
-  - **_JSON_**: By viewing the plan information in Json format, you can quickly find the points where bottlenecks occur.
+  - **JSON**: By viewing the plan information in Json format, you can quickly find the points where bottlenecks occur.
 
   :::note
 
-  The function to view plan information in **_JSON_** format is supported only in DBX agent 1.6.15 or later.
+  The function to view plan information in **JSON** format is supported only in DBX agent 1.6.15 or later.
 
   :::
 
@@ -86,13 +87,13 @@ If you select the **_query_** column from the SQL list at the bottom of the scre
 
 <InDoc product='oracle-pro,oracle'>
 
-- **_Runtime Plan_**: It provides the execution plan and runtime information for a selected SQL query. It provides the information details such as execution count, average execution time, and average physical reads.
+- **Runtime Plan**: It provides the execution plan and runtime information for a selected SQL query. It provides the information details such as execution count, average execution time, and average physical reads.
 
-- **_Explain Plan_**: It displays the execution plan predicted by the optimizer. It provides information such as cost, job, object name, and cardinality.
+- **Explain Plan**: It displays the execution plan predicted by the optimizer. It provides information such as cost, job, object name, and cardinality.
 
-- **_Plan History_**: You can check the history of the execution plans of the SQL queries executed in the database.
+- **Plan History**: You can check the history of the execution plans of the SQL queries executed in the database.
 
-- **_Bind Capture_**: You can see the values ​​of the bind variables used in SQL queries executed in the database. This allows you to see actual content of query executions.
+- **Bind Capture**: You can see the values ​​of the bind variables used in SQL queries executed in the database. This allows you to see actual content of query executions.
 
   :::note
 
@@ -106,7 +107,7 @@ If you select the **_query_** column from the SQL list at the bottom of the scre
 
 :::tip
 
-If you select a table or index while viewing the plan information in **_JSON_** format, the **_Object detail_** window appears where you can see the configurations for **columns** and **index** items in the table.
+If you select a table or index while viewing the plan information in **JSON** format, the **Object detail** window appears where you can see the configurations for **columns** and **index** items in the table.
 
 <ImgLang img='db-sql-objectdetail-pg.png' desc='Object detail' />
 
