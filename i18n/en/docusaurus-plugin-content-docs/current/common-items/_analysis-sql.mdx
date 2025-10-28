@@ -1,24 +1,28 @@
 Home &gt; Select Project &gt; <Cmdname sid="side_analysis" className="uitext" /> &gt; <Cmdname sid="side_dbSqlAnalysis" className="uitext" />
 
-It provides useful information for diagnosing performance issues by analyzing SQL statements executed on the database. The <Cmdname sid="side_dbSqlAnalysis" className="uitext" /> menu consists of two key tabs. 
-
-- **Access Statistics**: You can check the SQL that caused Full Scan, which may be the cause of the performance degradation.
-
-- **Plan Change History**: It detects the case when a SQL statement with the same SQL ID is changed to a different execution plan by the optimizer. This can affect the performance and needs to be monitored.
+It provides useful data for diagnosing performance issues by analyzing SQL statements executed in the database.  
+<Cmdname sid="side_dbSqlPlanAnalysis" className="uitext" /> consists of the [Access Statistics](#access_statistics) tab and the [Plan Change History](#plan_change_history) tab.
 
 ## Access Statistics {#access_statistics}
 
-You can check the SQL that caused Full Scan, which may be the cause of the performance degradation. You can check the number of Full Scan occurrences by time and type. This allows you to optimize SQL statements that frequently cause Full Scan and optimize resource usage by reducing unnecessary full scans. Also consider replacing Full Scan with Index Scan to improve the query performance.
+In the **Access Statistics** tab, you can check when each SQL performs a Full Scan, its type, and how many times it occurs. Queries that frequently trigger Full Scans can be optimized to use indexes, improving performance and reducing resource usage.
 
-<ImgLang img="db-analysis-sql-access-statistics.png" desc="AccessStatistics" />
+1. Go to the **Access Statistics** tab in <Cmdname sid="side_analysis" className="uitext" /> > <Cmdname sid="side_dbSqlPlanAnalysis" className="uitext" />.
 
-Select the query time and target on the screen. Select the <Cmdname sid="time" className="uitext" /> and <Cmdname sid="instance" className="uitext" /> options, and then select ![Search icon](/img/ico-btn-search.png). If necessary, you can filter the desired query results by setting the <Cmdname sid="filter" className="uitext" /> option.
+1. Select the query time and instance.
 
-- **Access Count**: This bar graph chart allows you to check the number of Full Scan occurrences by the time zone. When you select a specific time zone, a list of SQLs performed during the selected time is displayed in the list at the bottom of the screen and in the **Operation Count** chart on the right.
+1. Set the <Cmdname sid="time" className="uitext" /> and <Cmdname sid="instance" className="uitext" /> options, then click the ![Search icon](/img/ico-btn-search.png) button.  
+   If needed, you can also configure the <Cmdname sid="filter" className="uitext" /> option to filter the results.
 
-- **Operation Count**: You can check the type and number of full scans that occurred. You can see the object name by hovering your mouse over each bar.
+1. Review the search results in the **Access Count** and **Operation Count** sections.
 
-  ![Operation Count](/img/db-analysis-sql-access-statistics-op-count.png)
+    * **Access Count**: A bar chart showing the number of Full Scans by time range.  
+      Selecting a specific time displays the list of SQL statements executed during that time in the bottom list and updates the **Operation Count** chart on the right.
+
+    * **Operation Count**: Displays the types and counts of Full Scans.  
+      Hovering over each bar shows the object name.
+
+        ![Operation Count](/img/db-analysis-sql-access-statistics-op-count.png)
 
 import QueryDetails from "../common-items/_db-query-details.mdx";
 
@@ -41,81 +45,80 @@ import QueryDetails from "../common-items/_db-query-details.mdx";
 
 ### Filtering the searched results
 
-You can filter the desired results based on the values ​​of the following items in the searched results.
+You can filter the retrieved results based on the following criteria:
 
-:::info
+* **Access Type**: Filter results by **Full Scan** or **Index Scan**.
 
-- **Access Type**: You can filter results by **Full Scan** or **Index Scan**.
-
-- **Object Name**: You can filter based on the object name.
-
-:::
+* **Object Name**: Filter results by the object name.
 
 #### Adding the access type filtering conditions
 
-1. Select the <Cmdname sid="filter" className="uitext" /> option.
+1. In the <Cmdname sid="filter" className="uitext" /> option at the top of the screen, click the <LinkImage img="ico-add.svg" className="ico" /> button.
 
-   <ImgLang img="db-analysis-sql-access-statistics-filter.png" desc="Filter" />
+1. In <Cmdname sid="TTL06737" className="uitext" />, select the **Access Type** item and the <Cmdname sid="equal" className="uitext" /> condition, then choose either **FULL** or **INDEX**.
 
-2. In <Cmdname sid="TTL06737" className="uitext" />, select **FULL** or **INDEX**.
+1. Click the <Cmdname sid="apply" className="uitext" /> button.
 
-3. Select <Cmdname sid="apply" className="uitext" />.
-
-4. To apply the selected conditions to the SQL list, select the ![Search icon](/img/ico-btn-search.png) button.
+1. To apply the selected conditions to the SQL list, click the ![Search icon](/img/ico-btn-search.png) button.
 
 :::note
 
-To search all for Full Scan and Index Scan, in <Cmdname sid="TTL06737" className="uitext" />, select all options for **FULL** and **INDEX**. Or by selecting the ![Plus icon](/img/ic-s-plus.svg) button, you add more filtering options.
+To search all for Full Scan and Index Scan, in <Cmdname sid="TTL06737" className="uitext" />, select all options for **FULL** and **INDEX**. By selecting the ![Plus icon](/img/ic-s-plus.svg) button, you add more filtering options.
 
 :::
 
 #### Adding the object name filtering conditions
 
-<ImgLang img="db-analysis-sql-access-object-filter-add.png" desc="Filter" />
+1. In the <Cmdname sid="filter" className="uitext" /> option at the top of the screen, click the <LinkImage img="ico-add.svg" className="ico" /> button.
 
-1. In the <Cmdname sid="filter" className="uitext" /> option, select <LinkImage img="ico-add.svg" className="ico" />.
+1. In <Cmdname sid="TTL06617" className="uitext" />, select the **Object Name** item and the <Cmdname sid="equal" className="uitext" /> condition.
 
-2. In the <Cmdname sid="TTL06617" className="uitext" /> popup, select **Object Name** and the <Cmdname sid="equal" className="uitext" /> condition.
+1. Click the empty input field and choose the desired object name from the displayed object list.
 
-3. Select an empty input field and then select a desired object name from the object list.
+1. Click the <Cmdname sid="apply" className="uitext" /> button.
 
-4. Select <Cmdname sid="apply" className="uitext" />.
-
-5. To apply the selected conditions to the SQL list, select the ![Search icon](/img/ico-btn-search.png) button.
+1. To apply the selected conditions to the SQL list, click the ![Search icon](/img/ico-btn-search.png) button.
 
 :::note
 
-- To add filtering conditions, select <Cmdname sid="bsm_button_add" className="uitext" /> and then repeat Step 1 to 5. Added conditions are applied based on AND (`&&`).
+**Adding and Deleting Filter Conditions**
 
-- To delete some items while adding conditions, select ![Delete icon](/img/ico-trash.svg) on the right of the filter conditions. To delete all conditions, select ![Delete icon](/img/ico-trash.svg) <Cmdname sid="BTN06616" className="uitext" />.
+- To add a filtering condition, click the <Cmdname sid="bsm_button_add" className="uitext" /> button and repeat steps 1~5. Added conditions are applied using the AND (`&&`) operator.
 
-- To quickly delete the conditions applied to the <Cmdname sid="filter" className="uitext" /> option, select <LinkImage img="ico-close.svg" className="ico" />.
+- To delete specific conditions while adding, click the ![Delete icon](/img/ico-trash.svg) button on the right side of the filter condition. To delete all conditions, click the ![Delete icon](/img/ico-trash.svg) <Cmdname sid="BTN06616" className="uitext" /> button.
+
+- To quickly remove all applied conditions from the <Cmdname sid="filter" className="uitext" /> option, click the <LinkImage img="ico-close.svg" className="ico" /> button.
 
 :::
 
 #### Modifying the filter conditions
 
-<ImgLang img="db-analysis-sql-access-object-filter-edit.png" desc="Edit filter" />
+1. Click the applied item in the <Cmdname sid="filter" className="uitext" /> option at the top of the screen.
 
-Click any applied to the <Cmdname sid="filter" className="uitext" /> option. If the <Cmdname sid="TTL06737" className="uitext" /> window appears, modify any desired items and then select <Cmdname sid="apply" className="uitext" />.
+1. In the <Cmdname sid="TTL06737" className="uitext" /> window, edit the desired item and click the <Cmdname sid="apply" className="uitext" /> button.
 
 ## Plan Change History {#plan_change_history}
 
-It detects the case when a SQL statement with the same SQL ID is changed to a different execution plan by the optimizer. This can affect the performance and needs to be monitored. By detecting and responding to performance changes due to plan changes, you can identify unnecessary plans and maintain the consistent SQL performance.
+In the **Plan Change History** tab, even if the SQL ID is the same, performance can be affected when the execution plan changes.  
+By detecting and monitoring plan changes made by the optimizer, you can prevent unnecessary changes and maintain consistent SQL performance.
 
-<ImgLang img="db-analysis-sql-plan-change-history.png" desc="Plan Change History" />
+1. Go to the **Plan Change Historys** tab in <Cmdname sid="side_analysis" className="uitext" /> > <Cmdname sid="side_dbSqlPlanAnalysis" className="uitext" />.
 
-Select the query time and target on the screen. Select the <Cmdname sid="time" className="uitext" /> and <Cmdname sid="instance" className="uitext" /> options, and then select ![Search icon](/img/ico-btn-search.png).
+1. Select the query time and instance.
 
-The **Plan Change Count** section is a bar graph chart that displays the number of plan changes that occurred over time. When you select a time zone, a list of plan changes for the selected time appears.
+1. Set the <Cmdname sid="time" className="uitext" /> and <Cmdname sid="instance" className="uitext" /> options, then click the ![Search icon](/img/ico-btn-search.png) button.
 
+1. In the **Plan Change Count** section, select a specific time period to view the list of plan changes that occurred during that time.
+
+   - **Plan Change Count** section: A bar chart showing the number of plan changes that occurred by time period.
 
 ### Checking the plan change details
 
-When you select a specific change from the list at the bottom of the screen, a **Query** section appears at the bottom of the screen where you can see the details before and after the plan change. By comparing the differences before and after the plan change in detail, you can determine which change affected the performance.
+1. In the **Plan Change Historys** tab of <Cmdname sid="side_dbSqlPlanAnalysis" className="uitext" />, click a specific change item from the list.
 
-<ImgLang img="db-analysis-sql-plan-change-history-diff.png" desc="Plan Change History" />
+1. In the **Query** section, details before and after the plan change are displayed.  
+   Compare the differences to identify the cause of performance changes.
 
-- You can open the **Query** section in a new window by selecting ![New window viewing icon](/img/ic-popup.svg) on the upper right of the section.
+    * In the **Query** section, click the ![Open in new window icon](/img/ic-popup.svg) button in the upper-right corner to view the section in a new window.
 
-- To close the **Query** section, select ![Close icon](/img/ico-close.svg) in the upper right corner.
+1. To close the **Query** section, click the ![Close icon](/img/ico-close.svg) button in the upper-right corner.
