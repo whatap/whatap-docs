@@ -455,3 +455,30 @@
   The number of job history collections is limited to 50 (default).
 
 </InDoc>
+
+### User Metric Collection (SQLMON)
+
+SQLMON periodically collects the results of user-defined SQL queries and stores them as metrics.  
+It is suitable for lightweight queries that return numeric results.
+
+* **sqlmon** <span class='type'>Int</span>
+
+  Default value: `1`
+
+  - `1`: Run both dbx and sqlmon simultaneously  
+  - `2`: Run only sqlmon  
+
+  Supported version: 2.3.5 or later
+
+#### Configuration
+
+1. Create a `sqlmon` directory in the agent installation path.  
+2. Save the query to be collected as a `.sql` file.  
+3. Enable SQLMON in `whatap.conf`.  
+4. Restart the agent.  
+5. Check the `sqlmon` category in the Metrics view.
+
+```properties
+# whatap.conf
+sqlmon=1
+```
