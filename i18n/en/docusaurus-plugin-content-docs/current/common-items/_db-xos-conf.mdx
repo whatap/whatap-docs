@@ -198,3 +198,26 @@ Copy the _xos_ directory to the database server, and then enter the agent server
   :::
 
 </InDoc>
+
+### User Metric Collection (SHMON)
+
+SHMON periodically collects the results of user-defined shell scripts and stores them as metrics.
+
+* **shmon** <span class='type'>Int</span>
+
+  Default value: `1`
+
+  Supported version: dbx 2.55.01 or later & xos 1.2.0f or later
+
+#### Configuration
+
+1. Create a `shmon` directory in the agent installation path.  
+2. Save the script to be collected as a `.sh` file.  
+3. Enable SHMON in `xos.conf`.  
+4. Restart the agent.  
+5. In the ![아이콘](/img/ic-sitemap.svg) <Cmdname sid="sitemap" className="uitext" /> &gt; <Cmdname sid="side_metricsSearch" className="uitext" /> menu, check the `shmon` category.
+
+```properties
+# xos.conf
+shmon=1
+```

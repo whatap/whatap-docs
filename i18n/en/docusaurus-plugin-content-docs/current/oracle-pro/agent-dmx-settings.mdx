@@ -234,6 +234,10 @@ The minimum unit for collecting segment sizes is 10 MB by default. Segments less
   - `-1`: This option is disabled.  
   - `0`: It collects all jobs.
 
+import SQLMON from "../common-items/_db-agent-setting-sqlmon.mdx";
+
+<SQLMON />
+
 ### Applying the AES 256 encryption
 
 WhaTap DMX agent encrypts the collected data and transmits the encrypted data to the server. You can change this depending on the importance of the data or setting. Basically, the XOR operation and encryption through the AES algorithm are used, and encryption and decryption are performed by dividing the plain text into 128-bit units. It can be expanded up to 256 bits depending on the setting.

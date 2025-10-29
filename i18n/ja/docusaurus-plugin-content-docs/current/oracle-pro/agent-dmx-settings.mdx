@@ -225,6 +225,10 @@ import Dbagentdbxbasicoption from "../common-items/_db-agent-dbx-basic-option.md
   - `-1`: このオプションを非活性化します。  
   - `0`: すべての作業を収集します。
 
+import SQLMON from "../common-items/_db-agent-setting-sqlmon.mdx";
+
+<SQLMON />
+
 ### AES256暗号化の適用
 
 WhaTap DMXエージェントは、収集されたデータを暗号化してサーバーに送信します。 データの重要度や設定によって変更できます。 基本的にXOR演算とAESアルゴリズムによる暗号化を使用し、平文を128ビット単位に分割して暗号化、復号を行います。 ユーザー設定により、256ビットまで拡張できます。
