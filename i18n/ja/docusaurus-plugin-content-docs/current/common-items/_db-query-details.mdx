@@ -1,4 +1,4 @@
-<Title hashid="query-details" level={props.level}>クエリの詳細を見る</Title>
+<Title hashid="query-details" level={props.level}>SQL 詳細情報の確認</Title>
 
 <InDoc pages="instance-monitoring,multi-instance-monitoring">
 
@@ -113,5 +113,36 @@
 この機能は、DBXエージェント1.6.15バージョン以降に対応しています。 データベース権限に関する設定は、[次の文書](install-agent#uid)を参考にしてください。
 
 :::
+
+</InDoc>
+
+<InDoc product='postgresql,mysql,oracle,oracle-pro,mssql'>
+
+#### AI チューニングガイド {#ai-tuning-Guide-db}
+
+AI チューニングガイドは、SQL クエリ、プラン、統計情報を分析してパフォーマンス問題を診断し、最適化の提案を行う機能です。  
+開発者や DBA がボトルネックの原因を迅速に特定し、効率的な SQL によりパフォーマンスを改善できるよう支援します。
+
+:::caution
+**使用条件および注意事項**
+
+**PostgreSQL、MySQL、SQL Server** ではプランの取得が必須です。  
+プランを取得しない場合、AI チューニングガイドアイコンは ![無効な AI チューニングガイドアイコン](/img/ico-ai-tuning-icon-disabled.svg)（無効）として表示され、機能を使用できません。
+
+* AI が生成する結果は自動分析に基づいており、精度が 100% ではないことにご留意ください。
+:::
+
+1. 分析および診断する SQL をクリックし、<Cmdname sid="TTL06224" className="uitext" /> 画面に移動します。
+
+1. <Cmdname sid="TTL06224" className="uitext" /> 画面の右下にある AI チューニングガイドアイコン ![AI チューニングガイドアイコン](/img/ico-ai-tuning-icon.svg) をクリックして AI 分析を開始します。
+
+1. AI 分析結果を確認します。
+
+    | 結果項目 | 説明 |
+    | :---: | --- |
+    | クエリプランおよび概要 | クエリの目的と実行概要を表示します。<br /> 実行回数、累積実行時間、データベース全体の負荷比率を分析し、当該 SQL がシステムパフォーマンスに与える影響を評価します。 |
+    | パフォーマンス分析 | 分析結果を総合し、パフォーマンススコアと診断結果を提供します。<br /> CPU 使用率、ディスク使用率、キャッシュヒット率、待機時間など、クエリ実行過程における詳細なリソース使用量を分析し、ボトルネックの発生区間を視覚的に表示します。 |
+    | 発見された主な問題 | 主な問題点を要約して表示します。 |
+    | 最適化推奨事項 | 検出された問題に基づき、最適化されたクエリを提案します。 |
 
 </InDoc>
