@@ -1,0 +1,293 @@
+[
+    {
+        "url": "https://docs.whatap.io/release-notes/service/service-2_22_x",
+        "ver": "Service 2.22.0",
+        "date": "2025-10-29",
+        "Lists": [
+            {
+            "ver": "Service 2.22.0",
+            "hash": "service-2220",
+            "product": "共通",
+            "type": "New",
+            "desc": "<p><code class=\"New\" type=\"1\">New</code> OpenMetrics を追加</p>"
+            },
+            {
+            "ver": "Service 2.22.0",
+            "hash": "service-2220",
+            "product": "共通",
+            "type": "Changed",
+            "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> ライセンスキーがない場合の表示文言を修正</p>"
+            },
+            {
+            "ver": "Service 2.22.0",
+            "hash": "service-2220",
+            "product": "Application",
+            "type": "Feature",
+            "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">管理</span> にエージェントリストと CSV ダウンロードを追加</p>"
+            },
+            {
+            "ver": "Service 2.22.0",
+            "hash": "service-2220",
+            "product": "Application",
+            "type": "Changed",
+            "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> <span class=\"uitext\">統合 Flex ボード</span> のアクティブトランザクション TopN ウィジェットで複数プロジェクトを選択可能に変更</p>"
+            },
+            {
+            "ver": "Service 2.22.0",
+            "hash": "service-2220",
+            "product": "Application",
+            "type": "Changed",
+            "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> <span class=\"uitext\">分析</span> &gt; <span class=\"uitext\">パフォーマンストレンド</span> で、3日を超える照会時は同時接続ユーザーではなく訪問者指標を表示</p>"
+            },
+            {
+            "ver": "Service 2.22.0",
+            "hash": "service-2220",
+            "product": "Application",
+            "type": "Changed",
+            "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> <span class=\"uitext\">分析</span> &gt; <span class=\"uitext\">パフォーマンストレンド</span> 検索ボタンを押す前に自動照会しないように変更</p>"
+            },
+            {
+            "ver": "Service 2.22.0",
+            "hash": "service-2220",
+            "product": "Application",
+            "type": "Fixed",
+            "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">統計</span> の SQL・トランザクションカラムの案内アイコン／ツールチップを復元</p>"
+            },
+            {
+            "ver": "Service 2.22.0",
+            "hash": "service-2220",
+            "product": "Server",
+            "type": "Feature",
+            "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">GPU インベントリ</span> テーブルのカスタムカラムヘッダーにカスタムタグを表示して判別しやすく改善</p>"
+            },
+            {
+            "ver": "Service 2.22.0",
+            "hash": "service-2220",
+            "product": "Server",
+            "type": "Feature",
+            "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">イベント設定</span> &gt; <span class=\"uitext\">ファイルキーワード監視 / Windows イベント監視 / ファイル監視</span> タブにファイル監視イベント設定を追加</p>"
+            },
+            {
+            "ver": "Service 2.16.0",
+            "hash": "service-2160",
+            "product": "Server",
+            "type": "Changed",
+            "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> <span class=\"uitext\">イベント設定</span> のタブ名を 既存ログファイル、Windows イベント → ファイルキーワード監視、Windows イベント監視 に変更</p>"
+            },
+            {
+            "ver": "Service 2.22.0",
+            "hash": "service-2220",
+            "product": "Server",
+            "type": "Fixed",
+            "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">GPU パフォーマンスサマリー</span> の BAR1_Total_Memory フィールド値にカンマフォーマットが適用されない問題を修正</p>"
+            },
+            {
+            "ver": "Service 2.22.0",
+            "hash": "service-2220",
+            "product": "Kubernetes",
+            "type": "Feature",
+            "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">GPU トレンド</span> を追加</p>",
+            "details": "<ul>\n<li><p>凡例に単位(%)を表示</p></li>\n<li><p>チャートセルに値を表示</p></li>\n<li><p>並べ替え機能を追加</p></li>\n<li><p>フィルター機能を追加</p></li>\n<li><p>プリセット機能を追加（ソートとフィルター値を保存）</p></li>\n</ul>"
+            },
+            {
+            "ver": "Service 2.22.0",
+            "hash": "service-2220",
+            "product": "Kubernetes",
+            "type": "Feature",
+            "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> Pod 一覧に Whatap カスタム GPU 指標を追加</p>"
+            },
+            {
+            "ver": "Service 2.22.0",
+            "hash": "service-2220",
+            "product": "Kubernetes",
+            "type": "Feature",
+            "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">GPU ダッシュボード</span> のマップチャートをクリックして開くドロワーのメトリクスタブで任意の時間を指定してメトリクスを照会可能に</p>"
+            },
+            {
+            "ver": "Service 2.22.0",
+            "hash": "service-2220",
+            "product": "Kubernetes",
+            "type": "Changed",
+            "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> <span class=\"uitext\">GPU ダッシュボード</span> のマップチャートで図形が非常に小さくなる場合でも M/P ラベルを表示するよう変更</p>"
+            },
+            {
+            "ver": "Service 2.22.0",
+            "hash": "service-2220",
+            "product": "Kubernetes",
+            "type": "Fixed",
+            "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">ワークロード</span> の Ingress 一覧で一部の Service 情報がリンクされない問題を修正</p>"
+            },
+            {
+            "ver": "Service 2.22.0",
+            "hash": "service-2220",
+            "product": "Database",
+            "type": "New",
+            "desc": "<p><code class=\"New\" type=\"1\">New</code> <span class=\"uitext\">メトリクストレンド分析</span> を追加</p>",
+            "category": "共通"
+            },
+            {
+            "ver": "Service 2.22.0",
+            "hash": "service-2220",
+            "product": "Database",
+            "type": "Feature",
+            "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">ダッシュボード</span> &gt; <span class=\"uitext\">トレンド比較</span> ウィジェットの移動とサイズ変更を可能に</p>",
+            "category": "共通"
+            },
+            {
+            "ver": "Service 2.22.0",
+            "hash": "service-2220",
+            "product": "Database",
+            "type": "Feature",
+            "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">ダッシュボード</span> ウィジェットを改善</p>",
+            "details": "<ul>\n<li><p>[XOS] CPU、[XOS] MEM ウィジェットに凡例表示オプションを追加</p></li>\n<li><p>カスタムウィジェットのイコライザーチャートでパーセンテージ指標を表示する際、y 軸を 100 に固定</p></li>\n<li><p>カスタムウィジェットのデフォルトを「結合なし」に変更</p></li>\n<li><p>カスタムウィジェットの対象結合をエージェント結合に名称変更</p></li>\n<li><p>カスタムウィジェットに凡例表示と表示可否オプションを追加</p></li>\n</ul>",
+            "category": "共通"
+            },
+            {
+            "ver": "Service 2.22.0",
+            "hash": "service-2220",
+            "product": "Database",
+            "type": "Feature",
+            "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">分析</span> &gt; <span class=\"uitext\">データベースパラメータ</span> パラメータ変更履歴の照会機能を追加</p>",
+            "category": "共通"
+            },
+            {
+            "ver": "Service 2.22.0",
+            "hash": "service-2220",
+            "product": "Database",
+            "type": "Changed",
+            "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> インスタンスセレクターの動作を改善</p>",
+            "category": "共通"
+            },
+            {
+            "ver": "Service 2.22.0",
+            "hash": "service-2220",
+            "product": "Database",
+            "type": "Changed",
+            "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> <span class=\"uitext\">スクリプトマネージャー</span> の公開条件をセキュリティ要件に合わせて修正し、開発機とオンプレミス環境のみ表示</p>",
+            "category": "共通"
+            },
+            {
+            "ver": "Service 2.22.0",
+            "hash": "service-2220",
+            "product": "Database",
+            "type": "Fixed",
+            "desc": "<p><code class=\"Fixed\" type=\"1\">Fixed</code> ページアクセス時にインスタンスが選択されていない場合がある問題を修正</p>",
+            "category": "共通"
+            },
+            {
+            "ver": "Service 2.22.0",
+            "hash": "service-2220",
+            "product": "Database",
+            "type": "Fixed",
+            "desc": "<p><code class=\"Fixed\" type=\"1\">Fixed</code> <span class=\"uitext\">ダッシュボード</span> &gt; <span class=\"uitext\">インスタンスモニタリング</span> <code class=\"newfunc\">New</code></p>",
+            "details": "<ul>\n<li><p>1日以上照会後にシリーズチャートをドラッグすると、チャートデータが 5 分間隔の統計データのままになる問題を修正</p></li>\n<li><p>画面の一日比較ウィジェットで小数点が長く表示される問題を修正</p></li>\n</ul>",
+            "category": "共通"
+            },
+            {
+            "ver": "Service 2.22.0",
+            "hash": "service-2220",
+            "product": "Database",
+            "type": "Fixed",
+            "desc": "<p><code class=\"Fixed\" type=\"1\">Fixed</code> <span class=\"uitext\">ダッシュボード</span> &gt; <span class=\"uitext\">インスタンスモニタリング</span> のアクティブセッションテーブルでフィルター選択時にスケールが変動する問題を修正</p>",
+            "category": "共通"
+            },
+            {
+            "ver": "Service 2.22.0",
+            "hash": "service-2220",
+            "product": "Database",
+            "type": "Fixed",
+            "desc": "<p><code class=\"Fixed\" type=\"1\">Fixed</code> <span class=\"uitext\">ダッシュボード</span> の指標セレクターでイベントボタンをクリックしてもイベント設定ページに移動しない問題を修正</p>",
+            "category": "共通"
+            },
+            {
+            "ver": "Service 2.22.0",
+            "hash": "service-2220",
+            "product": "Database",
+            "type": "Fixed",
+            "desc": "<p><code class=\"Fixed\" type=\"1\">Fixed</code> <span class=\"uitext\">分析</span> &gt; <span class=\"uitext\">スクリプトマネージャー</span> のスクリプト一覧にスクロールバーが生成されない問題を修正</p>",
+            "category": "共通"
+            },
+            {
+            "ver": "Service 2.22.0",
+            "hash": "service-2220",
+            "product": "Database",
+            "type": "Feature",
+            "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">エージェントインストール</span> にパッケージマネージャーと Docker のインストールガイドを追加</p>",
+            "category": "MySQL, PostgreSQL, SQL Server"
+            },
+            {
+            "ver": "Service 2.22.0",
+            "hash": "service-2220",
+            "product": "Database",
+            "type": "Feature",
+            "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">ダッシュボード</span> &gt; <span class=\"uitext\">インスタンスモニタリング</span><code class=\"newfunc\">New</code> に XOS と RDS のデフォルトプリセットを追加</p>",
+            "category": "MySQL, PostgreSQL"
+            },
+            {
+            "ver": "Service 2.22.0",
+            "hash": "service-2220",
+            "product": "Database",
+            "type": "Changed",
+            "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> <span class=\"uitext\">ダッシュボード</span> &gt; <span class=\"uitext\">PG SQL 統計</span>、<span class=\"uitext\">MySQL SQL 統計</span> でページアクセス時の自動照会を無効化</p>",
+            "category": "MySQL, PostgreSQL"
+            },
+            {
+            "ver": "Service 2.22.0",
+            "hash": "service-2220",
+            "product": "Database",
+            "type": "Changed",
+            "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> メニュー名の変更</p>",
+            "details": "<ul>\n<li><p><span class=\"uitext\">分析</span> &gt; <span class=\"uitext\">SQL 分析</span> → <span class=\"uitext\">SQL Plan 統計</span></p></li>\n<li><p><span class=\"uitext\">分析</span> &gt; <span class=\"uitext\">カウントトレンド比較</span> → <span class=\"uitext\">トレンド比較</span></p></li>\n</ul>",
+            "category": "Oracle, Oracle Pro"
+            },
+            {
+            "ver": "Service 2.22.0",
+            "hash": "service-2220",
+            "product": "Database",
+            "type": "Changed",
+            "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> <span class=\"uitext\">分析</span> &gt; <span class=\"uitext\">Wait 分析</span> のチャートの単位表示方法を変更</p>",
+            "category": "Oracle, Oracle Pro"
+            },
+            {
+            "ver": "Service 2.22.0",
+            "hash": "service-2220",
+            "product": "Database",
+            "type": "Changed",
+            "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> <span class=\"uitext\">ダッシュボード</span> &gt; <span class=\"uitext\">インスタンスモニタリング</span> <code class=\"newfunc\">New</code> 右クリックで表示されるウィジェットリストを改善し、説明を追加</p>",
+            "category": "Oracle, Oracle Pro"
+            },
+            {
+            "ver": "Service 2.22.0",
+            "hash": "service-2220",
+            "product": "Database",
+            "type": "Changed",
+            "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> Wait Event → Wait Class にウィジェット名を変更</p>",
+            "category": "Oracle, Oracle Pro"
+            },
+            {
+            "ver": "Service 2.22.0",
+            "hash": "service-2220",
+            "product": "Database",
+            "type": "Changed",
+            "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> 単一インスタンス選択時、Wait Class ウィジェットのイコライザーチャートの x 軸にクラス名を表示するよう変更</p>",
+            "category": "Oracle, Oracle Pro"
+            },
+            {
+            "ver": "Service 2.22.0",
+            "hash": "service-2220",
+            "product": "Database",
+            "type": "Feature",
+            "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> SQL 詳細ウィンドウでオブジェクト詳細を Column/Index、Partition、SubPartition の順に照会可能に変更（DMX エージェント 1.0.6 以上対応）</p>",
+            "category": "Oracle Pro"
+            },
+            {
+            "ver": "Service 2.22.0",
+            "hash": "service-2220",
+            "product": "Database",
+            "type": "Fixed",
+            "desc": "<p><code class=\"Fixed\" type=\"1\">Fixed</code> ログ監視設定方法の内容を補強</p>",
+            "category": "PostgreSQL"
+            }
+        ]
+    }
+]

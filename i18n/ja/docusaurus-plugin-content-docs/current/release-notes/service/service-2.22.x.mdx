@@ -5,3 +5,134 @@ toc_max_heading_level: 2
 pagination_next: release-notes/service/service-2_21_x
 displayed_sidebar: releaseSidebar
 ---
+
+## Service 2.22.0
+
+2025年10月29日
+
+<div class='indentTab'>
+
+### `共通`
+
+- <Status priority='1'>New</Status> **OpenMetrics** を追加しました。
+
+- <Status priority='1'>Changed</Status> ライセンスキーがない場合の表示メッセージを修正しました。
+
+---
+
+### `Application`
+
+- <Status priority='1'>Feature</Status> <Cmdname sid="management" className="uitext" /> にエージェントリストおよび CSV ダウンロード機能を追加しました。
+
+- <Status priority='1'>Changed</Status> <Cmdname sid="integratedFlexboard" className="uitext" /> のアクティブトランザクショントップNウィジェットで複数プロジェクトを選択できるように変更しました。
+
+- <Status priority='1'>Changed</Status> <Cmdname sid="analysis" className="uitext" /> &gt; <Cmdname sid="performance_trend" className="uitext" />
+
+    - 3日を超えて照会する場合、同時接続ユーザーではなく訪問者指標を表示  
+    - 検索ボタンをクリックする前に自動照会されないように変更
+
+- <Status priority='0'>Fixed</Status> <Cmdname sid="side_statistics" className="uitext" /> の SQL およびトランザクションカラムのアイコン／ツールチップを復元しました。
+
+---
+
+### `Server`
+
+- <Status priority='1'>Feature</Status> **GPU インベントリ** テーブルのカスタムカラムヘッダーにカスタムタグを表示し、区別しやすく改善しました。
+
+- <Status priority='1'>Feature</Status> <Cmdname sid="event_setting" className="uitext" /> > **ファイルキーワード監視** / **Windows イベント監視** / **ファイル監視** タブにファイル監視イベント設定機能を追加しました。
+
+- <Status priority='1'>Changed</Status> <Cmdname sid="event_setting" className="uitext" /> のタブ名を **既存ログファイル**, **Windows イベント** → **ファイルキーワード監視**, **Windows イベント監視** に変更しました。
+
+- <Status priority='0'>Fixed</Status> **GPU パフォーマンスサマリー** の BAR1_Total_Memory フィールド値にカンマフォーマットが適用されない問題を修正しました。
+
+---
+
+### `Kubernetes`
+
+- <Status priority='1'>Feature</Status> **GPU トレンド** 機能を追加しました。
+
+    - 凡例に単位(%)を表示  
+    - チャートセルに値を表示  
+    - 並べ替え機能を追加  
+    - フィルター機能を追加  
+    - プリセット機能を追加（ソートとフィルター値を保存）
+
+- <Status priority='1'>Feature</Status> Pod 一覧に Whatap カスタム GPU 指標を追加しました。
+
+- <Status priority='1'>Feature</Status> **GPU ダッシュボード** のマップチャートをクリックして開くドロワーのメトリクスタブで、任意の時間を指定してメトリクスを照会できる機能を追加しました。
+
+- <Status priority='1'>Changed</Status> **GPU ダッシュボード** のマップチャートで図形が非常に小さい場合でも M/P ラベルが表示されるように変更しました。
+
+- <Status priority='0'>Fixed</Status> <Cmdname sid="workload" className="uitext" /> の Ingress 一覧で一部の Service 情報がリンクされない問題を修正しました。
+
+---
+
+### `Database`
+
+#### 共通
+
+- <Status priority='1'>New</Status> **メトリクストレンド分析** を追加しました。
+
+- <Status priority='1'>Feature</Status> <Cmdname sid="side_dashboard" className="uitext" /> > <Cmdname sid="trends_compare" className="uitext" /> でウィジェットの移動やサイズ変更を可能にしました。
+
+- <Status priority='1'>Feature</Status> <Cmdname sid="side_dashboard" className="uitext" /> のウィジェットを改善しました。
+
+    - [XOS] CPU、[XOS] MEM ウィジェットに凡例表示オプションを追加  
+    - カスタムウィジェットのイコライザーチャートで、パーセンテージ指標を表示する際に y 軸を 100 に固定  
+    - カスタムウィジェットのデフォルトを「結合なし」に設定  
+    - カスタムウィジェットの「対象結合」を「エージェント結合」に名称変更  
+    - カスタムウィジェットに凡例表示および表示可否オプションを追加
+
+- <Status priority='1'>Feature</Status> <Cmdname sid="analysis" className="uitext" /> > <Cmdname sid="db_parameter" className="uitext" /> にパラメータ変更履歴を照会できる機能を追加しました。
+
+- <Status priority='1'>Changed</Status> インスタンスセレクターの動作を改善しました。
+
+- <Status priority='1'>Changed</Status> セキュリティ要件に合わせ、<Cmdname sid="side_dbScriptManager" className="uitext" /> の公開条件を修正し、開発機およびオンプレミス環境のみ表示されるように変更しました。
+
+- <Status priority='0'>Fixed</Status> ページアクセス時にインスタンスが選択されていない場合がある問題を修正しました。
+
+- <Status priority='0'>Fixed</Status> <Cmdname sid="side_dashboard" className="uitext" /> > <Cmdname sid="side_dbMonitoring" className="uitext" /> <code class="newfunc">New</code>
+
+    - 1日以上照会後にシリーズチャートをドラッグすると、チャートデータが5分間隔の統計データのままになる問題を修正しました。  
+    - 日間比較ウィジェットの小数点が長く表示される問題を修正しました。
+
+- <Status priority='0'>Fixed</Status> <Cmdname sid="side_dashboard" className="uitext" /> > <Cmdname sid="side_dbMonitoring" className="uitext" /> のアクティブセッションテーブルでフィルター選択時にスケールが変動する問題を修正しました。
+
+- <Status priority='0'>Fixed</Status> <Cmdname sid="side_dashboard" className="uitext" /> の指標セレクターでイベントボタンをクリックしてもイベント設定ページに移動しない問題を修正しました。
+
+- <Status priority='0'>Fixed</Status> <Cmdname sid="analysis" className="uitext" /> > <Cmdname sid="side_dbScriptManager" className="uitext" /> のスクリプトリストにスクロールバーが生成されない問題を修正しました。
+
+#### MySQL, PostgreSQL, SQL Server
+
+- <Status priority='1'>Feature</Status> <Cmdname sid="agent_installation" className="uitext" /> にパッケージマネージャーおよび Docker インストール方法のガイドを追加しました。
+
+#### MySQL, PostgreSQL
+
+- <Status priority='1'>Feature</Status> <Cmdname sid="side_dashboard" className="uitext" /> > <Cmdname sid="side_dbMonitoring" className="uitext" /> <code class="newfunc">New</code> に XOS および RDS デフォルトプリセットを追加しました。
+
+- <Status priority='1'>Changed</Status> <Cmdname sid="side_reportStat" className="uitext" /> > <Cmdname sid="pg_stat" className="uitext" />、<Cmdname sid="side_mysqlStat" className="uitext" /> でページアクセス時に自動照会されないように変更しました。
+
+#### Oracle, Oracle Pro
+
+- <Status priority='1'>Changed</Status> メニュー名を変更しました。
+
+    - <Cmdname sid="analysis" className="uitext" /> > <Cmdname sid="side_dbSqlAnalysis" className="uitext" /> → **SQL Plan 分析**  
+    - <Cmdname sid="analysis" className="uitext" /> > <Cmdname sid="trends_compare" className="uitext" /> → <Cmdname sid="TTL08868" className="uitext" />
+
+- <Status priority='1'>Changed</Status> <Cmdname sid="analysis" className="uitext" /> > <Cmdname sid="side_dbWaitAnalysis" className="uitext" /> のチャート単位表示方法を変更しました。
+
+- <Status priority='1'>Changed</Status> <Cmdname sid="side_dashboard" className="uitext" /> > <Cmdname sid="side_dbMonitoring" className="uitext" /> <code class="newfunc">New</code> の右クリックで表示されるウィジェットリストを改善し、説明を追加しました。
+
+- <Status priority='1'>Changed</Status> 「Wait Event」ウィジェット名を「Wait Class」に変更しました。
+
+- <Status priority='1'>Changed</Status> 単一インスタンスが選択されている場合、Wait Class ウィジェットのイコライザーチャートの x 軸にクラス名を表示するように変更しました。
+
+#### Oracle Pro
+
+- <Status priority='1'>Feature</Status> <Cmdname sid="TTL06224" className="uitext" /> ウィンドウでオブジェクト詳細を Column/Index、Partition、SubPartition の順で照会できるように変更しました（DMX エージェント 1.0.6 以上対応）。
+
+#### PostgreSQL
+
+- <Status priority='0'>Fixed</Status> ログ監視設定方法の内容を補強しました。
+
+</div>

@@ -1,0 +1,293 @@
+[
+    {
+        "url": "https://docs.whatap.io/release-notes/service/service-2_22_x",
+        "ver": "Service 2.22.0",
+        "date": "2025-10-29",
+        "Lists": [
+            {
+            "ver": "Service 2.22.0",
+            "hash": "service-2220",
+            "product": "Common",
+            "type": "New",
+            "desc": "<p><code class=\"New\" type=\"1\">New</code> Added OpenMetrics</p>"
+            },
+            {
+            "ver": "Service 2.22.0",
+            "hash": "service-2220",
+            "product": "Common",
+            "type": "Changed",
+            "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> Updated the display message when no license key is present</p>"
+            },
+            {
+            "ver": "Service 2.22.0",
+            "hash": "service-2220",
+            "product": "Application",
+            "type": "Feature",
+            "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">Management</span> Added agent list and CSV download</p>"
+            },
+            {
+            "ver": "Service 2.22.0",
+            "hash": "service-2220",
+            "product": "Application",
+            "type": "Changed",
+            "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> <span class=\"uitext\">Integrated Flex Board</span> Updated the Active Transaction TopN widget to allow selecting multiple projects</p>"
+            },
+            {
+            "ver": "Service 2.22.0",
+            "hash": "service-2220",
+            "product": "Application",
+            "type": "Changed",
+            "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> <span class=\"uitext\">Analysis</span> &gt; <span class=\"uitext\">Performance Trend</span> When querying more than 3 days, show visitor metrics instead of concurrent users</p>"
+            },
+            {
+            "ver": "Service 2.22.0",
+            "hash": "service-2220",
+            "product": "Application",
+            "type": "Changed",
+            "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> <span class=\"uitext\">Analysis</span> &gt; <span class=\"uitext\">Performance Trend</span> Do not query automatically before clicking the search button</p>"
+            },
+            {
+            "ver": "Service 2.22.0",
+            "hash": "service-2220",
+            "product": "Application",
+            "type": "Fixed",
+            "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">Statistics</span> Restored SQL and transaction column help icons/tooltips</p>"
+            },
+            {
+            "ver": "Service 2.22.0",
+            "hash": "service-2220",
+            "product": "Server",
+            "type": "Feature",
+            "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">GPU Inventory</span> Marked custom tags in custom column headers to make them easier to distinguish</p>"
+            },
+            {
+            "ver": "Service 2.22.0",
+            "hash": "service-2220",
+            "product": "Server",
+            "type": "Feature",
+            "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">Event Settings</span> &gt; <span class=\"uitext\">File Keyword Watch / Windows Event Watch / File Watch</span> Added file watch event settings</p>"
+            },
+            {
+            "ver": "Service 2.16.0",
+            "hash": "service-2160",
+            "product": "Server",
+            "type": "Changed",
+            "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> <span class=\"uitext\">Event Settings</span> Renamed Existing Log File, Windows Event → File Keyword Watch, Windows Event Watch</p>"
+            },
+            {
+            "ver": "Service 2.22.0",
+            "hash": "service-2220",
+            "product": "Server",
+            "type": "Fixed",
+            "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">GPU Performance Summary</span> Fixed issue where comma formatting was not applied to the BAR1_Total_Memory field value</p>"
+            },
+            {
+            "ver": "Service 2.22.0",
+            "hash": "service-2220",
+            "product": "Kubernetes",
+            "type": "Feature",
+            "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">GPU Trend</span> Added</p>",
+            "details": "<ul>\n<li><p>Show units (%) in legends</p></li>\n<li><p>Show values in chart cells</p></li>\n<li><p>Added sorting</p></li>\n<li><p>Added filtering</p></li>\n<li><p>Added presets (save sort and filter values)</p></li>\n</ul>"
+            },
+            {
+            "ver": "Service 2.22.0",
+            "hash": "service-2220",
+            "product": "Kubernetes",
+            "type": "Feature",
+            "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> Added Whatap custom GPU metrics to the Pod list</p>"
+            },
+            {
+            "ver": "Service 2.22.0",
+            "hash": "service-2220",
+            "product": "Kubernetes",
+            "type": "Feature",
+            "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">GPU Dashboard</span> Added the ability to query metrics for a specified time in the Metrics tab of the drawer opened from the map chart</p>"
+            },
+            {
+            "ver": "Service 2.22.0",
+            "hash": "service-2220",
+            "product": "Kubernetes",
+            "type": "Changed",
+            "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> <span class=\"uitext\">GPU Dashboard</span> Show M/P labels even when shapes in the map chart become very small</p>"
+            },
+            {
+            "ver": "Service 2.22.0",
+            "hash": "service-2220",
+            "product": "Kubernetes",
+            "type": "Fixed",
+            "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">Workload</span> Fixed an issue where some Service information was not linked in the Ingress list</p>"
+            },
+            {
+            "ver": "Service 2.22.0",
+            "hash": "service-2220",
+            "product": "Database",
+            "type": "New",
+            "desc": "<p><code class=\"New\" type=\"1\">New</code> Added <span class=\"uitext\">Metrics Trend Analysis</span></p>",
+            "category": "Common"
+            },
+            {
+            "ver": "Service 2.22.0",
+            "hash": "service-2220",
+            "product": "Database",
+            "type": "Feature",
+            "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">Dashboard</span> &gt; <span class=\"uitext\">Trend Comparison</span> Added ability to move and resize widgets</p>",
+            "category": "Common"
+            },
+            {
+            "ver": "Service 2.22.0",
+            "hash": "service-2220",
+            "product": "Database",
+            "type": "Feature",
+            "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">Dashboard</span> Widget improvements</p>",
+            "details": "<ul>\n<li><p>Added legend display option to [XOS] CPU and [XOS] MEM widgets</p></li>\n<li><p>Equalizer charts in custom widgets fix the y-axis to 100 when displaying percentage metrics</p></li>\n<li><p>Default selection in custom widgets is now No Merge</p></li>\n<li><p>Renamed Target Merge to Agent Merge in custom widgets</p></li>\n<li><p>Added legend display and visibility options to custom widgets</p></li>\n</ul>",
+            "category": "Common"
+            },
+            {
+            "ver": "Service 2.22.0",
+            "hash": "service-2220",
+            "product": "Database",
+            "type": "Feature",
+            "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">Analysis</span> &gt; <span class=\"uitext\">Database Parameters</span> Added ability to view parameter change history</p>",
+            "category": "Common"
+            },
+            {
+            "ver": "Service 2.22.0",
+            "hash": "service-2220",
+            "product": "Database",
+            "type": "Changed",
+            "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> Improved instance selector behavior</p>",
+            "category": "Common"
+            },
+            {
+            "ver": "Service 2.22.0",
+            "hash": "service-2220",
+            "product": "Database",
+            "type": "Changed",
+            "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> <span class=\"uitext\">Script Manager</span> Updated exposure conditions per security requirements; now visible only in development and on-premise environments</p>",
+            "category": "Common"
+            },
+            {
+            "ver": "Service 2.22.0",
+            "hash": "service-2220",
+            "product": "Database",
+            "type": "Fixed",
+            "desc": "<p><code class=\"Fixed\" type=\"1\">Fixed</code> Fixed an intermittent issue where no instance was selected on page entry</p>",
+            "category": "Common"
+            },
+            {
+            "ver": "Service 2.22.0",
+            "hash": "service-2220",
+            "product": "Database",
+            "type": "Fixed",
+            "desc": "<p><code class=\"Fixed\" type=\"1\">Fixed</code> <span class=\"uitext\">Dashboard</span> &gt; <span class=\"uitext\">Instance Monitoring</span> <code class=\"newfunc\">New</code></p>",
+            "details": "<ul>\n<li><p>Fixed issue where chart data stayed at 5-minute statistics after dragging the series chart when viewing more than 1 day</p></li>\n<li><p>Fixed issue where decimals in the daily comparison widget were displayed with excessive precision</p></li>\n</ul>",
+            "category": "Common"
+            },
+            {
+            "ver": "Service 2.22.0",
+            "hash": "service-2220",
+            "product": "Database",
+            "type": "Fixed",
+            "desc": "<p><code class=\"Fixed\" type=\"1\">Fixed</code> <span class=\"uitext\">Dashboard</span> &gt; <span class=\"uitext\">Instance Monitoring</span> Fixed issue where the scale changed when selecting filters in the Active Session table</p>",
+            "category": "Common"
+            },
+            {
+            "ver": "Service 2.22.0",
+            "hash": "service-2220",
+            "product": "Database",
+            "type": "Fixed",
+            "desc": "<p><code class=\"Fixed\" type=\"1\">Fixed</code> <span class=\"uitext\">Dashboard</span> Fixed issue where clicking the event button in the metric selector did not navigate to the event settings page</p>",
+            "category": "Common"
+            },
+            {
+            "ver": "Service 2.22.0",
+            "hash": "service-2220",
+            "product": "Database",
+            "type": "Fixed",
+            "desc": "<p><code class=\"Fixed\" type=\"1\">Fixed</code> <span class=\"uitext\">Analysis</span> &gt; <span class=\"uitext\">Script Manager</span> Fixed issue where the script list did not have a scrollbar</p>",
+            "category": "Common"
+            },
+            {
+            "ver": "Service 2.22.0",
+            "hash": "service-2220",
+            "product": "Database",
+            "type": "Feature",
+            "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">Agent Installation</span> Added guides for package manager and Docker installation</p>",
+            "category": "MySQL, PostgreSQL, SQL Server"
+            },
+            {
+            "ver": "Service 2.22.0",
+            "hash": "service-2220",
+            "product": "Database",
+            "type": "Feature",
+            "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">Dashboard</span> &gt; <span class=\"uitext\">Instance Monitoring</span><code class=\"newfunc\">New</code> Added XOS and RDS Default presets</p>",
+            "category": "MySQL, PostgreSQL"
+            },
+            {
+            "ver": "Service 2.22.0",
+            "hash": "service-2220",
+            "product": "Database",
+            "type": "Changed",
+            "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> <span class=\"uitext\">Dashboard</span> &gt; <span class=\"uitext\">PG SQL Statistics</span>, <span class=\"uitext\">MySQL SQL Statistics</span> Disabled auto query on page entry</p>",
+            "category": "MySQL, PostgreSQL"
+            },
+            {
+            "ver": "Service 2.22.0",
+            "hash": "service-2220",
+            "product": "Database",
+            "type": "Changed",
+            "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> Menu name changes</p>",
+            "details": "<ul>\n<li><p><span class=\"uitext\">Analysis</span> &gt; <span class=\"uitext\">SQL Analysis</span> → <span class=\"uitext\">SQL Plan Statistics</span></p></li>\n<li><p><span class=\"uitext\">Analysis</span> &gt; <span class=\"uitext\">Count Trend Comparison</span> → <span class=\"uitext\">Trend Comparison</span></p></li>\n</ul>",
+            "category": "Oracle, Oracle Pro"
+            },
+            {
+            "ver": "Service 2.22.0",
+            "hash": "service-2220",
+            "product": "Database",
+            "type": "Changed",
+            "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> <span class=\"uitext\">Analysis</span> &gt; <span class=\"uitext\">Wait Analysis</span> Changed unit display in charts</p>",
+            "category": "Oracle, Oracle Pro"
+            },
+            {
+            "ver": "Service 2.22.0",
+            "hash": "service-2220",
+            "product": "Database",
+            "type": "Changed",
+            "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> <span class=\"uitext\">Dashboard</span> &gt; <span class=\"uitext\">Instance Monitoring</span> <code class=\"newfunc\">New</code> Improved right-click widget list and added descriptions</p>",
+            "category": "Oracle, Oracle Pro"
+            },
+            {
+            "ver": "Service 2.22.0",
+            "hash": "service-2220",
+            "product": "Database",
+            "type": "Changed",
+            "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> Renamed widget Wait Event → Wait Class</p>",
+            "category": "Oracle, Oracle Pro"
+            },
+            {
+            "ver": "Service 2.22.0",
+            "hash": "service-2220",
+            "product": "Database",
+            "type": "Changed",
+            "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> When a single instance is selected, the x-axis of the Wait Class widget’s equalizer chart now shows class names</p>",
+            "category": "Oracle, Oracle Pro"
+            },
+            {
+            "ver": "Service 2.22.0",
+            "hash": "service-2220",
+            "product": "Database",
+            "type": "Feature",
+            "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> In the SQL detail window, object details can now be viewed in order of Column/Index, Partition, SubPartition (supported by DMX Agent 1.0.6+)</p>",
+            "category": "Oracle Pro"
+            },
+            {
+            "ver": "Service 2.22.0",
+            "hash": "service-2220",
+            "product": "Database",
+            "type": "Fixed",
+            "desc": "<p><code class=\"Fixed\" type=\"1\">Fixed</code> Enhanced the instructions for log monitoring setup</p>",
+            "category": "PostgreSQL"
+            }
+        ]
+    }
+]  
