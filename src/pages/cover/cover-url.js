@@ -28,7 +28,7 @@ export default function Cover() {
             URL Monitoring
         </h1>
         <p className={styles.date}>
-            release date. 2025.09.24.
+            release date. 2025. 10. 29.
         </p>
         <img className={styles.background} src={bgPath} />
       </div>
