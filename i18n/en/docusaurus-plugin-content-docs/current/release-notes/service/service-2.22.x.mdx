@@ -5,3 +5,134 @@ toc_max_heading_level: 2
 pagination_next: release-notes/service/service-2_21_x
 displayed_sidebar: releaseSidebar
 ---
+
+## Service 2.22.0
+
+October 29, 2025
+
+<div class='indentTab'>
+
+### `Common`
+
+- <Status priority='1'>New</Status> Added **OpenMetrics**
+
+- <Status priority='1'>Changed</Status> Updated display message when no license key is present
+
+---
+
+### `Application`
+
+- <Status priority='1'>Feature</Status> Added agent list and CSV download to <Cmdname sid="management" className="uitext" />
+
+- <Status priority='1'>Changed</Status> Updated <Cmdname sid="integratedFlexboard" className="uitext" /> to allow selection of multiple projects in the Active Transaction TopN widget
+
+- <Status priority='1'>Changed</Status> <Cmdname sid="analysis" className="uitext" /> &gt; <Cmdname sid="performance_trend" className="uitext" />
+
+    - When querying more than 3 days, visitor metrics are displayed instead of concurrent users  
+    - Data is no longer automatically queried before clicking the search button
+
+- <Status priority='0'>Fixed</Status> Restored icons/tooltips for SQL and transaction columns in <Cmdname sid="side_statistics" className="uitext" />
+
+---
+
+### `Server`
+
+- <Status priority='1'>Feature</Status> Improved **GPU Inventory** by marking custom columns with a custom tag in the table header for easier distinction
+
+- <Status priority='1'>Feature</Status> Added file monitoring event settings in <Cmdname sid="event_setting" className="uitext" /> > **File Keyword Watch**, **Windows Event Watch**, **File Watch** tabs
+
+- <Status priority='1'>Changed</Status> Updated <Cmdname sid="event_setting" className="uitext" /> tab names from **Existing Log File**, **Windows Event** → **File Keyword Watch**, **Windows Event Watch**
+
+- <Status priority='0'>Fixed</Status> Fixed an issue where the **GPU Performance Summary** BAR1_Total_Memory field value was not formatted with commas
+
+---
+
+### `Kubernetes`
+
+- <Status priority='1'>Feature</Status> Added **GPU Trend** feature  
+
+    - Displayed units (%) in legends  
+    - Added value labels on chart cells  
+    - Added sorting functionality  
+    - Added filtering functionality  
+    - Added preset functionality (save sort and filter values)
+
+- <Status priority='1'>Feature</Status> Added Whatap custom GPU metrics to the Pod list
+
+- <Status priority='1'>Feature</Status> Added functionality in the **GPU Dashboard** drawer (opened by clicking the map chart) to query metrics for a selected time range
+
+- <Status priority='1'>Changed</Status> In **GPU Dashboard**, M/P labels are now displayed even when shapes on the map chart are very small
+
+- <Status priority='0'>Fixed</Status> Fixed an issue in <Cmdname sid="workload" className="uitext" /> where some Service information was not linked in the Ingress list
+
+---
+
+### `Database`
+
+#### Common
+
+- <Status priority='1'>New</Status> Added **Metrics Trend Analysis**
+
+- <Status priority='1'>Feature</Status> Added ability to move or resize widgets in <Cmdname sid="side_dashboard" className="uitext" /> > <Cmdname sid="trends_compare" className="uitext" />
+
+- <Status priority='1'>Feature</Status> Improved <Cmdname sid="side_dashboard" className="uitext" /> widgets  
+
+    - Added legend display option to [XOS] CPU and [XOS] MEM widgets  
+    - Equalizer charts in custom widgets now fix the y-axis to 100 when displaying percentage metrics  
+    - Default merge option in custom widgets is now set to “None”  
+    - Renamed “Target Merge” to “Agent Merge” in custom widgets  
+    - Added legend display and visibility options in custom widgets
+
+- <Status priority='1'>Feature</Status> Added functionality in <Cmdname sid="analysis" className="uitext" /> > <Cmdname sid="db_parameter" className="uitext" /> to view parameter change history
+
+- <Status priority='1'>Changed</Status> Improved instance selector behavior
+
+- <Status priority='1'>Changed</Status> Updated <Cmdname sid="side_dbScriptManager" className="uitext" /> exposure rules for security compliance, now visible only in development or on-premise environments
+
+- <Status priority='0'>Fixed</Status> Fixed an intermittent issue where instances were not selected upon page entry
+
+- <Status priority='0'>Fixed</Status> <Cmdname sid="side_dashboard" className="uitext" /> > <Cmdname sid="side_dbMonitoring" className="uitext" /> <code class="newfunc">New</code>  
+
+    - Fixed issue where chart data remained at 5-minute intervals after dragging series chart when viewing over 1 day  
+    - Fixed issue where decimals in the daily comparison widget were displayed with excessive precision
+
+- <Status priority='0'>Fixed</Status> Fixed an issue where the scale changed when selecting filters in the active session table in <Cmdname sid="side_dashboard" className="uitext" /> > <Cmdname sid="side_dbMonitoring" className="uitext" />
+
+- <Status priority='0'>Fixed</Status> Fixed an issue in <Cmdname sid="side_dashboard" className="uitext" /> where clicking the event button in the metric selector did not navigate to the event settings page
+
+- <Status priority='0'>Fixed</Status> Fixed an issue in <Cmdname sid="analysis" className="uitext" /> > <Cmdname sid="side_dbScriptManager" className="uitext" /> where scrollbars were not generated in the script list
+
+#### MySQL, PostgreSQL, SQL Server
+
+- <Status priority='1'>Feature</Status> Added installation guides for package manager and Docker in <Cmdname sid="agent_installation" className="uitext" />
+
+#### MySQL, PostgreSQL
+
+- <Status priority='1'>Feature</Status> Added new XOS and RDS Default presets in <Cmdname sid="side_dashboard" className="uitext" /> > <Cmdname sid="side_dbMonitoring" className="uitext" />
+
+- <Status priority='1'>Changed</Status> In <Cmdname sid="side_reportStat" className="uitext" /> > <Cmdname sid="pg_stat" className="uitext" /> and <Cmdname sid="side_mysqlStat" className="uitext" />, automatic data loading on page entry has been disabled
+
+#### Oracle, Oracle Pro
+
+- <Status priority='1'>Changed</Status> Menu name changes  
+
+    - <Cmdname sid="analysis" className="uitext" /> > <Cmdname sid="side_dbSqlAnalysis" className="uitext" /> → **SQL Plan Analysis**  
+    - <Cmdname sid="analysis" className="uitext" /> > <Cmdname sid="trends_compare" className="uitext" /> → <Cmdname sid="TTL08868" className="uitext" />
+
+- <Status priority='1'>Changed</Status> Updated unit display format in <Cmdname sid="analysis" className="uitext" /> > <Cmdname sid="side_dbWaitAnalysis" className="uitext" />
+
+- <Status priority='1'>Changed</Status> Improved widget list and descriptions displayed on right-click in <Cmdname sid="side_dashboard" className="uitext" /> > <Cmdname sid="side_dbMonitoring" className="uitext" /> <code class="newfunc">New</code>
+
+- <Status priority='1'>Changed</Status> Widget name changed from “Wait Event” to “Wait Class”
+
+- <Status priority='1'>Changed</Status> When a single instance is selected, the x-axis of the equalizer chart in the Wait Class widget now displays class names
+
+#### Oracle Pro
+
+- <Status priority='1'>Feature</Status> In <Cmdname sid="TTL06224" className="uitext" /> window, object details can now be viewed sequentially (Column/Index, Partition, SubPartition). Supported for DMX Agent v1.0.6 and later.
+
+#### PostgreSQL
+
+- <Status priority='0'>Fixed</Status> Enhanced content on log monitoring setup instructions
+
+</div>
