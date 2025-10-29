@@ -4648,11 +4648,7 @@ const sidebars = {
           collapsible: true,
           collapsed: false,
           items: [
-            {
-              type: 'doc',
-              label: 'OpenMetrics 탐색기 가이드',
-              id: 'best-practice-guides/about-openmetrics-explorer',
-            },
+            'best-practice-guides/about-openmetrics-explorer',
           ]
         },
         {
