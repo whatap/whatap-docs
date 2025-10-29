@@ -1,4 +1,4 @@
-<Title hashid="query-details" level={props.level}>See query details</Title>
+<Title hashid="query-details" level={props.level}>View SQL Details</Title>
 
 <InDoc pages="instance-monitoring,multi-instance-monitoring">
 
@@ -114,5 +114,36 @@ If you select a table or index while viewing the plan information in **JSON** fo
 This function is supported in DBX agent 1.6.15 or later. For more information about the database roles and related settings, see [the following](install-agent#uid).
 
 :::
+
+</InDoc>
+
+<InDoc product='postgresql,mysql,oracle,oracle-pro,mssql'>
+
+#### AI Tuning Guide
+
+The AI Tuning Guide analyzes SQL queries, plans, and statistical information to diagnose performance issues and suggest optimization strategies.  
+It helps developers and DBAs quickly identify bottlenecks and improve performance through efficient SQL optimization.
+
+:::caution
+**Usage Conditions and Notes**
+
+For **PostgreSQL, MySQL, and SQL Server**, query plan retrieval is required.  
+If the plan is not retrieved, the AI Tuning Guide icon appears as ![Disabled AI Tuning Guide Icon](/img/ico-ai-tuning-icon-disabled.svg) (disabled), and the feature cannot be used.
+
+* Please note that AI-generated results are based on automated analysis and may not be 100% accurate.
+:::
+
+1. Click the SQL you want to analyze and diagnose to move to the <Cmdname sid="TTL06224" className="uitext" /> screen.
+
+1. On the <Cmdname sid="TTL06224" className="uitext" /> screen, click the AI Tuning Guide icon ![AI Tuning Guide Icon](/img/ico-ai-tuning-icon.svg) at the bottom right to start the AI analysis.
+
+1. Review the AI analysis results.
+
+    | Result Item | Description |
+    | :---: | --- |
+    | Query Plan and Summary | Provides the purpose and execution summary of the query. <br /> Analyzes execution count, cumulative execution time, and overall database load ratio to assess the query’s impact on system performance. |
+    | Performance Analysis | Provides performance scores and diagnostic results based on overall analysis. <br /> Analyzes detailed resource usage such as CPU, disk, cache hit rate, and wait time to visually identify bottleneck areas during query execution. |
+    | Key Issues Found | Summarizes detected major issues. |
+    | Optimization Recommendations | Suggests optimized queries based on identified issues. |
 
 </InDoc>
