@@ -8,8 +8,6 @@ keywords:
   - DBX agent
 ---
 
-import AWSRDSdesc from '../common-items/_import_aws-rds-desc.mdx';
-
 Write the settings for the DBX agent in the *whatap.conf* file. For the options that can be set, see the following.
 
 ## Default options
@@ -172,6 +170,10 @@ import Dbagentdbxbasicoption from "../common-items/_db-agent-dbx-basic-option.md
   Default `0`
 
   When collecting xview, it is collected only when the query execution time takes longer than the specified time. By default, it collects all queries whose execution time takes more than 0 seconds.
+
+import SQLMON from "../common-items/_db-agent-setting-sqlmon.mdx";
+
+<SQLMON />
 
 import Dbaes256encrypt from "../common-items/_db-aes-256-encrypt.mdx";
 

@@ -8,8 +8,6 @@ keywords:
   - DBXエージェント
 ---
 
-import AWSRDSdesc from '../common-items/_import_aws-rds-desc.mdx';
-
 DBXエージェントに必要な設定は、*whatap.conf*ファイルに作成されます。 設定できるオプションについては、次を参照してください。
 
 ## 基本オプション
@@ -163,6 +161,10 @@ import Dbagentdbxbasicoption from "../common-items/_db-agent-dbx-basic-option.md
   既定値`0`
 
   xview収集時、クエリの実行時間が設定された時間よりも長くかかる場合にのみ収集します。 デフォルト設定では、実行時間が0秒以上のすべてのクエリを収集します。
+
+import SQLMON from "../common-items/_db-agent-setting-sqlmon.mdx";
+
+<SQLMON />
 
 import Dbaes256encrypt from "../common-items/_db-aes-256-encrypt.mdx";
 

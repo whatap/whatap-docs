@@ -8,8 +8,6 @@ keywords:
   - DBXエージェント
 ---
 
-import AWSRDSdesc from '../common-items/_import_aws-rds-desc.mdx';
-
 DBXエージェントに必要な設定は、*whatap.conf*ファイルで作成します。設定できるオプションについては、以下を参照してください。
 
 ## 基本オプション
@@ -50,6 +48,10 @@ import Dbagentsettingdatacollection from "../common-items/_db-agent-setting-data
   collect_variables_metric=true
   variables_metric=uptime,version
   ```
+
+import SQLMON from "../common-items/_db-agent-setting-sqlmon.mdx";
+
+<SQLMON />
 
 ## ロック収集関連設定
 

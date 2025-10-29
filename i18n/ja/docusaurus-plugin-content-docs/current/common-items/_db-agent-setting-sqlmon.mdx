@@ -1,0 +1,26 @@
+### ユーザーメトリック収集 (SQLMON)
+
+SQLMON は、ユーザー定義の SQL 結果を定期的に収集し、メトリクスとして保存します。  
+数値を返し、負荷が低いクエリに適しています。
+
+* **sqlmon** <span class='type'>Int</span>
+
+  デフォルト値: `1`
+
+  - `1`: dbx と sqlmon を同時に実行  
+  - `2`: sqlmon のみ実行  
+
+  対応バージョン: 2.3.5 以上
+
+#### 設定
+
+1. エージェントのインストールパスに `sqlmon` ディレクトリを作成します。  
+2. 収集するクエリを `.sql` ファイルとして保存します。  
+3. `whatap.conf` で SQLMON を有効化します。  
+4. エージェントを再起動します。  
+5. ![아이콘](/img/ic-sitemap.svg) <Cmdname sid="sitemap" className="uitext" /> &gt; <Cmdname sid="side_metricsSearch" className="uitext" /> メニューで、`sqlmon` カテゴリを確認します。
+
+```properties
+# whatap.conf
+sqlmon=1
+```

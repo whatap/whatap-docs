@@ -8,8 +8,6 @@ keywords:
   - DBXエージェント
 ---
 
-import AWSRDSdesc from '../common-items/_import_aws-rds-desc.mdx';
-
 DBXエージェントに必要な設定は、*whatap.conf*ファイルに作成されます。 設定できるオプションについては、次を参照してください。
 
 ## 基本オプション
@@ -24,10 +22,14 @@ import Dbagentsettingdatacollection from "../common-items/_db-agent-setting-data
 
 <Dbagentsettingdatacollection />
 
+import SQLMON from "../common-items/_db-agent-setting-sqlmon.mdx";
+
+<SQLMON />
+
 import Dbaes256encrypt from "../common-items/_db-aes-256-encrypt.mdx";
 
-<Dbaes256encrypt />
 
+<Dbaes256encrypt />
 import Dbsettingagentnamedetails from "../common-items/_db-setting-agent-name-details.mdx";
 
 <Dbsettingagentnamedetails level={2} agentType="DBX" />
