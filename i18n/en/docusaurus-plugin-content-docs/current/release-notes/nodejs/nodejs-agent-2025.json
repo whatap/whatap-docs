@@ -1,14 +1,5 @@
 [
   {
-<<<<<<< HEAD
-    "url": "https://docs.whatap.io/release-notes/nodejs/nodejs-1_0_5/",
-    "ver": "v1.0.5",
-    "date": "2025-10-30",
-    "Lists": [
-      {
-        "ver": "v1.0.5",
-        "hash": "v105",
-=======
     "url": "https://docs.whatap.io/release-notes/nodejs/nodejs-1_0_6/",
     "ver": "v1.0.6",
     "date": "2025-10-30",
@@ -16,20 +7,11 @@
       {
         "ver": "v1.0.6",
         "hash": "v106",
->>>>>>> 53389449059328b1a23a1ba0c0d9da0440c1a291
         "product": "Node.js Agent",
         "type": "Fixed",
         "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Improved gRPC monitoring trace.</p>"
       },
       {
-<<<<<<< HEAD
-        "ver": "v1.0.5",
-        "hash": "v105",
-        "product": "Node.js Agent",
-        "type": "Fixed",
-        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Improved transaction handling to immediately terminate when a user forcibly closes the browser window or triggers a close event.</p>"
-      }
-=======
         "ver": "v1.0.6",
         "hash": "v106",
         "product": "Node.js Agent",
@@ -43,7 +25,6 @@
         "type": "Fixed",
         "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Improved client IP collection error handling.</p>"
       }      
->>>>>>> 53389449059328b1a23a1ba0c0d9da0440c1a291
     ]
   },
   {
