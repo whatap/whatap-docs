@@ -4159,7 +4159,7 @@
   "openFileDescriptors": "Open File Descriptors",
   "openmetrics": "OpenMetrics",
   "openmetrics_explorer": "OpenMetrics 탐색기",
-  "openmetrics_dashboard-list":"OpenMetrics 대시보드 목록",
+  "openmetrics_template_list": "템플릿 목록",
   "server_process": "서버 프로세스",
   "server_process_rw": "서버 프로세스 Read/Write",
   "pattern": "패턴",

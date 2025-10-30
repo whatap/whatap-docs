@@ -1,6 +1,20 @@
 [
     {
         "url": "https://docs.whatap.io/release-notes/service/service-2_22_x",
+        "ver": "Service 2.22.1",
+        "date": "2025-10-30",
+        "Lists": [
+            {
+            "ver": "Service 2.22.1",
+            "hash": "service-2221",
+            "product": "Server",
+            "type": "Fixed",
+            "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">GPU インベントリ</span> テーブルでカスタムカラムではない列のヘッダーに custom タグが付く問題を修正しました。</p>"
+            }
+        ]
+    },      
+    {
+        "url": "https://docs.whatap.io/release-notes/service/service-2_22_x",
         "ver": "Service 2.22.0",
         "date": "2025-10-29",
         "Lists": [
