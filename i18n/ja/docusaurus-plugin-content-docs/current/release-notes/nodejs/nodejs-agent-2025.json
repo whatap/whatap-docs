@@ -1,23 +1,30 @@
 [
   {
-    "url": "https://docs.whatap.io/release-notes/nodejs/nodejs-1_0_5/",
-    "ver": "v1.0.5",
+    "url": "https://docs.whatap.io/release-notes/nodejs/nodejs-1_0_6/",
+    "ver": "v1.0.6",
     "date": "2025-10-30",
     "Lists": [
       {
-        "ver": "v1.0.5",
-        "hash": "v105",
+        "ver": "v1.0.6",
+        "hash": "v106",
         "product": "Node.js Agent",
         "type": "Fixed",
         "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> gRPC モニタリングのトレースを改善しました。</p>"
       },
       {
-        "ver": "v1.0.5",
-        "hash": "v105",
+        "ver": "v1.0.6",
+        "hash": "v106",
         "product": "Node.js Agent",
         "type": "Fixed",
         "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> ブラウザウィンドウの閉鎖など、ユーザーによる強制終了イベント発生時に close イベントを検知し、トランザクションが即時に終了するよう改善しました。</p>"
-      }
+      },
+      {
+        "ver": "v1.0.6",
+        "hash": "v106",
+        "product": "Node.js Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> クライアント IP 収集エラーを改善しました。</p>"
+      }      
     ]
   },      
   {

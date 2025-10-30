@@ -4303,7 +4303,7 @@ const sidebars = {
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/nodejs/nodejs-1_0_5',
+                  id: 'release-notes/nodejs/nodejs-1_0_6',
                   className: 'new',
                 },
                 'release-notes/nodejs/nodejs-1_0_4',
