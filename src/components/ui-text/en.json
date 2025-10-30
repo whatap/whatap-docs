@@ -719,7 +719,7 @@
   "open_mysql_connection": "Open MySQL connection",
   "openmetrics": "OpenMetrics",
   "openmetrics_explorer": "OpenMetrics Explorer",
-  "openmetrics_dashboard-list":"OpenMetrics Dashboard List",
+  "openmetrics_template_list": "Template List",
   "order_by": "Order By",
   "organization_management": "Organization Management",
   "os": "OS",
