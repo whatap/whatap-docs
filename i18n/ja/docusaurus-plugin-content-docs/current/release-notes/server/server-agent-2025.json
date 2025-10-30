@@ -1,5 +1,39 @@
 [
   {
+    "ver": "v2.9.5",
+    "date": "2025-10-30",
+    "Lists": [
+      {
+        "ver": "v2.9.5",
+        "hash": "v295",
+        "product": "Server Agent",
+        "type": "New",
+        "desc": "<p><code class=\"New\" type=\"1\">New</code> スクリプトマネージャー機能を追加</p>"
+      },
+      {
+        "ver": "v2.9.5",
+        "hash": "v295",
+        "product": "Server Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Nvidia Driver R470未満のバージョンでMIG使用時にGPU情報を収集できない問題を修正</p>"
+      },
+      {
+        "ver": "v2.9.5",
+        "hash": "v295",
+        "product": "Server Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> GPUドライバーがロードされていない環境でGPUオプションを使用した際にエージェントがダウンする問題を修正</p>"
+      },
+      {
+        "ver": "v2.9.5",
+        "hash": "v295",
+        "product": "Server Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> ファイル監視（ユーザー、グループ変更オプション）使用時に一部の環境でエージェントがダウンする問題を修正</p>"
+      }
+    ]
+  },  
+  {
     "ver": "v2.9.4",
     "date": "2025-10-14",
     "Lists": [

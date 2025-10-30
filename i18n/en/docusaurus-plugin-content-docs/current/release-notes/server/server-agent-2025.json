@@ -1,5 +1,39 @@
 [
   {
+    "ver": "v2.9.5",
+    "date": "2025-10-30",
+    "Lists": [
+      {
+        "ver": "v2.9.5",
+        "hash": "v295",
+        "product": "Server Agent",
+        "type": "New",
+        "desc": "<p><code class=\"New\" type=\"1\">New</code> Added Script Manager feature</p>"
+      },
+      {
+        "ver": "v2.9.5",
+        "hash": "v295",
+        "product": "Server Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Fixed issue where GPU information could not be collected when using MIG on Nvidia Driver versions below R470</p>"
+      },
+      {
+        "ver": "v2.9.5",
+        "hash": "v295",
+        "product": "Server Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Fixed agent crash issue when GPU options were enabled in environments where the GPU driver was not loaded</p>"
+      },
+      {
+        "ver": "v2.9.5",
+        "hash": "v295",
+        "product": "Server Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Fixed agent crash issue in some environments when using file monitoring with user or group change options</p>"
+      }
+    ]
+  },  
+  {
     "ver": "v2.9.4",
     "date": "2025-10-14",
     "Lists": [
