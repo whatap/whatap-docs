@@ -4298,11 +4298,7 @@ const sidebars = {
               items: [
                 {
                   type: 'doc',
-<<<<<<< HEAD
-                  id: 'release-notes/nodejs/nodejs-1_0_5',
-=======
                   id: 'release-notes/nodejs/nodejs-1_0_6',
->>>>>>> 53389449059328b1a23a1ba0c0d9da0440c1a291
                   className: 'new',
                 },
                 'release-notes/nodejs/nodejs-1_0_4',
@@ -4463,11 +4459,7 @@ const sidebars = {
                 {
                   type: 'doc',
                   id: 'release-notes/k8s/k8s-1_8_8',
-<<<<<<< HEAD
-                  //className: 'new',
-=======
                   // className: 'new',
->>>>>>> 53389449059328b1a23a1ba0c0d9da0440c1a291
                 },
                 'release-notes/k8s/k8s-1_8_7',
                 'release-notes/k8s/k8s-1_8_6',
