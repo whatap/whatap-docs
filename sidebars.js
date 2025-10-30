@@ -4303,9 +4303,10 @@ const sidebars = {
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/nodejs/nodejs-1_0_4',
+                  id: 'release-notes/nodejs/nodejs-1_0_5',
                   className: 'new',
                 },
+                'release-notes/nodejs/nodejs-1_0_4',
                 'release-notes/nodejs/nodejs-1_0_3',
                 'release-notes/nodejs/nodejs-0_5_25',
                 'release-notes/nodejs/nodejs-previous',
@@ -4414,7 +4415,7 @@ const sidebars = {
               label: 'Server Solaris',
               collapsible: true,
               collapsed: true,
-              // className: 'new',
+              //className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/server-solaris/index'
@@ -4423,7 +4424,7 @@ const sidebars = {
                 {
                   type: 'doc',
                   id: 'release-notes/server-solaris/server-solaris-1_4_5',
-                  // className: 'new'
+                  //className: 'new'
                 },
                 'release-notes/server-solaris/server-solaris-1_4_4',
                 'release-notes/server-solaris/server-solaris-1_4_2',
@@ -4454,7 +4455,7 @@ const sidebars = {
               label: 'Kubernetes',
               collapsible: true,
               collapsed: true,
-              // className: 'new',
+              //className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/k8s/index',
