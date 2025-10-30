@@ -4257,7 +4257,7 @@ const sidebars = {
               label: 'Java',
               collapsible: true,
               collapsed: true,
-              className: 'new',
+              // className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/java/index',
@@ -4266,7 +4266,7 @@ const sidebars = {
                 {
                   type: 'doc',
                   id: 'release-notes/java/java-2_2_64',
-                  className: 'new',
+                  // className: 'new',
                 },
                 'release-notes/java/java-2_2_63',
                 'release-notes/java/java-2_2_62',
@@ -4333,9 +4333,10 @@ const sidebars = {
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/nodejs/nodejs-1_0_3',
+                  id: 'release-notes/nodejs/nodejs-1_0_5',
                   className: 'new',
                 },
+                'release-notes/nodejs/nodejs-1_0_3',
                 'release-notes/nodejs/nodejs-0_5_25',
                 'release-notes/nodejs/nodejs-0_5_23',
                 'release-notes/nodejs/nodejs-0_5_22',
@@ -4370,7 +4371,7 @@ const sidebars = {
               label: '.NET',
               collapsible: true,
               collapsed: true,
-              className: 'new',
+              //className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/dotnet/index',
@@ -4379,7 +4380,7 @@ const sidebars = {
                 {
                   type: 'doc',
                   id: 'release-notes/dotnet/dotnet-2_4_4',
-                  className: 'new',
+                  //className: 'new',
                 },
                 'release-notes/dotnet/dotnet-2_4_3',
                 'release-notes/dotnet/dotnet-2_4_2',
@@ -4447,7 +4448,7 @@ const sidebars = {
               label: 'Server Solaris',
               collapsible: true,
               collapsed: true,
-              className: 'new',
+              //className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/server-solaris/index'
@@ -4456,7 +4457,7 @@ const sidebars = {
                 {
                   type: 'doc',
                   id: 'release-notes/server-solaris/server-solaris-1_4_5',
-                  className: 'new'
+                  //className: 'new'
                 },
                 'release-notes/server-solaris/server-solaris-1_4_4',
                 'release-notes/server-solaris/server-solaris-1_4_2',
@@ -4485,7 +4486,7 @@ const sidebars = {
               label: 'Kubernetes',
               collapsible: true,
               collapsed: true,
-              className: 'new',
+              //className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/k8s/index',
@@ -4494,7 +4495,7 @@ const sidebars = {
                 {
                   type: 'doc',
                   id: 'release-notes/k8s/k8s-1_8_8',
-                  className: 'new',
+                  //className: 'new',
                 },
                 'release-notes/k8s/k8s-1_8_7',
                 'release-notes/k8s/k8s-1_8_6',
