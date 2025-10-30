@@ -6799,7 +6799,7 @@ const sidebars = {
           collapsible: true,
           collapsed: true, 
           items: [
-            'kubernetes/openmetrics-dashboard-list',
+            'kubernetes/openmetrics-template-list',
             'kubernetes/openmetrics_explorer',
           ],
         },

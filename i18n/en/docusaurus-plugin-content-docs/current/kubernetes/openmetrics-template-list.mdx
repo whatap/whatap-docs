@@ -1,0 +1,65 @@
+---
+id: openmetrics-template-list
+title: OpenMetrics Template List
+description: OpenMetrics visualization Template.
+toc_max_heading_level: 4
+keywords: [ OpenMetrics, OpenMetrics Template, Kubernetes Monitoring ]
+---
+
+We provide default templates and predefined Templates so that users who are new to <Cmdname sid="openmetrics" className="uitext" /> can quickly collect and visualize metrics without complex configuration. This lets you easily apply commonly used open source metrics, lowers the initial adoption barrier, and helps operators build a scalable monitoring environment.
+
+## Template list
+
+<Cmdname sid="openmetrics_template_list" className="uitext" /> provides default open-source template cards.  
+Each card includes a brief description, a link to the template, and collection guidance.
+
+* ![Right arrow icon](/img/ic-arrow-right.svg) **Template**: Click to navigate directly to the corresponding Template.
+* ![Info icon](/img/ic-info-circle.svg) **Collection guide**: Click to see how to configure data collection.
+
+### Nginx Template {#nginx-Template}
+
+Monitor Apache Nginx to track and analyze web server performance in real time.
+
+### Istio Template {#istio-Template}
+
+Visualize service relationships and traffic flow in an Istio service mesh, and provide an integrated monitoring environment by linking with WhaTap APM data. Use the button at the top right to zoom in or out of the Template.
+
+<ImgLang img='openmetrics-Template-istio.png' desc='OpenMetrics Template istio' />
+
+#### Legend {#legend}
+
+Click the ![Info icon](/img/ic-info-circle.svg) button at the top right to view the legend. 
+
+##### Node shapes {#nod-shapes}
+
+* Triangle: Kubernetes service
+* Circle: Workload
+* Rectangle: Application
+* Small circle: Pod
+
+##### Node status {#nod-status}
+
+Error ratio within all HTTP requests and responses (4xx, 5xx)
+
+* *Green*: error rate below 5%
+* <span class='slow'>Orange</span>: error rate 5% or higher
+* <span class='vslow'>Red</span>: error rate 10% or higher
+* Gray: no requests
+
+##### Pod node status {#pod-status}
+
+Kubernetes Pod phase
+
+* *Green*: Pods in Running state
+* <span class='slow'>Orange</span>: Pods in Pending state
+* <span class='vslow'>Red</span>: Pods in Failed state
+
+##### Edge colors {#edge-colors}
+
+Error ratio of HTTP requests between two nodes (4xx, 5xx)
+
+* *Green*: error rate below 10%
+* <span class='slow'>Orange</span>: error rate 10% or higher
+* <span class='vslow'>Red</span>: error rate 20% or higher
+* <span class='normal'>Blue</span>: TCP communication
+* Gray: unknown status
