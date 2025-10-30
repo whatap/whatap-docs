@@ -10,10 +10,12 @@ keywords:
 
 Let's learn about the commands that load metrics with the MXQL syntax.
 
-| Command               | Function                                                                                                |
-| --------------------- | ------------------------------------------------------------------------------------------------------- |
-| [TAGLOAD](#tagload)   | It is used to search the data of the category that stores the collected data in the `tag-field` format. |
-| [FLEXLOAD](#flexload) | It is used to search the data of the category that stores the collected data in the `field` format.     |
+| Command                       | Function                                                                                                |
+| ----------------------------- | ------------------------------------------------------------------------------------------------------- |
+| [TAGLOAD](#tagload)           | It is used to search the data of the category that stores the collected data in the `tag-field` format. |
+| [FLEXLOAD](#flexload)         | It is used to search the data of the category that stores the collected data in the `field` format.     |
+| [LogSink](#logsink)           | Used to query raw log data.                                                                             |
+| [LogSinkCount](#logsinkcount) | Used to aggregate log counts by time unit.                                                              |
 
 ## TAGLOAD{#tagload}
 
@@ -108,7 +110,7 @@ Most categories are using `TAGLOAD`. `FLEXLOAD` is used only when using data of 
 
 :::
 
-## List of categories that need to use FLEXLOAD{#flexload-items}
+### List of categories that need to use FLEXLOAD{#flexload-items}
 
 - `agent_list` category
 
@@ -141,3 +143,130 @@ Most categories are using `TAGLOAD`. `FLEXLOAD` is used only when using data of 
   FLEXLOAD
   SELECT
   ```
+
+## LogSink {#logsink}
+
+Used to query raw log data.
+
+```sql
+CATEGORY AppLog
+LogSink
+```
+
+### Log Filtering
+
+Use **LogTag** to filter logs by specific conditions.
+
+```sql
+CATEGORY AppLog
+LogTag {key:city, value:"junju"}
+LogTag {key:status, value:"200", exclude:true}
+LogSink
+```
+
+#### LogTag Parameters
+
+* **key**: Index key to search
+* **value**: Value to search (wildcards supported)
+* **exclude**: Whether to exclude from search (true/false)
+
+#### Important Notes
+
+* LogTag must be written before LogSink or LogSinkCount
+* LogTag can be specified multiple times for the same key or different keys
+* LogTag should be added per search keyword
+
+### Example
+
+Example of querying the count of logs containing specific keywords.
+
+```sql
+CATEGORY AppLog
+LogTag {key:content, value:"*DebugUtil*", exclude:false}
+LogTag {key:content, value:"*HttpServletRequest*", exclude:true}
+LogSink
+SELECT
+GROUP {timeunit:1d, pk:pcode, merge:[rows]}
+RENAME {src:_rows_, dst:rows}
+CREATE {key:_pk_, value:pcode}
+UPDATE {key:rows, value:sum}
+```
+
+#### Query Explanation
+
+* First LogTag: Search for logs with "DebugUtil" in the content field
+* Second LogTag: Exclude logs with "HttpServletRequest" in the content field
+* GROUP with timeunit:1d aggregates by day
+* merge:[rows] converts log count to MetricValue type
+* UPDATE with sum calculates daily total count
+
+---
+
+## LogSinkCount {#logsinkcount}
+
+Used to aggregate log counts by time unit.
+
+### Basic Usage
+
+```sql
+CATEGORY AppLog
+LogSinkCount
+```
+
+Log counts are aggregated by time period (e.g., 1949, 1625, 1674... counts).
+
+### Group Aggregation
+
+You can aggregate logs by grouping based on specific fields.
+
+#### Single Field Grouping
+
+```sql
+CATEGORY AppLog
+LogSinkCount {group:oname}
+```
+
+#### Multiple Field Grouping
+
+```sql
+CATEGORY AppLog
+LogSinkCount {group:"oname,oid"}
+```
+
+You can specify multiple fields separated by commas.
+
+### Hourly Group Aggregation
+
+You can perform aggregation operations on numeric fields.
+
+```sql
+CATEGORY AppLog
+LogSinkCount {group:oname, aggr:price.n}
+```
+
+:::note
+
+Fields that can be stored in Aggr are limited to numeric (n) fields.
+
+:::
+
+#### Multiple Field Aggregation
+
+```sql
+CATEGORY AppLog
+LogSinkCount {group:oname, aggr:"price.n,age.n"}
+```
+
+Multiple fields can be entered in aggr separated by commas, but calculations are performed separately for each.
+
+### Using with LogTag
+
+You can aggregate only logs that meet specific conditions using LogTag.
+
+```sql
+CATEGORY AppLog
+LogTag {key:level, value:"ERROR"}
+LogSinkCount {group:oname}
+```
+
+The above example filters only ERROR level logs and aggregates counts by oname.

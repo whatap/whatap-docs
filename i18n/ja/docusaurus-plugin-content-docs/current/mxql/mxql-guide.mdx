@@ -268,12 +268,19 @@ SKIP {$option:10}
 
 ### データの読み込み方式
 
-MXQLで照会できるデータは、[メトリクス](../metrics/common-metrics-intro)の形式に応じて、2つのタイプに分けることができます。
+MXQLで照会するデータは[メトリクス](../metrics/common-metrics-intro)の構造に応じて異なるロードコマンドを使用します。
 
-- メトリクスのデータをタグとフィールドに分けて保存されたデータ([TAGLOAD](mxql-loading#tagload)を使って読み込みできるデータ)
-- メトリクスにすべてのデータがフィールドに保存されているデータ([FLEXLOAD](mxql-loading#flexload)を使って読み込みできるデータ)
+- **タグベースメトリクス**  
+  タグとフィールドに区分されたデータは[`TAGLOAD`](mxql-loading#tagload)コマンドを使用してロードします。
 
-ほとんどのカテゴリで`TAGLOAD`を使います。[次の文書](mxql-loading#flexload-items)に含まれるカテゴリのデータを使用する場合のみ`FLEXLOAD`を使用してください。
+- **フラット構造メトリクス**  
+  すべてのデータがフィールドに保存されたメトリクスは[`FLEXLOAD`](mxql-loading#flexload)コマンドを使用してロードします。
+
+- **ログ元データ**  
+  ログ元データを照会する際は[`LogSink`](mxql-loading#logsink)コマンドを使用します。
+
+- **ログカウント集計データ**  
+  時間単位でログ件数を集計する際は[`LogSinkCount`](mxql-loading#logsinkcount)コマンドを使用します。
 
 ## SaaSサービスで提供する事前定義されたMXQLクエリの一覧{#custom-query-saas}
 
