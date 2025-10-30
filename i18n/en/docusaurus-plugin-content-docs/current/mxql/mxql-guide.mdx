@@ -268,12 +268,19 @@ Bind variable names can only contain uppercase and lowercase characters. Numbers
 
 ### Data loading method
 
-Data that can be searched in MXQL is divided into two types depending on the format of [Metrics](../metrics/common-metrics-intro).
+Data queried in MXQL uses different loading commands depending on the structure of the [metrics](../metrics/common-metrics-intro).
 
-- Data in which the metric is divided into tags and fields to be loaded using the stored data [TAGLOAD](mxql-loading#tagload).
-- All metrics data stored in fields (data that can be loaded using [FLEXLOAD](mxql-loading#flexload))
+- **Tag-based Metrics**  
+  Load data separated into tags and fields using the [`TAGLOAD`](mxql-loading#tagload) command.
 
-Most categories are using `TAGLOAD`. `FLEXLOAD` is used only when using data of categories included in [the following](mxql-loading#flexload-items).
+- **Flat Structure Metrics**  
+  Load metrics where all data is stored in fields using the [`FLEXLOAD`](mxql-loading#flexload) command.
+
+- **Raw Log Data**  
+  Use the [`LogSink`](mxql-loading#logsink) command to query raw log data.
+
+- **Log Count Aggregation Data**  
+  Use the [`LogSinkCount`](mxql-loading#logsinkcount) command to aggregate log counts by time unit.
 
 ## List of predefined MXQL queries provided by the SaaS service{#custom-query-saas}
 
