@@ -1,5 +1,26 @@
 [
   {
+    "url": "https://docs.whatap.io/release-notes/nodejs/nodejs-1_0_5/",
+    "ver": "v1.0.5",
+    "date": "2025-10-30",
+    "Lists": [
+      {
+        "ver": "v1.0.5",
+        "hash": "v105",
+        "product": "Node.js Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Improved gRPC monitoring trace.</p>"
+      },
+      {
+        "ver": "v1.0.5",
+        "hash": "v105",
+        "product": "Node.js Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Improved transaction handling to immediately terminate when a user forcibly closes the browser window or triggers a close event.</p>"
+      }
+    ]
+  },
+  {
     "url": "https://docs.whatap.io/release-notes/nodejs/nodejs-1_0_4/",
     "ver": "v1.0.4",
     "date": "2025-10-16",

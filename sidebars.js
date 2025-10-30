@@ -4298,9 +4298,10 @@ const sidebars = {
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/nodejs/nodejs-1_0_4',
+                  id: 'release-notes/nodejs/nodejs-1_0_5',
                   className: 'new',
                 },
+                'release-notes/nodejs/nodejs-1_0_4',
                 'release-notes/nodejs/nodejs-1_0_3',
                 'release-notes/nodejs/nodejs-0_5_25',
                 'release-notes/nodejs/nodejs-previous',
@@ -4409,7 +4410,11 @@ const sidebars = {
               label: 'Server Solaris',
               collapsible: true,
               collapsed: true,
+<<<<<<< HEAD
               // className: 'new',
+=======
+              //className: 'new',
+>>>>>>> 8cc9eb3301efb8cc96ea1d3280e46ff5ad0e4e73
               link: {
                 type: 'doc',
                 id: 'release-notes/server-solaris/index'
@@ -4418,7 +4423,11 @@ const sidebars = {
                 {
                   type: 'doc',
                   id: 'release-notes/server-solaris/server-solaris-1_4_5',
+<<<<<<< HEAD
                   // className: 'new'
+=======
+                  //className: 'new'
+>>>>>>> 8cc9eb3301efb8cc96ea1d3280e46ff5ad0e4e73
                 },
                 'release-notes/server-solaris/server-solaris-1_4_4',
                 'release-notes/server-solaris/server-solaris-1_4_2',
@@ -4449,7 +4458,11 @@ const sidebars = {
               label: 'Kubernetes',
               collapsible: true,
               collapsed: true,
+<<<<<<< HEAD
               // className: 'new',
+=======
+              //className: 'new',
+>>>>>>> 8cc9eb3301efb8cc96ea1d3280e46ff5ad0e4e73
               link: {
                 type: 'doc',
                 id: 'release-notes/k8s/index',
@@ -4458,7 +4471,11 @@ const sidebars = {
                 {
                   type: 'doc',
                   id: 'release-notes/k8s/k8s-1_8_8',
+<<<<<<< HEAD
                   // className: 'new',
+=======
+                  //className: 'new',
+>>>>>>> 8cc9eb3301efb8cc96ea1d3280e46ff5ad0e4e73
                 },
                 'release-notes/k8s/k8s-1_8_7',
                 'release-notes/k8s/k8s-1_8_6',
