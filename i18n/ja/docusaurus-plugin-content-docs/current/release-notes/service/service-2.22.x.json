@@ -1,6 +1,21 @@
 [
     {
         "url": "https://docs.whatap.io/release-notes/service/service-2_22_x",
+        "ver": "Service 2.22.3",
+        "date": "2025-10-31",
+        "Lists": [
+            {
+            "ver": "Service 2.22.3",
+            "hash": "service-2223",
+            "product": "Application",
+            "category": "PHP",
+            "type": "Fixed",
+            "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">分析</span> > <span class=\"uitext\">パフォーマンストレンド</span> でメモリチャートデータを取得できない問題を修正しました。</p>"
+            }
+        ]
+    },      
+    {
+        "url": "https://docs.whatap.io/release-notes/service/service-2_22_x",
         "ver": "Service 2.22.2",
         "date": "2025-10-31",
         "Lists": [
