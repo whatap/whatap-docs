@@ -1,5 +1,40 @@
 [
   {
+    "ver": "v2.2.65",
+    "date": "2025-10-28",
+    "Lists": [
+      {
+        "ver": "v2.2.65",
+        "hash": "v2265",
+        "product": "Java Agent",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> Added an option to control how SQL bind variables exceeding the length limit are displayed</p>",
+        "details": "<ul>\n<li>Option: <code>trace_sql_param_show_length_enabled</code></li>\n<li><code>false</code>: Default; shows bind variables up to 40 characters</li>\n<li><code>true</code>: When a bind variable exceeds 40 characters, it is displayed as <code>…(total length)</code></li>\n</ul>"
+      },
+      {
+        "ver": "v2.2.65",
+        "hash": "v2265",
+        "product": "Java Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Tracked connection creation errors in lettuce 5.x</p>"
+      },
+      {
+        "ver": "v2.2.65",
+        "hash": "v2265",
+        "product": "Java Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Supported asynchronous command error measurement in lettuce 5.x</p>"
+      },
+      {
+        "ver": "v2.2.65",
+        "hash": "v2265",
+        "product": "Java Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Tracked WebClient cancel calls in Spring Boot 2.4.x and below</p>"
+      }
+    ]
+  },
+  {
     "url": "https://docs.whatap.io/release-notes/java/java-2_2_64",
     "ver": "v2.2.64",
     "date": "2025-09-03",
