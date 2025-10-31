@@ -1,0 +1,15 @@
+<svg class="SVGInline-svg" style="width: 20px;height: 20px;" width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 59.1 (86144) - https://sketch.com -->
+    <!-- <title>linetext-chart</title> -->
+    <desc>Created with Sketch.</desc>
+    <g id="Dashboard_add_wiget_modal" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(-1024.000000, -70.000000)" fill="#757575" id="Group">
+            <g transform="translate(624.000000, 62.000000)">
+                <g id="s_chart" transform="translate(400.000000, 8.000000)">
+                    <path d="M12.0112761,13.3877499 L13.999,14.88 L13.999,17.478 L12.0118886,15.9861045 L2.89910075,25.1643506 L1.6,23.8650967 L12.0112761,13.3877499 Z M29.8303291,7.6 L29.8303291,13.011707 L27.9928457,13.011707 L27.9928457,10.7365841 L18,20.4815241 L18,17.8831695 L26.6931325,9.43748339 L24.0242244,9.43748339 L24.0242244,7.6 L29.8303291,7.6 Z" id="Combined-Shape"></path>
+                    <path id="Shape" d="M9 7.6 9 12.0905263 11.0084211 12.0905263 11.0084211 9.60842105 14.9957895 9.60842105 14.9957895 22.363788 12.2105263 22.363788 12.2105263 24.372209 19.7894737 24.372209 19.7894737 22.363788 17.0042105 22.363788 17.0042105 9.60842105 20.9915789 9.60842105 20.9915789 12.0905263 23 12.0905263 23 7.6z"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

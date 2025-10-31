@@ -1,0 +1,25 @@
+<svg class="SVGInline-svg" style="width: 60px;height: 60px;" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+  <g fill="none" fill-rule="evenodd">
+      <g>
+          <g>
+              <g>
+                  <g>
+                      <g>
+                          <path d="M0 0L32 0 32 32 0 32z" transform="translate(-3000 -1312) translate(2198 1266) translate(646 14) translate(156 32)"></path>
+                      </g>
+                      <g fill-rule="nonzero">
+                          <g>
+                              <path fill="#FFF" d="M5.94 22.31l-.453-.17s.055-2.531-.772-2.713c-.551-.703.089-29.802 2.074-.097 0 0-.684.376-.805 1.018-.133.63-.045 1.962-.045 1.962z" transform="translate(-3000 -1312) translate(2198 1266) translate(646 14) translate(156 32) translate(10.4 3.2)"></path>
+                              <path fill="#A6A385" d="M6.033 25.864l-.602-.236s.073-3.511-1.03-3.763c-.735-.975.118-41.337 2.765-.135 0 0-.912.52-1.074 1.412-.176.873-.059 2.722-.059 2.722z" transform="translate(-3000 -1312) translate(2198 1266) translate(646 14) translate(156 32) translate(10.4 3.2)"></path>
+                              <path fill="#FFF" d="M6.093 19.344s4.632-2.755 3.548-8.487C8.596 6.69 6.131 5.324 5.861 4.8 5.564 4.425 5.28 3.77 5.28 3.77l.194 11.592c0 .012-.4 3.55.619 3.981" transform="translate(-3000 -1312) translate(2198 1266) translate(646 14) translate(156 32) translate(10.4 3.2)"></path>
+                              <path fill="#499D4A" d="M11.457 10.103c-1.49-5.888-4.085-6.82-4.471-7.563-.423-.527-.907-1.568-.907-1.568V17.33c0 .017-1.135 4.152.319 4.762 0 0 6.605-3.892 5.06-11.99z" transform="translate(-3000 -1312) translate(2198 1266) translate(646 14) translate(156 32) translate(10.4 3.2)"></path>
+                              <path fill="#FFF" d="M5.519 20.086s-4.252-2.778-4-7.668c.24-4.891 3.243-7.294 3.823-7.729.378-.386.391-.531.416-.918.265.544.215 8.127.253 9.021.113 3.442-.202 6.642-.492 7.294z" transform="translate(-3000 -1312) translate(2198 1266) translate(646 14) translate(156 32) translate(10.4 3.2)"></path>
+                              <path fill="#58AA50" d="M.392 12.21C.71 5.428 4.715 2.095 5.488 1.492c.505-.536.522-.737.555-1.273.354.754.286 11.272.337 12.512.151 4.774-.27 9.212-.656 10.117 0 0-5.669-3.853-5.332-10.636z" transform="translate(-3000 -1312) translate(2198 1266) translate(646 14) translate(156 32) translate(10.4 3.2)"></path>
+                          </g>
+                      </g>
+                  </g>
+              </g>
+          </g>
+      </g>
+  </g>
+</svg>
