@@ -25,7 +25,7 @@ const config = {
       ssgWorkerThreads: true,
     },
   },
-  baseUrl: "/",
+  baseUrl: "/whatap-docs/",
   onBrokenLinks: "ignore",
   onBrokenAnchors: "ignore",
   onBrokenMarkdownLinks: "warn",
