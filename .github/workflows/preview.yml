@@ -45,7 +45,7 @@ jobs:
       - name: Build website
         env:
           NODE_OPTIONS: --max-old-space-size=12288
-        run: yarn build --locale ko
+        run: yarn build
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
