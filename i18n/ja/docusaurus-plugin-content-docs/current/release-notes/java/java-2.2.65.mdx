@@ -1,0 +1,25 @@
+---
+id: java-2_2_65
+title: Java Agent v2.2.65
+toc_max_heading_level: 2
+pagination_next: release-notes/java/java-2_2_64
+displayed_sidebar: releaseSidebar
+---
+
+2025年10月28日
+
+- <Status priority='1'>Feature</Status> SQLバインド変数の長さが上限を超えた場合の表示方式を変更するオプションを追加
+
+    - `trace_sql_param_show_length_enabled`
+        - `false`: デフォルト。バインド変数を最大40文字まで表示
+        - `true`: バインド変数が40文字を超える場合、`…(総文字数)`として表示
+
+- <Status priority='0'>Fixed</Status> lettuce 5.x: 接続作成失敗時のエラー追跡を追加
+
+- <Status priority='0'>Fixed</Status> lettuce 5.x: 非同期コマンドのエラー追跡に対応
+
+- <Status priority='0'>Fixed</Status> Spring Boot 2.4.x以下: キャンセルされたWebClient呼び出しを追跡
+
+import DownloadJava from './_import_dl-java-agent.mdx';
+
+<DownloadJava ver="2.2.64" />
