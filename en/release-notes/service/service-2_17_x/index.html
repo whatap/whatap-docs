@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="en-US" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-release-notes/service/service-2_17_x" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.8.0">
+<title data-rh="true">Service 2.17.X | WhaTap Docs</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://www.whatap.io/img/og/whatap.png"><meta data-rh="true" name="twitter:image" content="https://www.whatap.io/img/og/whatap.png"><meta data-rh="true" property="og:url" content="https://docs.whatap.io/whatap-docs/en/release-notes/service/service-2_17_x"><meta data-rh="true" property="og:locale" content="en_US"><meta data-rh="true" property="og:locale:alternate" content="ko_KR"><meta data-rh="true" property="og:locale:alternate" content="ja_JP"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Service 2.17.X | WhaTap Docs"><meta data-rh="true" name="description" content="Service 2.17.1"><meta data-rh="true" property="og:description" content="Service 2.17.1"><link data-rh="true" rel="icon" href="/whatap-docs/en/img/whatap-favicon.ico"><link data-rh="true" rel="canonical" href="https://docs.whatap.io/whatap-docs/en/release-notes/service/service-2_17_x"><link data-rh="true" rel="alternate" href="https://docs.whatap.io/whatap-docs/release-notes/service/service-2_17_x" hreflang="ko-KR"><link data-rh="true" rel="alternate" href="https://docs.whatap.io/whatap-docs/en/release-notes/service/service-2_17_x" hreflang="en-US"><link data-rh="true" rel="alternate" href="https://docs.whatap.io/whatap-docs/ja/release-notes/service/service-2_17_x" hreflang="ja-JP"><link data-rh="true" rel="alternate" href="https://docs.whatap.io/whatap-docs/release-notes/service/service-2_17_x" hreflang="x-default"><script>!function(e,t,a,o,r){e=e[r]=e[r]||{config:{projectAccessKey:"x4t5020boh2ln-z6pi7d91ds6c1a-z7t4b2lrgnub4o",pcode:29856,sampleRate:100,sessionReplaySampleRate:100,ignorePageUrls:[/^.*localhost.*$/i,/^.*ngrok-free.app.*$/i,/^.*whatap.github.io.*$/i],collectUserClick:!0}},(r=t.createElement(a)).async=1,r.src=o,(o=t.getElementsByTagName(a)[0]).parentNode.insertBefore(r,o)}(window,document,"script","https://repo.whatap-browser-agent.io/rum/prod/v1/whatap-browser-agent.js","WhatapBrowserAgent")</script>
+<script>let curLang=document.documentElement.lang.split("-")[0];CRISP_RUNTIME_CONFIG={locale:curLang},window.$crisp=[],window.CRISP_WEBSITE_ID="9a0c342f-a5b1-4c4a-a22f-92c7b4b9b477",d=document,s=d.createElement("script"),s.src="https://client.crisp.chat/l.js",s.async=1,d.getElementsByTagName("head")[0].appendChild(s)</script>
+
+
+<link rel="preconnect" href="https://www.googletagmanager.com">
+<script>window.dataLayer=window.dataLayer||[]</script>
+<script>!function(e,t,a,n){e[n]=e[n]||[],e[n].push({"gtm.start":(new Date).getTime(),event:"gtm.js"});var g=t.getElementsByTagName(a)[0],m=t.createElement(a);m.async=!0,m.src="https://www.googletagmanager.com/gtm.js?id=GTM-KT747XQX",g.parentNode.insertBefore(m,g)}(window,document,"script","dataLayer")</script>
+
+
+
+<meta name="keywords" content="WhaTap, 와탭, 매뉴얼, 사용법, WhaTap 사용법, WhaTap 매뉴얼, 기술 문서, APM, 애플리케이션 모니터링, 로그 모니터링, 쿠버네티스 모니터링, 서버 모니터링, 데이터베이스 모니터링, URL 모니터링, 클라우드 모니터링, 브라우저 모니터링, Browser monitoring, Application Monitoring, Log Monitoring, Kubernetes Monitoring, Server Monitoring, Database Monitoring, URL Monitoring, Cloud Monitoring, Manual, User Guide, Docs, WhaTap Manual, WhaTap Docs, WhaTap Documents, 트랜잭션, Transaction, 트레이싱, Tracing, 마스터, Master, 노드, Node, 데드락, Deadlock, 락 트리, Lock tree, 멀티 트랜잭션, Multi Trancsaction, 메트릭스, Metrics, 소프트웨어 프록시, Software proxy, 스택, Stack, 슬로우 쿼리, Slow query, 액티브 트랜잭션, Active transaction, 컨테이너, Container, 히트맵, Hitmap, Garbage Collection, GC, MXQL, Method 추적, Trace method, OOM Killed 컨테이너, OOM Killed Container, Oracle, Tibero, PostgreSQL, MySQL, MongoDB, SQL Server, CUBRID, Altibase, Redis, WebLogic, WebSphere">
+<meta name="description" content="WhaTap Docs 페이지입니다. 애플리케이션, 서버, 쿠버네티스, 데이터베이스, 브라우저 등 다양한 모니터링 솔루션의 사용법을 제공합니다.">
+<meta name="naver-site-verification" content="0c21fc5664a467108fb762ade47a3f81ee9b88ed">
+<meta name="google-site-verification" content="rIlfJkbbogFOIDc3DgJZmOGbUMJWytyvZSKEgV7EMsE"><link rel="stylesheet" href="/whatap-docs/en/assets/css/styles.209dc48f.css">
+<script src="/whatap-docs/en/assets/js/runtime~main.37b8fc77.js" defer="defer"></script>
+<script src="/whatap-docs/en/assets/js/main.735280a7.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light")),document.documentElement.setAttribute("data-theme-choice",t||"system")}(),function(){try{const n=new URLSearchParams(window.location.search).entries();for(var[t,e]of n)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}(),document.documentElement.setAttribute("data-announcement-bar-initially-dismissed",function(){try{return"true"===localStorage.getItem("docusaurus.announcement.dismiss")}catch(t){}return!1}())</script>
+
+<script async defer="defer" crossorigin="anonymous" src="https://connect.facebook.net/ko_KR/sdk.js#xfbml=1&amp;version=v17.0&amp;appId=169051789422006&amp;autoLogAppEvents=1" nonce="y4U7YSrt"></script>
+<div id="fb-root"></div>
+
+
+
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KT747XQX" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript><div id="__docusaurus"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><div class="theme-announcement-bar announcementBar_mb4j" style="background-color:none;color:#ffffff" role="banner"><div class="content_knG7 announcementBarContent_xLdY"><div id="announce-banner"> <a class="left" href="https://event.whatap.io/ko/summit_/index.html#" target="_blank"> WhaTap Observe Summit 2025 등록 오픈 🚀 </a> <a class="right" href="https://event.whatap.io/ko/summit_/index.html#" target="_blank"> 11월 21일(금) 09:00, 삼성동 COEX ↗ </a> </div></div></div><nav aria-label="Main" class="navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/whatap-docs/en/"><div class="navbar__logo"><img src="/whatap-docs/en/img/whatap-docs-logo.svg" alt="WhaTap Docs" class="themedComponent_mlkZ themedComponent--light_NVdE" height="43px" width="154px"><img src="/whatap-docs/en/img/whatap-docs-logo.svg" alt="WhaTap Docs" class="themedComponent_mlkZ themedComponent--dark_xIcU" height="43px" width="154px"></div><b class="navbar__title text--truncate"></b></a><div class="navbar__item dropdown dropdown--hoverable"><a href="#" aria-haspopup="true" aria-expanded="false" role="button" class="navbar__link">Product</a><ul class="dropdown__menu"><li><a class="dropdown__link" href="/whatap-docs/en/java/introduction">Java</a></li><li><a class="dropdown__link" href="/whatap-docs/en/php/introduction">PHP</a></li><li><a class="dropdown__link" href="/whatap-docs/en/nodejs/introduction">Node.js</a></li><li><a class="dropdown__link" href="/whatap-docs/en/python/introduction">Python</a></li><li><a class="dropdown__link" href="/whatap-docs/en/dotnet/introduction">.NET</a></li><li><a class="dropdown__link" href="/whatap-docs/en/golang/introduction">Go</a></li><li><a class="dropdown__link" href="/whatap-docs/en/server/introduction">Server</a></li><li><a class="dropdown__link" href="/whatap-docs/en/kubernetes/introduction">Kubernetes</a></li><li><a class="dropdown__link" href="/whatap-docs/en/postgresql/monitoring-intro">PostgreSQL</a></li><li><a class="dropdown__link" href="/whatap-docs/en/oracle/monitoring-intro">Oracle</a></li><li><a class="dropdown__link" href="/whatap-docs/en/oracle-pro/monitoring-intro">Oracle Pro</a></li><li><a class="dropdown__link" href="/whatap-docs/en/mysql/monitoring-intro">MySQL</a></li><li><a class="dropdown__link" href="/whatap-docs/en/mssql/monitoring-intro">SQL Server</a></li><li><a class="dropdown__link" href="/whatap-docs/en/tibero/monitoring-intro">Tibero</a></li><li><a class="dropdown__link" href="/whatap-docs/en/cubrid/monitoring-intro">CUBRID</a></li><li><a class="dropdown__link" href="/whatap-docs/en/altibase/monitoring-intro">Altibase</a></li><li><a class="dropdown__link" href="/whatap-docs/en/redis/monitoring-intro">Redis</a></li><li><a class="dropdown__link" href="/whatap-docs/en/mongodb/monitoring-intro">MongoDB</a></li><li><a class="dropdown__link" href="/whatap-docs/en/db2/monitoring-intro">IBM DB2</a></li><li><a class="dropdown__link" href="/whatap-docs/en/sapase/monitoring-intro">SAP ASE</a></li><li><a class="dropdown__link" href="/whatap-docs/en/url/url-intro">URL</a></li><li><a class="dropdown__link" href="/whatap-docs/en/browser">Browser</a></li><li><a class="dropdown__link" href="/whatap-docs/en/mobile/mobile-intro">Mobile</a></li><li><a class="dropdown__link narrow" href="/whatap-docs/en/amazon-cloudwatch/install-agent">Amazon CloudWatch</a></li><li><a class="dropdown__link" href="/whatap-docs/en/amazon-ecs/introduction">Amazon ECS</a></li><li><a class="dropdown__link" href="/whatap-docs/en/aws-log/introduction">AWS Log</a></li><li><a class="dropdown__link" href="/whatap-docs/en/azure/install-agent">Azure Monitor</a></li><li><a class="dropdown__link narrow" href="/whatap-docs/en/ncloud/install-agent">Naver Cloud Monitoring</a></li><li><a class="dropdown__link narrow" href="/whatap-docs/en/oracle-cloud/install-agent">Oracle Cloud Monitor</a></li><li><a class="dropdown__link narrow" href="/whatap-docs/en/npm/introduction">Network Performance Monitoring</a></li><li><a class="dropdown__link narrow" href="/whatap-docs/en/nms/introduction">Network Management System</a></li><li><a class="dropdown__link narrow" href="/whatap-docs/en/features/introduction">Feature Project</a></li><li><a class="dropdown__link" href="/whatap-docs/en/log/introduction">Log</a></li><li><a class="dropdown__link" href="/whatap-docs/en/extensions">Extensions</a></li><li><a class="dropdown__link" href="/whatap-docs/en/openmetrics/introduction">OpenMetrics</a></li></ul></div><a class="navbar__item navbar__link hidden" href="/whatap-docs/en/java/introduction">Java Monitoring</a><a class="navbar__item navbar__link hidden" href="/whatap-docs/en/php/introduction">PHP Monitoring</a><a class="navbar__item navbar__link hidden" href="/whatap-docs/en/nodejs/introduction">Node.js Monitoring</a><a class="navbar__item navbar__link hidden" href="/whatap-docs/en/python/introduction">Python Monitoring</a><a class="navbar__item navbar__link hidden" href="/whatap-docs/en/dotnet/introduction">.NET Monitoring</a><a class="navbar__item navbar__link hidden" href="/whatap-docs/en/golang/introduction">Go Monitoring</a><a class="navbar__item navbar__link hidden" href="/whatap-docs/en/server/introduction">Server Monitoring</a><a class="navbar__item navbar__link hidden" href="/whatap-docs/en/kubernetes/introduction">Kubernetes Monitoring</a><a class="navbar__item navbar__link hidden" href="/whatap-docs/en/postgresql/monitoring-intro">PostgreSQL Monitoring</a><a class="navbar__item navbar__link hidden" href="/whatap-docs/en/oracle/monitoring-intro">Oracle V2 Monitoring</a><a class="navbar__item navbar__link hidden" href="/whatap-docs/en/oracle-pro/monitoring-intro">Oracle Pro Monitoring</a><a class="navbar__item navbar__link hidden" href="/whatap-docs/en/mysql/monitoring-intro">MySQL Monitoring</a><a class="navbar__item navbar__link hidden" href="/whatap-docs/en/mssql/monitoring-intro">SQL Server V2 Monitoring</a><a class="navbar__item navbar__link hidden" href="/whatap-docs/en/tibero/monitoring-intro">Tibero Monitoring</a><a class="navbar__item navbar__link hidden" href="/whatap-docs/en/cubrid/monitoring-intro">CUBRID V2 Monitoring</a><a class="navbar__item navbar__link hidden" href="/whatap-docs/en/altibase/monitoring-intro">Altibase V2 Monitoring</a><a class="navbar__item navbar__link hidden" href="/whatap-docs/en/redis/monitoring-intro">Redis Monitoring</a><a class="navbar__item navbar__link hidden" href="/whatap-docs/en/mongodb/monitoring-intro">MongoDB Monitoring</a><a class="navbar__item navbar__link hidden" href="/whatap-docs/en/db2/monitoring-intro">IBM DB2 Monitoring</a><a class="navbar__item navbar__link hidden" href="/whatap-docs/en/sapase/monitoring-intro">SAP ASE Monitoring</a><a class="navbar__item navbar__link hidden" href="/whatap-docs/en/url/url-intro">URL Monitoring</a><a class="navbar__item navbar__link hidden" href="/whatap-docs/en/amazon-cloudwatch/install-agent">Amazon CloudWatch</a><a class="navbar__item navbar__link hidden" href="/whatap-docs/en/amazon-ecs/introduction">Amazon ECS</a><a class="navbar__item navbar__link hidden" href="/whatap-docs/en/aws-log/introduction">AWS Log</a><a class="navbar__item navbar__link hidden" href="/whatap-docs/en/azure/install-agent">Azure Monitor</a><a class="navbar__item navbar__link hidden" href="/whatap-docs/en/ncloud/install-agent">Naver Cloud Monitoring</a><a class="navbar__item navbar__link hidden" href="/whatap-docs/en/oracle-cloud/install-agent">Oracle Cloud Monitor</a><a class="navbar__item navbar__link hidden" href="/whatap-docs/en/log/introduction">Log Monitoring</a><a class="navbar__item navbar__link hidden" href="/whatap-docs/en/browser">Browser</a><a class="navbar__item navbar__link hidden" href="/whatap-docs/en/mobile/mobile-intro">Mobile 모니터링</a><a class="navbar__item navbar__link hidden" href="/whatap-docs/en/npm/introduction">NPM</a><a class="navbar__item navbar__link hidden" href="/whatap-docs/en/extensions">Extension Tool</a><a class="navbar__item navbar__link hidden" href="/whatap-docs/en/opentelemetry/introduction">OpenTelemetry</a><a class="navbar__item navbar__link hidden" href="/whatap-docs/en/openmetrics/introduction">OpenMetrics</a><a class="navbar__item navbar__link" href="/whatap-docs/en/manage">Management</a><a class="navbar__item navbar__link" href="/whatap-docs/en/openapi-spec">Open API</a><a class="navbar__item navbar__link" href="/whatap-docs/en/faq/">FAQ</a><a class="navbar__item navbar__link iflang-link" href="/whatap-docs/en/learning-guides">Learning</a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/whatap-docs/en/release-notes">Release Notes</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><div class="navbar__item dropdown dropdown--hoverable dropdown--right"><a href="#" aria-haspopup="true" aria-expanded="false" role="button" class="navbar__link oneColumn localeDropdown"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" class="iconLanguage_DSK9"><path fill="currentColor" d="M12.87 15.07l-2.54-2.51.03-.03c1.74-1.94 2.98-4.17 3.71-6.53H17V4h-7V2H8v2H1v1.99h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12zm-2.62 7l1.62-4.33L19.12 17h-3.24z"></path></svg><span class="langLabel_L4uU">ENG</span></a><ul class="dropdown__menu"><li><a href="/whatap-docs/release-notes/service/service-2_17_x" target="_self" rel="noopener noreferrer" class="dropdown__link" lang="ko-KR">KOR</a></li><li><a href="/whatap-docs/en/release-notes/service/service-2_17_x" target="_self" rel="noopener noreferrer" class="dropdown__link dropdown__link--active" lang="en-US">ENG</a></li><li><a href="/whatap-docs/ja/release-notes/service/service-2_17_x" target="_self" rel="noopener noreferrer" class="dropdown__link" lang="ja-JP">JPN</a></li></ul></div><div class="navbarSearchContainer_dCNk"><div id="docsearch"></div></div><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="Switch between dark and light mode (currently system mode)"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M10.9901 0H13.0099V4.06189C15.2205 4.33486 17.1538 5.49222 18.4373 7.16513L21.9901 5.13397L23 6.86603L19.4486 8.89635C19.8546 9.8507 20.0791 10.8994 20.0791 12C20.0791 13.1006 19.8546 14.1493 19.4486 15.1036L23 17.134L21.9901 18.866L18.4373 16.8349C17.1538 18.5078 15.2205 19.6651 13.0099 19.9381V24H10.9901V19.9381C8.77946 19.6651 6.84617 18.5078 5.56273 16.8349L2.00989 18.866L1 17.134L4.5514 15.1036C4.14535 14.1493 3.9209 13.1006 3.9209 12C3.9209 10.8994 4.14535 9.8507 4.5514 8.89635L1 6.86603L2.00989 5.13397L5.56273 7.16513C6.84617 5.49222 8.77946 4.33486 10.9901 4.06189V0ZM5.94068 12C5.94068 8.68629 8.65353 6 12 6C15.3465 6 18.0593 8.68629 18.0593 12C18.0593 15.3137 15.3465 18 12 18C8.65353 18 5.94068 15.3137 5.94068 12Z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M5.05011 4.409C6.46482 2.9943 8.14585 2.02264 9.90788 1.5C8.84446 5.08024 9.63565 8.99454 12.3303 11.6892C15.025 14.3839 18.9393 15.1751 22.5191 14.1129C21.9969 15.8737 21.0253 17.5548 19.6106 18.9695C15.322 23.2581 8.58587 23.4752 4.56511 19.4545C0.544352 15.4337 0.761495 8.69762 5.05011 4.409ZM7.26586 5.19608C6.97785 5.42391 6.70099 5.67022 6.43684 5.93437C2.99054 9.38066 2.80435 14.782 6.02096 17.9986C9.23756 21.2152 14.6389 21.029 18.0852 17.5827C18.4373 17.2307 18.7577 16.856 19.0448 16.4625C15.9881 16.4646 13.0552 15.3261 10.8743 13.1452C8.77411 11.045 7.6407 8.24751 7.56194 5.31354L7.55754 4.97444L7.26586 5.19608ZM17.3387 2.30478H19.3979V4.36394H21.4571V6.4231H19.3979V8.48226H17.3387V6.4231H15.2795V4.36394H17.3387V2.30478Z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_mhZE"><div class="hold-menu"><ul><li><a href="/en" class="home">WhaTap Docs</a></li><li><a href="https://www.whatap.io/en" target="_blank" rel="noopener noreferrer" class="ext">Shortcut for WhaTap Home</a></li></ul></div><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_Y1UP menuWithAnnouncementBar_fPny"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="menu__link" href="/whatap-docs/en/release-notes">Release Notes</a></div><ul class="menu__list"><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed new"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" tabindex="0" href="/whatap-docs/en/release-notes/service/">Service</a><button aria-label="Expand sidebar category &#x27;Service&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" tabindex="0" href="/whatap-docs/en/release-notes/mobile/">WhaTap Mobile App</a><button aria-label="Expand sidebar category &#x27;WhaTap Mobile App&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" tabindex="0" href="/whatap-docs/en/release-notes/java/">Agent</a></div></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item new"><a class="menu__link" tabindex="0" href="/whatap-docs/en/release-notes/docs/release-note">WhaTap Docs</a></li></ul></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_z5aJ"><div class="docItemContainer_c0TR"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Alpn" aria-label="Breadcrumbs"><ul class="breadcrumbs" itemscope="" itemtype="https://schema.org/BreadcrumbList"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/whatap-docs/en/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_xK9p"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/whatap-docs/en/release-notes"><span itemprop="name">Release Notes</span></a></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_XdKt"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>Service 2.17.X</h1></header><section class="remark-sectionize-h2"><h2 class="anchor anchorWithStickyNavbar_LWe7" id="service-2171">Service 2.17.1<a href="#service-2171" class="hash-link" aria-label="Direct link to Service 2.17.1" title="Direct link to Service 2.17.1">​</a></h2><p>June 04, 2025</p><div class="indentTab"><h3 class="anchor anchorWithStickyNavbar_LWe7" id="server"><code>Server</code><a href="#server" class="hash-link" aria-label="Direct link to server" title="Direct link to server">​</a></h3><p><code class="Fixed" type="0">Fixed</code> Fixed the issue where the details for CPU usage, memory usage, network, disk i/o, and disk used space (%) chart in the drawer is not visible when the <span class="uitext">Server List</span> &gt; <span class="uitext">Server Detail</span> button is clicked.</p><hr><h3 class="anchor anchorWithStickyNavbar_LWe7" id="database"><code>Database</code><a href="#database" class="hash-link" aria-label="Direct link to database" title="Direct link to database">​</a></h3><h4 class="anchor anchorWithStickyNavbar_LWe7" id="oracle-pro">Oracle Pro<a href="#oracle-pro" class="hash-link" aria-label="Direct link to Oracle Pro" title="Direct link to Oracle Pro">​</a></h4><p><code class="Feature" type="1">Feature</code> Added the session trace feature in the <span class="uitext">Session detail</span> window.</p><hr><h3 class="anchor anchorWithStickyNavbar_LWe7" id="mobile"><code>Mobile</code><a href="#mobile" class="hash-link" aria-label="Direct link to mobile" title="Direct link to mobile">​</a></h3><p><code class="Fixed" type="0">Fixed</code> Changed the installation text for the Android installation guide plug-in.</p><hr><h3 class="anchor anchorWithStickyNavbar_LWe7" id="browser"><code>Browser</code><a href="#browser" class="hash-link" aria-label="Direct link to browser" title="Direct link to browser">​</a></h3><ul>
+<li>
+<p><code class="Fixed" type="0">Fixed</code> Improved the <span class="uitext">Statistics</span> &gt; <span class="uitext">IP Load Statistics</span> TopN chart data fetching speed.</p>
+</li>
+<li>
+<p><code class="Fixed" type="0">Fixed</code> Fixed the log time mismatch between <span class="uitext">Statistics</span> &gt; <span class="uitext">Page Load Statistics</span> and the redirected session.</p>
+</li>
+</ul><hr><h3 class="anchor anchorWithStickyNavbar_LWe7" id="log"><code>Log</code><a href="#log" class="hash-link" aria-label="Direct link to log" title="Direct link to log">​</a></h3><p><code class="Feature" type="1">Feature</code> Added the <span class="uitext">Log Explorer</span> page.</p></div></section>
+<section class="remark-sectionize-h2"><h2 class="anchor anchorWithStickyNavbar_LWe7" id="service-2170">Service 2.17.0<a href="#service-2170" class="hash-link" aria-label="Direct link to Service 2.17.0" title="Direct link to Service 2.17.0">​</a></h2><p>May 28, 2025</p><div class="indentTab"><h3 class="anchor anchorWithStickyNavbar_LWe7" id="common"><code>Common</code><a href="#common" class="hash-link" aria-label="Direct link to common" title="Direct link to common">​</a></h3><ul>
+<li>
+<p><code class="Feature" type="1">Feature</code> The <span class="uitext">Real-time Alert List</span> and <span class="uitext">Project Member</span>(<span class="uitext">Integrated Group Management</span>) options and selection status are included in the URL so that they can be shared in the same state when sharing the link.</p>
+</li>
+<li>
+<p><code class="Feature" type="1">Feature</code> Added the <span class="uitext">Report</span> Excel downloading feature (provided only in some report templates).</p>
+</li>
+<li>
+<p><code class="Feature" type="1">Feature</code> Added the feature to change the <span class="uitext">Flex Board</span> sharing role.</p>
+</li>
+<li>
+<p><code class="Feature" type="1">Feature</code> Added the Excel file downloading button for the <span class="uitext">Event Configuration</span> <code class="newfunc">New</code> event configuration history.</p>
+</li>
+<li>
+<p><code class="Fixed" type="0">Fixed</code> When adding a new widget after dragging the <span class="uitext">Metrics Chart</span> <code class="oldfunc">Old</code> widget, modified to maintain the time selector settings.</p>
+</li>
+<li>
+<p><code class="Fixed" type="0">Fixed</code> Fixed the issue where the project tag in the <span class="uitext">Flex Board</span> <em><strong>management</strong></em> widget cannot be clicked.</p>
+</li>
+<li>
+<p><code class="Fixed" type="0">Fixed</code> Fixed the bug for the <em><strong>Compare with previous time</strong></em> feature of the <span class="uitext">Flex Board</span> widget.</p>
+</li>
+<li>
+<p><code class="Fixed" type="0">Fixed</code> Fixed the bug where organization information disappears when the <em><strong>Profile</strong></em> icon &gt; <em><strong>WhataTap Monitoring Information</strong></em> menu is clicked on the upper right of the screen.</p>
+</li>
+<li>
+<p><code class="Fixed" type="0">Fixed</code> Fixed the individual time settings for series charts to be applied.</p>
+</li>
+<li>
+<p><code class="Fixed" type="0">Fixed</code> Applied resizing of the page table to add the linked project in.</p>
+</li>
+</ul><hr><h3 class="anchor anchorWithStickyNavbar_LWe7" id="application"><code>Application</code><a href="#application" class="hash-link" aria-label="Direct link to application" title="Direct link to application">​</a></h3><ul>
+<li>
+<p><code class="Feature" type="1">Feature</code> Added the opetion to display the <span class="uitext">Multi transaction</span> <span class="uitext">Chart</span> client IP information.</p>
+</li>
+<li>
+<p><code class="Feature" type="1">Feature</code> Added the feature to display error properties out of <span class="uitext">Trace analysis</span> &gt; <em><strong>Timeline</strong></em> and <span class="uitext">Table view</span> Message Step.</p>
+</li>
+<li>
+<p><code class="Feature" type="1">Feature</code> Added the feature to display the table area loading when initial data is viewed in <span class="uitext">Transaction map</span> and to display the vertical line loading if no data exists.</p>
+</li>
+<li>
+<p><code class="Feature" type="1">Feature</code> Added the <code>city</code> filter into the filters that can be used in the stop state of <span class="uitext">Transaction map</span>.</p>
+</li>
+<li>
+<p><code class="Feature" type="1">Feature</code> Added the <code>STEP_SQL_BIND</code> and <code>STEP_ALL</code> filters in <span class="uitext">Transaction map</span> (if used, a decryption key is required to be input).</p>
+</li>
+<li>
+<p><code class="Feature" type="1">Feature</code> When viewing the profile data by dragging <span class="uitext">Analysis</span> &gt; <span class="uitext">Hitmap</span>, added the feature to display a message indicating the possible period if the maximum search period is exceeded.</p>
+</li>
+<li>
+<p><code class="Feature" type="1">Feature</code> Added the <span class="uitext">Transaction map</span> widget and its setting items.</p>
+</li>
+<li>
+<p><code class="Fixed" type="0">Fixed</code> In <span class="uitext">Instance Performance Management</span> &gt; <span class="uitext">Agent Log</span>, fixed the display error for the data between agents when the same agent log file is selected.</p>
+</li>
+<li>
+<p><code class="Fixed" type="0">Fixed</code> In <span class="uitext">Analysis</span> &gt; <span class="uitext">Stack</span>, fixed the table column sharing issue between tabs.</p>
+</li>
+<li>
+<p><code class="Fixed" type="0">Fixed</code> Fixed the missing <span class="uitext">Trend comparison</span> transaction name display issue in <span class="uitext">Statistics</span> &gt; <span class="uitext">Transaction</span>.</p>
+</li>
+<li>
+<p><code class="Fixed" type="0">Fixed</code> Fixed the bug where all data is not displayed, if there is no initial data in real-time mode of <span class="uitext">Transaction map</span>.</p>
+</li>
+<li>
+<p><code class="Deprecated" type="1">Deprecated</code> The <span class="uitext">Topology</span> and <em><strong>Custom Hitmap</strong></em> service are ended (<code>2025/12/31</code>).</p>
+</li>
+</ul><hr><h3 class="anchor anchorWithStickyNavbar_LWe7" id="server-1"><code>Server</code><a href="#server-1" class="hash-link" aria-label="Direct link to server-1" title="Direct link to server-1">​</a></h3><ul>
+<li>
+<p><code class="Feature" type="1">Feature</code> Added the <span class="uitext">Notifications</span> &gt; <em><strong>Webhook JSON</strong></em> variable.</p>
+</li>
+<li>
+<p><code class="Feature" type="1">Feature</code> Provided the content drawer for the <span class="uitext">Server List</span> &gt; <span class="uitext">Server Detail</span> page.</p>
+</li>
+<li>
+<p><code class="Feature" type="1">Feature</code> Added the configuration popover in which the Y-axis maximum value in the charts in the <span class="uitext">Server List</span> &gt; <span class="uitext">Server Detail</span> menu.</p>
+</li>
+<li>
+<p><code class="Feature" type="1">Feature</code> In <span class="uitext">Alert</span> &gt; <span class="uitext">Event Configuration</span> &gt; <span class="uitext">Log File / Window Event</span>, added the feature to add and modify Repeat (times) and Duration (seconds).</p>
+</li>
+<li>
+<p><code class="Feature" type="1">Feature</code> Improved the display of Event ID in the event list of <span class="uitext">Alert</span> &gt; <span class="uitext">Event Configuration</span> &gt; <span class="uitext">Log File / Window Event</span>.</p>
+</li>
+<li>
+<p><code class="Changed" type="1">Changed</code> Disabled case sensitivity when searching for the <span class="uitext">Server List</span> agent.</p>
+</li>
+<li>
+<p><code class="Changed" type="1">Changed</code> Improved the <span class="uitext">Laboratory</span> &gt; <span class="uitext">Metrics Explorer</span> metric list sorting criteria (predefined order has been applied).</p>
+</li>
+<li>
+<p><code class="Fixed" type="0">Fixed</code> Fixed the Server Name column display error in the <span class="uitext">Server name</span> column under <span class="uitext">Dashboard</span> &gt; <em><strong>Group Summary</strong></em> &gt; <em><strong>Events in progress</strong></em> tab and added the Agent Name column.</p>
+</li>
+<li>
+<p><code class="Fixed" type="0">Fixed</code> Fixed the Server Name column display error in the <span class="uitext">Server name</span> column under <span class="uitext">Dashboard</span> &gt; <span class="uitext">Server Inventory Map</span> menu &gt; <em><strong>Display Detail</strong></em>&#x27;s <em><strong>Events in progress</strong></em> tab and added the Agent Name column.</p>
+</li>
+<li>
+<p><code class="Fixed" type="0">Fixed</code> In <span class="uitext">Server List</span> &gt; <span class="uitext">Column settings</span>, prevented duplicate entries when spaces are included.</p>
+</li>
+<li>
+<p><code class="Fixed" type="0">Fixed</code> In the <span class="uitext">Server List</span> &gt; <span class="uitext">Server Detail</span> line chart panel, the Download button is hidden when there is no data in the query section.</p>
+</li>
+<li>
+<p><code class="Fixed" type="0">Fixed</code> In <span class="uitext">Server List</span> &gt; <span class="uitext">Server Detail</span> &gt; <span class="uitext">Server information</span>, fixed the error where the <span class="uitext">Server Alert List</span> event reception tag is wrongly displayed.</p>
+</li>
+<li>
+<p><code class="Fixed" type="0">Fixed</code> Fixed the issue with list staying open when adding the <span class="uitext">Metrics Explorer</span> widget.</p>
+</li>
+</ul><hr><h3 class="anchor anchorWithStickyNavbar_LWe7" id="kubernetes"><code>Kubernetes</code><a href="#kubernetes" class="hash-link" aria-label="Direct link to kubernetes" title="Direct link to kubernetes">​</a></h3><ul>
+<li>
+<p><code class="Changed" type="1">Changed</code> In <em><strong>Workload</strong></em> &gt; <em><strong>Deployment List</strong></em>, added new metrics (Kubernetes Agent 1.8.7).</p>
+<ul>
+<li>
+<p><strong>Remove Columns</strong></p>
+<ul>
+<li>
+<p>Replaced as ReplicaSets, TotalPods, Running Pods → PodPhase.</p>
+</li>
+<li>
+<p>Replace TotalContainers and RunningContainers with ContainerState.</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Additional Columns</strong></p>
+<ul>
+<li>
+<p>PodPhase, ContainerState, Ready, deployUpdatedReplicas, deployAvailableReplicas, deployCreationTime</p>
+<div class="theme-admonition theme-admonition-note admonition_xJq3 alert alert--secondary"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M6.3 5.69a.942.942 0 0 1-.28-.7c0-.28.09-.52.28-.7.19-.18.42-.28.7-.28.28 0 .52.09.7.28.18.19.28.42.28.7 0 .28-.09.52-.28.7a1 1 0 0 1-.7.3c-.28 0-.52-.11-.7-.3zM8 7.99c-.02-.25-.11-.48-.31-.69-.2-.19-.42-.3-.69-.31H6c-.27.02-.48.13-.69.31-.2.2-.3.44-.31.69h1v3c.02.27.11.5.31.69.2.2.42.31.69.31h1c.27 0 .48-.11.69-.31.2-.19.3-.42.31-.69H8V7.98v.01zM7 2.3c-3.14 0-5.7 2.54-5.7 5.68 0 3.14 2.56 5.7 5.7 5.7s5.7-2.55 5.7-5.7c0-3.15-2.56-5.69-5.7-5.69v.01zM7 .98c3.86 0 7 3.14 7 7s-3.14 7-7 7-7-3.12-7-7 3.14-7 7-7z"></path></svg></span>Note</div><div class="admonitionContent_BuS1"><p>It is exposed only in Kubernetes Agent 1.8.7 or later, and the previous names appear as before when using older versions of the agent.</p></div></div>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><code class="Changed" type="1">Changed</code> Changed to allow to modify the <em><strong>namespace</strong></em> project name.</p>
+</li>
+</ul><hr><h3 class="anchor anchorWithStickyNavbar_LWe7" id="database-1"><code>Database</code><a href="#database-1" class="hash-link" aria-label="Direct link to database-1" title="Direct link to database-1">​</a></h3><h4 class="anchor anchorWithStickyNavbar_LWe7" id="common-1">Common<a href="#common-1" class="hash-link" aria-label="Direct link to Common" title="Direct link to Common">​</a></h4><ul>
+<li>
+<p><code class="Feature" type="1">Feature</code> Added the column selection feature in the lock tree table.</p>
+<ul>
+<li><span class="uitext">Dashboard</span> &gt; <span class="uitext">Monitoring a Database Instance</span>, <span class="uitext">Monitoring Multiple Instances</span></li>
+<li><span class="uitext">Analysis</span> &gt; <span class="uitext">Lock Tree</span></li>
+</ul>
+</li>
+<li>
+<p><code class="Feature" type="1">Feature</code> Added the feature to download the chart data as a CSV file when the real-time mode is not applied to <span class="uitext">Dashboard</span> &gt; <span class="uitext">Monitoring a Database Instance</span>.</p>
+</li>
+<li>
+<p><code class="Feature" type="1">Feature</code> Added the feature to save the <span class="uitext">Dashboard</span> &gt; <span class="uitext">Monitoring Multiple Instances</span> Disk Usage widget table status preset.</p>
+</li>
+<li>
+<p><code class="Feature" type="1">Feature</code> Added the tags to display the instance&#x27;s Replication Role or Cluster configuration.</p>
+<ul>
+<li>
+<p>Instance selector on the <span class="uitext">Dashboard</span> &gt; <span class="uitext">Monitoring a Database Instance</span> screen</p>
+</li>
+<li>
+<p>Instance tag on the <span class="uitext">Dashboard</span> &gt; <span class="uitext">Monitoring Multiple Instances</span> screen</p>
+</li>
+<li>
+<p>Role column of the <span class="uitext">Management</span> &gt; <em><strong>Agent List</strong></em></p>
+</li>
+</ul>
+</li>
+<li>
+<p><code class="Feature" type="1">Feature</code> Improved the <span class="uitext">Dashboard</span> &gt; <span class="uitext">Monitoring a Database Instance</span> <code class="newfunc">New</code> screen.</p>
+<ul>
+<li>Added the click and drag events in the custom widget series chart.</li>
+<li>Changed the chart option icon to the More button.</li>
+<li>Added the guide text when a deactivated instance is selected.</li>
+<li>Added the metric selection button in the default series chart.</li>
+</ul>
+</li>
+<li>
+<p><code class="Changed" type="1">Changed</code> Changed the <span class="uitext">Dashboard</span> &gt; <span class="uitext">Monitoring a Database Instance</span> widget&#x27;s header icon to the More button.</p>
+</li>
+<li>
+<p><code class="Changed" type="1">Changed</code> In <span class="uitext">Dashboard</span> &gt; <span class="uitext">Monitoring a Database Instance</span>, the status colors for the Instance Selector and Instance List are displayed identically.</p>
+</li>
+<li>
+<p><code class="Changed" type="1">Changed</code> In <span class="uitext">Stat/Report</span> &gt; <span class="uitext">Database size</span>, <span class="uitext">Tablespace Size</span>, if the selected <code>dbName</code> does not exist, <code>no data in the table</code> is displayed.</p>
+</li>
+<li>
+<p><code class="Fixed" type="0">Fixed</code> When the <span class="uitext">Dashboard</span> &gt; <span class="uitext">Monitoring a Database Instance</span> <code class="newfunc">New</code> session table cannot be downloaded as a CSV file or while downloading the chart image, fixed the issue where the theme is not applied.</p>
+</li>
+<li>
+<p><code class="Fixed" type="0">Fixed</code> In case of <span class="uitext">Dashboard</span> &gt; <span class="uitext">Monitoring a Database Instance</span> Multi DB, fixed the tag untagging error when clicking an instance again.</p>
+</li>
+<li>
+<p><code class="Fixed" type="0">Fixed</code> Fixed the index changing and data refreshing issue caused by <span class="uitext">Stat/Report</span> &gt; <span class="uitext">Database size</span>, <span class="uitext">Tablespace Size</span> <code>dbName</code>.</p>
+</li>
+</ul><h4 class="anchor anchorWithStickyNavbar_LWe7" id="mongodb-mysql-oracle-postgresql-sql-server">MongoDB, MySQL, Oracle, PostgreSQL, SQL Server<a href="#mongodb-mysql-oracle-postgresql-sql-server" class="hash-link" aria-label="Direct link to MongoDB, MySQL, Oracle, PostgreSQL, SQL Server" title="Direct link to MongoDB, MySQL, Oracle, PostgreSQL, SQL Server">​</a></h4><p><code class="Feature" type="1">Feature</code> Added the Cloud agent for DB agent installation.</p><h4 class="anchor anchorWithStickyNavbar_LWe7" id="mysql">MySQL<a href="#mysql" class="hash-link" aria-label="Direct link to MySQL" title="Direct link to MySQL">​</a></h4><ul>
+<li>
+<p><code class="Feature" type="1">Feature</code> In the <span class="uitext">Lock Tree</span> table, added the guide text for the lock query role.</p>
+<ul>
+<li>
+<p><span class="uitext">Dashboard</span> &gt; <span class="uitext">Monitoring a Database Instance</span></p>
+</li>
+<li>
+<p><span class="uitext">Analysis</span> &gt; <span class="uitext">Lock Tree</span></p>
+</li>
+</ul>
+</li>
+<li>
+<p><code class="Feature" type="1">Feature</code> In the <span class="uitext">Stat/Report</span> &gt; <em><strong>Table increment summary</strong></em> section, added the increase/decrease rate column in the <em><strong>Capacity details for each table</strong></em> table.</p>
+</li>
+<li>
+<p><code class="Changed" type="1">Changed</code> In <span class="uitext">Management</span> &gt; <span class="uitext">Agent installation</span>, provided the guide that the lock query role has been added when MySQL 8 or later is used.</p>
+</li>
+</ul><h4 class="anchor anchorWithStickyNavbar_LWe7" id="oracle">Oracle<a href="#oracle" class="hash-link" aria-label="Direct link to Oracle" title="Direct link to Oracle">​</a></h4><p><code class="Feature" type="1">Feature</code> Added the guide for multi-tenant DB kill session command to the installation page.</p><h4 class="anchor anchorWithStickyNavbar_LWe7" id="oracle-pro-1">Oracle Pro<a href="#oracle-pro-1" class="hash-link" aria-label="Direct link to Oracle Pro" title="Direct link to Oracle Pro">​</a></h4><p><code class="Feature" type="1">Feature</code> In <span class="uitext">Laboratory</span> &gt; <span class="uitext">Script Manager</span>, added the feature to check the execution results of the multi-script and instance-based multi-script.</p><h4 class="anchor anchorWithStickyNavbar_LWe7" id="postgresql">PostgreSQL<a href="#postgresql" class="hash-link" aria-label="Direct link to PostgreSQL" title="Direct link to PostgreSQL">​</a></h4><p><code class="Feature" type="1">Feature</code> In <span class="uitext">Monitoring a Database Instance</span>, <span class="uitext">Monitoring Multiple Instances</span>, and <span class="uitext">Lock Tree</span> lock tree tables, added the <code>holder_relation</code>, <code>waiter_relation</code>, and <code>state</code> columns.</p><hr><h3 class="anchor anchorWithStickyNavbar_LWe7" id="cloud"><code>Cloud</code><a href="#cloud" class="hash-link" aria-label="Direct link to cloud" title="Direct link to cloud">​</a></h3><p><code class="Feature" type="1">Feature</code> When querying the profile data by dragging <span class="uitext">Analysis</span> &gt; <em><strong>Application Hitmap</strong></em> and <em><strong>Multi-service Hitmap</strong></em>, displayed the notification, if the maximum query period exceeds.</p><hr><h3 class="anchor anchorWithStickyNavbar_LWe7" id="log-1"><code>Log</code><a href="#log-1" class="hash-link" aria-label="Direct link to log-1" title="Direct link to log-1">​</a></h3><ul>
+<li>
+<p><code class="Changed" type="1">Changed</code> In <span class="uitext">Live Tail</span>, <span class="uitext">Log Search</span> &gt; <em><strong>Filter favorites</strong></em>, displayed the toast message when adding/modifying/deleted favorites, and avoided entering spaces in favorite names.</p>
+</li>
+<li>
+<p><code class="Changed" type="1">Changed</code> In <span class="uitext">Live Tail</span>, <span class="uitext">Log Search</span> &gt; <em><strong>Filter favorites</strong></em>, fixed the issue where adding a <em><strong>personal filter</strong></em> to favorites with no favorites specified causes infinite loading.</p>
+</li>
+<li>
+<p><code class="Changed" type="1">Changed</code> In <span class="uitext">Log view detail setting</span> &gt; <em><strong>Tag Management</strong></em>, displayed all tags in the log list by default.</p>
+</li>
+</ul></div></section></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col"><div class="btnwrapper_gsW7"><button class="modalopenbtn_jIdz">Feedback</button></div></div><div class="col lastUpdated_JAkA"></div></div></footer></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages navigation"><a class="pagination-nav__link pagination-nav__link--next" href="/whatap-docs/en/release-notes/service/service-2_16_x"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">Service 2.16.X</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_pzBX thin-scrollbar"></div><div class="fbsharebutton_dZBI" data-href="https://docs.whatap.io/whatap-docs/en/release-notes/service/service-2_17_x" data-layout="" data-size=""><button type="button" class="fb_xfbml_parse_ignore_BpHP">Shared</button></div><div class="btnprint_EBmh"><button>PDF</button></div><div class="btnwrapper_gsW7"><button class="modalopenbtn_jIdz">Feedback</button></div></div></div></div></main></div></div></div><footer class="footer"><div class="container container-fluid"><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2025 WhaTap Labs Inc. All rights reserved. Built with Docusaurus.</div></div></div></footer></div>
+</body>
+</html>

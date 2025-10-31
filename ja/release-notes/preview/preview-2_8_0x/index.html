@@ -1,0 +1,382 @@
+<!doctype html>
+<html lang="ja-JP" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-release-notes/preview/preview-2_8_0x" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.8.0">
+<title data-rh="true">Preview 2.8.0.a | WhaTap Docs</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://www.whatap.io/img/og/whatap.png"><meta data-rh="true" name="twitter:image" content="https://www.whatap.io/img/og/whatap.png"><meta data-rh="true" property="og:url" content="https://docs.whatap.io/whatap-docs/ja/release-notes/preview/preview-2_8_0x"><meta data-rh="true" property="og:locale" content="ja_JP"><meta data-rh="true" property="og:locale:alternate" content="ko_KR"><meta data-rh="true" property="og:locale:alternate" content="en_US"><meta data-rh="true" name="docusaurus_locale" content="ja"><meta data-rh="true" name="docsearch:language" content="ja"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Preview 2.8.0.a | WhaTap Docs"><meta data-rh="true" name="description" content="preview.whatap.ioで、次の新機能と変更した内容を事前に体験できます。"><meta data-rh="true" property="og:description" content="preview.whatap.ioで、次の新機能と変更した内容を事前に体験できます。"><meta data-rh="true" name="robots" content="noindex, nofollow"><link data-rh="true" rel="icon" href="/whatap-docs/ja/img/whatap-favicon.ico"><link data-rh="true" rel="canonical" href="https://docs.whatap.io/whatap-docs/ja/release-notes/preview/preview-2_8_0x"><link data-rh="true" rel="alternate" href="https://docs.whatap.io/whatap-docs/release-notes/preview/preview-2_8_0x" hreflang="ko-KR"><link data-rh="true" rel="alternate" href="https://docs.whatap.io/whatap-docs/en/release-notes/preview/preview-2_8_0x" hreflang="en-US"><link data-rh="true" rel="alternate" href="https://docs.whatap.io/whatap-docs/ja/release-notes/preview/preview-2_8_0x" hreflang="ja-JP"><link data-rh="true" rel="alternate" href="https://docs.whatap.io/whatap-docs/release-notes/preview/preview-2_8_0x" hreflang="x-default"><script>!function(e,t,a,o,r){e=e[r]=e[r]||{config:{projectAccessKey:"x4t5020boh2ln-z6pi7d91ds6c1a-z7t4b2lrgnub4o",pcode:29856,sampleRate:100,sessionReplaySampleRate:100,ignorePageUrls:[/^.*localhost.*$/i,/^.*ngrok-free.app.*$/i,/^.*whatap.github.io.*$/i],collectUserClick:!0}},(r=t.createElement(a)).async=1,r.src=o,(o=t.getElementsByTagName(a)[0]).parentNode.insertBefore(r,o)}(window,document,"script","https://repo.whatap-browser-agent.io/rum/prod/v1/whatap-browser-agent.js","WhatapBrowserAgent")</script>
+<script>let curLang=document.documentElement.lang.split("-")[0];CRISP_RUNTIME_CONFIG={locale:curLang},window.$crisp=[],window.CRISP_WEBSITE_ID="9a0c342f-a5b1-4c4a-a22f-92c7b4b9b477",d=document,s=d.createElement("script"),s.src="https://client.crisp.chat/l.js",s.async=1,d.getElementsByTagName("head")[0].appendChild(s)</script>
+
+
+<link rel="preconnect" href="https://www.googletagmanager.com">
+<script>window.dataLayer=window.dataLayer||[]</script>
+<script>!function(e,t,a,n){e[n]=e[n]||[],e[n].push({"gtm.start":(new Date).getTime(),event:"gtm.js"});var g=t.getElementsByTagName(a)[0],m=t.createElement(a);m.async=!0,m.src="https://www.googletagmanager.com/gtm.js?id=GTM-KT747XQX",g.parentNode.insertBefore(m,g)}(window,document,"script","dataLayer")</script>
+
+
+
+<meta name="keywords" content="WhaTap, 와탭, 매뉴얼, 사용법, WhaTap 사용법, WhaTap 매뉴얼, 기술 문서, APM, 애플리케이션 모니터링, 로그 모니터링, 쿠버네티스 모니터링, 서버 모니터링, 데이터베이스 모니터링, URL 모니터링, 클라우드 모니터링, 브라우저 모니터링, Browser monitoring, Application Monitoring, Log Monitoring, Kubernetes Monitoring, Server Monitoring, Database Monitoring, URL Monitoring, Cloud Monitoring, Manual, User Guide, Docs, WhaTap Manual, WhaTap Docs, WhaTap Documents, 트랜잭션, Transaction, 트레이싱, Tracing, 마스터, Master, 노드, Node, 데드락, Deadlock, 락 트리, Lock tree, 멀티 트랜잭션, Multi Trancsaction, 메트릭스, Metrics, 소프트웨어 프록시, Software proxy, 스택, Stack, 슬로우 쿼리, Slow query, 액티브 트랜잭션, Active transaction, 컨테이너, Container, 히트맵, Hitmap, Garbage Collection, GC, MXQL, Method 추적, Trace method, OOM Killed 컨테이너, OOM Killed Container, Oracle, Tibero, PostgreSQL, MySQL, MongoDB, SQL Server, CUBRID, Altibase, Redis, WebLogic, WebSphere">
+<meta name="description" content="WhaTap Docs 페이지입니다. 애플리케이션, 서버, 쿠버네티스, 데이터베이스, 브라우저 등 다양한 모니터링 솔루션의 사용법을 제공합니다.">
+<meta name="naver-site-verification" content="0c21fc5664a467108fb762ade47a3f81ee9b88ed">
+<meta name="google-site-verification" content="rIlfJkbbogFOIDc3DgJZmOGbUMJWytyvZSKEgV7EMsE"><link rel="stylesheet" href="/whatap-docs/ja/assets/css/styles.9a9f7b6e.css">
+<script src="/whatap-docs/ja/assets/js/runtime~main.b3748045.js" defer="defer"></script>
+<script src="/whatap-docs/ja/assets/js/main.40cfa170.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light")),document.documentElement.setAttribute("data-theme-choice",t||"system")}(),function(){try{const n=new URLSearchParams(window.location.search).entries();for(var[t,e]of n)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}(),document.documentElement.setAttribute("data-announcement-bar-initially-dismissed",function(){try{return"true"===localStorage.getItem("docusaurus.announcement.dismiss")}catch(t){}return!1}())</script>
+
+<script async defer="defer" crossorigin="anonymous" src="https://connect.facebook.net/ko_KR/sdk.js#xfbml=1&amp;version=v17.0&amp;appId=169051789422006&amp;autoLogAppEvents=1" nonce="y4U7YSrt"></script>
+<div id="fb-root"></div>
+
+
+
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KT747XQX" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript><div id="__docusaurus"><div role="region" aria-label="本文へスキップ"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">本文へスキップ</a></div><div class="theme-announcement-bar announcementBar_mb4j" style="background-color:none;color:#ffffff" role="banner"><div class="content_knG7 announcementBarContent_xLdY"><div id="announce-banner"> <a class="left" href="https://event.whatap.io/ko/summit_/index.html#" target="_blank"> WhaTap Observe Summit 2025 등록 오픈 🚀 </a> <a class="right" href="https://event.whatap.io/ko/summit_/index.html#" target="_blank"> 11월 21일(금) 09:00, 삼성동 COEX ↗ </a> </div></div></div><nav aria-label="メイン" class="navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="ナビゲーションバーをトーグルする" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/whatap-docs/ja/"><div class="navbar__logo"><img src="/whatap-docs/ja/img/whatap-docs-logo.svg" alt="WhaTap Docs" class="themedComponent_mlkZ themedComponent--light_NVdE" height="43px" width="154px"><img src="/whatap-docs/ja/img/whatap-docs-logo.svg" alt="WhaTap Docs" class="themedComponent_mlkZ themedComponent--dark_xIcU" height="43px" width="154px"></div><b class="navbar__title text--truncate"></b></a><div class="navbar__item dropdown dropdown--hoverable"><a href="#" aria-haspopup="true" aria-expanded="false" role="button" class="navbar__link">サービス</a><ul class="dropdown__menu"><li><a class="dropdown__link" href="/whatap-docs/ja/java/introduction">Java</a></li><li><a class="dropdown__link" href="/whatap-docs/ja/php/introduction">PHP</a></li><li><a class="dropdown__link" href="/whatap-docs/ja/nodejs/introduction">Node.js</a></li><li><a class="dropdown__link" href="/whatap-docs/ja/python/introduction">Python</a></li><li><a class="dropdown__link" href="/whatap-docs/ja/dotnet/introduction">.NET</a></li><li><a class="dropdown__link" href="/whatap-docs/ja/golang/introduction">Go</a></li><li><a class="dropdown__link" href="/whatap-docs/ja/server/introduction">Server</a></li><li><a class="dropdown__link" href="/whatap-docs/ja/kubernetes/introduction">Kubernetes</a></li><li><a class="dropdown__link" href="/whatap-docs/ja/postgresql/monitoring-intro">PostgreSQL</a></li><li><a class="dropdown__link" href="/whatap-docs/ja/oracle/monitoring-intro">Oracle</a></li><li><a class="dropdown__link" href="/whatap-docs/ja/oracle-pro/monitoring-intro">Oracle Pro</a></li><li><a class="dropdown__link" href="/whatap-docs/ja/mysql/monitoring-intro">MySQL</a></li><li><a class="dropdown__link" href="/whatap-docs/ja/mssql/monitoring-intro">SQL Server</a></li><li><a class="dropdown__link" href="/whatap-docs/ja/tibero/monitoring-intro">Tibero</a></li><li><a class="dropdown__link" href="/whatap-docs/ja/cubrid/monitoring-intro">CUBRID</a></li><li><a class="dropdown__link" href="/whatap-docs/ja/altibase/monitoring-intro">Altibase</a></li><li><a class="dropdown__link" href="/whatap-docs/ja/redis/monitoring-intro">Redis</a></li><li><a class="dropdown__link" href="/whatap-docs/ja/mongodb/monitoring-intro">MongoDB</a></li><li><a class="dropdown__link" href="/whatap-docs/ja/db2/monitoring-intro">IBM DB2</a></li><li><a class="dropdown__link" href="/whatap-docs/ja/sapase/monitoring-intro">SAP ASE</a></li><li><a class="dropdown__link" href="/whatap-docs/ja/url/url-intro">URL</a></li><li><a class="dropdown__link" href="/whatap-docs/ja/browser">Browser</a></li><li><a class="dropdown__link" href="/whatap-docs/ja/mobile/mobile-intro">Mobile</a></li><li><a class="dropdown__link narrow" href="/whatap-docs/ja/amazon-cloudwatch/install-agent">Amazon CloudWatch</a></li><li><a class="dropdown__link" href="/whatap-docs/ja/amazon-ecs/introduction">Amazon ECS</a></li><li><a class="dropdown__link" href="/whatap-docs/ja/aws-log/introduction">AWS Log</a></li><li><a class="dropdown__link" href="/whatap-docs/ja/azure/install-agent">Azure Monitor</a></li><li><a class="dropdown__link narrow" href="/whatap-docs/ja/ncloud/install-agent">Naver Cloud Monitoring</a></li><li><a class="dropdown__link narrow" href="/whatap-docs/ja/oracle-cloud/install-agent">Oracle Cloud Monitor</a></li><li><a class="dropdown__link narrow" href="/whatap-docs/ja/npm/introduction">Network Performance Monitoring</a></li><li><a class="dropdown__link narrow" href="/whatap-docs/ja/nms/introduction">Network Management System</a></li><li><a class="dropdown__link narrow" href="/whatap-docs/ja/features/introduction">Feature Project</a></li><li><a class="dropdown__link" href="/whatap-docs/ja/log/introduction">Log</a></li><li><a class="dropdown__link" href="/whatap-docs/ja/extensions">Extensions</a></li><li><a class="dropdown__link" href="/whatap-docs/ja/openmetrics/introduction">OpenMetrics</a></li></ul></div><a class="navbar__item navbar__link hidden" href="/whatap-docs/ja/java/introduction">Javaモニタリング</a><a class="navbar__item navbar__link hidden" href="/whatap-docs/ja/php/introduction">PHPモニタリング</a><a class="navbar__item navbar__link hidden" href="/whatap-docs/ja/nodejs/introduction">Node.jsモニタリング</a><a class="navbar__item navbar__link hidden" href="/whatap-docs/ja/python/introduction">Pythonモニタリング</a><a class="navbar__item navbar__link hidden" href="/whatap-docs/ja/dotnet/introduction">.NETモニタリング</a><a class="navbar__item navbar__link hidden" href="/whatap-docs/ja/golang/introduction">Goモニタリング</a><a class="navbar__item navbar__link hidden" href="/whatap-docs/ja/server/introduction">Serverモニタリング</a><a class="navbar__item navbar__link hidden" href="/whatap-docs/ja/kubernetes/introduction">Kubernetesモニタリング</a><a class="navbar__item navbar__link hidden" href="/whatap-docs/ja/postgresql/monitoring-intro">PostgreSQLモニタリング</a><a class="navbar__item navbar__link hidden" href="/whatap-docs/ja/oracle/monitoring-intro">Oracle V2モニタリング</a><a class="navbar__item navbar__link hidden" href="/whatap-docs/ja/oracle-pro/monitoring-intro">Oracle Proモニタリング</a><a class="navbar__item navbar__link hidden" href="/whatap-docs/ja/mysql/monitoring-intro">MySQLモニタリング</a><a class="navbar__item navbar__link hidden" href="/whatap-docs/ja/mssql/monitoring-intro">SQL Server V2モニタリング</a><a class="navbar__item navbar__link hidden" href="/whatap-docs/ja/tibero/monitoring-intro">Tiberoモニタリング</a><a class="navbar__item navbar__link hidden" href="/whatap-docs/ja/cubrid/monitoring-intro">CUBRID V2モニタリング</a><a class="navbar__item navbar__link hidden" href="/whatap-docs/ja/altibase/monitoring-intro">Altibase V2 モニタリング</a><a class="navbar__item navbar__link hidden" href="/whatap-docs/ja/redis/monitoring-intro">Redisモニタリング</a><a class="navbar__item navbar__link hidden" href="/whatap-docs/ja/mongodb/monitoring-intro">MongoDBモニタリング</a><a class="navbar__item navbar__link hidden" href="/whatap-docs/ja/db2/monitoring-intro">IBM DB2 モニタリング</a><a class="navbar__item navbar__link hidden" href="/whatap-docs/ja/sapase/monitoring-intro">SAP ASEモニタリング</a><a class="navbar__item navbar__link hidden" href="/whatap-docs/ja/url/url-intro">URLモニタリング</a><a class="navbar__item navbar__link hidden" href="/whatap-docs/ja/amazon-cloudwatch/install-agent">Amazon CloudWatch</a><a class="navbar__item navbar__link hidden" href="/whatap-docs/ja/amazon-ecs/introduction">Amazon ECS</a><a class="navbar__item navbar__link hidden" href="/whatap-docs/ja/aws-log/introduction">AWS Log</a><a class="navbar__item navbar__link hidden" href="/whatap-docs/ja/azure/install-agent">Azure Monitor</a><a class="navbar__item navbar__link hidden" href="/whatap-docs/ja/ncloud/install-agent">Naver Cloud Monitoring</a><a class="navbar__item navbar__link hidden" href="/whatap-docs/ja/oracle-cloud/install-agent">Oracle Cloud Monitor</a><a class="navbar__item navbar__link hidden" href="/whatap-docs/ja/log/introduction">Logモニタリング</a><a class="navbar__item navbar__link hidden" href="/whatap-docs/ja/browser">Browser</a><a class="navbar__item navbar__link hidden" href="/whatap-docs/ja/mobile/mobile-intro">Mobile 모니터링</a><a class="navbar__item navbar__link hidden" href="/whatap-docs/ja/npm/introduction">NPM</a><a class="navbar__item navbar__link hidden" href="/whatap-docs/ja/extensions">拡張ツール</a><a class="navbar__item navbar__link hidden" href="/whatap-docs/ja/opentelemetry/introduction">OpenTelemetry</a><a class="navbar__item navbar__link hidden" href="/whatap-docs/ja/openmetrics/introduction">OpenMetrics</a><a class="navbar__item navbar__link" href="/whatap-docs/ja/manage">管理機能</a><a class="navbar__item navbar__link" href="/whatap-docs/ja/openapi-spec">Open API</a><a class="navbar__item navbar__link" href="/whatap-docs/ja/faq/">FAQ</a><a class="navbar__item navbar__link iflang-link" href="/whatap-docs/ja/learning-guides">Learning</a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/whatap-docs/ja/release-notes">Release Notes</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><div class="navbar__item dropdown dropdown--hoverable dropdown--right"><a href="#" aria-haspopup="true" aria-expanded="false" role="button" class="navbar__link oneColumn localeDropdown"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" class="iconLanguage_DSK9"><path fill="currentColor" d="M12.87 15.07l-2.54-2.51.03-.03c1.74-1.94 2.98-4.17 3.71-6.53H17V4h-7V2H8v2H1v1.99h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12zm-2.62 7l1.62-4.33L19.12 17h-3.24z"></path></svg><span class="langLabel_L4uU">JPN</span></a><ul class="dropdown__menu"><li><a href="/whatap-docs/release-notes/preview/preview-2_8_0x" target="_self" rel="noopener noreferrer" class="dropdown__link" lang="ko-KR">KOR</a></li><li><a href="/whatap-docs/en/release-notes/preview/preview-2_8_0x" target="_self" rel="noopener noreferrer" class="dropdown__link" lang="en-US">ENG</a></li><li><a href="/whatap-docs/ja/release-notes/preview/preview-2_8_0x" target="_self" rel="noopener noreferrer" class="dropdown__link dropdown__link--active" lang="ja-JP">JPN</a></li></ul></div><div class="navbarSearchContainer_dCNk"><div id="docsearch"></div></div><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="システムモード" aria-label="ダークモードとライトモードの切り替え(現在 システムモード)"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M10.9901 0H13.0099V4.06189C15.2205 4.33486 17.1538 5.49222 18.4373 7.16513L21.9901 5.13397L23 6.86603L19.4486 8.89635C19.8546 9.8507 20.0791 10.8994 20.0791 12C20.0791 13.1006 19.8546 14.1493 19.4486 15.1036L23 17.134L21.9901 18.866L18.4373 16.8349C17.1538 18.5078 15.2205 19.6651 13.0099 19.9381V24H10.9901V19.9381C8.77946 19.6651 6.84617 18.5078 5.56273 16.8349L2.00989 18.866L1 17.134L4.5514 15.1036C4.14535 14.1493 3.9209 13.1006 3.9209 12C3.9209 10.8994 4.14535 9.8507 4.5514 8.89635L1 6.86603L2.00989 5.13397L5.56273 7.16513C6.84617 5.49222 8.77946 4.33486 10.9901 4.06189V0ZM5.94068 12C5.94068 8.68629 8.65353 6 12 6C15.3465 6 18.0593 8.68629 18.0593 12C18.0593 15.3137 15.3465 18 12 18C8.65353 18 5.94068 15.3137 5.94068 12Z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M5.05011 4.409C6.46482 2.9943 8.14585 2.02264 9.90788 1.5C8.84446 5.08024 9.63565 8.99454 12.3303 11.6892C15.025 14.3839 18.9393 15.1751 22.5191 14.1129C21.9969 15.8737 21.0253 17.5548 19.6106 18.9695C15.322 23.2581 8.58587 23.4752 4.56511 19.4545C0.544352 15.4337 0.761495 8.69762 5.05011 4.409ZM7.26586 5.19608C6.97785 5.42391 6.70099 5.67022 6.43684 5.93437C2.99054 9.38066 2.80435 14.782 6.02096 17.9986C9.23756 21.2152 14.6389 21.029 18.0852 17.5827C18.4373 17.2307 18.7577 16.856 19.0448 16.4625C15.9881 16.4646 13.0552 15.3261 10.8743 13.1452C8.77411 11.045 7.6407 8.24751 7.56194 5.31354L7.55754 4.97444L7.26586 5.19608ZM17.3387 2.30478H19.3979V4.36394H21.4571V6.4231H19.3979V8.48226H17.3387V6.4231H15.2795V4.36394H17.3387V2.30478Z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="一番上へスクロールする" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_mhZE"><div class="hold-menu"><ul><li><a href="/ja" class="home">WhaTap Docs</a></li><li><a href="https://www.whatap.io/ja" target="_blank" rel="noopener noreferrer" class="ext">WhaTapのホームページへ移動します。</a></li></ul></div><nav aria-label="Docsサイドバー" class="menu thin-scrollbar menu_Y1UP menuWithAnnouncementBar_fPny"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--active" href="/whatap-docs/ja/release-notes/preview/">リリースノート - プレビュー</a></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item new"><a class="menu__link" tabindex="0" href="/whatap-docs/ja/release-notes/preview/preview-2_15_0x">Preview 2.15.0.a</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/whatap-docs/ja/release-notes/preview/preview-2_14_0x">Preview 2.14.0.a</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/whatap-docs/ja/release-notes/preview/preview-2_13_0x">Preview 2.13.0.a</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/whatap-docs/ja/release-notes/preview/preview-2_12_0x">Preview 2.12.0.a</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/whatap-docs/ja/release-notes/preview/preview-2_11_0x">Preview 2.11.0.a</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/whatap-docs/ja/release-notes/preview/preview-2_10_0x">Preview 2.10.0.a</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/whatap-docs/ja/release-notes/preview/preview-2_9_0x">Preview 2.9.0.a</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/whatap-docs/ja/release-notes/preview/preview-2_8_0x">Preview 2.8.0.a</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/whatap-docs/ja/release-notes/preview/preview-2_7_0x">Preview 2.7.0.a</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/whatap-docs/ja/release-notes/preview/preview-2_6_0x">Preview 2.6.0.a</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/whatap-docs/ja/release-notes/preview/preview-2_5_0x">Preview 2.5.0.a</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/whatap-docs/ja/release-notes/preview/preview-2_4_0x">Preview 2.4.0.a</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/whatap-docs/ja/release-notes/preview/preview-2_3_0x">Preview 2.3.0.a</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/whatap-docs/ja/release-notes/preview/preview-2_2_0x">Preview 2.2.0.a</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/whatap-docs/ja/release-notes/preview/preview-2_1_0x">Preview 2.1.0.a</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/whatap-docs/ja/release-notes/preview/preview-2_0_0x">Preview 2.0.0.a</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/whatap-docs/ja/release-notes/preview/preview-1_113_x">Preview 1.113.X</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/whatap-docs/ja/release-notes/preview/preview-1_111_x">Preview 1.111.X</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/whatap-docs/ja/release-notes/preview/preview-1_109_x">Preview 1.109.X</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/whatap-docs/ja/release-notes/preview/preview-1_107_x">Preview 1.107.X</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/whatap-docs/ja/release-notes/preview/preview-1_105_x">Preview 1.105.X</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/whatap-docs/ja/release-notes/preview/preview-1_103_x">Preview 1.103.X</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/whatap-docs/ja/release-notes/preview/preview-1_101_x">Preview 1.101.X</a></li></ul></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_z5aJ"><div class="docItemContainer_c0TR"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Alpn" aria-label="Breadcrumbs"><ul class="breadcrumbs" itemscope="" itemtype="https://schema.org/BreadcrumbList"><li class="breadcrumbs__item"><a aria-label="ホーム" class="breadcrumbs__link" href="/whatap-docs/ja/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_xK9p"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li itemscope="" itemprop="itemListElement" itemtype="https://schema.org/ListItem" class="breadcrumbs__item item-1"><a class="breadcrumbs__link" itemprop="item" href="/whatap-docs/ja/release-notes/preview/"><span itemprop="name">リリースノート - プレビュー</span></a><meta itemprop="position" content="1"></li><li itemscope="" itemprop="itemListElement" itemtype="https://schema.org/ListItem" class="breadcrumbs__item breadcrumbs__item--active item-2"><span class="breadcrumbs__link" itemprop="name">Preview 2.8.0.a</span><meta itemprop="position" content="2"></li></ul><div class="breadcrumbs-hidden"><span itemprop="name">リリースノート - プレビュー<cite>&gt;</cite></span><span itemprop="name">Preview 2.8.0.a</span></div></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_XdKt"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">この  ページでは</button></div><div class="theme-doc-markdown markdown"><header><h1>Preview 2.8.0.a</h1></header>
+<div class="theme-admonition theme-admonition-note admonition_xJq3 alert alert--secondary"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M6.3 5.69a.942.942 0 0 1-.28-.7c0-.28.09-.52.28-.7.19-.18.42-.28.7-.28.28 0 .52.09.7.28.18.19.28.42.28.7 0 .28-.09.52-.28.7a1 1 0 0 1-.7.3c-.28 0-.52-.11-.7-.3zM8 7.99c-.02-.25-.11-.48-.31-.69-.2-.19-.42-.3-.69-.31H6c-.27.02-.48.13-.69.31-.2.2-.3.44-.31.69h1v3c.02.27.11.5.31.69.2.2.42.31.69.31h1c.27 0 .48-.11.69-.31.2-.19.3-.42.31-.69H8V7.98v.01zM7 2.3c-3.14 0-5.7 2.54-5.7 5.68 0 3.14 2.56 5.7 5.7 5.7s5.7-2.55 5.7-5.7c0-3.15-2.56-5.69-5.7-5.69v.01zM7 .98c3.86 0 7 3.14 7 7s-3.14 7-7 7-7-3.12-7-7 3.14-7 7-7z"></path></svg></span>ノート</div><div class="admonitionContent_BuS1"><p><a href="https://preview.whatap.io" target="_blank" rel="noopener noreferrer">preview.whatap.io</a>で、次の新機能と変更した内容を事前に体験できます。</p></div></div>
+<section class="remark-sectionize-h2"><h2 class="anchor anchorWithStickyNavbar_LWe7" id="preview-280a5">Preview 2.8.0.a5<a href="#preview-280a5" class="hash-link" aria-label="Preview 2.8.0.a5への直接リンク" title="Preview 2.8.0.a5への直接リンク">​</a></h2><p>2024年08月20日</p><div class="indentTab"><h3 class="anchor anchorWithStickyNavbar_LWe7" id="共通"><code>共通</code><a href="#共通" class="hash-link" aria-label="共通への直接リンク" title="共通への直接リンク">​</a></h3><ul>
+<li>
+<p><code class="Fixed" type="0">Fixed</code> <span class="uitext">アラート通知</span> &gt; <span class="uitext">イベント設定</span>メニューの<span class="uitext">メトリックス</span>および<span class="uitext">異常検知</span>で個別イベント項目のタイトルにマウスをオーバーした際に表示されるツールチップのコピーボタンが動作しない問 題を修正</p>
+</li>
+<li>
+<p><code class="Fixed" type="0">Fixed</code>組織を選択した状態で言語を変更する際、断続的に変更されない問題を修正</p>
+</li>
+</ul><hr><h3 class="anchor anchorWithStickyNavbar_LWe7" id="application"><code>Application</code><a href="#application" class="hash-link" aria-label="applicationへの直接リンク" title="applicationへの直接リンク">​</a></h3><ul>
+<li>
+<p><code class="New" type="1">New</code><strong>Node.js</strong>商品にログ機能を追加</p>
+</li>
+<li>
+<p><code class="New" type="1">New</code>特定のIP別に呼び出したURLと呼出件数を照会できる<span class="uitext">IP Transaction</span>メニューを追加</p>
+<div class="theme-admonition theme-admonition-note admonition_xJq3 alert alert--secondary"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M6.3 5.69a.942.942 0 0 1-.28-.7c0-.28.09-.52.28-.7.19-.18.42-.28.7-.28.28 0 .52.09.7.28.18.19.28.42.28.7 0 .28-.09.52-.28.7a1 1 0 0 1-.7.3c-.28 0-.52-.11-.7-.3zM8 7.99c-.02-.25-.11-.48-.31-.69-.2-.19-.42-.3-.69-.31H6c-.27.02-.48.13-.69.31-.2.2-.3.44-.31.69h1v3c.02.27.11.5.31.69.2.2.42.31.69.31h1c.27 0 .48-.11.69-.31.2-.19.3-.42.31-.69H8V7.98v.01zM7 2.3c-3.14 0-5.7 2.54-5.7 5.68 0 3.14 2.56 5.7 5.7 5.7s5.7-2.55 5.7-5.7c0-3.15-2.56-5.69-5.7-5.69v.01zM7 .98c3.86 0 7 3.14 7 7s-3.14 7-7 7-7-3.12-7-7 3.14-7 7-7z"></path></svg></span>ノート</div><div class="admonitionContent_BuS1"><p>この機能は、<span class="uitext">統計</span> &gt; <span class="uitext">IP Transaction</span>メニューから確認できます。</p></div></div>
+</li>
+<li>
+<p><code class="Feature" type="1">Feature</code> <span class="uitext">トレース分析</span>画面の<span class="uitext">テーブルビュー</span>タブでバインド変数がマッピングされたSQL文をダウンロードできる機能を追加</p>
+</li>
+<li>
+<p><code class="Changed" type="1">Changed</code> <span class="uitext">統計</span> &gt; <span class="uitext">エラー</span>メニューで <span class="uitext">詳細分析</span>機能を通じて<span class="uitext">分析</span> &gt; <span class="uitext">TX検索</span>メニューに移動すると<span class="uitext">エラーのみ表示</span>フィルターが有効になった状態で最初のデータを照会するように修正</p>
+</li>
+<li>
+<p><code class="Changed" type="1">Changed</code> <span class="uitext">統計</span>下位メニューから<span class="uitext">TX検索</span>メニューに移動する際に渡すフィルター値を追加</p>
+<ul>
+<li>
+<p><span class="uitext">統計</span> &gt; <span class="uitext">ドメイン</span>：ドメイン、トランザクション</p>
+</li>
+<li>
+<p><span class="uitext">統計</span> &gt; <span class="uitext">リファラー</span>：リファラー、トランザクション</p>
+</li>
+<li>
+<p><span class="uitext">統計</span> &gt; <span class="uitext">ユーザーエージェント</span>：ユーザーエージェント</p>
+</li>
+</ul>
+</li>
+<li>
+<p><code class="Fixed" type="0">Fixed</code> <span class="uitext">トレース分析</span>画面の<span class="uitext">ツリービュー</span>タブでSQLおよびアクティブスタックのコードボックスの境界線が二重に表示される問題を修正</p>
+</li>
+</ul><hr><h3 class="anchor anchorWithStickyNavbar_LWe7" id="server"><code>Server</code><a href="#server" class="hash-link" aria-label="serverへの直接リンク" title="serverへの直接リンク">​</a></h3><ul>
+<li>
+<p><code class="Changed" type="1">Changed</code> <span class="uitext">プロセスリスト</span>メニューで<span class="uitext">名前</span>カラムデータを<span class="uitext">サーバー 詳細</span>またはshellで識別できる名前に変更</p>
+</li>
+<li>
+<p><code class="Fixed" type="0">Fixed</code> <span class="uitext">アラート通知</span> &gt; <span class="uitext">イベント履歴</span>メニューでイベントの詳細を照会する時、<span class="uitext">アラート前後</span>間隔選択オプションがボタン形式ではなく、テキストで表示される問題を修正</p>
+</li>
+</ul><hr><h3 class="anchor anchorWithStickyNavbar_LWe7" id="kubernetes"><code>Kubernetes</code><a href="#kubernetes" class="hash-link" aria-label="kubernetesへの直接リンク" title="kubernetesへの直接リンク">​</a></h3><ul>
+<li>
+<p><code class="Feature" type="1">Feature</code> <span class="uitext">ダッシュボード</span> &gt; <span class="uitext">コンテナマップ</span>メニューの要約で<span class="uitext">Pod要約分析</span>機能を追加</p>
+<div class="theme-admonition theme-admonition-note admonition_xJq3 alert alert--secondary"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M6.3 5.69a.942.942 0 0 1-.28-.7c0-.28.09-.52.28-.7.19-.18.42-.28.7-.28.28 0 .52.09.7.28.18.19.28.42.28.7 0 .28-.09.52-.28.7a1 1 0 0 1-.7.3c-.28 0-.52-.11-.7-.3zM8 7.99c-.02-.25-.11-.48-.31-.69-.2-.19-.42-.3-.69-.31H6c-.27.02-.48.13-.69.31-.2.2-.3.44-.31.69h1v3c.02.27.11.5.31.69.2.2.42.31.69.31h1c.27 0 .48-.11.69-.31.2-.19.3-.42.31-.69H8V7.98v.01zM7 2.3c-3.14 0-5.7 2.54-5.7 5.68 0 3.14 2.56 5.7 5.7 5.7s5.7-2.55 5.7-5.7c0-3.15-2.56-5.69-5.7-5.69v.01zM7 .98c3.86 0 7 3.14 7 7s-3.14 7-7 7-7-3.12-7-7 3.14-7 7-7z"></path></svg></span>ノート</div><div class="admonitionContent_BuS1"><p>この機能は韓国語で提供されます。</p></div></div>
+</li>
+<li>
+<p><code class="Feature" type="1">Feature</code> <span class="uitext">ワークロード</span> &gt; <span class="uitext">Podリスト</span>メニューの<span class="uitext">詳細</span>で<span class="uitext">Pod要約分析</span>機能を追加</p>
+<div class="theme-admonition theme-admonition-note admonition_xJq3 alert alert--secondary"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M6.3 5.69a.942.942 0 0 1-.28-.7c0-.28.09-.52.28-.7.19-.18.42-.28.7-.28.28 0 .52.09.7.28.18.19.28.42.28.7 0 .28-.09.52-.28.7a1 1 0 0 1-.7.3c-.28 0-.52-.11-.7-.3zM8 7.99c-.02-.25-.11-.48-.31-.69-.2-.19-.42-.3-.69-.31H6c-.27.02-.48.13-.69.31-.2.2-.3.44-.31.69h1v3c.02.27.11.5.31.69.2.2.42.31.69.31h1c.27 0 .48-.11.69-.31.2-.19.3-.42.31-.69H8V7.98v.01zM7 2.3c-3.14 0-5.7 2.54-5.7 5.68 0 3.14 2.56 5.7 5.7 5.7s5.7-2.55 5.7-5.7c0-3.15-2.56-5.69-5.7-5.69v.01zM7 .98c3.86 0 7 3.14 7 7s-3.14 7-7 7-7-3.12-7-7 3.14-7 7-7z"></path></svg></span>ノート</div><div class="admonitionContent_BuS1"><p>この機能は韓国語で提供されます。</p></div></div>
+</li>
+</ul><hr><h3 class="anchor anchorWithStickyNavbar_LWe7" id="database"><code>Database</code><a href="#database" class="hash-link" aria-label="databaseへの直接リンク" title="databaseへの直接リンク">​</a></h3><h4 class="anchor anchorWithStickyNavbar_LWe7" id="共通-1">共通<a href="#共通-1" class="hash-link" aria-label="共通への直接リンク" title="共通への直接リンク">​</a></h4><ul>
+<li>
+<p><code class="Feature" type="1">Feature</code> <span class="uitext">ダッシュボード</span> &gt; <span class="uitext">マルチインスタンス</span>メニューで指標を選択できるユーザー定義ウィジェットを追加</p>
+</li>
+<li>
+<p><code class="Feature" type="1">Feature</code> <span class="uitext">管理</span> &gt; <span class="uitext">エージェントインストール</span>メニューでエージェントファイルをZIP形式でダウンロードできる機能を追加</p>
+</li>
+</ul><h4 class="anchor anchorWithStickyNavbar_LWe7" id="oracle-pro">Oracle Pro<a href="#oracle-pro" class="hash-link" aria-label="Oracle Proへの直接リンク" title="Oracle Proへの直接リンク">​</a></h4><p><code class="Feature" type="1">Feature</code> <span class="uitext">分析</span> &gt; <span class="uitext">ロックツリー</span>メニューでクラスターを選択する際、グローバルロックを表示する機能を追加</p><h4 class="anchor anchorWithStickyNavbar_LWe7" id="altibase">Altibase<a href="#altibase" class="hash-link" aria-label="Altibaseへの直接リンク" title="Altibaseへの直接リンク">​</a></h4><ul>
+<li>
+<p><code class="New" type="1">New</code> Altibase <code class="my">V2</code>サービスを開始！</p>
+<div class="theme-admonition theme-admonition-note admonition_xJq3 alert alert--secondary"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M6.3 5.69a.942.942 0 0 1-.28-.7c0-.28.09-.52.28-.7.19-.18.42-.28.7-.28.28 0 .52.09.7.28.18.19.28.42.28.7 0 .28-.09.52-.28.7a1 1 0 0 1-.7.3c-.28 0-.52-.11-.7-.3zM8 7.99c-.02-.25-.11-.48-.31-.69-.2-.19-.42-.3-.69-.31H6c-.27.02-.48.13-.69.31-.2.2-.3.44-.31.69h1v3c.02.27.11.5.31.69.2.2.42.31.69.31h1c.27 0 .48-.11.69-.31.2-.19.3-.42.31-.69H8V7.98v.01zM7 2.3c-3.14 0-5.7 2.54-5.7 5.68 0 3.14 2.56 5.7 5.7 5.7s5.7-2.55 5.7-5.7c0-3.15-2.56-5.69-5.7-5.69v.01zM7 .98c3.86 0 7 3.14 7 7s-3.14 7-7 7-7-3.12-7-7 3.14-7 7-7z"></path></svg></span>ノート</div><div class="admonitionContent_BuS1"><p><strong>AltibaseモニタリングV2</strong>の新機能についての詳細は、<a href="https://whatap.github.io/whatap-docs/altibase/monitoring-intro#new-feature" target="_blank" rel="noopener noreferrer">次の文書</a>を参考してください。</p></div></div>
+</li>
+<li>
+<p><code class="Changed" type="1">Changed</code>アクティブセッションデータの呼び出しを改善</p>
+</li>
+</ul><hr><h3 class="anchor anchorWithStickyNavbar_LWe7" id="log"><code>Log</code><a href="#log" class="hash-link" aria-label="logへの直接リンク" title="logへの直接リンク">​</a></h3><p><code class="Changed" type="1">Changed</code> <span class="uitext">ログ</span>メニューで次のオプションの機能を変更</p><ul>
+<li>
+<p><span class="uitext">カラム設定</span>で少なくとも1つのカラムは選択するように修正</p>
+</li>
+<li>
+<p><span class="b500">テーブルのコンテンツ設定</span>オプション名を<span class="uitext">ログ表示詳細設定</span>に変更</p>
+</li>
+<li>
+<p><span class="uitext">ログ表示詳細設定</span>で<span class="uitext">ログ</span>選択オプション名を<span class="uitext">content</span>に変更</p>
+</li>
+<li>
+<p><span class="uitext">ログ表示詳細設定</span>で少なくとも1つの項目は選択するよう修正</p>
+</li>
+<li>
+<p><span class="uitext">カラム設定</span>で<span class="uitext">log</span>カラムを選択解除すると<span class="uitext">ログ表示詳細設定</span>を選択できず、案内ツールチップを表示するように修正</p>
+</li>
+</ul></div></section>
+<section class="remark-sectionize-h2"><h2 class="anchor anchorWithStickyNavbar_LWe7" id="preview-280a4">Preview 2.8.0.a4<a href="#preview-280a4" class="hash-link" aria-label="Preview 2.8.0.a4への直接リンク" title="Preview 2.8.0.a4への直接リンク">​</a></h2><p>2024年08月14日</p><div class="indentTab"><h3 class="anchor anchorWithStickyNavbar_LWe7" id="共通-2"><code>共通</code><a href="#共通-2" class="hash-link" aria-label="共通-2への直接リンク" title="共通-2への直接リンク">​</a></h3><ul>
+<li>
+<p><code class="New" type="1">New</code> <span class="uitext">分析</span> &gt; <span class="uitext">メトリクスチャート</span> <code class="newfunc">New</code>メニューを追加</p>
+<ul>
+<li>
+<p>ユーザーが時間、対象、インターバルオプションを設定した後、モニタリングする対象のメトリクスを特定し、チャートを追加できるようにユーザー経験(UX)を改善しました。</p>
+</li>
+<li>
+<p>ダッシュボードに配置されたウィジェットを削除することなく、チャートの照会時間の範囲を変更できます。</p>
+</li>
+<li>
+<p>ダッシュボードに配置されたすべてのウィジェットのオプションを一括で適用できる一括変更機能を提供します。</p>
+</li>
+<li>
+<p>プリセット機能により、ダッシュボードに 配置されたウィジェットの情報を保存し、読み込みできます。</p>
+</li>
+<li>
+<p>提供する様々なオプションにより、ダッシュボードのレイアウトやウィジェットの機能を調整できます。</p>
+</li>
+</ul>
+<div class="theme-admonition theme-admonition-note admonition_xJq3 alert alert--secondary"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M6.3 5.69a.942.942 0 0 1-.28-.7c0-.28.09-.52.28-.7.19-.18.42-.28.7-.28.28 0 .52.09.7.28.18.19.28.42.28.7 0 .28-.09.52-.28.7a1 1 0 0 1-.7.3c-.28 0-.52-.11-.7-.3zM8 7.99c-.02-.25-.11-.48-.31-.69-.2-.19-.42-.3-.69-.31H6c-.27.02-.48.13-.69.31-.2.2-.3.44-.31.69h1v3c.02.27.11.5.31.69.2.2.42.31.69.31h1c.27 0 .48-.11.69-.31.2-.19.3-.42.31-.69H8V7.98v.01zM7 2.3c-3.14 0-5.7 2.54-5.7 5.68 0 3.14 2.56 5.7 5.7 5.7s5.7-2.55 5.7-5.7c0-3.15-2.56-5.69-5.7-5.69v.01zM7 .98c3.86 0 7 3.14 7 7s-3.14 7-7 7-7-3.12-7-7 3.14-7 7-7z"></path></svg></span>ノート</div><div class="admonitionContent_BuS1"><ul>
+<li>
+<p>この機能はApplication、Kubernetes、Databaseの商品に適用されます。</p>
+</li>
+<li>
+<p><span class="uitext">メトリクスチャート</span> <code class="newfunc">New</code>メニューの詳細は、<a href="https://whatap.github.io/whatap-docs/java/metrics-chart-v2" target="_blank" rel="noopener noreferrer">次の文書</a>を参照してください。</p>
+</li>
+<li>
+<p>改編された事項についての詳細は<a href="https://www.whatap.io/bbs/board.php?bo_table=blog&amp;wr_id=260" target="_blank" rel="noopener noreferrer">次のリンク(韓国語)</a>を参照してください。</p>
+</li>
+</ul></div></div>
+</li>
+<li>
+<p><code class="Feature" type="1">Feature</code> <span class="uitext">アラート通知</span> &gt; <span class="uitext">通知設定</span>メニューでOffice 365コネクタ方式の中止に伴い、<strong>Teams Workflows</strong>を通じて警告通知を受信できるサードパーティプラグインを追加</p>
+</li>
+<li>
+<p><code class="Feature" type="1">Feature</code> <span class="uitext">アラート通知</span> &gt; <span class="uitext">通知設定</span>メニューで<strong>PagerDuty</strong>を通じて警告通知を受信できるサードパーティプラグインを追加</p>
+</li>
+<li>
+<p><code class="Feature" type="1">Feature</code> <span class="uitext">アラート通知</span> &gt; <span class="uitext">イベント設定</span> <code class="newfunc">New</code>メニューで<span class="uitext">イベント名</span>または<span class="uitext">イベント受信タグ</span>で検索できる機能を追加</p>
+</li>
+<li>
+<p><code class="Changed" type="0">Changed</code>リアルタイムで画面に表示される通知メッセージの <span class="b500">ブラウザ通知をしない</span>機能をすべての通知を閉じられる<span class="uitext">全て通知を閉じる</span>機能に変更</p>
+<p><img decoding="async" loading="lazy" alt="Close all notifications" src="/whatap-docs/ja/assets/images/release-real-time-alert-changed-5d58c6efe9ccff80377c1589ef9eb095.png" width="667" height="154" class="img_ev3q"></p>
+</li>
+<li>
+<p><code class="Changed" type="1">Changed</code>警告通知メッセージに関する<b>イベント解決</b>の用語を <b>イベント解消</b>へ一括変更</p>
+</li>
+<li>
+<p><code class="Fixed" type="0">Fixed</code><img decoding="async" loading="lazy" alt="通知アイコン" src="data:image/svg+xml;base64,PHN2ZyBjbGFzcz0iU1ZHSW5saW5lLXN2ZyIgc3R5bGU9IndpZHRoOiAyNnB4O2hlaWdodDogMjZweDsiIHdpZHRoPSIyNHB4IiBoZWlnaHQ9IjI0cHgiIHZpZXdCb3g9IjAgMCAyNCAyNCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KICAgIDwhLS0gR2VuZXJhdG9yOiBTa2V0Y2ggNTkuMSAoODYxNDQpIC0gaHR0cHM6Ly9za2V0Y2guY29tIC0tPgogICAgPCEtLSA8dGl0bGU+aWMtZXZlbnQ8L3RpdGxlPiAtLT4KICAgIDxkZXNjPkNyZWF0ZWQgd2l0aCBTa2V0Y2guPC9kZXNjPgogICAgPGcgaWQ9Ikljb24tU2V0IiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgICAgICA8ZyBpZD0iV2hhVGFwX0ljb25fU2V0IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtNjguMDAwMDAwLCAtMjM5MS4wMDAwMDApIiBmaWxsPSIjNzk3OTc5Ij4KICAgICAgICAgICAgPGcgaWQ9ImFwcGxpY2F0aW9uLWljb25zIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg0MC4wMDAwMDAsIDIzNDYuMDAwMDAwKSI+CiAgICAgICAgICAgICAgICA8ZyBpZD0iaWMtZXZlbnQiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDI4LjAwMDAwMCwgNDUuMDAwMDAwKSI+CiAgICAgICAgICAgICAgICAgICAgPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMi4wMDAwMDAsIDEuMDAwMDAwKSIgaWQ9IkNvbWJpbmVkLVNoYXBlIj4KICAgICAgICAgICAgICAgICAgICAgICAgPHBhdGggZD0iTTcsMTkgTDEzLDE5IEMxMywyMC42NTY4NTQyIDExLjY1Njg1NDIsMjIgMTAsMjIgQzguNDAyMzE5MTIsMjIgNy4wOTYzMzkxMiwyMC43NTEwOCA3LjAwNTA5MjY5LDE5LjE3NjI3MjggTDcsMTkgTDEzLDE5IFogTTEwLDAgQzExLjEwNDU2OTUsMCAxMiwwLjg5NTQzMDUgMTIsMiBDMTIsMi4wOTY5NzY1MyAxMS45OTMwOTc5LDIuMTkyMzQwOTkgMTEuOTc5NzU4MiwyLjI4NTYyODk1IEMxNC44ODE4MDcyLDMuMTM4MTQ1MzcgMTcsNS44MjE3MDc0NyAxNyw5IEwxNywxNSBMMTksMTUgQzE5LjU1MjI4NDcsMTUgMjAsMTUuNDQ3NzE1MyAyMCwxNiBDMjAsMTYuNTUyMjg0NyAxOS41NTIyODQ3LDE3IDE5LDE3IEwxLDE3IEMwLjQ0NzcxNTI1LDE3IDYuNzYzNTM3NTFlLTE3LDE2LjU1MjI4NDcgMCwxNiBDLTYuNzYzNTM3NTFlLTE3LDE1LjQ0NzcxNTMgMC40NDc3MTUyNSwxNSAxLDE1IEwzLDE1IEwzLDkgTDMuMDA0MDU5MDIsOC43NTkzNTAyNSBDMy4xMDc4NTc5NSw1LjY4Njg3MzI3IDUuMTkxNzI1NDIsMy4xMTY1MDAwNCA4LjAxOTkwNDkxLDIuMjgzOTg3MDYgQzguMDA2OTAyMDYsMi4xOTIzNDA5OSA4LDIuMDk2OTc2NTMgOCwyIEM4LDAuODk1NDMwNSA4Ljg5NTQzMDUsMCAxMCwwIFogTTEwLDQgQzcuMzAyODE1OCw0IDUuMDkzNjkxMTksNi4xMzk5ODcwNyA1LjAwMzc3NDU5LDguNzkzMDc5MjggTDUsOSBMNSwxNSBMMTUsMTUgTDE1LDkgQzE1LDYuMjM4NTc2MjUgMTIuNzYxNDIzNyw0IDEwLDQgWiI+PC9wYXRoPgogICAgICAgICAgICAgICAgICAgIDwvZz4KICAgICAgICAgICAgICAgIDwvZz4KICAgICAgICAgICAgPC9nPgogICAgICAgIDwvZz4KICAgIDwvZz4KPC9zdmc+" width="24" height="24" class="img_ev3q"><span class="uitext">リアルタイムアラート</span>でチャートの通知表示数が累積する問題を修正</p>
+</li>
+<li>
+<p><code class="Fixed" type="0">Fixed</code>サイドメニューでロゴのない組織名の左側に余白を追加</p>
+</li>
+<li>
+<p><code class="Fixed" type="0">Fixed</code> <span class="uitext">アラート通知</span> &gt; <span class="uitext">イベント設定</span>メニューでイベントリストをイベント名でソートするように修正</p>
+</li>
+<li>
+<p><code class="Fixed" type="0">Fixed</code>ホーム画面の<span class="uitext">プロジェクトリスト</span>でグループに追加されたプロジェクトは<img decoding="async" loading="lazy" alt="設定アイコン" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCAyMCAyMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiBmb3VuZGF0aW9uPSJbb2JqZWN0IE9iamVjdF0iIGNsYXNzPSJJbm5lckljb25zdHlsZWRfX0ljb24tY2gtZnJvbnRfX3NjLTE5N2g1YmItMCBka0RyT3IiIGRlZmF1bHRvcGFjaXR5PSIxIiBob3ZlcmVkb3BhY2l0eT0iMSIgbWFyZ2ludG9wPSIwIiBtYXJnaW5yaWdodD0iMCIgbWFyZ2luYm90dG9tPSIwIiBtYXJnaW5sZWZ0PSIwIiB3aXRodGhlbWU9InRydWUiPjxwYXRoIGZpbGw9IiM3OTc5NzkiIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBkPSJNNS44MzM1NCAxMC4wMDAxQzUuODMzNTQgNy42OTkzOSA3LjY5ODgxIDUuODMzNDIgMTAuMDAwMiA1LjgzMzQyQzEyLjMwMDkgNS44MzM0MiAxNC4xNjY5IDcuNjk5MzkgMTQuMTY2OSAxMC4wMDAxQzE0LjE2NjkgMTIuMzAwOCAxMi4zMDA5IDE0LjE2NjcgMTAuMDAwMiAxNC4xNjY3QzcuNjk4ODEgMTQuMTY2NyA1LjgzMzU0IDEyLjMwMDggNS44MzM1NCAxMC4wMDAxWk0xOC4zMzM1IDExLjI1MDFWOC43NTAwOEwxNi40NzUyIDguNDQwMDhDMTYuMzA5NCA3Ljc1NTA4IDE2LjAzOTQgNy4xMTE3NSAxNS42Nzk0IDYuNTI2NzVMMTYuNzc2IDQuOTkwOTFMMTUuMDA4NSAzLjIyMzQxTDEzLjQ3MjcgNC4zMjA5MUMxMi44ODc3IDMuOTYwOTEgMTIuMjQ1MiAzLjY5MDkxIDExLjU2MDIgMy41MjUwOEwxMS4yNTAyIDEuNjY2NzVIOC43NTAyTDguNDQwMiAzLjUyNTA4QzcuNzU1MiAzLjY5MDkxIDcuMTExODcgMy45NjA5MSA2LjUyNjg3IDQuMzIwOTFMNC45OTEwNCAzLjIyMzQxTDMuMjIzNTQgNC45OTA5MUw0LjMyMDIgNi41MjY3NUMzLjk2MTA0IDcuMTExNzUgMy42OTAyIDcuNzU1MDggMy41MjUyIDguNDQwMDhMMS42NjY4NyA4Ljc1MDA4VjExLjI1MDFMMy41MjUyIDExLjU2MDFDMy42OTAyIDEyLjI0NTEgMy45NjEwNCAxMi44ODg0IDQuMzIwMiAxMy40NzM0TDMuMjIzNTQgMTUuMDA5Mkw0Ljk5MTA0IDE2Ljc3NjdMNi41MjY4NyAxNS42NzkyQzcuMTExODcgMTYuMDM4NCA3Ljc1NTIgMTYuMzA5MiA4LjQ0MDIgMTYuNDc1MUw4Ljc1MDIgMTguMzMzNEgxMS4yNTAyTDExLjU2MDIgMTYuNDc1MUMxMi4yNDUyIDE2LjMwOTIgMTIuODg3NyAxNi4wMzg0IDEzLjQ3MjcgMTUuNjc5MkwxNS4wMDg1IDE2Ljc3NjdMMTYuNzc2IDE1LjAwOTJMMTUuNjc5NCAxMy40NzM0QzE2LjAzOTQgMTIuODg4NCAxNi4zMDk0IDEyLjI0NTEgMTYuNDc1MiAxMS41NjAxTDE4LjMzMzUgMTEuMjUwMVoiPjwvcGF0aD48L3N2Zz4=" width="20" height="20" class="img_ev3q"> &gt; <span class="uitext">グループから削除</span>メニューが見えるように修正</p>
+</li>
+</ul><h3 class="anchor anchorWithStickyNavbar_LWe7" id="application-1"><code>Application</code><a href="#application-1" class="hash-link" aria-label="application-1への直接リンク" title="application-1への直接リンク">​</a></h3><ul>
+<li>
+<p><code class="Changed" type="1">Changed</code> <span class="uitext">トレース分析</span>画面でテーブルの基本カラム順画を変更</p>
+</li>
+<li>
+<p><code class="Fixed" type="0">Fixed</code> <span class="uitext">アラート通知</span> &gt; <span class="uitext">イベント設定</span>メニューでTPSの変化量に対する複合メトリクステンプレート(<span class="uitext">TPS has changed by more than 30% compared to the previous week.</span>)の通知エラーを修正</p>
+</li>
+<li>
+<p><code class="Fixed" type="0">Fixed</code> <span class="uitext">ダッシュボード</span> &gt; <span class="uitext">アプリケーション</span>メニューで過去の時間を照会する際、断続的に一部のシリーズチャートのデータが表示されない問題を修正</p>
+</li>
+<li>
+<p><code class="Fixed" type="0">Fixed</code> <span class="uitext">統計</span>の下位メニューで<span class="uitext">カラム設定</span>カラムを追加した後、CSVファイルをダウンロードするとカラム設定が反映されない問題を修正</p>
+</li>
+<li>
+<p><code class="Fixed" type="0">Fixed</code>Firefoxのブラウザで<span class="uitext">ダッシュボード</span> &gt; <span class="uitext">アプリケーション</span>メニューのアークイコライザーウィジェットの中央テキストの並べ替えが壊れる問題を修正</p>
+</li>
+</ul><hr><h3 class="anchor anchorWithStickyNavbar_LWe7" id="server-1"><code>Server</code><a href="#server-1" class="hash-link" aria-label="server-1への直接リンク" title="server-1への直接リンク">  ​</a></h3><p><code class="Fixed" type="0">Fixed</code> <span class="uitext">管理</span> &gt; <span class="uitext">エージェントインストール</span>メニューのDebian、Ubuntuのインストールガイドに含まれているダウンロード リンクを<strong>http</strong>から<strong>https</strong>に変更</p><hr><h3 class="anchor anchorWithStickyNavbar_LWe7" id="kubernetes-1"><code>Kubernetes</code><a href="#kubernetes-1" class="hash-link" aria-label="kubernetes-1への直接リンク" title="kubernetes-1への直接リンク">​</a></h3><ul>
+<li>
+<p><code class="Feature" type="1">Feature</code> <span class="uitext">ダッシュボード</span> &gt; <span class="uitext">コンテナマップ</span>メニューの <span class="uitext">対象情報</span>タブで<span class="uitext">Service リスト</span>移動リンクを追加し、サービス<strong>オブジェクトメニフェスト</strong>情報を確認できる機能を追加</p>
+</li>
+<li>
+<p><code class="Feature" type="1">Feature</code> <span class="uitext">クラスター</span> &gt; <span class="uitext">ノードディスクリスト</span>メニューのノードリストに<span class="uitext">FileSystem</span>カラムを追加</p>
+</li>
+<li>
+<p><code class="Feature" type="1">Feature</code> <span class="uitext">ワークロード</span> &gt; <span class="uitext">Podリスト</span>メニューのPodリストにコンテナ数、アプリケーション数のカラムを追加</p>
+</li>
+<li>
+<p><code class="Changed" type="1">Changed</code> <span class="uitext">管理</span> &gt; <span class="uitext">ネームスペース管理</span>メニューでネームスペースプロジェクトを作成する際、具体的な案内メッセージを追加</p>
+</li>
+</ul></div></section>
+<section class="remark-sectionize-h2"><h2 class="anchor anchorWithStickyNavbar_LWe7" id="preview-280a3">Preview 2.8.0.a3<a href="#preview-280a3" class="hash-link" aria-label="Preview 2.8.0.a3への直接リンク" title="Preview 2.8.0.a3への直接リンク">​</a></h2><p>2024年08月08日</p><div class="indentTab"><h3 class="anchor anchorWithStickyNavbar_LWe7" id="共通-3"><code>共通</code><a href="#共通-3" class="hash-link" aria-label="共通-3への直接リンク" title="共通-3への直接リンク">​</a></h3><p><code class="Fixed" type="0">Fixed</code>一部のテキストに適用されるテーマが漏れている問題を修正</p></div></section>
+<section class="remark-sectionize-h2"><h2 class="anchor anchorWithStickyNavbar_LWe7" id="preview-280a2">Preview 2.8.0.a2<a href="#preview-280a2" class="hash-link" aria-label="Preview 2.8.0.a2への直接リンク" title="Preview 2.8.0.a2への直接リンク">​</a></h2><p>2024年08月08日</p><div class="indentTab"><h3 class="anchor anchorWithStickyNavbar_LWe7" id="共通-4"><code>共通</code><a href="#共通-4" class="hash-link" aria-label="共通-4への直接リンク" title="共通-4への直接リンク">​</a></h3><ul>
+<li>
+<p><code class="Feature" type="1">Feature</code>次のメニューパスで、メンバー一覧をCSV形式のファイルにダウンロードできる機能を追加</p>
+<ul>
+<li>ホーム画面 &gt; プロジェクト選択 &gt; <span class="uitext">管理</span> &gt; <span class="uitext">プロジェクトメンバー</span></li>
+<li>ホーム画面 &gt; <span class="uitext">管理</span> &gt; <span class="uitext">統合メンバー</span></li>
+<li>ホーム画面 &gt; <span class="uitext">組織管理</span> &gt; <span class="uitext">メンバーリスト</span></li>
+</ul>
+</li>
+<li>
+<p><code class="Changed" type="0">Changed</code>統合グループ管理ボタンの位置およびUIを変更</p>
+</li>
+<li>
+<p><code class="Fixed" type="0">Fixed</code> <span class="uitext">統合Flexボード</span>または<span class="uitext">Flexボード</span>メニューの<span class="uitext">リーチテキスト</span>ウィジェットで修正画面を表示および非表示する過程で、保存していない内容が保持される問題を修正</p>
+</li>
+<li>
+<p><code class="Fixed" type="0">Fixed</code> <span class="uitext">統合Flexボード</span>または<span class="uitext">Flexボード</span>メニューで<span class="uitext">リーチテキスト</span>ウィジェットの修正画面でテキストとツールバーボタンのツールチップが重なって見えないようにツールチップ要素にテーマを設定</p>
+</li>
+<li>
+<p><code class="Fixed" type="0">Fixed</code>ウェブブラウザの画面サイズによって、サイドメニューで<span class="uitext">組織</span>一覧のスクロールエラーを修正</p>
+</li>
+</ul><hr><h3 class="anchor anchorWithStickyNavbar_LWe7" id="application-2"><code>Application</code><a href="#application-2" class="hash-link" aria-label="application-2への直接リンク" title="application-2への直接リンク">​</a></h3><ul>
+<li>
+<p><code class="Changed" type="1">Changed</code> <span class="uitext">ダッシュボード</span> &gt; <span class="uitext">アプリケーション</span>メニューで<span class="b500">アクティブTXイコライザー</span>ウィジェット名を<span class="uitext">アクティブTX</span>に変更、ウィジェット名を改行せずに一行で表示するように修正</p>
+</li>
+<li>
+<p><code class="Fixed" type="0">Fixed</code>トランザクションのSQL文で置換された変数<code>#</code>を<code>$</code>に置き換えて表示しないように修正</p>
+</li>
+</ul><hr><h3 class="anchor anchorWithStickyNavbar_LWe7" id="server-2"><code>Server</code><a href="#server-2" class="hash-link" aria-label="server-2への直接リンク" title="server-2への直接リンク">​</a></h3><p><code class="Fixed" type="0">Fixed</code> <span class="uitext">エージェント設定</span> &gt; <span class="uitext">実行環境変数</span>または<span class="uitext">環境変数</span>メニューで<img decoding="async" loading="lazy" alt="拡張アイコン" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCAyMCAyMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik04LjAxMDI0IDE3Ljk5NDVWMTUuOTk0OUw1LjQ3NzM2IDE1Ljk5NDlMMTAuMDcwOSAxMS40MDE0TDguNjU2NjggOS45ODcxNUwzLjk5OTYxIDE0LjY0NDJMMy45OTk5NCAxMS45OTQ3TDEuOTk5OTQgMTEuOTk0OEwxLjk5OTQ1IDE3Ljk5NDVMOC4wMTAyNCAxNy45OTQ1Wk0xMS45ODk2IDEuOTg3NTNWMy45ODcxMkwxNC42NTY3IDMuOTg3MTJMOS45OTk3OSA4LjY0NDAzTDExLjQxNCAxMC4wNTgyTDE2LjAwMDIgNS40NzJMMTUuOTk5OSA3Ljk4NzI5TDE3Ljk5OTkgNy45ODcyNEwxOC4wMDA0IDEuOTg3NDlMMTEuOTg5NiAxLjk4NzUzWiIgZmlsbD0iIzc1NzU3NSIvPgo8L3N2Zz4K" width="20" height="20" class="img_ev3q">エージェント一覧の拡張ボタンを選択すると、画面上部のメニュー名が<span class="b500">エージェントログビューア</span>に変更される問題を修正</p><hr><h3 class="anchor anchorWithStickyNavbar_LWe7" id="database-1"><code>Database</code><a href="#database-1" class="hash-link" aria-label="database-1への直接リンク" title="database-1への直接リンク">​</a></h3><h4 class="anchor anchorWithStickyNavbar_LWe7" id="oracle-v2oracle-pro">Oracle <code class="my">V2</code>、Oracle Pro<a href="#oracle-v2oracle-pro" class="hash-link" aria-label="oracle-v2oracle-proへの直接リンク" title="oracle-v2oracle-proへの直接リンク">​</a></h4><ul>
+<li>
+<p><code class="Changed" type="1">Changed</code> <span class="uitext">ダッシュボード</span> &gt; <span class="uitext">マルチインスタンス</span>メニューで<span class="uitext">Main Waits</span>ウィジェットのデータを<code>active_session</code>カテゴリで照会するように変更</p>
+</li>
+<li>
+<p><code class="Fixed" type="0">Fixed</code>次のメニューパスでholder type、waiter type値が表示されないエラーを修正</p>
+<ul>
+<li>
+<p><span class="uitext">ダッシュボード</span> &gt; <span class="uitext">インスタンスモニタリング</span>メニューの<span class="uitext">ロックツリー</span>テーブル</p>
+</li>
+<li>
+<p><span class="uitext">分析</span> &gt; <span class="uitext">ロックツリー</span></p>
+</li>
+</ul>
+</li>
+</ul><h4 class="anchor anchorWithStickyNavbar_LWe7" id="oracle-v2">Oracle <code class="my">V2</code><a href="#oracle-v2" class="hash-link" aria-label="oracle-v2への直接リンク" title="oracle-v2への直接リンク">​</a></h4><p><code class="Fixed" type="0">Fixed</code>次のメニューパスで同じsidのholderとwaiterがロック(Lock)と表記されるエラーを修正</p><ul>
+<li>
+<p><span class="uitext">ダッシュボード</span> &gt; <span class="uitext">インスタンスモニタリング</span>メニューの<span class="uitext">ロックツリー</span>テーブル</p>
+</li>
+<li>
+<p><span class="uitext">分析</span> &gt; <span class="uitext">ロックツリー</span></p>
+</li>
+</ul><hr><h3 class="anchor anchorWithStickyNavbar_LWe7" id="browser"><code>Browser</code><a href="#browser" class="hash-link" aria-label="browserへの直接リンク" title="browserへの直接リンク">​</a></h3><ul>
+<li>
+<p><code class="Changed" type="1">Changed</code> <span class="uitext">ダッシュボード</span> &gt; <span class="uitext">ブラウザエラー</span> &gt; <span class="uitext">エラーメッセージ</span> <span class="uitext">表</span>セクションのUIを改善</p>
+</li>
+<li>
+<p><code class="Changed" type="1">Changed</code> <span class="uitext">ダッシュボード</span> &gt; <span class="uitext">ブラウザエラー</span> &gt; <span class="uitext">エラーメッセージ</span> <span class="uitext">表</span> &gt; <span class="uitext">エラー</span> <span class="uitext">詳細</span> &gt; <span class="uitext">ページ毎のエラー数</span>セクションのUIを改善</p>
+</li>
+</ul><hr><h3 class="anchor anchorWithStickyNavbar_LWe7" id="network"><code>Network</code><a href="#network" class="hash-link" aria-label="networkへの直接リンク" title="networkへの直接リンク">​</a></h3><p><code class="Changed" type="0">Changed</code>ユーザー言語が英語の場合、<span class="uitext">管理</span> &gt; <span class="uitext">エージェントインストール</span>メニューの<span class="uitext">インストール前の注意事項</span>セクションで<b>Version</b>を<span class="uitext">Kernel Version</span>に修正</p><hr><h3 class="anchor anchorWithStickyNavbar_LWe7" id="log-1"><code>Log</code><a href="#log-1" class="hash-link" aria-label="log-1への直接リンク" title="log-1への直接リンク">​</a></h3><ul>
+<li>
+<p><code class="Changed" type="1">Changed</code> <span class="uitext">ログ</span> &gt; <span class="uitext">ログ設定</span> &gt; <span class="uitext">ログモニタリングの開始</span>で<span class="uitext">カテゴリ別のデータ保存期間</span>項目中<code>#</code>が付いたカテゴリは表示されないように処理</p>
+</li>
+<li>
+<p><code class="Fixed" type="0">Fixed</code>次のメニューパスで<span class="uitext">カラム設定</span>を行うと、ログの原文が表示されない問題を修正</p>
+<ul>
+<li><span class="uitext">ログ</span> &gt; <span class="uitext">ログTail</span></li>
+<li><span class="uitext">ログ</span> &gt; <span class="uitext">ログトレンド</span></li>
+<li><span class="uitext">ログ</span> &gt; <span class="uitext">ログ検索</span></li>
+<li><span class="uitext">トレース分析</span> &gt; <span class="uitext">TXログ</span></li>
+</ul>
+</li>
+</ul></div></section>
+<section class="remark-sectionize-h2"><h2 class="anchor anchorWithStickyNavbar_LWe7" id="preview-280a1">Preview 2.8.0.a1<a href="#preview-280a1" class="hash-link" aria-label="Preview 2.8.0.a1への直接リンク" title="Preview 2.8.0.a1への直接リンク">​</a></h2><p>2024年08月01日</p><div class="indentTab"><h3 class="anchor anchorWithStickyNavbar_LWe7" id="共通-5"><code>共通</code><a href="#共通-5" class="hash-link" aria-label="共通-5への直接リンク" title="共通-5への直接リンク">​</a></h3><ul>
+<li>
+<p><code class="Feature" type="1">Feature</code> <span class="uitext">統合Flexボード</span>または<span class="uitext">Flexボード</span>メニューでメトリクスのタイプフィルタ内の条件間<code>OR</code>選択肢を追加</p>
+</li>
+<li>
+<p><code class="Feature" type="1">Feature</code> <span class="uitext">統合Flexボード</span>または<span class="uitext">Flexボード</span>メニューで、リーチ(Rich) テキストウィジェットのフォント色の選択オプションを追加</p>
+</li>
+<li>
+<p><code class="Changed" type="1">Changed</code>テーマカラーの一部を変更</p>
+</li>
+<li>
+<p><code class="Changed" type="1">Changed</code> <span class="uitext">管理</span> &gt; <span class="uitext">エージェントインストール</span>メニューでアクセスキーに関する注意メッセージを削除</p>
+</li>
+<li>
+<p><code class="Fixed" type="0">Fixed</code>モバイルデバイスのブラウザでWhaTapサービス画面にアクセスすると、下段領域が隠れる問題を修正</p>
+</li>
+<li>
+<p><code class="Fixed" type="0">Fixed</code> <span class="uitext">統合Flexボード</span>または<span class="uitext">Flexボード</span>メニューで<span class="uitext">すべてのメトリクス</span>でウィジェットを追加すると、メトリクスの説明がウィジェットのタイトルで表示される問題を修正</p>
+</li>
+<li>
+<p><code class="Fixed" type="0">Fixed</code> <span class="uitext">統合Flexボード</span>メニューで、読み取り専用に共有されたダッシュボードのグループウィジェットに、含まれているウィジェットがデータを呼び出せない問題を修正</p>
+</li>
+<li>
+<p><code class="Fixed" type="0">Fixed</code> <span class="uitext">統合Flexボード</span>メニューのグループウィジェットで選択したフィルターがなく、ダッシュボードフィルターを適用する時、グループの下位ウィジェットにダッシュボードフィルターが適用されない問題を修正</p>
+</li>
+<li>
+<p><code class="Fixed" type="0">Fixed</code> <span class="uitext">アラート通知</span> &gt; <span class="uitext">イベント設定</span> <code class="newfunc">New</code>メニューのイベント追加または修正画面で<span class="slow">Warning</span>または<span class="vslow">Critical</span>メトリクスのいずれかが活性化された場合、同じ設定値を入力すると保存されない問題を修正</p>
+</li>
+<li>
+<p><code class="Fixed" type="0">Fixed</code> <span class="uitext">アラート通知</span> &gt; <span class="uitext">イベント設定</span> <code class="newfunc">New</code>メニューの複合メトリクスイベントの追加または修正画面でMXQLデータが照会されない問題を修正</p>
+<blockquote>
+<p><span class="uitext">イベントデータ照会</span>セクションの<span class="uitext">フィルター</span>オプションで文字列タイプの値を持つタグまたはフィールドを設定した後、テキストモードに切り替えると、MXQLデータが照会されない問題を修正しました。</p>
+</blockquote>
+</li>
+</ul><hr><h3 class="anchor anchorWithStickyNavbar_LWe7" id="application-3"><code>Application</code><a href="#application-3" class="hash-link" aria-label="application-3への直接リンク" title="application-3への直接リンク">​</a></h3><ul>
+<li>
+<p><code class="Changed" type="1">Changed</code> <span class="uitext">トレース分析</span>画面のフィルタリング選択ボックスを、グループ形式のボタンに変更</p>
+<p><img decoding="async" loading="lazy" alt="changes" src="/whatap-docs/ja/assets/images/release-trace-analysis-filter-changes-eaf30e06d7686d8a4ff7f2d0caf589af.png" width="1000" height="285" class="img_ev3q"></p>
+</li>
+<li>
+<p><code class="Changed" type="1">Changed</code>ユーザーの設定言語が英語の場合、<span class="uitext">ダッシュボード</span> &gt; <span class="uitext">アプリケーション</span>メニューで<span class="uitext">Apdex</span>ウィジェット案内モーダルの可読性向上のためにサイズを修正</p>
+</li>
+</ul><hr><h3 class="anchor anchorWithStickyNavbar_LWe7" id="server-3"><code>Server</code><a href="#server-3" class="hash-link" aria-label="server-3への直接リンク" title="server-3への直接リンク">​</a></h3><p><code class="Fixed" type="0">Fixed</code> <span class="uitext">アラート通知</span> &gt; <span class="uitext">イベント設定</span>メニューでイベントを追加または修正する時<span class="uitext">アラート通知条件</span>自分のフォントを基本フォントに修正</p><hr><h3 class="anchor anchorWithStickyNavbar_LWe7" id="kubernetes-2"><code>Kubernetes</code><a href="#kubernetes-2" class="hash-link" aria-label="kubernetes-2への直接リンク" title="kubernetes-2への直接リンク">​</a></h3><ul>
+<li>
+<p><code class="Changed" type="1">Changed</code> <span class="uitext">ワークロード</span> &gt; <span class="uitext">コンテナアプリケーションリスト</span>メニューで<span class="uitext">ApplicationName</span>、<span class="uitext">ApplicationId</span>カラムを<span class="uitext">アプリケーション情報</span>カラムの下位に移動</p>
+</li>
+<li>
+<p><code class="Fixed" type="0">Fixed</code> <span class="uitext">ワークロード</span> &gt; <span class="uitext">コンテナアプリケーションリスト</span>メニューでマッピングされたコンテナ情報がない場合、警告メッセージが表示されないバグを修正</p>
+</li>
+<li>
+<p><code class="Fixed" type="0">Fixed</code> <span class="uitext">ダッシュボード</span> &gt; <span class="uitext">コンテナマップ</span>メニューの<span class="uitext">コンテナ要約分析</span>でイメージのリソース情報エラーを修正</p>
+</li>
+</ul><hr><h3 class="anchor anchorWithStickyNavbar_LWe7" id="database-2"><code>Database</code><a href="#database-2" class="hash-link" aria-label="database-2への直接リンク" title="database-2への直接リンク">​</a></h3><h4 class="anchor anchorWithStickyNavbar_LWe7" id="共通-6">共通<a href="#共通-6" class="hash-link" aria-label="共通への直接リンク" title="共通への直接リンク">​</a></h4><ul>
+<li>
+<p><code class="Feature" type="1">Feature</code> <span class="uitext">セッション中止</span>機能を成功または失敗した場合、ユーザー行為として記録する機能を追加</p>
+</li>
+<li>
+<p><code class="Changed" type="1">Changed</code> <span class="uitext">管理</span> &gt; <span class="uitext">プロジェクトメンバー</span>メニューで<span class="uitext">WhaTapカスタマーサポートを招待する</span>機能使用時、<a href="mailto:dbx@whatap.io" target="_blank" rel="noopener noreferrer">dbx@whatap.io</a>アカウントが一緒に招待されないように修正</p>
+</li>
+</ul><h4 class="anchor anchorWithStickyNavbar_LWe7" id="postgresql">PostgreSQL<a href="#postgresql" class="hash-link" aria-label="PostgreSQLへの直接リンク" title="PostgreSQLへの直接リンク">​</a></h4><p><code class="Feature" type="1">Feature</code> <span class="uitext">ダッシュボード</span> &gt; <span class="uitext">マルチインスタンス</span>メニューに、進行中のvacuumプロセス数が確認できる<span class="uitext">Vacuum Sessions</span>ウィジェットを追加</p><h4 class="anchor anchorWithStickyNavbar_LWe7" id="mysql">MySQL<a href="#mysql" class="hash-link" aria-label="MySQLへの直接リンク" title="MySQLへの直接リンク">​</a></h4><p><code class="Fixed" type="0">Fixed</code> <span class="uitext">分析</span> &gt; <span class="uitext">デッドロック</span>メニューで照会したデータがない時、表示されるメッセージが半分だけ表示される問題を修正</p><h4 class="anchor anchorWithStickyNavbar_LWe7" id="oracle-v2oracle-pro-1">Oracle <code class="my">V2</code>、Oracle Pro<a href="#oracle-v2oracle-pro-1" class="hash-link" aria-label="oracle-v2oracle-pro-1への直接リンク" title="oracle-v2oracle-pro-1への直接リンク">​</a></h4><ul>
+<li>
+<p><code class="Feature" type="1">Feature</code> <span class="uitext">SQL詳細</span>ポップアップの<span class="uitext">Runtime Plan</span>、<span class="uitext">Explain Plan</span>テーブルに<span class="uitext">FILTER_PREDICATES</span>カラムを追加</p>
+</li>
+<li>
+<p><code class="Fixed" type="0">Fixed</code> <span class="uitext">統計/レポート</span> &gt; <span class="uitext">SQL統計</span>メニューで<span class="uitext">SQL詳細</span>ポップアップを表示する際に、<span class="uitext">OBJECT_NAME</span>カラムのリンクが活性化されない問題を修正</p>
+</li>
+<li>
+<p><code class="Fixed" type="0">Fixed</code> <span class="uitext">統計/レポート</span> &gt; <span class="uitext">SQL統計</span>メニューで詳細チャートのelapse time値が異常に高い問題を修正</p>
+</li>
+<li>
+<p><code class="Fixed" type="0">Fixed</code> <span class="uitext">ダッシュボード</span> &gt; <span class="uitext">インスタンスリスト</span>メニューにCluster Nameを表記するように修正</p>
+</li>
+</ul><h4 class="anchor anchorWithStickyNavbar_LWe7" id="redis-v1mongodb-v1">Redis <code class="my">V1</code>、MongoDB <code class="my">V1</code><a href="#redis-v1mongodb-v1" class="hash-link" aria-label="redis-v1mongodb-v1への直接リンク" title="redis-v1mongodb-v1への直接リンク">​</a></h4><p><code class="Fixed" type="0">Fixed</code> <span class="uitext">ダッシュボード</span> &gt; <span class="uitext">インスタンスリスト</span>メニューにCluster Nameを表記しないように修正</p></div></section>
+<section class="remark-sectionize-h2"><h2 class="anchor anchorWithStickyNavbar_LWe7" id="preview-280a0">Preview 2.8.0.a0<a href="#preview-280a0" class="hash-link" aria-label="Preview 2.8.0.a0への直接リンク" title="Preview 2.8.0.a0への直接リンク">​</a></h2><p>2024年07月25日</p><div class="indentTab"><h3 class="anchor anchorWithStickyNavbar_LWe7" id="共通-7"><code>共通</code><a href="#共通-7" class="hash-link" aria-label="共通-7への直接リンク" title="共通-7への直接リンク">​</a></h3><ul>
+<li>
+<p><code class="Changed" type="1">Changed</code>縦イコライザーバーチャートから個別グラフのラベル表示を削除</p>
+</li>
+<li>
+<p><code class="Fixed" type="0">Fixed</code> <span class="uitext">分析</span> &gt; <span class="uitext">メトリクス異常検出</span>メニューで<span class="uitext">フィルター</span>オプションを適用する時、1つのカテゴリで複数の項目を選択できないように修正</p>
+</li>
+<li>
+<p><code class="Fixed" type="0">Fixed</code> <span class="uitext">統合Flexボード</span>または<span class="uitext">Flexボード</span>メニューでタイトルを修正できないウィジェットに<span class="uitext">修正</span>ボタンが表示される問題を修正</p>
+</li>
+<li>
+<p><code class="Fixed" type="0">Fixed</code> <span class="uitext">統合Flexボード</span>または<span class="uitext">Flexボード</span>メニューの<span class="uitext">ウィジェットテンプレート</span>リストで製品カテゴリの下位に表示するウィジェットリストがない場合、展開/折りたたみアイコンが変更されない問題を修正</p>
+</li>
+<li>
+<p><code class="Fixed" type="0">Fixed</code>プロジェクトを新規作成する時に表示される製品紹介の日本語表記を修正</p>
+</li>
+</ul><hr><h3 class="anchor anchorWithStickyNavbar_LWe7" id="application-4"><code>Application</code><a href="#application-4" class="hash-link" aria-label="application-4への直接リンク" title="application-4への直接リンク">​</a></h3><ul>
+<li>
+<p><code class="Fixed" type="0">Fixed</code>画面のテーマがダークモードの時、<span class="uitext">分析</span> &gt; <span class="uitext">スタック</span>メニューの<img decoding="async" loading="lazy" alt="スナ  ップショットアイコン" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik05IDNMNy4xNyA1Ljk5MDUzSDJDMiA1Ljk5MDUzIDIgNi44OTAzNiAyIDcuOTkwMTRWMTkuMDAwNEMyIDIwLjEwMDIgMiAyMSAyIDIxSDIyQzIyIDIxIDIyIDIwLjEwMDIgMjIgMTkuMDAwNFY3Ljk5MDE0QzIyIDYuODkwMzYgMjIgNS45OTA1MyAyMiA1Ljk5MDUzSDE2LjgzTDE1IDNIOVpNNCA4SDguMjQwODZMMTAuMDIwMSA0Ljk5MTgySDE0LjAxMTVMMTYuMDk3OCA4SDIwVjE5SDRMNCA4Wk0xMiAxN0M5Ljc5MiAxNyA4IDE1LjIwOCA4IDEzQzggMTAuNzkyIDkuNzkyIDkgMTIgOUMxNC4yMDggOSAxNiAxMC43OTIgMTYgMTNDMTYgMTUuMjA4IDE0LjIwOCAxNyAxMiAxN1pNMTIgMTVDMTMuMTA0NiAxNSAxNCAxNC4xMDQ2IDE0IDEzQzE0IDExLjg5NTQgMTMuMTA0NiAxMSAxMiAxMUMxMC44OTU0IDExIDEwIDExLjg5NTQgMTAgMTNDMTAgMTQuMTA0NiAxMC44OTU0IDE1IDEyIDE1WiIgZmlsbD0iIzc1NzU3NSIvPgo8L3N2Zz4K" width="24" height="24" class="img_ev3q">ボタンでスナップショットを保存すると、一部のスタック情報が表示されない問題を修正</p>
+</li>
+<li>
+<p><code class="Fixed" type="2">Fixed</code> <span class="uitext">インスタンス性能管理</span> &gt; <span class="uitext">ソケットオプーン数</span>メニューから<span class="uitext">トランザクション統計</span> メニューに移動する時に終了時刻が開始時刻より早く設定される問題を修正</p>
+</li>
+</ul><hr><h3 class="anchor anchorWithStickyNavbar_LWe7" id="kubernetes-3"><code>Kubernetes</code><a href="#kubernetes-3" class="hash-link" aria-label="kubernetes-3への直接リンク" title="kubernetes-3への直接リンク">​</a></h3><p><code class="Fixed" type="0">Fixed</code> <span class="uitext">ダッシュボード</span> &gt; <span class="uitext">コンテナマップ</span>メニューの<span class="uitext">リソース関係</span>タブで不適切なサービスが表示されるバグを修正</p><hr><h3 class="anchor anchorWithStickyNavbar_LWe7" id="cloud"><code>Cloud</code><a href="#cloud" class="hash-link" aria-label="cloudへの直接リンク" title="cloudへの直接リンク">​</a></h3><p><code class="Fixed" type="2">Fixed</code> <strong>Amazon ECS</strong>プラットホームの<span class="uitext">管理</span> &gt; <span class="uitext">エージェントインストール</span>メニューでスクリプトのインデントによりインストールできない問題を修正</p><hr><h3 class="anchor anchorWithStickyNavbar_LWe7" id="browser-1"><code>Browser</code><a href="#browser-1" class="hash-link" aria-label="browser-1への直接リンク" title="browser-1への直接リンク">​</a></h3><p><code class="Fixed" type="0">Fixed</code> <span class="uitext">ユーザーセッション分析</span> &gt; <span class="uitext">ユーザーセッションフロー</span>で経過時間のソート機能の誤作動問題を修正</p></div></section></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col"><div class="btnwrapper_gsW7"><button class="modalopenbtn_jIdz">フィードバック</button></div></div><div class="col lastUpdated_JAkA"></div></div></footer></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="文書検索"><a class="pagination-nav__link pagination-nav__link--prev" href="/whatap-docs/ja/release-notes/preview/preview-2_9_0x"><div class="pagination-nav__sublabel">前へ</div><div class="pagination-nav__label">Preview 2.9.0.a</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/whatap-docs/ja/release-notes/preview/preview-2_7_0x"><div class="pagination-nav__sublabel">次へ</div><div class="pagination-nav__label">Preview 2.7.0.a</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_pzBX thin-scrollbar"></div><div class="fbsharebutton_dZBI" data-href="https://docs.whatap.io/whatap-docs/ja/release-notes/preview/preview-2_8_0x" data-layout="" data-size=""><button type="button" class="fb_xfbml_parse_ignore_BpHP">共有</button></div><div class="btnprint_EBmh"><button>PDF</button></div><div class="btnwrapper_gsW7"><button class="modalopenbtn_jIdz">フィードバック</button></div></div></div></div></main></div></div></div><footer class="footer"><div class="container container-fluid"><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2025 WhaTap Labs Inc. All rights reserved. Built with Docusaurus.</div></div></div></footer></div>
+</body>
+</html>

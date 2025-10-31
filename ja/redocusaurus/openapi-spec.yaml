@@ -1,0 +1,5526 @@
+openapi: 3.0.0
+info:
+  title: WhaTap Open API
+  description: >
+    ## Open API
+
+
+    수집 중인 모니터링 정보를 추출하여 별도로 활용하고자 하는 경우 Open API를 통해 해당 정보를 추출할 수 있는 기능을 제공합니다.
+    계정 API 토큰 및 프로젝트 API 토큰, 프로젝트 코드를 파라미터로 전달하여 수집된 정보를 획득할 수 있습니다.
+
+
+    구 버전의 Open API 문서는 [다음 문서](openapi-old)를 참조하세요.
+
+
+    ## Open API Token 확인
+
+
+    토큰은 계정 API 토큰과 프로젝트 API 토큰으로 구분됩니다. 계정 API 토큰은 프로젝트의 목록 정보를 취득하기 위한 용도로,
+    프로젝트 API 토큰은 프로젝트의 모니터링 정보를 취득하기 위한 용도로 활용합니다.
+
+
+    프로젝트 코드는 프로젝트 진입 시 브라우저 화면 상단의 윈도우 또는 탭 제목에 '`[{프로젝트 코드}]` Cloud Application
+    Monitoring'와 같이 표시되는 정보를 통해 확인할 수 있습니다. API 토큰을 변경하려면 각 화면의 ***재발급*** 또는
+    ***토큰 재발급*** 버튼을 선택하세요.
+
+
+    <div class="api-guide">
+
+
+    | 구분 | 키 | 설정값 | 비교 |
+
+    | -- | --| -- | --|
+
+    | 헤더 | `x-whatap-token` | API토큰 | 계정 API토큰 |
+
+    | 헤더 | `x-whatap-token` | API토큰 | 프로젝트 API토큰 |
+
+    | 헤더 | `x-whatap-pcode` | 프로젝트 코드 | 화면 윈도우 또는 브라우저 탭 타이틀 확인 |
+
+
+    </div>
+
+
+    ### 계정 토큰 확인하기
+
+
+    1. 화면의 오른쪽 위에 프로필 아이콘을 선택하세요.
+
+
+    1. 팝업 메뉴가 나타나면 ***계정 관리*** 버튼을 선택하세요.
+
+
+    1. 화면을 아래로 스크롤해 ***API토큰*** 섹션으로 이동하세요.
+
+
+    ### 프로젝트 토큰 확인하기
+
+
+    1. 홈 화면에서 프로젝트를 선택하세요. 
+
+
+    1. 프로젝트 진입 후 왼쪽에 ***관리*** &gt; ***프로젝트 관리*** 메뉴를 선택하세요.
+
+
+    1. ***API토큰*** 항목을 확인하세요.
+servers:
+  - url: https://api.whatap.io
+tags:
+  - name: APM Spot 정보 조회
+    description: 애플리케이션 모니터링 프로젝트의 에이전트 정보 및 관련 지표를 조회할 수 있는 API 목록을 안내합니다.
+  - name: APM 통계 데이터 조회
+    description: 애플리케이션 모니터링 프로젝트의 통계 데이터를 조회할 수 있는 API 목록을 안내합니다.
+  - name: Server Spot 정보 조회
+    description: 서버 모니터링 프로젝트의 에이전트 정보 및 관련 지표를 조회할 수 있는 API 목록을 안내합니다.
+  - name: Server 통계 데이터 조회
+    description: 서버 모니터링 프로젝트의 통계 데이터를 조회할 수 있는 API 목록을 안내합니다.
+  - name: Database 파라미터 조회
+    description: 데이버베이스의 파라미터 관련 사항을 조회할 수 있습니다.
+  - name: Database SQL 조회
+    description: 데이버베이스의 SQL 관련 사항을 조회할 수 있습니다.
+  - name: MXQL Open API 호출하기
+  - name: MXQL Open API 사용 안내
+    description: >
+      MXQL을 사용하는 방법은 다음과 같습니다.
+
+
+      * 직접 MXQL 쿼리를 작성해서 데이터를 조회하는 방법
+
+      * [다음 문서](../mxql/mxql-guide#custom-query-saas)에서와 같이 '**SaaS 서비스에서 제공하는
+      사전에 정의된 MXQL 쿼리 목록**'으로 데이터를 조회하는 방법
+
+
+      따라서 각각의 경우에 사용하는 API의 path가 달라집니다. 
+
+
+      <div class="api-guide">
+
+
+      | MXQL 활용 방법 | API |
+
+      | -- | -- |
+
+      | 직접 MXQL 쿼리를 작성하는 경우 | [MXQL text
+      API](#tag/MXQL-Open-API/paths/~1open~1api~1flush~1mxql~1text/post) |
+
+      | '**SaaS 서비스에서 제공하는 사전에 정의된 MXQL 쿼리 목록**'을 사용하는 경우([다음
+      문서](../mxql/mxql-guide#custom-query-saas) 참조) | [MXQL path
+      API](#tag/MXQL-Open-API/paths/~1open~1api~1flush~1mxql~1path/post) |
+
+
+      </div>
+
+
+      Open API 호출 시 헤더에 포함하는 내용은 다음과 같습니다.
+
+
+      <div class="api-guide">
+
+
+      | 구분 | 키  | 설정 값 | 비고 |
+
+      | ---- | --- | ------- | ---- |
+
+      | 헤더 | x-whatap-token | API 토큰 `{{PROJECT API TOKEN}}` |프로젝트 API토큰: 프로젝트
+      선택 > ***관리*** > ***프로젝트 관리*** > ***API토큰***|
+
+      | 헤더 | x-whatap-pcode | 프로젝트 코드 `{{projectCode}}` | 프로젝트 코드: 프로젝트 선택 >
+      ***관리*** > ***프로젝트 관리*** > ***프로젝트 코드*** |
+
+
+      </div>
+
+
+      **MXQL Open API 제한사항**
+
+
+      한 번의 요청으로 조회할 수 있는 기간은 최대 31일입니다.
+x-tagGroups:
+  - name: 메타성 정보 조회
+    tags:
+      - 프로젝트
+      - 그룹
+      - 에이전트
+      - 이벤트
+  - name: Appication
+    tags:
+      - APM Spot 정보 조회
+      - APM 통계 데이터 조회
+  - name: Server
+    tags:
+      - Server Spot 정보 조회
+      - Server 통계 데이터 조회
+  - name: Database
+    tags:
+      - Database 파라미터 조회
+      - Database SQL 조회
+  - name: MXQL Open API
+    tags:
+      - MXQL Open API 사용 안내
+      - MXQL Open API 호출하기
+paths:
+  /open/api/json/projects:
+    get:
+      summary: 프로젝트 목록 조회
+      operationId: getProjectsList
+      description: 프로젝트 목록을 조회하는 API입니다.
+      tags:
+        - 프로젝트
+      parameters:
+        - $ref: '#/components/parameters/WhatapAccoutTokenHeader'
+      responses:
+        '200':
+          description: 조회 성공
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  data:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        groupName:
+                          type: string
+                          description: 프로젝트 상위 그룹 이름
+                        projectCode:
+                          type: integer
+                          description: 프로젝트 코드
+                        projectName:
+                          type: string
+                          description: 프로젝트 이름
+                        createTime:
+                          type: string
+                          format: date-time
+                          description: 프로젝트 생성 날짜
+                        lastUpdatedTime:
+                          type: string
+                          format: date-time
+                          description: 프로젝트 수정 날짜
+                        status:
+                          type: string
+                          description: 프로젝트 상태
+                          enum:
+                            - pending
+                            - trial
+                            - subscribe
+                            - close_pending
+                            - limited
+                            - closed
+                            - trial_limited
+                        productType:
+                          type: string
+                          description: 서버 유형
+                        platform:
+                          type: string
+                          description: 서버 플랫폼
+                        gatewayName:
+                          type: string
+                          description: 데이터 서버 지역
+                        apiToken:
+                          type: string
+                          description: 프로젝트 API 토큰
+                  accountEmail:
+                    type: string
+                    description: 사용자 계정 이메일 주소
+                  total:
+                    type: integer
+                    description: 프로젝트 수
+                example:
+                  data:
+                    - projectCode: 35
+                      projectName: APM_TEST2
+                      createTime: '2018-10-19T07:17:03.774'
+                      status: subscribe
+                      productType: APM
+                      platform: JAVA
+                      apiToken: 5**********************R
+                  accountEmail: xxx@whatap.io
+                  total: 6
+      x-codeSamples:
+        - lang: curl
+          source: |
+            curl -L \
+              -w "\n" \
+              -H "Content-Type: application/json" \
+              -H "x-whatap-token: {{ACCOUNT_API_TOKEN}}" \
+              "https://api.whatap.io/open/api/json/projects"
+  /open/api/json/project:
+    get:
+      summary: 프로젝트 정보 조회
+      description: 애플리케이션 및 서버 제품의 프로젝트 정보를 조회하는 API입니다.
+      operationId: getProjectInfo
+      tags:
+        - 프로젝트
+      parameters:
+        - $ref: '#/components/parameters/WhatapTokenHeader'
+        - $ref: '#/components/parameters/WhatapPcodeHeader'
+      responses:
+        '200':
+          description: 조회 성공
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - $ref: '#/components/schemas/APM'
+                  - $ref: '#/components/schemas/Server'
+              examples:
+                apm:
+                  summary: Application
+                  value:
+                    platform: JAVA
+                    createTime: Tue Sep 18 08:34:27 GMT 2018
+                    gatewayName: Office-OTE
+                    projectCode: 1234
+                    status: Subscribe
+                    lastUpdatedTime: Tue Sep 18 08:34:34 GMT 2018
+                    name: SEO_APM
+                    productType: APM
+                server:
+                  summary: Server
+                  value:
+                    pname: LOCAL_PC
+                    timezone: 9
+                    regionName: LOCAL
+                    values:
+                      servers:
+                        - public_ip: 192.168.1.0
+                          os_cpuvendor: Intel(R) Core(TM) i7-8550U CPU 1.80GHz
+                          agent_created: '2018-11-18T07:17:31.216Z'
+                          ip: 192.168.1.0
+                          os_arch: amd64
+                          actTime: 1572406264112
+                          cpu_cores: '8'
+                          oid: -1030311093
+                          isActive: true
+                          okind: ''
+                          version: 1.2.4
+                          tags:
+                            - network:169.254.0.0/16
+                            - network:192.168.1.0/24
+                            - java
+                            - OpenVpn
+                            - oracle
+                            - ftp
+                          inactTime: 0
+                          oname: DESKTOP-KEIPLT5
+                          os_name: windows
+                          startTime: '2018-11-18T07:17:43.602Z'
+                          os_memory: '17036419072'
+                          os_status: warning
+      x-codeSamples:
+        - lang: curl
+          source: |
+            curl -L \
+            -w "\n" \
+            -H "Content-Type: application/json" \
+            -H "x-whatap-token: {{PROJECT_API_TOKEN}}" \
+            -H "x-whatap-pcode: {{projectCode}}" \
+            "https://api.whatap.io/open/api/json/project"
+  /open/json/agents:
+    get:
+      summary: 에이전트 상태 및 호스트 IP 조회
+      description: 프로젝트 내 에어전트의 상태 및 IP 주소를 조회하는 API입니다.
+      operationId: getAgentInfo
+      tags:
+        - 에이전트
+      parameters:
+        - $ref: '#/components/parameters/WhatapTokenHeader'
+        - $ref: '#/components/parameters/WhatapPcodeHeader'
+      responses:
+        '200':
+          description: 조회 성공
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  data:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        host_ip:
+                          type: string
+                          format: ipv4
+                          description: IP 주소
+                        oname:
+                          type: string
+                          description: 에이전트 이름
+                        active:
+                          type: boolean
+                          description: 에이전트 활성화 상태 여부
+              example:
+                data:
+                  - host_ip: 127.0.0.1
+                    oname: TC-29-96-8082
+                    active: true
+      x-codeSamples:
+        - lang: curl
+          source: |
+            curl -L \
+            -w "\n" \
+            -H "Content-Type: application/json" \
+            -H "x-whatap-token: {{PROJECT_API_TOKEN}}" \
+            -H "x-whatap-pcode: {{projectCode}}" \
+            "https://api.whatap.io/open/json/agents"
+  /open/api/json/project/{projectCode}/members:
+    get:
+      summary: 프로젝트 멤버 목록 조회
+      description: 프로젝트에 소속된 멤버 목록을 조회하는 API입니다.
+      operationId: getProjectMemberList
+      tags:
+        - 프로젝트
+      parameters:
+        - $ref: '#/components/parameters/WhatapAccoutTokenHeader'
+        - $ref: '#/components/parameters/ProjectCodePath'
+      responses:
+        '200':
+          description: 조회 성공
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  data:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        email:
+                          type: string
+                          description: 사용자 계정 이메일 주소
+                        name:
+                          type: string
+                          description: 사용자 이름
+                        desc:
+                          type: string
+                          description: 사용자 계정에 대한 설명
+                        sms:
+                          type: string
+                          description: 사용자 전화번호
+                  total:
+                    type: integer
+                    description: 프로젝트 멤버 수
+              example:
+                data:
+                  - email: honggildong@whatap.io
+                    name: 홍길동
+                    desc: ''
+                    sms: 010XXXXXXX
+                totla: 8
+      x-codeSamples:
+        - lang: curl
+          source: |
+            curl -L \
+              -w "\n" \
+              -H "Content-Type: application/json" \
+              -H "x-whatap-token: {{ACCOUNT_API_TOKEN}}" \
+              "https://api.whatap.io/open/api/json/project/{projectCode}/members"
+  /open/api/json/groups:
+    get:
+      summary: 그룹 목록 조회
+      description: 사용자가 소속된 그룹 목록을 조회하는 API입니다.
+      operationId: getGroupList
+      tags:
+        - 그룹
+      parameters:
+        - $ref: '#/components/parameters/WhatapAccoutTokenHeader'
+      responses:
+        '200':
+          description: 조회 성공
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  data:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        groupName:
+                          type: string
+                          description: 그룹 이름
+                        groupKey:
+                          type: string
+                          description: 그룹 고유 식별자(ID)
+                        description:
+                          type: string
+                          description: 그룹에 대한 설명
+                  total:
+                    type: integer
+                    description: 그룹 수
+              example:
+                data:
+                  - groupName: WHATAP APM
+                    groupKey: grp****ab123kskd*****q
+                    description: APM Group
+                total: 3
+      x-codeSamples:
+        - lang: curl
+          source: |
+            curl -L \
+              -w "\n" \
+              -H "Content-Type: application/json" \
+              -H "x-whatap-token: {{ACCOUNT_API_TOKEN}}" \
+              "https://api.whatap.io/open/api/v2/json/groups"
+  /open/api/json/group/{groupKey}/members:
+    get:
+      summary: 그룹 멤버 목록 조회
+      description: 사용자가 소속된 그룹의 멤버 목록을 조회하는 API입니다.
+      operationId: getGroupMemberList
+      tags:
+        - 그룹
+      parameters:
+        - $ref: '#/components/parameters/WhatapAccoutTokenHeader'
+        - $ref: '#/components/parameters/GroupKeyPath'
+      responses:
+        '200':
+          description: 조회 성공
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  data:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        email:
+                          type: string
+                          description: 사용자 계정 이메일 주소
+                        name:
+                          type: string
+                          description: 사용자 이름
+                        desc:
+                          type: string
+                          description: 사용자 계정에 대한 설명
+                        sms:
+                          type: string
+                          description: 사용자 전화번호
+                  total:
+                    type: integer
+                    description: 그룹 멤버 수
+              example:
+                data:
+                  - email: honggildong@whatap.io
+                    name: 홍길동
+                    desc: ''
+                    sms: 010XXXXXXX
+                totla: 8
+      x-codeSamples:
+        - lang: curl
+          source: |
+            curl -L \
+              -w "\n" \
+              -H "Content-Type: application/json" \
+              -H "x-whatap-token: {{ACCOUNT_API_TOKEN}}" \
+              "https://api.whatap.io/open/api/json/group/{groupKey}/members"
+  /open/api/json/group/{groupKey}/projects:
+    get:
+      summary: 그룹에 포함된 프로젝트 조회
+      description: 그룹에 포함된 프로젝트들의 메타정보를 조회하는 API입니다.
+      operationId: getGroupProjectList
+      tags:
+        - 그룹
+      parameters:
+        - $ref: '#/components/parameters/WhatapAccoutTokenHeader'
+        - $ref: '#/components/parameters/GroupKeyPath'
+      responses:
+        '200':
+          description: 조회 성공
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  data:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        projectCode:
+                          type: integer
+                          description: 프로젝트 코드
+                        name:
+                          type: string
+                          description: 프로젝트 이름
+                        status:
+                          type: string
+                          description: 프로젝트 상태
+                          enum:
+                            - pending
+                            - trial
+                            - subscribe
+                            - close_pending
+                            - limited
+                            - closed
+                            - trial_limited
+                        productType:
+                          type: string
+                          description: 프로젝트의 제품 유형
+                        platform:
+                          type: string
+                          description: 프로젝트의 제품 플랫폼
+                        gatewayName:
+                          type: string
+                          description: 데이터 서버 지역
+              example:
+                data:
+                  - projectCode: 35
+                    name: APM_TEST2
+                    status: Subscribe
+                    productType: APM
+                    platform: JAVA
+                    gatewayName: LOCAL
+      x-codeSamples:
+        - lang: curl
+          source: |
+            curl -L \
+              -w "\n" \
+              -H "Content-Type: application/json" \
+              -H "x-whatap-token: {{ACCOUNT_API_TOKEN}}" \
+              "https://api.whatap.io/open/api/json/group/{groupKey}/projects"
+  /open/api/json/event/v2/settings:
+    get:
+      summary: 이벤트 설정 조회
+      description: 이벤트 설정 New 메뉴의 [JSON 일괄 다운로드]와 같은 데이터를 조회할 수 있습니다.
+      tags:
+        - 이벤트
+      parameters:
+        - $ref: '#/components/parameters/WhatapTokenHeader'
+        - $ref: '#/components/parameters/WhatapPcodeHeader'
+      responses:
+        '200':
+          description: 조회 성공
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  productType:
+                    type: string
+                    description: 프로젝트의 제품 유형
+                  platform:
+                    type: string
+                    description: 프로젝트의 제품 플랫폼
+                  events:
+                    type: object
+                    description: 이벤트 타입별 설정 리스트
+                    properties:
+                      BASIC:
+                        type: array
+                        description: |
+                          이벤트 설정[New] 기본 이벤트
+                        items:
+                          type: object
+                          properties:
+                            criticalEnabled:
+                              type: boolean
+                              description: Critical 레벨 경고 사용 여부 (version == 1 일 때 사용되는 값)
+                            warningEnabled:
+                              type: boolean
+                              description: Warning 레벨 경고 사용 여부 (version == 1 일 때 사용되는 값)
+                            silentPeriod:
+                              type: integer
+                              description: 무음 시간
+                            metaId:
+                              type: string
+                              description: 템플릿 고유 식별자
+                            displayName:
+                              type: string
+                              description: 사용자 정의 이벤트 제목
+                            criticalThreshold:
+                              type: string
+                              description: Critical 레벨 이벤트 발생 조건 (version == 1 일 때 사용되는 값)
+                            warningThreshold:
+                              type: string
+                              description: Warning 레벨 이벤트 발생 조건 (version == 1 일 때 사용되는 값)
+                            message:
+                              type: string
+                              description: 사용자 정의 이벤트 메시지
+                            version:
+                              type: integer
+                              description: 이벤트 설정의 버전
+                            enabled:
+                              type: boolean
+                              description: 이벤트 규칙 활성화 여부
+                            repeatDuration:
+                              type: long
+                              description: 반복 횟수 체크 시간
+                            id:
+                              type: string
+                              description: 이벤트 규칙 고유 식별자
+                            conditions:
+                              type: array
+                              description: 레벨별 이벤트 발생 조건 (version ≥ 2 일 때 사용되는 값)
+                            selectCondition:
+                              type: object
+                              description: 이벤트 대상 필터링 조건 (key=[value1, value2] 형태로 저장)
+                            stateful:
+                              type: boolean
+                              description: 상태 기반 이벤트 기능 사용 여부
+                            repeatCount:
+                              type: integer
+                              description: 반복 횟수
+                      METRICS:
+                        type: array
+                        description: |
+                          메트릭스 이벤트
+                        items:
+                          type: object
+                          properties:
+                            eventMessage:
+                              type: string
+                              description: 사용자 정의 이벤트 메시지
+                            select:
+                              type: string
+                              description: 이벤트 대상 필터링 조건
+                            alertLabel:
+                              type: array
+                              description: 이벤트 상태 관리용 PK
+                              items:
+                                type: string
+                            rule:
+                              type: string
+                              description: 이벤트 발생 규칙 (version == 0 일 때 사용)
+                            silentSec:
+                              type: integer
+                              description: 무음 시간(초)
+                            version:
+                              type: integer
+                              description: 이벤트 설정의 버전
+                            enabled:
+                              type: boolean
+                              description: 이벤트 규칙 활성화 여부
+                            eventTitle:
+                              type: string
+                              description: 사용자 정의 이벤트 제목
+                            repeatDuration:
+                              type: long
+                              description: 반복 횟수 체크 시간
+                            eventLevel:
+                              type: integer
+                              description: 이벤트 레벨 (version == 0 일 때 사용)
+                            id:
+                              type: string
+                              description: 이벤트 규칙 고유 식별자
+                            category:
+                              type: string
+                              description: 데이터 수집 카테고리
+                            conditions:
+                              type: array
+                              description: 레벨별 이벤트 발생 조건 (version ≥ 1 일 때 사용)
+                            stateful:
+                              type: boolean
+                              description: 상태 기반 이벤트 기능 사용 여부
+                            repeatCount:
+                              type: integer
+                              description: 반복 횟수
+                      COMPOSITE_METRICS:
+                        type: array
+                        description: |
+                          복합 메트릭스 이벤트
+                        items:
+                          type: object
+                          properties:
+                            interval_sec:
+                              type: integer
+                              description: 쿼리 실행 주기
+                            query:
+                              type: string
+                              description: MXQL 쿼리
+                            rule:
+                              type: string
+                              description: 이벤트 발생 규칙
+                            event_title:
+                              type: string
+                              description: 사용자 정의 이벤트 제목
+                            enabled:
+                              type: boolean
+                              description: 이벤트 규칙 활성화 여부
+                            silent_sec:
+                              type: integer
+                              description: 무음 시간(초)
+                            event_level:
+                              type: integer
+                              description: 이벤트 레벨
+                            id:
+                              type: string
+                              description: 이벤트 규칙 고유 식별자
+                            time_trim:
+                              type: integer
+                              description: 쿼리 실행 시 시간 단위 절삭 간격(ms)
+                            event_message:
+                              type: string
+                              description: 사용자 정의 이벤트 메시지
+                            time_period:
+                              type: long
+                              description: 데이터 조회 범위
+                            stateful:
+                              type: boolean
+                              description: 상태 기반 이벤트 기능 사용 여부
+                            desc:
+                              type: string
+                              description: 메타성 정보
+                      LOG_REALTIME:
+                        type: array
+                        description: |
+                          실시간 로그 이벤트
+                        items:
+                          type: object
+                          properties:
+                            skiptime:
+                              type: long
+                              description: 무음 시간
+                            field:
+                              type: string
+                              description: 검색 키
+                            event_level:
+                              type: integer
+                              description: 이벤트 레벨
+                            event_title:
+                              type: string
+                              description: 사용자 정의 이벤트 제목
+                            tag_select_rule:
+                              type: string
+                              description: 이벤트 대상 필터링 조건
+                            id:
+                              type: string
+                              description: 이벤트 규칙 고유 식별자
+                            event_message:
+                              type: string
+                              description: 사용자 정의 이벤트 메시지
+                            category:
+                              type: string
+                              description: 로그 카테고리
+                            keyword:
+                              type: string
+                              description: 검색 값
+                            enabled:
+                              type: boolean
+                              description: 이벤트 규칙 활성화 여부
+                      COMPOSITE_LOG:
+                        type: array
+                        description: |
+                          복합 로그 이벤트
+                        items:
+                          type: object
+                          properties:
+                            id:
+                              type: string
+                              description: 이벤트 규칙 고유 식별자
+                            enabled:
+                              type: boolean
+                              description: 이벤트 규칙 활성화 여부
+                            query:
+                              type: string
+                              description: 저장된 로그 경로
+                            query_inject:
+                              type: object
+                              nullable: true
+                              description: null
+                            query_param:
+                              type: object
+                              description: 상세 조회 조건
+                              properties:
+                                $category:
+                                  type: string
+                                  description: 로그 카테고리
+                                $filter_excludes:
+                                  type: string
+                                  description: 제외/포함 여부 (`true` 제외, `false` 포함)
+                                $filter_keys:
+                                  type: string
+                                  description: 검색 키
+                                $filter_values:
+                                  type: string
+                                  description: 검색 값
+                                $group_keys:
+                                  type: string
+                                  description: 데이터 그룹핑 기준 (pcode 고정)
+                                $group_time_unit:
+                                  type: string
+                                  description: 시간 그룹핑 범위 (1d 고정)
+                            time_period:
+                              type: long
+                              description: 데이터 조회 범위
+                            rule:
+                              type: string
+                              description: 이벤트 발생 조건
+                            interval_sec:
+                              type: integer
+                              description: 쿼리 실행 주기
+                            silent_sec:
+                              type: integer
+                              description: 무음 시간(초)
+                            event_level_text:
+                              type: string
+                              description: 이벤트 레벨
+                            event_title:
+                              type: string
+                              description: 사용자 정의 이벤트 제목
+                            event_message:
+                              type: string
+                              description: 사용자 정의 이벤트 메시지
+                            stateful:
+                              type: boolean
+                              description: 상태 기반 이벤트 사용 여부
+                            desc:
+                              type: string
+                              description: 메타성 정보
+                      SERVER_LOG_FILE:
+                        type: array
+                        description: |
+                          서버 로그파일/윈도우 이벤트
+                        items:
+                          type: object
+                          properties:
+                            displayname:
+                              type: string
+                              description: 사용자 정의 이벤트 제목
+                            name:
+                              type: string
+                              description: 이벤트 규칙 고유 식별자
+                            logdefault:
+                              type: boolean
+                              description: 기본 로그 설정 여부
+                              default: false
+                            id:
+                              type: string
+                              description: 이벤트 규칙 고유 식별자
+                            conditions:
+                              type: array
+                              description: 이벤트 조건 리스트
+                            conditions.FilePath:
+                              type: string
+                              description: 감시할 파일의 경로 (eventSource == 1 또는 5일 때 사용)
+                            conditions.elapsedSecond:
+                              type: integer
+                              description: >-
+                                n초 동안 수정이 없을 경우 이벤트 발생 (checkTypes가
+                                MTIME_UNCHANGED이고 eventSource == 5일 때 사용)
+                            conditions.SearchStringRepeatCount:
+                              type: integer
+                              description: 반복(회) (eventSource == 1 또는 2일 때 사용)
+                            conditions.Severity:
+                              type: integer
+                              description: '이벤트 레벨(위험도) — 3: warning, 5: critical'
+                              enum:
+                                - 3
+                                - 5
+                            conditions.WinEventCode:
+                              type: integer
+                              description: 윈도우 이벤트 ID (eventSource == 2일 때 사용)
+                            conditions.WinEventMsgRegexExclude:
+                              type: string
+                              description: 검출 제외 문자열 (eventSource == 2일 때 사용)
+                            conditions.EventSource:
+                              type: integer
+                              description: >-
+                                로그 이벤트 종류 — 1: 로그 파일 키워드 이벤트, 2: 윈도우 이벤트, 5: 로그
+                                파일 감시 이벤트
+                              enum:
+                                - 1
+                                - 2
+                                - 5
+                            conditions.checkTypes:
+                              type: array
+                              description: 파일 감시 타입 (eventSource == 5일 때 사용)
+                              items:
+                                type: string
+                                enum:
+                                  - USER
+                                  - GROUP
+                                  - PERMISSION
+                                  - FILE_NOT_FOUND
+                                  - MTIME_CHANGED
+                                  - MTIME_UNCHANGED
+                            conditions.FileRegex:
+                              type: string
+                              description: 검색 키워드 (eventSource == 1일 때 사용)
+                            conditions.FileRegexExclude:
+                              type: string
+                              description: 검출 제외 문자열 (eventSource == 1일 때 사용)
+                            conditions.WinType:
+                              type: integer
+                              description: 수준 (eventSource == 2일 때 사용)
+                            conditions.WinSourceName:
+                              type: string
+                              description: 원본 (eventSource == 2일 때 사용)
+                            conditions.WinLogFile:
+                              type: string
+                              description: 로그명 (eventSource == 2일 때 사용)
+                              enum:
+                                - Application
+                                - Security
+                                - Setup
+                                - System
+                                - ForwardedEvents
+                            conditions.WinEventMsgRegex:
+                              type: string
+                              description: 검색 키워드 (eventSource == 2일 때 사용)
+                            conditions.SearchStringRepeatDuration:
+                              type: integer
+                              description: 기간(초) (eventSource == 1 또는 2일 때 사용)
+                            enabled:
+                              type: boolean
+                              description: 이벤트 규칙 활성화 여부
+                      Transaction:
+                        type: array
+                        description: |
+                          트랜잭션 이벤트
+                        items:
+                          type: object
+                          properties:
+                            silentTime:
+                              type: long
+                              description: 무음 시간
+                            appCtx:
+                              type: array
+                              description: 업무명 패턴 리스트
+                              items:
+                                type: string
+                            excludeStatus:
+                              type: array
+                              description: 상태코드 제외 패턴 리스트
+                              items:
+                                type: string
+                            errorClass:
+                              type: array
+                              description: 에러 클래스 패턴 리스트
+                              items:
+                                type: string
+                            errorMessage:
+                              type: array
+                              description: 에러 메시지 패턴 리스트
+                              items:
+                                type: string
+                            excludeErrorMessage:
+                              type: array
+                              description: 에러 메시지 제외 패턴 리스트
+                              items:
+                                type: string
+                            enabled:
+                              type: boolean
+                              description: 이벤트 규칙 활성화 여부
+                            url:
+                              type: array
+                              description: URL 패턴 리스트
+                              items:
+                                type: string
+                            excludeUrl:
+                              type: array
+                              description: URL 제외 패턴 리스트
+                              items:
+                                type: string
+                            excludeErrorClass:
+                              type: array
+                              description: 에러 클래스 제외 패턴 리스트
+                              items:
+                                type: string
+                            eventTitle:
+                              type: string
+                              description: 사용자 정의 이벤트 제목
+                            eventLevel:
+                              type: string
+                              description: 이벤트 레벨
+                            limit:
+                              type: integer
+                              description: 발생 횟수
+                            conditionValue:
+                              type: string
+                              description: >-
+                                조건 유형에 따른 기준 값 (`conditionType == elapsed`인 경우에만
+                                사용)
+                            conditionType:
+                              type: string
+                              description: 조건 유형
+                              enum:
+                                - elapsed
+                                - error
+                                - none
+                            id:
+                              type: string
+                              description: 이벤트 규칙 고유 식별자
+                            resultType:
+                              type: string
+                              description: 집계 기준
+                              enum:
+                                - per-agent
+                                - per-url
+                                - per-agent-url
+                                - per-error
+                                - per-agent-error
+                                - per-appctx
+                                - per-agent-appctx
+                                - total
+                            excludeAppCtx:
+                              type: array
+                              description: 업무명 제외 패턴 리스트
+                              items:
+                                type: string
+                            status:
+                              type: array
+                              description: 상태 코드 패턴 리스트
+                              items:
+                                type: string
+                      ANOMALY:
+                        type: array
+                        description: |
+                          이상치 탐지 이벤트
+                        items:
+                          type: object
+                          properties:
+                            id:
+                              type: string
+                              description: 이벤트 규칙 고유 식별자
+                            pcode:
+                              type: long
+                              description: 프로젝트 코드
+                            category:
+                              type: string
+                              description: 데이터 수집 카테고리
+                            enabled:
+                              type: boolean
+                              description: 이벤트 규칙 활성화 여부
+                            eventMessage:
+                              type: string
+                              description: 사용자 정의 이벤트 메시지
+                            eventLevelText:
+                              type: string
+                              description: 이벤트 레벨
+                            repeatCount:
+                              type: integer
+                              description: 반복 횟수
+                            silentSec:
+                              type: integer
+                              description: 무음 시간(초)
+                            tags:
+                              type: object
+                              description: 대상 필터링 조건(에이전트 선택)
+                              additionalProperties:
+                                type: array
+                                items:
+                                  type: string
+                            fields:
+                              type: array
+                              description: 필드
+                              items:
+                                type: string
+                            width:
+                              type: number
+                              format: float
+                              description: '*고정값*'
+                            negativeScore:
+                              type: number
+                              format: float
+                              description: 하락 패턴 민감도
+                            positiveScore:
+                              type: number
+                              format: float
+                              description: 상승 패턴 민감도
+                            ignoreNegative:
+                              type: boolean
+                              description: 하락 패턴 무시 여부
+                            ignorePositive:
+                              type: boolean
+                              description: 상승 패턴 무시 여부
+                            objectMerge:
+                              type: string
+                              description: 에이전트별 데이터 병합 방식
+                            filter:
+                              type: object
+                              deprecated: true
+                              description: '*Deprecated*'
+                      HITMAP:
+                        type: array
+                        description: |
+                          히트맵 패턴 이벤트
+                        items:
+                          type: object
+                          properties:
+                            pcode:
+                              type: long
+                              description: 프로젝트 코드
+                            config:
+                              type: object
+                              description: '패턴별 설정값 (`key`: 패턴 키, `value`: 패턴 설정값)'
+                              properties:
+                                horizontal:
+                                  type: object
+                                  description: 히트맵 가로라인 패턴 설정
+                                  properties:
+                                    enabled:
+                                      type: boolean
+                                      description: 패턴 활성화 여부
+                                    silent:
+                                      type: long
+                                      description: 무음 시간
+                                flying:
+                                  type: object
+                                  description: 히트맵 플라잉 패턴 설정
+                                  properties:
+                                    enabled:
+                                      type: boolean
+                                      description: 패턴 활성화 여부
+                                    silent:
+                                      type: long
+                                      description: 무음 시간
+                                vertical:
+                                  type: object
+                                  description: 히트맵 세로라인 패턴 설정
+                                  properties:
+                                    enabled:
+                                      type: boolean
+                                      description: 패턴 활성화 여부
+                                    silent:
+                                      type: long
+                                      description: 무음 시간
+                                overload:
+                                  type: object
+                                  description: 히트맵 과부하 패턴 설정
+                                  properties:
+                                    enabled:
+                                      type: boolean
+                                      description: 패턴 활성화 여부
+                                    silent:
+                                      type: long
+                                      description: 무음 시간
+                                flood:
+                                  type: object
+                                  description: 히트맵 폭주 패턴 설정
+                                  properties:
+                                    enabled:
+                                      type: boolean
+                                      description: 패턴 활성화 여부
+                                    silent:
+                                      type: long
+                                      description: 무음 시간
+                            exceptTime:
+                              type: long
+                              description: 탐지 제외 시간
+              example:
+                - productType: APM
+                  platform: JAVA
+                  events:
+                    - BASIC:
+                        - criticalEnabled: false
+                          warningEnabled: true
+                          silentPeriod: 300000
+                          metaId: java004
+                          displayName: Active Transaction
+                          criticalThreshold: ''
+                          warningThreshold: active_tx_count > 100
+                          message: Active Transaction = ${active_tx_count}
+                          version: 2
+                          enabled: false
+                          repeatDuration: 0
+                          id: x3gpgkfnnc3f39
+                          conditions:
+                            - level: 20
+                              rule: active_tx_count > 100
+                              enabled: true
+                          selectCondition: {}
+                          stateful: false
+                          repeatCount: 1
+                        - criticalEnabled: true
+                          warningEnabled: true
+                          silentPeriod: 300000
+                          metaId: java002
+                          displayName: Server Memory
+                          criticalThreshold: mem > 90
+                          warningThreshold: mem > 70
+                          message: Server Memory = ${mem}
+                          version: 2
+                          enabled: false
+                          repeatDuration: 0
+                          id: xc1l4q6pdefcf
+                          conditions:
+                            - level: 30
+                              rule: mem > 90
+                              enabled: true
+                            - level: 20
+                              rule: mem > 70
+                              enabled: true
+                          selectCondition: {}
+                          stateful: false
+                          repeatCount: 1
+                      METRICS:
+                        - eventMessage: '메트릭스: tx_count: ${tx_count}'
+                          select: ${oname} == 'eureka'
+                          alertLabel: []
+                          rule: ${tx_count} >= 120
+                          silentSec: 0
+                          version: 0
+                          enabled: true
+                          eventTitle: 트랜잭션 개수 120 초과
+                          repeatDuration: 0
+                          eventLevel: 30
+                          id: z9jqlbn0217eml
+                          category: app_counter
+                          conditions:
+                            - level: 30
+                              rule: ${tx_count} >= 120
+                              enabled: true
+                          stateful: true
+                          repeatCount: 0
+                      COMPOSITE_METRICS:
+                        - interval_sec: 60
+                          query: |-
+                            CATEGORY app_counter
+                            TAGLOAD
+                            SELECT
+                            GROUP { timeunit:1m, merge:"tx_count", pk:"oid" }
+                            CREATE { key: _pk_, value: "oid" }
+                          rule: tx_count > 5
+                          event_title: key oid
+                          enabled: false
+                          silent_sec: 60
+                          event_level: 20
+                          id: z8aadoam9thlqp
+                          time_trim: 5000
+                          event_message: 'tx_count : ${tx_count}'
+                          time_period: 60000
+                          stateful: true
+                          desc: >-
+                            {"widgetType":"EXPERT","supports":[],"isExpertEditable":false,"flexEventWidget":{"widgetType":"FLEX_EVENT","id":"composite_metrics_widget","requestApi":"LAST","option":{"stime":1751591820000,"etime":1751595420000,"isLive":false,"liveUpdateIntervalSec":0,"globalTime":false,"chart":"SERIES","pcodes":[4],"flex_event":{"category":"app_counter","tagPksGroup":{"pks":["oid"],"timeunit":5000},"fieldsWithMerges":[{"key":"httpc_count","timeMerge":"AVG","objectMerge":"AVG","unit":"COUNT","_label":"92a1f326-b9b7-45c7-8c9f-6bc4b023ac0f"}]},"chartAside":{"chart":"TABLE"},"timeAction":"CUSTOM"},"metrics":[{"mql":"INJECT
+                            timepast\nHEADER { \"httpc_count$\":\"COUNT\"
+                            }\nOIDSET { oid:$oid, okind:$okind, onode:$onode
+                            }\nCATEGORY \"app_counter\"\nTAGLOAD\nINJECT
+                            default\nUPDATE {key: httpc_count, value:
+                            avg}\nGROUP {pk:[oid], timeunit: 5000}\nUPDATE {key:
+                            httpc_count, value: avg}\nCREATE {key: _id_,
+                            expr:\"oid\"}\nCREATE {key: _name_, expr:\"oid\"}
+                            \nSELECT [_name_, _id_, time, oid,
+                            httpc_count]\n"}]},"pcode":4}
+                      TRANSACTION:
+                        - silentTime: 60000,
+                          appCtx: []
+                          excludeStatus:
+                            - gg
+                          errorClass: []
+                          errorMessage: []
+                          excludeErrorMessage: []
+                          enabled: true
+                          url:
+                            - '**/pusan'
+                          excludeUrl:
+                            - '*add*'
+                          excludeErrorClass: []
+                          eventTitle: 트랜잭션 이벤트
+                          eventLevel: 20
+                          limit: 1
+                          conditionValue: 0
+                          conditionType: none
+                          id: z8c3sdrt04jpcs
+                          resultType: per-agent
+                          excludeAppCtx: []
+                          status: []
+      x-codeSamples:
+        - lang: curl
+          source: |
+            curl --location \
+            -w "\n" \
+            -H "Content-Type: application/json" \
+            -H 'x-whatap-token: {{PROJECT_API_TOKEN}}' \
+            -H 'x-whatap-pcode: {{projectCode}}' \
+            "https://api.whatap.io/open/api/json/event/v2/settings"
+  /open/api/json/event/history:
+    get:
+      summary: 이벤트 기록 조회
+      description: 프로젝트에서 발생한 이벤트 기록을 조회할 수 있습니다.
+      tags:
+        - 이벤트
+      parameters:
+        - $ref: '#/components/parameters/WhatapTokenHeader'
+        - $ref: '#/components/parameters/WhatapPcodeHeader'
+        - $ref: '#/components/parameters/StartTimeQuery'
+        - $ref: '#/components/parameters/EndTimeQuery'
+        - $ref: '#/components/parameters/Progress'
+        - $ref: '#/components/parameters/OidPathopt'
+        - $ref: '#/components/parameters/OkindQuery'
+        - $ref: '#/components/parameters/OnodesQuery'
+      responses:
+        '200':
+          description: 조회 성공
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  metricName:
+                    type: string
+                    description: 지표 이름
+                  pcode:
+                    type: integer
+                    description: 프로젝트 코드
+                  onodeName:
+                    type: string
+                    description: 서버별 에이전트 그룹 이름
+                  displayTag:
+                    type: string
+                    description: 이벤트 상태 태그 표시를 위한 값
+                  metricValue:
+                    type: float
+                    description: 지푯값
+                  oid:
+                    type: integer
+                    description: 에이전트 고유 식별자(ID)
+                  title:
+                    type: string
+                    description: 이벤트 제목
+                  uuid:
+                    type: integer
+                    description: 이벤트 고유 식별자
+                  okind:
+                    type: integer
+                    description: 종류별 에이전트 그룹 고유 식별자(ID)
+                  ackCount:
+                    type: integer
+                    description: 처리 내역 개수
+                  eventTime:
+                    type: long
+                    description: 이벤트 발생 시간
+                  disabled:
+                    type: boolean
+                    description: |
+                      이벤트 종료 여부
+                      - 임계치 미만 값 발생으로 이벤트가 해소된 경우
+                      - 사용자가 의도적으로 이벤트 룰(Rule)을 비활성화한 경우
+                      - 대량 알림 등의 이유로 차단된 이벤트인 경우
+                      - 처리내역이 추가된 이벤트인 경우
+                  id:
+                    type: integer
+                    description: 이벤트 고유 식별자(ID)
+                  acknowledges:
+                    type: array
+                    description: 처리 내역
+                  stateful:
+                    type: boolean
+                    description: 해소된 이벤트 알림 기능 사용 여부
+                  product:
+                    type: string
+                    description: 서버 유형
+                  level:
+                    type: string
+                    description: 경고 레벨
+                  updateTime:
+                    type: long
+                    description: 이벤트 업데이트 시간
+                  message:
+                    type: string
+                    description: 이벤트 메시지
+                  metricThreshold:
+                    type: string
+                    description: 임계치
+                  oname:
+                    type: string
+                    description: 에이전트 이름
+                  escalation:
+                    type: boolean
+                    description: 반복 알림 여부
+                  tagCount:
+                    type: boolean
+                    description: TagCount 카테고리 이벤트 여부
+                  systemEvent:
+                    type: boolean
+                    description: 시스템 이벤트 여부
+                  offTime:
+                    type: integer
+                    description: 해소된 시각
+                  category:
+                    type: string
+                    description: TagCount 카테고리
+                  okindName:
+                    type: sting
+                    description: 종류별 에이전트 그룹 이름
+                  onode:
+                    type: integer
+                    description: 서버별 에이전트 그룹 고유 식별자(ID)
+                  snapshot:
+                    type: string
+                    description: 이벤트 발생 시점의 스냅샷(서버 기본 이벤트만 해당)
+                  status:
+                    type: string
+                    description: 이벤트 상태
+              example:
+                - metricName: mem
+                  pcode: '7'
+                  onodeName: ''
+                  displayTag: inprogress
+                  metricValue: '99.73802'
+                  oid: -17079562
+                  title: Server Memory
+                  uuid: c5cf01fe9daf43ce99a9028e0a804d35
+                  okind: 0,
+                  ackCount: 0,
+                  eventTime: 1733288350068,
+                  disabled: false,
+                  id: 44,
+                  acknowledges: []
+                  stateful: true
+                  process: 0
+                  product: ap
+                  level: Critical
+                  triggerId: 0
+                  updateTime: 1733288350128
+                  message: Server Memory = 99.738
+                  metricThreshold: '90'
+                  oname: front
+                  escalation: true
+                  tagCount: true
+                  systemEvent: false
+                  offTime: 0
+                  category: app_host_resource
+                  okindName: ''
+                  onode: 0
+                  snapshot: null
+                  status: 'ON'
+                - metricName: cpu
+                  pcode: 7
+                  onodeName: ''
+                  displayTag: inprogress
+                  metricValue: '19.947985'
+                  oid: -17079562
+                  title: Server CPU
+                  uuid: 5d7a40d11a1144a8b7bad7e2c71cda2e
+                  okind: 0
+                  ackCount: 0
+                  eventTime: 1733288325022
+                  disabled: false
+                  id: 42
+                  acknowledges: []
+                  stateful: true
+                  process: 0
+                  product: ap
+                  level: Warning
+                  triggerId: 0
+                  updateTime: 1733288325055
+                  message: Server CPU = 19.948
+                  metricThreshold: '0'
+                  oname: front
+                  escalation: false
+                  tagCount: true
+                  systemEvent: false
+                  offTime: 0
+                  category: app_host_resource
+                  okindName: ''
+                  onode: 0
+                  snapshot: null
+                  status: 'ON'
+      x-codeSamples:
+        - lang: curl
+          source: >
+            curl --location \
+
+            -w "\n" \
+
+            -H "Content-Type: application/json" \
+
+            -H 'x-whatap-token: {{PROJECT_API_TOKEN}}' \
+
+            -H 'x-whatap-pcode: {{projectCode}}' \
+
+            "https://api.whatap.io/open/api/json/event/history?stime=1733065200000&etime=1733103557000&progress=true&oids=-17079562%2C352247167"
+  /open/api/v2/agent/list:
+    post:
+      summary: oid 목록 호출
+      description: >
+        사용자가 조회를 원하는 시간 동안 활성화된 에이전트 정보를 조회할 수 있는 API입니다. 조회 시간(`stime`,
+        `etime`)은 하루로 제한되며, 시간 단위는 ms(millisecond, ms)입니다.
+
+
+        예시에서 작성된 샘플 코드 중 `stime`, `etime` 파라미터 값은 사용자 환경에 맞게 변경해 사용하세요. 파라미터 값은
+        다양한 포맷으로 변경해 요청할 수 있습니다.
+
+
+        * 1693475430087 (unix timestamp)
+
+        * `yyyyMMddHHmmss`
+
+        * `yyyyMMddHHmm`
+
+        * `MMddHHmmss`
+
+        * `MMddHHmm`
+      tags:
+        - 에이전트
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                stime:
+                  type: long
+                  description: 조회 시작 시간(UNIX epoch time, millisecond)
+                etime:
+                  type: long
+                  description: 조회 종료 시간(UNIX epoch time, millisecond)
+            example:
+              stime: 1690850183000
+              etime: 1693321200000
+      parameters:
+        - $ref: '#/components/parameters/WhatapTokenHeader'
+        - $ref: '#/components/parameters/WhatapPcodeHeader'
+      responses:
+        '200':
+          description: 호출 성공
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  stime:
+                    type: long
+                    description: 조회 시작 시간(UNIX epoch time, millisecond)
+                  etime:
+                    type: long
+                    description: 조회 종료 시간(UNIX epoch time, millisecond)
+                  timestamp:
+                    type: long
+                    description: 데이터 생성 시간(UNIX epoch time, millisecond)
+                  data:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        oid:
+                          type: integer
+                          description: 에이전트 고유 식별자(ID)
+                        oname:
+                          type: string
+                          description: 에이전트 이름
+                        alias:
+                          type: string
+                          description: 에이전트 별칭
+                        initial:
+                          type: string
+                          description: 에이전트 이니셜
+                        otype:
+                          type: string
+                          description: 에이전트 유형
+                        subtype:
+                          type: string
+                          description: 에이전트 하위 유형
+                        active:
+                          type: boolean
+                          description: 에이전트 활성 상태
+                        okind:
+                          type: integer
+                          description: 종류별 에이전트 그룹 고유 식별자(ID)
+                        okindName:
+                          type: string
+                          description: 종류별 에이전트 그룹 이름
+                        onode:
+                          type: integer
+                          description: 서버별 에이전트 그룹 고유 식별자(ID)
+                        onodeName:
+                          type: string
+                          description: 서버별 에이전트 그룹 이름
+                        ip:
+                          type: string
+                          description: 에이전트 IP 주소
+                        agent.version:
+                          type: string
+                          description: 에이전트 버전
+                        cpuCores:
+                          type: integer
+                          description: 에이전트가 설치된 서버의 CPU 코어 수
+              example:
+                stime: 1690850183000
+                etime: 1693321200000
+                timestamp: 1693388196965
+                data:
+                  - oid: 757639646
+                    oname: DBX-0-107-3306
+                    alias: ''
+                    initial: ''
+                    otype: database
+                    subtype: '0'
+                    active: false
+                    okind: 0
+                    okindName: ''
+                    onode: 0
+                    onodeName: ''
+                    ip: ''
+                    agent.version: ''
+                    cpuCores: 0
+      x-codeSamples:
+        - lang: curl
+          source: |
+            curl --location \
+            'https://api.whatap.io/open/api/v2/agent/list' \
+            -H "Content-Type: application/json" \
+            -H 'x-whatap-token: {{PROJECT_API_TOKEN}}' \
+            -H 'x-whatap-pcode: {{projectCode}}' \
+            -d '{"stime":{stime},"etime":{etime}}'
+  /open/api/json/spot:
+    get:
+      summary: 모든 정보 조회
+      operationId: getApmAllinfo
+      description: 애플리케이션 모니터링 프로젝트의 모든 정보를 조회하는 API입니다.
+      tags:
+        - APM Spot 정보 조회
+      parameters:
+        - $ref: '#/components/parameters/WhatapTokenHeader'
+        - $ref: '#/components/parameters/WhatapPcodeHeader'
+      responses:
+        '200':
+          description: 조회 성공
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/getApmAllinfo'
+              example:
+                pcode: 8
+                act_agent: '6'
+                inact_agent: '6'
+                host: '1'
+                cpucore: '2'
+                txcount: '459'
+                tps: '93.07'
+                user: '1007'
+                actx: '149'
+                rtime: '1873'
+                cpu: '29.35'
+                threadpool_active: '0'
+                threadpool_queue: '0'
+                dbconn_total: '600.0'
+                dbconn_act: '239.0'
+                dbconn_idle: '361.0'
+                act_method: '51'
+                act_sql: '24'
+                act_httpc: '64'
+                act_dbc: '10'
+                act_socket: '0'
+                apdex: '0.9871'
+      x-codeSamples:
+        - lang: curl
+          source: |
+            curl -L \
+              -w "\n" \
+              -H "Content-Type: application/json" \
+              -H "x-whatap-token: {{PROJECT_API_TOKEN}}" \
+              -H "x-whatap-pcode: {{projectCode}}" \
+              "https://api.whatap.io/open/api/json/spot"
+  /open/api/act_agent:
+    get:
+      summary: 활성화 상태의 에이전트 수 조회
+      description: 애플리케이션 모니터링 프로젝트에서 활성화 상태의 에이전트 수를 조회할 수 있는 API입니다.
+      tags:
+        - APM Spot 정보 조회
+      parameters:
+        - $ref: '#/components/parameters/WhatapTokenHeader'
+        - $ref: '#/components/parameters/WhatapPcodeHeader'
+      responses:
+        '200':
+          description: 조회 성공
+          content:
+            text/plain:
+              schema:
+                type: integer
+                description: 활성화 상태의 에이전트 수
+              example: 5
+      x-codeSamples:
+        - lang: curl
+          source: |
+            curl -L \
+              -w "\n" \
+              -H "x-whatap-token: {{PROJECT_API_TOKEN}}" \
+              -H "x-whatap-pcode: {{projectCode}}" \
+              "https://api.whatap.io/open/api/act_agent"
+  /open/api/inact_agent:
+    get:
+      summary: 비활성화 상태의 에이전트 수 조회
+      description: 애플리케이션 모니터링 프로젝트에서 비활성화 상태의 에이전트 수를 조회할 수 있는 API입니다.
+      tags:
+        - APM Spot 정보 조회
+      parameters:
+        - $ref: '#/components/parameters/WhatapTokenHeader'
+        - $ref: '#/components/parameters/WhatapPcodeHeader'
+      responses:
+        '200':
+          description: 조회 성공
+          content:
+            text/plain:
+              schema:
+                type: integer
+                description: 비활성화 상태의 에이전트 수
+              example: 2
+      x-codeSamples:
+        - lang: curl
+          source: |
+            curl -L \
+              -w "\n" \
+              -H "x-whatap-token: {{PROJECT_API_TOKEN}}" \
+              -H "x-whatap-pcode: {{projectCode}}" \
+              "https://api.whatap.io/open/api/inact_agent"
+  /open/api/host:
+    get:
+      summary: 호스트(HOST) 수
+      description: 애플리케이션 모니터링 프로젝트와 연결된 호스트(HOST) 수를 조회할 수 있는 API입니다.
+      tags:
+        - APM Spot 정보 조회
+      parameters:
+        - $ref: '#/components/parameters/WhatapTokenHeader'
+        - $ref: '#/components/parameters/WhatapPcodeHeader'
+      responses:
+        '200':
+          description: 조회 성공
+          content:
+            text/plain:
+              schema:
+                type: integer
+                description: 호스트(HOST) 개수
+              example: 5
+      x-codeSamples:
+        - lang: curl
+          source: |
+            curl -L \
+              -w "\n" \
+              -H "x-whatap-token: {{PROJECT_API_TOKEN}}" \
+              -H "x-whatap-pcode: {{projectCode}}" \
+              "https://api.whatap.io/open/api/host"
+  /open/api/cpucore:
+    get:
+      summary: 호스트의 CPU 코어 합
+      description: 애플리케이션 모니터링 프로젝트와 연결된 호스트(HOST)의 CPU 코어 합계를 조회할 수 있는 API입니다.
+      tags:
+        - APM Spot 정보 조회
+      parameters:
+        - $ref: '#/components/parameters/WhatapTokenHeader'
+        - $ref: '#/components/parameters/WhatapPcodeHeader'
+      responses:
+        '200':
+          description: 조회 성공
+          content:
+            text/plain:
+              schema:
+                type: integer
+                description: CPU 코어 개수
+              example: 16
+      x-codeSamples:
+        - lang: curl
+          source: |
+            curl -L \
+              -w "\n" \
+              -H "x-whatap-token: {{PROJECT_API_TOKEN}}" \
+              -H "x-whatap-pcode: {{projectCode}}" \
+              "https://api.whatap.io/open/api/cpucore"
+  /open/api/txcount:
+    get:
+      summary: 트랜잭션 개수
+      description: 애플리케이션 모니터링 프로젝트에서 트랜잭션 개수를 조회할 수 있는 API입니다.
+      tags:
+        - APM Spot 정보 조회
+      parameters:
+        - $ref: '#/components/parameters/WhatapTokenHeader'
+        - $ref: '#/components/parameters/WhatapPcodeHeader'
+      responses:
+        '200':
+          description: 조회 성공
+          content:
+            text/plain:
+              schema:
+                type: integer
+                description: 트랜잭션 개수
+              example: 469
+      x-codeSamples:
+        - lang: curl
+          source: |
+            curl -L \
+              -w "\n" \
+              -H "x-whatap-token: {{PROJECT_API_TOKEN}}" \
+              -H "x-whatap-pcode: {{projectCode}}" \
+              "https://api.whatap.io/open/api/txcount"
+  /open/api/tps:
+    get:
+      summary: TPS
+      description: >-
+        애플리케이션 모니터링 프로젝트에서 초당 처리된 트랜잭션 건수(Transaction per second, TPS)를 조회할 수 있는
+        API입니다.
+      tags:
+        - APM Spot 정보 조회
+      parameters:
+        - $ref: '#/components/parameters/WhatapTokenHeader'
+        - $ref: '#/components/parameters/WhatapPcodeHeader'
+      responses:
+        '200':
+          description: 조회 성공
+          content:
+            text/plain:
+              schema:
+                type: number
+                format: float
+                description: 초당 처리된 트랜잭션 건수
+              example: 92.03
+      x-codeSamples:
+        - lang: curl
+          source: |
+            curl -L \
+              -w "\n" \
+              -H "x-whatap-token: {{PROJECT_API_TOKEN}}" \
+              -H "x-whatap-pcode: {{projectCode}}" \
+              "https://api.whatap.io/open/api/tps"
+  /open/api/user:
+    get:
+      summary: 액티브 사용자(5분)
+      description: >-
+        애플리케이션 모니터링 프로젝트에서 최근 5분 이내에 트랜잭션을 발생시킨 사용자를 측정한 동시 접속 사용자를 조회할 수 있는
+        API입니다.
+      tags:
+        - APM Spot 정보 조회
+      parameters:
+        - $ref: '#/components/parameters/WhatapTokenHeader'
+        - $ref: '#/components/parameters/WhatapPcodeHeader'
+      responses:
+        '200':
+          description: 조회 성공
+          content:
+            text/plain:
+              schema:
+                type: integer
+                description: 5분 동안 실시간 사용자 수
+              example: 1007
+      x-codeSamples:
+        - lang: curl
+          source: |
+            curl -L \
+              -w "\n" \
+              -H "x-whatap-token: {{PROJECT_API_TOKEN}}" \
+              -H "x-whatap-pcode: {{projectCode}}" \
+              "https://api.whatap.io/open/api/user"
+  /open/api/actx:
+    get:
+      summary: 액티브 트랜잭션
+      description: 애플리케이션 모니터링 프로젝트에서 액티브 트랜잭션 수를 조회할 수 있는 API입니다.
+      tags:
+        - APM Spot 정보 조회
+      parameters:
+        - $ref: '#/components/parameters/WhatapTokenHeader'
+        - $ref: '#/components/parameters/WhatapPcodeHeader'
+      responses:
+        '200':
+          description: 조회 성공
+          content:
+            text/plain:
+              schema:
+                type: integer
+                description: 액티브 트랜잭션 수
+              example: 171
+      x-codeSamples:
+        - lang: curl
+          source: |
+            curl -L \
+              -w "\n" \
+              -H "x-whatap-token: {{PROJECT_API_TOKEN}}" \
+              -H "x-whatap-pcode: {{projectCode}}" \
+              "https://api.whatap.io/open/api/actx"
+  /open/api/rtime:
+    get:
+      summary: 평균 응답시간
+      description: 애플리케이션 모니터링 프로젝트에서 평균 응답시간을 조회할 수 있는 API입니다.
+      tags:
+        - APM Spot 정보 조회
+      parameters:
+        - $ref: '#/components/parameters/WhatapTokenHeader'
+        - $ref: '#/components/parameters/WhatapPcodeHeader'
+      responses:
+        '200':
+          description: 조회 성공
+          content:
+            text/plain:
+              schema:
+                type: integer
+                description: 평균 응답시간
+              example: 1644
+      x-codeSamples:
+        - lang: curl
+          source: |
+            curl -L \
+              -w "\n" \
+              -H "x-whatap-token: {{PROJECT_API_TOKEN}}" \
+              -H "x-whatap-pcode: {{projectCode}}" \
+              "https://api.whatap.io/open/api/rtime"
+  /open/api/cpu:
+    get:
+      summary: 평균 CPU 사용률
+      description: 애플리케이션 모니터링 프로젝트에서 평균 CPU 사용률을 조회할 수 있는 API입니다.
+      tags:
+        - APM Spot 정보 조회
+      parameters:
+        - $ref: '#/components/parameters/WhatapTokenHeader'
+        - $ref: '#/components/parameters/WhatapPcodeHeader'
+      responses:
+        '200':
+          description: 조회 성공
+          content:
+            text/plain:
+              schema:
+                type: number
+                format: float
+                description: 평균 CPU 사용률
+              example: 9.26
+      x-codeSamples:
+        - lang: curl
+          source: |
+            curl -L \
+              -w "\n" \
+              -H "x-whatap-token: {{PROJECT_API_TOKEN}}" \
+              -H "x-whatap-pcode: {{projectCode}}" \
+              "https://api.whatap.io/open/api/cpu"
+  /open/api/apdex:
+    get:
+      summary: Apdex
+      description: >-
+        애플리케이션 모니터링 프로젝트에서 Apdex(Application Performance Index, 애플리케이션의 사용자
+        만족도)를 조회할 수 있는 API입니다.
+      tags:
+        - APM Spot 정보 조회
+      parameters:
+        - $ref: '#/components/parameters/WhatapTokenHeader'
+        - $ref: '#/components/parameters/WhatapPcodeHeader'
+      responses:
+        '200':
+          description: 조회 성공
+          content:
+            text/plain:
+              schema:
+                type: number
+                format: float
+                description: Apdex
+              example: 0.9871
+      x-codeSamples:
+        - lang: curl
+          source: |
+            curl -L \
+              -w "\n" \
+              -H "x-whatap-token: {{PROJECT_API_TOKEN}}" \
+              -H "x-whatap-pcode: {{projectCode}}" \
+              "https://api.whatap.io/open/api/apdex"
+  /open/api/json/exception/{stime}/{etime}:
+    get:
+      summary: Exception
+      description: 애플리케이션 모니터링 프로젝트에서 설정한 시간 동안 Exception 처리된 내역을 조회할 수 있는 API입니다.
+      tags:
+        - APM 통계 데이터 조회
+      parameters:
+        - $ref: '#/components/parameters/WhatapAccoutTokenHeader'
+        - $ref: '#/components/parameters/WhatapPcodeHeader'
+        - $ref: '#/components/parameters/StartTimePath'
+        - $ref: '#/components/parameters/EndTimePath'
+      responses:
+        '200':
+          description: 조회 성공
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ExceptionRecord'
+              example:
+                records:
+                  - oids: '[-1459620666]'
+                    time: 1535557500000
+                    classHash: -1811136020
+                    count: 14
+                    service: /account/delete/dept/daegu
+                    class: java.sql.SQLException(0)
+                    serviceHash: 1900616259
+                    snapSeq: '6068699991557528332'
+                    msg: Sql Exception
+                total: 2063
+      x-codeSamples:
+        - lang: curl
+          source: |
+            curl -L \
+            -w "\n" \
+            -H "Content-Type: application/json" \
+            -H "x-whatap-token: {{PROJECT_API_TOKEN}}" \
+            -H "x-whatap-pcode: {{projectCode}}" \
+            "https://api.whatap.io/open/api/json/exception/{stime}/{etime}"
+  /open/api/json/httpc/{stime}/{etime}:
+    get:
+      summary: HTTP 외부 호출
+      description: 애플리케이션 모니터링 프로젝트에서 설정한 시간 동안 HTTP 외부 호출 내역을 조회할 수 있는 API입니다.
+      tags:
+        - APM 통계 데이터 조회
+      parameters:
+        - $ref: '#/components/parameters/WhatapAccoutTokenHeader'
+        - $ref: '#/components/parameters/WhatapPcodeHeader'
+        - $ref: '#/components/parameters/StartTimePath'
+        - $ref: '#/components/parameters/EndTimePath'
+      responses:
+        '200':
+          description: 조회 성공
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HttpcRecord'
+              example:
+                records:
+                  - Sum: 22628
+                    Port: 10002
+                    Url: /remote/account/save/employee/kwangju
+                    Host: 127.0.0.1
+                    Max: 1815
+                    Stdev: '247.95'
+                    Actived: 0
+                    Avg: 1131
+                    HostHash: -675813464
+                    Min: 1002
+                    Error: 0
+                    Total: 20
+                    UrlHash: -243814510
+                total: 4923
+      x-codeSamples:
+        - lang: curl
+          source: |
+            curl -L \
+            -w "\n" \
+            -H "Content-Type: application/json" \
+            -H "x-whatap-token: {{PROJECT_API_TOKEN}}" \
+            -H "x-whatap-pcode: {{projectCode}}" \
+            "https://api.whatap.io/open/api/json/httpc/{stime}/{etime}"
+  /open/api/json/httpc/{stime}/{etime}/filter/host/{host}/port/{port}:
+    get:
+      summary: HTTP 외부 호출 필터링
+      description: >-
+        애플리케이션 모니터링 프로젝트에서 설정한 시간 동안 HTTP 외부 호출 내역을 호스트의 주소와 포트 번호를 기준으로 필터링해
+        조회할 수 있는 API입니다.
+      tags:
+        - APM 통계 데이터 조회
+      parameters:
+        - $ref: '#/components/parameters/WhatapAccoutTokenHeader'
+        - $ref: '#/components/parameters/WhatapPcodeHeader'
+        - $ref: '#/components/parameters/StartTimePath'
+        - $ref: '#/components/parameters/EndTimePath'
+        - name: host
+          in: path
+          required: true
+          schema:
+            type: string
+            description: 필터링할 호스트 주소
+        - name: port
+          in: path
+          required: true
+          schema:
+            type: string
+            description: 필터링할 호스트 포트 번호
+      responses:
+        '200':
+          description: 조회 성공
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HttpcRecord'
+              example:
+                records:
+                  - Service: /sales/remove/unit/kwangju
+                    Host: 127.0.0.1
+                    HostHash: -675813464
+                    Avg: 1080
+                    Error: 0
+                    Sum: 2411644
+                    Port: 10007
+                    Service_hash: -1003301916
+                    Url: /remote/account/save/employee/seoul
+                    Max: 2442
+                    Stdev: '159.01'
+                    UrlHash: 180997672
+                    Total: 2233
+                    Min: 1001
+                  - Service: /product/delete/employee/daejun
+                    Host: 127.0.0.1
+                    HostHash: -675813464
+                    Avg: 1085
+                    Error: 0
+                    Sum: 2075036
+                    Port: 10007
+                    Service_hash: 2100205994
+                    Url: /remote/account/save/employee/pusan
+                    Max: 2462
+                    Stdev: '173.06'
+                    UrlHash: -924053750
+                    Total: 1911
+                    Min: 1001
+                total: 1080
+      x-codeSamples:
+        - lang: curl
+          source: >
+            curl -L \
+
+            -w "\n" \
+
+            -H "Content-Type: application/json" \
+
+            -H "x-whatap-token: {{PROJECT_API_TOKEN}}" \
+
+            -H "x-whatap-pcode: {{projectCode}}" \
+
+            "https://api.whatap.io/open/api/json/httpc/{stime}/{etime}/filter/host/{host}/port/{port}"
+  /open/api/json/sql/{stime}/{etime}:
+    get:
+      summary: SQL
+      description: 애플리케이션 모니터링 프로젝트에서 설정한 시간 동안 SQL 문을 조회할 수 있는 API입니다.
+      tags:
+        - APM 통계 데이터 조회
+      parameters:
+        - $ref: '#/components/parameters/WhatapAccoutTokenHeader'
+        - $ref: '#/components/parameters/WhatapPcodeHeader'
+        - $ref: '#/components/parameters/StartTimePath'
+        - $ref: '#/components/parameters/EndTimePath'
+      responses:
+        '200':
+          description: 조회 성공
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SqlQueryRecord'
+              example:
+                records:
+                  - time_max: 4164
+                    dbcHash: 450678784
+                    db: jdbc:mysql://localhost:3306,localhost:3310/fake
+                    time_min: 0
+                    fetch_count: 0
+                    hash: 796628118
+                    fetch_time: 0
+                    sql_crud: 0
+                    count_total: 5224
+                    count_error: 0
+                    sql: update table set x=# where key=#
+                    time_sum: 581391
+                    time_avg: 111
+                    time_std: '240.79'
+                    count_actived: 0
+                total: 130
+      x-codeSamples:
+        - lang: curl
+          source: |
+            curl -L \
+            -w "\n" \
+            -H "Content-Type: application/json" \
+            -H "x-whatap-token: {{PROJECT_API_TOKEN}}" \
+            -H "x-whatap-pcode: {{projectCode}}" \
+            "https://api.whatap.io/open/api/json/sql/{stime}/{etime}"
+  /open/api/json/remote/{stime}/{etime}:
+    get:
+      summary: Client IP
+      description: >-
+        애플리케이션 모니터링 프로젝트에서 설정한 시간 동안 원격 클라이언트 IP를 조회할 수 있는 API입니다. 와탭은 클라이언트와
+        관련한 정보를 기본 저장합니다.
+      tags:
+        - APM 통계 데이터 조회
+      parameters:
+        - $ref: '#/components/parameters/WhatapAccoutTokenHeader'
+        - $ref: '#/components/parameters/WhatapPcodeHeader'
+        - $ref: '#/components/parameters/StartTimePath'
+        - $ref: '#/components/parameters/EndTimePath'
+      responses:
+        '200':
+          description: 조회 성공
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/RemoteClientIpRecord'
+              example:
+                records:
+                  - count: 86
+                    city: Winnipeg
+                    country: CA (CANADA)
+                    ip: 140.193.83.68
+                total: 1000
+      x-codeSamples:
+        - lang: curl
+          source: |
+            curl -L \
+            -w "\n" \
+            -H "Content-Type: application/json" \
+            -H "x-whatap-token: {{PROJECT_API_TOKEN}}" \
+            -H "x-whatap-pcode: {{projectCode}}" \
+            "https://api.whatap.io/open/api/json/remote/{stime}/{etime}"
+  /open/api/json/transaction/{stime}/{etime}:
+    get:
+      summary: 트랜잭션
+      description: 애플리케이션 모니터링 프로젝트에서 설정한 시간 동안 발생한 트랜잭션 내역을 조회할 수 있는 API입니다.
+      tags:
+        - APM 통계 데이터 조회
+      parameters:
+        - $ref: '#/components/parameters/WhatapAccoutTokenHeader'
+        - $ref: '#/components/parameters/WhatapPcodeHeader'
+        - $ref: '#/components/parameters/StartTimePath'
+        - $ref: '#/components/parameters/EndTimePath'
+      responses:
+        '200':
+          description: 조회 성공
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/TransactionsRecord'
+              example:
+                records:
+                  - apdex_tolerated: 98
+                    apdex_satisfied: 279
+                    apdex: 0.830379746835443
+                    time_max: 44735
+                    sql_fetch_time: 363
+                    sql_time: 2628663
+                    count: 10743
+                    error: 29
+                    sql_count: 22635
+                    hash: -1485863373
+                    sql_fetch: 6741607
+                    httpc_avg: 1084
+                    cpu_avg: 0
+                    time_sum: 19911778
+                    time_avg: 1853
+                    httpc_count: 7072
+                    service: /account/save/employee/seoul
+                    mem_avg: 0
+                total: 1080
+      x-codeSamples:
+        - lang: curl
+          source: |
+            curl -L \
+            -w "\n" \
+            -H "Content-Type: application/json" \
+            -H "x-whatap-token: {{PROJECT_API_TOKEN}}" \
+            -H "x-whatap-pcode: {{projectCode}}" \
+            "https://api.whatap.io/open/api/json/transaction/{stime}/{etime}"
+  /open/api/json/heap_use/{stime}/{etime}/avg:
+    get:
+      summary: Heap 사용량 - 통계 평균값
+      description: >-
+        애플리케이션 모니터링 프로젝트에서 설정한 시간 동안 Heap 사용량에 대한 통계 평균값을 조회할 수 있는 API입니다. 조회
+        시간은 한 시간 이내로 제한하며, 밀리초(millisecond, ms) 단위입니다.
+      tags:
+        - APM 통계 데이터 조회
+      parameters:
+        - $ref: '#/components/parameters/WhatapAccoutTokenHeader'
+        - $ref: '#/components/parameters/WhatapPcodeHeader'
+        - $ref: '#/components/parameters/StartTimePath'
+        - $ref: '#/components/parameters/EndTimePath'
+      responses:
+        '200':
+          description: 조회 성공
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HeapUsageRecord'
+              example:
+                pcode: 5490
+                stime: 1677747600000
+                etime: 1677749594269
+                timeMerge: avg
+                unit: byte
+                data:
+                  - oid: -1143239575
+                    oname: demo-8101
+                    heap_use: '36121554.72'
+                  - oid: -857948929
+                    oname: demo-8105
+                    heap_use: '37498925.139'
+      x-codeSamples:
+        - lang: curl
+          source: |
+            curl -L \
+            -w "\n" \
+            -H "Content-Type: application/json" \
+            -H "x-whatap-token: {{PROJECT_API_TOKEN}}" \
+            -H "x-whatap-pcode: {{projectCode}}" \
+            "https://api.whatap.io/open/api/json/heap_use/{stime}/{etime}/avg"
+  /open/api/json/heap_use/{stime}/{etime}/max:
+    get:
+      summary: Heap 사용량 - 통계 최댓값
+      description: >-
+        애플리케이션 모니터링 프로젝트에서 설정한 시간 동안 Heap 사용량에 대한 통계 최댓값을 조회할 수 있는 API입니다. 조회
+        시간은 한 시간 이내로 제한하며, 밀리초(millisecond, ms) 단위입니다.
+      tags:
+        - APM 통계 데이터 조회
+      parameters:
+        - $ref: '#/components/parameters/WhatapAccoutTokenHeader'
+        - $ref: '#/components/parameters/WhatapPcodeHeader'
+        - $ref: '#/components/parameters/StartTimePath'
+        - $ref: '#/components/parameters/EndTimePath'
+      responses:
+        '200':
+          description: 조회 성공
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HeapUsageRecord'
+              example:
+                pcode: 5490
+                stime: 1677747600000
+                etime: 1677749594269
+                timeMerge: max
+                unit: byte
+                data:
+                  - oid: -1143239575
+                    oname: demo-8101
+                    heap_use: '36121554.72'
+                  - oid: -857948929
+                    oname: demo-8105
+                    heap_use: '37498925.139'
+      x-codeSamples:
+        - lang: curl
+          source: |
+            curl -L \
+            -w "\n" \
+            -H "Content-Type: application/json" \
+            -H "x-whatap-token: {{PROJECT_API_TOKEN}}" \
+            -H "x-whatap-pcode: {{projectCode}}" \
+            "https://api.whatap.io/open/api/json/heap_use/{stime}/{etime}/max"
+  /open/api/json/{metric_type}/{stime}/{etime}:
+    get:
+      summary: 에이전트 데이터 조회
+      description: 애플리케이션 모니터링 프로젝트에서 설정한 시간 동안 전체 에이전트의 데이터를 조회할 수 있는 API입니다.
+      tags:
+        - APM 통계 데이터 조회
+      parameters:
+        - $ref: '#/components/parameters/WhatapAccoutTokenHeader'
+        - $ref: '#/components/parameters/WhatapPcodeHeader'
+        - $ref: '#/components/parameters/MetricTypePath'
+        - $ref: '#/components/parameters/StartTimePath'
+        - $ref: '#/components/parameters/EndTimePath'
+      responses:
+        '200':
+          description: 조회 성공
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/AgentEachdata'
+              example:
+                pcode: 1234570141
+                type: metric_type
+                stime: 1536050100000
+                etime: 1536050700000
+                interval: 300
+                timeMerge: sum
+                objects:
+                  - oname: '8080'
+                    oid: -1234257485
+                    series:
+                      - - 1536050100000
+                        - 95.2
+                      - - 1536050400000
+                        - 85.3
+                      - - 1536050700000
+                        - 91.43
+                  - oname: TC-29-96-8082
+                    oid: 1482741919
+                    series:
+                      - - 1536050100000
+                        - 98.11
+                      - - 1536050400000
+                        - 81.44
+                      - - 1536050700000
+                        - 90.05
+      x-codeSamples:
+        - lang: curl
+          source: |
+            curl -L \
+            -w "\n" \
+            -H "Content-Type: application/json" \
+            -H "x-whatap-token: {{PROJECT_API_TOKEN}}" \
+            -H "x-whatap-pcode: {{projectCode}}" \
+            "https://api.whatap.io/open/api/json/{metric_type}/{stime}/{etime}"
+  /open/api/json/{metric_type}/{stime}/{etime}/avg:
+    get:
+      summary: 에이전트 평균 데이터 조회
+      description: 애플리케이션 모니터링 프로젝트에서 설정한 시간 동안 전체 에이전트의 평균 데이터를 조회할 수 있는 API입니다.
+      tags:
+        - APM 통계 데이터 조회
+      parameters:
+        - $ref: '#/components/parameters/WhatapAccoutTokenHeader'
+        - $ref: '#/components/parameters/WhatapPcodeHeader'
+        - $ref: '#/components/parameters/MetricTypeAvgPath'
+        - $ref: '#/components/parameters/StartTimePath'
+        - $ref: '#/components/parameters/EndTimePath'
+      responses:
+        '200':
+          description: 조회 성공
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/AgentEachAvgdata'
+              example:
+                pcode: 1234570141
+                type: metric_type
+                stime: 1536050100000
+                etime: 1536050700000
+                interval: 300
+                timeMerge: sum
+                objectMerge: avg
+                series:
+                  - - 1536050100000
+                    - 122.86
+                  - - 1536050400000
+                    - 99.26
+                  - - 1536050700000
+                    - 109.68
+      x-codeSamples:
+        - lang: curl
+          source: >
+            curl -L \
+
+            -w "\n" \
+
+            -H "Content-Type: application/json" \
+
+            -H "x-whatap-token: {{PROJECT_API_TOKEN}}" \
+
+            -H "x-whatap-pcode: {{projectCode}}" \
+
+            "https://api.whatap.io/open/api/json/{metric_type}/{stime}/{etime}/avg"
+  /open/api/json/{metric_type}/{stime}/{etime}/{oids}:
+    get:
+      summary: 지정 에이전트 데이터 조회
+      description: >-
+        애플리케이션 모니터링 프로젝트에서 설정한 시간 동안 지정한 에이전트(oids)의 스레드 수 데이터를 조회할 수 있는 API입니다.
+        에이전트(oids)는 쉼표(,)를 구분자로 여러 개 지정할 수 있습니다.
+      tags:
+        - APM 통계 데이터 조회
+      parameters:
+        - $ref: '#/components/parameters/WhatapAccoutTokenHeader'
+        - $ref: '#/components/parameters/WhatapPcodeHeader'
+        - $ref: '#/components/parameters/MetricTypePath'
+        - $ref: '#/components/parameters/StartTimePath'
+        - $ref: '#/components/parameters/EndTimePath'
+        - $ref: '#/components/parameters/OidPath'
+      responses:
+        '200':
+          description: 조회 성공
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/AgentEachdata'
+              example:
+                pcode: 1234570141
+                type: metric_type
+                stime: 1536050100000
+                etime: 1536050700000
+                interval: 300
+                timeMerge: sum
+                objects:
+                  - oname: '8080'
+                    oid: -1234257485
+                    series:
+                      - - 1536050100000
+                        - 95.2
+                      - - 1536050400000
+                        - 85.3
+                      - - 1536050700000
+                        - 91.43
+                  - oname: TC-29-96-8082
+                    oid: 1482741919
+                    series:
+                      - - 1536050100000
+                        - 98.11
+                      - - 1536050400000
+                        - 81.44
+                      - - 1536050700000
+                        - 90.05
+      x-codeSamples:
+        - lang: curl
+          source: >
+            curl -L \
+
+            -w "\n" \
+
+            -H "Content-Type: application/json" \
+
+            -H "x-whatap-token: {{PROJECT_API_TOKEN}}" \
+
+            -H "x-whatap-pcode: {{projectCode}}" \
+
+            "https://api.whatap.io/open/api/json/{metric_type}/{stime}/{etime}/{oids}"
+  /open/api/json/{metric_type}/{stime}/{etime}/avg/{oids}:
+    get:
+      summary: 지정 에이전트 평균 데이터 조회
+      description: >-
+        애플리케이션 모니터링 프로젝트에서 설정한 시간 동안 지정한 에이전트(oids)의 평균 데이터를 조회할 수 있는 API입니다.
+        에이전트(oids)는 쉼표(,)를 구분자로 여러 개 지정할 수 있습니다.
+      tags:
+        - APM 통계 데이터 조회
+      parameters:
+        - $ref: '#/components/parameters/WhatapAccoutTokenHeader'
+        - $ref: '#/components/parameters/WhatapPcodeHeader'
+        - $ref: '#/components/parameters/MetricTypeAvgPath'
+        - $ref: '#/components/parameters/StartTimePath'
+        - $ref: '#/components/parameters/EndTimePath'
+      responses:
+        '200':
+          description: 조회 성공
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/AgentEachAvgdata'
+              example:
+                pcode: 1234570141
+                type: metric_type
+                stime: 1536050100000
+                etime: 1536050700000
+                interval: 300
+                timeMerge: sum
+                objectMerge: avg
+                series:
+                  - - 1536050100000
+                    - 117.49
+                  - - 1536050400000
+                    - 100.26
+                  - - 1536050700000
+                    - 120.2
+      x-codeSamples:
+        - lang: curl
+          source: >
+            curl -L \
+
+            -w "\n" \
+
+            -H "Content-Type: application/json" \
+
+            -H "x-whatap-token: {{PROJECT_API_TOKEN}}" \
+
+            -H "x-whatap-pcode: {{projectCode}}" \
+
+            "https://api.whatap.io/open/api/json/{metric_type}/{stime}/{etime}/avg/{oids}"
+  /open/api/json/visitor_5m/{stime}/{etime}:
+    get:
+      summary: 5분 단위 액티브 사용자 조회
+      description: >-
+        애플리케이션 모니터링 프로젝트에서 설정한 시간 동안 5분 단위의 동시 접속 사용자를 조회할 수 있는 API입니다. 동시 접속
+        사용자는 최근 5분 이내에 트랜잭션을 발생시킨 사용자를 측정한 값입니다.
+      tags:
+        - APM 통계 데이터 조회
+      parameters:
+        - $ref: '#/components/parameters/WhatapTokenHeader'
+        - $ref: '#/components/parameters/WhatapPcodeHeader'
+        - $ref: '#/components/parameters/StartTimePath'
+        - $ref: '#/components/parameters/EndTimePath'
+      responses:
+        '200':
+          description: 조회 성공
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/VisitorStatic5mRecord'
+              example:
+                data:
+                  - - 1554444005000
+                    - 12
+                  - - 1554444010000
+                    - 12
+                pcode: 3000000079
+                stime: 1554444000000
+                etime: 1554444300000
+                total: 59
+      x-codeSamples:
+        - lang: curl
+          source: |
+            curl -L \
+            -w "\n" \
+            -H "Content-Type: application/json" \
+            -H "x-whatap-token: {{PROJECT_API_TOKEN}}" \
+            -H "x-whatap-pcode: {{projectCode}}" \
+            "https://api.whatap.io/open/api/json/visitor_5m/{stime}/{etime}"
+  /open/api/json/visitor_h/{stime}/{etime}:
+    get:
+      summary: 1시간 단위 액티브 사용자 조회
+      description: 애플리케이션 모니터링 프로젝트에서 설정한 시간 동안 1시간 단위의 동시 접속 사용자를 조회할 수 있는 API입니다.
+      tags:
+        - APM 통계 데이터 조회
+      parameters:
+        - $ref: '#/components/parameters/WhatapTokenHeader'
+        - $ref: '#/components/parameters/WhatapPcodeHeader'
+        - $ref: '#/components/parameters/StartTimePath'
+        - $ref: '#/components/parameters/EndTimePath'
+      responses:
+        '200':
+          description: 조회 성공
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/VisitorStaticHRecord'
+              example:
+                data:
+                  - - 1554444000000
+                    - 18
+                  - - 1554444010000
+                    - 16
+                pcode: 3000000079
+                stime: 1554444000000
+                etime: 1554454800000
+                total: 59
+      x-codeSamples:
+        - lang: curl
+          source: |
+            curl -L \
+            -w "\n" \
+            -H "Content-Type: application/json" \
+            -H "x-whatap-token: {{PROJECT_API_TOKEN}}" \
+            -H "x-whatap-pcode: {{projectCode}}" \
+            "https://api.whatap.io/open/api/json/visitor_h/{stime}/{etime}"
+  /open/api/json/visitor_d/{stime}/{etime}:
+    get:
+      summary: 1일 단위 액티브 사용자 조회
+      description: 애플리케이션 모니터링 프로젝트에서 설정한 시간 동안 1일 단위의 동시 접속 사용자를 조회할 수 있는 API입니다.
+      tags:
+        - APM 통계 데이터 조회
+      parameters:
+        - $ref: '#/components/parameters/WhatapTokenHeader'
+        - $ref: '#/components/parameters/WhatapPcodeHeader'
+        - $ref: '#/components/parameters/StartTimePath'
+        - $ref: '#/components/parameters/EndTimePath'
+      responses:
+        '200':
+          description: 조회 성공
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/VisitorStaticDayRecord'
+              example:
+                data:
+                  - - 1554163200000
+                    - 1007
+                  - - 1554249600000
+                    - 1007
+                  - - 1554336000000
+                    - 1007
+                pcode: 3000000079
+                stime: 1554163200000
+                etime: 1554422400000
+                total: 3
+      x-codeSamples:
+        - lang: curl
+          source: |
+            curl -L \
+            -w "\n" \
+            -H "Content-Type: application/json" \
+            -H "x-whatap-token: {{PROJECT_API_TOKEN}}" \
+            -H "x-whatap-pcode: {{projectCode}}" \
+            "https://api.whatap.io/open/api/json/visitor_d/{stime}/{etime}"
+  /open/api/json/visitor_m/{stime}/{etime}:
+    get:
+      summary: 1개월 단위 액티브 사용자 조회
+      description: >-
+        애플리케이션 모니터링 프로젝트에서 설정한 시간 동안 1개월 단위의 동시 접속 사용자를 조회할 수 있는 API입니다. 1개월간
+        집계된 고유 사용자 통계로 `etime`은 `stime`을 기준으로 365일을 초과할 수 없습니다.
+      tags:
+        - APM 통계 데이터 조회
+      parameters:
+        - $ref: '#/components/parameters/WhatapTokenHeader'
+        - $ref: '#/components/parameters/WhatapPcodeHeader'
+        - $ref: '#/components/parameters/StartTimePath'
+        - $ref: '#/components/parameters/EndTimePath'
+      responses:
+        '200':
+          description: 조회 성공
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/VisitorStaticMonthRecord'
+              example:
+                data:
+                  - stime: 1535760000000
+                    etime: 1538352000000
+                    sdate: Sat Sep 01 00:00:00 GMT 2018
+                    edate: Mon Oct 01 00:00:00 GMT 2018
+                    mau: 1007
+                  - stime: 1538352000000
+                    etime: 1541030400000
+                    sdate: Mon Oct 01 00:00:00 GMT 2018
+                    edate: Thu Nov 01 00:00:00 GMT 2018
+                    mau: 1007
+                pcode: 1234570141
+                stime: 1535760000000
+                etime: 1541030400000
+                sdate: Sat Sep 01 00:00:00 GMT 2018
+                edate: Thu Nov 01 00:00:00 GMT 2018
+                total: 2
+      x-codeSamples:
+        - lang: curl
+          source: |
+            curl -L \
+            -w "\n" \
+            -H "Content-Type: application/json" \
+            -H "x-whatap-token: {{PROJECT_API_TOKEN}}" \
+            -H "x-whatap-pcode: {{projectCode}}" \
+            "https://api.whatap.io/open/api/json/visitor_m/{stime}/{etime}"
+  /open/api/json/{metric_type}/{stime}/{etime}/filter/{filterkey}/{filtereval}:
+    get:
+      summary: 호출 통계 필터링
+      description: >
+        프로젝트 간 트랜잭션 호출 통계 또는 트랜잭션 도메인 호출 통계를 필터링해 조회할 수 있습니다.
+
+
+        * **filterkey**: 조회 조건 키 (`caller_pcode`, `caller_spec` (버전),
+        `caller_url`, `spec` (버전), `url`)
+
+        * **filterval**: 조회 조건 (`filterkey가` `caller_url` 또는 `url`인 경우 base64로
+        인코딩)
+      tags:
+        - APM 통계 데이터 조회
+      parameters:
+        - $ref: '#/components/parameters/WhatapAccoutTokenHeader'
+        - $ref: '#/components/parameters/WhatapPcodeHeader'
+        - $ref: '#/components/parameters/CallStaticTypePath'
+        - $ref: '#/components/parameters/StartTimePath'
+        - $ref: '#/components/parameters/EndTimePath'
+        - $ref: '#/components/parameters/FilterkeyPath'
+        - $ref: '#/components/parameters/FiltervalPath'
+      x-codeSamples:
+        - lang: curl
+          source: >
+            curl -L \
+
+            -w "\n" \
+
+            -H "x-whatap-token: {{PROJECT_API_TOKEN}}" \
+
+            -H "x-whatap-pcode: {{projectCode}}" \
+
+            "https://api.whatap.io/open/api/json/{metric_type}/{stime}/{etime}/filter/{filterkey}/{filtereval}"
+  /open/api/json/{metric_type}/{stime}/{etime}/{oids}/filter/{filterkey}/{filtereval}:
+    get:
+      summary: 지정 에이전트 호출 통계 필터링
+      description: >
+        지정한 에이전트를 기준으로 프로젝트 간 트랜잭션 호출 통계 또는 트랜잭션 도메인 호출 통계를 필터링해 조회할 수 있습니다.
+
+
+        * **filterkey**: 조회 조건 키 (`caller_pcode`, `caller_spec` (버전),
+        `caller_url`, `spec` (버전), `url`)
+
+        * **filterval**: 조회 조건 (`filterkey가` `caller_url` 또는 `url`인 경우 base64로
+        인코딩)
+      tags:
+        - APM 통계 데이터 조회
+      parameters:
+        - $ref: '#/components/parameters/WhatapAccoutTokenHeader'
+        - $ref: '#/components/parameters/WhatapPcodeHeader'
+        - $ref: '#/components/parameters/CallStaticTypePath'
+        - $ref: '#/components/parameters/StartTimePath'
+        - $ref: '#/components/parameters/EndTimePath'
+        - $ref: '#/components/parameters/OidPath'
+        - $ref: '#/components/parameters/FilterkeyPath'
+        - $ref: '#/components/parameters/FiltervalPath'
+      x-codeSamples:
+        - lang: curl
+          source: >
+            curl -L \
+
+            -w "\n" \
+
+            -H "x-whatap-token: {{PROJECT_API_TOKEN}}" \
+
+            -H "x-whatap-pcode: {{projectCode}}" \
+
+            "https://api.whatap.io/open/api/json/{metric_type}/{stime}/{etime}/{oids}/filter/{filterkey}/{filtereval}"
+  /open/api/raw/tag/app_counter/tps?stime={stime}&etime={etime}&timeMerge={timeMerge}:
+    get:
+      summary: TPS
+      description: >-
+        애플리케이션 모니터링 프로젝트에서 설정한 시간 동안 TPS(Transaction Per Second) 데이터를 조회할 수 있는
+        API입니다.
+      tags:
+        - APM 통계 데이터 조회
+      parameters:
+        - $ref: '#/components/parameters/WhatapAccoutTokenHeader'
+        - $ref: '#/components/parameters/WhatapPcodeHeader'
+        - $ref: '#/components/parameters/StartTimeQuery'
+        - $ref: '#/components/parameters/EndTimeQuery'
+        - $ref: '#/components/parameters/TimeMergeQuery'
+      responses:
+        '200':
+          description: 조회 성공
+          content:
+            text/plain:
+              schema:
+                type: number
+                format: float
+                description: TPS 수
+              example: '66.0'
+      x-codeSamples:
+        - lang: curl
+          source: >
+            curl -L \
+
+            -w "\n" \
+
+            -H "x-whatap-token: {{PROJECT_API_TOKEN}}" \
+
+            -H "x-whatap-pcode: {{projectCode}}" \
+
+            "https://api.whatap.io/open/api/raw/tag/app_counter/tps?stime={stime}&etime={etime}&timeMerge={timeMerge}"
+  /open/api/raw/tag/app_counter/resp_time?stime={stime}&etime={etime}&timeMerge={timeMerge}:
+    get:
+      summary: 평균 응답 시간
+      description: 애플리케이션 모니터링 프로젝트에서 설정한 시간 동안 평균 응답 시간을 조회할 수 있는 API입니다.
+      tags:
+        - APM 통계 데이터 조회
+      parameters:
+        - $ref: '#/components/parameters/WhatapAccoutTokenHeader'
+        - $ref: '#/components/parameters/WhatapPcodeHeader'
+        - $ref: '#/components/parameters/StartTimeQuery'
+        - $ref: '#/components/parameters/EndTimeQuery'
+        - $ref: '#/components/parameters/TimeMergeQuery'
+      responses:
+        '200':
+          description: 조회 성공
+          content:
+            text/plain:
+              schema:
+                type: number
+                description: 평균 응답 시간
+              example: 1640
+      x-codeSamples:
+        - lang: curl
+          source: >
+            curl -L \
+
+            -w "\n" \
+
+            -H "x-whatap-token: {{PROJECT_API_TOKEN}}" \
+
+            -H "x-whatap-pcode: {{projectCode}}" \
+
+            "https://api.whatap.io/open/api/raw/tag/app_counter/resp_time?stime={stime}&etime={etime}&timeMerge={timeMerge}"
+  /open/api/raw/tag/app_host_resource/cpu?stime={stime}&etime={etime}&timeMerge={timeMerge}:
+    get:
+      summary: 평균 CPU 사용률
+      description: 애플리케이션 모니터링 프로젝트에서 설정한 시간 동안 평균 CPU 사용률을 조회할 수 있는 API입니다.
+      tags:
+        - APM 통계 데이터 조회
+      parameters:
+        - $ref: '#/components/parameters/WhatapAccoutTokenHeader'
+        - $ref: '#/components/parameters/WhatapPcodeHeader'
+        - $ref: '#/components/parameters/StartTimeQuery'
+        - $ref: '#/components/parameters/EndTimeQuery'
+        - $ref: '#/components/parameters/TimeMergeQuery'
+      responses:
+        '200':
+          description: 조회 성공
+          content:
+            text/plain:
+              schema:
+                type: number
+                description: 평균 CPU 사용률
+              example: '11.50'
+      x-codeSamples:
+        - lang: curl
+          source: >
+            curl -L \
+
+            -w "\n" \
+
+            -H "x-whatap-token: {{PROJECT_API_TOKEN}}" \
+
+            -H "x-whatap-pcode: {{projectCode}}" \
+
+            "https://api.whatap.io/open/api/raw/tag/app_host_resource/cpu?stime={stime}&etime={etime}&timeMerge={timeMerge}"
+  /open/api/tag/db_pool_detail/dbconn?stime={stime}&etime={etime}&timeMerge={timeMerge}:
+    get:
+      summary: 데이터 소스별 DB Connection 수
+      description: 애플리케이션 모니터링 프로젝트에서 설정한 시간 동안 데이터 소스별 DB Connection 수를 조회할 수 있는 API입니다.
+      tags:
+        - APM 통계 데이터 조회
+      parameters:
+        - $ref: '#/components/parameters/WhatapAccoutTokenHeader'
+        - $ref: '#/components/parameters/WhatapPcodeHeader'
+        - $ref: '#/components/parameters/StartTimeQuery'
+        - $ref: '#/components/parameters/EndTimeQuery'
+        - $ref: '#/components/parameters/TimeMergeQuery'
+      responses:
+        '200':
+          description: 조회 성공
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApmDBconnCount'
+              example:
+                pcode: 35
+                time: 1554163200000
+                dbc_total:
+                  - oid: -963710734
+                    oname: TC-29-96-8082
+                    databaseUrl: jdbc:db:virtual
+                    active: 49
+                    idle: 51
+                    total: 100
+      x-codeSamples:
+        - lang: curl
+          source: >
+            curl -L \
+
+            -w "\n" \
+
+            -H "Content-Type: application/json" \
+
+            -H "x-whatap-token: {{PROJECT_API_TOKEN}}" \
+
+            -H "x-whatap-pcode: {{projectCode}}" \
+
+            "https://api.whatap.io/open/api/tag/db_pool_detail/dbconn?stime={stime}&etime={etime}&timeMerge={timeMerge}"
+  /open/api/tag/db_pool_detail/dbconn?etime={etime}:
+    get:
+      summary: 데이터 소스별 DB Connection 수 - 단기 조회
+      description: 애플리케이션 모니터링 프로젝트에서 종료 시간을 기준으로 데이터 소스별 DB Connection 수를 조회할 수 있는 API입니다.
+      tags:
+        - APM 통계 데이터 조회
+      parameters:
+        - $ref: '#/components/parameters/WhatapAccoutTokenHeader'
+        - $ref: '#/components/parameters/WhatapPcodeHeader'
+        - $ref: '#/components/parameters/EndTimeQuery'
+      responses:
+        '200':
+          description: 조회 성공
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApmDBconnCount'
+              example:
+                pcode: 17
+                time: 1667467012037
+                dbc_total:
+                  - oid: -959062357
+                    oname: TC-0-1-8087
+                    databaseUrl: jdbc:db:virtual
+                    active: 63
+                    idle: 37
+                    total: 100
+                  - oid: -1311576515
+                    oname: TC-0-1-8086
+                    databaseUrl: jdbc:db:virtual
+                    active: 10
+                    idle: 90
+                    total: 100
+      x-codeSamples:
+        - lang: curl
+          source: >
+            curl -L \
+
+            -w "\n" \
+
+            -H "Content-Type: application/json" \
+
+            -H "x-whatap-token: {{PROJECT_API_TOKEN}}" \
+
+            -H "x-whatap-pcode: {{projectCode}}" \
+
+            "https://api.whatap.io/open/api/tag/db_pool_detail/dbconn?etime={etime}"
+  /open/api/v2/yard/flush:
+    post:
+      summary: IP 기반 트랜잭션 검색
+      description: >-
+        사용자가 지정한 시작 시간(`stime`)으로부터 1시간 동안, 특정 IP가 요청한 트랜잭션을 호출 건수 많은 순으로 정렬하여
+        최대 100건의 URL 목록을 전달하는 API입니다.
+      tags:
+        - APM 통계 데이터 조회
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                type:
+                  type: string
+                path:
+                  type: string
+                pcode:
+                  type: string
+                  description: 프로젝트 코드
+                params:
+                  type: object
+                  properties:
+                    stime:
+                      type: long
+                      description: 조회 시작 시간(UNIX epoch time, millisecond)
+                    filter:
+                      type: object
+                      properties:
+                        ip:
+                          type: string
+                          description: IP 주소
+            example:
+              type: profiles
+              path: /filter/search
+              pcode: '12345'
+              params:
+                stime: 1690850183000
+                filter:
+                  ip: 10.11.12.13
+      parameters:
+        - $ref: '#/components/parameters/WhatapTokenHeader'
+        - $ref: '#/components/parameters/WhatapPcodeHeader'
+      responses:
+        '200':
+          description: 호출 성공
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  elapsed:
+                    type: number
+                    description: 시작 시간(`stime`) 기준으로부터 경과 시간
+                  count:
+                    type: number
+                    description: HTTP 호출 건수
+                  url:
+                    type: string
+                    description: 클라이언트가 요청한 트랜잭션 이름
+      x-codeSamples:
+        - lang: curl
+          source: |
+            curl --location 'https://api.whatap.io/open/api/v2/yard/flush' \
+              --header 'x-whatap-token: {{PROJECT API TOKEN}}' \
+              --header 'x-whatap-pcode: {{projectCode}}' \
+              --header 'Content-Type: application/json' \
+              --data '{
+                  "type": "profiles",
+                  "path": "/filter/search",
+                  "pcode": "{{projectCode}}",
+                  "params": {
+                    "stime": {{stime}},
+                    "filter": {
+                      "ip": "{{ip}}"
+                    }
+                  }
+                }'
+  /open/json/act_agent:
+    get:
+      summary: 활성화 상태의 에이전트 수 조회
+      description: 서버 모니터링 프로젝트에서 활성화 상태의 에이전트 수를 조회할 수 있는 API입니다.
+      tags:
+        - Server Spot 정보 조회
+      parameters:
+        - $ref: '#/components/parameters/WhatapTokenHeader'
+        - $ref: '#/components/parameters/WhatapPcodeHeader'
+      responses:
+        '200':
+          description: 조회 성공
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ServerAgentCount'
+              example:
+                pname: LOCAL_INFRA
+                values: '57.0'
+      x-codeSamples:
+        - lang: curl
+          source: |
+            curl -L \
+            -w "\n" \
+            -H "Content-Type: application/json" \
+            -H "x-whatap-token: {{PROJECT_API_TOKEN}}" \
+            -H "x-whatap-pcode: {{projectCode}}" \
+            "https://api.whatap.io/open/json/act_agent"
+  /open/json/inact_agent:
+    get:
+      summary: 비활성화 상태의 에이전트 수 조회
+      description: 서버 모니터링 프로젝트에서 비활성화 상태의 에이전트 수를 조회할 수 있는 API입니다.
+      tags:
+        - Server Spot 정보 조회
+      parameters:
+        - $ref: '#/components/parameters/WhatapTokenHeader'
+        - $ref: '#/components/parameters/WhatapPcodeHeader'
+      responses:
+        '200':
+          description: 조회 성공
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ServerAgentCount'
+              example:
+                pname: LOCAL_INFRA
+                values: '4.0'
+      x-codeSamples:
+        - lang: curl
+          source: |
+            curl -L \
+            -w "\n" \
+            -H "Content-Type: application/json" \
+            -H "x-whatap-token: {{PROJECT_API_TOKEN}}" \
+            -H "x-whatap-pcode: {{projectCode}}" \
+            "https://api.whatap.io/open/json/inact_agent"
+  /open/json/host:
+    get:
+      summary: 호스트(HOST) 수
+      description: 서버 모니터링 프로젝트와 연결된 호스트(HOST) 수를 조회할 수 있는 API입니다.
+      tags:
+        - Server Spot 정보 조회
+      parameters:
+        - $ref: '#/components/parameters/WhatapTokenHeader'
+        - $ref: '#/components/parameters/WhatapPcodeHeader'
+      responses:
+        '200':
+          description: 조회 성공
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ServerAgentCount'
+              example:
+                pname: LOCAL_INFRA
+                values: '57.0'
+      x-codeSamples:
+        - lang: curl
+          source: |
+            curl -L \
+            -w "\n" \
+            -H "Content-Type: application/json" \
+            -H "x-whatap-token: {{PROJECT_API_TOKEN}}" \
+            -H "x-whatap-pcode: {{projectCode}}" \
+            "https://api.whatap.io/open/json/host"
+  /open/json/cpucore:
+    get:
+      summary: 호스트의 CPU 코어 합
+      description: 서버 모니터링 프로젝트와 연결된 호스트(HOST)의 CPU 코어 합계를 조회할 수 있는 API입니다.
+      tags:
+        - Server Spot 정보 조회
+      parameters:
+        - $ref: '#/components/parameters/WhatapTokenHeader'
+        - $ref: '#/components/parameters/WhatapPcodeHeader'
+      responses:
+        '200':
+          description: 조회 성공
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ServerAgentCount'
+              example:
+                pname: LOCAL_INFRA
+                values: '108.0'
+      x-codeSamples:
+        - lang: curl
+          source: |
+            curl -L \
+            -w "\n" \
+            -H "Content-Type: application/json" \
+            -H "x-whatap-token: {{PROJECT_API_TOKEN}}" \
+            -H "x-whatap-pcode: {{projectCode}}" \
+            "https://api.whatap.io/open/json/cpucore"
+  /open/json/infra_cpu:
+    get:
+      summary: CPU 사용률
+      description: 서버 모니터링 프로젝트와 연결된 호스트(HOST)의 CPU 사용률을 조회할 수 있는 API입니다.
+      tags:
+        - Server Spot 정보 조회
+      parameters:
+        - $ref: '#/components/parameters/WhatapTokenHeader'
+        - $ref: '#/components/parameters/WhatapPcodeHeader'
+      responses:
+        '200':
+          description: 조회 성공
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ServerCpuUsage'
+              example:
+                pcode: 29763
+                pname: Server Monitoring Demo
+                timezone: 9
+                regionName: LOCAL
+                values:
+                  mysql-official-demo-03: 0.9009018
+                  php-official-demo: 1.6949158
+                  python-demo-attacker: 0.50099945
+                  virtual-java-agent: 55.08919
+                language: en
+      x-codeSamples:
+        - lang: curl
+          source: |
+            curl -L \
+            -w "\n" \
+            -H "Content-Type: application/json" \
+            -H "x-whatap-token: {{PROJECT_API_TOKEN}}" \
+            -H "x-whatap-pcode: {{projectCode}}" \
+            "https://api.whatap.io/open/json/infra_cpu"
+  /open/json/infra_disk_iops:
+    get:
+      summary: 디스크 IOPS 합계
+      description: 서버 모니터링 프로젝트와 연결된 호스트(HOST)의 디스크 IOPS 합계를 조회할 수 있는 API입니다.
+      tags:
+        - Server Spot 정보 조회
+      parameters:
+        - $ref: '#/components/parameters/WhatapTokenHeader'
+        - $ref: '#/components/parameters/WhatapPcodeHeader'
+      responses:
+        '200':
+          description: 조회 성공
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ServerDiskIOPS'
+              example:
+                pcode: 29763
+                pname: Server Monitoring Demo
+                timezone: 9
+                regionName: LOCAL
+                values:
+                  mysql-official-demo-03:
+                    bps: 8208.67
+                    iops: 1.402849
+                  php-official-demo:
+                    bps: 3951.273
+                    iops: 0.771733
+                  python-demo-attacker:
+                    bps: 7376.34
+                    iops: 1.00048
+                  virtual-java-agent:
+                    bps: 6563.1836
+                    iops: 0.40058494
+                language: en
+      x-codeSamples:
+        - lang: curl
+          source: |
+            curl -L \
+            -w "\n" \
+            -H "Content-Type: application/json" \
+            -H "x-whatap-token: {{PROJECT_API_TOKEN}}" \
+            -H "x-whatap-pcode: {{projectCode}}" \
+            "https://api.whatap.io/open/json/infra_disk_iops"
+  /open/json/infra_net_traffic:
+    get:
+      summary: 네트워크 트래픽(IN/OUT) 합산
+      description: 서버 모니터링 프로젝트와 연결된 호스트(HOST)의 네트워크 트래픽(IN/OUT) 합산을 조회할 수 있는 API입니다.
+      tags:
+        - Server Spot 정보 조회
+      parameters:
+        - $ref: '#/components/parameters/WhatapTokenHeader'
+        - $ref: '#/components/parameters/WhatapPcodeHeader'
+      responses:
+        '200':
+          description: 조회 성공
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ServerNetworkTraffic'
+              example:
+                pcode: 29763
+                pname: Server Monitoring Demo
+                timezone: 9
+                regionName: LOCAL
+                values:
+                  mysql-official-demo-03: 128204.76878652698
+                  python-demo-attacker: 16231.465016029671
+                  virtual-java-agent: 10820618.160992496
+                language: en
+      x-codeSamples:
+        - lang: curl
+          source: |
+            curl -L \
+            -w "\n" \
+            -H "Content-Type: application/json" \
+            -H "x-whatap-token: {{PROJECT_API_TOKEN}}" \
+            -H "x-whatap-pcode: {{projectCode}}" \
+            "https://api.whatap.io/open/json/infra_net_traffic"
+  /open/json/infra_proc:
+    get:
+      summary: 프로세스 현황
+      description: 서버 모니터링 프로젝트와 연결된 호스트(HOST)의 프로세스 현황을 조회할 수 있는 API입니다.
+      tags:
+        - Server Spot 정보 조회
+      parameters:
+        - $ref: '#/components/parameters/WhatapTokenHeader'
+        - $ref: '#/components/parameters/WhatapPcodeHeader'
+      responses:
+        '200':
+          description: 조회 성공
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ServerProc'
+              example:
+                pname: LOCAL_INFRA
+                values:
+                  s-p-gtw-03:
+                    - memoryBytes: 1274269696
+                      bps: 819.2
+                      cmd1: java
+                      cpu: 2.8507125
+                    - memoryBytes: 2895872
+                      bps: 0
+                      cmd1: rsyslogd
+                      cpu: 0
+                  t-a-yrd-01:
+                    - memoryBytes: 2583621632
+                      bps: 1175961.5
+                      cmd1: java
+                      cpu: 10.621243
+      x-codeSamples:
+        - lang: curl
+          source: |
+            curl -L \
+            -w "\n" \
+            -H "Content-Type: application/json" \
+            -H "x-whatap-token: {{PROJECT_API_TOKEN}}" \
+            -H "x-whatap-pcode: {{projectCode}}" \
+            "https://api.whatap.io/open/json/infra_proc"
+  /open/json/sm_servers:
+    get:
+      summary: 서버 목록
+      description: 서버 모니터링 프로젝트의 서버 목록을 조회할 수 있는 API입니다.
+      tags:
+        - Server Spot 정보 조회
+      parameters:
+        - $ref: '#/components/parameters/WhatapTokenHeader'
+        - $ref: '#/components/parameters/WhatapPcodeHeader'
+      responses:
+        '200':
+          description: 조회 성공
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ServerList'
+              example:
+                pcode: 29763
+                pname: Server Monitoring Demo
+                timezone: 9
+                regionName: LOCAL
+                values:
+                  - os.status: warning
+                    oname: php-official-demo
+                    os.name: linux
+                    oid: -1413588424
+                    isActive: true
+                  - os.status: ok
+                    oname: dotnet-official-demo
+                    os.name: windows
+                    oid: -1755389652
+                    isActive: true
+                  - os.status: ok
+                    oname: mysql-official-demo-02
+                    os.name: linux
+                    oid: -1816982090
+                    isActive: true
+                language: en
+      x-codeSamples:
+        - lang: curl
+          source: |
+            curl -L \
+            -w "\n" \
+            -H "Content-Type: application/json" \
+            -H "x-whatap-token: {{PROJECT_API_TOKEN}}" \
+            -H "x-whatap-pcode: {{projectCode}}" \
+            "https://api.whatap.io/open/json/sm_servers"
+  /open/json/sm:
+    get:
+      summary: 서버 모니터링 상세
+      description: 서버 모니터링 프로젝트의 각 서버별 상세 정보를 조회할 수 있는 API입니다.
+      tags:
+        - Server Spot 정보 조회
+      parameters:
+        - $ref: '#/components/parameters/WhatapTokenHeader'
+        - $ref: '#/components/parameters/WhatapPcodeHeader'
+      responses:
+        '200':
+          description: 조회 성공
+          content:
+            application/json:
+              example:
+                pname: LOCAL_INFRA
+                values:
+                  servers:
+                    - public_ip: 192.168.0.1
+                      os_cpuvendor: Intel(R) Xeon(R) CPU E5-2640 v3 @ 2.60GHz
+                      agent_created: '49572130779'
+                      ip: 127.0.0.1,10.128.0.1
+                      os_arch: amd64
+                      actTime: 1570672662216
+                      cpu_cores: '1'
+                      oid: -1359816680
+                      isActive: true
+                      version: 1.2.5
+                      tags:
+                        - gateway
+                        - python
+                        - network:10.0.0.0/8
+                        - '@PRX'
+                      inactTime: 0
+                      oname: h-db-prx-01
+                      os_name: linux
+                      startTime: 1570672662000
+                      os_memory: '2088476672'
+                      os_status: ok
+                      snapshot:
+                        disk:
+                          /boot:
+                            writeIops: 0
+                            fileSystem: ext4
+                            mountPoint: /boot
+                            queueLength: 0
+                            usedSpace: 58863616
+                            blksize: 4096
+                            freeSpace: 841175040
+                            display: true
+                            count: 1
+                            readBps: 0
+                            totalSpace: 966778880
+                            ioPercent: 0
+                            mountOption: rw,relatime
+                            deviceId: /dev/sda1
+                            usedPercent: 6.540122985839844
+                            freePercent: 93.45987701416016
+                            writeBps: 0
+                            readIops: 0
+                          /home:
+                            writeIops: 0
+                            fileSystem: ext4
+                            mountPoint: /home
+                            queueLength: 0
+                            usedSpace: 1670574080
+                            blksize: 4096
+                            freeSpace: 69533446144
+                            display: true
+                            count: 1
+                            readBps: 0
+                            totalSpace: 75039498240
+                            ioPercent: 0
+                            mountOption: rw,relatime
+                            deviceId: /dev/sda3
+                            usedPercent: 2.3461761474609375
+                            freePercent: 97.65382385253906
+                            writeBps: 0
+                            readIops: 0
+                          /:
+                            writeIops: 0
+                            fileSystem: ext4
+                            mountPoint: /
+                            queueLength: 0
+                            usedSpace: 5079060480
+                            blksize: 4096
+                            freeSpace: 22798901248
+                            display: true
+                            count: 1
+                            readBps: 0
+                            totalSpace: 29394726912
+                            ioPercent: 0
+                            mountOption: rw,relatime
+                            deviceId: /dev/sda2
+                            usedPercent: 18.218902587890625
+                            freePercent: 81.78109741210938
+                            writeBps: 0
+                            readIops: 0
+                        memory:
+                          shared: 21590016
+                          swapused: 0
+                          buffers: 182550528
+                          available: 1746370560
+                          swaptotal: 0
+                          used: 342106112
+                          pused: 16.380653381347656
+                          slab: 85729280
+                          total: 2088476672
+                          sunreclaim: 23261184
+                          cached: 521756672
+                          pavailable: 83.61934661865234
+                          pagefaults: 0
+                          sreclaimable: 62468096
+                          free: 1167208448
+                          swappused: 0
+                        cpu:
+                          softirq: 0
+                          usr: 0
+                          idle: 100
+                          steal: 0
+                          irq: 0
+                          load5: 0
+                          iowait: 0
+                          sys: 0
+                          nice: 0
+                          load1: 0
+                          load15: 0
+                        open_filedescriptors: 249
+                        netstat:
+                          established: 1
+                          syn_sent: 1
+                          syn_recv: 0
+                          closing: 0
+                          time_wait: 19
+                          last_ack: 0
+                          fin_wait1: 0
+                          close_wait: 0
+                          fin_wait2: 0
+                          listen: 3
+                          unknown: 0
+                        uptime: 16313689
+                        network:
+                          lo:
+                            errorOut: 0
+                            packetOut: 0.3991734786600438
+                            trafficIn: 281.0181289766709
+                            trafficOut: 281.0181289766709
+                            hwAddr: ''
+                            errorIn: 0
+                            ip: 127.0.0.1
+                            count: 1
+                            droppedIn: 0
+                            droppedOut: 0
+                            packetIn: 0.3991734786600438
+                            desc: lo
+                          eth0:
+                            errorOut: 0
+                            packetOut: 8.1830563125309
+                            trafficIn: 11314.173079140282
+                            trafficOut: 19447.731880317337
+                            hwAddr: 00:1d:d8:b7:87:18
+                            errorIn: 0
+                            ip: 10.128.112.133
+                            count: 1
+                            droppedIn: 0
+                            droppedOut: 0
+                            packetIn: 24.549168937592693
+                            desc: eth0
+                  max:
+                    disk:
+                      writeIops: 240.9893
+                      usedPercent: 94.38699
+                      freePercent: 100
+                      usedSpace: 2464956810000
+                      freeSpace: 0
+                      writeBps: 2917852
+                      readBps: 118646.15
+                      readIops: 75.80727
+                      totalSpace: 9223372000000000000
+                      ioPercent: 100
+                      freespace: 158926471000
+                    nic:
+                      errorOut: 0
+                      packetOut: 2175.8743
+                      trafficIn: 4856648
+                      trafficOut: 2503208.8
+                      errorIn: 1
+                      droppedIn: 1
+                      droppedOut: 0
+                      packetIn: 2175.8743
+                    compound_eye_traffic: 1000000000
+                  count:
+                    total: 14
+                    paused: 0
+                    inactive: 0
+                    warning: 1
+                    ok: 13
+                    close: 0
+                    fatal: 0
+                  tags: {}
+      x-codeSamples:
+        - lang: curl
+          source: |
+            curl -L \
+            -w "\n" \
+            -H "Content-Type: application/json" \
+            -H "x-whatap-token: {{PROJECT_API_TOKEN}}" \
+            -H "x-whatap-pcode: {{projectCode}}" \
+            "https://api.whatap.io/open/json/sm"
+  /open/json/stat/sm_stat?{stime}&{etime}&{filter}&{oid}:
+    get:
+      summary: 서버 통계 상세
+      description: >
+        서버 모니터링 프로젝트의 통계 데이터를 조회할 수 있는 API입니다. 조회 시간은 한 시간 이내로 제한하며,
+        밀리초(millisecond, ms) 단위입니다.
+
+
+        * `filter`: 기본값은 `m5`이며, 시간 범위 내에 5분 통계를 조회하려면 `m5`, 5초 통계는 `s5`, 1시간
+        통계는 `h1`을 입력하세요.
+
+        * `oid`: 특정 에이전트를 지정해 조회할 경우 추가하세요.
+
+
+        `oid` 외 다른 파라미터는 적용할 수 없습니다.
+      tags:
+        - Server 통계 데이터 조회
+      parameters:
+        - $ref: '#/components/parameters/WhatapTokenHeader'
+        - $ref: '#/components/parameters/WhatapPcodeHeader'
+        - $ref: '#/components/parameters/StartTimeQuery'
+        - $ref: '#/components/parameters/EndTimeQuery'
+        - $ref: '#/components/parameters/FilterQuery'
+        - $ref: '#/components/parameters/AOidQuery'
+      responses:
+        '200':
+          description: 조회 성공
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ServerStatDetails'
+              example:
+                servers:
+                  - oid: -1030311093
+                    timeData:
+                      - usedPercent: 69.1
+                        trafficIn: 12113.57
+                        trafficOut: 24781.08
+                        cpu: 4.08
+                        memory_swappused: 15.41
+                        time: 1572341400000
+                        memory_pused: 47.6
+                        ioPercent: 0.26
+                      - usedPercent: 69.1
+                        trafficIn: 12183.97
+                        trafficOut: 25600.59
+                        cpu: 7.89
+                        memory_swappused: 15.5
+                        time: 1572341700000
+                        memory_pused: 47.79
+                        ioPercent: 0.22
+      x-codeSamples:
+        - lang: curl
+          source: >
+            curl -L \
+
+            -w "\n" \
+
+            -H "Content-Type: application/json" \
+
+            -H "x-whatap-token: {{PROJECT_API_TOKEN}}" \
+
+            -H "x-whatap-pcode: {{projectCode}}" \
+
+            "https://api.whatap.io/open/json/stat/sm_stat?stime={stime}&etime={etime}&{filter}&{oid}"
+  /open/api/json/db/database_params?oid={oid}&baseTime={baseTime}&comparisonTime={comparisonTime}:
+    get:
+      summary: 파라미터 변경 사항 조회
+      description: 데이버베이스의 파라미터 변경 사항을 조회할 수 있습니다.
+      tags:
+        - Database 파라미터 조회
+      parameters:
+        - $ref: '#/components/parameters/WhatapTokenHeader'
+        - $ref: '#/components/parameters/WhatapPcodeHeader'
+        - $ref: '#/components/parameters/AOidQuery'
+        - $ref: '#/components/parameters/BaseTimeQuery'
+        - $ref: '#/components/parameters/CompareTimeQuery'
+      responses:
+        '200':
+          description: 조회 성공
+          content:
+            applciation/json:
+              schema:
+                type: object
+                properties:
+                  unmatchedKeys:
+                    type: array
+                    description: 기준 시간과 비교 시간에서 일치하지 않는 키와 그 값들
+                    items:
+                      $ref: '#/components/schemas/UnmatchedKey'
+                  baseTime:
+                    type: array
+                    description: 기준 시간에서의 파라미터 목록
+                    items:
+                      $ref: '#/components/schemas/MatchedParameter'
+                  comparisonTime:
+                    type: array
+                    description: 비교 시간에서의 파라미터 목록
+                    items:
+                      $ref: '#/components/schemas/MatchedParameter'
+              example:
+                unmatchedKeys:
+                  - key: Innodb_buffer_pool_load_status(stat)
+                    value:
+                      baseTime: Buffer pool(s) load completed at 230818  2:54:51
+                      comparisonTime: Buffer pool(s) load completed at 230810  6:05:50
+                  - key: Max_used_connections_time(stat)
+                    value:
+                      baseTime: '2023-08-18 23:54:51'
+                      comparisonTime: '2023-08-10 06:05:51'
+                baseTime:
+                  - key: activate_all_roles_on_login
+                    value: 'OFF'
+                  - key: admin_address
+                    value: ''
+                comparisonTime:
+                  - key: activate_all_roles_on_login
+                    value: 'OFF'
+                  - key: admin_address
+                    value: ''
+      x-codeSamples:
+        - lang: curl
+          source: >
+            curl -L \
+
+            -w "\n" \
+
+            -H "x-whatap-token: {{PROJECT_API_TOKEN}}" \
+
+            -H "x-whatap-pcode: {{projectCode}}" \
+
+            "https://api.whatap.io/open/api/json/db/database_params?oid={oid}&baseTime={baseTime}&comparisonTime={comparisonTime}"
+  /open/api/json/db/statistics/sql?oids={oids}&period={period}&date={date}:
+    get:
+      summary: SQL 통계 TopN
+      description: 설정한 시간 동안 가장 많이 이용된 SQL 통계 정보를 조회할 수 있습니다.
+      tags:
+        - Database SQL 조회
+      parameters:
+        - $ref: '#/components/parameters/WhatapTokenHeader'
+        - $ref: '#/components/parameters/WhatapPcodeHeader'
+        - $ref: '#/components/parameters/OidQuery'
+        - $ref: '#/components/parameters/PeriodQuery'
+        - $ref: '#/components/parameters/DateQuery'
+        - $ref: '#/components/parameters/TopNQuery'
+        - $ref: '#/components/parameters/OrderQuery'
+        - $ref: '#/components/parameters/CategoryQuery'
+        - $ref: '#/components/parameters/NameInCategoryQuery'
+      responses:
+        '200':
+          description: 조회 성공
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/TopSqlStatisticsRecords'
+              example:
+                records:
+                  - sql_execute_cnt: 33863
+                    sql_elapse: 643
+                    sqlHash: 1559625025
+                    sql_elapse_max: 5
+                    onames: DBX-0-102-3306,DBX-0-162-3306
+                    user: kwlee
+                    sql: >-
+                      select /* WhaTap6D#5 */ * from
+                      information_schema.processlist where command<>'#'
+                  - sql_execute_cnt: 28387
+                    sql_elapse: 0
+                    sqlHash: -499643965
+                    sql_elapse_max: 0
+                    onames: DBX-0-107-3306
+                    user: whatap
+                    sql: >-
+                      select
+                      id,user,host,db,command,time,state,info,time_ms,stage,max_stage,progress,
+                      memory_used,max_memory_used,examined_rows,query_id,tid
+                      from information_schema.processlist where command<>'#' and
+                      command<>'#'
+                topN: 10
+                total: 129
+                retrievedStartTime: 1692921600000
+                retrievedEndTime: 1693007999000
+      x-codeSamples:
+        - lang: curl
+          source: >
+            curl -L \
+
+            -w "\n" \
+
+            -H "Content-Type: application/json" \
+
+            -H "x-whatap-token: {{PROJECT_API_TOKEN}}" \
+
+            -H "x-whatap-pcode: {{projectCode}}" \
+
+            "https://api.whatap.io/open/api/json/db/statistics/sql?oids={oids}&period={period}&date={date}"
+  /open/api/flush/mxql/text:
+    post:
+      summary: MXQL text API
+      description: >
+        다음 이미지는 MXQL 실행 결과 예시입니다.
+
+
+        ![MXQL 실행 결과
+        예시](https://img.whatap.io/media/images/open_api_mxql_text_example.png)
+      tags:
+        - MXQL Open API 호출하기
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/MXQLRequest'
+            example:
+              stime: 1639016640000
+              etime: 1639016940000
+              mql: |-
+                CATEGORY app_counter
+                OID [ $oidFirst, $oidSecond ]
+                TAGLOAD
+                SELECT
+                INJECT sortByOidDesc
+              limit: 2
+              pageKey: mxql
+              inject:
+                sortByOidDesc: 'ORDER {key : [oid],  sort :[desc]}'
+              param:
+                $oidFirst: '1499132250'
+                $oidSecond: '1670734023'
+      parameters:
+        - $ref: '#/components/parameters/WhatapTokenHeader'
+        - $ref: '#/components/parameters/WhatapPcodeHeader'
+      responses:
+        '200':
+          description: 조회 성공
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/MXQLtextResponse'
+              examples:
+                example1:
+                  summary: 조회된 데이터가 있는 경우
+                  value:
+                    - time: 1639016640000
+                      pcode: 101
+                      pname: Virtual
+                      okind: -1085056726
+                      onode: 334634079
+                      oname: 22136-8075
+                      okindName: ote-virtual-1
+                      onodeName: node-1
+                      host_ip: 192.168.1.57
+                      container: ote-8075.service
+                      pid: 22206
+                      type: java
+                      containerKey: 1876424218
+                      tx_count: 58
+                      tx_error: 0
+                      tx_time: 1643.9138
+                      apdex_satisfied: 41
+                      apdex_tolerated: 16
+                      apdex_total: 58
+                      tx_dbc_time: 13.655172
+                      tx_sql_time: 222.15517
+                      tx_httpc_time: 717.4138
+                      sql_count: 129
+                      sql_error: 0
+                      sql_time: 101.387596
+                      sql_fetch_count: 37621
+                      sql_fetch_time: 0.00045187527
+                      httpc_count: 41
+                      httpc_error: 0
+                      httpc_time: 1073.4878
+                      active_tx_count: 20
+                      active_tx_0: 19
+                      active_tx_3: 1
+                      active_tx_8: 0
+                      tps: 13.833333
+                      resp_time: 1628
+                      arrival_rate: 12.6
+                      pack_dropped: 110
+                      metering: 4
+                      _clock_delta_: 180
+                      oid: 1670734023
+                example2:
+                  value: []
+                  summary: 조회된 데이터가 없는 경우
+      x-codeSamples:
+        - lang: curl
+          source: |
+            curl --location 'https://api.whatap.io/open/api/flush/mxql/text' \
+            -H 'x-whatap-token: {{PROJECT API TOKEN}}' \
+            -H 'x-whatap-pcode: {{projectCode}}' \
+            -H 'Content-Type: application/json' \
+            -d '{
+              "stime": 1639016640000,
+              "etime": 1639016940000,
+              "mql": "CATEGORY app_counter\nOID [ $oidFirst, $oidSecond ]\nTAGLOAD\nSELECT\nINJECT sortByOidDesc",
+              "limit": 2,
+              "pageKey": "mxql",
+              "inject": {
+                "sortByOidDesc": "ORDER {key : [oid],  sort :[desc]}"
+              },
+              "param": {
+                "$oidFirst": "1499132250",
+                "$oidSecond": "1670734023"
+              }
+            }'
+  /open/api/flush/mxql/path:
+    post:
+      summary: MXQL path API
+      tags:
+        - MXQL Open API 호출하기
+      parameters:
+        - $ref: '#/components/parameters/WhatapTokenHeader'
+        - $ref: '#/components/parameters/WhatapPcodeHeader'
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/MXQLRequest'
+            example:
+              stime: 1639016640000
+              etime: 1639016940000
+              mql: /app/act_tx/agent_with_tx
+              limit: 2
+              pageKey: mxql
+              inject:
+                default: 'CREATE {key : _pk_, value : okindName}'
+              param: {}
+      responses:
+        '200':
+          description: Query executed successfully
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/MXQLPathResponse'
+              examples:
+                example1:
+                  summary: 조회된 데이터가 있는 경우
+                  value:
+                    - pcode: 101
+                      pname: Virtual
+                      oid: -1348176005
+                      oname: 22137-8071
+                      otype: ap
+                      okind: -1085056726
+                      okindName: ote-virtual-1
+                      onode: 334634079
+                      onodeName: node-1
+                      type: ap
+                      subtype: java
+                      version: 2.1.0 20211207u
+                      os_name: Linux
+                      ip: 192.168.1.57
+                      container_id: 842770198
+                      metering: 4
+                      status: ok
+                      normal: 12
+                      slow: 1
+                      verySlow: 0
+                      total: 13
+                      _pk_: okindName
+                    - pcode: 101
+                      pname: Virtual
+                      oid: -883058050
+                      oname: 22141-8070
+                      otype: ap
+                      okind: -933992004
+                      okindName: ote-virtual-0
+                      onode: 1693789385
+                      onodeName: node-0
+                      type: ap
+                      subtype: java
+                      version: 2.1.0 20211207u
+                      os_name: Linux
+                      ip: 192.168.1.57
+                      container_id: 624997205
+                      metering: 4
+                      status: ok
+                      normal: 19
+                      slow: 1
+                      verySlow: 0
+                      total: 20
+                      _pk_: okindName
+                example2:
+                  summary: 조회된 데이터가 없는 경우
+                  value: []
+components:
+  parameters:
+    WhatapAccoutTokenHeader:
+      name: x-whatap-token
+      in: header
+      required: true
+      schema:
+        type: string
+      description: 계정 API 토큰 {{ACCOUNT_API_TOKEN}}
+    WhatapTokenHeader:
+      name: x-whatap-token
+      in: header
+      required: true
+      schema:
+        type: string
+      description: 프로젝트 API 토큰 {{PROJECT_API_TOKEN}}
+    WhatapPcodeHeader:
+      name: x-whatap-pcode
+      in: header
+      required: true
+      schema:
+        type: string
+      description: 프로젝트 코드 {{projectCode}
+    ProjectCodePath:
+      name: projectCode
+      in: path
+      required: true
+      schema:
+        type: integer
+      description: 프로젝트 코드
+    GroupKeyPath:
+      name: groupKey
+      in: path
+      required: true
+      schema:
+        type: integer
+      description: 그룹 고유 식별자(ID)
+    StartTimeQuery:
+      name: stime
+      in: query
+      required: true
+      schema:
+        type: integer
+        format: int64
+        description: 조회 시작 시간(UNIX epoch time, millisecond)
+    EndTimeQuery:
+      name: etime
+      in: query
+      required: true
+      schema:
+        type: integer
+        format: int64
+        description: 조회 종료 시간(UNIX epoch time, millisecond)
+    Progress:
+      name: progress
+      in: query
+      required: false
+      schema:
+        type: boolean
+        description: |
+          * `true`: 진행 중인 이벤트만 조회
+          * `false`: 진행 중인 이벤트를 포함해 전체 이벤트 조회
+    OidPathopt:
+      name: oid
+      in: query
+      required: false
+      schema:
+        type: integer
+        format: int32
+        description: |
+          - 에이전트 고유 식별자(ID), 쉼표(,)를 구분자로 여러 개 입력 가능
+          - URL encoded 필요: 17079562,352247167 → -17079562%2C352247167
+    OkindQuery:
+      name: okinds
+      in: query
+      required: false
+      schema:
+        type: integer
+        format: int32
+        description: |
+          - 종류별 에이전트 그룹 고유 식별자(ID), 쉼표(,)를 구분자로 여러 개 입력 가능
+          - URL encoded 필요: 17079562,352247167 → -17079562%2C352247167
+    OnodesQuery:
+      name: onodes
+      in: query
+      required: false
+      schema:
+        type: integer
+        format: int32
+        description: |
+          - 서버별 에이전트 그룹 고유 식별자(ID), 쉼표(,)를 구분자로 여러 개 입력 가능
+          - URL encoded 필요: 17079562,352247167 → -17079562%2C352247167
+    StartTimePath:
+      name: stime
+      in: path
+      required: true
+      schema:
+        type: integer
+        format: int64
+        description: 조회 시작 시간(UNIX epoch time, millisecond)
+    EndTimePath:
+      name: etime
+      in: path
+      required: true
+      schema:
+        type: integer
+        format: int64
+        description: 조회 종료 시간(UNIX epoch time, millisecond)
+    MetricTypePath:
+      name: metric_type
+      in: path
+      require: true
+      schema:
+        type: string
+        enum:
+          - thread_count
+          - thread_daemon
+          - thread_peak_count
+          - threadpool_active
+          - threadpool_queue
+          - apdex
+          - tx_caller
+        description: 조회할 수 있는 지표
+    MetricTypeAvgPath:
+      name: metric_type
+      in: path
+      require: true
+      schema:
+        type: string
+        enum:
+          - thread_count
+          - thread_daemon
+          - thread_peak_count
+          - threadpool_active
+          - threadpool_queue
+          - apdex
+        description: 조회할 수 있는 지표
+    OidPath:
+      name: oids
+      in: path
+      required: true
+      schema:
+        type: integer
+        format: int32
+        description: 에이전트 고유 식별자(ID), 쉼표(,)를 구분자로 여러 개 입력 가능
+    CallStaticTypePath:
+      name: metric_type
+      in: path
+      require: true
+      schema:
+        type: string
+        enum:
+          - tx_caller
+          - tx_domain
+        description: 조회할 수 있는 지표
+    FilterkeyPath:
+      name: filterkey
+      in: path
+      required: true
+      schema:
+        type: string
+        enum:
+          - caller_pcode
+          - caller_spec
+          - caller_url
+          - spec
+          - url
+        description: 조회 조건 키
+    FiltervalPath:
+      name: filterval
+      in: path
+      required: true
+      schema:
+        type: string
+        description: 조회 조건 (`filterkey가` `caller_url` 또는 `url`인 경우 base64로 인코딩)
+    TimeMergeQuery:
+      name: timeMerge
+      in: query
+      required: true
+      schema:
+        type: string
+        enum:
+          - avg
+        description: 데이터 집계 방식
+    FilterQuery:
+      name: filter
+      in: query
+      required: true
+      schema:
+        type: string
+        enum:
+          - m5
+          - s5
+          - h1
+    AOidQuery:
+      name: oid
+      in: query
+      required: true
+      schema:
+        type: integer
+        format: int32
+        description: 에이전트 고유 식별자(ID)
+    BaseTimeQuery:
+      name: baeTime
+      in: query
+      required: true
+      schema:
+        type: string
+        format: yyyyMMdd
+        description: 기준 시간
+    CompareTimeQuery:
+      name: comparisonTime
+      in: query
+      required: true
+      schema:
+        type: string
+        format: yyyyMMdd
+        description: 비교 시간
+    OidQuery:
+      name: oids
+      in: query
+      required: true
+      schema:
+        type: integer
+        format: int32
+        description: 에이전트 고유 식별자(ID), 쉼표(,)를 구분자로 여러 개 입력 가능
+    PeriodQuery:
+      name: period
+      in: query
+      required: true
+      schema:
+        type: string
+        enum:
+          - day
+          - weak
+        description: 조회 기간
+    DateQuery:
+      name: date
+      in: query
+      required: true
+      schema:
+        type: string
+        format: yyyyMMdd
+        description: 기준 시간
+    TopNQuery:
+      name: topN
+      in: query
+      required: false
+      schema:
+        type: number
+        format: 1 -1000
+        default: 10
+        description: 상위 건수
+    OrderQuery:
+      name: order
+      in: query
+      required: false
+      schema:
+        type: string
+        default: sql_execute_cnt
+        enum:
+          - sql_execute_cnt
+          - sql_elapse
+          - sql_elapse_max
+        description: 정렬 순서
+    CategoryQuery:
+      name: category
+      in: query
+      required: false
+      schema:
+        type: string
+        default: ALL
+        enum:
+          - ALL
+          - DB
+          - HOST
+          - USER
+        description: 카테고리를 `USER`로 선택하면 사용자 기준으로 SQL 통계 데이터 응답
+    NameInCategoryQuery:
+      name: nameInCategory
+      in: query
+      required: false
+      schema:
+        type: string
+      description: 파라미터로 `category`를 선택하면 추가
+  schemas:
+    APM:
+      type: object
+      properties:
+        platform:
+          type: string
+          description: 애플리케이션 제품 플랫폼
+        createTime:
+          type: string
+          description: 프로젝트 생성 날짜
+        gatewayName:
+          type: string
+          description: 데이터 서버 지역
+        projectCode:
+          type: number
+          description: 프로젝트 코드
+        status:
+          type: string
+          enum:
+            - pending
+            - trial
+            - subscribe
+            - close_pending
+            - limited
+            - closed
+            - trial_limited
+          description: 프로젝트 상태
+        lastUpdatedTime:
+          type: string
+          description: 프로젝트 수정 날짜
+        name:
+          type: string
+          description: 프로젝트 이름
+        productType:
+          type: string
+          description: 애플리케이션 제품 유형
+    Server:
+      type: object
+      properties:
+        pname:
+          type: string
+          description: 프로젝트 이름
+        timezone:
+          type: integer
+          description: 서버의 위치가 설정된 표준 시간대
+        regionName:
+          type: string
+          description: 데이터 서버 지역
+        values:
+          type: object
+          properties:
+            servers:
+              type: array
+              items:
+                type: object
+                properties:
+                  public_ip:
+                    type: string
+                    format: ipv4
+                    description: 외부에서 접속할 수 있는 IP 주소
+                  os_cpuvendor:
+                    type: string
+                    description: 서버에 탑재된 CPU 제조사 및 이름
+                  agent_created:
+                    type: string
+                    format: date-time
+                    description: 에이전트 생성 날짜
+                  ip:
+                    type: string
+                    format: ipv4
+                    description: 내부에서 접근할 수 있는 IP 주소
+                  os_arch:
+                    type: string
+                    description: 운영체제 아키텍쳐
+                  actTime:
+                    type: integer
+                    format: int64
+                    description: 에이전트 활성화 시간(ms)
+                  cpu_cores:
+                    type: string
+                    description: CPU 코어 갯수
+                  oid:
+                    type: integer
+                    description: 에이전트 고유 식별자(ID)
+                  isActive:
+                    type: boolean
+                    description: 활성화 상태 여부
+                  okind:
+                    type: string
+                    description: 종류별 에이전트 그룹 이름
+                  version:
+                    type: string
+                    description: 에이전트 버전
+                  tags:
+                    type: array
+                  inactTime:
+                    type: integer
+                    description: 에이전트 비활성화 시간
+                  oname:
+                    type: string
+                    description: 에이전트 이름
+                  os_name:
+                    type: string
+                    description: 운영체제 이름
+                  startTime:
+                    type: string
+                    format: date-time
+                    description: 에이전트 시작 시간
+                  os_memory:
+                    type: string
+                    description: 운영체제의 메모리 용량
+                  os_status:
+                    type: string
+                    description: 운영체제의 상태
+    getApmAllinfo:
+      type: object
+      properties:
+        pcode:
+          type: integer
+          description: 프로젝트 코드
+        act_agent:
+          type: string
+          description: 활성화 상태의 에이전트 수
+        inact_agent:
+          type: string
+          description: 비활성화 상태의 에이전트 수
+        host:
+          type: string
+          description: 호스트(HOST) 수
+        cpucore:
+          type: string
+          description: 호스트의 CPU 코어 수 합계
+        txcount:
+          type: string
+          description: 트랜잭션 갯수
+        tps:
+          type: string
+          description: TPS
+        user:
+          type: string
+          description: 액티브 사용자(5분)
+        actx:
+          type: string
+          description: 액티브 트랜잭션
+        rtime:
+          type: string
+          description: 평균 응답시간(ms)
+        cpu:
+          type: string
+          description: 평균 CPU 사용률(%)
+        threadpool_active:
+          type: string
+          description: 스레드풀 활성 스레드 수
+        threadpool_queue:
+          type: string
+          description: 스레드풀 큐잉 스레드 수
+        dbconn_total:
+          type: string
+          description: 전체 DB Connection 수
+        dbconn_act:
+          type: string
+          description: 활성(Active) 상태의 DB Connection 수
+        dbconn_idle:
+          type: string
+          description: 유휴(Idle) 상태의 DB Connection 수
+        act_method:
+          type: string
+          description: 활성 메소드(Method) 수
+        act_sql:
+          type: string
+          description: 활성 SQL 수
+        act_httpc:
+          type: string
+          description: 활성 HTTP Call 수
+        act_dbc:
+          type: string
+          description: 활성 데이터베이스 커넥션 수
+        act_socket:
+          type: string
+          description: 활성 소켓(Socket) 연결 수
+        apdex:
+          type: string
+          description: Apdex(Application Performance Index, 애플리케이션의 사용자 만족도)
+    ExceptionRecord:
+      type: object
+      properties:
+        reocrds:
+          type: array
+          items:
+            type: object
+            properties:
+              oids:
+                type: string
+                description: 에이전트 고유 식별자(ID)
+              time:
+                type: integer
+                format: int64
+                description: 예외 발생 시간 (UNIX epoch time, millisecond)
+              classHash:
+                type: integer
+                description: 예외 클래스의 해시 코드
+              count:
+                type: integer
+                description: 해당 시간에 발생한 예외의 수
+              service:
+                type: string
+                description: 예외가 발생한 서비스 경로
+              class:
+                type: string
+                description: 예외 클래스명
+              serviceHash:
+                type: integer
+                description: 서비스 경로의 해시 코드
+              snapSeq:
+                type: string
+                description: 스냅샷 시퀀스 번호
+              msg:
+                type: string
+                description: 예외 메시지
+        total:
+          type: integer
+          description: 전체 예외 레코드 수
+    HttpcRecord:
+      type: object
+      properties:
+        records:
+          type: array
+          items:
+            type: object
+            properties:
+              Sum:
+                type: integer
+                description: 총 처리 시간(ms)
+              Port:
+                type: integer
+                description: 연결 포트 번호
+              Url:
+                type: string
+                description: 요청 URL
+              Host:
+                type: string
+                description: 호스트 주소
+              Max:
+                type: integer
+                description: 최대 응답시간(ms)
+              Stdev:
+                type: string
+                description: 표준 편차
+              Actived:
+                type: integer
+                description: 현재 활성 상태의 연결 수
+              Avg:
+                type: integer
+                description: 평균 응답시간(ms)
+              HostHash:
+                type: integer
+                description: 호스트 해시 코드
+              Min:
+                type: integer
+                description: 최소 응답시간(ms)
+              Error:
+                type: integer
+                description: 에러 수
+              Total:
+                type: integer
+                description: 총 요청 수
+              UrlHash:
+                type: integer
+                description: URL 해시 코드
+        total:
+          type: integer
+          description: 총 HTTP 연결 레코드 수
+    SqlQueryRecord:
+      type: object
+      properties:
+        records:
+          type: array
+          items:
+            type: object
+            properties:
+              time_max:
+                type: integer
+                description: 최대 처리 시간(ms)
+              dbcHash:
+                type: integer
+                description: 데이터베이스 연결 해시 코드
+              db:
+                type: string
+                description: 연결된 데이터베이스 정보
+              time_min:
+                type: integer
+                description: 최소 처리 시간(ms)
+              fetch_count:
+                type: integer
+                description: 패치된 총 행 수
+              hash:
+                type: integer
+                description: SQL 해시 코드
+              fetch_time:
+                type: integer
+                description: 패치 시간(ms)
+              sql_crud:
+                type: integer
+                description: >-
+                  SQL CRUD 작업 유형 (0 - none, 1 - create, 2 - read, 3 - update, 4
+                  - delete)
+              count_total:
+                type: integer
+                description: 총 실행 횟수
+              count_error:
+                type: integer
+                description: 오류 발생 횟수
+              sql:
+                type: string
+                description: 실행된 SQL 쿼리
+              time_sum:
+                type: integer
+                description: 총 처리 시간(ms)
+              time_avg:
+                type: integer
+                description: 평균 처리 시간(ms)
+              time_std:
+                type: string
+                description: 처리 시간의 표준 편차
+              count_actived:
+                type: integer
+                description: 현재 활성 상태의 연결 수
+        total:
+          type: integer
+          description: 총 SQL 쿼리 레코드 수
+    RemoteClientIpRecord:
+      type: object
+      properties:
+        records:
+          type: array
+          items:
+            type: object
+            properties:
+              count:
+                type: integer
+                description: 해당 IP에서 발생한 이벤트 수
+              city:
+                type: string
+                description: 클라이언트의 도시
+              country:
+                type: string
+                description: 클라이언트의 국가 코드 및 국가 이름
+              ip:
+                type: string
+                description: 클라이언트의 IP 주소
+        total:
+          type: integer
+          description: 총 원격 클라이언트 IP 레코드 수
+    TransactionsRecord:
+      type: object
+      properties:
+        records:
+          type: array
+          items:
+            type: object
+            properties:
+              apdex_tolerated:
+                type: integer
+                description: 허용된 응답시간의 Apdex 평가 수
+              apdex_satisfied:
+                type: integer
+                description: 만족스러운 응답시간의 Apdex 평가 수
+              apdex:
+                type: number
+                format: double
+                description: Apdex 점수
+              time_max:
+                type: integer
+                description: 최대 처리 시간(ms)
+              sql_fetch_time:
+                type: integer
+                description: SQL 패치 시간(ms)
+              sql_time:
+                type: integer
+                description: SQL 처리 총 시간(ms)
+              count:
+                type: integer
+                description: 총 트랜잭션 수
+              error:
+                type: integer
+                description: 오류 발생 수
+              sql_count:
+                type: integer
+                description: 실행된 SQL 명령 수
+              hash:
+                type: integer
+                description: 트랜잭션 해시 코드
+              sql_fetch:
+                type: integer
+                description: SQL 패치된 총 데이터 수
+              httpc_avg:
+                type: integer
+                description: HTTP 연결 평균 응답시간(ms)
+              cpu_avg:
+                type: integer
+                description: 평균 CPU 사용량
+              time_sum:
+                type: integer
+                description: 총 처리 시간(ms)
+              time_avg:
+                type: integer
+                description: 평균 처리 시간(ms)
+              httpc_count:
+                type: integer
+                description: HTTP 요청 수
+              service:
+                type: string
+                description: 서비스 경로
+              mem_avg:
+                type: integer
+                description: 평균 메모리 사용량
+        total:
+          type: integer
+          description: 총 트랜잭션 레코드 수
+    HeapUsageRecord:
+      type: object
+      properties:
+        pcode:
+          type: integer
+          description: 프로젝트 코드
+        stime:
+          type: integer
+          format: int64
+          description: 조회 시작 시간(UNIX epoch time, millisecond)
+        etime:
+          type: integer
+          format: int64
+          description: 조회 종료 시간(UNIX epoch time, millisecond)
+        timeMerge:
+          type: string
+          description: 데이터 집계 방식(avg 또는 max)
+        unit:
+          type: string
+          description: Heap 사용량 단위(예, byte)
+        data:
+          type: array
+          items:
+            type: object
+            properties:
+              oid:
+                type: integer
+                description: 에이전트 고유 식별자(ID)
+              oname:
+                type: string
+                description: 에이전트 이름
+              heap_use:
+                type: string
+                format: float
+                description: Heap 메모리 사용양
+    AgentEachdata:
+      type: object
+      properties:
+        pcode:
+          type: integer
+          description: 프로젝트 코드
+        type:
+          type: string
+          enum:
+            - thread_count
+            - thread_daemon
+            - thread_peak_count
+            - threadpool_active
+            - threadpool_queue
+            - apdex
+            - tx_caller
+          description: 조회할 수 있는 지표
+        stime:
+          type: integer
+          format: int64
+          description: 조회 시작 시간(UNIX epoch time, millisecond)
+        etime:
+          type: integer
+          format: int64
+          description: 조회 종료 시간(UNIX epoch time, millisecond)
+        interval:
+          type: integer
+          description: 데이터 포인트 간격(초)
+        timeMerge:
+          type: string
+          description: 데이터 집계 방식(sum)
+        objects:
+          type: array
+          items:
+            type: object
+            properties:
+              oname:
+                type: string
+                description: 에이전트 이름
+              oid:
+                type: integer
+                description: 에이전트 고유 식별자(ID)
+              series:
+                type: array
+                items:
+                  type: array
+                  items:
+                    - type: integer
+                      format: int64
+                      description: 시계열 timestamp
+                    - type: number
+                      format: float
+                      description: 조회 데이터
+    AgentEachAvgdata:
+      type: object
+      properties:
+        pcode:
+          type: integer
+          description: 프로젝트 코드
+        type:
+          type: string
+          enum:
+            - thread_count
+            - thread_daemon
+            - thread_peak_count
+            - threadpool_active
+            - threadpool_queue
+            - apdex
+          description: 조회할 수 있는 지표
+        stime:
+          type: integer
+          format: int64
+          description: 조회 시작 시간(UNIX epoch time, millisecond)
+        etime:
+          type: integer
+          format: int64
+          description: 조회 종료 시간(UNIX epoch time, millisecond)
+        interval:
+          type: integer
+          description: 데이터 포인트 간격(초)
+        timeMerge:
+          type: string
+          description: 데이터 집계 방식(sum)
+        objectMerge:
+          type: string
+          description: 데이터 병합 방식(avg)
+        series:
+          type: array
+          items:
+            type: array
+            items:
+              - type: integer
+                format: int64
+                description: 시계열 timestamp
+              - type: number
+                format: float
+                description: 에이전트 평균 데이터
+    VisitorStatic5mRecord:
+      type: object
+      properties:
+        data:
+          type: array
+          items:
+            type: array
+            items:
+              - type: integer
+                format: int64
+                description: 5분 단위(5✕60✕1000, ms)
+              - type: integer
+                description: 시간당 방문자 수
+        pcode:
+          type: integer
+          description: 프로젝트 코드
+        stime:
+          type: integer
+          format: int64
+          description: 조회 시작 시간(UNIX epoch time, millisecond)
+        etime:
+          type: integer
+          format: int64
+          description: 조회 종료 시간(UNIX epoch time, millisecond)
+        total:
+          type: integer
+          description: 총 방문자 수
+    VisitorStaticHRecord:
+      type: object
+      properties:
+        data:
+          type: array
+          items:
+            type: array
+            items:
+              - type: integer
+                format: int64
+                description: 1시간 단위(60✕60✕1000, ms)
+              - type: integer
+                description: 시간당 방문자 수
+        pcode:
+          type: integer
+          description: 프로젝트 코드
+        stime:
+          type: integer
+          format: int64
+          description: 조회 시작 시간(UNIX epoch time, millisecond)
+        etime:
+          type: integer
+          format: int64
+          description: 조회 종료 시간(UNIX epoch time, millisecond)
+        total:
+          type: integer
+          description: data 배열의 총 개수
+    VisitorStaticDayRecord:
+      type: object
+      properties:
+        data:
+          type: array
+          items:
+            type: array
+            items:
+              - type: integer
+                format: int64
+                description: 1일 단위(24✕60✕60✕1000, ms)
+              - type: integer
+                description: 1일 당 방문자 수
+        pcode:
+          type: integer
+          description: 프로젝트 코드
+        stime:
+          type: integer
+          format: int64
+          description: 조회 시작 시간(UNIX epoch time, millisecond)
+        etime:
+          type: integer
+          format: int64
+          description: 조회 종료 시간(UNIX epoch time, millisecond)
+        total:
+          type: integer
+          description: 총 방문자 수
+    VisitorStaticMonthRecord:
+      type: object
+      properties:
+        data:
+          type: array
+          description: 각 월별 사용자 통계 데이터
+          items:
+            type: object
+            properties:
+              stime:
+                type: integer
+                format: int64
+                description: 해당 월의 시작 시간, 월 1일 시각(24✕60✕60✕1000)
+              etime:
+                type: integer
+                format: int64
+                description: 해당 월의 종료 시간, 월 1일 시각(24✕60✕60✕1000)
+              sdate:
+                type: string
+                description: 해당 월의 시작 날짜(문자열 형태)
+              edate:
+                type: string
+                description: 해당 월의 종료 날짜(문자열 형태)
+              mau:
+                type: integer
+                description: 해당 월의 월간 활성 사용자 수(MAU)
+        pcode:
+          type: integer
+          description: 프로젝트 코드
+        stime:
+          type: integer
+          format: int64
+          description: 조회 시작 시간(UNIX epoch time, millisecond)
+        etime:
+          type: integer
+          format: int64
+          description: 조회 종료 시간(UNIX epoch time, millisecond)
+        sdate:
+          type: string
+          description: 조회 시작 시간의 문자열 표현
+        edate:
+          type: string
+          description: 조회 종료 시간의 문자열 표현
+        total:
+          type: integer
+          description: 총 방문자 수
+    ConnectionDetail:
+      type: object
+      properties:
+        oid:
+          type: integer
+          description: 에이전트 고유 식별자(ID)
+        oname:
+          type: string
+          description: 에이전트 이름
+        databaseUrl:
+          type: string
+          description: 데이터베이스 URL
+        active:
+          type: integer
+          description: 활성화 DB connection 수
+        idle:
+          type: integer
+          description: 비활성화 DB connection 수
+        total:
+          type: integer
+          description: 총 DB connection 수 (`active` + `idle`)
+    ApmDBconnCount:
+      type: object
+      properties:
+        pcode:
+          type: integer
+          description: 프로젝트 코드
+        time:
+          type: integer
+          format: int64
+          description: 조회 시간
+        dbc_total:
+          type: array
+          items:
+            $ref: '#/components/schemas/ConnectionDetail'
+    ServerAgentCount:
+      type: object
+      properties:
+        pname:
+          type: string
+          description: 프로젝트 이름
+        values:
+          type: string
+          description: 개수
+    ServerCpuUsage:
+      type: object
+      properties:
+        pcode:
+          type: integer
+          description: 프로젝트 코드
+        pname:
+          type: string
+          description: 프로젝트 이름
+        timezone:
+          type: integer
+          description: 타임존
+        regionName:
+          type: string
+          description: 데이터 서버 지역
+        values:
+          type: object
+          additionalProperties:
+            type: number
+            format: float
+          description: 서버별 CPU 사용률(%)
+        language:
+          type: string
+          description: 경고 알림 언어
+    ServerDiskIOPS:
+      type: object
+      properties:
+        pcode:
+          type: integer
+          description: 프로젝트 코드
+        pname:
+          type: string
+          description: 프로젝트 이름
+        timezone:
+          type: integer
+          description: 타임존
+        regionName:
+          type: string
+          description: 데이터 서버 지역
+        values:
+          type: object
+          additionalProperties:
+            type: object
+            description: 호스트 이름
+            properties:
+              bps:
+                type: number
+                format: float
+                description: Bytes Per Second
+              iops:
+                type: number
+                format: float
+                description: Disk Input/Output Operations Per Second
+        language:
+          type: string
+          description: 경고 알림 언어
+    ServerNetworkTraffic:
+      type: object
+      properties:
+        pcode:
+          type: integer
+          description: 프로젝트 코드
+        pname:
+          type: string
+          description: 프로젝트 이름
+        timezone:
+          type: integer
+          description: 타임존
+        regionName:
+          type: string
+          description: 데이터 서버 지역
+        values:
+          type: object
+          additionalProperties:
+            type: number
+            format: float
+            description: 각 호스트의 네트워크 트래픽 합계(byte)
+        language:
+          type: string
+          description: 경고 알림 언어
+    ServerProc:
+      type: object
+      properties:
+        pname:
+          type: string
+          description: 프로젝트 이름
+        values:
+          type: object
+          additionalProperties:
+            type: array
+            items:
+              type: object
+              properties:
+                memoryBytes:
+                  type: integer
+                  format: int64
+                  description: 프로세스가 사용하는 메모리 양(byte)
+                bps:
+                  type: number
+                  format: float
+                  description: Bytes Per Second
+                cmd1:
+                  type: string
+                  description: 프로세스 이름
+                cpu:
+                  type: number
+                  format: float
+                  description: 프로세스 CPU 사용량(%)
+        language:
+          type: string
+          description: 경고 알림 언어
+    ServerList:
+      type: object
+      properties:
+        pcode:
+          type: integer
+          description: 프로젝트 코드
+        pname:
+          type: string
+          description: 프로젝트 이름
+        timezone:
+          type: integer
+          description: 타임존
+        regionName:
+          type: string
+          description: 데이터 서버 지역
+        values:
+          type: array
+          items:
+            type: object
+            properties:
+              os.status:
+                type: string
+                description: 운영체제의 상태
+              oname:
+                type: string
+                description: 서버 이름
+              os.name:
+                type: string
+                description: 운영체제 이름
+              oid:
+                type: integer
+                description: 에이전트 고유 식별자(ID)
+              isActive:
+                type: boolean
+                description: 에이전트의 활성화 상태
+        language:
+          type: string
+          description: 경고 알림 언어
+    ServerStatDetails:
+      type: object
+      description: 서버 통계 응답 데이터 구조
+      properties:
+        servers:
+          type: array
+          items:
+            type: object
+            properties:
+              oid:
+                type: integer
+                description: 에이전트 고유 식별자(ID)
+              timeData:
+                type: array
+                items:
+                  type: object
+                  properties:
+                    usedPercent:
+                      type: number
+                      format: float
+                      description: 저장 공간 사용률
+                    trafficIn:
+                      type: number
+                      format: float
+                      description: Inbound traffic
+                    trafficOut:
+                      type: number
+                      format: float
+                      description: Outbound traffic
+                    cpu:
+                      type: number
+                      format: float
+                      description: CPU 사용률(%)
+                    memory_swappused:
+                      type: number
+                      format: float
+                      description: 스왑 메모리 사용량(%)
+                    time:
+                      type: integer
+                      format: int64
+                      description: 데이터 포인트의 시간(UNIX epoch time, millisecond)
+                    memory_pused:
+                      type: number
+                      format: float
+                      description: 물리 메모리 사용률(%)
+                    ioPercent:
+                      type: number
+                      format: float
+                      description: 입출력 작업의 CPU 사용률(%)
+    UnmatchedKey:
+      type: object
+      properties:
+        key:
+          type: string
+          description: 파라미터의 키
+        value:
+          type: object
+          properties:
+            baseTime:
+              type: string
+              description: 기준 시간에서의 값
+            comparisonTime:
+              type: string
+              description: 비교 시간에서의 값
+    MatchedParameter:
+      type: object
+      properties:
+        key:
+          type: string
+          description: 파라미터의 키
+        value:
+          type: string
+          description: 파라미터의 값
+    SqlRecord:
+      type: object
+      properties:
+        sql_execute_cnt:
+          type: integer
+          description: SQL 실행 횟수
+        sql_elapse:
+          type: integer
+          description: SQL 실행에 소요된 총 시간(ms)
+        sqlHash:
+          type: integer
+          description: SQL 문의 해시값
+        sql_elapse_max:
+          type: integer
+          description: SQL 실행에 소요된 최대 시간(ms)
+        onames:
+          type: string
+          description: SQL이 실행된 데이터베이스 서버 이름
+        user:
+          type: string
+          description: SQL을 실행한 사용자 이름
+        sql:
+          type: string
+          description: 실행된 SQL 문
+    TopSqlStatisticsRecords:
+      type: object
+      properties:
+        records:
+          type: array
+          items:
+            $ref: '#/components/schemas/SqlRecord'
+        topN:
+          type: integer
+          description: 요청된 TopN 값
+        total:
+          type: integer
+          description: 전체 기록된 SQL 목록 수
+        retrievedStartTime:
+          type: integer
+          format: int64
+          description: 조회 기간의 시작 시간
+        retrievedEndTime:
+          type: integer
+          format: int64
+          description: 조회 기간의 종료 시간
+    MXQLRequest:
+      type: object
+      required:
+        - stime
+        - etime
+        - mql
+        - limit
+        - pageKey
+      properties:
+        stime:
+          type: integer
+          format: int64
+          description: 조회 시작 시간(UNIX epoch time, millisecond)
+        etime:
+          type: integer
+          format: int64
+          description: 조회 종료 시간(UNIX epoch time, millisecond)
+        mql:
+          type: string
+          description: 직접 작성한 MXQL 쿼리
+        limit:
+          type: integer
+          description: 최대 데이터 조회 수
+        pageKey:
+          type: string
+          description: 문자열 `mxql` 고정값
+        inject:
+          type: object
+          additionalProperties: true
+          description: >
+            [다음 문서](../mxql/mxql-calculate#inject) 참조<br/>예시, `{ "default":
+            "ORDER {key : [oid],  sort : [desc] }"}`
+        param:
+          type: object
+          additionalProperties: true
+          description: >
+            [다음 문서](../mxql/mxql-guide#bind-parameter) 참조<br/> 예시 : `{
+            "$oidFirst": "520111224", "$oidSecond": "1031483086" }`
+    MXQLtextResponse:
+      type: object
+      properties:
+        time:
+          type: integer
+          format: int64
+          description: 데이터 기록 시간
+        pcode:
+          type: integer
+          description: 프로젝트 코드
+        pname:
+          type: string
+          description: 프로젝트 이름
+        okind:
+          type: integer
+          description: 종류별 에이전트 그룹 고유 식별자(ID)
+        onode:
+          type: integer
+          description: 서버별 에이전트 그룹 고유 식별자(ID)
+        oname:
+          type: string
+          description: 에이전트 이름
+        okindName:
+          type: string
+          description: 종류별 에이전트 그룹 이름
+        onodeName:
+          type: string
+          description: 서버별 에이전트 그룹 이름
+        host_ip:
+          type: string
+          description: 호스트 IP 주소
+        container:
+          type: string
+          description: 컨테이너 식별자
+        pid:
+          type: integer
+          description: 프로세스 ID
+        type:
+          type: string
+          description: 플랫폼 종류
+        containerKey:
+          type: integer
+          description: 컨테이너 키
+        tx_count:
+          type: integer
+          description: 트랜잭션 수
+        tx_error:
+          type: integer
+          description: 에러가 발생한 트랜잭션 수
+        tx_time:
+          type: number
+          format: double
+          description: 트랜잭션 처리 시간
+        apdex_satisfied:
+          type: integer
+          description: Apdex - 만족 S
+        apdex_tolerated:
+          type: integer
+          description: Apdex - 허용 T
+        apdex_total:
+          type: integer
+          description: Apdex
+        tx_dbc_time:
+          type: number
+          format: double
+          description: 데이터베이스 커넥션에 소요된 시간
+        tx_sql_time:
+          type: number
+          format: double
+          description: SQL 처리 시간
+        tx_httpc_time:
+          type: number
+          format: double
+          description: HTTP 클라이언트 처리 시간
+        sql_count:
+          type: integer
+          description: SQL 쿼리 수
+        sql_error:
+          type: integer
+          description: 에러가 발생한 SQL 쿼리 수
+        sql_time:
+          type: number
+          format: double
+          description: SQL 처리 시간
+        sql_fetch_count:
+          type: integer
+          description: SQL 패치 횟수
+        sql_fetch_time:
+          type: number
+          format: double
+          description: SQL 패치 시간
+        httpc_count:
+          type: integer
+          description: HTTP 클라이언트 요청 수
+        httpc_error:
+          type: integer
+          description: 에러가 발생한 HTTP 클라이언트 요청 수
+        httpc_time:
+          type: number
+          format: double
+          description: HTTP 클라이언트 처리 시간
+        active_tx_count:
+          type: integer
+          description: 액티브 트랜잭션 수
+        active_tx_0:
+          type: integer
+          description: 3초 미만 액티브 트랜잭션
+        active_tx_3:
+          type: integer
+          description: 3초 이상 액티브 트랜잭션
+        active_tx_8:
+          type: integer
+          description: 8초 이상 액티브 트랜잭션
+        tps:
+          type: number
+          format: double
+          description: 초당 트랜잭션 처리 수
+        resp_time:
+          type: integer
+          description: 응답시간
+        arrival_rate:
+          type: number
+          format: double
+          description: 초당 도착률
+        pack_dropped:
+          type: integer
+          description: 드롭된 패킷 수
+        metering:
+          type: integer
+          description: 미터링
+        _clock_delta_:
+          type: integer
+          description: 시계 차이
+        oid:
+          type: integer
+          description: 에이전트 고유 식별자(ID)
+    MXQLPathResponse:
+      type: object
+      properties:
+        pcode:
+          type: integer
+          description: 프로젝트 코드
+        pname:
+          type: string
+          description: 프로젝트 이름
+        oid:
+          type: integer
+          description: 에이전트 고유 식별자(ID)
+        oname:
+          type: string
+          description: 에이전트 이름
+        otype:
+          type: string
+          description: 에이전트 타입
+        okind:
+          type: integer
+          description: 종류별 에이전트 그룹 고유 식별자(ID)
+        okindName:
+          type: string
+          description: 종류별 에이전트 그룹 이름
+        onode:
+          type: integer
+          description: 서버별 에이전트 그룹 고유 식별자(ID)
+        onodeName:
+          type: string
+          description: 서버별 에이전트 그룹 이름
+        type:
+          type: string
+          description: 제품 종류
+        subtype:
+          type: string
+          description: 플랫폼 종류
+        version:
+          type: string
+          description: 버전 정보
+        os_name:
+          type: string
+          description: 운영체제 이름
+        ip:
+          type: string
+          description: IP 주소
+        container_id:
+          type: integer
+          description: 컨테이너 ID
+        metering:
+          type: integer
+          description: 미터링
+        status:
+          type: string
+          description: 상태 정보
+        normal:
+          type: integer
+          description: 정상 처리된 트랜잭션 수
+        slow:
+          type: integer
+          description: 느린 트랜잭션 수
+        verySlow:
+          type: integer
+          description: 매우 느린 트랜잭션 수
+        total:
+          type: integer
+          description: 총 트랜잭션 수
+        _pk_:
+          type: string
+          description: inject
