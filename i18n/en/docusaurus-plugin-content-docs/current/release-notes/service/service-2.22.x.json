@@ -1,6 +1,21 @@
 [
     {
         "url": "https://docs.whatap.io/release-notes/service/service-2_22_x",
+        "ver": "Service 2.22.2",
+        "date": "2025-10-31",
+        "Lists": [
+            {
+            "ver": "Service 2.22.2",
+            "hash": "service-2222",
+            "product": "Database",
+            "category": "Tibero",
+            "type": "Fixed",
+            "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Fixed an issue in <span class=\"uitext\">Statistics/Reports</span> > <span class=\"uitext\">Tablespace Size</span> where data was not displayed.</p>"
+            }
+        ]
+    },      
+    {
+        "url": "https://docs.whatap.io/release-notes/service/service-2_22_x",
         "ver": "Service 2.22.1",
         "date": "2025-10-30",
         "Lists": [
