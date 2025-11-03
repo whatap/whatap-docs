@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
     inputs:
       locales:
-        description: "Locale to build (e.g. 'ko' or 'en' or 'ja' or 'all')"
+        description: "빌드할 언어 (ko/en/ja/all)"
         default: "ko"
         required: false
 
