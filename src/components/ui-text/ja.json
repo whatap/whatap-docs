@@ -4876,6 +4876,7 @@
   "exit": "閉じる",
   "show_only_content": "コンテンツのみ表示",
   "metricsExplorer": "メトリクスエクスプローラー",
+  "metrics_trend_analysis": "メトリクス推移分析",
   "keyword_count": "キーワード数",
   "master_yard_m5_retention": "マスターヤードの5分データ保存期間",
   "master_yard_h1_retention": "マスターヤードの1時間データ保存期間",

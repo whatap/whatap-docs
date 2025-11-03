@@ -4876,6 +4876,7 @@
   "exit": "나가기",
   "show_only_content": "Content만 보기",
   "metricsExplorer": "메트릭스 탐색기",
+  "metrics_trend_analysis": "메트릭스 추이 분석",
   "keyword_count": "키워드 횟수",
   "master_yard_m5_retention": "마스터 야드의 5분 데이터 보존기간",
   "master_yard_h1_retention": "마스터 야드의 1시간 데이터 보존기간",

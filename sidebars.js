@@ -2245,6 +2245,7 @@ const sidebars = {
             'oracle/metrics-chart',
             'oracle/metrics-search',
             'oracle/metrics-detect-anormal',
+            'oracle/metrics-trend-analysis',
           ]
         },
         {
