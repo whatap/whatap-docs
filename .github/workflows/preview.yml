@@ -3,9 +3,10 @@ name: Deploy to GitHub Pages
 on:
   workflow_dispatch:
     inputs:
-      name:
-        description: "Deployment?"
-        default: "WhaTap"
+      locales:
+        description: "Locale to build (e.g. 'ko' or 'en' or 'ja' or 'all')"
+        default: "ko"
+        required: false
 
 permissions:
   contents: write
@@ -30,22 +31,43 @@ jobs:
         run: yarn install --frozen-lockfile
 
       # ⚡️ Docusaurus / Rspack 캐시 복원
-      # 캐시 경로는 프로젝트/버전에 따라 다를 수 있지만 보편적으로 아래 두 곳을 씀
       - name: Restore build caches (Docusaurus/Rspack)
+        id: cache
         uses: actions/cache@v4
         with:
           path: |
             .docusaurus
             node_modules/.cache/rspack
-          # 사이트 구조/번들러 설정이 크게 바뀌면 캐시 무효화되도록 lockfile + 주요 설정 파일을 키에 반영
-          key: docusaurus-${{ runner.os }}-${{ hashFiles('yarn.lock', 'docusaurus.config.*', 'sidebars.*') }}
+          key: docusaurus-${{ runner.os }}-node20-${{ hashFiles('yarn.lock','docusaurus.config.*','sidebars.*') }}
           restore-keys: |
-            docusaurus-${{ runner.os }}-
+            docusaurus-${{ runner.os }}-node20-
+
+      # 🔎 어떤 빌드 커맨드를 쓸지 결정
+      - name: Decide build command from input locales
+        run: |
+          LOCALES="${{ github.event.inputs.locales }}"
+          # 입력값이 없으면 기본값 'ko' 사용 (안전장치)
+          LOCALES="${LOCALES:-ko}"
+          echo "Input locales: '${LOCALES}'"
+
+          if [ "$LOCALES" = "all" ]; then
+            echo "BUILD_CMD=yarn build" >> $GITHUB_ENV
+            echo "✅ Building ALL locales"
+          else
+            echo "BUILD_CMD=yarn build --locale ${LOCALES}" >> $GITHUB_ENV
+            echo "✅ Building SINGLE locale: ${LOCALES}"
+          fi
+
+      - name: Inspect caches (optional)
+        run: |
+          echo "cache-hit: ${{ steps.cache.outputs.cache-hit }}"
+          du -sh .docusaurus || true
+          du -sh node_modules/.cache/rspack || true
 
       - name: Build website
         env:
           NODE_OPTIONS: --max-old-space-size=12288
-        run: yarn build
+        run: $BUILD_CMD
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3

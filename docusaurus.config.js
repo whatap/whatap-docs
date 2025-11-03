@@ -23,6 +23,7 @@ const config = {
       rspackBundler: true,
       rspackPersistentCache: true,
       ssgWorkerThreads: true,
+      mdxCrossCompilerCache: true,
     },
   },
   baseUrl: "/whatap-docs/",
