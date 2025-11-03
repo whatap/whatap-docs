@@ -1,22 +1,30 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
 
-const {themes} = require('prism-react-renderer');
+const { themes } = require("prism-react-renderer");
 const lightTheme = themes.github;
 const darkTheme = themes.dracula;
-const {rehypeExtendedTable} = require("rehype-extended-table");
+const { rehypeExtendedTable } = require("rehype-extended-table");
 // const rehypeSectionHeadings = require("rehype-section-headings");
-const isDev = process.env.NODE_ENV === 'development';
+const isDev = process.env.NODE_ENV === "development";
 const locale = process.env.DOCUSAURUS_CURRENT_LOCALE; // 현재 로케일
 
 /** @type {import('@docusaurus/types').Config} */
 
 const config = {
-  title: 'WhaTap Docs',
-  tagline: '와탭 기술 문서 :: WhaTap, 와탭 기술 문서 페이지에 오신 것을 진심으로 환영합니다.',
-  url: 'https://docs.whatap.io',
+  title: "WhaTap Docs",
+  tagline:
+    "와탭 기술 문서 :: WhaTap, 와탭 기술 문서 페이지에 오신 것을 진심으로 환영합니다.",
+  url: "https://docs.whatap.io",
   future: {
-    experimental_faster: isDev ? false : true
+    // experimental_faster: isDev ? false : true
+    v4: true,
+    experimental_faster: {
+      rspackBundler: true,
+      rspackPersistentCache: true,
+      ssgWorkerThreads: true,
+      mdxCrossCompilerCache: true,
+    },
   },
   baseUrl: '/whatap-docs/',
   onBrokenLinks: 'ignore',
@@ -25,56 +33,58 @@ const config = {
   onDuplicateRoutes: 'warn',
   favicon: '/img/whatap-favicon.ico',
   i18n: {
-    defaultLocale: 'ko',
-    locales: [ 'ko', 'en', 'ja' ],
+    defaultLocale: "ko",
+    locales: ["ko", "en", "ja"],
     localeConfigs: {
       ko: {
-        label: 'KOR',
-        direction: 'ltr',
-        htmlLang: 'ko-KR',
+        label: "KOR",
+        direction: "ltr",
+        htmlLang: "ko-KR",
       },
       en: {
-        label: 'ENG',
-        direction: 'ltr',
-        htmlLang: 'en-US',
-        calendar: 'gregory',
-        path: 'en',
+        label: "ENG",
+        direction: "ltr",
+        htmlLang: "en-US",
+        calendar: "gregory",
+        path: "en",
       },
       ja: {
-        label: 'JPN',
-        direction: 'ltr',
-        htmlLang: 'ja-JP',
-        path: 'ja',
+        label: "JPN",
+        direction: "ltr",
+        htmlLang: "ja-JP",
+        path: "ja",
       },
-    }
+    },
   },
   headTags: [
     {
-      tagName: 'meta',
+      tagName: "meta",
       attributes: {
-        name: 'keywords',
-        Content: 'WhaTap, 와탭, 매뉴얼, 사용법, WhaTap 사용법, WhaTap 매뉴얼, 기술 문서, APM, 애플리케이션 모니터링, 로그 모니터링, 쿠버네티스 모니터링, 서버 모니터링, 데이터베이스 모니터링, URL 모니터링, 클라우드 모니터링, 브라우저 모니터링, Browser monitoring, Application Monitoring, Log Monitoring, Kubernetes Monitoring, Server Monitoring, Database Monitoring, URL Monitoring, Cloud Monitoring, Manual, User Guide, Docs, WhaTap Manual, WhaTap Docs, WhaTap Documents, 트랜잭션, Transaction, 트레이싱, Tracing, 마스터, Master, 노드, Node, 데드락, Deadlock, 락 트리, Lock tree, 멀티 트랜잭션, Multi Trancsaction, 메트릭스, Metrics, 소프트웨어 프록시, Software proxy, 스택, Stack, 슬로우 쿼리, Slow query, 액티브 트랜잭션, Active transaction, 컨테이너, Container, 히트맵, Hitmap, Garbage Collection, GC, MXQL, Method 추적, Trace method, OOM Killed 컨테이너, OOM Killed Container, Oracle, Tibero, PostgreSQL, MySQL, MongoDB, SQL Server, CUBRID, Altibase, Redis, WebLogic, WebSphere',
+        name: "keywords",
+        Content:
+          "WhaTap, 와탭, 매뉴얼, 사용법, WhaTap 사용법, WhaTap 매뉴얼, 기술 문서, APM, 애플리케이션 모니터링, 로그 모니터링, 쿠버네티스 모니터링, 서버 모니터링, 데이터베이스 모니터링, URL 모니터링, 클라우드 모니터링, 브라우저 모니터링, Browser monitoring, Application Monitoring, Log Monitoring, Kubernetes Monitoring, Server Monitoring, Database Monitoring, URL Monitoring, Cloud Monitoring, Manual, User Guide, Docs, WhaTap Manual, WhaTap Docs, WhaTap Documents, 트랜잭션, Transaction, 트레이싱, Tracing, 마스터, Master, 노드, Node, 데드락, Deadlock, 락 트리, Lock tree, 멀티 트랜잭션, Multi Trancsaction, 메트릭스, Metrics, 소프트웨어 프록시, Software proxy, 스택, Stack, 슬로우 쿼리, Slow query, 액티브 트랜잭션, Active transaction, 컨테이너, Container, 히트맵, Hitmap, Garbage Collection, GC, MXQL, Method 추적, Trace method, OOM Killed 컨테이너, OOM Killed Container, Oracle, Tibero, PostgreSQL, MySQL, MongoDB, SQL Server, CUBRID, Altibase, Redis, WebLogic, WebSphere",
       },
     },
     {
-      tagName: 'meta',
+      tagName: "meta",
       attributes: {
-        name: 'description',
-        Content: 'WhaTap Docs 페이지입니다. 애플리케이션, 서버, 쿠버네티스, 데이터베이스, 브라우저 등 다양한 모니터링 솔루션의 사용법을 제공합니다.'
-      }
-    },
-    {
-      tagName: 'meta',
-      attributes: {
-        name: 'naver-site-verification',
-        Content: '0c21fc5664a467108fb762ade47a3f81ee9b88ed',
+        name: "description",
+        Content:
+          "WhaTap Docs 페이지입니다. 애플리케이션, 서버, 쿠버네티스, 데이터베이스, 브라우저 등 다양한 모니터링 솔루션의 사용법을 제공합니다.",
       },
     },
     {
-      tagName: 'meta',
+      tagName: "meta",
       attributes: {
-        name: 'google-site-verification',
-        Content: 'rIlfJkbbogFOIDc3DgJZmOGbUMJWytyvZSKEgV7EMsE',
+        name: "naver-site-verification",
+        Content: "0c21fc5664a467108fb762ade47a3f81ee9b88ed",
+      },
+    },
+    {
+      tagName: "meta",
+      attributes: {
+        name: "google-site-verification",
+        Content: "rIlfJkbbogFOIDc3DgJZmOGbUMJWytyvZSKEgV7EMsE",
       },
     },
   ],
@@ -83,25 +93,23 @@ const config = {
     // require.resolve("./src/modules/amplitude.js")
   ],
   plugins: [
-    [ './src/whatap-plugin-facebook', {}],
-    [ './src/whatap-plugin-browser', {}],
-    [ 'docusaurus-plugin-sass', {} ],
+    ["./src/whatap-plugin-facebook", {}],
+    ["./src/whatap-plugin-browser", {}],
+    ["docusaurus-plugin-sass", {}],
     [
-      '@docusaurus/plugin-client-redirects',
+      "@docusaurus/plugin-client-redirects",
       {
         // fromExtensions: ['html', 'htm'],
         redirects: [],
-      }
-    ],
-    [
-      '@docusaurus/plugin-google-tag-manager',
-      {
-        containerId: 'GTM-KT747XQX',
       },
     ],
     [
-      'docusaurus-plugin-image-zoom', {}
+      "@docusaurus/plugin-google-tag-manager",
+      {
+        containerId: "GTM-KT747XQX",
+      },
     ],
+    ["docusaurus-plugin-image-zoom", {}],
   ],
   markdown: {
     mermaid: true,
@@ -113,7 +121,8 @@ const config = {
     parseFrontMatter: async (params) => {
       // Reuse the default parser
       const result = await params.defaultParseFrontMatter(params);
-      const isPartial = params.filePath.includes("/_") || params.filePath.includes("\\_");
+      const isPartial =
+        params.filePath.includes("/_") || params.filePath.includes("\\_");
       if (isPartial) {
         return result;
       }
@@ -129,26 +138,29 @@ const config = {
         result.frontMatter.isTranslationMissing = !isI18n;
       }
       return result;
-    }
+    },
   },
-  themes: [
-    '@docusaurus/theme-mermaid',
-    '@saucelabs/theme-github-codeblock'
-  ],
+  themes: ["@docusaurus/theme-mermaid", "@saucelabs/theme-github-codeblock"],
   presets: [
     [
-      '@docusaurus/preset-classic',
+      "@docusaurus/preset-classic",
       {
         docs: {
-          routeBasePath: '/',
-          sidebarPath: require.resolve('./sidebars.js'),
+          routeBasePath: "/",
+          sidebarPath: require.resolve("./sidebars.js"),
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          rehypePlugins: [ rehypeExtendedTable ],
-          remarkPlugins: [ require("@whatap-docs/remark-sectionize") ],
-          editUrl: 'undefined', // 'https://gitlab.whatap.io/whatap-inc/docs/-/blob/main/',
-          include: [ '**/*.mdx' ],
-          exclude: [ 'weaving/*.mdx', 'weaving/**/*.mdx', 'wip/*.mdx', 'common-items/*.mdx', '**/_*.mdx' ],
+          rehypePlugins: [rehypeExtendedTable],
+          remarkPlugins: [require("@whatap-docs/remark-sectionize")],
+          editUrl: "undefined", // 'https://gitlab.whatap.io/whatap-inc/docs/-/blob/main/',
+          include: ["**/*.{md,mdx}"],
+          exclude: [
+            "weaving/*.mdx",
+            "weaving/**/*.mdx",
+            "wip/*.mdx",
+            "common-items/*.mdx",
+            "**/_*.mdx",
+          ],
           showLastUpdateAuthor: false,
           showLastUpdateTime: false,
           // exclude: [ 'weaving/*.mdx', 'weaving/**/*.mdx', 'wip/*.mdx', 'common-items/*.mdx', '**/_*.mdx', 'release-notes/otel/*.mdx' ],
@@ -159,69 +171,69 @@ const config = {
           showReadingTime: false,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl: 
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-          blogSidebarTitle: '새로운 기능',
-          blogSidebarCount: 'ALL',
-          onUntruncatedBlogPosts: 'ignore',
-          include: [ '**/*.mdx' ],
-          rehypePlugins: [ rehypeExtendedTable ],
+          editUrl:
+            "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
+          blogSidebarTitle: "새로운 기능",
+          blogSidebarCount: "ALL",
+          onUntruncatedBlogPosts: "ignore",
+          include: ["**/*.mdx"],
+          rehypePlugins: [rehypeExtendedTable],
           // groupByYear: true, (canary 버전 옵션)
         },
         theme: {
-          customCss: require.resolve('./src/css/custom.scss'),
+          customCss: require.resolve("./src/css/custom.scss"),
         },
         sitemap: {
-          lastmod: 'date',
-          changefreq: 'always',
+          lastmod: "date",
+          changefreq: "always",
           priority: 0.5,
-          ignorePatterns: ['/tags/**', '/toc'],
-          filename: 'sitemap.xml',
-        }
+          ignorePatterns: ["/tags/**", "/toc"],
+          filename: "sitemap.xml",
+        },
       },
     ],
     [
-      'redocusaurus',
+      "redocusaurus",
       {
         // Plugin Options for loading OpenAPI files
         specs: [
           // Pass it a path to a local OpenAPI YAML file
           {
             // Redocusaurus will automatically bundle your spec into a single file during the build
-            id: 'openapi-spec',
-            spec: 'docs/apidoc/openapi.yaml',
+            id: "openapi-spec",
+            spec: "docs/apidoc/openapi.yaml",
             // route: '/openapi-spec',
           },
           {
-            id: 'openapi-spec-en',
-            spec: 'i18n/en/docusaurus-plugin-content-docs/current/apidoc/openapi.yaml',
+            id: "openapi-spec-en",
+            spec: "i18n/en/docusaurus-plugin-content-docs/current/apidoc/openapi.yaml",
             // route: '/openapi-spec-en',
           },
           {
-            id: 'openapi-spec-ja',
-            spec: 'i18n/ja/docusaurus-plugin-content-docs/current/apidoc/openapi.yaml',
+            id: "openapi-spec-ja",
+            spec: "i18n/ja/docusaurus-plugin-content-docs/current/apidoc/openapi.yaml",
             // route: '/openapi-spec-ja',
-          }
+          },
         ],
         // Theme Options for modifying how redoc renders them
         theme: {
           // Change with your site colors
-          primaryColor: '#1890ff',
+          primaryColor: "#1890ff",
           theme: {
             sidebar: {
-              width: "240px"
-            }
-          }
+              width: "240px",
+            },
+          },
         },
       },
-    ]
+    ],
   ],
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      image: 'https://www.whatap.io/img/og/whatap.png',
+      image: "https://www.whatap.io/img/og/whatap.png",
       mermaid: {
-        theme: {light: 'neutral', dark: 'forest'},
+        theme: { light: "neutral", dark: "forest" },
       },
       // announcementBar: {
       //   id: 'moniday-banner',
@@ -239,516 +251,535 @@ const config = {
       },
       blog: {
         sidebar: {
-          groupByYear: false
-        }
+          groupByYear: false,
+        },
       },
       docs: {
         sidebar: {
           autoCollapseCategories: false,
           hideable: false,
-        }
+        },
       },
       colorMode: {
-        defaultMode: 'light',
+        defaultMode: "light",
         disableSwitch: false,
         respectPrefersColorScheme: true,
       },
       navbar: {
-        title: '',
+        title: "",
         logo: {
-          alt: 'WhaTap Docs',
-          src: 'img/whatap-docs-logo.svg',
+          alt: "WhaTap Docs",
+          src: "img/whatap-docs-logo.svg",
           width: "154px",
           height: "43px",
         },
         items: [
           {
-            type: 'dropdown',
-            label: '상품',
-            position: 'left',
+            type: "dropdown",
+            label: "상품",
+            position: "left",
             items: [
               {
-                type: 'doc',
-                docId: 'java/introduction',
-                label: 'Java',
+                type: "doc",
+                docId: "java/introduction",
+                label: "Java",
               },
               {
-                type: 'doc',
-                docId: 'php/introduction',
-                label: 'PHP',
+                type: "doc",
+                docId: "php/introduction",
+                label: "PHP",
               },
               {
-                type: 'doc',
-                docId: 'nodejs/introduction',
-                label: 'Node.js',
+                type: "doc",
+                docId: "nodejs/introduction",
+                label: "Node.js",
               },
               {
-                type: 'doc',
-                docId: 'python/introduction',
-                label: 'Python',
+                type: "doc",
+                docId: "python/introduction",
+                label: "Python",
               },
               {
-                type: 'doc',
-                docId: 'dotnet/introduction',
-                label: '.NET',
+                type: "doc",
+                docId: "dotnet/introduction",
+                label: ".NET",
               },
               {
-                type: 'doc',
-                docId: 'golang/introduction',
-                label: 'Go',
+                type: "doc",
+                docId: "golang/introduction",
+                label: "Go",
               },
               {
-                type: 'doc',
-                docId: 'server/introduction',
-                label: 'Server',
+                type: "doc",
+                docId: "server/introduction",
+                label: "Server",
               },
               {
-                type: 'doc',
-                docId: 'kubernetes/introduction',
-                label: 'Kubernetes',
+                type: "doc",
+                docId: "kubernetes/introduction",
+                label: "Kubernetes",
               },
               {
-                type: 'doc',
-                docId: 'postgresql/monitoring-intro',
-                label: 'PostgreSQL',
+                type: "doc",
+                docId: "postgresql/monitoring-intro",
+                label: "PostgreSQL",
               },
               {
-                type: 'doc',
-                docId: 'oracle/monitoring-intro',
-                label: 'Oracle',
+                type: "doc",
+                docId: "oracle/monitoring-intro",
+                label: "Oracle",
               },
               {
-                type: 'doc',
-                docId: 'oracle-pro/monitoring-intro',
-                label: 'Oracle Pro',
+                type: "doc",
+                docId: "oracle-pro/monitoring-intro",
+                label: "Oracle Pro",
               },
               {
-                type: 'doc',
-                docId: 'mysql/monitoring-intro',
-                label: 'MySQL',
+                type: "doc",
+                docId: "mysql/monitoring-intro",
+                label: "MySQL",
               },
               {
-                type: 'doc',
-                docId: 'mssql/monitoring-intro',
-                label: 'SQL Server',
+                type: "doc",
+                docId: "mssql/monitoring-intro",
+                label: "SQL Server",
               },
               {
-                type: 'doc',
-                docId: 'tibero/monitoring-intro',
-                label: 'Tibero',
+                type: "doc",
+                docId: "tibero/monitoring-intro",
+                label: "Tibero",
               },
               {
-                type: 'doc',
-                docId: 'cubrid/monitoring-intro',
-                label: 'CUBRID',
+                type: "doc",
+                docId: "cubrid/monitoring-intro",
+                label: "CUBRID",
               },
               {
-                type: 'doc',
-                docId: 'altibase/monitoring-intro',
-                label: 'Altibase',
+                type: "doc",
+                docId: "altibase/monitoring-intro",
+                label: "Altibase",
               },
               {
-                type: 'doc',
-                docId: 'redis/monitoring-intro',
-                label: 'Redis',
+                type: "doc",
+                docId: "redis/monitoring-intro",
+                label: "Redis",
               },
               {
-                type: 'doc',
-                docId: 'mongodb/monitoring-intro',
-                label: 'MongoDB',
+                type: "doc",
+                docId: "mongodb/monitoring-intro",
+                label: "MongoDB",
               },
               {
-                type: 'doc',
-                docId: 'db2/monitoring-intro',
-                label: 'IBM DB2',
+                type: "doc",
+                docId: "db2/monitoring-intro",
+                label: "IBM DB2",
               },
               {
-                type: 'doc',
-                docId: 'sapase/monitoring-intro',
-                label: 'SAP ASE',
+                type: "doc",
+                docId: "sapase/monitoring-intro",
+                label: "SAP ASE",
               },
               {
-                type: 'doc',
-                docId: 'url/url-intro',
-                label: 'URL',
+                type: "doc",
+                docId: "url/url-intro",
+                label: "URL",
               },
               {
-                type: 'doc',
-                docId: 'browser',
-                label: 'Browser',
+                type: "doc",
+                docId: "browser",
+                label: "Browser",
               },
               {
-                type: 'doc',
-                docId: 'mobile/mobile-intro',
-                label: 'Mobile',
+                type: "doc",
+                docId: "mobile/mobile-intro",
+                label: "Mobile",
               },
               {
-                type: 'doc',
-                docId: 'amazon-cloudwatch/install-agent',
-                label: 'Amazon CloudWatch',
-                className: 'narrow',
+                type: "doc",
+                docId: "amazon-cloudwatch/install-agent",
+                label: "Amazon CloudWatch",
+                className: "narrow",
               },
               {
-                type: 'doc',
-                docId: 'amazon-ecs/introduction',
-                label: 'Amazon ECS',
+                type: "doc",
+                docId: "amazon-ecs/introduction",
+                label: "Amazon ECS",
               },
               {
-                type: 'doc',
-                docId: 'aws-log/introduction',
-                label: 'AWS Log',
+                type: "doc",
+                docId: "aws-log/introduction",
+                label: "AWS Log",
               },
               {
-                type: 'doc',
-                docId: 'azure/install-agent',
-                label: 'Azure Monitor',
+                type: "doc",
+                docId: "azure/install-agent",
+                label: "Azure Monitor",
               },
               {
-                type: 'doc',
-                docId: 'ncloud/install-agent',
-                label: 'Naver Cloud Monitoring',
-                className: 'narrow',
+                type: "doc",
+                docId: "ncloud/install-agent",
+                label: "Naver Cloud Monitoring",
+                className: "narrow",
               },
               {
-                type: 'doc',
-                docId: 'oracle-cloud/install-agent',
-                label: 'Oracle Cloud Monitor',
-                className: 'narrow',
+                type: "doc",
+                docId: "oracle-cloud/install-agent",
+                label: "Oracle Cloud Monitor",
+                className: "narrow",
               },
               {
-                type: 'doc',
-                docId: 'npm/introduction',
-                label: 'Network Performance Monitoring',
-                className: 'narrow',
+                type: "doc",
+                docId: "npm/introduction",
+                label: "Network Performance Monitoring",
+                className: "narrow",
               },
               {
-                type: 'doc',
-                docId: 'nms/introduction',
-                label: 'Network Management System',
-                className: 'narrow',
+                type: "doc",
+                docId: "nms/introduction",
+                label: "Network Management System",
+                className: "narrow",
               },
               {
-                type: 'doc',
-                docId: 'features/introduction',
-                label: 'Feature Project', 
-                className: 'narrow',
+                type: "doc",
+                docId: "features/introduction",
+                label: "Feature Project",
+                className: "narrow",
               },
               {
-                type: 'doc',
-                docId: 'log/introduction',
-                label: 'Log',
+                type: "doc",
+                docId: "log/introduction",
+                label: "Log",
               },
               {
-                type: 'doc',
-                docId: 'extensions',
-                label: 'Extensions'
+                type: "doc",
+                docId: "extensions",
+                label: "Extensions",
               },
               {
-                type: 'doc',
-                docId: 'openmetrics/introduction',
-                label: 'OpenMetrics'
+                type: "doc",
+                docId: "openmetrics/introduction",
+                label: "OpenMetrics",
               },
-            ]
+            ],
           },
           // 여기부터 검색 시 문서 경로 표현을 위한 보이지 않는 메뉴
           {
-            type: 'doc',
-            docId: 'java/introduction',
+            type: "doc",
+            docId: "java/introduction",
             position: "left",
-            label: 'Java 모니터링',
-            className: 'hidden',
+            label: "Java 모니터링",
+            className: "hidden",
           },
           {
-            type: 'doc',
-            docId: 'php/introduction',
+            type: "doc",
+            docId: "php/introduction",
             position: "left",
-            label: 'PHP 모니터링',
-            className: 'hidden',
+            label: "PHP 모니터링",
+            className: "hidden",
           },
           {
-            type: 'doc',
-            docId: 'nodejs/introduction',
+            type: "doc",
+            docId: "nodejs/introduction",
             position: "left",
-            label: 'Node.js 모니터링',
-            className: 'hidden',
+            label: "Node.js 모니터링",
+            className: "hidden",
           },
           {
-            type: 'doc',
-            docId: 'python/introduction',
+            type: "doc",
+            docId: "python/introduction",
             position: "left",
-            label: 'Python 모니터링',
-            className: 'hidden',
+            label: "Python 모니터링",
+            className: "hidden",
           },
           {
-            type: 'doc',
-            docId: 'dotnet/introduction',
+            type: "doc",
+            docId: "dotnet/introduction",
             position: "left",
-            label: '.NET 모니터링',
-            className: 'hidden',
+            label: ".NET 모니터링",
+            className: "hidden",
           },
           {
-            type: 'doc',
-            docId: 'golang/introduction',
+            type: "doc",
+            docId: "golang/introduction",
             position: "left",
-            label: 'Go 모니터링',
-            className: 'hidden',
+            label: "Go 모니터링",
+            className: "hidden",
           },
           {
-            type: 'doc',
-            docId: 'server/introduction',
+            type: "doc",
+            docId: "server/introduction",
             position: "left",
-            label: 'Server 모니터링',
-            className: 'hidden',
+            label: "Server 모니터링",
+            className: "hidden",
           },
           {
-            type: 'doc',
-            docId: 'kubernetes/introduction',
+            type: "doc",
+            docId: "kubernetes/introduction",
             position: "left",
-            label: 'Kubernetes 모니터링',
-            className: 'hidden',
+            label: "Kubernetes 모니터링",
+            className: "hidden",
           },
           {
-            type: 'doc',
-            docId: 'postgresql/monitoring-intro',
+            type: "doc",
+            docId: "postgresql/monitoring-intro",
             position: "left",
-            label: 'PostgreSQL 모니터링',
-            className: 'hidden',
+            label: "PostgreSQL 모니터링",
+            className: "hidden",
           },
           {
-            type: 'doc',
-            docId: 'oracle/monitoring-intro',
+            type: "doc",
+            docId: "oracle/monitoring-intro",
             position: "left",
-            label: 'Oracle V2 모니터링',
-            className: 'hidden',
+            label: "Oracle V2 모니터링",
+            className: "hidden",
           },
           {
-            type: 'doc',
-            docId: 'oracle-pro/monitoring-intro',
+            type: "doc",
+            docId: "oracle-pro/monitoring-intro",
             position: "left",
-            label: 'Oracle Pro 모니터링',
-            className: 'hidden',
+            label: "Oracle Pro 모니터링",
+            className: "hidden",
           },
           {
-            type: 'doc',
-            docId: 'mysql/monitoring-intro',
+            type: "doc",
+            docId: "mysql/monitoring-intro",
             position: "left",
-            label: 'MySQL 모니터링',
-            className: 'hidden',
+            label: "MySQL 모니터링",
+            className: "hidden",
           },
           {
-            type: 'doc',
-            docId: 'mssql/monitoring-intro',
+            type: "doc",
+            docId: "mssql/monitoring-intro",
             position: "left",
-            label: 'SQL Server V2 모니터링',
-            className: 'hidden',
+            label: "SQL Server V2 모니터링",
+            className: "hidden",
           },
           {
-            type: 'doc',
-            docId: 'tibero/monitoring-intro',
+            type: "doc",
+            docId: "tibero/monitoring-intro",
             position: "left",
-            label: 'Tibero 모니터링',
-            className: 'hidden',
+            label: "Tibero 모니터링",
+            className: "hidden",
           },
           {
-            type: 'doc',
-            docId: 'cubrid/monitoring-intro',
+            type: "doc",
+            docId: "cubrid/monitoring-intro",
             position: "left",
-            label: 'CUBRID V2 모니터링',
-            className: 'hidden',
+            label: "CUBRID V2 모니터링",
+            className: "hidden",
           },
           {
-            type: 'doc',
-            docId: 'altibase/monitoring-intro',
+            type: "doc",
+            docId: "altibase/monitoring-intro",
             position: "left",
-            label: 'Altibase V2 모니터링',
-            className: 'hidden',
+            label: "Altibase V2 모니터링",
+            className: "hidden",
           },
           {
-            type: 'doc',
-            docId: 'redis/monitoring-intro',
+            type: "doc",
+            docId: "redis/monitoring-intro",
             position: "left",
-            label: 'Redis 모니터링',
-            className: 'hidden',
+            label: "Redis 모니터링",
+            className: "hidden",
           },
           {
-            type: 'doc',
-            docId: 'mongodb/monitoring-intro',
+            type: "doc",
+            docId: "mongodb/monitoring-intro",
             position: "left",
-            label: 'MongoDB 모니터링',
-            className: 'hidden',
+            label: "MongoDB 모니터링",
+            className: "hidden",
           },
           {
-            type: 'doc',
-            docId: 'db2/monitoring-intro',
+            type: "doc",
+            docId: "db2/monitoring-intro",
             position: "left",
-            label: 'IBM DB2 모니터링',
-            className: 'hidden',
+            label: "IBM DB2 모니터링",
+            className: "hidden",
           },
           {
-            type: 'doc',
-            docId: 'sapase/monitoring-intro',
+            type: "doc",
+            docId: "sapase/monitoring-intro",
             position: "left",
-            label: 'SAP ASE 모니터링',
-            className: 'hidden',
+            label: "SAP ASE 모니터링",
+            className: "hidden",
           },
           {
-            type: 'doc',
-            docId: 'url/url-intro',
+            type: "doc",
+            docId: "url/url-intro",
             position: "left",
-            label: 'URL 모니터링',
-            className: 'hidden',
+            label: "URL 모니터링",
+            className: "hidden",
           },
           {
-            type: 'doc',
-            docId: 'amazon-cloudwatch/install-agent',
+            type: "doc",
+            docId: "amazon-cloudwatch/install-agent",
             position: "left",
-            label: 'Amazon CloudWatch',
-            className: 'hidden',
+            label: "Amazon CloudWatch",
+            className: "hidden",
           },
           {
-            type: 'doc',
-            docId: 'amazon-ecs/introduction',
+            type: "doc",
+            docId: "amazon-ecs/introduction",
             position: "left",
-            label: 'Amazon ECS',
-            className: 'hidden',
+            label: "Amazon ECS",
+            className: "hidden",
           },
           {
-            type: 'doc',
-            docId: 'aws-log/introduction',
+            type: "doc",
+            docId: "aws-log/introduction",
             position: "left",
-            label: 'AWS Log',
-            className: 'hidden',
+            label: "AWS Log",
+            className: "hidden",
           },
           {
-            type: 'doc',
-            docId: 'azure/install-agent',
+            type: "doc",
+            docId: "azure/install-agent",
             position: "left",
-            label: 'Azure Monitor',
-            className: 'hidden',
+            label: "Azure Monitor",
+            className: "hidden",
           },
           {
-            type: 'doc',
-            docId: 'ncloud/install-agent',
+            type: "doc",
+            docId: "ncloud/install-agent",
             position: "left",
-            label: 'Naver Cloud Monitoring',
-            className: 'hidden',
+            label: "Naver Cloud Monitoring",
+            className: "hidden",
           },
           {
-            type: 'doc',
-            docId: 'oracle-cloud/install-agent',
+            type: "doc",
+            docId: "oracle-cloud/install-agent",
             position: "left",
-            label: 'Oracle Cloud Monitor',
-            className: 'hidden',
+            label: "Oracle Cloud Monitor",
+            className: "hidden",
           },
           {
-            type: 'doc',
-            docId: 'log/introduction',
+            type: "doc",
+            docId: "log/introduction",
             position: "left",
-            label: 'Log 모니터링',
-            className: 'hidden',
+            label: "Log 모니터링",
+            className: "hidden",
           },
           {
-            type: 'doc',
-            docId: 'browser',
+            type: "doc",
+            docId: "browser",
             position: "left",
-            label: 'Browser',
-            className: 'hidden',
+            label: "Browser",
+            className: "hidden",
           },
           {
-            type: 'doc',
-            docId: 'mobile/mobile-intro',
+            type: "doc",
+            docId: "mobile/mobile-intro",
             position: "left",
-            label: 'Mobile 모니터링',
-            className: 'hidden',
+            label: "Mobile 모니터링",
+            className: "hidden",
           },
           {
-            type: 'doc',
-            docId: 'npm/introduction',
+            type: "doc",
+            docId: "npm/introduction",
             position: "left",
-            label: 'NPM',
-            className: 'hidden',
+            label: "NPM",
+            className: "hidden",
           },
           {
-            type: 'doc',
-            docId: 'extensions',
-            position: 'left',
-            label: '확장 도구',
-            className: 'hidden'
+            type: "doc",
+            docId: "extensions",
+            position: "left",
+            label: "확장 도구",
+            className: "hidden",
           },
           {
-            type: 'doc',
-            docId: 'opentelemetry/introduction',
-            position: 'left',
-            label: 'OpenTelemetry',
-            className: 'hidden'
+            type: "doc",
+            docId: "opentelemetry/introduction",
+            position: "left",
+            label: "OpenTelemetry",
+            className: "hidden",
           },
           {
-            type: 'doc',
-            docId: 'openmetrics/introduction',
-            position: 'left',
-            label: 'OpenMetrics',
-            className: 'hidden'
+            type: "doc",
+            docId: "openmetrics/introduction",
+            position: "left",
+            label: "OpenMetrics",
+            className: "hidden",
           },
-          // 여기까지 검색 시 문서 경로 표현을 위한 보이지 않는 메뉴 
+          // 여기까지 검색 시 문서 경로 표현을 위한 보이지 않는 메뉴
           {
-            type: 'doc',
-            docId: 'manage',
-            position: 'left',
-            label: '관리 기능',
-          },
-          {
-            to: 'openapi-spec',
-            position: 'left',
-            label: 'Open API',
+            type: "doc",
+            docId: "manage",
+            position: "left",
+            label: "관리 기능",
           },
           {
-            type: 'doc',
-            docId: 'faq/index',
-            position: 'left',
-            label: 'FAQ',
+            to: "openapi-spec",
+            position: "left",
+            label: "Open API",
           },
           {
-            to: 'learning-guides', 
-            label: 'Learning', 
-            position: 'left', 
-            className: 'iflang-link',
+            type: "doc",
+            docId: "faq/index",
+            position: "left",
+            label: "FAQ",
           },
           {
-            to: 'release-notes',
-            label: 'Release Notes',
-            position: 'left',
+            to: "learning-guides",
+            label: "Learning",
+            position: "left",
+            className: "iflang-link",
           },
           {
-            type: 'localeDropdown',
-            className: 'oneColumn localeDropdown',
-            position: 'right',
+            to: "release-notes",
+            label: "Release Notes",
+            position: "left",
           },
           {
-            type: 'search',
-            position: 'right',
-          }
-        ]
+            type: "localeDropdown",
+            className: "oneColumn localeDropdown",
+            position: "right",
+          },
+          {
+            type: "search",
+            position: "right",
+          },
+        ],
       },
       footer: {
-        style: 'light',  
-        links: [
-
-        ],
+        style: "light",
+        links: [],
         copyright: `Copyright © WhaTap Labs Inc. All right reserved. Built with Docusaurus.`,
       },
       prism: {
-        additionalLanguages: [ 'php', 'java', 'scala', 'bash', 'powershell', 'batch', 'apacheconf', 'docker', 'properties', 'ini', 'sql', 'go', 'python', 'json', 'yaml', 'log', 'csharp', 'typescript', 'javascript', 'promql' ],
+        additionalLanguages: [
+          "php",
+          "java",
+          "scala",
+          "bash",
+          "powershell",
+          "batch",
+          "apacheconf",
+          "docker",
+          "properties",
+          "ini",
+          "sql",
+          "go",
+          "python",
+          "json",
+          "yaml",
+          "log",
+          "csharp",
+          "typescript",
+          "javascript",
+          "promql",
+        ],
       },
       zoom: {
-        selector: '.markdown :not(em, div) > img:not(.ico-link)',
+        selector: ".markdown :not(em, div) > img:not(.ico-link)",
         background: {
-          light: 'rgb(255, 255, 255)',
-          dark: 'rgb(50, 50, 50)'
+          light: "rgb(255, 255, 255)",
+          dark: "rgb(50, 50, 50)",
         },
         // options you can specify via https://github.com/francoischalifour/medium-zoom#usage
-        config: {}
+        config: {},
       },
     }),
-}
+};
 
 export default config;
