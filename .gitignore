@@ -48,7 +48,6 @@ node_modules/.cache/webpack/client-development-ko/index.pack
 node_modules/.cache/webpack/client-development-ko/index.pack.old
 /.vscode/*.json
 /.yarn
-yarn.lock
 package-lock.json
 check-importmdx.txt
 unusedImages.txt
