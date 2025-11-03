@@ -26,7 +26,7 @@ const config = {
       mdxCrossCompilerCache: true,
     },
   },
-  baseUrl: "/whatap-docs/",
+  baseUrl: "/",
   onBrokenLinks: "ignore",
   onBrokenAnchors: "ignore",
   onBrokenMarkdownLinks: "warn",
