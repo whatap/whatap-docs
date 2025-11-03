@@ -1,5 +1,0 @@
-User-agent: Meta-ExternalAgent
-User-agent: Meta-ExternalFetcher
-User-agent: meta-externalagent
-User-agent: ClaudeBot
-Disallow: /
