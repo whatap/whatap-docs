@@ -7,7 +7,7 @@ on:
     inputs:
       locales:
         description: "빌드할 언어 (ko/en/ja/all)"
-        default: "all"
+        default: "ko"
         required: false
       invalidate_paths:
         description: '무효화 경로(예: "/*" 또는 "/index.html /ko/*")'
@@ -64,7 +64,7 @@ jobs:
       - name: Decide build command
         run: |
           LOCALES="${{ github.event.inputs.locales }}"
-          LOCALES="${LOCALES:-all}"
+          LOCALES="${LOCALES:-ko}"
           if [ "$LOCALES" = "all" ]; then
             echo "BUILD_CMD=yarn build" >> $GITHUB_ENV
           else
