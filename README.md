@@ -1,6 +1,6 @@
 # Introduction
 
-WhaTap Docs 문서 관리 플랫폼 Docusaurus 입니다.
+WhaTap Docs 문서 관리 플랫폼 Docusaurus 입니다. ㅁㄴㅇㄹ
 
 ## 빌드 방법 및 PDF 제작 방법
 
