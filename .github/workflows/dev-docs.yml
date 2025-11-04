@@ -23,9 +23,9 @@ concurrency:
   cancel-in-progress: false
 
 env:
-  AWS_REGION: ${{ vars.AWS_REGION_DEV }}
-  S3_BUCKET: ${{ vars.S3_BUCKET_DEV }}
-  DISTRIBUTION_ID: ${{ vars.CF_DIST_ID_DEV }}
+  AWS_REGION: ap-northeast-2
+  S3_BUCKET: whatap-docs-dev
+  DISTRIBUTION_ID: E2P8CK9JS09Y0P
 
 jobs:
   deploy:
