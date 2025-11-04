@@ -1,0 +1,104 @@
+name: Deploy (DEV) to S3 + CloudFront
+
+on:
+  push:
+    branches: [preview]
+  workflow_dispatch:
+    inputs:
+      locales:
+        description: "빌드할 언어 (ko/en/ja/all)"
+        default: "all"
+        required: false
+      invalidate_paths:
+        description: '무효화 경로(예: "/*" 또는 "/index.html /ko/*")'
+        default: "/*"
+        required: false
+
+permissions:
+  id-token: write
+  contents: read
+
+concurrency:
+  group: deploy-dev-${{ github.ref }}
+  cancel-in-progress: false
+
+env:
+  AWS_REGION: ${{ vars.AWS_REGION_DEV }}
+  S3_BUCKET: ${{ vars.S3_BUCKET_DEV }}
+  DISTRIBUTION_ID: ${{ vars.CF_DIST_ID_DEV }}
+
+jobs:
+  deploy:
+    name: Build & Deploy (DEV)
+    runs-on: ubuntu-latest
+    environment: dev
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: yarn
+
+      - name: Update submodules
+        run: git submodule update --init
+
+      - name: Enable Corepack
+        run: corepack enable
+
+      - name: Install dependencies
+        run: yarn install --frozen-lockfile
+
+      - name: Restore build caches
+        id: cache
+        uses: actions/cache@v4
+        with:
+          path: |
+            .docusaurus
+            node_modules/.cache/rspack
+          key: docusaurus-${{ runner.os }}-node20-${{ hashFiles('yarn.lock','docusaurus.config.*','sidebars.*') }}
+          restore-keys: |
+            docusaurus-${{ runner.os }}-node20-
+
+      - name: Decide build command
+        run: |
+          LOCALES="${{ github.event.inputs.locales }}"
+          LOCALES="${LOCALES:-all}"
+          if [ "$LOCALES" = "all" ]; then
+            echo "BUILD_CMD=yarn build" >> $GITHUB_ENV
+          else
+            echo "BUILD_CMD=yarn build --locale ${LOCALES}" >> $GITHUB_ENV
+          fi
+
+      - name: Build website
+        env:
+          NODE_OPTIONS: --max-old-space-size=12288
+        run: $BUILD_CMD
+
+      - name: Configure AWS credentials (OIDC)
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          role-to-assume: ${{ vars.AWS_ROLE_ARN_DEV }}
+          aws-region: ${{ env.AWS_REGION }}
+
+      - name: Sync docs (short cache)
+        run: |
+          aws s3 sync ./build "s3://${S3_BUCKET}/" \
+            --delete --exclude "assets/*" \
+            --cache-control "public, max-age=300, must-revalidate"
+
+      - name: Sync hashed assets (long cache)
+        run: |
+          if [ -d "./build/assets" ]; then
+            aws s3 sync ./build/assets "s3://${S3_BUCKET}/assets" \
+              --delete \
+              --cache-control "public, max-age=31536000, immutable"
+          fi
+
+      - name: Invalidate CloudFront cache
+        run: |
+          PATHS="${{ github.event.inputs.invalidate_paths || '/*' }}"
+          aws cloudfront create-invalidation \
+            --distribution-id "${DISTRIBUTION_ID}" \
+            --paths $PATHS
