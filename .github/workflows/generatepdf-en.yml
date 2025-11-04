@@ -111,9 +111,9 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
-        tag_name: v2.21.0@en # 생성할 Release의 태그 이름
-        release_name: "v2.21.0_EN"
-        body: "This is a PDF file created based on WhaTap Docs v2.21.0."
+        tag_name: v2.22.0@en # 생성할 Release의 태그 이름
+        release_name: "v2.22.0_EN"
+        body: "This is a PDF file created based on WhaTap Docs v2.22.0."
         draft: false
         prerelease: false
     
