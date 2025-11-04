@@ -38,9 +38,9 @@ jobs:
           path: |
             .docusaurus
             node_modules/.cache/rspack
-          key: docusaurus-${{ runner.os }}-node20-${{ hashFiles('yarn.lock','docusaurus.config.*','sidebars.*') }}
+          key: docusaurus-${{ runner.os }}-node20-${{ github.workflow }}-${{ hashFiles('yarn.lock','docusaurus.config.*','sidebars.*') }}
           restore-keys: |
-            docusaurus-${{ runner.os }}-node20-
+            docusaurus-${{ runner.os }}-node20-${{ github.workflow }}-
 
       # 🔎 어떤 빌드 커맨드를 쓸지 결정
       - name: Decide build command from input locales
