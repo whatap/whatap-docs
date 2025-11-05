@@ -4876,6 +4876,7 @@
   "exit": "Exit",
   "show_only_content": "Content only",
   "metricsExplorer": "Metrics explorer",
+  "metrics_trend_analysis": "Metrics trend analysis",
   "keyword_count": "Keyword count",
   "master_yard_m5_retention": "5 min data retention period of master yards",
   "master_yard_h1_retention": "1 hour data retention period of master yards",
