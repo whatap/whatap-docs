@@ -427,6 +427,10 @@
     "message": "Tiberoモニタリング",
     "description": "The label for category Tibero 모니터링 in sidebar tiberoSidebar"
   },
+  "sidebar.tiberoSidebar.category.Tibero V2 모니터링": {
+    "message": "Tibero V2 モニタリング",
+    "description": "The label for category Tibero 모니터링 in sidebar tiberoSidebar"
+  },
   "sidebar.tiberoSidebar.category.설치하기": {
     "message": "インストール",
     "description": "The label for category 설치하기 in sidebar tiberoSidebar"
@@ -450,6 +454,10 @@
   "sidebar.tiberoSidebar.doc.지원 환경": {
     "message": "サポート環境",
     "description": "The label for the doc item 지원 환경 in sidebar tiberoSidebar, linking to the doc tibero/monitoring-support"
+  },
+  "sidebar.tiberoSidebar.category.관리": {
+    "message": "管理",
+    "description": "The label for category 관리 in sidebar tiberoSidebar"
   },
   "sidebar.cubridSidebar.category.설치하기": {
     "message": "インストール",

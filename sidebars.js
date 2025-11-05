@@ -3027,7 +3027,7 @@ const sidebars = {
   tiberoSidebar: [
     {
       type: 'category',
-      label: 'Tibero 모니터링',
+      label: 'Tibero V2 모니터링',
       collapsible: false,
       collapsed: false,
       link: {
@@ -3079,26 +3079,20 @@ const sidebars = {
             'tibero/instance-list',
             'tibero/instance-monitoring',
             'tibero/multi-instance-monitoring',
-          ],
-        },
-        {
-          type: 'category',
-          label: 'Flex 보드',
-          collapsible: true,
-          collapsed: true,
-          link: {
-            type: 'doc',
-            id: 'tibero/flex-board',
-          },
-          items: [
-            'tibero/flexboard-template',
-            'tibero/flexboard-create',
-            'tibero/flexboard-manage',
-            'tibero/flexboard-metric-widget',
-            'tibero/flexboard-widget-manage',
-            'tibero/flexboard-widget-template',
-            'tibero/flexboard-mode',
-            'tibero/flexboard-share',
+            {
+              type: 'category',
+              label: 'Flex 보드',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'tibero/flex-board'
+              },
+              items: [
+                'tibero/flexboard-guide',
+                'tibero/flexboard-widget-manage',
+              ]
+            },
           ],
         },
         {
@@ -3109,24 +3103,26 @@ const sidebars = {
           items: [
             'tibero/analysis-count-trend',
             'tibero/analysis-lock-and-deadlock',
+            'tibero/analysis-session-history-v2',
+            'tibero/analysis-wait-events-v2',
             'tibero/analysis-pq-tree',
             'tibero/analysis-databaseparameter',
-          ]
-        },
-        {
-          type: 'category',
-          label: '메트릭스',
-          collapsible: true,
-          collapsed: true,
-          link: {
-            type: 'doc',
-            id: 'tibero/metrics-intro'
-          },
-          items: [
-            'tibero/metrics-data-list',
-            'tibero/metrics-chart',
-            'tibero/metrics-search',
-            'tibero/metrics-detect-anormal',
+            {
+              type: 'category',
+              label: '메트릭스',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'tibero/metrics-intro'
+              },
+              items: [
+                'tibero/metrics-data-list',
+                'tibero/metrics-chart',
+                'tibero/metrics-search',
+                'tibero/metrics-detect-anormal',
+              ]
+            },
           ]
         },
         {
@@ -3139,6 +3135,8 @@ const sidebars = {
             'tibero/table-space-size',
             'tibero/sga-size',
             'tibero/report-intro',
+            'tibero/job-info',
+            'tibero/backup-recovery-history',
           ]
         },
         {
@@ -3187,6 +3185,15 @@ const sidebars = {
         },
         {
           type: 'category',
+          label: '관리',
+          collapsible: true,
+          collapsed: true,
+          items: [
+            'tibero/user-group-display-settings',
+          ],
+        },
+        {
+          type: 'category',
           label: '실험실',
           collapsible: true,
           collapsed: true,
@@ -3195,6 +3202,11 @@ const sidebars = {
             id: 'tibero/labs'
           },
           items: [
+            {
+              type: 'doc',
+              label: 'MXQL 데이터 조회',
+              id: 'mxql/mxql-overview',
+            },
             'tibero/openmetrics_explorer',
           ],
         },
