@@ -1600,6 +1600,7 @@ const sidebars = {
             'db2/metrics-chart',
             'db2/metrics-search',
             'db2/metrics-detect-anormal',
+            'db2/metrics-trend-analysis',
           ]
         },
         {
@@ -1789,6 +1790,7 @@ const sidebars = {
             },
             'sapase/metrics-search',
             'sapase/metrics-detect-anormal',
+            'sapase/metrics-trend-analysis',
           ]
         },
         {
@@ -2023,6 +2025,7 @@ const sidebars = {
             'postgresql/metrics-chart',
             'postgresql/metrics-search',
             'postgresql/metrics-detect-anormal',
+            'postgresql/metrics-trend-analysis',
           ]
         },
         {
@@ -2465,6 +2468,7 @@ const sidebars = {
             'oracle-pro/metrics-chart',
             'oracle-pro/metrics-search',
             'oracle-pro/metrics-detect-anormal',
+            'oracle-pro/metrics-trend-analysis',
           ]
         },
         {
@@ -2700,6 +2704,7 @@ const sidebars = {
             'mysql/metrics-chart',
             'mysql/metrics-search',
             'mysql/metrics-detect-anormal',
+            'mysql/metrics-trend-analysis',
           ]
         },
         {
@@ -2929,6 +2934,8 @@ const sidebars = {
             },
             'mssql/metrics-search',
             'mssql/metrics-detect-anormal',
+            'mssql/metrics-trend-analysis',
+            
           ]
         },
         {
@@ -3128,6 +3135,7 @@ const sidebars = {
             'tibero/metrics-chart',
             'tibero/metrics-search',
             'tibero/metrics-detect-anormal',
+            'tibero/metrics-trend-analysis',
           ]
         },
         {
@@ -3311,6 +3319,7 @@ const sidebars = {
             'cubrid/metrics-chart',
             'cubrid/metrics-search',
             'cubrid/metrics-detect-anormal',
+            'cubrid/metrics-trend-analysis',
           ]
         },
         {
@@ -3512,6 +3521,7 @@ const sidebars = {
             'altibase/metrics-chart',
             'altibase/metrics-search',
             'altibase/metrics-detect-anormal',
+            'altibase/metrics-trend-analysis',
           ]
         },
         {
@@ -3711,6 +3721,7 @@ const sidebars = {
             'redis/metrics-chart',
             'redis/metrics-search',
             'redis/metrics-detect-anormal',
+            'redis/metrics-trend-analysis',
           ]
         },
         {
@@ -3899,6 +3910,7 @@ const sidebars = {
             'mongodb/metrics-chart',
             'mongodb/metrics-search',
             'mongodb/metrics-detect-anormal',
+            'mongodb/metrics-trend-analysis',
           ]
         },
         {
