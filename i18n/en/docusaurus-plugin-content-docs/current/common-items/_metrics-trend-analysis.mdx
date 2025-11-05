@@ -1,0 +1,88 @@
+<Cmdname sid="metrics_trend_analysis" className="uitext" /> provides a feature that visualizes metric changes within the past 30 days, allowing you to compare and analyze trends.  
+You can view key database performance metrics by period or time, helping you quickly identify patterns at specific moments or time intervals.
+
+## Default Screen
+
+<Cmdname sid="metrics_trend_analysis" className="uitext" /> consists of a **top option bar** and a **bottom chart area**.  
+When you select the viewing range and metrics in the option bar, trend graphs that match those conditions are automatically displayed.
+
+### Option Bar {#option-bar}
+
+The option bar provides functions such as time range selection, metric selection, and preset management.
+
+#### Time Window
+
+Use this option when you want to view data only for a specific time period.  
+When the toggle is enabled, the time range input fields become active. The default state is disabled.  
+
+For example, to analyze data during business hours (09:00–18:00), enable the Time Window and set that range.
+
+#### Instance
+
+Select the database instance to view.  
+A list of instances connected to the project is displayed, and you can quickly search for an instance using the search box.
+
+#### Metrics
+
+Select the metrics you want to view.  
+Metrics are categorized by field, allowing you to choose specific items for display.
+
+#### Preset
+
+Save and load frequently used chart configurations.
+
+- The click states of the top date charts are saved in the preset.  
+- The click states of the lower date trend charts are **not** saved.
+
+##### Save a Preset
+
+Save the configured metrics and layout as a preset.
+
+1. Set **Time Window**, **Metrics**, and other options as desired.  
+1. Click the ![Save Icon](/img/ic-save.svg) icon at the top right of the screen.  
+1. In the **Save as Preset** window, enter a name and click **Save**.
+
+##### Load a Preset
+
+1. Select a saved preset from the preset dropdown list.  
+1. The saved **Time Window**, **Metrics**, and **Chart** settings are applied automatically.
+
+:::tip
+Saving presets allows you to view charts immediately without repeating the same setup.
+:::
+
+### Chart
+
+The chart area in <Cmdname sid="metrics_trend_analysis" className="uitext" /> visualizes changes in the selected metrics.  
+You can compare trends, averages, and maximum values over specific periods.  
+You can add new charts as needed or remove unnecessary ones.
+
+#### Add a Chart
+
+1. (Optional) Set the **Time Window** in the top option bar.  
+1. Select the desired field under **Metrics**.  
+1. Click the **+ Add Chart** button at the top right to add a chart.
+
+#### Delete a Chart
+
+Click the ![Trash Icon](/img/ico-trash.svg) icon at the top right of the chart you want to delete.
+
+### Widget
+
+The bottom chart area in <Cmdname sid="metrics_trend_analysis" className="uitext" /> includes **Interval** and **Open Link** functions.  
+These allow for detailed data analysis of specific periods or direct navigation to the detailed monitoring view for that time range.
+
+#### Interval
+
+Change the aggregation unit of the displayed data.  
+You can view data in hourly or 5-minute intervals.  
+By default, the data is displayed hourly; to see more detailed data, switch to the 5-minute interval view.
+
+#### Open Link
+
+Click a bar in the chart representing a specific time range to move directly to that time’s detailed monitoring page.
+
+:::note
+The **Open Link >** button becomes active only when a specific time bar is selected.  
+You can then view detailed metrics for that selected time range.
+:::
