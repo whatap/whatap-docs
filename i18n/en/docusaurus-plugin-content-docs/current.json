@@ -771,6 +771,10 @@
     "message": "UI usage guide",
     "description": "The label for link 공통 UI in sidebar indexSidebar, linking to reference"
   },
+  "sidebar.indexSidebar.link.제품 공통 UI": {
+    "message": "UI usage guide",
+    "description": "The label for link 제품 공통 UI in sidebar indexSidebar, linking to reference"
+  },
   "sidebar.indexSidebar.link.릴리스 노트": {
     "message": "Release Notes",
     "description": "The label for link 릴리스 노트 in sidebar indexSidebar, linking to release-notes"
