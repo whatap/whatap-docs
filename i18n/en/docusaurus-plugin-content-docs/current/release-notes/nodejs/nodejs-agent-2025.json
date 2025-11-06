@@ -1,5 +1,18 @@
 [
   {
+    "ver": "v1.0.8",
+    "date": "2025-11-06",
+    "Lists": [
+      {
+        "ver": "v1.0.8",
+        "hash": "v108",
+        "product": "Node.js Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Fixed an error in user count aggregation</p>"
+      }
+    ]
+  },
+  {
     "url": "https://docs.whatap.io/release-notes/nodejs/nodejs-1_0_6/",
     "ver": "v1.0.6",
     "date": "2025-10-30",

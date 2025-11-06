@@ -870,7 +870,8 @@ button.DocSearch-Button:hover {
   padding-bottom: 0;
 }
 div[class*='announcementBar']:not([class*='Placeholder']) {
-  background: linear-gradient(155.02deg, #3a52ff 1.78%, #5b7bff 84.11%);
+  background: #0A0A92;
+  // background: linear-gradient(155.02deg, #3a52ff 1.78%, #5b7bff 84.11%);
   height: 50px !important;
 }
   div[class*='announcementBarContent'] {
