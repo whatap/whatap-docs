@@ -4328,13 +4328,9 @@ const sidebars = {
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/nodejs/nodejs-1_0_6',
-                  className: 'new',
+                  id: 'release-notes/nodejs/download-nodejs-agent',
+                  //className: 'new',
                 },
-                'release-notes/nodejs/nodejs-1_0_4',
-                'release-notes/nodejs/nodejs-1_0_3',
-                'release-notes/nodejs/nodejs-0_5_25',
-                'release-notes/nodejs/nodejs-previous',
               ]
             },
             {
