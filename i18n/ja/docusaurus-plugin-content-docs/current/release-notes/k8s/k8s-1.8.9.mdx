@@ -1,0 +1,31 @@
+---
+id: k8s-1_8_9
+title: Kubernetes Agent v1.8.9
+toc_max_heading_level: 2
+pagination_next: release-notes/k8s/k8s-1_8_8
+displayed_sidebar: releaseSidebar
+---
+
+> **Java Agent v2.2.61 を含む**
+
+2025年11月7日
+
+- <Status priority='0'>Fixed</Status> **CPU 統計の改善**
+
+    - **CPU 統計の負の値を防止**：カウンターリセットや競合状態により CPU メトリクスが負の値を示す可能性がある問題を修正。
+
+        - 複数の CPU メトリクスに適用：`user`、`sys`、`nice`、`irq`、`softirq`、`steal`、`guest`、`guest_nice`
+
+        - 計算された値が負の場合は 0 を返し、すべての CPU 統計が負の値にならないよう保証。
+
+- <Status priority='0'>Fixed</Status> **Ingress バックエンドサービスポート処理**
+
+    - **バックエンドサービスポート処理の改善**：Ingress 構成処理時のエッジケースを修正。
+
+        - バックエンドサービスの数値ポートと名前付きポートを正しく処理。
+
+:::info
+
+エージェントのダウンロード: [kube_mon_1.8.9.tar](https://repo.whatap.io/docker/kube_mon_1.8.9.tar)
+
+:::
