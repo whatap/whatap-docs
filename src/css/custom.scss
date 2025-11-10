@@ -3,7 +3,8 @@
 
 :root {
   --doc-full-width: 1440px;
-  --ifm-pre-background: none;
+  //--ifm-pre-background: none;
+  --ifm-pre-background: #282c34;  // 어두운 배경, 3.8.0
   --doc-sidebar-width: 220px !important;
   --ifm-color-primary: #296cf2;
   --ifm-color-primary-dark: #255fd3;
@@ -62,11 +63,16 @@
   --ifm-main-icons-color: #636363;
   --ifm-custom-uitext-color: #222222;
   // --ifm-menu-link-sublist-icon: url('img/sub-list-right-arrow.svg');
+  --list-block-margin: 12px;           /* 목록 위아래 여백 */
+  --list-nested-margin: 6px;           /* 중첩 목록 위아래 여백 */
+  --list-left-padding: 1.25rem;        /* 기본 들여쓰기 (Docusaurus 변수와 일치) */
+  --list-item-gap: 4px;                /* li 간격 */
 }
 
 // 다크모드
 [data-theme='dark'] {
   --ifm-menu-color: #dadde1;
+  --ifm-pre-background: #1e1e1e !important;
   --ifm-color-primary: #3ea6ff;
   --ifm-color-primary-dark: #378fdc;
   --ifm-color-primary-darker: #2e77b7;
@@ -103,7 +109,7 @@ article[class*=searchResultItem] > h2 > a > span::after {
 }
 
 html {
-  line-height: 1.7;
+  line-height: 1.8;
 }
 html[lang='ko-KR'] {
   word-wrap: keep-all;
@@ -321,14 +327,12 @@ footer.footer.full--width {
 .navbar__brand {
   margin-right: 40px;
 }
-
 .navbar__item.box {
   border: 1px solid;
   border-radius: 5px;
   font-size: .9rem;
   padding: 5px 8px;
 }
-
 .navbar__item:has(.box) {
   border: 1px solid;
   border-radius: 5px;
@@ -796,6 +800,88 @@ code {
   color: #4c4c4c;
   padding: 0 6px;
   border-radius: 4px;
+}
+// Docusaurus 3.8.0 코드 블록 수정
+// 코드 블록 컨테이너
+.theme-code-block {
+  padding: 0 !important;  // 전체 패딩 제거
+}
+
+// 코드 블록 타이틀
+.theme-code-block-title,
+div[class*="codeBlockTitle"] {
+  padding: 8px 16px !important;
+  background-color: var(--ifm-code-block-title-background);
+  border-bottom: 1px solid var(--ifm-table-border-color);
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 0.875rem;
+}
+
+// 코드 블록 콘텐츠 (pre 태그)
+pre[class*="language-"],
+.theme-code-block pre {
+  margin: 0 !important;
+  padding: 16px !important;  // 타이틀과 동일한 좌우 여백
+  background-color: var(--ifm-pre-background) !important;
+}
+
+// 코드 자체 (code 태그)
+pre code {
+  background-color: transparent !important;
+  padding: 0 !important;
+}
+
+// 라인 넘버
+pre[class*="language-"] {
+  [class*="codeLineNumber"],
+  .codeLineNumber {
+    padding-right: 1.0rem !important;
+  }
+}
+
+// 테이블 여백 지정
+.theme-doc-markdown table,
+article.markdown table {
+  margin: 10px 0 !important;
+  border-collapse: collapse;
+  border-spacing: 0;
+  border: 0;
+}
+
+.theme-doc-markdown table th,
+.theme-doc-markdown table td,
+article.markdown table th,
+article.markdown table td {
+  padding: 10px 10px !important;
+}
+
+/* ============================================
+   리스트 스타일 복원 (Docusaurus 3.8.0)
+   ============================================ */
+
+/* 모든 ul, ol 기본 여백 복원 */
+article ul,
+article ol,
+.markdown ul,
+.markdown ol,
+.theme-doc-markdown ul,
+.theme-doc-markdown ol {
+  margin-left: 1.5rem !important;
+  padding-left: 0 !important;
+  margin-bottom: 1rem;
+}
+
+/* TOC */
+.table-of-contents,
+.theme-doc-toc-desktop ul {
+  margin-left: 1rem !important;
+  padding-left: 0.5rem !important;
+  list-style-type: none; /* TOC는 보통 숫자 없음 */
+}
+// Docusaurus 3.8.0 수정사항 여기까지
+
+.margin-bottom--sm {
+  margin-bottom: 40px !important;
 }
 .margin-bottom--sm {
   margin-bottom: 40px !important;
@@ -3238,6 +3324,7 @@ main {
     }
   } // 마크다운 문서 내 css
 }
+
 
 // 다크모드 문서 내 css
 [data-theme='dark'] main {
