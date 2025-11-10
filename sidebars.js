@@ -4240,7 +4240,7 @@ const sidebars = {
               label: 'Java',
               collapsible: true,
               collapsed: true,
-              // className: 'new',
+              className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/java/index',
@@ -4248,9 +4248,10 @@ const sidebars = {
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/java/java-2_2_65',
-                  // className: 'new',
+                  id: 'release-notes/java/java-2_2_66',
+                  className: 'new',
                 },
+                'release-notes/java/java-2_2_65',
                 'release-notes/java/java-2_2_64',
                 'release-notes/java/java-2_2_63',
                 'release-notes/java/java-2_2_62',
@@ -4464,7 +4465,7 @@ const sidebars = {
               label: 'Kubernetes',
               collapsible: true,
               collapsed: true,
-              //className: 'new',
+              className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/k8s/index',
@@ -4472,9 +4473,10 @@ const sidebars = {
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/k8s/k8s-1_8_8',
-                  // className: 'new',
+                  id: 'release-notes/k8s/k8s-1_8_9',
+                  className: 'new',
                 },
+                'release-notes/k8s/k8s-1_8_8',
                 'release-notes/k8s/k8s-1_8_7',
                 'release-notes/k8s/k8s-1_8_6',
                 'release-notes/k8s/k8s-1_8_5',
