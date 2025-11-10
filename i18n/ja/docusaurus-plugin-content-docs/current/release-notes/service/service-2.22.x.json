@@ -1,4 +1,32 @@
 [
+  {
+    "url": "https://docs.whatap.io/release-notes/service/service-2_22_x",
+    "ver": "Service 2.22.6",
+    "date": "2025-11-10",
+    "Lists": [
+      {
+        "ver": "Service 2.22.6",
+        "hash": "service-2226",
+        "product": "共通",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> フィルターキー検索時に大文字と小文字を区別しないように修正しました。</p>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/release-notes/service/service-2_22_x",
+    "ver": "Service 2.22.6",
+    "date": "2025-11-10",
+    "Lists": [
+      {
+        "ver": "Service 2.22.6",
+        "hash": "service-2226",
+        "product": "Kubernetes",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">Pod 一覧</span> でカラムを選択した際にグループ化機能を追加しました。</p>"
+      }
+    ]
+  },  
     {
         "url": "https://docs.whatap.io/release-notes/service/service-2_22_x",
         "ver": "Service 2.22.5",

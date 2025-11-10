@@ -1,4 +1,32 @@
 [
+  {
+    "url": "https://docs.whatap.io/release-notes/service/service-2_22_x",
+    "ver": "Service 2.22.6",
+    "date": "2025-11-10",
+    "Lists": [
+      {
+        "ver": "Service 2.22.6",
+        "hash": "service-2226",
+        "product": "Common",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> Modified filter key search to be case-insensitive.</p>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/release-notes/service/service-2_22_x",
+    "ver": "Service 2.22.6",
+    "date": "2025-11-10",
+    "Lists": [
+      {
+        "ver": "Service 2.22.6",
+        "hash": "service-2226",
+        "product": "Kubernetes",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> Added grouping function when selecting columns in <span class=\"uitext\">Pod List</span>.</p>"
+      }
+    ]
+  },  
     {
         "url": "https://docs.whatap.io/release-notes/service/service-2_22_x",
         "ver": "Service 2.22.5",
