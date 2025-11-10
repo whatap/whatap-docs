@@ -1,6 +1,55 @@
 [
     {
         "url": "https://docs.whatap.io/release-notes/service/service-2_22_x",
+        "ver": "Service 2.22.5",
+        "date": "2025-11-06",
+        "Lists": [
+          {
+            "ver": "Service 2.22.5",
+            "hash": "service-2225",
+            "product": "Server",
+            "type": "Feature",
+            "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">GPU インベントリ</span> テーブルのデータ照会時間を改善しました。</p>"
+          }
+        ]
+    },
+    {
+        "url": "https://docs.whatap.io/release-notes/service/service-2_22_x",
+        "ver": "Service 2.22.5",
+        "date": "2025-11-06",
+        "Lists": [
+          {
+            "ver": "Service 2.22.5",
+            "hash": "service-2225",
+            "product": "Kubernetes",
+            "type": "Feature",
+            "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">コンテナ</span> > <span class=\"uitext\">Out of Memory Killed コンテナ</span> OOM 発生コンテナデータの精度を改善しました（Kubernetes エージェントバージョン 1.8.6 以上）。</p>"
+          },
+          {
+            "ver": "Service 2.22.5",
+            "hash": "service-2225",
+            "product": "Kubernetes",
+            "type": "Feature",
+            "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">ワークロード</span> > <span class=\"uitext\">Pod 一覧詳細</span> に GPU メトリクスタブを追加しました。</p>"
+          },
+          {
+            "ver": "Service 2.22.5",
+            "hash": "service-2225",
+            "product": "Kubernetes",
+            "type": "Feature",
+            "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">GPU</span> > <span class=\"uitext\">GPU ダッシュボード</span> GPU 利用状況の各段階に関する説明ツールチップを追加しました。</p>"
+          },
+          {
+            "ver": "Service 2.22.5",
+            "hash": "service-2225",
+            "product": "Kubernetes",
+            "type": "Feature",
+            "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">GPU</span> > <span class=\"uitext\">GPU ダッシュボード</span> SM Active および GPU Utilization 指標の説明を追加しました。</p>"
+          }
+        ]
+    },      
+    {
+        "url": "https://docs.whatap.io/release-notes/service/service-2_22_x",
         "ver": "Service 2.22.3",
         "date": "2025-10-31",
         "Lists": [
