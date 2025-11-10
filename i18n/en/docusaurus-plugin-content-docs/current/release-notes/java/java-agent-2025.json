@@ -1,5 +1,19 @@
 [
   {
+    "ver": "v2.2.66",
+    "date": "2025-11-07",
+    "Lists": [
+      {
+        "ver": "v2.2.66",
+        "hash": "v2266",
+        "product": "Java Agent",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> Modified the behavior so that when a transaction step contains only an http-header step, the http-header step is not collected.</p>",
+        "details": "<div class=\"language-bash codeBlockContainer theme-code-block\" style=\"--prism-background-color:#292d3e;--prism-color:#f8f8f2\"><div class=\"codeBlockContent\"><pre tabindex=\"0\" class=\"prism-code language-bash codeBlock thin-scrollbar\" style=\"color:#f8f8f2;background-color:#292d3e\"><code class=\"codeBlockLines\"><span class=\"token-line\"><span class=\"token comment\" style=\"color:rgb(105,112,152);font-style:italic\"># default: false</span></span><br /><span class=\"token-line\"><span class=\"token assign-left variable\" style=\"color:rgb(255,203,107)\">trace_header_only_enabled</span><span class=\"token operator\" style=\"color:rgb(199,146,234)\">=</span><span class=\"token plain\" style=\"color:#bfc7d5\">true</span></span></code></pre></div></div>"
+      }
+    ]
+  },  
+  {
     "ver": "v2.2.65",
     "date": "2025-10-28",
     "Lists": [
