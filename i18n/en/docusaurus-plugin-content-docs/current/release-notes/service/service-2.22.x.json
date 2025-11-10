@@ -1,6 +1,55 @@
 [
     {
         "url": "https://docs.whatap.io/release-notes/service/service-2_22_x",
+        "ver": "Service 2.22.5",
+        "date": "2025-11-06",
+        "Lists": [
+          {
+            "ver": "Service 2.22.5",
+            "hash": "service-2225",
+            "product": "Server",
+            "type": "Feature",
+            "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> Improved data query performance in the <span class=\"uitext\">GPU Inventory</span> table.</p>"
+          }
+        ]
+    },
+    {
+        "url": "https://docs.whatap.io/release-notes/service/service-2_22_x",
+        "ver": "Service 2.22.5",
+        "date": "2025-11-06",
+        "Lists": [
+          {
+            "ver": "Service 2.22.5",
+            "hash": "service-2225",
+            "product": "Kubernetes",
+            "type": "Feature",
+            "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">Container</span> > <span class=\"uitext\">Out of Memory Killed Container</span> Improved accuracy of OOM container data (Kubernetes agent version 1.8.6 or higher).</p>"
+          },
+          {
+            "ver": "Service 2.22.5",
+            "hash": "service-2225",
+            "product": "Kubernetes",
+            "type": "Feature",
+            "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">Workload</span> > <span class=\"uitext\">Pod List Details</span> Added GPU Metrics tab.</p>"
+          },
+          {
+            "ver": "Service 2.22.5",
+            "hash": "service-2225",
+            "product": "Kubernetes",
+            "type": "Feature",
+            "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">GPU</span> > <span class=\"uitext\">GPU Dashboard</span> Added tooltips explaining each stage of GPU utilization status.</p>"
+          },
+          {
+            "ver": "Service 2.22.5",
+            "hash": "service-2225",
+            "product": "Kubernetes",
+            "type": "Feature",
+            "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">GPU</span> > <span class=\"uitext\">GPU Dashboard</span> Added descriptions for SM Active and GPU Utilization metrics.</p>"
+          }
+        ]
+    },      
+    {
+        "url": "https://docs.whatap.io/release-notes/service/service-2_22_x",
         "ver": "Service 2.22.3",
         "date": "2025-10-31",
         "Lists": [
