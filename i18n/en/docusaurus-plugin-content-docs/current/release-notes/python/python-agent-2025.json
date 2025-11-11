@@ -1,5 +1,36 @@
 [
   {
+    "url": "https://docs.whatap.io/release-notes/python/python-1_8_14",
+    "ver": "v1.8.14",
+    "date": "2025-11-11",
+    "Lists": [
+      {
+        "ver": "v1.8.14",
+        "hash": "v1814",
+        "product": "Python Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <code>psycopg_pool</code> module fix</p>",
+        "details": "<ul><li><p>Fixed an issue where connections were not returned to the pool when calling <code>pool_connection</code> manually.</p></li></ul>"
+      },
+      {
+        "ver": "v1.8.14",
+        "hash": "v1813",
+        "product": "Python Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <code>psycopg</code> module fix</p>",
+        "details": "<ul><li><p>Fixed a conflict issue that occurred with certain logic when used with <code>psycopg2</code>.</p></li></ul>"
+      },
+      {
+        "ver": "v1.8.14",
+        "hash": "v1814",
+        "product": "Python Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <strong>ACTIVE_STATUS</strong> monitoring function fix</p>",
+        "details": "<ul><li><p>Fixed an issue where <strong>ACTIVE_STATUS</strong> data was being sent unnecessarily.</p></li></ul>"
+      }
+    ]
+  },  
+  {
     "url": "https://docs.whatap.io/release-notes/python/python-1_8_13",
     "ver": "v1.8.13",
     "date": "2025-10-01",
@@ -34,7 +65,7 @@
         "product": "Python Agent",
         "type": "Fixed",
         "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Fixed an issue where Container ID was not mapped in Kubernetes container environments</p>",
-        "details": "<ul><div class=\"theme-admonition theme-admonition-caution alert alert--warning\">\n  <div class=\"admonition-heading\">\n <strong>Caution</strong>\n  </div>\n  <div class=\"admonition-content\">\n    <p>Supported from Kubernetes agent v1.8.9 or higher</p>\n  </div>\n</div></ul>"
+        "details": "<ul><div class=\"theme-admonition theme-admonition-caution alert alert--warning\">\n  <div class=\"admonition-heading\">\n <strong>Caution</strong>\n  </div>\n  <div class=\"admonition-content\">\n    <p>Supported from Kubernetes agent v1.8.8 or higher</p>\n  </div>\n</div></ul>"
       }
     ]
   },  
