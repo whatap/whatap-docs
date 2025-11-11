@@ -1,0 +1,27 @@
+---
+id: python-1_8_14
+title: Python Agent v1.8.14
+toc_max_heading_level: 2
+pagination_next: release-notes/python/python-1_8_13
+displayed_sidebar: releaseSidebar
+---
+
+November 11, 2025
+
+- <Status priority='0'>Fixed</Status> `psycopg_pool` module
+
+    - Fixed an issue where connections were not returned to the pool when calling `pool_connection` manually.
+
+- <Status priority='0'>Fixed</Status> `psycopg` module
+
+    - Fixed a conflict issue that occurred with certain logic when used with `psycopg2`.
+
+- <Status priority='0'>Fixed</Status> **ACTIVE_STATUS** monitoring function
+
+    - Fixed an issue where **ACTIVE_STATUS** data was being sent unnecessarily.
+
+:::note
+
+Agent download: [whatap-python v1.8.14](https://pypi.org/project/whatap-python/1.8.14/)
+
+:::
