@@ -63,10 +63,6 @@
   --ifm-main-icons-color: #636363;
   --ifm-custom-uitext-color: #222222;
   // --ifm-menu-link-sublist-icon: url('img/sub-list-right-arrow.svg');
-  --list-block-margin: 12px;           /* 목록 위아래 여백 */
-  --list-nested-margin: 6px;           /* 중첩 목록 위아래 여백 */
-  --list-left-padding: 1.25rem;        /* 기본 들여쓰기 (Docusaurus 변수와 일치) */
-  --list-item-gap: 4px;                /* li 간격 */
 }
 
 // 다크모드
@@ -109,14 +105,16 @@ article[class*=searchResultItem] > h2 > a > span::after {
 }
 
 html {
-  line-height: 1.8;
+  line-height: 1.7;
 }
 html[lang='ko-KR'] {
   word-wrap: keep-all;
+  font-size: calc(var(--ifm-font-size-base) * 0.95);
   font-family: 'Noto Sans KR', sans-serif, 'Apple SD Gothic Neo' !important; //'Noto Emoji'
   h1, h2, h3, h4, h5, h6 {
     font-family: 'Noto Sans KR', sans-serif, 'Apple SD Gothic Neo' !important; //'Noto Emoji'
   }
+  
 }
 
 html[lang='en-US'] {
@@ -466,9 +464,23 @@ footer.footer.full--width {
     }
   }
 }
-.menu__link--sublist-caret:after {
-  margin-right: 3px;
+/* 화살표 위치 조정 - 3.8.0 수정됨 */
+.menu__link--sublist-caret {
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  padding-right: 12px !important;  /* 오른쪽 여백 */
 }
+
+// .menu__link--sublist-caret:after {
+//   margin-right: 3px;
+// }
+.menu__link--sublist-caret::after {
+  margin-left: auto !important;
+  margin-right: 0 !important;  /* 3px에서 0으로 변경 */
+  flex-shrink: 0;  /* 화살표 크기 고정 */
+}
+
 .menu__list .menu__list {
   padding-left: 0;
   font-weight: normal;
@@ -508,6 +520,7 @@ footer.footer.full--width {
 .menu__list-item.newfunc > a {
   display: inline-block;
 }
+
 .theme-doc-sidebar-item-category.beta > div > a::after {
   display: inline;
   content: 'Beta';
@@ -566,6 +579,21 @@ footer.footer.full--width {
 }
 .menu__list-item-collapsible--active {
   background: var(--ifm-active-menu-color);
+}
+/* 사이드바 카테고리 링크 - 수정됨 */
+.menu__list-item--collapsed .menu__link,
+.menu__list-item:not(.menu__list-item--collapsed) .menu__link {
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+}
+
+/* 화살표 아이콘 정렬 - 수정됨 */
+.menu__link--sublist-caret::after,
+.menu__caret::before {
+  margin-left: auto !important;
+  margin-right: 0 !important;
+  flex-shrink: 0 !important;
 }
 .theme-doc-sidebar-item-category-level-1:last-of-type{
   border-bottom: none;
@@ -801,7 +829,13 @@ code {
   padding: 0 6px;
   border-radius: 4px;
 }
-// Docusaurus 3.8.0 코드 블록 수정
+// Docusaurus 3.8.0 수정
+
+/* Sidebar 상단 여백 제거 */
+/* 또는 전체 경로로 해줄 경우만 여백이 제거 됨 */
+aside.theme-doc-sidebar-container > div[class*="sidebarViewport"] > div[class*="sidebar"] {
+  padding-top: 0 !important;
+}
 // 코드 블록 컨테이너
 .theme-code-block {
   padding: 0 !important;  // 전체 패딩 제거
@@ -860,16 +894,17 @@ article.markdown table td {
    ============================================ */
 
 /* 모든 ul, ol 기본 여백 복원 */
-article ul,
+article ul:not(.breadcrumbs),
 article ol,
-.markdown ul,
+.markdown ul:not(.breadcrumbs),
 .markdown ol,
-.theme-doc-markdown ul,
+.theme-doc-markdown ul:not(.breadcrumbs),
 .theme-doc-markdown ol {
   margin-left: 1.5rem !important;
   padding-left: 0 !important;
   margin-bottom: 1rem;
 }
+
 
 /* TOC */
 .table-of-contents,
@@ -1012,6 +1047,7 @@ div[class*='announcementBar']:not([class*='Placeholder']) {
 article div[class*='fbsharebutton'] {
   display: none;
 }
+
 // UI
 // OpenAPI
 .redocusaurus {
@@ -1265,6 +1301,9 @@ main {
   }
   ul.breadcrumbs {
     li.breadcrumbs__item {
+      &:first-child {
+        margin-left: 0 !important;
+      }
       a.breadcrumbs__link {
         padding: 2px 6px;
         font-size: var(--ifm-body-breacrums-size);
