@@ -1,5 +1,36 @@
 [
   {
+    "url": "https://docs.whatap.io/release-notes/python/python-1_8_14",
+    "ver": "v1.8.14",
+    "date": "2025-11-11",
+    "Lists": [
+      {
+        "ver": "v1.8.14",
+        "hash": "v1814",
+        "product": "Python Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <code>psycopg_pool</code> モジュールを修正</p>",
+        "details": "<ul><li><p><code>pool_connection</code> を手動で呼び出した際に接続がプールに返却されない問題を修正しました。</p></li></ul>"
+      },
+      {
+        "ver": "v1.8.14",
+        "hash": "v1813",
+        "product": "Python Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <code>psycopg</code> モジュールを修正</p>",
+        "details": "<ul><li><p>特定のロジックで <code>psycopg2</code> と競合が発生していた問題を修正しました。</p></li></ul>"
+      },
+      {
+        "ver": "v1.8.14",
+        "hash": "v1814",
+        "product": "Python Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <strong>ACTIVE_STATUS</strong> モニタリング機能を修正</p>",
+        "details": "<ul><li><p>不要な状況で <strong>ACTIVE_STATUS</strong> データが送信されていた問題を修正しました。</p></li></ul>"
+      }
+    ]
+  },  
+  {
     "url": "https://docs.whatap.io/release-notes/python/python-1_8_13",
     "ver": "v1.8.13",
     "date": "2025-10-01",
@@ -34,7 +65,7 @@
         "product": "Python Agent",
         "type": "Fixed",
         "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Kubernetes コンテナ環境で Container ID がマッピングされない問題を修正</p>",
-        "details": "<ul><div class=\"theme-admonition theme-admonition-caution alert alert--warning\">\n  <div class=\"admonition-heading\">\n <strong>注意</strong>\n  </div>\n  <div class=\"admonition-content\">\n    <p>Kubernetes エージェント v1.8.9 以上でサポート</p>\n  </div>\n</div></ul>"
+        "details": "<ul><div class=\"theme-admonition theme-admonition-caution alert alert--warning\">\n  <div class=\"admonition-heading\">\n <strong>注意</strong>\n  </div>\n  <div class=\"admonition-content\">\n    <p>Kubernetes エージェント v1.8.8 以上でサポート</p>\n  </div>\n</div></ul>"
       }
     ]
   },  
