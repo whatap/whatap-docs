@@ -1,0 +1,30 @@
+[
+    {
+      "url": "https://docs.whatap.io/release-notes/php/php-0_5_1",
+      "ver": "v0.9.1",
+      "date": "2025-07-16",
+      "Lists": [
+        {
+          "ver": "v0.5.1",
+          "hash": "v051",
+          "product": "NPM Agent",
+          "type": "Fixed",
+          "desc": "<p><code class=\"Fixed\">Fixed</code> Made TCP/UDP traffic metric collection configurable</p>"
+        }
+      ]
+    },
+    {
+      "url": "https://docs.whatap.io/release-notes/php/php-0_4_5",
+      "ver": "v0.4.5",
+      "date": "2024-04-15",
+      "Lists": [
+        {
+          "ver": "v0.4.5",
+          "hash": "v045",
+          "product": "NPM Agent",
+          "type": "Fixed",
+          "desc": "<p><code class=\"Fixed\">Fixed</code> Fixed the tagRule option bug: abnormal actions of the processBlackList and processWhiteList options. </p>"
+        }
+      ]
+    }
+]
