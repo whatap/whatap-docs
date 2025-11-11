@@ -9,13 +9,24 @@ toc_min_heading_level: 2
 <meta name="robots" content="noindex, nofollow"/>
 </head>
 
+#### Latest Version: 1.3.6
+
+<br />
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 import ReleaseNotes2024 from "./browser-agent-2024.json";
 import ReleaseNotes2023 from "./browser-agent-2023.json";
 
-## Release history for 2024
+<Tabs>
 
-<ImportJson filePath={ReleaseNotes2024} sort="date" category="agent" />
+    <TabItem value="2024" label="2024">
+        <ImportJson filePath={ReleaseNotes2024} sort="date" category="agent" />
+    </TabItem>
+    
+    <TabItem value="2023" label="2023">
+        <ImportJson filePath={ReleaseNotes2023} sort="date" category="agent" />
+    </TabItem>
 
-## Release history for 2023
-
-<ImportJson filePath={ReleaseNotes2023} sort="date" category="agent" />
+</Tabs>
