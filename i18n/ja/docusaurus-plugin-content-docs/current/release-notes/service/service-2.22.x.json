@@ -1,6 +1,28 @@
 [
   {
     "url": "https://docs.whatap.io/release-notes/service/service-2_22_x",
+    "ver": "Service 2.22.7",
+    "date": "2025-11-11",
+    "Lists": [
+      {
+        "ver": "Service 2.22.7",
+        "hash": "service-2227",
+        "product": "Server",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">サーバーインベントリマップ</span> のグループサマリーパネルおよび詳細ドロワーでインベントリテーブルのパフォーマンスを改善しました。</p>"
+      },
+      {
+        "ver": "Service 2.22.7",
+        "hash": "service-2227",
+        "product": "Server",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">サーバーインベントリ</span> のテーブルパフォーマンスを改善し、ソート方式を変更しました。</p>",
+        "details": "<ul>\n<li><p>以前: 上部のソートセレクターを使用して 1〜3 次ソート</p></li>\n<li><p>変更後: テーブルヘッダーを <strong>Shift + クリック</strong> して複数ソートを実行</p></li></ul>"
+      }
+    ]
+  },  
+  {
+    "url": "https://docs.whatap.io/release-notes/service/service-2_22_x",
     "ver": "Service 2.22.6",
     "date": "2025-11-10",
     "Lists": [
