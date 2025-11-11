@@ -1,6 +1,28 @@
 [
   {
     "url": "https://docs.whatap.io/release-notes/service/service-2_22_x",
+    "ver": "Service 2.22.7",
+    "date": "2025-11-11",
+    "Lists": [
+      {
+        "ver": "Service 2.22.7",
+        "hash": "service-2227",
+        "product": "Server",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> Improved inventory table performance in the group summary panel and detail drawer of <span class=\"uitext\">Server Inventory Map</span>.</p>"
+      },
+      {
+        "ver": "Service 2.22.7",
+        "hash": "service-2227",
+        "product": "Server",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> Improved table performance and changed sorting behavior in <span class=\"uitext\">Server Inventory</span>.</p>",
+        "details": "<ul>\n<li><p>Previous: Sorting through the top selector (1st to 3rd level sorting)</p></li>\n<li><p>Changed: Multi-level sorting using table header <strong>Shift + Click</strong></p></li></ul>"
+      }
+    ]
+  },  
+  {
+    "url": "https://docs.whatap.io/release-notes/service/service-2_22_x",
     "ver": "Service 2.22.6",
     "date": "2025-11-10",
     "Lists": [
