@@ -1,5 +1,32 @@
 [
   {
+    "ver": "v1.0.9",
+    "date": "2025-11-11",
+    "Lists": [
+      {
+        "ver": "v1.0.9",
+        "hash": "v109",
+        "product": "Node.js Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Improved to automatically restart the <code>whatap_nodejs</code> process when it terminates.</p>"
+      },
+      {
+        "ver": "v1.0.9",
+        "hash": "v109",
+        "product": "Node.js Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Changed the WhaTap log file name (<code>whatap-yyyymmdd.log</code> → <code>whatap-hook-yyyymmdd.log</code>).</p>"
+      },
+      {
+        "ver": "v1.0.9",
+        "hash": "v109",
+        "product": "Node.js Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Improved container ID collection logic.</p>"
+      }
+    ]
+  },  
+  {
     "ver": "v1.0.8",
     "date": "2025-11-06",
     "Lists": [
