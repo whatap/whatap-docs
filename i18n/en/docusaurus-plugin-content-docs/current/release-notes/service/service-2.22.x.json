@@ -1,6 +1,20 @@
 [
   {
     "url": "https://docs.whatap.io/release-notes/service/service-2_22_x",
+    "ver": "Service 2.22.8",
+    "date": "2025-11-12",
+    "Lists": [
+      {
+        "ver": "Service 2.22.8",
+        "hash": "service-2228",
+        "product": "Application",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Improved inventory table performance in the group summary panel and detail drawer of <span class=\"uitext\">Server Inventory Map</span>.</p>"
+      }
+    ]
+  },  
+  {
+    "url": "https://docs.whatap.io/release-notes/service/service-2_22_x",
     "ver": "Service 2.22.7",
     "date": "2025-11-11",
     "Lists": [
