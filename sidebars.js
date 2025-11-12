@@ -4347,13 +4347,13 @@ const sidebars = {
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/python/python-1_8_13',
+                  id: 'release-notes/python/python-1_8_14',
                   className: 'new',
                 },
+                'release-notes/python/python-1_8_13',
                 'release-notes/python/python-1_8_12',
                 'release-notes/python/python-1_8_11',
                 'release-notes/python/python-1_8_10',
-                'release-notes/python/python-1_8_9',
                 'release-notes/python/python-previous',
               ],
             },
@@ -4518,27 +4518,9 @@ const sidebars = {
               id: 'release-notes/url/url-release-notes',
             },
             {
-              type: 'category',
+              type: 'doc',
               label: 'Browser',
-              collapsible: true,
-              collapsed: true,
-              // className: 'new',
-              link: {
-                type: 'doc',
-                id: 'release-notes/browser/index',
-              },
-              items: [
-                {
-                  type: 'doc',
-                  id: 'release-notes/browser/browser-v1_3_6',
-                  // className: 'new',
-                },
-                'release-notes/browser/browser-v1_3_5',
-                'release-notes/browser/browser-v1_3_4',
-                'release-notes/browser/browser-v1_3_3',
-                'release-notes/browser/browser-v1_3_2',
-                'release-notes/browser/browser-previous',
-              ],
+              id: 'release-notes/browser/index',
             },
             {
               type: 'category',
@@ -4546,13 +4528,15 @@ const sidebars = {
               collapsible: true,
               collapsed: true,
               // className: 'new',
+              link: {
+                type: 'doc',
+                id: 'release-notes/npm/index',
+              },
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/npm/npm-0_5_1', 
-                  // className: 'new',
+                  id: 'release-notes/npm/download-npm-agent',
                 },
-                'release-notes/npm/npm-0_4_5',
               ],
             },
             {
