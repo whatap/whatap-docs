@@ -95,7 +95,7 @@ function DocCard({item}) {
 }
 export default function DocCardWrapper(props) {
   return (
-    <div className="margin-bottom--lg">
+    <div className="docCard-wrapper">
       <DocCard {...props} />
     </div>
   );

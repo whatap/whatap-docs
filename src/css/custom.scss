@@ -17,6 +17,7 @@
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.8);
   --ifm-code-padding-vertical: 0.01rem;
   /* --ifm-code-padding-horizontal: 0.01rem; */
+  --ifm-spacing-vertical: 1rem;
   --shortcut-background-color: #fff;
   --main-osd-color: #296cf2;
   word-break: keep-all;
@@ -889,9 +890,6 @@ article ol,
 .margin-bottom--sm {
   margin-bottom: 40px !important;
 }
-.margin-bottom--sm {
-  margin-bottom: 40px !important;
-}
 .pagination-nav {
   margin-top: 12px !important;
 }
@@ -1581,10 +1579,10 @@ main {
         }
       }
     }
-    .margin-bottom--lg
+    .docCard-wrapper // margin-bottom--lg 에서 이름 변경
     {
-      margin-right: 12px;
-      margin-bottom: 0rem;
+      margin-right: 12px; // 카드 가운데 여백
+      margin-bottom: 1rem;
       &:nth-child(2n) {
         margin-right: 0;
       }
@@ -1683,11 +1681,6 @@ main {
         }
       }
     }
-
-    // .padding--lg a {
-    //   padding: 1rem !important;
-    //   margin: 0;
-    // }
     .col--6 {
       --ifm-col-width: calc(6 / 12 * 100%) !important;
     }
