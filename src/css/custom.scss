@@ -1261,9 +1261,6 @@ main {
     padding: 30px;
     font-size: 1.5rem;
   }
-  .breadcrumbsContainer_src-theme-DocBreadcrumbs-styles-module {
-    margin-bottom: 16px;
-  }
   nav.theme-doc-breadcrumbs {
     div.breadcrumbs-hidden {
       display: none;
@@ -1274,12 +1271,12 @@ main {
       &:first-child {
         margin-left: 0 !important;
       }
-      a.breadcrumbs__link {
+      span.breadcrumbs__link {
         padding: 2px 6px;
         font-size: var(--ifm-body-breacrums-size);
         &:first-of-type {
-          padding-left: 2px;
-          padding-right: 2px;
+          padding-left: 10px;
+          padding-right: 10px;
         }
       }
       &:not(:last-child):after {
