@@ -235,14 +235,12 @@ footer.footer {
     border-radius: 0 !important;
   }
 }
-
 footer.footer.full--width {
   .container {
     max-width: 100%;
     margin: 0;
   }
 }
-
 .tag_node_modules-\@docusaurus-theme-classic-lib-theme-Tag-styles-module {
   border: 1px solid rgba(41, 108, 242, 0.7) !important; 
 }
@@ -464,21 +462,8 @@ footer.footer.full--width {
     }
   }
 }
-/* 화살표 위치 조정 - 3.8.0 수정됨 */
-.menu__link--sublist-caret {
-  display: flex !important;
-  justify-content: space-between !important;
-  align-items: center !important;
-  padding-right: 12px !important;  /* 오른쪽 여백 */
-}
-
-// .menu__link--sublist-caret:after {
-//   margin-right: 3px;
-// }
-.menu__link--sublist-caret::after {
-  margin-left: auto !important;
-  margin-right: 0 !important;  /* 3px에서 0으로 변경 */
-  flex-shrink: 0;  /* 화살표 크기 고정 */
+.menu__link--sublist-caret:after {
+  margin-right: 3px;
 }
 
 .menu__list .menu__list {
@@ -579,21 +564,6 @@ footer.footer.full--width {
 }
 .menu__list-item-collapsible--active {
   background: var(--ifm-active-menu-color);
-}
-/* 사이드바 카테고리 링크 - 수정됨 */
-.menu__list-item--collapsed .menu__link,
-.menu__list-item:not(.menu__list-item--collapsed) .menu__link {
-  display: flex !important;
-  justify-content: space-between !important;
-  align-items: center !important;
-}
-
-/* 화살표 아이콘 정렬 - 수정됨 */
-.menu__link--sublist-caret::after,
-.menu__caret::before {
-  margin-left: auto !important;
-  margin-right: 0 !important;
-  flex-shrink: 0 !important;
 }
 .theme-doc-sidebar-item-category-level-1:last-of-type{
   border-bottom: none;
@@ -913,6 +883,7 @@ article ol,
   padding-left: 0.5rem !important;
   list-style-type: none; /* TOC는 보통 숫자 없음 */
 }
+
 // Docusaurus 3.8.0 수정사항 여기까지
 
 .margin-bottom--sm {
@@ -1047,7 +1018,6 @@ div[class*='announcementBar']:not([class*='Placeholder']) {
 article div[class*='fbsharebutton'] {
   display: none;
 }
-
 // UI
 // OpenAPI
 .redocusaurus {
@@ -1461,6 +1431,7 @@ main {
     }
     h1 {
       padding-top: 8px;
+      padding-bottom: 20px; // 3.8.0 추가
       &:first-child {
         font-size: 2.5rem;
       }
@@ -1613,14 +1584,12 @@ main {
         }
       }
     }
-    .margin-bottom--lg {
+    .margin-bottom--lg
+    {
       margin-right: 12px;
-      margin-bottom: 10px !important;
+      margin-bottom: 0rem;
       &:nth-child(2n) {
         margin-right: 0;
-      }
-      .padding--lg {
-        padding: 24px 24px 24px 24px !important;
       }
       a {
         border-radius: 4px;
@@ -1717,16 +1686,13 @@ main {
         }
       }
     }
-    .padding--lg a {
-      padding: 24px 24px !important;
-      margin: 0;
-    }
+
+    // .padding--lg a {
+    //   padding: 1rem !important;
+    //   margin: 0;
+    // }
     .col--6 {
-      --ifm-col-width: calc(6 / 12 * (100% - 12px));
-    }
-    .cardContainer_node_modules-\@docusaurus-theme-classic-lib-theme-DocCard-styles-module {
-      border: 1px solid rgba(119,119,119,0.7);
-      box-shadow: none;
+      --ifm-col-width: calc(6 / 12 * 100%) !important;
     }
     .ic-gs svg {
       width: 22px;

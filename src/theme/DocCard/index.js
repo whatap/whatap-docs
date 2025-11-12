@@ -83,7 +83,7 @@ function CardLink({item}) {
     />
   );
 }
-export default function DocCard({item}) {
+function DocCard({item}) {
   switch (item.type) {
     case 'link':
       return <CardLink item={item} />;
@@ -92,4 +92,11 @@ export default function DocCard({item}) {
     default:
       throw new Error(`unknown item type ${JSON.stringify(item)}`);
   }
+}
+export default function DocCardWrapper(props) {
+  return (
+    <div className="margin-bottom--lg">
+      <DocCard {...props} />
+    </div>
+  );
 }
