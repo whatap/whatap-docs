@@ -1,6 +1,20 @@
 [
   {
     "url": "https://docs.whatap.io/release-notes/service/service-2_22_x",
+    "ver": "Service 2.22.9",
+    "date": "2025-11-13",
+    "Lists": [
+      {
+        "ver": "Service 2.22.9",
+        "hash": "service-2229",
+        "product": "Server",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">GPU パフォーマンスサマリー</span> に GPU Utilization の新しい指標を追加しました。</p>"
+      }
+    ]
+  },  
+  {
+    "url": "https://docs.whatap.io/release-notes/service/service-2_22_x",
     "ver": "Service 2.22.8",
     "date": "2025-11-12",
     "Lists": [
