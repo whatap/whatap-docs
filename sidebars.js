@@ -323,6 +323,7 @@ const sidebars = {
             'php/php-os/alpine-linux',
             'php/php-os/gcae',
             'php/php-os/aws-eb',
+            'php/php-os/windows',
             'php/install-agent-docker'
           ]
         },
