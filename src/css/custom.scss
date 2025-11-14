@@ -21,8 +21,8 @@
   --shortcut-background-color: #fff;
   --main-osd-color: #296cf2;
   word-break: keep-all;
-  --ifm-h1-font-size: 2.5rem;
-  --ifm-h2-font-size: 2.0rem;
+  --ifm-h1-font-size: 2.2rem;
+  --ifm-h2-font-size: 1.75rem;
   --ifm-h3-font-size: 1.5rem;
   --ifm-h4-font-size: 1.25rem;
   --ifm-h5-font-size: 1.0rem;
@@ -1428,7 +1428,7 @@ main {
       padding-top: 8px;
       padding-bottom: 20px; // 3.8.0 추가
       &:first-child {
-        font-size: 2.5rem;
+        font-size: 2.2rem; // 왜 직접 값을 주는지?
       }
       code {
         font-size: inherit;
@@ -1579,7 +1579,7 @@ main {
         }
       }
     }
-    .docCard-wrapper // margin-bottom--lg 에서 이름 변경
+    .docCard-wrapper // margin-bottom--lg 에서 이름 변경, overide 안됨
     {
       margin-right: 12px; // 카드 가운데 여백
       margin-bottom: 1rem;
