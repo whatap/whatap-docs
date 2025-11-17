@@ -15,6 +15,20 @@
         "ver": "Service 2.22.9",
         "hash": "service-2229",
         "product": "Kubernetes",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> Replaced the <strong>SM Active</strong> chart with <strong>Power Usage</strong> in the GPU Metrics tab available in <span class=\"uitext\">Container Map</span>, <span class=\"uitext\">Pod List</span>, and <span class=\"uitext\">GPU Dashboard</span> details.</p>"
+      },
+      {
+        "ver": "Service 2.22.9",
+        "hash": "service-2229",
+        "product": "Kubernetes",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> In the <span class=\"uitext\">GPU Dashboard</span>, replaced the <strong>SM Active</strong> chart with <strong>Power Usage</strong> in the main performance trend charts.</p>"
+      },      
+      {
+        "ver": "Service 2.22.9",
+        "hash": "service-2229",
+        "product": "Kubernetes",
         "type": "Fixed",
         "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">GPU Dashboard</span> Fixed an issue where MIG nodes were displayed in the resource topology regardless of GPU type.</p>"
       }      
