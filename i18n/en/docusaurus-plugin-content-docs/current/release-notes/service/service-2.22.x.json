@@ -9,7 +9,8 @@
         "hash": "service-2229",
         "product": "Server",
         "type": "Feature",
-        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">GPU Performance Summary</span> Added new metric: GPU Utilization</p>"
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">GPU Performance Summary</span> </p>",
+        "details": "<ul>\n<li><p>Added new GPU Utilization metric</p></li>\n<li><p>Added an input field for searching GPU information</p></li>\n<li><p>Added a label to display the number of query results</p></li></ul>"
       },
       {
         "ver": "Service 2.22.9",

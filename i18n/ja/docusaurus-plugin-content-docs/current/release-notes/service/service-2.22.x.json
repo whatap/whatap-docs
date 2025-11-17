@@ -9,7 +9,8 @@
         "hash": "service-2229",
         "product": "Server",
         "type": "Feature",
-        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">GPU パフォーマンスサマリー</span> に GPU Utilization の新しい指標を追加しました。</p>"
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">GPU パフォーマンスサマリー</span> </p>",
+        "details": "<ul>\n<li><p>GPU Utilization の新規指標を追加</p></li>\n<li><p>GPU 情報検索用の入力フィールドを追加</p></li>\n<li><p>検索結果件数を表示するラベルを追加</p></li></ul>"
       },
       {
         "ver": "Service 2.22.9",
