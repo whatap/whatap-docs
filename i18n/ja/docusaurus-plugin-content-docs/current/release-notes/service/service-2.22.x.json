@@ -15,6 +15,20 @@
         "ver": "Service 2.22.9",
         "hash": "service-2229",
         "product": "Kubernetes",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> <span class=\"uitext\">コンテナマップ</span>、<span class=\"uitext\">Pod 一覧</span>、<span class=\"uitext\">GPU ダッシュボード</span> の詳細にある GPU メトリクスタブで、<strong>SM Active</strong> チャートを <strong>Power Usage</strong> に置き換えました。</p>"
+      },
+      {
+        "ver": "Service 2.22.9",
+        "hash": "service-2229",
+        "product": "Kubernetes",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> <span class=\"uitext\">GPU ダッシュボード</span> の主要パフォーマンストレンドチャートで、<strong>SM Active</strong> チャートを <strong>Power Usage</strong> に置き換えました。</p>"
+      },      
+      {
+        "ver": "Service 2.22.9",
+        "hash": "service-2229",
+        "product": "Kubernetes",
         "type": "Fixed",
         "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">GPU ダッシュボード</span> のリソース関係図で、GPU タイプに関係なく MIG ノードが表示される不具合を修正しました。</p>"
       }      
