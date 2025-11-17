@@ -10,7 +10,14 @@
         "product": "Server",
         "type": "Feature",
         "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">GPU パフォーマンスサマリー</span> に GPU Utilization の新しい指標を追加しました。</p>"
-      }
+      },
+      {
+        "ver": "Service 2.22.9",
+        "hash": "service-2229",
+        "product": "Kubernetes",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">GPU ダッシュボード</span> のリソース関係図で、GPU タイプに関係なく MIG ノードが表示される不具合を修正しました。</p>"
+      }      
     ]
   },  
   {

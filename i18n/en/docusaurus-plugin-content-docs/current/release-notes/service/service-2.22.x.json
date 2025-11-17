@@ -10,7 +10,14 @@
         "product": "Server",
         "type": "Feature",
         "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">GPU Performance Summary</span> Added new metric: GPU Utilization</p>"
-      }
+      },
+      {
+        "ver": "Service 2.22.9",
+        "hash": "service-2229",
+        "product": "Kubernetes",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">GPU Dashboard</span> Fixed an issue where MIG nodes were displayed in the resource topology regardless of GPU type.</p>"
+      }      
     ]
   },    
   {
