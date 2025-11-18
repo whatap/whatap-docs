@@ -1,6 +1,20 @@
 [
   {
     "url": "https://docs.whatap.io/release-notes/service/service-2_22_x",
+    "ver": "Service 2.22.10",
+    "date": "2025-11-17",
+    "Lists": [
+      {
+        "ver": "Service 2.22.10",
+        "hash": "service-22210",
+        "product": "Kubernetes",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">GPU ダッシュボード</span> の GPU 一覧で Utilization 値の補正が適用されていなかった問題を修正しました。</p>"
+      }
+    ]
+  },  
+  {
+    "url": "https://docs.whatap.io/release-notes/service/service-2_22_x",
     "ver": "Service 2.22.9",
     "date": "2025-11-17",
     "Lists": [
