@@ -1,5 +1,86 @@
 [
   {
+    "ver": "v2.58.04",
+    "date": "2025-11-10",
+    "Lists": [
+      {
+        "ver": "v2.58.04",
+        "hash": "v25804",
+        "product": "DBX",
+        "type": "Fixed",
+        "category": "Common",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Fixed an issue where <code>whatap.log</code> was not visible in the log file viewer when installing the agent using the package manager</p>"
+      }
+    ]
+  },
+  {
+    "ver": "v2.58.03",
+    "date": "2025-11-07",
+    "Lists": [
+      {
+        "ver": "v2.58.03",
+        "hash": "v25803",
+        "product": "DBX",
+        "type": "Fixed",
+        "category": "Tibero",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Fixed an issue where <code>tablespace</code> data was accumulated incorrectly</p>"
+      }
+    ]
+  },
+  {
+    "ver": "v2.58.02",
+    "date": "2025-11-05",
+    "Lists": [
+      {
+        "ver": "v2.58.02",
+        "hash": "v25802",
+        "product": "DBX",
+        "type": "Feature",
+        "category": "PostgreSQL",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> Added <code>include</code> column to index information when retrieving table layout</p>"
+      },
+      {
+        "ver": "v2.58.02",
+        "hash": "v25802",
+        "product": "DBX",
+        "type": "Fixed",
+        "category": "DB2",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Corrected the metric name for <code>db2 counter</code></p>"
+      },
+      {
+        "ver": "v2.58.02",
+        "hash": "v25802",
+        "product": "DBX",
+        "type": "Fixed",
+        "category": "Tibero",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Fixed <code>sqltext clear</code> error</p>"
+      },
+      {
+        "ver": "v2.58.02",
+        "hash": "v25802",
+        "product": "DBX",
+        "type": "Fixed",
+        "category": "Tibero",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Updated <code>active session</code> information (<code>client_pid</code>, <code>ipaddr</code>, <code>module</code>, <code>action</code>)</p>"
+      }
+    ]
+  },
+  {
+    "ver": "v2.58.01",
+    "date": "2025-10-30",
+    "Lists": [
+      {
+        "ver": "v2.58.01",
+        "hash": "v25801",
+        "product": "DBX",
+        "type": "Feature",
+        "category": "Tibero",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> Released agent for Tibero V2</p>",
+        "details": "<ul>\n<li>Send collected data as tag-count pack</li>\n<li>Added <code>bind capture</code>, <code>plan change</code>, and <code>plan save</code> data (default: <code>false</code>)<br>※ UI not yet supported</li>\n<li>Added <code>segment size</code> information</li>\n<li>Added <code>sorts (disk)</code> metric</li>\n<li>Fixed SQL statistics issue where sessions without SQL text were collected if at least one session contained information</li>\n</ul>"
+      }
+    ]
+  },
+  {
     "ver": "v2.57.05",
     "date": "2025-10-17",
     "Lists": [

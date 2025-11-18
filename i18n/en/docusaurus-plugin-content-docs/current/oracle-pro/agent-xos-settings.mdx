@@ -71,7 +71,19 @@ You can additionally monitor resources on the database server by setting the fol
   ```ini title='xos.conf'
   file=/opt/oracle/log
   ```
+  :::tip
 
+  To add a logfile to monitor, add options in the same way as `file`, `file1`, `file2`.
+
+  ```ini title="xos.conf"
+  file={log_file_path1}
+  file1={log_file_path2}
+  file2={log_file_path3}
+  file3={log_file_path4}
+  ```
+
+  :::
+  
 ### User Metric Collection (SHMON)
 
 SHMON periodically collects the results of user-defined shell scripts and stores them as metrics.
