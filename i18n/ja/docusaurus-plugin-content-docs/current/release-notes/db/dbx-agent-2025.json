@@ -1,5 +1,86 @@
 [
   {
+    "ver": "v2.58.04",
+    "date": "2025-11-10",
+    "Lists": [
+      {
+        "ver": "v2.58.04",
+        "hash": "v25804",
+        "product": "DBX",
+        "type": "Fixed",
+        "category": "Common",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> パッケージマネージャーでエージェントをインストールした際、ログファイルビューアで <code>whatap.log</code> が表示されない問題を修正</p>"
+      }
+    ]
+  },
+  {
+    "ver": "v2.58.03",
+    "date": "2025-11-07",
+    "Lists": [
+      {
+        "ver": "v2.58.03",
+        "hash": "v25803",
+        "product": "DBX",
+        "type": "Fixed",
+        "category": "Tibero",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <code>tablespace</code> データが累積される不具合を修正</p>"
+      }
+    ]
+  },
+  {
+    "ver": "v2.58.02",
+    "date": "2025-11-05",
+    "Lists": [
+      {
+        "ver": "v2.58.02",
+        "hash": "v25802",
+        "product": "DBX",
+        "type": "Feature",
+        "category": "PostgreSQL",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> テーブルレイアウト参照時、インデックス情報に <code>include</code> カラムを追加</p>"
+      },
+      {
+        "ver": "v2.58.02",
+        "hash": "v25802",
+        "product": "DBX",
+        "type": "Fixed",
+        "category": "DB2",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <code>db2 counter</code> メトリック名を修正</p>"
+      },
+      {
+        "ver": "v2.58.02",
+        "hash": "v25802",
+        "product": "DBX",
+        "type": "Fixed",
+        "category": "Tibero",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <code>sqltext clear</code> エラーを修正</p>"
+      },
+      {
+        "ver": "v2.58.02",
+        "hash": "v25802",
+        "product": "DBX",
+        "type": "Fixed",
+        "category": "Tibero",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <code>active session</code> 情報を修正（<code>client_pid</code>、<code>ipaddr</code>、<code>module</code>、<code>action</code>）</p>"
+      }
+    ]
+  },
+  {
+    "ver": "v2.58.01",
+    "date": "2025-10-30",
+    "Lists": [
+      {
+        "ver": "v2.58.01",
+        "hash": "v25801",
+        "product": "DBX",
+        "type": "Feature",
+        "category": "Tibero",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> Tibero V2 用エージェントをリリース</p>",
+        "details": "<ul>\n<li>収集データをタグカウントパックとして送信</li>\n<li><code>bind capture</code>、<code>plan change</code>、<code>plan save</code> データを追加（デフォルト：<code>false</code>）<br>※ 画面は未対応</li>\n<li><code>segment size</code> 情報を追加</li>\n<li><code>sorts (disk)</code> 指標を追加</li>\n<li>SQL 統計の不具合を修正：少なくとも 1 つのセッション情報が存在する場合、SQL テキストのないセッションも統計に含まれていた問題を修正</li>\n</ul>"
+      }
+    ]
+  },
+  {
     "ver": "v2.57.05",
     "date": "2025-10-17",
     "Lists": [
