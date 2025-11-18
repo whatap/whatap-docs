@@ -8,13 +8,27 @@ displayed_sidebar: releaseSidebar
 
 ## Service 2.22.9
 
-2025年11月13日
+2025年11月17日
 
 <div class='indentTab'>
 
 ### `Server`
 
-- <Status priority='1'>Feature</Status> **GPU パフォーマンスサマリー** に新しい指標 **GPU Utilization** を追加しました。
+- <Status priority='1'>Feature</Status> **GPU パフォーマンスサマリー**
+
+    - GPU Utilization の新規指標を追加
+    - GPU 情報検索用の入力フィールドを追加
+    - 検索結果件数を表示するラベルを追加
+
+---
+
+### `Kubernetes` 
+
+- <Status priority='1'>Changed</Status> <Cmdname sid="container_map" className="uitext" />, <Cmdname sid="podList" className="uitext" />, **GPU ダッシュボード** の詳細にある GPU メトリクスタブで **SM Active** チャートを **Power Usage** に置き換えました。
+
+- <Status priority='1'>Changed</Status> **GPU ダッシュボード** の主要パフォーマンストレンドチャートで **SM Active** チャートを **Power Usage** に置き換えました。
+
+- <Status priority='0'>Fixed</Status> **GPU ダッシュボード** のリソース関係図で、GPU タイプに関係なく MIG ノードが表示される不具合を修正しました。
 
 </div>
 

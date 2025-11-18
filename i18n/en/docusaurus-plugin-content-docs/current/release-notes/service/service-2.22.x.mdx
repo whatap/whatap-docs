@@ -8,13 +8,27 @@ displayed_sidebar: releaseSidebar
 
 ## Service 2.22.9
 
-November 13, 2025
+November 17, 2025
 
 <div class='indentTab'>
 
 ### `Server`
 
-- <Status priority='1'>Feature</Status> **GPU Performance Summary** Added a new metric: **GPU Utilization**
+- <Status priority='1'>Feature</Status> **GPU Performance Summary**
+
+    - Added new metric: GPU Utilization
+    - Added input field for GPU information search
+    - Added label to display the number of query results
+
+---
+
+### `Kubernetes` 
+
+- <Status priority='1'>Changed</Status> <Cmdname sid="container_map" className="uitext" />, <Cmdname sid="podList" className="uitext" />, **GPU Dashboard** details: replaced the **SM Active** chart in the GPU Metrics tab with **Power Usage**.
+
+- <Status priority='1'>Changed</Status> **GPU Dashboard** main performance trend charts: replaced the **SM Active** chart with **Power Usage**.
+
+- <Status priority='0'>Fixed</Status> **GPU Dashboard** Fixed an issue where MIG nodes were displayed in the resource topology regardless of GPU type.
 
 </div>
 
