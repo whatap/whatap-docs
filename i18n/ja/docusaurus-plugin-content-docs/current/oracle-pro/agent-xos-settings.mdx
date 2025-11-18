@@ -72,6 +72,19 @@ keywords:
   file=/opt/oracle/log
   ```
 
+  :::tip
+
+  モニタリングするログファイルを追加するには`file`、`file1`、`file2`といった方法でオプションを追加します。
+
+  ```ini title="xos.conf"
+  file={log_file_path1}
+  file1={log_file_path2}
+  file2={log_file_path3}
+  file3={log_file_path4}
+  ```
+
+  :::
+  
 ### ユーザーメトリクス収集 (SHMON)
 
 SHMONはユーザー定義のシェルスクリプトの実行結果を定期的に収集し、メトリクスとして保存します。
