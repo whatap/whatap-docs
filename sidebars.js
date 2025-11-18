@@ -4105,47 +4105,6 @@ const sidebars = {
       ],
     }
   ],
-  previewSidebar: [
-    {
-      type: 'category',
-      label: '릴리스 노트 - Preview',
-      collapsible: false,
-      collapsed: false,
-      link: {
-        type: 'doc',
-        id: 'release-notes/preview/index',
-      },
-      items: [
-        {
-          type: 'doc',
-          id: 'release-notes/preview/preview-2_15_0x',
-          className: 'new',
-        },
-        'release-notes/preview/preview-2_14_0x',
-        'release-notes/preview/preview-2_13_0x',
-        'release-notes/preview/preview-2_12_0x',
-        'release-notes/preview/preview-2_11_0x',
-        'release-notes/preview/preview-2_10_0x',
-        'release-notes/preview/preview-2_9_0x',
-        'release-notes/preview/preview-2_8_0x',
-        'release-notes/preview/preview-2_7_0x',
-        'release-notes/preview/preview-2_6_0x',
-        'release-notes/preview/preview-2_5_0x',
-        'release-notes/preview/preview-2_4_0x',
-        'release-notes/preview/preview-2_3_0x',
-        'release-notes/preview/preview-2_2_0x',
-        'release-notes/preview/preview-2_1_0x',
-        'release-notes/preview/preview-2_0_0x',
-        'release-notes/preview/preview-1_113_x',
-        'release-notes/preview/preview-1_111_x',
-        'release-notes/preview/preview-1_109_x',
-        'release-notes/preview/preview-1_107_x',
-        'release-notes/preview/preview-1_105_x',
-        'release-notes/preview/preview-1_103_x',
-        'release-notes/preview/preview-1_101_x',
-      ],
-    }
-  ],
   releaseSidebar: [
     {
       type: 'category',
