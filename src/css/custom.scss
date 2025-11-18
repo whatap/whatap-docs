@@ -865,17 +865,16 @@ article.markdown table td {
    ============================================ */
 
 /* 모든 ul, ol 기본 여백 복원 */
-article ul:not(.breadcrumbs),
+article ul:not(.breadcrumbs, .tablist, .tabs),
 article ol,
-.markdown ul:not(.breadcrumbs),
+.markdown ul:not(.breadcrumbs, .tablist, .tabs),
 .markdown ol,
-.theme-doc-markdown ul:not(.breadcrumbs),
+.theme-doc-markdown ul:not(.breadcrumbs, .tablist, .tabs),
 .theme-doc-markdown ol {
   margin-left: 1.5rem !important;
   padding-left: 0 !important;
   margin-bottom: 1rem;
 }
-
 
 /* TOC */
 .table-of-contents,
