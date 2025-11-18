@@ -42,7 +42,6 @@ function CardLayout({href, icon, title, description}) {
         as="h2"
         className={clsx('text--truncate', styles.cardTitle)}
         title={title}>
-        {/* {icon}  */}
         {title}
       </Heading>
       {description && (

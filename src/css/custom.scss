@@ -881,10 +881,21 @@ article ol,
 .table-of-contents,
 .theme-doc-toc-desktop ul {
   margin-left: 1rem !important;
-  padding-left: 0.5rem !important;
+  padding-left: 1rem !important;
+  line-height: 2em;
   list-style-type: none; /* TOC는 보통 숫자 없음 */
 }
 
+/* 레벨 1 (h2) */
+.table-of-contents > li {
+  padding-left: 0;
+}
+
+/* 레벨 2 (h3) - 중첩된 ul */
+.table-of-contents ul {
+  margin-left: 0 !important;
+  padding-left: 1rem !important;
+}
 // Docusaurus 3.8.0 수정사항 여기까지
 
 .margin-bottom--sm {
