@@ -2589,12 +2589,13 @@ main {
     table {
       width: 100%;
       display: table;
-      margin: 20px 0;
+      margin: 10px 0;
+      font-size: 95%;
       code {
         font-family: monospace;
         background: none;
         border: none;
-        font-size: 98%;
+        // font-size: 98%;
         padding: 0;
         color: var(--ifm-font-code-color);
       }
