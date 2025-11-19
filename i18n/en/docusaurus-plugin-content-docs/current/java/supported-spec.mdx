@@ -15,85 +15,117 @@ Before installing the agent, make sure that the JVM application server meets the
 
 It can be applied not only to Web Application Server (WAS) but also to all applications running on JVM, such as daemons and batch applications. For the versions earlier than Java 1.6, contact support@whatap.io or see [the following](add-jvm-opt/java-under-ver).
 
-- **Support versions**
+### Supported Versions
 
-  | Scope of support        | Environment | OS Name                          | JVM version                         |
-  | ----------------------- | ----------- | -------------------------------- | ----------------------------------- |
-  | Fully support           | Java        | Operating systems running on JVM | Java 6 or later, Java 21 or earlier |
-  | Limited support         | Java        | Operating systems running on JVM | Java 1.5 or earlier                 |
+  <table>
+  <thead>
+  <tr>
+  <th>Category / JDK Version</th>
+  <th>JDK 1.5 or earlier</th>
+  <th>Java 6 ~ 21</th>
+  <th>Java 22</th>
+  <th>Java 23</th>
+  <th>Java 24</th>
+  <th>Java 25</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+  <td>Support</td>
+  <td align="center">✅</td>
+  <td align="center">✅</td>
+  <td align="center">✅</td>
+  <td align="center">✅</td>
+  <td align="center">✅</td>
+  <td align="center">✅</td>
+  </tr>
+  <tr>
+  <td>Support Level</td>
+  <td align="center">Limited Support</td>
+  <td align="center" colspan="5">Fully support</td>
+  </tr>
+  </tbody>
+  </table>
 
-- **OS**
+### Operating System
 
-  - HP-UX 11.x 32bit, 64bit
-
-  - Itanium 64-bit
-
-  - Oracle Solaris 2.8, 2.9, 10, 11 32-bit, 64-bit
-
-  - x86 Intel Linux 32-bit
-
-  - Red Hat Itanium 64-bit
-
-  - Microsoft Windows Server 2000 or later, Windows XP or later
-
-  :::note
-
-  All operating systems that can install JDK 6 are supported.
-
-  :::
-
-- **Application Server**
-
-  - Apache Software Foundation **Jakarta Tomcat** 6.x–10.x  
-  - Red Hat **JBoss Application Server** 6.x, 7.x  
-  - TmaxSoft **JEUS** 6.x, 7.x  
-  - Oracle (BEA Systems) **WebLogic Server** 9.x–12.x  
-  - IBM **WebSphere**, **WebSphere Liberty**  
-  - Caucho Technology **Resin** 3.x, 4.x  
-  - Eclipse Foundation **Jetty**  
-  - IBM **BlueMix**  
-  - Amazon Web Services (AWS) **Elastic Beanstalk**  
-  - Docker Inc. **Docker Container Environment**  
-  - Oracle **SUN Application Server** 8.x, 9.x  
-  - Fujitsu **Interstage** 5.x–7.x  
-  - Hitachi **Cosminexus** 7.x–9.x  
-  - Oracle **GlassFish** 3.x–5.x  
-
-  :::note
-
-  All other application servers that comply with the Java EE specifications are supported. See the [following link](https://www.oracle.com/technetwork/java/javaee/overview/compatibility-jsp-136984.html).
-
-  :::
-
-- **Framework** / **Library**
-
-  - Pivotal / VMware **Spring Boot  1.5.x - 3.x**  
-  - **Netty**, Lightbend **Akka HTTP**, **Play Framework** 등 비동기 프레임워크  
-  - Red Hat **Quarkus**, **Quarkus Reactive 1.x - 2.x** 
-  - MuleSoft **Mule Framework** 3.9.5, 4.5   
+  | OS Family   | Supported Version               | Architecture  |
+  | ----------- | ------------------------------- | ------------- |
+  | **Unix**    | HP-UX 11.x                      | 32bit, 64bit  |
+  | ^           | Oracle Solaris 2.8, 2.9, 10, 11 | 32bit, 64bit  |
+  | **Linux**   | Red Hat                         | Itanium 64bit |
+  | ^           | x86 Intel Linux                 | 32bit         |
+  | **Windows** | Windows Server                  | 2000 or later |
+  | ^           | Windows                         | XP or later   |
+  | **Others**  | Itanium                         | 64bit         |
 
   :::note
 
-  All other libraries operating in application servers that comply with Java EE specifications are supported.
+  Supports all operating systems that can install JDK 6.
+  
+  :::
+
+### Application Server
+
+  | Vendor   | Product                      | Supported Version |
+  | -------- | ---------------------------- | ----------------- |
+  | Apache   | Jakarta Tomcat               | 6.x ~ 10.x        |
+  | Red Hat  | JBoss Application Server     | 6.x, 7.x          |
+  | TmaxSoft | JEUS                         | 6.x, 7.x          |
+  | Oracle   | WebLogic Server              | 9.x ~ 12.x        |
+  | ^        | GlassFish                    | 3.x ~ 5.x         |
+  | ^        | SUN Application Server       | 8.x, 9.x          |
+  | IBM      | WebSphere, WebSphere Liberty | -                 |
+  | ^        | BlueMix                      | -                 |
+  | Caucho   | Resin                        | 3.x, 4.x          |
+  | Eclipse  | Jetty                        | -                 |
+  | Fujitsu  | Interstage                   | 5.x ~ 7.x         |
+  | Hitachi  | Cosminexus                   | 7.x ~ 9.x         |
+  | AWS      | Elastic Beanstalk            | -                 |
+  | Docker   | Container Environment        | -                 |
+
+  :::note
+
+  Supports all application servers that comply with Java EE Spec. See [this link](https://www.oracle.com/technetwork/java/javaee/overview/compatibility-jsp-136984.html) for details.
 
   :::
 
-- **Database Driver**
+### Framework / Library
 
-  - Generic JDBC (any JDBC compliant driver)
-  - DB2 JDBC
-  - Derby JDBC
-  - H2 JDBC
-  - jTDS JDBC
-  - MariaDB JDBC (1.x - 3.x)
-  - Microsoft SQL Server JDBC
-  - MySQL JDBC (5.x - 8.x)
-  - AWS-MySQL JDBC (1.x)
-  - Oracle ojdbc5, ojdbc6, ojdbc7, ojdbc8, ojdbc14
-  - Postgres JDBC
-  - Tibero
-  - Jedis Redis driver
-  - Lettuce Redis driver (5.x - 6.x)
+  | Category | Framework | Supported Version |
+  | --- | --- | --- |
+  | Web Framework | Spring Boot | 1.5.x ~ 3.x |
+  | Async Framework | Netty | - |
+  | ^ | Akka HTTP | - |
+  | ^ | Play Framework | - |
+  | Microservices | Quarkus | - |
+  | ^ | Quarkus Reactive | 1.x ~ 2.x |
+  | Integration Framework | Mule Framework | 3.9.5, 4.5 |
+
+  :::note
+
+  Supports all libraries that operate on Application Servers complying with Java EE Spec.
+
+  :::
+
+### Database Driver
+
+  | Category | Database | Driver | Supported Version |
+  | --- | --- | --- | --- |
+  | **RDBMS** | Generic | JDBC | any compliant driver |
+  | ^ | MySQL | JDBC | 5.x ~ 8.x |
+  | ^ | AWS MySQL | JDBC | 1.x |
+  | ^ | MariaDB | JDBC | 1.x ~ 3.x |
+  | ^ | PostgreSQL | JDBC | - |
+  | ^ | Oracle | ojdbc | 5, 6, 7, 8, 14 |
+  | ^ | Microsoft SQL Server | JDBC | - |
+  | ^ | DB2 | JDBC | - |
+  | ^ | Derby | JDBC | - |
+  | ^ | H2 | JDBC | - |
+  | ^ | jTDS | JDBC | - |
+  | ^ | Tibero | - | - |
+  | **NoSQL** | Redis | Jedis | - |
+  | ^ | Redis | Lettuce | 5.x ~ 6.x |
 
 ## Compatibility and data sources for each application server
 

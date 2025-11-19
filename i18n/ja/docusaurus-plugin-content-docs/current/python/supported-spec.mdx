@@ -11,69 +11,57 @@ keywords:
 
 WhaTap Pythonモニタリングエージェントをインストールする前に、サポート環境を確認してください。
 
-- **対応バージョン**
+### サポートバージョン
 
-  - WSGI Application (Python 3.6バージョン以降、3.13バージョン以下)
+| アプリケーションタイプ | Pythonバージョン |
+| --- | --- |
+| WSGIアプリケーション | 3.6 ~ 3.13 |
+| ASGIアプリケーション | 3.7 ~ 3.13 |
 
-  - ASGI Application (Python 3.7バージョン以降、3.13バージョン以下)
+### オペレーティングシステム
 
-- **OS**
+| OS | 最小バージョン | アーキテクチャ |
+| --- | --- | :---: |
+| Debian / Ubuntu | 12.04 | 64bit |
+| Red Hat / CentOS | 6.x | 64bit |
+| macOS | 10.15 Catalina | - |
 
-  - Debian／Ubuntu 12.04(64bit) 以降
+### アプリケーションサーバー
 
-  - OSX 10.15 Catalina
+| フレームワーク | サポートバージョン |
+| --- | --- |
+| Bottle | - |
+| Celery | - |
+| CherryPy | - |
+| Django | - |
+| FastAPI | 0.84.0以上 |
+| Flask | - |
+| Frappe | - |
+| Nameko | - |
+| Odoo | v16, v17 |
+| Tornado | - |
 
-  - Red Hat/CentOS 6.x(64bit) 以降
+### ライブラリ
 
-- **アプリケーションサーバー**
+| カテゴリー | ライブラリ |
+| --- | --- |
+| **外部呼び出し** | HttpLib, Requests, Urllib, HTTPX |
+| **データ処理** | SQL Alchemy, GraphQL |
+| **ロギング** | smtplib, logging, loguru |
+| **メッセージング** | Kombu, Pika |
+| **LLM** | OpenAI |
 
-  - Bottle
+### データベース
 
-  - Celery
-
-  - CherryPy
-
-  - Django
-
-  - FastAPI (0.84.0以降）
-
-  - Flask
-
-  - Frappe
-
-  - Nameko
-
-  - Odoo (v16, v17)
-
-  - Tornado
-
-- **ライブラリ**
-
-  - 外部呼び出し: HttpLib、Requests、Urllib、HTTPX
-
-  - SQL Alchemy, GraphQL
-
-  - smtplib, logging , loguru
-
-  - Kombu、Pika
-
-  - LLM: OpenAI
-
-- **データベース**
-
-  - MongoDB(pymongo)
-
-  - MySQL(MySQLdb, pymysql)
-
-  - Neo4j(neo4j)
-
-  - Oracle(cxOracle)
-
-  - PostgreSQL(psycopg2, psycopg, psycopg_pool)
-
-  - Redis(redis)
-
-  - SQLite(sqlite3)
+| データベース | ドライバー |
+| --- | --- |
+| MongoDB | pymongo |
+| MySQL | MySQLdb, pymysql |
+| Neo4j | neo4j |
+| Oracle | cxOracle |
+| PostgreSQL | psycopg2, psycopg, psycopg_pool |
+| Redis | redis |
+| SQLite | sqlite3 |
 
 ## 共通サポート環境
 
