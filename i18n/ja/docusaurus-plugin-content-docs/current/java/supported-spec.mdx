@@ -15,85 +15,117 @@ keywords:
 
 Web Application Server（WAS）だけでなく、デーモンやバッチアプリケーションなど、JVMベースのすべてのアプリケーションに適用できます。Java 1.6未満の場合は、support@whatap.io までお問い合わせいただくか、[次の文書](add-jvm-opt/java-under-ver)を参照してください。
 
-- **対応バージョン**
+### サポートバージョン
 
-  | サポート範囲          | 環境   | OS名                 | JVMバージョン                 |
-  | --------------- | ---- | ------------------- | ------------------------ |
-  | Fully support   | Java | JVMで起動するすべてのOS      | Java6以降、Java21以下         |
-  | Limited support | Java | JVMで起動するすべてのOS      | Java1.5以下                |
+  <table>
+  <thead>
+  <tr>
+  <th>区分 / JDKバージョン</th>
+  <th>JDK 1.5以下</th>
+  <th>Java 6 ~ 21</th>
+  <th>Java 22</th>
+  <th>Java 23</th>
+  <th>Java 24</th>
+  <th>Java 25</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+  <td>サポート</td>
+  <td align="center">✅</td>
+  <td align="center">✅</td>
+  <td align="center">✅</td>
+  <td align="center">✅</td>
+  <td align="center">✅</td>
+  <td align="center">✅</td>
+  </tr>
+  <tr>
+  <td>サポート範囲</td>
+  <td align="center">限定サポート</td>
+  <td align="center" colspan="5">完全サポート</td>
+  </tr>
+  </tbody>
+  </table>
 
-- **OS**
+### オペレーティングシステム
 
-  - HP-UX 11.x 32ビット、64ビット
-
-  - Itanium 64ビット
-
-  - Oracle Solaris 2.8、2.9、10、11 32ビット、64ビット
-
-  - x86 Intel Linux 32ビット
-
-  - Red Hat Itanium 64ビット
-
-  - Microsoft Windows Server 2000以降、Windows XP以降
-
-  :::note
-
-  JDK 6をインストールできるすべてのOSに対応します。
-
-  :::
-
-- **アプリケーションサーバー**
-
-  - Apache Software Foundation **Jakarta Tomcat** 6.x–10.x  
-  - Red Hat **JBoss Application Server** 6.x, 7.x  
-  - TmaxSoft **JEUS** 6.x, 7.x  
-  - Oracle (BEA Systems) **WebLogic Server** 9.x–12.x  
-  - IBM **WebSphere**, **WebSphere Liberty**  
-  - Caucho Technology **Resin** 3.x, 4.x  
-  - Eclipse Foundation **Jetty**  
-  - IBM **BlueMix**  
-  - Amazon Web Services (AWS) **Elastic Beanstalk**  
-  - Docker Inc. **Docker Container Environment**  
-  - Oracle **SUN Application Server** 8.x, 9.x  
-  - Fujitsu **Interstage** 5.x–7.x  
-  - Hitachi **Cosminexus** 7.x–9.x  
-  - Oracle **GlassFish** 3.x–5.x  
-
-  :::note
-
-  Java EE Specに準拠するすべてのアプリケーションサーバーに対応します。[次のリンク](https://www.oracle.com/technetwork/java/javaee/overview/compatibility-jsp-136984.html)を参照してください。
-
-  :::
-
-- **フレームワーク** / **ライブラリ**
-
-  - Pivotal / VMware **Spring Boot  1.5.x - 3.x**  
-  - **Netty**, Lightbend **Akka HTTP**, **Play Framework** 등 비동기 프레임워크  
-  - Red Hat **Quarkus**, **Quarkus Reactive 1.x - 2.x** 
-  - MuleSoft **Mule Framework** 3.9.5, 4.5
+  | OS系列      | サポートバージョン              | アーキテクチャ |
+  | ----------- | ------------------------------- | -------------- |
+  | **Unix**    | HP-UX 11.x                      | 32bit, 64bit   |
+  | ^           | Oracle Solaris 2.8, 2.9, 10, 11 | 32bit, 64bit   |
+  | **Linux**   | Red Hat                         | Itanium 64bit  |
+  | ^           | x86 Intel Linux                 | 32bit          |
+  | **Windows** | Windows Server                  | 2000以上       |
+  | ^           | Windows                         | XP以上         |
+  | **その他**  | Itanium                         | 64bit          |
 
   :::note
 
-  Java EE Specに準拠するApplication Serverで動作するすべてのライブラリに対応します。
+  JDK 6をインストールできるすべてのオペレーティングシステムをサポートします。
+  
+  :::
+
+### アプリケーションサーバー
+
+  | ベンダー | 製品                         | サポートバージョン |
+  | -------- | ---------------------------- | ------------------ |
+  | Apache   | Jakarta Tomcat               | 6.x ~ 10.x         |
+  | Red Hat  | JBoss Application Server     | 6.x, 7.x           |
+  | TmaxSoft | JEUS                         | 6.x, 7.x           |
+  | Oracle   | WebLogic Server              | 9.x ~ 12.x         |
+  | ^        | GlassFish                    | 3.x ~ 5.x          |
+  | ^        | SUN Application Server       | 8.x, 9.x           |
+  | IBM      | WebSphere, WebSphere Liberty | -                  |
+  | ^        | BlueMix                      | -                  |
+  | Caucho   | Resin                        | 3.x, 4.x           |
+  | Eclipse  | Jetty                        | -                  |
+  | Fujitsu  | Interstage                   | 5.x ~ 7.x          |
+  | Hitachi  | Cosminexus                   | 7.x ~ 9.x          |
+  | AWS      | Elastic Beanstalk            | -                  |
+  | Docker   | Container Environment        | -                  |
+
+  :::note
+
+  Java EE Specに準拠するすべてのアプリケーションサーバーをサポートします。詳細は[こちらのリンク](https://www.oracle.com/technetwork/java/javaee/overview/compatibility-jsp-136984.html)を参照してください。
 
   :::
 
-- **データベース**
+### フレームワーク / ライブラリ
 
-  - Generic JDBC (any JDBC compliant driver)
-  - DB2 JDBC
-  - Derby JDBC
-  - H2 JDBC
-  - jTDS JDBC
-  - MariaDB JDBC (1.x - 3.x)
-  - Microsoft SQL Server JDBC
-  - MySQL JDBC (5.x - 8.x)
-  - AWS-MySQL JDBC (1.x)
-  - Oracle ojdbc5, ojdbc6, ojdbc7, ojdbc8, ojdbc14
-  - Postgres JDBC
-  - Tibero
-  - Jedis Redis driver
-  - Lettuce Redis driver (5.x - 6.x)
+  | カテゴリー           | フレームワーク    | サポートバージョン |
+  | -------------------- | ----------------- | ------------------ |
+  | Webフレームワーク    | Spring Boot       | 1.5.x ~ 3.x        |
+  | 非同期フレームワーク | Netty             | -                  |
+  | ^                    | Akka HTTP         | -                  |
+  | ^                    | Play Framework    | -                  |
+  | マイクロサービス     | Quarkus           | -                  |
+  | ^                    | Quarkus Reactive  | 1.x ~ 2.x          |
+  | 統合フレームワーク   | Mule Framework    | 3.9.5, 4.5         |
+
+  :::note
+
+  Java EE Specに準拠するアプリケーションサーバーで動作するすべてのライブラリをサポートします。
+
+  :::
+
+### データベースドライバー
+
+  | カテゴリー | データベース         | ドライバー | サポートバージョン   |
+  | ---------- | -------------------- | ---------- | -------------------- |
+  | **RDBMS**  | Generic              | JDBC       | any compliant driver |
+  | ^          | MySQL                | JDBC       | 5.x ~ 8.x            |
+  | ^          | AWS MySQL            | JDBC       | 1.x                  |
+  | ^          | MariaDB              | JDBC       | 1.x ~ 3.x            |
+  | ^          | PostgreSQL           | JDBC       | -                    |
+  | ^          | Oracle               | ojdbc      | 5, 6, 7, 8, 14       |
+  | ^          | Microsoft SQL Server | JDBC       | -                    |
+  | ^          | DB2                  | JDBC       | -                    |
+  | ^          | Derby                | JDBC       | -                    |
+  | ^          | H2                   | JDBC       | -                    |
+  | ^          | jTDS                 | JDBC       | -                    |
+  | ^          | Tibero               | -          | -                    |
+  | **NoSQL**  | Redis                | Jedis      | -                    |
+  | ^          | Redis                | Lettuce    | 5.x ~ 6.x            |
 
 ## アプリケーションサーバー別の互換性とデータソース
 
