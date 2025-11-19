@@ -1,6 +1,20 @@
 [
   {
     "url": "https://docs.whatap.io/release-notes/service/service-2_22_x",
+    "ver": "Service 2.22.11",
+    "date": "2025-11-20",
+    "Lists": [
+      {
+        "ver": "Service 2.22.11",
+        "hash": "service-22211",
+        "product": "Application",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">PHP</span> &gt; <span class=\"uitext\">エージェントインストール</span> Windows 版のインストールガイドを追加しました。</p>"
+      }
+    ]
+  },  
+  {
+    "url": "https://docs.whatap.io/release-notes/service/service-2_22_x",
     "ver": "Service 2.22.10",
     "date": "2025-11-17",
     "Lists": [
