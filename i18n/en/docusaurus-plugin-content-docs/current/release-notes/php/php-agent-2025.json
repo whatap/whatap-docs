@@ -1,5 +1,35 @@
 [
   {
+    "ver": "v2.13.0",
+    "date": "2025-11-19",
+    "Lists": [
+      {
+        "ver": "v2.13.0",
+        "hash": "v2130",
+        "product": "PHP Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Fixed an issue where Active Status data collection did not work properly.</p>",
+        "details": "<ul><li>In v2.12.0, the PHP internal function hooking method was changed from <code>zend_execute_internal</code> to <code>handler overwrite</code>.</li><li>This caused a malfunction in Active Status data collection.</li></ul>"
+      },
+      {
+        "ver": "v2.13.0",
+        "hash": "v2130",
+        "product": "PHP Agent",
+        "type": "New",
+        "desc": "<p><code class=\"New\" type=\"1\">New</code> Added support for PHP monitoring on Windows OS.</p>",
+        "details": "<ul><li><p><strong>System Requirements</strong></p><ul><li>Windows Server 2016 (x64) or higher, or Windows 10 (x64) or higher</li><li>PHP 7.0 ~ 8.4 (NTS and ZTS)</li></ul></li><li><p><strong>Build Environment</strong></p><ul><li>WhaTap PHP extension is built using the Microsoft Visual C++ compiler, with different Visual Studio versions depending on the PHP version.</li><ul><li><strong>Visual C++ 15.0</strong> (Visual Studio 2017) - PHP 7.0–7.4</li><li><strong>Visual C++ 16.0</strong> (Visual Studio 2019) - PHP 8.0–8.3</li><li><strong>Visual C++ 17.0</strong> (Visual Studio 2022) - PHP 8.4</li></ul><li>Build environment by version<table><thead><tr><th>PHP Version</th><th>OS</th><th>Visual Studio</th><th>Windows SDK</th><th>PHP SDK</th></tr></thead><tbody><tr><td>7.0–7.4</td><td>Windows Server 2016 (ltsc2016)</td><td>VS 2017 (VC15)</td><td>10.0.17763.0</td><td>2.1.9–2.2.0</td></tr><tr><td>8.0–8.3</td><td>Windows Server 2019 (ltsc2019)</td><td>VS 2019 (VS16)</td><td>10.0.19041.0</td><td>2.2.0</td></tr><tr><td>8.4</td><td>Windows Server 2022 (ltsc2022)</td><td>VS 2022 (VS17)</td><td>10.0.20348.0 / 11.0.22000.0</td><td>2.4.0</td></tr></tbody></table></li><li>Supported Web Servers<ul><li>Apache 2.4 or later</li><li>Microsoft IIS</li></ul></li></ul></li></ul>"
+      },
+      {
+        "ver": "v2.13.0",
+        "hash": "v2130",
+        "product": "PHP Agent",
+        "type": "New",
+        "desc": "<p><code class=\"New\" type=\"1\">New</code> Added a stack trace feature to identify delay sections in slow transactions (available under Analysis > Stack).</p>",
+        "details": "<ul>\n<li><strong>How It Works</strong>\n<ul>\n<li>Automatically detects transactions running longer than the configured threshold (default: 5 seconds).</li>\n<li>Records running functions every second (up to 20 times).</li>\n<li>Collects stack information using the <code>debug_gettrace()</code> function within PHP.</li>\n<li>Stacks are collected at the end of user function calls, so collection intervals may vary for long-running functions.</li>\n</ul>\n<div class=\"theme-admonition theme-admonition-caution alert alert--warning\">\n<div class=\"admonition-heading\">\n<strong>Caution</strong>\n</div>\n<div class=\"admonition-content\">\n<p>Enabling this feature may increase data collection overhead.</p>\n</div>\n</div></li>\n<li><strong>Prerequisites</strong>\n<ul>\n<li>Two options must be enabled (enabled by default):\n<ul>\n<li><code>whatap.ext.hook_zend_execute_ex_enable</code></li>\n<li><code>whatap.profile_method_enabled</code></li>\n</ul>\n</li>\n</ul>\n</li>\n<li><strong>Configuration Options</strong>\n<ul>\n<li><code>whatap.active_stack_enabled</code>\n<ul><li>Default: false</li><li>Enables stack collection feature</li></ul></li>\n<li><code>whatap.ext.active_stack_start_resp_time</code>\n<ul><li>Default: 5000</li><li>Begins stack collection when response time exceeds the threshold</li><li>Default: collects stacks for response times over 5 seconds</li><li>Minimum: 1000ms</li></ul>\n<div class=\"theme-admonition theme-admonition-caution alert alert--warning\">\n<div class=\"admonition-heading\">\n<strong>Caution</strong>\n</div>\n<div class=\"admonition-content\">\nRestart the web server (Apache or php-fpm) to apply configuration changes.\n</div>\n</div></li>\n<li><code>whatap.ext.active_stack_interval</code>\n<ul><li>Default: 1000</li><li>Sets the stack collection interval</li><li>After the first collection, additional stacks are gathered at 1-second intervals</li><li>Minimum: 200ms, Increment: 200ms</li></ul>\n<div class=\"theme-admonition theme-admonition-caution alert alert--warning\">\n<div class=\"admonition-heading\">\n<strong>Caution</strong>\n</div>\n<div class=\"admonition-content\">\nRestart the web server (Apache or php-fpm) to apply configuration changes.\n</div>\n</div></li>\n<li><code>whatap.trace_active_callstack_depth</code>\n<ul><li>Default: 50</li><li>Limits the number of collected stack frames (up to 50)</li></ul>\n<div class=\"theme-admonition theme-admonition-caution alert alert--warning\">\n<div class=\"admonition-heading\">\n<strong>Caution</strong>\n</div>\n<div class=\"admonition-content\">\nRestart the web server (Apache or php-fpm) to apply configuration changes.\n</div>\n</div></li>\n<li><code>whatap.ext.active_stack_max_count</code>\n<ul><li>Default: 20</li><li>Limits the number of stack collections (up to 20)</li></ul>\n<div class=\"theme-admonition theme-admonition-caution alert alert--warning\">\n<div class=\"admonition-heading\">\n<strong>Caution</strong>\n</div>\n<div class=\"admonition-content\">\nRestart the web server (Apache or php-fpm) to apply configuration changes.\n</div>\n</div></li>\n</ul>"
+      }      
+    ]
+  },
+  {
     "ver": "v2.12.0",
     "date": "2025-10-15",
     "Lists": [
