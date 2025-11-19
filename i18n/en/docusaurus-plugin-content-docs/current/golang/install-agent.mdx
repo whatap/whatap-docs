@@ -33,101 +33,9 @@ import Accesskeyv2 from "../getting-started/_accesskey-v2.mdx";
 
 <Accesskeyv2 />
 
-## Download agent
+import Godockersettinglibrary from "../common-items/_go-docker-setting-library.mdx";
 
-Once you have received the **access key**, download the agent with the following command.
-
-<Tabs groupId="golang">
-<TabItem value="rc" label="Red Hat/CentOS">
-
-```bash title='SH'
-## Register the package repository
-$ sudo rpm -Uvh https://repo.whatap.io/centos/5/noarch/whatap-repo-1.0-1.noarch.rpm
-
-## Install the package
-$ sudo yum install whatap-agent
-```
-
-</TabItem>
-<TabItem value="du" label="Debian/Ubuntu">
-
-```bash title='SH'
-## Register the package repository
-$ wget https://repo.whatap.io/debian/release.gpg -O -|sudo apt-key add -
-$ wget https://repo.whatap.io/debian/whatap-repo_1.0_all.deb
-$ sudo dpkg -i whatap-repo_1.0_all.deb
-$ sudo apt-get update
-
-## Install the package
-$ sudo apt-get install whatap-agent
-```
-
-</TabItem>
-<TabItem value="al" label="Amazon Linux">
-
-```bash title='SH'
-## Register the package repository
-$ sudo rpm --import https://repo.whatap.io/centos/release.gpg
-$ echo "[whatap]" | sudo tee /etc/yum.repos.d/whatap.repo > /dev/null
-$ echo "name=whatap packages for enterprise linux" | sudo tee -a /etc/yum.repos.d/whatap.repo > /dev/null
-$ echo "baseurl=https://repo.whatap.io/centos/latest/\$basearch" | sudo tee -a /etc/yum.repos.d/whatap.repo > /dev/null
-$ echo "enabled=1" | sudo tee -a /etc/yum.repos.d/whatap.repo > /dev/null
-$ echo "gpgcheck=0" | sudo tee -a /etc/yum.repos.d/whatap.repo > /dev/null
-
-## Install the package
-$ sudo yum install whatap-agent
-```
-
-</TabItem>
-<TabItem value="apl" label="Alpine Linux">
-
-[whatap-agent.tar.gz]After downloading the file (https://s3.ap-northeast-2.amazonaws.com/repo.whatap.io/alpine/x86_64/whatap-agent.tar.gz), unzip the file based on the "/" directory. Create the monitoring file in the _/usr/whatap/agent_ path.
-
-<Tabs>
-
-<TabItem value="x64" label="x64" default>
-
-```docker title='x64'
-wget https://s3.ap-northeast-2.amazonaws.com/repo.whatap.io/alpine/x86_64/whatap-agent.tar.gz
-tar -xvzf whatap-agent.tar.gz -C /
-```
-
-</TabItem>
-
-<TabItem value="aarch64" label="AArch64" default>
-
-```docker title='AArch64'
-wget https://s3.ap-northeast-2.amazonaws.com/repo.whatap.io/alpine/aarch64/whatap-agent.tar.gz
-tar -xvzf whatap-agent.tar.gz -C /
-```
-
-</TabItem>
-
-</Tabs>
-
-</TabItem>
-
-</Tabs>
-
-The agent consists of the tracers to collect monitoring information, the agents to transmit the collected information to the server, and the installation script files to dynamically apply the tracers and agents to the server. For more information about the agent files, see the following.
-
-<Filetree name="whatap">
-
-<FiletreeItem name="whatap-agent" type="file">This program transmits the data passed from the agent and tracer to UDP, to the collection server.</FiletreeItem>
-
-<FiletreeItem name="whatap_agent" type="file">Service execution file.</FiletreeItem>
-  
-  <FiletreeItem name="whatap.conf" type="file"> Enter the configuration data, collection server IP, and access key in this file.</FiletreeItem>
-
-<FiletreeItem name="whatap-boot-yyyymmdd.log" type="file">Agent log file. (path: */usr/whata/agent/log*)</FiletreeItem>
-
-<FiletreeItem name="/etc/init.d" type="folder">
-  
-    <FiletreeItem name="whatap-agent" type="file"> Service script file.</FiletreeItem>
-  
-  </FiletreeItem>
-
-</Filetree>
+<Godockersettinglibrary />
 
 ## Agent setting {#set-agent}
 
@@ -211,9 +119,101 @@ WHATAP_HOME=./whatap_home1 ./app
 
 ```
 
-import Godockersettinglibrary from "../common-items/_go-docker-setting-library.mdx";
+## Download agent
 
-<Godockersettinglibrary />
+Once you have received the **access key**, download the agent with the following command.
+
+<Tabs groupId="golang">
+<TabItem value="rc" label="Red Hat/CentOS">
+
+```bash title='SH'
+## Register the package repository
+$ sudo rpm -Uvh https://repo.whatap.io/centos/5/noarch/whatap-repo-1.0-1.noarch.rpm
+
+## Install the package
+$ sudo yum install whatap-agent
+```
+
+</TabItem>
+<TabItem value="du" label="Debian/Ubuntu">
+
+```bash title='SH'
+## Register the package repository
+$ wget https://repo.whatap.io/debian/release.gpg -O -|sudo apt-key add -
+$ wget https://repo.whatap.io/debian/whatap-repo_1.0_all.deb
+$ sudo dpkg -i whatap-repo_1.0_all.deb
+$ sudo apt-get update
+
+## Install the package
+$ sudo apt-get install whatap-agent
+```
+
+</TabItem>
+<TabItem value="al" label="Amazon Linux">
+
+```bash title='SH'
+## Register the package repository
+$ sudo rpm --import https://repo.whatap.io/centos/release.gpg
+$ echo "[whatap]" | sudo tee /etc/yum.repos.d/whatap.repo > /dev/null
+$ echo "name=whatap packages for enterprise linux" | sudo tee -a /etc/yum.repos.d/whatap.repo > /dev/null
+$ echo "baseurl=https://repo.whatap.io/centos/latest/\$basearch" | sudo tee -a /etc/yum.repos.d/whatap.repo > /dev/null
+$ echo "enabled=1" | sudo tee -a /etc/yum.repos.d/whatap.repo > /dev/null
+$ echo "gpgcheck=0" | sudo tee -a /etc/yum.repos.d/whatap.repo > /dev/null
+
+## Install the package
+$ sudo yum install whatap-agent
+```
+
+</TabItem>
+<TabItem value="apl" label="Alpine Linux">
+
+[whatap-agent.tar.gz]After downloading the file (https://s3.ap-northeast-2.amazonaws.com/repo.whatap.io/alpine/x86_64/whatap-agent.tar.gz), unzip the file based on the "/" directory. Create the monitoring file in the _/usr/whatap/agent_ path.
+
+<Tabs>
+
+<TabItem value="x64" label="x64" default>
+
+```docker title='x64'
+wget https://s3.ap-northeast-2.amazonaws.com/repo.whatap.io/alpine/x86_64/whatap-agent.tar.gz
+tar -xvzf whatap-agent.tar.gz -C /
+```
+
+</TabItem>
+
+<TabItem value="aarch64" label="AArch64" default>
+
+```docker title='AArch64'
+wget https://s3.ap-northeast-2.amazonaws.com/repo.whatap.io/alpine/aarch64/whatap-agent.tar.gz
+tar -xvzf whatap-agent.tar.gz -C /
+```
+
+</TabItem>
+
+</Tabs>
+
+</TabItem>
+
+</Tabs>
+
+The agent is a data relay process that receives monitoring information from the user application through internal IPC (TCP) and then forwards that data to the WhaTap collection server.
+
+<Filetree name="whatap">
+
+<FiletreeItem name="whatap-agent" type="file">This program transmits the data passed from the agent and tracer to UDP, to the collection server.</FiletreeItem>
+
+<FiletreeItem name="whatap_agent" type="file">Service execution file.</FiletreeItem>
+  
+  <FiletreeItem name="whatap.conf" type="file"> Enter the configuration data, collection server IP, and access key in this file.</FiletreeItem>
+
+<FiletreeItem name="whatap-boot-yyyymmdd.log" type="file">Agent log file. (path: */usr/whata/agent/log*)</FiletreeItem>
+
+<FiletreeItem name="/etc/init.d" type="folder">
+  
+    <FiletreeItem name="whatap-agent" type="file"> Service script file.</FiletreeItem>
+  
+  </FiletreeItem>
+
+</Filetree>
 
 ## Starting the monitoring
 
