@@ -10,28 +10,48 @@ keywords:
 
 エージェントをインストールする前に、.NETの対応環境を確認してください。
 
-- **対応バージョン**
+### サポートバージョン
 
-  - .NET Framework 4.61 ~ 4.8
-  - .NET 6、7、8
+| プラットフォーム | サポートバージョン |
+| --- | --- |
+| .NET Framework | 4.61 ~ 4.8 |
+| .NET | 6, 7, 8 |
 
-- **OS**: Windows Server 2008 R2以降
+### オペレーティングシステム
 
-- **アプリケーションサーバー**：IIS 8.0 以降
+| OS | 最小バージョン |
+| --- | --- |
+| Windows Server | 2008 R2以上 |
 
-- **ライブラリ**
+### アプリケーションサーバー
 
-  - WebClient/WebRequest
+| サーバー | 最小バージョン |
+| --- | --- |
+| IIS | 8.0以上 |
 
-  - HttpClient/HttpClientHandler
+### ライブラリ
 
-  - ASP.NET MVC 5 (IIS)
+| ライブラリ | サポート |
+| --- | :---: |
+| WebClient / WebRequest | ✅ |
+| HttpClient / HttpClientHandler | ✅ |
+| ASP.NET MVC 5 (IIS) | ✅ |
+| ASP.NET Web API 2 (IIS) | ✅ |
+| ADO.NET (Database) | ✅ |
 
-  - ASP.NET Web API 2 (IIS)
+### データベース
 
-  - ADO.NET (Database)
+| データベース | サポート |
+| --- | :---: |
+| MS SQL | ✅ |
+| Oracle | ✅ |
+| MySQL | ✅ |
+| Redis | ✅ |
+| その他 | ADO.NETをサポートするすべてのデータベース |
 
-- **データベース**：MS SQL、Oracle、MySQLなど、ADO.NETに対応するすべてのデータベースおよびRadis
+:::tip
+ADO.NETをサポートするすべてのデータベースで使用できます。
+:::
 
 ## サーバ対応環境を分析する方法
 

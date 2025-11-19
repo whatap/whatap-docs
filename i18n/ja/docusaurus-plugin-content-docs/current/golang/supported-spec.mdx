@@ -8,21 +8,29 @@ keywords:
 
 ## Goエージェントの動作環境
 
-- **対応バージョン**：1.17バージョン以降
+### サポートバージョン
 
-- **OS**
+| 言語 | サポートバージョン |
+| --- | --- |
+| Go | 1.17以上 |
 
-  - CentOS/Red Hat 6.xバージョン(64bit) 以降 
-  - Debian/Ubuntu 12.04バージョン(64bit) 以降
-  - Amazon linux (64bit)
-  - Alpine linux (64bit)
-  - Linux-aarch64 (ARM64)
+### オペレーティングシステム
 
-- **ライブラリ**
+| OS | 最小バージョン | アーキテクチャ |
+| --- | --- | :---: |
+| CentOS / Red Hat | 6.x | 64bit |
+| Debian / Ubuntu | 12.04 | 64bit |
+| Amazon Linux | - | 64bit |
+| Alpine Linux | - | 64bit |
+| Linux | - | ARM64 (aarch64) |
 
-  - net/http, gin, chi, fiber, gorilla, echo, fasthttp
-  - database/sql, gorm, redigo
-  - grpc, sarama, k8s.io/client-go
+### ライブラリ
+
+| カテゴリー | ライブラリ |
+| --- | --- |
+| **Webフレームワーク** | net/http, gin, chi, fiber, gorilla, echo, fasthttp |
+| **データベース** | database/sql, gorm, redigo |
+| **その他** | grpc, sarama, k8s.io/client-go |
 
 :::note
 

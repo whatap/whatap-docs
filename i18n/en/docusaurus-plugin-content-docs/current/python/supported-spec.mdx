@@ -11,69 +11,57 @@ keywords:
 
 Before installing the WhaTap Python monitoring agent, check the support environment.
 
-- **Support versions**
+### Supported Versions
 
-  - WSGI Application (Python 3.6 or later, 3.13 or earlier)
+| Application Type | Python Version |
+| --- | --- |
+| WSGI Application | 3.6 ~ 3.13 |
+| ASGI Application | 3.7 ~ 3.13 |
 
-  - ASGI Application (Python 3.7 or later, 3.13 or earlier)
+### Operating System
 
-- **OS**
+| OS | Minimum Version | Architecture |
+| --- | --- | :---: |
+| Debian / Ubuntu | 12.04 | 64bit |
+| Red Hat / CentOS | 6.x | 64bit |
+| macOS | 10.15 Catalina | - |
 
-  - Debian/Ubuntu 12.04 (64 bit) or later
+### Application Server
 
-  - OSX 10.15 Catalina
+| Framework | Supported Version |
+| --- | --- |
+| Bottle | - |
+| Celery | - |
+| CherryPy | - |
+| Django | - |
+| FastAPI | 0.84.0 or later |
+| Flask | - |
+| Frappe | - |
+| Nameko | - |
+| Odoo | v16, v17 |
+| Tornado | - |
 
-  - Red Hat/CentOS 6.x (64 bit) or later
+### Libraries
 
-- **Application Server**
+| Category | Libraries |
+| --- | --- |
+| **External Calls** | HttpLib, Requests, Urllib, HTTPX |
+| **Data Processing** | SQL Alchemy, GraphQL |
+| **Logging** | smtplib, logging, loguru |
+| **Messaging** | Kombu, Pika |
+| **LLM** | OpenAI |
 
-  - Bottle
+### Database
 
-  - Celery
-
-  - CherryPy
-
-  - Django
-
-  - FastAPI(0.84.0 or later)
-
-  - Flask
-
-  - Frappe
-
-  - Nameko
-
-  - Odoo (v16, v17)
-
-  - Tornado
-
-- **Library**
-
-  - External Calls: HttpLib, Requests, Urllib, HTTPX
-
-  - SQL Alchemy, GraphQL
-
-  - smtplib, logging , loguru
-
-  - Kombu, Pika
-
-  - LLM: OpenAI
-
-- **Database**
-
-  - MongoDB(pymongo)
-
-  - MySQL(MySQLdb, pymysql)
-
-  - Neo4j(neo4j)
-
-  - Oracle(cxOracle)
-
-  - PostgreSQL(psycopg2, psycopg, psycopg_pool)
-
-  - Redis(redis)
-
-  - SQLite(sqlite3)
+| Database | Driver |
+| --- | --- |
+| MongoDB | pymongo |
+| MySQL | MySQLdb, pymysql |
+| Neo4j | neo4j |
+| Oracle | cxOracle |
+| PostgreSQL | psycopg2, psycopg, psycopg_pool |
+| Redis | redis |
+| SQLite | sqlite3 |
 
 ## Common supported environment
 
