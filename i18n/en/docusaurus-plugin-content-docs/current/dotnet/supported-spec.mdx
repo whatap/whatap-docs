@@ -10,28 +10,48 @@ keywords:
 
 Before installing the agent, check the environment to support .NET.
 
-- **Support versions**
+### Supported Versions
 
-  - .NET Framework 4.61 ~ 4.8 (4.61 or later recommended)
-  - .NET 6, 7, 8
+| Platform | Supported Version |
+| --- | --- |
+| .NET Framework | 4.61 ~ 4.8 |
+| .NET | 6, 7, 8 |
 
-- **OS**: Windows Server 2008 R2 or later
+### Operating System
 
-- **Application Server**: IIS 8.0 or later
+| OS | Minimum Version |
+| --- | --- |
+| Windows Server | 2008 R2 or later |
 
-- **Library**
+### Application Server
 
-  - WebClient/WebRequest
+| Server | Minimum Version |
+| --- | --- |
+| IIS | 8.0 or later |
 
-  - HttpClient/HttpClientHandler
+### Libraries
 
-  - ASP.NET MVC 5 (IIS)
+| Library | Support |
+| --- | :---: |
+| WebClient / WebRequest | ✅ |
+| HttpClient / HttpClientHandler | ✅ |
+| ASP.NET MVC 5 (IIS) | ✅ |
+| ASP.NET Web API 2 (IIS) | ✅ |
+| ADO.NET (Database) | ✅ |
 
-  - ASP.NET Web API 2 (IIS)
+### Database
 
-  - ADO.NET (Database)
+| Database | Support |
+| --- | :---: |
+| MS SQL | ✅ |
+| Oracle | ✅ |
+| MySQL | ✅ |
+| Redis | ✅ |
+| Others | All databases that support ADO.NET |
 
-- **Database**: All databases and Radis that support ADO.NET such as MS SQL, Oracle, MySQL, etc.
+:::tip
+Available for all databases that support ADO.NET.
+:::
 
 ## How to analyze the server support environment
 

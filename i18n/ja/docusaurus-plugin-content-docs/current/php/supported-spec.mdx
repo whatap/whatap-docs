@@ -17,47 +17,57 @@ import TabItem from '@theme/TabItem';
 
 WhaTap PHPモニタリングエージェントをインストールする前に、サポート環境を確認してください。
 
-- **対応バージョン**
+### サポートバージョン
 
-  - PHP extension moduleとして動作
-  - PHP PHP 5 >= 5.2.0, PHP 7, PHP 8
-  - NTS / ZTS (Zend Thread Safe)
+| 区分 | サポート範囲 |
+| --- | --- |
+| **動作方式** | PHP拡張モジュール |
+| **PHPバージョン** | PHP 5.2.0以上、PHP 7、PHP 8 |
+| **Thread Safe** | NTS / ZTS (Zend Thread Safe) |
 
-- **OS**
+### オペレーティングシステム
 
-  - CentOS／Red Hat 6.x(64bit) 以降
-  - Debian／Ubuntu 12.04(64bit) 以降
-  - Alpine Linux(64bit)
-  - FreeBSD 10.x(64bit) 以降
-  - Linux-aarch64 (ARM64)
+| OS | 最小バージョン | アーキテクチャ |
+| --- | --- | :---: |
+| CentOS / Red Hat | 6.x | 64bit |
+| Debian / Ubuntu | 12.04 | 64bit |
+| Alpine Linux | - | 64bit |
+| FreeBSD | 10.x | 64bit |
+| Linux | - | ARM64 (aarch64) |
 
-- **アプリケーションサーバー**
+### アプリケーションサーバー
 
-  - Apache
-  - PHP-FPM(Nginx)
+| サーバー | サポート |
+| --- | :---: |
+| Apache | ✅ |
+| PHP-FPM (Nginx) | ✅ |
 
-- **ライブラリ**
+### ライブラリ
 
-  - PDO
-  - MySQLi
-  - cURL
-  - oci8
-  - mssql
-  - sqlsrv
-  - psql
-  - phpredis
-  - CUBRID
-  - odbc
+| ライブラリ | サポート |
+| --- | :---: |
+| PDO | ✅ |
+| MySQLi | ✅ |
+| cURL | ✅ |
+| oci8 | ✅ |
+| mssql | ✅ |
+| sqlsrv | ✅ |
+| psql | ✅ |
+| phpredis | ✅ |
+| CUBRID | ✅ |
+| odbc | ✅ |
 
-- **データベース**
+### データベース
 
-  - Oracle(OCI8)
-  - MySQL
-  - SQL Server (mssql, sqlsrv)
-  - PostgreSQL(psql)
-  - Redis(phpredis)
-  - CUBRID
-  - Tibero(odbc)
+| データベース | ドライバー |
+| --- | --- |
+| Oracle | OCI8 |
+| MySQL | - |
+| SQL Server | mssql, sqlsrv |
+| PostgreSQL | psql |
+| Redis | phpredis |
+| CUBRID | - |
+| Tibero | odbc |
 
 ## 共通サポート環境
 
