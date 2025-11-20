@@ -321,6 +321,7 @@ const sidebars = {
             'php/php-os/amazon-linux',
             'php/php-os/freebsd',
             'php/php-os/alpine-linux',
+            'php/php-os/windows',
             'php/php-os/gcae',
             'php/php-os/aws-eb',
             'php/install-agent-docker'
