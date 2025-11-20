@@ -17,7 +17,7 @@
 <meta name="description" content="WhaTap Docs 페이지입니다. 애플리케이션, 서버, 쿠버네티스, 데이터베이스, 브라우저 등 다양한 모니터링 솔루션의 사용법을 제공합니다.">
 <meta name="naver-site-verification" content="0c21fc5664a467108fb762ade47a3f81ee9b88ed">
 <meta name="google-site-verification" content="rIlfJkbbogFOIDc3DgJZmOGbUMJWytyvZSKEgV7EMsE"><link rel="stylesheet" href="/whatap-docs/assets/css/styles.5d00e1ed.css">
-<script src="/whatap-docs/assets/js/runtime~main.7515e15b.js" defer="defer"></script>
+<script src="/whatap-docs/assets/js/runtime~main.d581bb0d.js" defer="defer"></script>
 <script src="/whatap-docs/assets/js/main.ad379206.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -41,7 +41,7 @@ whatap-php 서비스(Service)가 실행 중이지 않거나 오류가 발생하�
 <li>
 <p>PHP 추가 INI 경로에 <em>whatap.ini</em> 파일이 생성되었는지 확인하세요.</p>
 <ul>
-<li><strong>Linux</strong></li>
+<li><strong>Linux/FreeBSD</strong></li>
 </ul>
 <div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#bfc7d5;--prism-background-color:#292d3e"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#bfc7d5;background-color:#292d3e"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#bfc7d5"><span class="token plain">$ </span><span class="token function" style="color:rgb(130, 170, 255)">find</span><span class="token plain"> / </span><span class="token operator" style="color:rgb(137, 221, 255)">|</span><span class="token plain"> </span><span class="token function" style="color:rgb(130, 170, 255)">grep</span><span class="token plain"> whatap.ini</span><br></span></code></pre></div></div>
 <ul>
@@ -52,7 +52,7 @@ whatap-php 서비스(Service)가 실행 중이지 않거나 오류가 발생하�
 <li>
 <p>PHP 확장 모듈 경로에 <em>whatap.so</em> 파일이 생성되었는지 확인하세요.</p>
 <ul>
-<li><strong>Linux</strong></li>
+<li><strong>Linux/FreeBSD</strong></li>
 </ul>
 <div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#bfc7d5;--prism-background-color:#292d3e"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#bfc7d5;background-color:#292d3e"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#bfc7d5"><span class="token plain">$ </span><span class="token function" style="color:rgb(130, 170, 255)">find</span><span class="token plain"> / </span><span class="token operator" style="color:rgb(137, 221, 255)">|</span><span class="token plain"> </span><span class="token function" style="color:rgb(130, 170, 255)">grep</span><span class="token plain"> whatap.so</span><br></span></code></pre></div></div>
 <ul>
@@ -63,7 +63,7 @@ whatap-php 서비스(Service)가 실행 중이지 않거나 오류가 발생하�
 <li>
 <p>PHP 확장 모듈이 실행되고 있는지 확인하세요.</p>
 <ul>
-<li><strong>Linux</strong></li>
+<li><strong>Linux/FreeBSD</strong></li>
 </ul>
 <div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#bfc7d5;--prism-background-color:#292d3e"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#bfc7d5;background-color:#292d3e"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#bfc7d5"><span class="token plain">$ </span><span class="token function" style="color:rgb(130, 170, 255)">sudo</span><span class="token plain"> php </span><span class="token parameter variable" style="color:rgb(191, 199, 213)">-m</span><span class="token plain"></span><br></span><span class="token-line" style="color:#bfc7d5"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#bfc7d5"><span class="token plain"></span><span class="token punctuation" style="color:rgb(199, 146, 234)">[</span><span class="token plain">PHP Modules</span><span class="token punctuation" style="color:rgb(199, 146, 234)">]</span><span class="token plain"></span><br></span><span class="token-line" style="color:#bfc7d5"><span class="token plain">bz2</span><br></span><span class="token-line" style="color:#bfc7d5"><span class="token plain">calendar</span><br></span><span class="token-line" style="color:#bfc7d5"><span class="token plain">Core</span><br></span><span class="token-line" style="color:#bfc7d5"><span class="token plain">ctype</span><br></span><span class="token-line" style="color:#bfc7d5"><span class="token plain"></span><span class="token function" style="color:rgb(130, 170, 255)">curl</span><span class="token plain"></span><br></span><span class="token-line" style="color:#bfc7d5"><span class="token plain"></span><span class="token function" style="color:rgb(130, 170, 255)">date</span><span class="token plain"></span><br></span><span class="token-line" style="color:#bfc7d5"><span class="token plain">…</span><br></span><span class="token-line" style="color:#bfc7d5"><span class="token plain">whatap   </span><span class="token comment" style="color:rgb(105, 112, 152);font-style:italic"># whatap 모듈 실행 확인</span><span class="token plain"></span><br></span><span class="token-line" style="color:#bfc7d5"><span class="token plain">…</span><br></span><span class="token-line" style="color:#bfc7d5"><span class="token plain"></span><span class="token punctuation" style="color:rgb(199, 146, 234)">[</span><span class="token plain">Zend Modules</span><span class="token punctuation" style="color:rgb(199, 146, 234)">]</span><br></span></code></pre></div></div>
 <ul>
@@ -76,7 +76,7 @@ whatap-php 서비스(Service)가 실행 중이지 않거나 오류가 발생하�
 <li>
 <p>whatap-php 서비스 상태를 확인하세요.</p>
 <ul>
-<li><strong>Linux</strong></li>
+<li><strong>Linux/FreeBSD</strong></li>
 </ul>
 <div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#bfc7d5;--prism-background-color:#292d3e"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#bfc7d5;background-color:#292d3e"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#bfc7d5"><span class="token plain">$ </span><span class="token function" style="color:rgb(130, 170, 255)">service</span><span class="token plain"> whatap-php status</span><br></span></code></pre></div></div>
 <ul>
