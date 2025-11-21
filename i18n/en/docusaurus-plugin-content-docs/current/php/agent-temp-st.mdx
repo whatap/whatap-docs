@@ -12,57 +12,103 @@ keywords:
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-To pause the PHP monitoring service, you must stop the PHP extension module and whatap-php service. See the following.
+To temporarily pause the PHP monitoring service, disable the PHP extension module and stop the whatap-php service.
 
-1. Stop the PHP extension module. 
+## Disable PHP Extension Module
 
-   Comment out the `extension=` syntax in *whatap.ini*. Set the comment by using a semicolon (_;_).
+### Linux/Unix
+
+1. Disable the PHP extension module.
+
+   Comment out the `extension=` directive in the *whatap.ini* file.  
+   Use a semicolon (;) to comment it out.
 
    ```bash
    $ sudo vi whatap.ini
 
    extension=whatap.so
 
-   ;Comment
+   ;comment
    ;extension=whatap.so
    ```
 
-   Even if manual configuration is made in _php.ini_, comment out the `extension=` syntax. 
+2. If you manually configured the setting directly in *php.ini*, also comment out the `extension=` directive.
 
-   :::note
+:::note
+Start the Apache or PHP-FPM service after making the changes.
+:::
 
-   Apache or PHP-FPM service is started.
+---
 
-   :::
+### Windows
 
-2. Stop the whatap-php service.
+Comment out the `extension` directive in the whatap.ini file.
+
+**When using Scan INI Directory**
+```cmd
+REM Edit whatap.ini
+notepad "C:\PHP\conf.d\whatap.ini"
+
+REM Comment out the extension line
+;extension=php_whatap.dll
+```
+
+**When added directly to php.ini**
+```cmd
+notepad "C:\PHP\php.ini"
+
+REM Comment out the extension line in the [whatap] section
+[whatap]
+;extension=php_whatap.dll
+```
+
+**Restart the web server**
+```cmd
+REM Apache
+net stop Apache2.4
+net start Apache2.4
+
+REM IIS
+iisreset /restart
+```
+
+---
+
+## Stop WhaTap PHP Service
+
+Stop the whatap-php service.
 
 <Tabs>
 <TabItem value="rdct" label="Red Hat/CentOS" default>
 
-````
 ```bash
 $ sudo service whatap-php stop
 ```
-````
 
 </TabItem>
 <TabItem value="dbub" label="Debian/Ubuntu">
 
-````
 ```bash
 $ sudo service whatap-php stop
 ```
-````
 
 </TabItem>
 <TabItem value="frbsd" label="FreeBSD">
 
-````
 ```bash
 $ service whatap_php stop
 ```
-````
+
+</TabItem>
+<TabItem value="windows" label="Windows">
+
+```cmd
+REM Stop service
+net stop "WhaTap PHP"
+
+REM or
+sc stop "WhaTap PHP"
+```
 
 </TabItem>
 </Tabs>

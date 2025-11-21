@@ -10,13 +10,10 @@ keywords:
   - Installation checking items
 ---
 
-{/* 구성 수정 */}
+## Restarting the Service
 
-## Restarting
-
-If the Apache or PHP-FPM service is restarted after installation, the set PHP extension module's *whatap.so* file is loaded.
-
-If the whatap-php service is not running or an error occurs, restart it.
+After installation, restart the Apache or PHP-FPM service so that the configured PHP extension module *whatap.so* is loaded.  
+If the whatap-php service is not running or an error occurs, restart the service.
 
 ### Red Hat/CentOS
 
@@ -36,50 +33,116 @@ $ sudo service whatap-php restart
 $ service whatap_php restart
 ```
 
-## Checking the status of the PHP extension module installation
+### Windows
 
-If the Apache or PHP-FPM service is restarted after installation, the set PHP extension module's *whatap.so* file is loaded. You can check whether the PHP extension module is installed properly as follows:
+```bash title=SH
+net restart "WhaTap PHP"
+```
 
-{/* 설치가 완료된 후 Apache 또는 PHP-FPM 서비스(Service)를 다시 시작하면 설정된 PHP 확장 모듈(PHP Extension module) _whatap.so\* 파일이 로딩됩니다.
+## Checking PHP Extension Module Installation
 
-PHP 확장 모듈이 잘 설치됐는지 다음의 방법으로 확인할 수 있습니다. */}
+Once installation is complete and the Apache or PHP-FPM service is restarted, the *whatap.so* PHP extension module will be loaded.  
+You can verify whether the PHP module is correctly installed using the following methods:
 
-1. Check whether *whatap.ini* has been created in the PHP's additional INI path.
+1. Check whether the *whatap.ini* file has been created in the PHP additional INI path.
 
-   ```bash title=SH
-   $ find / | grep whatap.ini
-   ```
+    * **Linux/FreeBSD**
+    ```bash title=SH
+    $ find / | grep whatap.ini
+    ```
 
-2. Check whether *whatap.so* has been created in the PHP extension module path.
+    * **Windows**
+    ```cmd
+    dir /s C:\ | findstr whatap.ini
+    ```
 
-   ```bash title=SH
-   $ find / | grep whatap.so
-   ```
+2. Check whether the *whatap.so* file exists in the PHP extension directory.
 
-3. Check whether the PHP extension module is running.
+    * **Linux/FreeBSD**
+    ```bash title=SH
+    $ find / | grep whatap.so
+    ```
 
-   ```bash title=SH
-   $ sudo php -m
+    * **Windows**
+    ```cmd
+    dir /s C:\ | findstr php_whatap.dll
+    ```
 
-   [PHP Modules]
-   bz2
-   calendar
-   Core
-   ctype
-   curl
-   date
-   …
-   whatap   # Check the execution of the whatap module.
-   …
-   [Zend Modules]
-   ```
+3. Check whether the PHP extension module is active.
 
-4. Check the whatap-php service status.
+    * **Linux/FreeBSD**
+    ```bash title=SH
+    $ sudo php -m
 
-   ```bash title=SH
-   $ service whatap-php status
-   ```
+    [PHP Modules]
+    bz2
+    calendar
+    Core
+    ctype
+    curl
+    date
+    …
+    whatap   # Module loaded
+    …
+    [Zend Modules]
+    ```
 
-5. In **_Management_** > **_Agent CONFIG._**, check whether the configured servers have been added or not. 
+    * **Windows**
+    ```cmd
+    php -m | findstr whatap
+    ```
 
-   <ImgLang img='php-agent-list.png' />
+    **Expected Output**
+    ```
+    whatap
+    ```
+
+4. Check the status of the whatap-php service.
+
+    * **Linux/FreeBSD**
+    ```bash title=SH
+    $ service whatap-php status
+    ```
+
+    * **Windows**
+    ```cmd
+    sc query "WhaTap PHP"
+    ```
+
+    Or open `services.msc` to check WhaTap PHP service status.
+
+    **Expected Output**
+    ```
+    SERVICE_NAME: WhaTap PHP
+    STATE : 4 RUNNING
+    ```
+
+5. Check the logs.
+
+    **Log File Location**
+    ```
+    C:\Program Files\WhaTap\PHP\logs\
+    ├── whatap-boot-YYYYMMDD.log    # Boot/start logs by date
+    └── whatap-install.log          # Installation log
+    ```
+
+    **View Logs**
+    ```cmd
+    REM View installation log
+    type "C:\Program Files\WhaTap\PHP\logs\whatap-install.log"
+
+    REM View latest boot log
+    dir "C:\Program Files\WhaTap\PHP\logs\whatap-boot-*.log" /O-D
+    type "C:\Program Files\WhaTap\PHP\logs\whatap-boot-20251117.log"
+    ```
+
+    **PowerShell Live Log**
+    ```powershell
+    # Real-time monitoring of latest boot log
+    $latestLog = Get-ChildItem "C:\Program Files\WhaTap\PHP\logs\whatap-boot-*.log" | Sort-Object LastWriteTime -Descending | Select-Object -First 1
+    Get-Content $latestLog.FullName -Wait
+    ```
+
+6. Go to **Management > Agent Settings** and confirm that the configured server has been added.
+
+    <ImgLang img='php-agent-list.png' />

@@ -1,68 +1,111 @@
-## Segmentation fault, Sig bus error
+### Segmentation fault, Sig bus Error
 
-If any service failure occurs after applying the PHP Monitoring, check the error log for Apache or PHP-FPM.
+If an error occurs after applying PHP monitoring, check the Apache or PHP-FPM error log.
 
-In the content of the error log, check for any error messages such as `segmentation fault` and `sig bus`. The messages include phrases like `kill child process`, `exit child`, and `exit process`. 
+Check whether the error log contains messages such as `segmentation fault` or `sig bus`.  
+These errors often appear together with messages like `kill child process`, `exit child`, or `exit process`.
 
-If any error occurs, it can be seen that a conflict happened in the PHP extension module, *whatap.so*. Stop the PHP extension module, *whatap.so*, and then restart Apache or PHP-FPM.
+If these errors occur, it indicates a conflict with the PHP extension module *whatap.so*.  
+Disable the PHP extension module *whatap.so* and restart Apache or PHP-FPM.
 
-In the environment that does not affect the service, add the `Core dump` setting and then reload *whatap.so*. If any error occurs, the _dump_ file is generated. Analyze the _dump_ file by using gdb for resolving the root cause. 
+In an environment that does not affect the service, enable the `Core dump` configuration for Apache and PHP-FPM, then reload *whatap.so*.  
+If an error occurs afterward, a *dump* file will be generated.  
+Analyze the *dump* file using gdb to identify the cause.
 
-### Core dump configuration
+---
 
-1. Give permission for the directory to generate the _dump_ file.
+#### Disable Module & Check Logs
 
-   ```java
-   chmod 0777 /home/httpd-core
-   ```
+Disable the module first and check the logs to identify the issue.
 
-2. Perform system configuration.
+---
 
-   ```java
-   ulimit -c unlimited
-   sysctl fs.suid_dumpable=2
-   sysctl kernel.core_uses_pid=0
-   sysctl kernel.core_pattern='| /home/httpd-core/core-%e.%p'
-   ```
+##### Windows
 
-### Apache
+**Disable Test**
+```cmd
+REM Temporarily disable php_whatap.dll
+ren "C:\PHP\conf.d\whatap.ini" "whatap.ini.disabled"
 
-1. Set the CoreDumpDirectory item in the Apache conf. 
+REM Restart web server
+net stop Apache2.4 && net start Apache2.4
+```
 
-   ```java
-   vi /etc/httpd/conf/httpd.conf
+**Check error logs**
 
-   CoreDumpDirectory /home/httpd-core
-   ```
+* **Apache**
+```cmd
+type "C:\Apache24\logs\error.log"
+```
 
-2. Restart Apache to complete the configuration. 
+* **IIS**
+```cmd
+REM Check Event Viewer
+eventvwr.msc
+→ Windows Logs → Application
+```
 
-3. If any error occurs, the _dump_ file is generated. If the _dump_ file has been generated, check the root cause of the error through gdb. Use the `bt full` command to check the entire stack information.
+---
 
-   ```java
-   # gdb /usr/sbin/httpd /home/httpd-core/core-httpd.31832
-   ...
-   ...
+#### Core Dump Configuration
 
-   > bt full
-   ```
+1. Grant permissions to the directory where the *dump* file will be stored:
 
-### PHP-FPM
+```bash
+chmod 0777 /home/httpd-core
+```
 
-1. In the FPM configuration file, set `rlimit_core`. 
+2. Apply system settings:
 
-   ```java
-   rlimit_core = unlimited
-   ```
+```bash
+ulimit -c unlimited
+sysctl fs.suid_dumpable=2
+sysctl kernel.core_uses_pid=0
+sysctl kernel.core_pattern='| /home/httpd-core/core-%e.%p'
+```
 
-2. Restart PHP-FPM to complete the configuration. 
+---
 
-3. If any error occurs, the _dump_ file is generated. If the _dump_ file has been generated, check the root cause of the error through gdb. Use the `bt full` command to check the entire stack information.
+#### Apache
 
-   ```java
-   # gdb /usr/sbin/php-fpm /home/httpd-core/core-php-fpm.31832
-   ...
-   ...
+1. Add CoreDumpDirectory to Apache configuration:
 
-   > bt full
-   ```
+```bash
+vi /etc/httpd/conf/httpd.conf
+
+CoreDumpDirectory /home/httpd-core
+```
+
+2. Restart Apache to apply the setting.
+
+3. When an error occurs, a *dump* file is generated.  
+   Analyze the file using gdb and use `bt full` to print the full stack trace:
+
+```bash
+# gdb /usr/sbin/httpd /home/httpd-core/core-httpd.31832
+...
+
+> bt full
+```
+
+---
+
+#### PHP-FPM
+
+1. Configure `rlimit_core` in the FPM configuration file:
+
+```bash
+rlimit_core = unlimited
+```
+
+2. Restart PHP-FPM.
+
+3. When an error occurs, a *dump* file will be created.  
+   Analyze it using gdb with `bt full`:
+
+```bash
+# gdb /usr/sbin/php-fpm /home/httpd-core/core-php-fpm.31832
+...
+
+> bt full
+```

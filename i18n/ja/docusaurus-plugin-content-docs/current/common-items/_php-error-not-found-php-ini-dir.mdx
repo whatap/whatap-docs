@@ -1,11 +1,54 @@
-## Error: Not found PHP ini directory
+### PHP ini ディレクトリが見つからない
 
-PHP環境の中で`Scan this dir for additional .ini files`項目の値を確認できなかった場合に発生します。PHPコンパイルインストールオプション`--with-config-file-scan-dir=PATH`が設定されていない場合、対応できる環境はありません。 
+> Error: Not found PHP ini directory
 
-次の説明書を参照して、[PHPコマンド（CLI）の正しい場所](#check-php-cli-path)を確認した上で、[PHP拡張モジュールおよびwhatap-phpサービス選択インストール](#extension-modul-manual-setting)に進みます。
+PHP が `Scan this dir for additional .ini files` の値を取得できない場合に発生します。  
+PHP を `--with-config-file-scan-dir=PATH` オプションなしでコンパイルした場合、この情報は出力されません。
+
+[PHP CLI の場所](#check-php-cli-path) を正しく確認し、  
+[PHP 拡張モジュールと whatap-php サービスの手動設定](#extension-modul-manual-setting) を実施してください。
+
+#### 確認方法
+
+以下のコマンドで PHP が追加 ini ディレクトリを認識しているか確認します。
+
+##### Linux/FreeBSD
 
 ```bash
 $ sudo php -i | grep '.ini files'
 
 Scan this dir for additional .ini files => (none)
+```
+
+##### Windows
+
+```cmd
+php --ini
+
+Configuration File (php.ini) Path: /etc/php
+Loaded Configuration File:         /etc/php/php.ini
+Scan for additional .ini files in: (none)
+Additional .ini files parsed:      (none)
+```
+
+#### 解決方法
+
+追加 ini ディレクトリが設定されていない場合、*whatap.ini* の内容を *php.ini* に直接追加します。
+
+##### Windows
+
+```cmd
+REM whatap.ini の内容を php.ini に追加
+type "C:\Program Files\WhaTap\PHP\template.ini" >> C:\PHP\php.ini
+
+REM または手動で編集
+notepad C:\PHP\php.ini
+```
+
+**php.ini に追加する内容**
+```ini
+[whatap]
+extension=php_whatap.dll
+
+; 詳細設定は C:\Program Files\WhaTap\PHP\whatap.ini を参照
 ```
