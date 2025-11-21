@@ -9,12 +9,211 @@ keywords:
   - Application
   - Application Monitoring
   - Troubleshooting
-  - Troubleshooting
 ---
+
+## Troubleshooting Installation and Configuration Issues
+
+This guide explains how to diagnose and resolve errors that may occur during installation and configuration of the WhaTap PHP Agent.
+
+## Linux/FreeBSD
 
 import Phpextensionmoduleservice from "../common-items/_php-extension-module-service.mdx";
 
-<Phpextensionmoduleservice />
+<Phpextensionmoduleservice /> 
+
+## Windows
+
+### Manual Configuration of PHP Extension Module and WhaTap PHP Service
+
+If the PHP extension module or the whatap-php service was not installed correctly, or the optional installation (*install.sh*) did not complete properly, follow the manual configuration steps below.
+
+#### Checking PHP Environment Information
+
+Check your PHP environment:
+
+```cmd
+REM Check PHP API version
+php -i | findstr "PHP API"
+
+REM Check Thread Safety
+php -i | findstr "Thread Safety"
+
+REM Check extension directory
+php -i | findstr extension_dir
+
+REM Check PHP configuration file location
+php --ini
+```
+
+*Example Output*
+```
+PHP API => 20230831
+Thread Safety => disabled
+extension_dir => C:\PHP\ext
+
+Configuration File (php.ini) Path: C:\Windows
+Loaded Configuration File:         C:\PHP\php.ini
+Scan for additional .ini files in: C:\PHP\conf.d
+Additional .ini files parsed:      (none)
+```
+
+#### Copying php_whatap.dll
+
+Copy the correct DLL to the extension_dir path you confirmed:
+
+```cmd
+REM Example: extension_dir => C:\PHP\ext
+
+REM Non-ZTS version
+copy "C:\Program Files\WhaTap\PHP\modules\x64\php_whatap_[API_VERSION].dll" "C:\PHP\ext\php_whatap.dll"
+
+REM ZTS version
+copy "C:\Program Files\WhaTap\PHP\modules\x64\php_whatap_zts_[API_VERSION].dll" "C:\PHP\ext\php_whatap.dll"
+```
+
+*Examples*
+```cmd
+REM PHP 8.3 (API 20230831) NTS
+copy "C:\Program Files\WhaTap\PHP\modules\x64\php_whatap_20230831.dll" "C:\PHP\ext\php_whatap.dll"
+
+REM PHP 8.3 (API 20230831) ZTS
+copy "C:\Program Files\WhaTap\PHP\modules\x64\php_whatap_zts_20230831.dll" "C:\Program Files\PHP\v8.3\ext\php_whatap.dll"
+```
+
+#### Creating whatap.ini or Editing php.ini
+
+##### When Scan Directory Exists
+
+Create *whatap.ini* in the Scan Directory detected by `php --ini`.
+
+```cmd
+REM Example: Scan for additional .ini files in: C:\PHP\conf.d
+notepad "C:\PHP\conf.d\whatap.ini"
+```
+
+*whatap.ini*
+```ini
+extension=php_whatap.dll
+```
+
+##### When Scan Directory Does Not Exist
+
+Add configuration directly to php.ini:
+
+```cmd
+REM Example: Loaded Configuration File: C:\PHP\php.ini
+notepad "C:\PHP\php.ini"
+```
+
+*Add to php.ini*
+```ini
+[whatap]
+extension=php_whatap.dll
+```
+
+#### Editing whatap.ini
+
+Edit the configuration file located at *C:\Program Files\WhaTap\PHP\whatap.ini*:
+
+```ini
+whatap.license=your_access_key
+whatap.server.host=13.124.11.223
+whatap.app_name=APHP
+whatap.app_process_name=httpd.exe
+```
+
+#### Setting Environment Variables
+
+Configure the environment variables required by the WhaTap PHP Agent:
+
+```cmd
+REM Required: Installation directory
+setx WHATAP_PHP_HOME "C:\Program Files\WhaTap\PHP"
+
+REM Required: Configuration file name
+setx WHATAP_PHP_CONFIG "whatap.ini"
+
+REM Optional: License key
+REM setx WHATAP_LICENSE "your_access_key"
+
+REM Optional: Server host
+REM setx WHATAP_SERVER_HOST "13.124.11.223"
+```
+
+*Environment variables automatically set by the installer*
+
+| Variable | Description | When Set | Default |
+|---------|-------------|-----------|---------|
+| WHATAP_PHP_HOME | Installation directory | Always | C:\Program Files\WhaTap\PHP |
+| WHATAP_PHP_CONFIG_HOME | Directory of whatap.ini | Always | C:\Program Files\WhaTap\PHP |
+| WHATAP_PHP_CONFIG | whatap.ini file name | Always | whatap.ini |
+| WHATAP_DATETIME_MODE | Time mode (Windows only) | Always | WINDOWS |
+| WHATAP_PHP_BIN | Path to php.exe | When PHP is detected | (detected) |
+| WHATAP_PHP_DIR | PHP installation directory | When PHP is detected | (detected) |
+| WHATAP_PHP_API_VERSION | PHP API version | When PHP is detected | (detected) |
+| WHATAP_PHP_EXTENSION_DIR | PHP extension directory | When PHP is detected | (detected) |
+| WHATAP_PHP_INI_FILE | php.ini path | When PHP is detected | (detected) |
+| WHATAP_PHP_THREAD_SAFETY | enabled/disabled | When PHP is detected | (detected) |
+
+*Optional user-set environment variables*
+
+| Variable | Description | Priority | Default |
+|---------|-------------|----------|---------|
+| WHATAP_LICENSE | License key | Env > INI | - |
+| WHATAP_SERVER_HOST | Server host | Env > INI | - |
+
+:::note
+`setx` writes permanent environment variables.  
+Reload your terminal or restart services for changes to apply.  
+For system-wide variables:
+```cmd
+setx WHATAP_PHP_HOME "C:\Program Files\WhaTap\PHP" /M
+```
+:::
+
+#### Registering and Starting the Service
+
+```cmd
+sc create "WhaTap PHP" binPath="C:\Program Files\WhaTap\PHP\whatap_php.exe" start=auto
+net start "WhaTap PHP"
+
+REM Restart web server
+net stop Apache2.4 && net start Apache2.4
+REM or
+iisreset
+```
+
+## Checking Runtime Environment
+
+### Collecting PHP Environment Information
+
+```cmd
+php -v > php_version.txt
+php -i > phpinfo.txt
+php -m > modules.txt
+php --ini > ini.txt
+```
+
+### Network Connectivity Test
+
+```powershell
+Test-NetConnection -ComputerName 13.124.11.223 -Port 6600
+```
+
+```cmd
+telnet 13.124.11.223 6600
+tracert 13.124.11.223
+```
+
+### Checking Processes
+
+```cmd
+tasklist | findstr whatap
+tasklist | findstr php
+netstat -ano | findstr 6600
+```
+
+## Additional Troubleshooting
 
 import Phpinipatherror from "../common-items/_php-ini-path-error.mdx";
 
@@ -31,3 +230,4 @@ import Phphitmaperror from "../common-items/_php-hitmap-error.mdx";
 import Phpsigerror from "../common-items/_php-sig-error.mdx";
 
 <Phpsigerror />
+

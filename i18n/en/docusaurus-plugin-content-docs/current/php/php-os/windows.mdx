@@ -1,0 +1,164 @@
+---
+id: windows
+title: Windows
+description: Windows
+toc_max_heading_level: 3
+keywords: [ Windows, PHP ]
+---
+
+> **PHP Agent Windows Installation Guide**
+
+This guide explains how to install the WhaTap PHP monitoring agent on Windows systems. The InnoSetup-based installer allows easy installation through either GUI or CLI methods.
+
+:::note
+**Windows support is available from v2.13.0 and supports PHP 7.0 or higher.**  
+* **Supported OS**: Windows Server 2016+, Windows 10+
+:::
+
+### Download Installer
+
+Download the WhaTap PHP Windows installer.
+
+```
+https://repo.whatap.io/windows/whatap_php_setup.exe
+```
+
+Alternatively, you can download it from the WhaTap console by selecting a project and navigating to  
+**Management > Agent Installation > Windows Download**.
+
+### GUI Installation
+
+#### Basic Installation (Auto Detection)
+
+```cmd
+whatap_php_setup.exe
+```
+
+1. The installer automatically selects the language based on the Windows system locale.
+2. Select **Basic Installation** as the installation mode.
+3. Enter your license key.
+4. Enter the server host.
+   - Default: `13.124.11.223` (or `13.209.172.35`)
+5. Select the *php.exe* file.
+6. Review the auto-detected information:
+   - PHP version (e.g., 8.2.12)
+   - Thread Safety (NTS/ZTS)
+   - Architecture (x64)
+   - Extension Directory
+
+#### Advanced Installation (Manual Configuration)
+
+1. Select **Advanced Installation** as the installation mode.
+2. Enter your license key.
+3. Enter the server host.
+4. Select the PHP version.
+   - Versions: `7.0`, `7.1`, `7.2`, `7.3`, `7.4`, `8.0`, `8.1`, `8.2`, `8.3`, `8.4`
+5. Select the Thread Safety option.
+   - **disabled (NTS)**: Non-Thread Safe (recommended for most environments)
+   - **enabled (ZTS)**: Zend Thread Safe (Apache Worker/Event MPM)
+6. Enter the Scan INI Directory or the php.ini path.
+7. Enter the Extension Directory.
+
+### CLI Installation
+
+**Basic mode (php.exe path provided)**
+
+```cmd
+whatap_php_setup.exe /VERYSILENT /SUPPRESSMSGBOXES /NORESTART ^
+  /TYPE="basic" ^
+  /ACCESSKEY="x4g2e21g8a9m-z2glc38mmd1fa-x2vunh5jms4u1" ^
+  /SERVERHOST="13.124.11.223" ^
+  /PHPPATH="C:\PHP\php.exe"
+```
+
+**Advanced mode (Scan Directory available)**
+
+```cmd
+whatap_php_setup.exe /VERYSILENT /SUPPRESSMSGBOXES /NORESTART ^
+  /TYPE="advanced" ^
+  /ACCESSKEY="x4g2e21g8a9m-z2glc38mmd1fa-x2vunh5jms4u1" ^
+  /SERVERHOST="13.124.11.223" ^
+  /PHPVERSION="8.3" ^
+  /THREADSAFETY="disabled" ^
+  /SCANDIR="C:\PHP\conf.d" ^
+  /EXTENSIONDIR="C:\PHP\ext"
+```
+
+**Advanced mode (Scan Directory not available, php.ini specified manually)**
+
+```cmd
+whatap_php_setup.exe /VERYSILENT /SUPPRESSMSGBOXES /NORESTART ^
+  /TYPE="advanced" ^
+  /ACCESSKEY="x4g2e21g8a9m-z2glc38mmd1fa-x2vunh5jms4u1" ^
+  /SERVERHOST="13.124.11.223" ^
+  /PHPVERSION="8.3" ^
+  /THREADSAFETY="disabled" ^
+  /PHPINIPATH="C:\PHP\php.ini" ^
+  /EXTENSIONDIR="C:\PHP\ext"
+```
+
+### Verification After Installation
+
+**Check PHP module load**
+
+```cmd
+php -m | findstr whatap
+```
+
+**Check service status**
+
+```cmd
+sc query "WhaTap PHP"
+```
+
+**Expected Output**
+
+```
+SERVICE_NAME: WhaTap PHP
+STATE : 4 RUNNING
+```
+
+### Installation File Structure
+
+```
+C:\Program Files\WhaTap\PHP\
+├── whatap_php.exe
+├── whatap.ini
+├── perfcounter.json
+├── ChangeLog
+├── unins000.exe
+└── modules\x64\
+    ├── php_whatap_20151012.dll
+    ├── php_whatap_zts_20151012.dll
+    ├── php_whatap_20160303.dll
+    ├── php_whatap_zts_20160303.dll
+    ├── ...
+    ├── php_whatap_20240924.dll
+    └── php_whatap_zts_20240924.dll
+```
+
+**PHP Integration (auto configuration)**
+
+```
+C:\PHP\ext\php_whatap.dll
+C:\PHP\conf.d\whatap.ini
+or
+C:\PHP\php.ini
+```
+
+### System Requirements
+
+**Operating System:**
+- Windows Server 2016 or later
+- Windows 10 or later
+
+**PHP:**
+- PHP 7.0 ~ 8.4 (x64)
+- Supports both NTS and ZTS
+
+**Web Servers:**
+- Apache 2.4+
+- Microsoft IIS 8.5+ (Server 2016+)
+
+**Network:**
+- TCP port 6600 must be accessible to the WhaTap server
