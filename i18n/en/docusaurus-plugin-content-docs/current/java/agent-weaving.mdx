@@ -1,142 +1,180 @@
 ---
 id: agent-weaving
-title: Open source tracing
-description: It provides the configuration method how to trace frameworks or open source libraries used in Java applications through the agent. It is configured by adding the weaving option in the Java agent configuration file (whatap.conf). The guide on how to respond to various framework and library versions is also provided.
-keywords:
-  - Java
-  - Agent
-  - Open source tracing
-  - Weaving
+title: Open Source Tracking
+description: Provides configuration methods for tracking frameworks and open source libraries used in Java applications through agents. Configure by adding the weaving option to the Java agent configuration file (whatap.conf), and provides guidance on how to support various framework and library versions.
+keywords: [ Java, Agent, Open Source Tracking, Weaving ]
 ---
 
-It provides the configuration method how to trace frameworks or open source libraries used in Java applications through the agent. It is configured by adding the `weaving` option in the Java agent configuration file (*whatap.conf*). The guide on how to respond to various framework and library versions is also provided.
+This provides configuration methods for tracking frameworks and open source libraries used in Java applications through agents. Configure by adding the `weaving` option to the Java agent configuration file (*whatap.conf*), and provides guidance on how to support various framework and library versions.
 
-For example, when using spring-boot-3.x, feign-client-11, or okhttp3-4.4 with a framework or open source, set the options as follows:
-
+For example, when using spring-boot-3.x, feign-client-11, and okhttp3-4.4 as frameworks or open sources, configure the options as follows:
 ```ini title='whatap.conf'
 weaving=spring-boot-3.0,feign-11,okhttp3-4.4
 ```
 
-## Supported open source list
+## Supported Open Source List
 
-For configuration of the framework or open source to trace through the Java agent, see the following:
+Refer to the following for configuration methods for frameworks or open sources tracked through the Java agent.
 
 ### Apache Camel
 
 #### CXF
-| Agent Version | camel-cxf-3.15 or later |
-| ------------- | :---------------------: |
-| v2.2.27       |           ✅            |
+**Configuration**: `weaving=camel-cxf-3.15`
+
+| Agent Version | Supported Range |
+| --- | --- |
+| v2.2.27 | camel-cxf 3.15 or later |
 
 #### Netty
-| Agent Version | camel-netty4-2.25 or later |
-| ------------- | :------------------------: |
-| v2.2.42       |             ✅             |
+**Configuration**: `weaving=camel-netty4-2.25`
+
+| Agent Version | Supported Range |
+| --- | --- |
+| v2.2.42 | camel-netty4 2.25 or later |
 
 #### SEDA
-| Agent Version | camel-seda-2.22 or later | camel-seda-3.2 or later |
-| ------------- | :----------------------: | :---------------------: |
-| v2.2.20       |            ✅            |           ✅            |
+**Configuration**: `weaving=camel-seda-2.22`, `weaving=camel-seda-3.2`
+
+| Agent Version | Supported Range |
+| --- | --- |
+| v2.2.20 | camel-seda 2.22 or later, 3.2 or later |
 
 ### DB2
-| Agent Version | db2-11.5 or later |
-| ------------- | :---------------: |
-| v2.2.18       |        ✅         |
+**Configuration**: `weaving=db2-11.5`
+
+| Agent Version | Supported Range |
+| --- | --- |
+| v2.2.18 | db2 11.5 or later |
 
 ### DynamoDB
-| Agent Version | dynamodb-1.11 | dynamodb-2.25 |
-| ------------- | :-----------: | :-----------: |
-| v2.2.39       |      ✅       |      ✅       |
+**Configuration**: `weaving=dynamodb-1.11`, `weaving=dynamodb-2.25`
+
+| Agent Version | Supported Range |
+| --- | --- |
+| v2.2.39 | dynamodb 1.11, 2.25 |
 
 ### Feign Client
-| Agent Version | feign-11 or later |
-| ------------- | :---------------: |
-| v2.2.6        |        ✅         |
+**Configuration**: `weaving=feign-11`
+
+| Agent Version | Supported Range |
+| --- | --- |
+| v2.2.6 | feign 11 or later |
 
 ### Hystrix
-| Agent Version | hystrix-1.5 or later |
-| ------------- | :------------------: |
-| v2.0_21       |          ✅          |
+**Configuration**: `weaving=hystrix-1.5`
+
+| Agent Version | Supported Range |
+| --- | --- |
+| v2.0_21 | hystrix 1.5 or later |
 
 ### Kafka
-| Agent Version | kafka-clients-2.4.0 or later | reactor-kafka-1.3 or later |
-| --- | :---: | :---: |
-| v2.2.15 | ✅ | ❌ |
-| v2.2.5 | ❌ | ✅ |
+**Configuration**: `weaving=kafka-clients-2.4.0`, `weaving=reactor-kafka-1.3`
+
+| Agent Version | Supported Range |
+| --- | --- |
+| v2.2.15 | kafka-clients 2.4.0 or later |
+| v2.2.5 | reactor-kafka 1.3 or later |
 
 ### Logging
 
 #### Log4j2
-| Agent Version | log4j-2.17 or later |
-| --- | :---: |
-| **Note** | [Agent option to exclude specific appender](agent-log#excludeappender) |
-| v2.2.28 | ✅ |
+**Configuration**: `weaving=log4j-2.17`
+
+**Note**: [Agent option to exclude specific appender](agent-log#excludeappender)
+
+| Agent Version | Supported Range |
+| --- | --- |
+| v2.2.28 | log4j 2.17 or later |
 
 #### Logback
-| Agent Version | logback-1.2.8 or later |
-| --- | :---: |
-| **Note** | [Agent option to exclude specific appender](agent-log#excludeappender) |
-| v2.2.28 | ✅ |
+**Configuration**: `weaving=logback-1.2.8`
+
+**Note**: [Agent option to exclude specific appender](agent-log#excludeappender)
+
+| Agent Version | Supported Range |
+| --- | --- |
+| v2.2.28 | logback 1.2.8 or later |
 
 ### MongoDB
-| Agent Version | 3.8.2 or later | 4.0.3 or later | 4.4 or later | 4.8 or later | 4.11 or later | 5.0 or later |
-| --- | :---: | :---: | :---: | :---: | :---: | :---: |
-| v2.2.45 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| v2.2.11 | ✅ | ✅ | ✅ | ✅ | ❌ | ❌ |
+**Configuration**: `weaving=mongodb-{version}`
+
+| Agent Version | Supported Range |
+| --- | --- |
+| v2.2.45 | 3.8.2 ~ 5.0 |
+| v2.2.11 | 3.8.2 ~ 4.8 |
 
 ### Mule Framework
-| Agent Version | mule-3.9.5 or later | mule-4.5 or later |
-| --- | :---: | :---: |
-| v2.2.23 | ✅ | ✅ |
+**Configuration**: `weaving=mule-3.9.5`, `weaving=mule-4.5`
+
+| Agent Version | Supported Range |
+| --- | --- |
+| v2.2.23 | mule 3.9.5 or later, 4.5 or later |
 
 ### OkHttp
-| Agent Version | okhttp-2.7 or later | okhttp3 | okhttp3-4.4 |
-| --- | :---: | :---: | :---: |
-| v2.2.9 | ✅ | ✅ | ✅ |
-| v2.0_15 | ✅ | ✅ | ❌ |
+**Configuration**: `weaving=okhttp-2.7`, `weaving=okhttp3`, `weaving=okhttp3-4.4`
+
+| Agent Version | Supported Range |
+| --- | --- |
+| v2.2.9 | okhttp 2.7 or later, okhttp3, okhttp3-4.4 |
+| v2.0_15 | okhttp 2.7 or later, okhttp3 (excluding 4.4) |
 
 ### Quarkus Reactive
-| Agent Version | quarkus-reactive-1.13 or later | quarkus-reactive-2.10 or later |
-| --- | :---: | :---: |
-| v2.2.19 | ✅ | ✅ |
+**Configuration**: `weaving=quarkus-reactive-1.13`, `weaving=quarkus-reactive-2.10`
+
+| Agent Version | Supported Range |
+| --- | --- |
+| v2.2.19 | quarkus-reactive 1.13 or later, 2.10 or later |
 
 ### RabbitMQ
-| Agent Version | reactor-rabbitmq-1.2 or later |
-| --- | :---: |
-| v2.0_06 | ✅ |
+**Configuration**: `weaving=reactor-rabbitmq-1.2`
+
+| Agent Version | Supported Range |
+| --- | --- |
+| v2.0_06 | reactor-rabbitmq 1.2 or later |
 
 ### Redis
 
 #### Jedis
-| Agent Version | jedis-2.9.0 or later | jedis-2.9.3 or later | jedis-3.2 or later |
-| --- | :---: | :---: | :---: |
-| v2.2.43 | ✅ | ✅ | ✅ |
-| v2.0_33 | ❌ | ✅ | ✅ |
-| v2.0_09 | ❌ | ❌ | ✅ |
+**Configuration**: `weaving=jedis-{version}`
+
+| Agent Version | Supported Range |
+| --- | --- |
+| v2.2.43 | jedis 2.9.0 ~ 3.2 |
+| v2.0_33 | jedis 2.9.3 ~ 3.2 |
+| v2.0_09 | jedis 3.2 |
 
 #### Lettuce
-| Agent Version | lettuce-5.1 or later | lettuce-6.2 or later |
-| --- | :---: | :---: |
-| v2.2.16 | ✅ | ✅ |
-| v2.2.7 | ✅ | ❌ |
+**Configuration**: `weaving=lettuce-{version}`
+
+| Agent Version | Supported Range |
+| --- | --- |
+| v2.2.16 | lettuce 5.1 ~ 6.2 |
+| v2.2.7 | lettuce 5.1 |
 
 ### Retrofit
-| Agent Version | retrofit-2.5 or later |
-| --- | :---: |
-| **Note** | Cannot be used simultaneously with okhttp settings |
-| v2.2.39 | ✅ |
+**Configuration**: `weaving=retrofit-2.5`
+
+**Note**: Cannot be used simultaneously with okhttp configuration
+
+| Agent Version | Supported Range |
+| --- | --- |
+| v2.2.39 | retrofit 2.5 or later |
 
 ### Ribbon
-| Agent Version | ribbon |
-| --- | :---: |
-| v2.2.10 | ✅ |
+**Configuration**: `weaving=ribbon`
+
+| Agent Version | Supported Range |
+| --- | --- |
+| v2.2.10 | ribbon |
 
 ### Spring Boot
-| Agent Version | 2.1 or later | 2.5 or later | 2.7 or later | 3.0 or later | 3.2 or later |
-| --- | :---: | :---: | :---: | :---: | :---: |
-| v2.2.38 | ✅ | ✅ | ✅ | ✅ | ✅ |
-| v2.2.23 | ✅ | ❌ | ❌ | ❌ | ❌ |
-| v2.2.9 | ❌ | ✅ | ✅ | ✅ | ❌ |
+**Configuration**: `weaving=spring-boot-{version}`
+
+| Agent Version | Supported Range |
+| --- | --- |
+| v2.2.38 | spring-boot 2.1 ~ 3.2 |
+| v2.2.23 | spring-boot 2.1 |
+| v2.2.9 | spring-boot 2.5 ~ 3.0 |
 
 <details>
 <summary>View included technology stack</summary>
@@ -150,30 +188,34 @@ For configuration of the framework or open source to trace through the Java agen
 </details>
 
 ### Tomcat
-| Agent Version | tomcat9 | tomcat10 |
-| --- | :---: | :---: |
-| v2.2.5 | ✅ | ✅ |
+**Configuration**: `weaving=tomcat9`, `weaving=tomcat10`
+
+| Agent Version | Supported Range |
+| --- | --- |
+| v2.2.5 | tomcat9, tomcat10 |
 
 ### Undertow
-| Agent Version | undertow-2.2 or later | undertow-2.3 or later |
-| --- | :---: | :---: |
-| v2.2.39 | ✅ | ✅ |
-| v2.2.14 | ❌ | ✅ |
+**Configuration**: `weaving=undertow-{version}`
+
+| Agent Version | Supported Range |
+| --- | --- |
+| v2.2.39 | undertow 2.2 ~ 2.3 |
+| v2.2.14 | undertow 2.3 |
 
 ### Vert.x
-| Agent Version | vertx-3.5.3 | vertx-3.9 | vertx-4.5 |
-| --- | :---: | :---: | :---: |
-| v2.2.44 | ✅ | ✅ | ✅ |
-| v2.2.42 | ✅ | ❌ | ❌ |
-| v2.2.39 | ❌ | ❌ | ✅ |
+**Configuration**: `weaving=vertx-{version}`
 
+| Agent Version | Supported Range |
+| --- | --- |
+| v2.2.44 | vertx 3.5.3 ~ 4.5 |
+| v2.2.42 | vertx 3.5.3 |
+| v2.2.39 | vertx 4.5 |
 
 ## Preventing Java Agent CVE False Positives
 
 Library classes included in the Java agent are loaded only when actually used by the application. Even if libraries are detected during CVE vulnerability scans, there is no actual vulnerability if they are not being used.
 
 To remove unnecessary tracking classes, run the following command:
-
 ```bash
 java -cp whatap.agent-X.Y.Z.jar whatap.agent.setup.RemoveWeaving -remove [weaving jar filename]
 ```
@@ -184,24 +226,23 @@ The removal operation must be performed again after each Java agent update.
 
 :::note
 
-The command to remove a specific library class is supported in **Java Agent 2.2.37** or later.
+The command to remove specific library classes is supported in **Java agent version 2.2.37** or later.
 
 **Usage**: `java -cp whatap.agent-X.Y.Z.jar whatap.agent.setup.RemoveWeaving [arguments] [weaving jar filename]`
-
 ```bash title="Example"
 java -cp whatap.agent-2.2.37.jar whatap.agent.setup.RemoveWeaving -remove spring-boot-2.5.jar spring-boot-2.7.jar
 ```
 
-Arguments:
+**Arguments:**
 
-- `-r` or `-remove`: It removes the weaving jar file from the Java agent and creates a new Java agent.
+* `-r` or `-remove`: Deletes weaving jar files from the Java agent and creates a new Java agent.
 
-- `-l` or `-list`: It outputs a list of weaving jar files.
+* `-l` or `-list`: Prints the list of weaving jar files.
 
-- `-d` or `-debug`: It enables the debug logging.
+* `-d` or `-debug`: Enables debug logging.
 
-- `-e` or `-error`: It displays the full stack trace information for errors.
+* `-e` or `-error`: Displays full stack trace information for errors.
 
-- `-h` or `-help`: It displays the help and exits.
+* `-h` or `-help`: Prints help and exits.
 
 :::
