@@ -33,101 +33,9 @@ import Accesskeyv2 from "../getting-started/_accesskey-v2.mdx";
 
 <Accesskeyv2 />
 
-## エージェントダウンロード
+import Godockersettinglibrary from "../common-items/_go-docker-setting-library.mdx";
 
-**アクセスキー**が発行されたら、次のコマンドを使用してエージェントをダウンロードしてください。
-
-<Tabs groupId="golang">
-<TabItem value="rc" label="Red Hat/CentOS">
-
-```bash title='SH'
-## パッケージリポジトリ登録
-$ sudo rpm -Uvh https://repo.whatap.io/centos/5/noarch/whatap-repo-1.0-1.noarch.rpm
-
-## パッケージインストール
-$ sudo yum install whatap-agent
-```
-
-</TabItem>
-<TabItem value="du" label="Debian/Ubuntu">
-
-```bash title='SH'
-## パッケージリポジトリ登録
-$ wget https://repo.whatap.io/debian/release.gpg -O -|sudo apt-key add -
-$ wget https://repo.whatap.io/debian/whatap-repo_1.0_all.deb
-$ sudo dpkg -i whatap-repo_1.0_all.deb
-$ sudo apt-get update
-
-## パッケージインストール
-$ sudo apt-get install whatap-agent
-```
-
-</TabItem>
-<TabItem value="al" label="Amazon Linux">
-
-```bash title='SH'
-## パッケージリポジトリ登録
-$ sudo rpm --import https://repo.whatap.io/centos/release.gpg
-$ echo "[whatap]" | sudo tee /etc/yum.repos.d/whatap.repo > /dev/null
-$ echo "name=whatap packages for enterprise linux" | sudo tee -a /etc/yum.repos.d/whatap.repo > /dev/null
-$ echo "baseurl=https://repo.whatap.io/centos/latest/\$basearch" | sudo tee -a /etc/yum.repos.d/whatap.repo > /dev/null
-$ echo "enabled=1" | sudo tee -a /etc/yum.repos.d/whatap.repo > /dev/null
-$ echo "gpgcheck=0" | sudo tee -a /etc/yum.repos.d/whatap.repo > /dev/null
-
-## パッケージインストール
-$ sudo yum install whatap-agent
-```
-
-</TabItem>
-<TabItem value="apl" label="Alpine Linux">
-
-[whatap-agent.tar.gz](https://s3.ap-northeast-2.amazonaws.com/repo.whatap.io/alpine/x86_64/whatap-agent.tar.gz)ファイルをダウンロードし、「/」ディレクトリを基準に圧縮して解凍します。_/usr/whatap/agent_ パスにモニタリングファイルを作成します。
-
-<Tabs>
-
-<TabItem value="x64" label="x64" default>
-
-```docker title='x64'
-wget https://s3.ap-northeast-2.amazonaws.com/repo.whatap.io/alpine/x86_64/whatap-agent.tar.gz
-tar -xvzf whatap-agent.tar.gz -C /
-```
-
-</TabItem>
-
-<TabItem value="aarch64" label="AArch64" default>
-
-```docker title='AArch64'
-wget https://s3.ap-northeast-2.amazonaws.com/repo.whatap.io/alpine/aarch64/whatap-agent.tar.gz
-tar -xvzf whatap-agent.tar.gz -C /
-```
-
-</TabItem>
-
-</Tabs>
-
-</TabItem>
-
-</Tabs>
-
-エージェントは、モニタリング情報を収集するためのトレーサー、収集した情報をサーバーに転送するためのエージェント、トレーサーとエージェントをサーバーに動的に適用するためのインストールスクリプトファイルで構成します。エージェントファイルの詳細な説明については、次を参照してください。
-
-<Filetree name="whatap">
-
-<FiletreeItem name="whatap-agent" type="file">エージェント、トレーサーからUDPで送信された情報を収集サーバーに送信するプログラムです。</FiletreeItem>
-
-<FiletreeItem name="whatap_agent" type="file">サービスの実行ファイルです。</FiletreeItem>
-  
-  <FiletreeItem name="whatap.conf" type="file">設定情報および収集サーバーのIP、アクセスキーを入力するファイルです。</FiletreeItem>
-
-<FiletreeItem name="whatap-boot-yyyymmdd.log" type="file">エージェントのログファイルです。(パス：*/usr/whata/agent/log*)</FiletreeItem>
-
-<FiletreeItem name="/etc/init.d" type="folder">
-  
-    <FiletreeItem name="whatap-agent" type="file">サービスのスクリプトファイルです。</FiletreeItem>
-  
-  </FiletreeItem>
-
-</Filetree>
+<Godockersettinglibrary />
 
 ## エージェント設定 {#set-agent}
 
@@ -211,9 +119,101 @@ WHATAP_HOME=./whatap_home1 ./app
 
 ```
 
-import Godockersettinglibrary from "../common-items/_go-docker-setting-library.mdx";
+## エージェントダウンロード
 
-<Godockersettinglibrary />
+**アクセスキー**が発行されたら、次のコマンドを使用してエージェントをダウンロードしてください。
+
+<Tabs groupId="golang">
+<TabItem value="rc" label="Red Hat/CentOS">
+
+```bash title='SH'
+## パッケージリポジトリ登録
+$ sudo rpm -Uvh https://repo.whatap.io/centos/5/noarch/whatap-repo-1.0-1.noarch.rpm
+
+## パッケージインストール
+$ sudo yum install whatap-agent
+```
+
+</TabItem>
+<TabItem value="du" label="Debian/Ubuntu">
+
+```bash title='SH'
+## パッケージリポジトリ登録
+$ wget https://repo.whatap.io/debian/release.gpg -O -|sudo apt-key add -
+$ wget https://repo.whatap.io/debian/whatap-repo_1.0_all.deb
+$ sudo dpkg -i whatap-repo_1.0_all.deb
+$ sudo apt-get update
+
+## パッケージインストール
+$ sudo apt-get install whatap-agent
+```
+
+</TabItem>
+<TabItem value="al" label="Amazon Linux">
+
+```bash title='SH'
+## パッケージリポジトリ登録
+$ sudo rpm --import https://repo.whatap.io/centos/release.gpg
+$ echo "[whatap]" | sudo tee /etc/yum.repos.d/whatap.repo > /dev/null
+$ echo "name=whatap packages for enterprise linux" | sudo tee -a /etc/yum.repos.d/whatap.repo > /dev/null
+$ echo "baseurl=https://repo.whatap.io/centos/latest/\$basearch" | sudo tee -a /etc/yum.repos.d/whatap.repo > /dev/null
+$ echo "enabled=1" | sudo tee -a /etc/yum.repos.d/whatap.repo > /dev/null
+$ echo "gpgcheck=0" | sudo tee -a /etc/yum.repos.d/whatap.repo > /dev/null
+
+## パッケージインストール
+$ sudo yum install whatap-agent
+```
+
+</TabItem>
+<TabItem value="apl" label="Alpine Linux">
+
+[whatap-agent.tar.gz](https://s3.ap-northeast-2.amazonaws.com/repo.whatap.io/alpine/x86_64/whatap-agent.tar.gz)ファイルをダウンロードし、「/」ディレクトリを基準に圧縮して解凍します。_/usr/whatap/agent_ パスにモニタリングファイルを作成します。
+
+<Tabs>
+
+<TabItem value="x64" label="x64" default>
+
+```docker title='x64'
+wget https://s3.ap-northeast-2.amazonaws.com/repo.whatap.io/alpine/x86_64/whatap-agent.tar.gz
+tar -xvzf whatap-agent.tar.gz -C /
+```
+
+</TabItem>
+
+<TabItem value="aarch64" label="AArch64" default>
+
+```docker title='AArch64'
+wget https://s3.ap-northeast-2.amazonaws.com/repo.whatap.io/alpine/aarch64/whatap-agent.tar.gz
+tar -xvzf whatap-agent.tar.gz -C /
+```
+
+</TabItem>
+
+</Tabs>
+
+</TabItem>
+
+</Tabs>
+
+エージェントは、ユーザーアプリケーションのモニタリング情報を内部 IPC（TCP）で受信し、そのデータを WhaTap 収集サーバーへ送信するデータ中継プロセスです。
+
+<Filetree name="whatap">
+
+<FiletreeItem name="whatap-agent" type="file">エージェント、トレーサーからUDPで送信された情報を収集サーバーに送信するプログラムです。</FiletreeItem>
+
+<FiletreeItem name="whatap_agent" type="file">サービスの実行ファイルです。</FiletreeItem>
+  
+  <FiletreeItem name="whatap.conf" type="file">設定情報および収集サーバーのIP、アクセスキーを入力するファイルです。</FiletreeItem>
+
+<FiletreeItem name="whatap-boot-yyyymmdd.log" type="file">エージェントのログファイルです。(パス：*/usr/whata/agent/log*)</FiletreeItem>
+
+<FiletreeItem name="/etc/init.d" type="folder">
+  
+    <FiletreeItem name="whatap-agent" type="file">サービスのスクリプトファイルです。</FiletreeItem>
+  
+  </FiletreeItem>
+
+</Filetree>
 
 ## モニタリングの開始
 
