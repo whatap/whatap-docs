@@ -1,14 +1,26 @@
-## Cannot check the PHP ini file's path that has been added
+### Unable to Detect Additional PHP ini Scan Directory
 
-This happens if the PHP compile installation option, `--with-config-file-scan-dir=PATH` has not been set.
+If PHP was compiled without the `--with-config-file-scan-dir=PATH` option, the additional ini scan directory will not be detected, resulting in missing configuration loading.
 
+#### How to Check
+
+* **Linux/FreeBSD**
 ```bash
 $ sudo php -i | grep '.ini files'
 
 Scan this dir for additional .ini files => (none)
 ```
 
-Add the content in *whatap.ini* at the end of _php.ini_.
+* **Windows**
+```cmd
+php --ini
+```
+
+#### How to Fix
+
+Append the contents of *whatap.ini* to the end of the *php.ini* file.
+
+##### Linux
 
 ```bash
 $ php -i | grep 'php.ini'
@@ -17,7 +29,7 @@ Loaded Configuration File => /etc/php.ini
 
 $ sudo vi php.ini
 
-# Add at the end of a file
+# Add at the end of the file
 [whatap]
 ;Enable whatap extension module
 extension=whatap.so
@@ -27,33 +39,67 @@ whatap.trace_user_enabled=true
 whatap.trace_user_using_ip=false
 ```
 
-For other options, use _/usr/whatap/php/whatap.ini_.
+For all other options, refer to */usr/whatap/php/whatap.ini*.
 
-### Configuring the whatap-php service's environment variables
+##### Windows
 
-In the `$WHATAP_CONFIG_HOME` environment variable, set the path for *whatap.ini*.
+```cmd
+REM Append whatap.ini content to php.ini
+type "C:\Program Files\WhaTap\PHP\template.ini" >> C:\PHP\php.ini
 
-If the added PHP's ini path cannot be checked, set the _/usr/whatap/php_ path in which *whatap.ini* has been created.
+REM Or edit manually
+notepad C:\PHP\php.ini
+```
+
+* **Content to append to php.ini (Windows example)**
+```ini
+[whatap]
+extension=php_whatap.dll
+
+# For additional whatap.ini settings, see C:\Program Files\WhaTap\PHP\whatap.ini
+```
+
+#### Setting Environment Variable for whatap-php Service
+
+Set the *whatap.ini* directory path to the `$WHATAP_CONFIG_HOME` environment variable.
+
+If PHP cannot detect the additional ini scan directory, set the path where you created *whatap.ini* (e.g., */usr/whatap/php*).
 
 ```bash
 $ sudo vi /etc/init.d/whatap-php
 
-export WHATAP_CONFIG_HOME=      # whatap.ini path (/etc/php.d)
+export WHATAP_CONFIG_HOME=      # Path to whatap.ini (/etc/php.d)
 ```
 
-### Restarting the service
+#### Restart Services
 
-- Restart Apache and PHP-FPM services. 
-- Restart the whatap-php service.
+* Restart Apache and PHP-FPM services  
+* Restart whatap-php service
 
-### Error: Not found PHP API
+#### Error: Not found PHP API
 
-This occurs if the PHP command (CLI) cannot be found. 
+This occurs when the PHP CLI command cannot be located.
 
-Check the correct [PHP command (CLI) location](#check-php-cli-path) and then proceed with [Optional installation of the PHP extension module and whatap-php service](#extension-modul-manual-setting).
+Verify the correct [location of the PHP CLI](#check-php-cli-path), then complete the steps in  
+[Manual Installation of PHP Extension Module and whatap-php Service](#extension-modul-manual-setting).
+
+##### Linux
 
 ```bash title='Check PHP API version'
 $ sudo php -i | grep 'PHP API'
 
 PHP API => 20100412
+```
+
+##### Windows
+
+```cmd
+REM Check PHP path
+where php
+
+REM Add PHP path to environment PATH
+setx PATH "%PATH%;C:\PHP"
+
+REM Or add manually via system environment variables
+sysdm.cpl → Advanced → Environment Variables → Edit PATH
 ```

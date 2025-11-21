@@ -12,11 +12,16 @@ keywords:
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-PHPモニタリングサービスを一時停止するには、PHP拡張モジュールを停止し、whatap-phpサービスを停止する必要があります。次の項目を参照してください。
+PHP モニタリングサービスを一時停止するには、PHP 拡張モジュールを無効化し、whatap-php サービスを停止します。
 
-1. PHP拡張モジュール(PHP Extension module)を停止してください。 
+## PHP 拡張モジュールの無効化
 
-   *whatap.ini*ファイルの`extension=`構文をコメント処理してください。コメントはセミコロン(_;_)で設定してください。
+### Linux/Unix
+
+1. PHP 拡張モジュールを無効化します。
+
+   *whatap.ini* ファイルの `extension=` 行をコメントアウトします。  
+   コメントアウトにはセミコロン (;) を使用します。
 
    ```bash
    $ sudo vi whatap.ini
@@ -27,42 +32,83 @@ PHPモニタリングサービスを一時停止するには、PHP拡張モジ�
    ;extension=whatap.so
    ```
 
-   手動設定で*php.in*ファイルに直接設定する場合も同様に` extension=` 構文をコメントアウトしてください。 
+2. *php.ini* に直接設定している場合も同様に `extension=` 行をコメントアウトしてください。
 
-   :::note
+:::note
+変更後、Apache または PHP-FPM サービスを再起動してください。
+:::
 
-   ApacheまたはPHP-FPMの(Service)サービスを開始します。
+---
 
-   :::
+### Windows
 
-2. whatap-phpサービス(Service)を停止してください。
+whatap.ini の extension 行をコメントアウトします。
+
+**Scan INI Directory を使用している場合**
+```cmd
+REM whatap.ini を編集
+notepad "C:\PHP\conf.d\whatap.ini"
+
+REM extension 行をコメントアウト
+;extension=php_whatap.dll
+```
+
+**php.ini に直接追加した場合**
+```cmd
+notepad "C:\PHP\php.ini"
+
+REM [whatap] セクションの extension 行をコメントアウト
+[whatap]
+;extension=php_whatap.dll
+```
+
+**Web サーバー再起動**
+```cmd
+REM Apache
+net stop Apache2.4
+net start Apache2.4
+
+REM IIS
+iisreset /restart
+```
+
+---
+
+## WhaTap PHP サービスの停止
+
+whatap-php サービスを停止します。
 
 <Tabs>
 <TabItem value="rdct" label="Red Hat/CentOS" default>
 
-````
 ```bash
 $ sudo service whatap-php stop
 ```
-````
 
 </TabItem>
 <TabItem value="dbub" label="Debian/Ubuntu">
 
-````
 ```bash
 $ sudo service whatap-php stop
 ```
-````
 
 </TabItem>
 <TabItem value="frbsd" label="FreeBSD">
 
-````
 ```bash
 $ service whatap_php stop
 ```
-````
+
+</TabItem>
+<TabItem value="windows" label="Windows">
+
+```cmd
+REM サービス停止
+net stop "WhaTap PHP"
+
+REM または
+sc stop "WhaTap PHP"
+```
 
 </TabItem>
 </Tabs>

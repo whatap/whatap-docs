@@ -9,96 +9,179 @@ keywords:
   - アプリケーション
 ---
 
-パッケージアップデートは、既存の設定を保持しながらPHPモニタリングサービスがアップデートされます。0.2.7以降のバージョンから通常のアップデートが提供されます。以前のバージョンは削除後、**再インストール**が必要です。
+パッケージアップデートは、既存の設定を維持したまま PHP モニタリングサービスを更新します。  
+正常なアップデートは **バージョン 0.2.7 以降**でサポートされています。  
+それ以前のバージョンでは、アンインストール後に **再インストール** が必要です。
 
 :::caution
-
-Apacheの実行中にphp extensionの_shared library(.so)_ファイルを変更する場合、Apache Daemonが異常終了することがあります。安全のために、Apacheサーバーを停止した状態でアップデートを進めてください。
-
+Apache 実行中に PHP Extension の *shared library (.so)* を変更すると、Apache デーモンが異常終了する恐れがあります。  
+必ず Apache サーバーを停止した状態で更新を行ってください。
 :::
 
 ## Red Hat/CentOS
 
-1. パッケージ情報の更新のためにキャッシュ情報を削除してください。
+1. パッケージ情報更新のためキャッシュを削除します。
 
-   ```bash
-   $ yum clean all
-   ```
+```bash
+$ yum clean all
+```
 
-2. ApacheまたはPHP-FPMのサービス(Service)を停止します。
+2. Apache または PHP-FPM を停止します。
 
-3. whatap-phpのパッケージをアップデートします。
+3. whatap-php パッケージを更新します。
 
-   ```bash
-   $ yum update whatap-php
-   ```
+```bash
+$ yum update whatap-php
+```
 
-   :::note
+:::note
+特定バージョンを指定して更新する場合：
 
-   特定のバージョンをダウンロードしたい場合は、次のようにバージョンを指定します。
+```bash
+$ yum update whatap-php-{version}
+```
+:::
 
-   ```bash
-   $ yum update whatap-php-{version}
-   ```
-
-   :::
+---
 
 ## Debian/Ubuntu
 
-1. パッケージ情報の更新のため、キャッシュ情報を更新してください。
+1. パッケージ情報を更新します。
 
-   ```bash
-   $ sudo apt-get update
-   ```
+```bash
+$ sudo apt-get update
+```
 
-2. ApacheまたはPHP-FPMのサービス(Service)を停止します。
+2. Apache または PHP-FPM を停止します。
 
-3. whatap-phpのパッケージをアップデートしてください。
+3. whatap-php パッケージを更新します。
 
-   ```bash
-   $ sudo apt-get install --only-upgrade whatap-php
-   ```
+```bash
+$ sudo apt-get install --only-upgrade whatap-php
+```
 
-   :::note
+:::note
+特定バージョンを指定する場合：
 
-   特定のバージョンをダウンロードしたい場合は、次のようにバージョンを指定します。
+```bash
+$ sudo apt-get install whatap-php={version}
+```
+:::
 
-   ```bash
-   $ sudo apt-get install whatap-php={version}
-   ```
-
-   :::
+---
 
 ## FreeBSD
 
-エージェントを削除して再インストールします。続行するには、次の項目を参照してください。
+エージェントを削除して再インストールしてください。
 
-1. ApacheまたはPHP-FPMのサービス(Service)を停止
+1. Apache または PHP-FPM を停止
 
-2. エージェントを削除して再インストール
+2. エージェント削除と再インストール
 
-   ```bash
-   $ /usr/whatap/php/install.sh remove
+```bash
+$ /usr/whatap/php/install.sh remove
 
-   $ wget https://s3.ap-northeast-2.amazonaws.com/repo.whatap.io/freebsd/10/whatap-php-0.4.10.txz
-   $ pkg install whatap-php-0.4.10.txz
-   ```
+$ wget https://s3.ap-northeast-2.amazonaws.com/repo.whatap.io/freebsd/10/whatap-php-0.4.10.txz
+$ pkg install whatap-php-0.4.10.txz
+```
 
-3. PHP拡張モジュールおよびwhatap-phpサービスの登録
+3. PHP Extension モジュールと whatap-php サービスを登録
 
-   ```bash
-   $ /usr/whatap/php/install.sh
-   ```
+```bash
+$ /usr/whatap/php/install.sh
+```
 
-   :::note
+:::note
+特定バージョンを指定する場合：
 
-   - 特定のバージョンをダウンロードしたい場合は、次のようにバージョンを指定します。
+```bash
+$ wget https://s3.ap-northeast-2.amazonaws.com/repo.whatap.io/freebsd/10/whatap-php-{version}.txz
+$ pkg install whatap-php-{version}.txz
+```
 
-     ```bash
-     $ wget https://s3.ap-northeast-2.amazonaws.com/repo.whatap.io/freebsd/10/whatap-php-{version}.txz
-     $ pkg install whatap-php-{version}.txz
-     ```
+その後、Apache または PHP-FPM を開始してください。
+:::
 
-   - ApacheまたはPHP-FPMの(Service)サービスを開始します。
+---
 
-   :::
+## Windows
+
+`whatap_php_setup.exe` を実行すると、既存の設定を保持したまま自動的にアップデートが行われます。
+
+:::warning
+更新時は Web サーバーを停止し、更新後に再起動することを推奨します。
+:::
+
+### GUI アップデート
+
+1. Web サーバーを停止
+
+```cmd
+net stop Apache2.4
+REM または
+iisreset /stop
+```
+
+2. インストーラーを実行して更新
+
+```cmd
+whatap_php_setup.exe
+```
+
+3. Web サーバーを再起動
+
+```cmd
+net start Apache2.4
+REM または
+iisreset /start
+```
+
+---
+
+### CLI 自動アップデート
+
+既存インストールがある場合、自動的にアップデートモードで動作します。
+
+1. Web サーバーを停止
+
+```cmd
+net stop Apache2.4
+```
+
+2. インストーラー実行
+
+```cmd
+whatap_php_setup.exe /VERYSILENT /SUPPRESSMSGBOXES /NORESTART
+```
+
+3. Web サーバー開始
+
+```cmd
+net start Apache2.4
+```
+
+---
+
+### バッチスクリプト例
+
+```batch
+@echo off
+echo Stopping web server...
+net stop Apache2.4
+
+echo Updating WhaTap PHP Agent...
+whatap_php_setup.exe /VERYSILENT /SUPPRESSMSGBOXES /NORESTART
+
+if %errorlevel% equ 0 (
+    echo Update completed successfully!
+) else (
+    echo Update failed with error code: %errorlevel%
+    exit /b %errorlevel%
+)
+
+timeout /t 3
+
+echo Starting web server...
+net start Apache2.4
+echo Update completed!
+```
