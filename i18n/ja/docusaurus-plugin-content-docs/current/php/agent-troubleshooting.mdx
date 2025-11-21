@@ -12,9 +12,157 @@ keywords:
   - 問題解決
 ---
 
+## インストールおよび設定エラーのトラブルシューティング
+
+WhaTap PHP エージェントのインストールおよび設定時に発生する可能性のある問題を診断・解決する方法を説明します。
+
+## Linux/FreeBSD
+
 import Phpextensionmoduleservice from "../common-items/_php-extension-module-service.mdx";
 
-<Phpextensionmoduleservice />
+<Phpextensionmoduleservice /> 
+
+## Windows
+
+### PHP 拡張モジュールおよび WhaTap PHP サービスの手動設定
+
+PHP 拡張モジュールや whatap-php サービスが正しくインストールされなかった場合、または選択インストール (*install.sh*) が正常に実行されなかった場合は、以下の手動設定手順を行います。
+
+#### PHP 環境情報の確認
+
+PHP の環境情報を確認します。
+
+```cmd
+REM PHP API バージョン確認
+php -i | findstr "PHP API"
+
+REM Thread Safety 確認
+php -i | findstr "Thread Safety"
+
+REM Extension ディレクトリ確認
+php -i | findstr extension_dir
+
+REM PHP 設定ファイル確認
+php --ini
+```
+
+*例*
+```
+PHP API => 20230831
+Thread Safety => disabled
+extension_dir => C:\PHP\ext
+
+Configuration File (php.ini) Path: C:\Windows
+Loaded Configuration File:         C:\PHP\php.ini
+Scan for additional .ini files in: C:\PHP\conf.d
+Additional .ini files parsed:      (none)
+```
+
+#### php_whatap.dll のコピー
+
+確認した extension_dir に DLL をコピーします。
+
+```cmd
+REM Non-ZTS バージョン
+copy "C:\Program Files\WhaTap\PHP\modules\x64\php_whatap_[API_VERSION].dll" "C:\PHP\ext\php_whatap.dll"
+
+REM ZTS バージョン
+copy "C:\Program Files\WhaTap\PHP\modules\x64\php_whatap_zts_[API_VERSION].dll" "C:\PHP\ext\php_whatap.dll"
+```
+
+*例*
+```cmd
+copy "C:\Program Files\WhaTap\PHP\modules\x64\php_whatap_20230831.dll" "C:\PHP\ext\php_whatap.dll"
+copy "C:\Program Files\WhaTap\PHP\modules\x64\php_whatap_zts_20230831.dll" "C:\Program Files\PHP\v8.3\ext\php_whatap.dll"
+```
+
+#### whatap.ini の作成または php.ini の修正
+
+##### Scan Directory がある場合
+
+`php --ini` で確認された Scan Directory に whatap.ini を作成します。
+
+```cmd
+notepad "C:\PHP\conf.d\whatap.ini"
+```
+
+*whatap.ini*
+```ini
+extension=php_whatap.dll
+```
+
+##### Scan Directory がない場合
+
+php.ini に直接追加します。
+
+```cmd
+notepad "C:\PHP\php.ini"
+```
+
+*php.ini に追加*
+```ini
+[whatap]
+extension=php_whatap.dll
+```
+
+#### whatap.ini の設定
+
+*C:\Program Files\WhaTap\PHP\whatap.ini* を編集します。
+
+```ini
+whatap.license=your_access_key
+whatap.server.host=13.124.11.223
+whatap.app_name=APHP
+whatap.app_process_name=httpd.exe
+```
+
+#### 環境変数の設定
+
+```cmd
+setx WHATAP_PHP_HOME "C:\Program Files\WhaTap\PHP"
+setx WHATAP_PHP_CONFIG "whatap.ini"
+REM setx WHATAP_LICENSE "your_access_key"
+REM setx WHATAP_SERVER_HOST "13.124.11.223"
+```
+
+*インストーラーが自動設定する環境変数*
+
+(… 동일 내용 일본어 번역 …)
+
+#### サービス登録と開始
+
+```cmd
+sc create "WhaTap PHP" binPath="C:\Program Files\WhaTap\PHP\whatap_php.exe" start=auto
+net start "WhaTap PHP"
+net stop Apache2.4 && net start Apache2.4
+iisreset
+```
+
+## 運用環境チェック
+
+```cmd
+php -v > php_version.txt
+php -i > phpinfo.txt
+php -m > modules.txt
+php --ini > ini.txt
+```
+
+```powershell
+Test-NetConnection -ComputerName 13.124.11.223 -Port 6600
+```
+
+```cmd
+telnet 13.124.11.223 6600
+tracert 13.124.11.223
+```
+
+```cmd
+tasklist | findstr whatap
+tasklist | findstr php
+netstat -ano | findstr 6600
+```
+
+## 追加トラブルシューティング
 
 import Phpinipatherror from "../common-items/_php-ini-path-error.mdx";
 

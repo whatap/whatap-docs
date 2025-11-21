@@ -1,68 +1,111 @@
-## Segmentation fault, Sig bus error
+### Segmentation fault、Sig bus エラー
 
-PHPモニタリングを適用した後、サービスにエラーが発生した場合、ApacheまたはPHP-FPMのerror logを確認してください。
+PHP モニタリングを適用した後にサービスでエラーが発生した場合、Apache または PHP-FPM のエラーログを確認してください。
 
-error log に`segmentation fault`、`sig bus`などのエラー文があるか確認してください。`kill child process`、`exit child`、`exit process`などのメッセージが発生します。 
+エラーログの中に `segmentation fault`、`sig bus` といったメッセージが含まれていないか確認します。  
+これらのエラーは `kill child process`、`exit child`、`exit process` などのメッセージと一緒に表示されることがあります。
 
-当該エラーが発生する場合は、PHP Extensionモジュールである*whatap.so*モジュールで衝突が発生すると考えられます。PHP Extensionモジュールである*whatap.so*を中止した上でApacheまたはPHP-FPMを再起動してください。
+このエラーが発生する場合、PHP 拡張モジュール *whatap.so* が衝突している可能性があります。  
+PHP 拡張モジュール *whatap.so* を無効化し、Apache または PHP-FPM を再起動してください。
 
-サービスに影響しない環境でApacheおよびPHP-FPMに`Core dump`設定を追加した後に *whatap.so*を再読み込みしてください。その後、エラーが発生すると、*dump*ファイルが作成されます。*dump*ファイルをgdbで分析して原因を解決してください。 
+サービスに影響を与えない環境で、Apache と PHP-FPM に `Core dump` の設定を追加し、再度 *whatap.so* をロードしてください。  
+その後エラーが発生すると *dump* ファイルが生成されます。  
+生成された *dump* ファイルを gdb で解析し、原因を特定してください。
 
-### Core Dump設定
+---
 
-1. *dump*ファイルを作成するディレクトリのアクセス権限を付与します。
+#### モジュール無効化およびログ確認
 
-   ```java
-   chmod 0777 /home/httpd-core
-   ```
+まずモジュールを無効化し、エラーログを確認します。
 
-2. システム設定をしてください。
+---
 
-   ```java
-   ulimit -c unlimited
-   sysctl fs.suid_dumpable=2
-   sysctl kernel.core_uses_pid=0
-   sysctl kernel.core_pattern='| /home/httpd-core/core-%e.%p'
-   ```
+##### Windows
 
-### Apache
+**無効化テスト**
+```cmd
+REM php_whatap.dll を一時的に無効化
+ren "C:\PHP\conf.d\whatap.ini" "whatap.ini.disabled"
 
-1. Apache confにCoreDumpDirectory項目を設定してください。 
+REM Web サーバー再起動
+net stop Apache2.4 && net start Apache2.4
+```
 
-   ```java
-   vi /etc/httpd/conf/httpd.conf
+**エラーログ確認**
 
-   CoreDumpDirectory /home/httpd-core
-   ```
+* **Apache**
+```cmd
+type "C:\Apache24\logs\error.log"
+```
 
-2. Apacheを再起動すると、設定は完了です。 
+* **IIS**
+```cmd
+REM イベントビューアを確認
+eventvwr.msc
+→ Windows ログ → アプリケーション
+```
 
-3. エラーが発生すると*dump*ファイルが作成されます。*dump*ファイルが生成されると、gdbを使用してエラーの原因を確認します。`bt full`コマンドを使用して、全体スタックの情報を確認してください。
+---
 
-   ```java
-   # gdb /usr/sbin/httpd /home/httpd-core/core-httpd.31832
-   ...
-   ...
+#### Core Dump 設定
 
-   > bt full
-   ```
+1. *dump* ファイルを保存するディレクトリの権限を設定：
 
-### PHP-FPM
+```bash
+chmod 0777 /home/httpd-core
+```
 
-1. FPM設定ファイルに`rlimit_core`を設定してください。 
+2. システム設定を適用：
 
-   ```java
-   rlimit_core = unlimited
-   ```
+```bash
+ulimit -c unlimited
+sysctl fs.suid_dumpable=2
+sysctl kernel.core_uses_pid=0
+sysctl kernel.core_pattern='| /home/httpd-core/core-%e.%p'
+```
 
-2. PHP-FPMを再起動すると、設定は完了です。 
+---
 
-3. エラーが発生すると*dump*ファイルが作成されます。*dump*ファイルが生成されると、gdbを通じてエラーの原因を確認します。`bt full`コマンドで全体スタックの情報を確認してください。
+#### Apache
 
-   ```java
-   # gdb /usr/sbin/php-fpm /home/httpd-core/core-php-fpm.31832
-   ...
-   ...
+1. Apache 設定ファイルに CoreDumpDirectory を追加：
 
-   > bt full
-   ```
+```bash
+vi /etc/httpd/conf/httpd.conf
+
+CoreDumpDirectory /home/httpd-core
+```
+
+2. Apache を再起動して設定を反映。
+
+3. エラーが発生すると *dump* ファイルが生成されます。  
+   gdb を使って解析し、`bt full` コマンドで完全なスタック情報を確認します：
+
+```bash
+# gdb /usr/sbin/httpd /home/httpd-core/core-httpd.31832
+...
+
+> bt full
+```
+
+---
+
+#### PHP-FPM
+
+1. FPM 設定ファイルで `rlimit_core` を設定：
+
+```bash
+rlimit_core = unlimited
+```
+
+2. PHP-FPM を再起動。
+
+3. エラー発生時、*dump* ファイルが生成されます。  
+   gdb で解析し、`bt full` でスタックトレースを確認します：
+
+```bash
+# gdb /usr/sbin/php-fpm /home/httpd-core/core-php-fpm.31832
+...
+
+> bt full
+```

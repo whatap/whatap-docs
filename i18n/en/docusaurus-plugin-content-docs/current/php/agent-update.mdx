@@ -9,96 +9,179 @@ keywords:
   - Application
 ---
 
-This updates the PHP monitoring service with the existing settings. Normal update is available in the version 0.2.7 or later. The previous version must be deleted and then **reinstallation** is required.
+Package updates allow you to update the PHP monitoring service while retaining existing settings.  
+Normal updates are supported from version 0.2.7 and later.  
+For earlier versions, you must uninstall and **reinstall** the agent.
 
 :::caution
-
-If _shared library(.so)_ among PHP extensions has been changed while Apache is running, the Apache daemon may crash abnormally. Be sure to proceed with a safe update while the Apache server is stopped.
-
+If the PHP extension *shared library (.so)* file changes while Apache is running, the Apache daemon may terminate abnormally.  
+Always stop the Apache server before performing an update.
 :::
 
 ## Red Hat/CentOS
 
-1. Delete cache data for updating package information.
+1. Clear the cache to refresh package information.
 
-   ```bash
-   $ yum clean all
-   ```
+```bash
+$ yum clean all
+```
 
-2. Stop the Apache or PHP-FPM service.
+2. Stop Apache or PHP-FPM services.
 
 3. Update the whatap-php package.
 
-   ```bash
-   $ yum update whatap-php
-   ```
+```bash
+$ yum update whatap-php
+```
 
-   :::note
+:::note
+If you want to install a specific version:
 
-   To download a specific version, specify the version as follows:
+```bash
+$ yum update whatap-php-{version}
+```
+:::
 
-   ```bash
-   $ yum update whatap-php-{version}
-   ```
-
-   :::
+---
 
 ## Debian/Ubuntu
 
-1. Update cache data for updating package information.
+1. Refresh package information.
 
-   ```bash
-   $ sudo apt-get update
-   ```
+```bash
+$ sudo apt-get update
+```
 
-2. Stop the Apache or PHP-FPM service.
+2. Stop Apache or PHP-FPM services.
 
 3. Update the whatap-php package.
 
-   ```bash
-   $ sudo apt-get install --only-upgrade whatap-php
-   ```
+```bash
+$ sudo apt-get install --only-upgrade whatap-php
+```
 
-   :::note
+:::note
+To install a specific version:
 
-   To download a specific version, specify the version as follows:
+```bash
+$ sudo apt-get install whatap-php={version}
+```
+:::
 
-   ```bash
-   $ sudo apt-get install whatap-php={version}
-   ```
-
-   :::
+---
 
 ## FreeBSD
 
-After uninstalling the agent, install it again. Proceed by referring to the following items.
+Uninstall and reinstall the agent. Follow the steps below:
 
-1. Stop the Apache or PHP-FPM service.
+1. Stop Apache or PHP-FPM services.
 
-2. Install the agent again after uninstalling it.
+2. Uninstall and reinstall.
 
-   ```bash
-   $ /usr/whatap/php/install.sh remove
+```bash
+$ /usr/whatap/php/install.sh remove
 
-   $ wget https://s3.ap-northeast-2.amazonaws.com/repo.whatap.io/freebsd/10/whatap-php-0.4.10.txz
-   $ pkg install whatap-php-0.4.10.txz
-   ```
+$ wget https://s3.ap-northeast-2.amazonaws.com/repo.whatap.io/freebsd/10/whatap-php-0.4.10.txz
+$ pkg install whatap-php-0.4.10.txz
+```
 
-3. Registering the PHP extension module and whatap-php service
+3. Register PHP extension module and whatap-php service.
 
-   ```bash
-   $ /usr/whatap/php/install.sh
-   ```
+```bash
+$ /usr/whatap/php/install.sh
+```
 
-   :::note
+:::note
+To install a specific version:
 
-   - To download a specific version, specify the version as follows:
+```bash
+$ wget https://s3.ap-northeast-2.amazonaws.com/repo.whatap.io/freebsd/10/whatap-php-{version}.txz
+$ pkg install whatap-php-{version}.txz
+```
 
-     ```bash
-     $ wget https://s3.ap-northeast-2.amazonaws.com/repo.whatap.io/freebsd/10/whatap-php-{version}.txz
-     $ pkg install whatap-php-{version}.txz
-     ```
+After installation, start Apache or PHP-FPM services.
+:::
 
-   - Apache or PHP-FPM service is started.
+---
 
-   :::
+## Windows
+
+Running the installer (`whatap_php_setup.exe`) updates the agent while keeping existing settings.
+
+:::warning
+We recommend stopping the web server before updating and starting it again afterward.
+:::
+
+### GUI Update
+
+1. Stop the web server (Apache or IIS):
+
+```cmd
+net stop Apache2.4
+REM or
+iisreset /stop
+```
+
+2. Run the installer to update the agent.
+
+```cmd
+whatap_php_setup.exe
+```
+
+3. Start the web server.
+
+```cmd
+net start Apache2.4
+REM or
+iisreset /start
+```
+
+---
+
+### CLI Automatic Update
+
+If an existing installation is found, the installer automatically enters update mode.
+
+1. Stop the web server.
+
+```cmd
+net stop Apache2.4
+```
+
+2. Run the installer.
+
+```cmd
+whatap_php_setup.exe /VERYSILENT /SUPPRESSMSGBOXES /NORESTART
+```
+
+3. Start the web server.
+
+```cmd
+net start Apache2.4
+```
+
+---
+
+### Example Batch Script
+
+```batch
+@echo off
+echo Stopping web server...
+net stop Apache2.4
+
+echo Updating WhaTap PHP Agent...
+whatap_php_setup.exe /VERYSILENT /SUPPRESSMSGBOXES /NORESTART
+
+if %errorlevel% equ 0 (
+    echo Update completed successfully!
+) else (
+    echo Update failed with error code: %errorlevel%
+    exit /b %errorlevel%
+)
+
+timeout /t 3
+
+echo Starting web server...
+net start Apache2.4
+echo Update completed!
+```

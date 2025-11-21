@@ -10,13 +10,10 @@ keywords:
   - インストールチェックリスト
 ---
 
-{/* 구성 수정 */}
+## サービスの再起動
 
-## 再起動
-
-インストールが完了した後、ApacheまたはPHP-FPMサービス(Service)を再起動すると、設定されたPHP拡張モジュール(PHP Extension module) _whatap.so _ファイルがロードされます。
-
-whatap-phpサービス(Service)が実行されていない場合やエラーが発生した場合は、再起動を行ってください。
+インストール後、Apache または PHP-FPM サービスを再起動すると、設定された PHP 拡張モジュール *whatap.so* が読み込まれます。  
+whatap-php サービスが実行されていない場合やエラーが発生した場合は、サービスを再起動してください。
 
 ### Red Hat/CentOS
 
@@ -36,50 +33,116 @@ $ sudo service whatap-php restart
 $ service whatap_php restart
 ```
 
-## PHP拡張モジュールのインストール確認
+### Windows
 
-インストールが完了した後、ApacheまたはPHP-FPMサービスを再起動すると、設定されたPHP拡張モジュール*whatap.so*ファイルがロードされます。PHP拡張モジュールが正しくインストールされているかは、次の方法で確認できます。
+```bash title=SH
+net restart "WhaTap PHP"
+```
 
-{/* 설치가 완료된 후 Apache 또는 PHP-FPM 서비스(Service)를 다시 시작하면 설정된 PHP 확장 모듈(PHP Extension module) _whatap.so\* 파일이 로딩됩니다.
+## PHP 拡張モジュールのインストール確認
 
-PHP 확장 모듈이 잘 설치됐는지 다음의 방법으로 확인할 수 있습니다. */}
+インストール完了後、Apache または PHP-FPM を再起動すると *whatap.so* 拡張モジュールが読み込まれます。  
+PHP モジュールが正常にインストールされているか、次の方法で確認できます。
 
-1. PHPの追加INIパスに*whatap.ini*ファイルが作成されていることを確認します。
+1. PHP の追加 INI ディレクトリに *whatap.ini* が作成されているか確認します。
 
-   ```bash title=SH
-   $ find / | grep whatap.ini
-   ```
+    * **Linux/FreeBSD**
+    ```bash title=SH
+    $ find / | grep whatap.ini
+    ```
 
-2. PHPの拡張モジュールパスに*whatap.so*ファイルが作成されていることを確認してください。
+    * **Windows**
+    ```cmd
+    dir /s C:\ | findstr whatap.ini
+    ```
 
-   ```bash title=SH
-   $ find / | grep whatap.so
-   ```
+2. PHP の拡張モジュールディレクトリに *whatap.so* が作成されているか確認します。
 
-3. PHP拡張モジュールが実行されていることを確認してください。
+    * **Linux/FreeBSD**
+    ```bash title=SH
+    $ find / | grep whatap.so
+    ```
 
-   ```bash title=SH
-   $ sudo php -m
+    * **Windows**
+    ```cmd
+    dir /s C:\ | findstr php_whatap.dll
+    ```
 
-   [PHP Modules]
-   bz2
-   calendar
-   Core
-   ctype
-   curl
-   date
-   …
-   whatap   # whatap モジュール実行確認
-   …
-   [Zend Modules]
-   ```
+3. PHP 拡張モジュールが有効になっているか確認します。
 
-4. whatap-phpサービスの状況を確認してください。
+    * **Linux/FreeBSD**
+    ```bash title=SH
+    $ sudo php -m
 
-   ```bash title=SH
-   $ service whatap-php status
-   ```
+    [PHP Modules]
+    bz2
+    calendar
+    Core
+    ctype
+    curl
+    date
+    …
+    whatap   # whatap モジュール読み込み確認
+    …
+    [Zend Modules]
+    ```
 
-5. **_管理_**>**_エージェント設定_**メニューから設定されたサーバーが追加されていることを確認してください。 
+    * **Windows**
+    ```cmd
+    php -m | findstr whatap
+    ```
 
-   <ImgLang img='php-agent-list.png' />
+    **正常出力**
+    ```
+    whatap
+    ```
+
+4. whatap-php サービスの状態を確認します。
+
+    * **Linux/FreeBSD**
+    ```bash title=SH
+    $ service whatap-php status
+    ```
+
+    * **Windows**
+    ```cmd
+    sc query "WhaTap PHP"
+    ```
+
+    または `services.msc` を開き、WhaTap PHP サービス状態を確認できます。
+
+    **正常出力**
+    ```
+    SERVICE_NAME: WhaTap PHP
+    STATE : 4 RUNNING
+    ```
+
+5. ログを確認します。
+
+    **ログファイルの場所**
+    ```
+    C:\Program Files\WhaTap\PHP\logs\
+    ├── whatap-boot-YYYYMMDD.log    # 起動ログ（日付別）
+    └── whatap-install.log          # インストールログ
+    ```
+
+    **ログ確認**
+    ```cmd
+    REM インストールログ確認
+    type "C:\Program Files\WhaTap\PHP\logs\whatap-install.log"
+
+    REM 最新ブートログ確認
+    dir "C:\Program Files\WhaTap\PHP\logs\whatap-boot-*.log" /O-D
+    type "C:\Program Files\WhaTap\PHP\logs\whatap-boot-20251117.log"
+    ```
+
+    **PowerShell リアルタイムログ**
+    ```powershell
+    # 最新ブートログのリアルタイム監視
+    $latestLog = Get-ChildItem "C:\Program Files\WhaTap\PHP\logs\whatap-boot-*.log" | Sort-Object LastWriteTime -Descending | Select-Object -First 1
+    Get-Content $latestLog.FullName -Wait
+    ```
+
+6. **管理 > エージェント設定** で設定されたサーバーが追加されているか確認します。
+
+    <ImgLang img='php-agent-list.png' />

@@ -4234,7 +4234,8 @@ const sidebars = {
           type: 'category',
           label: '에이전트',
           collapsible: true,
-          collapsed: true,
+          collapsed: false,
+          // className: 'new',
           items: [
             {
               type: 'category',

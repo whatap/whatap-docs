@@ -12,50 +12,105 @@ keywords:
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-Delete the tracers that are the PHP extension module and whatap-php service daemon by using the installation script. Afterward, delete the package (yum, apt-get) and then if necessary, delete the log file and other files under _/usr/whatap/php_.
+Delete the tracer, that is, the PHP extension module and the whatap-php service daemon using the installation script. After that, remove the package (yum, apt-get), and if necessary, delete log files and other files under */usr/whatap/php*.
 
-1. Delete the PHP extension module and whatap-php service.
+## Linux / Unix
 
-   ```bash
-   $ /usr/whatap/php/install.sh remove
-   ```
+1. Delete the PHP extension module and the whatap-php service.
 
-2. Delete the package.
+    ```bash
+    $ /usr/whatap/php/install.sh remove
+    ```
 
-<Tabs>
-<TabItem value="rdct" label="Red Hat/CentOS" default>
+1. Delete the package.
 
-````
-```bash
-$ sudo yum remove whatap-php
-```
-````
+    <Tabs>
+    <TabItem value="rdct" label="Red Hat/CentOS" default>
 
-</TabItem>
-<TabItem value="dbub" label="Debian/Ubuntu">
+        ```bash
+        $ sudo yum remove whatap-php
+        ```
+    
+    </TabItem>
+    <TabItem value="dbub" label="Debian/Ubuntu">
 
-````
-```bash
-$ sudo apt-get purge whatap-php
-```
-````
+        ```bash
+        $ sudo apt-get purge whatap-php
+        ```
 
-</TabItem>
-<TabItem value="frbsd" label="FreeBSD">
+    </TabItem>
+    <TabItem value="frbsd" label="FreeBSD">
 
-````
-```bash
-$ pkg delete whatap-php
-```
-````
+        ```bash
+        $ pkg delete whatap-php
+        ```
 
-</TabItem>
-</Tabs>
+    </TabItem>
+    </Tabs>  
 
 :::note
 
 import Phprestartapache from "../common-items/_php-restart-apache.mdx";
 
-<Phprestartapache />
+<Phprestartapache /> 
 
 :::
+
+## Windows
+
+:::caution
+
+When uninstalling on Windows, it is recommended to stop the web server first and restart it after the removal.
+
+:::
+
+**GUI Uninstallation**
+
+```cmd
+# 1. Stop the web server (recommended)
+net stop Apache2.4
+REM or
+iisreset /stop
+
+# 2. Run the uninstaller
+"C:\Program Files\WhaTap\PHP\unins000.exe"
+
+# 3. Start the web server
+net start Apache2.4
+REM or
+iisreset /start
+```
+
+**CLI Silent Uninstallation**
+
+```cmd
+# 1. Stop the web server (recommended)
+net stop Apache2.4
+REM or
+iisreset /stop
+
+# 2. Silent removal
+"C:\Program Files\WhaTap\PHP\unins000.exe" /VERYSILENT
+
+# 3. Start the web server
+net start Apache2.4
+REM or
+iisreset /start
+```
+
+**Example Batch Script**
+
+```batch
+@echo off
+echo Stopping web server...
+net stop Apache2.4
+
+echo Uninstalling WhaTap PHP Agent...
+"C:\Program Files\WhaTap\PHP\unins000.exe" /VERYSILENT
+
+timeout /t 3
+
+echo Starting web server...
+net start Apache2.4
+echo Uninstallation completed!
+```
