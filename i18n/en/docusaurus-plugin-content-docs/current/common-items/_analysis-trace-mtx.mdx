@@ -44,33 +44,31 @@ To use the <Cmdname sid="multi_server_transaction_trace" className="uitext" /> m
 
 ## Using the multi-transaction tracing feature
 
-1. Go to <Cmdname sid="analysis" className="uitext" /> &gt; <Cmdname sid="multi_server_transaction_trace" className="uitext" />.
+1. Go to <Cmdname sid="analysis" className="uitext" /> > <Cmdname sid="multi_server_transaction_trace" className="uitext" />.
 
-2. Enter the <b>MTID</b> value seen in <Cmdname sid="TTL06527" className="uitext" /> window in <Cmdname sid="search_mtid_or_custid" className="uitext" />.
+2. Enter the <b>MTID</b> value found in the <Cmdname sid="TTL06527" className="uitext" /> window into the <Cmdname sid="search_mtid_or_custid" className="uitext" /> field.
 
-   <ImgLang img='trace-mtx-mtid.png' desc='MTID' />
+3. Select the date and project you want to query.
 
-3. Select the date and project to view.
+4. Click the <Cmdname sid="apply" className="uitext" /> button at the bottom of the screen.
 
-4. At the bottom of the screen, select <Cmdname sid="apply" className="uitext" />.
+    * The <Cmdname sid="apply" className="uitext" /> button becomes disabled in the following cases:
+        * When the same filter values (MTID/CUSTID, date, selected project) as the previous search are set.
+        * When none of the filter values (MTID/CUSTID, date, selected project) are entered.
 
-The <Cmdname sid="BTN07120" className="uitext" /> tab on the right displays a diagram that helps you find the call relationships for each transaction.
+5. The right <Cmdname sid="BTN07120" className="uitext" /> tab displays a diagram and a table that allow you to understand the call relationships of each transaction.
 
-<ImgLang img='trace-mtx-mtid-chart.png' desc='Multiple Transaction Trace' />
+    :::tip
+    The diagram and table areas are divided vertically, and you can adjust their ratio manually.
 
-:::note
-
-The <Cmdname sid="apply" className="uitext" /> button at the bottom of the screen is disabled in the following situations:
-
-- In case you set the same filter values ​​(MTID/CUSTID, date, selected project) as in the previous search
-
-- In case any of the filter values ​​(MTID/CUSTID, date, selected project) is not entered
-
-:::
+    - Clicking the upward arrow makes the table occupy the entire area. However, if the diagram area was occupying the entire area, the diagram and table will split into equal halves.
+    - Clicking the downward arrow makes the chart (diagram) area occupy the entire area. However, if the table area was occupying the entire area, the diagram and table will split into equal halves.
+    
+    :::
 
 ### <Cmdname sid="BTN07120" />
 
-The <Cmdname sid="BTN07120" className="uitext" /> quickly and clearly provides users with the call relationship between transactions. The execution times for each individual transaction service with the same <Cmdname sid="TTL06107" className="uitext" /> can be viewed. You can see the call relationship between transactions through the elapsed time (<LinkImage img="number-01.png" desc="number 1"/> <Cmdname sid="time_bar" className="uitext" />) represented with the background color of the transaction node. In <Cmdname sid="BTN07120" className="uitext" />, you can use the mouse to go to a desired position or zoom in or out by scrolling.
+The <Cmdname sid="BTN07120" className="uitext" /> quickly and clearly provides users with the call relationship between transactions. The execution times for each individual transaction service with the same <Cmdname sid="TTL06107" className="uitext" /> can be viewed. You can check the call relationship between transactions by using the execution time displayed at the top of the transaction node (<LinkImage img="number-01.png" desc="number 1"/> <Cmdname sid="time_bar" className="uitext" />). In <Cmdname sid="BTN07120" className="uitext" />, you can use the mouse to go to a desired position or zoom in or out by scrolling.
 
 ![Chart](/img/trace-mtx-chart-timebar.png)
 
