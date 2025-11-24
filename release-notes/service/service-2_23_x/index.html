@@ -16,8 +16,8 @@
 <meta name="keywords" content="WhaTap, 와탭, 매뉴얼, 사용법, WhaTap 사용법, WhaTap 매뉴얼, 기술 문서, APM, 애플리케이션 모니터링, 로그 모니터링, 쿠버네티스 모니터링, 서버 모니터링, 데이터베이스 모니터링, URL 모니터링, 클라우드 모니터링, 브라우저 모니터링, Browser monitoring, Application Monitoring, Log Monitoring, Kubernetes Monitoring, Server Monitoring, Database Monitoring, URL Monitoring, Cloud Monitoring, Manual, User Guide, Docs, WhaTap Manual, WhaTap Docs, WhaTap Documents, 트랜잭션, Transaction, 트레이싱, Tracing, 마스터, Master, 노드, Node, 데드락, Deadlock, 락 트리, Lock tree, 멀티 트랜잭션, Multi Trancsaction, 메트릭스, Metrics, 소프트웨어 프록시, Software proxy, 스택, Stack, 슬로우 쿼리, Slow query, 액티브 트랜잭션, Active transaction, 컨테이너, Container, 히트맵, Hitmap, Garbage Collection, GC, MXQL, Method 추적, Trace method, OOM Killed 컨테이너, OOM Killed Container, Oracle, Tibero, PostgreSQL, MySQL, MongoDB, SQL Server, CUBRID, Altibase, Redis, WebLogic, WebSphere">
 <meta name="description" content="WhaTap Docs 페이지입니다. 애플리케이션, 서버, 쿠버네티스, 데이터베이스, 브라우저 등 다양한 모니터링 솔루션의 사용법을 제공합니다.">
 <meta name="naver-site-verification" content="0c21fc5664a467108fb762ade47a3f81ee9b88ed">
-<meta name="google-site-verification" content="rIlfJkbbogFOIDc3DgJZmOGbUMJWytyvZSKEgV7EMsE"><link rel="stylesheet" href="/whatap-docs/assets/css/styles.5d00e1ed.css">
-<script src="/whatap-docs/assets/js/runtime~main.381b008e.js" defer="defer"></script>
+<meta name="google-site-verification" content="rIlfJkbbogFOIDc3DgJZmOGbUMJWytyvZSKEgV7EMsE"><link rel="stylesheet" href="/whatap-docs/assets/css/styles.48e75fa9.css">
+<script src="/whatap-docs/assets/js/runtime~main.2f8108d5.js" defer="defer"></script>
 <script src="/whatap-docs/assets/js/main.3396553f.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -47,6 +47,12 @@
 <p><code class="Changed" type="1">Changed</code> <span class="uitext">경고 알림</span> &gt; <span class="uitext">메트릭스 기반 이벤트</span> 기본과 메트릭스 탭 통합</p>
 </li>
 <li>
+<p><code class="Changed" type="1">Changed</code> 사용자 표시 그룹 설정 권한이 없는 경우, ‘권한 없음’ 안내 페이지를 거쳐 접근 가능한 페이지로 이동할 수 있도록 개선</p>
+</li>
+<li>
+<p><code class="Changed" type="1">Changed</code> <span class="uitext">정비 계획</span> ICMP Feature 제품도 표시</p>
+</li>
+<li>
 <p><code class="Fixed" type="0">Fixed</code> Agent 목록 정렬 순서 통일화(alias &gt; oname &gt; oid 순으로 정렬)</p>
 </li>
 <li>
@@ -58,6 +64,9 @@
 </li>
 <li>
 <p><code class="Feature" type="1">Feature</code> <span class="uitext">Flex 보드</span> 테이블 위젯에 CSV 다운로드 버튼 추가</p>
+</li>
+<li>
+<p><code class="Fixed" type="0">Fixed</code> <span class="uitext">관리</span> &gt; <span class="uitext">에이전트 목록</span> 스크롤 나타나지 않는 현상 수정</p>
 </li>
 <li>
 <p><code class="Fixed" type="0">Fixed</code> <span class="uitext">트레이스</span> &gt; <strong>HTTPC 스텝 상세</strong> HTTPC URL 추가</p>
@@ -78,11 +87,16 @@
 </ul>
 </li>
 <li>
+<p><code class="Feature" type="1">Feature</code>  <span class="uitext">서버 모니터링</span> &gt; <span class="uitext">클라우드 모니터링</span> Azure 에이전트 설정 시 디멘전 선택할 수 있는 기능 추가</p>
+</li>
+<li>
 <p><code class="Fixed" type="0">Fixed</code> <span class="uitext">서버 상세</span> 프로세스 테이블 CPU 차트 툴팁에 소수점 값이 표시되도록 수정, 프로세스 I/O 차트 툴팁에 단위변환 및 단위가 표시되도록 수정</p>
 </li>
 <li>
 <p><code class="Fixed" type="0">Fixed</code> <span class="uitext">메트릭스 기반 이벤트</span> 복합 메트릭스 “CPU User % is too high” 템플릿으로 이벤트를 추가할 때 이벤트가 발생하지 않는 현상</p>
 </li>
+</ul><hr><h3 class="anchor anchorWithStickyNavbar_LWe7" id="cloud"><code>Cloud</code><a href="#cloud" class="hash-link" aria-label="cloud에 대한 직접 링크" title="cloud에 대한 직접 링크">​</a></h3><ul>
+<li><code class="Feature" type="1">Feature</code> <span class="uitext">클라우드 모니터링</span>  &gt; <span class="uitext">에이전트 설치</span>  Azure 에이전트 설정 시 디멘전 선택할 수 있는 기능 추가</li>
 </ul><hr><h3 class="anchor anchorWithStickyNavbar_LWe7" id="database"><code>Database</code><a href="#database" class="hash-link" aria-label="database에 대한 직접 링크" title="database에 대한 직접 링크">​</a></h3><ul>
 <li>
 <p><code class="Changed" type="1">Changed</code> <span class="uitext">대시보드</span> &gt; <span class="uitext">인스턴스 맵</span> 임계치 설정 모드 UI 개선</p>
