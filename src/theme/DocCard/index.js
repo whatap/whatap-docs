@@ -42,6 +42,7 @@ function CardLayout({href, icon, title, description}) {
         as="h2"
         className={clsx('text--truncate', styles.cardTitle)}
         title={title}>
+        {/* {icon}  */}
         {title}
       </Heading>
       {description && (
@@ -82,7 +83,7 @@ function CardLink({item}) {
     />
   );
 }
-function DocCard({item}) {
+export default function DocCard({item}) {
   switch (item.type) {
     case 'link':
       return <CardLink item={item} />;
@@ -91,11 +92,4 @@ function DocCard({item}) {
     default:
       throw new Error(`unknown item type ${JSON.stringify(item)}`);
   }
-}
-export default function DocCardWrapper(props) {
-  return (
-    <div className="docCard-wrapper">
-      <DocCard {...props} />
-    </div>
-  );
 }
