@@ -874,7 +874,7 @@ article ol,
 .theme-doc-markdown ol {
   margin-left: 1.5rem !important;
   padding-left: 0 !important;
-  margin-bottom: 1rem;
+  margin-bottom: 0rem; //마지막 불릿 여백으로 1-> 0 으로 수정 25.11.25
 }
 
 /* TOC */
