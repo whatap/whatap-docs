@@ -122,6 +122,10 @@ env:
   valueFrom: {fieldRef: {fieldPath: spec.nodeName}}
 - name: POD_NAME
   valueFrom: {fieldRef: {fieldPath: metadata.name}}
+- name: WHATAP_GO_AGENT_PATH
+  value: /usr/whatap/agent/whatap_agent_static
+- name: WHATAP_CONTAINER_CONF_PATH
+  value: /usr/whatap/agent
 ```
 
 次の例を参照にしてください。 
@@ -141,6 +145,10 @@ spec:
       valueFrom: {fieldRef: {fieldPath: spec.nodeName}}
     - name: POD_NAME
       valueFrom: {fieldRef: {fieldPath: metadata.name}}
+    - name: WHATAP_GO_AGENT_PATH
+      value: /usr/whatap/agent/whatap_agent_static
+    - name: WHATAP_CONTAINER_CONF_PATH
+      value: /usr/whatap/agent
 ```
 
 :::note 
@@ -152,6 +160,10 @@ spec:
 - `NODE_NAME`: ポッドが実行中のノードの名前を収集します。
 
 - `POD_NAME`: ポッドの名前を収集します。
+
+- `WHATAP_GO_AGENT_PATH`: Goエージェントの実行ファイルパスを指定します。
+
+- `WHATAP_CONTAINER_CONF_PATH`: コンテナIDが保存されるパスを指定します。
 
 :::
 
