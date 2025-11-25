@@ -44,53 +44,71 @@ Javaエージェントは、3つのHTTPヘッダーキー値(`x-wtap-po`、`x-wt
 
 ## マルチトランザクション追跡機能を利用する
 
-1. <Cmdname sid="analysis" className="uitext" /> &gt; <Cmdname sid="multi_server_transaction_trace" className="uitext" />メニューに移動します。
+1. <Cmdname sid="analysis" className="uitext" /> > <Cmdname sid="multi_server_transaction_trace" className="uitext" /> メニューに移動します。
 
-2. <Cmdname sid="TTL06527" className="uitext" />画面で確認した<b>MTID</b>値を<Cmdname sid="search_mtid_or_custid" className="uitext" />項目に入力します。
-
-   <ImgLang img='trace-mtx-mtid.png' desc='MTID' />
+2. <Cmdname sid="TTL06527" className="uitext" /> ウィンドウで確認した <b>MTID</b> の値を、<Cmdname sid="search_mtid_or_custid" className="uitext" /> 項目に入力します。
 
 3. 照会する日付とプロジェクトを選択します。
 
-4. 画面の下の<Cmdname sid="apply" className="uitext" />ボタンを選択します。
+4. 画面下部の <Cmdname sid="apply" className="uitext" /> ボタンをクリックします。
 
-右の<Cmdname sid="BTN07120" className="uitext" />タブに、各トランザクションの呼び出し関係を把握できるダイアグラムが表示されます。
+    * 次の場合、<Cmdname sid="apply" className="uitext" /> ボタンは非活性化されます:
+        * 前回の検索と同じフィルタ値（MTID/CUSTID、日付、選択プロジェクト）が設定されている場合
+        * フィルタ値（MTID/CUSTID、日付、選択プロジェクト）が一つも入力されていない場合
 
-<ImgLang img='trace-mtx-mtid-chart.png' desc='マルチTX追跡' />
+5. 右側の <Cmdname sid="BTN07120" className="uitext" /> タブに、各トランザクションの呼び出し関係を把握できるダイアグラムとテーブルが表示されます。
 
-:::note
+    :::tip
 
-画面下段の<Cmdname sid="apply" className="uitext" />ボタンは、次の状況で無効になります。
+    ダイアグラムとテーブル領域は上下に分割されており、その比率を自由に調整できます。
 
-- 以前の検索と同じフィルター値(MTID/CUSTID、日付、選択プロジェクト)を設定した場合
+    - 上矢印をクリックすると、テーブルが全領域を占有します。ただし、ダイアグラム領域が全領域を占有していた場合は、ダイアグラムとテーブルが半分ずつの領域に分割されます。
+    - 下矢印をクリックすると、チャート（ダイアグラム）領域が全領域を占有します。ただし、テーブル領
 
-- フィルター値(MTID/CUSTID、日付、選択プロジェクト)を入力しなかった場合
-
-:::
+   :::
 
 ### <Cmdname sid="BTN07120" />
 
-<Cmdname sid="BTN07120" className="uitext" />は、各トランザクションの呼び出し関係を迅速かつ明確にユーザーに提供します。 同じ<Cmdname sid="TTL06107" className="uitext" />を持つトランザクションサービスの個別実行時間が確認できます。 トランザクションノードの背景色で表示される所要時間(<LinkImage img="number-01.png" desc="number 1"/> <Cmdname sid="time_bar" className="uitext" />)からトランザクション間の呼び出し関係を確認できます。 <Cmdname sid="BTN07120" className="uitext" />ではマウスを利用して希望する位置に移動したり、スクロールして拡大または縮小できます。
+<Cmdname sid="BTN07120" className="uitext" /> は、各トランザクション間の呼び出し関係を素早く、かつ明確に把握できるビューを提供します。  
+同じ <Cmdname sid="TTL06107" className="uitext" /> を持つトランザクションサービスの個別実行時間を確認できます。  
+トランザクションノード上部に表示される所要時間  
+(<LinkImage img="number-01.png" desc="number 1"/> <Cmdname sid="time_bar" className="uitext" />) を通じて、トランザクション間の呼び出し関係を把握できます。
 
 ![Chart](/img/trace-mtx-chart-timebar.png)
 
-トランザクションノードを選択すると<Cmdname sid="TTL06527" className="uitext" />画面が追加で表示されます。 トランザクショントレースを使用して、トランザクションの詳細を確認できます。 <Cmdname sid="TTL06527" className="uitext" />画面でトランザクショントレースを詳細に分析する方法は、[次の文書](trs-profile#transaction-info)を参照にしてください。
+:::tip
+チャートはマウスで自由に移動・拡大・縮小できます。
 
-- **_A_**<Cmdname sid="small" className="uitext" /> / **_A_**<Cmdname sid="big" className="uitext" />：ノードに表示されているフォントサイズを調整できます。
+- チャート領域をドラッグ → 好きな位置に移動  
+- チャート領域でスクロール  
+  - 上下スクロール：上下移動  
+  - 左右スクロール：左右移動  
+- `Ctrl` + 上下スクロール：拡大・縮小  
+  - タッチパッドのピンチイン/ピンチアウトにも対応
+:::
 
-- <Cmdname sid="time_bar" className="uitext" />：各ノードに所要時間(<Cmdname sid="time_bar" className="uitext" />)を表示または非表示します。
+トランザクションを選択すると、接続されているノードだけが強調表示され、関連のないノードは薄く表示されます。  
+選択したトランザクションの下にある **詳細を見る** ボタン  
+(<LinkImage img="number-02.png" desc="number 2"/>) が有効化され、クリックすると  
+<Cmdname sid="TTL06527" className="uitext" /> ウィンドウが開き、詳細情報を確認できます。  
+<Cmdname sid="TTL06527" className="uitext" /> を利用した詳細なトランザクショントレース分析方法は  
+[こちらのドキュメント](trs-profile#transaction-info) を参照してください。
 
-- <Cmdname sid="application_name" className="uitext" />：各ノードにエージェント名(oname)を表示または非表示します。
+* ![확대 아이콘](/img/ic-button-zoom-in.svg) **拡大**
+* ![축소 아이콘](/img/ic-button-zoom-out.svg) **縮小**
 
-- <Cmdname sid="project" className="uitext" />：各ノードにプロジェクト名を表示または非表示します。
+* ![画面フィットアイコン](/img/ic-button-fit-to-screen.svg) **画面に合わせる**：すべてのノードを画面に収まるように表示
 
-- <Cmdname sid="database" className="uitext" />／<Cmdname sid="apply_external_remote" className="uitext" />／<Cmdname sid="apply_internal_remote" className="uitext" />：トランザクションで発生した他のデータベースコネクションの要求やHTTP Callの情報もチャートのノードで確認できます。
+* ![リセットアイコン](/img/ic-button-reset-zooming.svg) **拡大/縮小をリセット**：初期状態の表示位置とズームに戻す
+
+* ![設定アイコン](/img/ic-button-setting.svg) **チャートビュー設定**：表示する要素を切り替え
+
+    * <Cmdname sid="TTL06344" className="uitext" />：アプリ名、プロジェクト情報、IP、ステータスコードの表示/非表示
+    * <Cmdname sid="database" className="uitext" /> / <Cmdname sid="apply_external_remote" className="uitext" />：当該トランザクションで発生した DB 接続や外部 HTTP 呼び出しをノードとして表示可能
 
 ### <Cmdname sid="BTN07121" />
 
 <Cmdname sid="BTN07121" className="uitext" />タブでは、マルチトランザクションに含まれている各トランザクションごとの情報をテーブル形式で確認できます。
-
-<ImgLang img='trace-mtx-table.png' desc='表' />
 
 各トランザクション項目を選択すると<Cmdname sid="BTN07120" className="uitext" />タブのノード選択と同様に、選択したトランザクションに対する<Cmdname sid="TTL06527" className="uitext" />画面が表示されます。 トランザクショントレースを使用して、トランザクションの詳細を確認できます。 <Cmdname sid="TTL06527" className="uitext" />画面でトランザクショントレースを詳細に分析する方法は、[次の文書](trs-profile#transaction-info)を参照にしてください。
 
@@ -99,8 +117,6 @@ Javaエージェントは、3つのHTTPヘッダーキー値(`x-wtap-po`、`x-wt
 ### <Cmdname sid="BTN06296" />
 
 <Cmdname sid="BTN06296" className="uitext" />タブでは、各トランザクションとそれに属しているトレースの詳細を確認できます。 全体のトランザクション所要時間内での各下位トランザクションやトレースの開始および所要時間を可視化し、トランザクションの呼び出し関係をツリー形式で提供します。
-
-<ImgLang img='trace-mtx-tree.png' desc='Tree' />
 
 - ![一行表示アイコン](/img/ic-single-line.svg) <Cmdname sid="BTN06368" className="uitext" />：各区間ごとの実行情報に表示されたテキストを一行で表示し、ツリー形式を簡潔にまとめられます。
 

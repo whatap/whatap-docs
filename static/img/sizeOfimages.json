@@ -15687,18 +15687,6 @@
     "width": 1616,
     "height": 1265
   },
-  "multi-tx-tree-mode-en.png": {
-    "width": 1200,
-    "height": 835
-  },
-  "multi-tx-tree-mode-ja.png": {
-    "width": 1200,
-    "height": 826
-  },
-  "multi-tx-tree-mode.png": {
-    "width": 1200,
-    "height": 772
-  },
   "multiple-apply-agent-en.png": {
     "width": 600,
     "height": 421
@@ -18914,42 +18902,6 @@
   "trace-mtx-mtid-chart.png": {
     "width": 1200,
     "height": 1055
-  },
-  "trace-mtx-mtid-en.png": {
-    "width": 600,
-    "height": 159
-  },
-  "trace-mtx-mtid-ja.png": {
-    "width": 600,
-    "height": 159
-  },
-  "trace-mtx-mtid.png": {
-    "width": 600,
-    "height": 162
-  },
-  "trace-mtx-table-en.png": {
-    "width": 800,
-    "height": 224
-  },
-  "trace-mtx-table-ja.png": {
-    "width": 800,
-    "height": 226
-  },
-  "trace-mtx-table.png": {
-    "width": 800,
-    "height": 222
-  },
-  "trace-mtx-tree-en.png": {
-    "width": 800,
-    "height": 174
-  },
-  "trace-mtx-tree-ja.png": {
-    "width": 800,
-    "height": 174
-  },
-  "trace-mtx-tree.png": {
-    "width": 800,
-    "height": 176
   },
   "transaction-info-window-en.png": {
     "width": 1200,
