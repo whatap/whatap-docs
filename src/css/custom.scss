@@ -866,11 +866,11 @@ article.markdown table td {
    ============================================ */
 
 /* 모든 ul, ol 기본 여백 복원 */
-article ul:not(.breadcrumbs, .tablist, .tabs),
+article ul:not(.breadcrumbs, .tablist, .tabs, .indentTab *),
 article ol,
-.markdown ul:not(.breadcrumbs, .tablist, .tabs),
+.markdown ul:not(.breadcrumbs, .tablist, .tabs, .indentTab *),
 .markdown ol,
-.theme-doc-markdown ul:not(.breadcrumbs, .tablist, .tabs),
+.theme-doc-markdown ul:not(.breadcrumbs, .tablist, .tabs, .indentTab *),
 .theme-doc-markdown ol {
   margin-left: 1.5rem !important;
   padding-left: 0 !important;
