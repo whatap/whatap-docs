@@ -156,6 +156,7 @@ html[lang='en-US'] {
 html[lang='ja-JP'] {
   word-wrap: break-word;
   word-break: inherit;
+  font-size: calc(var(--ifm-font-size-base) * 0.95);
   font-family: 'Noto Sans JP', 'Noto Sans', sans-serif, 'Apple SD Gothic Neo' !important; //'Noto Emoji'
   h1, h2, h3, h4, h5, h6 {
     font-family: 'Noto Sans JP', 'Noto Sans', sans-serif, 'Apple SD Gothic Neo' !important; //'Noto Emoji'
@@ -873,7 +874,7 @@ article ol,
 .theme-doc-markdown ol {
   margin-left: 1.5rem !important;
   padding-left: 0 !important;
-  margin-bottom: 1rem;
+  margin-bottom: 0rem; //마지막 불릿 여백으로 1-> 0 으로 수정 25.11.25
 }
 
 /* TOC */
@@ -1503,6 +1504,9 @@ main {
       }
       > details {
         margin-left: 50px;
+      }
+      > ul {
+        margin-left: 50px !important;
       }
       li p + p img {
         margin-top: 8px;
@@ -2590,7 +2594,7 @@ main {
       width: 100%;
       display: table;
       margin: 10px 0;
-      font-size: 90%;
+      font-size: 95%;
       code {
         font-family: monospace;
         background: none;
