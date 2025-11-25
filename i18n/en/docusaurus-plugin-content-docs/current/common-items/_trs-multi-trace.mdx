@@ -18,88 +18,100 @@ To trace multiple transactions, set the `mtrace_enabled` option to `true` in <Cm
 
 :::
 
-## Multiple transaction trace {#trace-multi-tx}
+## How to Use Multi-Transaction Trace
 
-Drag the chart area in Home &gt; Select Project &gt; <Cmdname sid="side_analysis" className="uitext" /> &gt; <Cmdname sid="side_hitmap" className="uitext" />. The transaction information of the dragged chart area appears in the <Cmdname sid="trace_list" className="uitext" /> list at the bottom. Transactions including multi-transactions in the list are marked with the ![Icon](/img/ic-s-mult-transation.svg) icon.
+1. Go to <Cmdname sid="analysis" className="uitext" /> > <Cmdname sid="multi_server_transaction_trace" className="uitext" />.
 
-<ImgLang img='tx-trace-table.png' desc='mtrace_M' />
+2. Enter the <b>MTID</b> value checked in the <Cmdname sid="TTL06527" className="uitext" /> window into the <Cmdname sid="search_mtid_or_custid" className="uitext" /> field.
 
-When you select the trace, the <Cmdname sid="TTL06527" className="uitext" /> window appears. If multi-transactions are being traced, you can see the <Cmdname sid="TTL06107" className="uitext" /> in the <Cmdname sid="TTL06125" className="uitext" /> tab. Even if you make an outbound call in transaction, the same <Cmdname sid="TTL06107" className="uitext" /> is generated. If projects are separated by service, all transactions between applications can be verified through the first issued <Cmdname sid="TTL06107" className="uitext" />. For more information about the detailed analysis of TX traces using the <Cmdname sid="TTL06527" className="uitext" /> window, see [the following](trs-profile#details).
+3. Select the date and project to query.
 
-<ImgLang img='tx-trace-dt-up.png' desc='Record summary' />
+4. Click the <Cmdname sid="apply" className="uitext" /> button at the bottom of the screen.
 
-If you select <Cmdname sid="TTL06107" className="uitext" />, the <Cmdname sid="TTL06377" className="uitext" /> tab appears. The transactions and trace data are provided so that you can see various call relationships at a glance within or between systems, and identify where problems occurred for improvement.
+    * The <Cmdname sid="apply" className="uitext" /> button will be disabled under the following conditions:
+        * When the same filter values (MTID/CUSTID, date, selected project) as the previous search are applied.
+        * When none of the filter values (MTID/CUSTID, date, selected project) are entered.
 
-### Chart {#trace-multi-tx-chart}
+5. The right-side <Cmdname sid="BTN07120" className="uitext" /> tab displays a diagram and a table that show the call relationships between each transaction.
 
-<ImgLang img='multi-tx-cht.png' desc='Chart' />
+    :::tip
+    The diagram and table areas are divided vertically, and you can adjust their ratio manually.
 
-The default screen for <Cmdname sid="TTL06377" className="uitext" /> is <Cmdname sid="BTN07120" className="uitext" />. <Cmdname sid="BTN07120" className="uitext" /> clearly provides you with call relationships for each transaction. You can check individual execution times for transaction services with the same <Cmdname sid="TTL06107" className="uitext" />. You can see the call relationships between transactions through the step times (![number 1](/img/number-01.png) <Cmdname sid="time_bar" className="uitext" />) expressed in background colors for transaction nodes. In the <Cmdname sid="BTN07120" className="uitext" />, you can use the mouse to move to a desired position or zoom in or out by scrolling.
+    - Clicking the upper arrow expands the table to full height.  
+      If the diagram was previously full height, the layout resets to a 50/50 split.
+    - Clicking the lower arrow expands the chart area to full height.  
+      If the table was previously full height, the layout resets to a 50/50 split.
+    :::
 
-- ![Filter icon](/img/ico-filter.svg) <Cmdname sid="TLT06410" className="uitext" />: You can select or deselect projects to be displayed on the chart.
+### <Cmdname sid="BTN07120" />
 
-- ![Configuration icon](/img/ico-setting.svg) <Cmdname sid="TLT06411" className="uitext" />: You can display or hide the elements on the chart.
+<Cmdname sid="BTN07120" className="uitext" /> provides users with a fast and clear view of the call relationships between transactions. You can check the individual execution time of transaction services that share the same <Cmdname sid="TTL06107" className="uitext" />. The elapsed time displayed at the top of each transaction node (<LinkImage img="number-01.png" desc="number 1"/> <Cmdname sid="time_bar" className="uitext" />) allows you to understand the call flow between transactions.
 
-  - <Cmdname sid="time_bar" className="uitext" />: You can display or hide the step times (<Cmdname sid="time_bar" className="uitext" />) for each node.
+![Chart](/img/trace-mtx-chart-timebar.png)
 
-  - <Cmdname sid="application_name" className="uitext" />: You can display or hide the agent names (oname) for each node.
+:::tip
+You can freely move, zoom in, or zoom out the chart with your mouse.
 
-  - <Cmdname sid="project" className="uitext" />: You can display or hide the project names for each node.
+- Drag within the chart area to move the view.
+- Use scroll inside the chart:
+    - Vertical scroll: move up/down  
+    - Horizontal scroll: move left/right
+- Use `Ctrl` + vertical scroll to zoom in/out.  
+  (Touchpad pinch gestures are also supported.)
+:::
 
-  - <Cmdname sid="database" className="uitext" /> / <Cmdname sid="apply_external_remote" className="uitext" /> / <Cmdname sid="apply_internal_remote" className="uitext" />: Connection requests for other databases or HTTP calls that occurred in the transaction can also be viewed through the nodes of the chart.
+When you select a transaction, only the related nodes remain active, while all unrelated nodes become dimmed.  
+The **Detail View** button (<LinkImage img="number-02.png" desc="number 2"/>) below the selected transaction becomes enabled, and clicking it opens the <Cmdname sid="TTL06527" className="uitext" /> window.  
+There you can view the transaction’s detailed trace.  
+For more information on analyzing transaction traces using the <Cmdname sid="TTL06527" className="uitext" /> window, see the [Transaction Info Documentation](trs-profile#transaction-info).
 
-If you select a transaction node, an additional <Cmdname sid="TTL06527" className="uitext" /> window appears as follows. The transaction trace allows you to see the transaction details. For more information about the detailed analysis of transaction trace through the <Cmdname sid="TTL06527" className="uitext" /> window, see [the following](trs-profile#details).
+* ![확대 아이콘](/img/ic-button-zoom-in.svg) **Zoom In**: Increase zoom level  
+* ![축소 아이콘](/img/ic-button-zoom-out.svg) **Zoom Out**: Decrease zoom level  
+* ![화면 맞춤 아이콘](/img/ic-button-fit-to-screen.svg) **Fit to Screen**: Adjust all nodes to fit the screen  
+* ![화면 초기화 아이콘](/img/ic-button-reset-zooming.svg) **Reset Zoom**: Reset zoom and position to default state  
+* ![설정 아이콘](/img/ic-button-setting.svg) **Chart View Settings**: Show or hide chart elements
+    * <Cmdname sid="TTL06344" className="uitext" />: Toggle application name, project information, IP, and status codes  
+    * <Cmdname sid="database" className="uitext" /> / <Cmdname sid="apply_external_remote" className="uitext" />: Display database connections or external HTTP Calls as nodes in the chart
 
-<ImgLang img='multi-tx-additional-info.png' desc='Display Detail of Multi-transaction' />
+### <Cmdname sid="BTN07121" />
 
-### Table {#trace-multi-tx-table}
+In the <Cmdname sid="BTN07121" className="uitext" /> tab, you can view each transaction included in the multi-transaction trace in a table format.
 
-If you click <Cmdname sid="BTN07121" className="uitext" />, in the form of table, you can see the data for each transaction included in multi-transactions.
+When you select a transaction, its corresponding **node** in the <Cmdname sid="BTN07120" className="uitext" /> diagram becomes highlighted, and related nodes are emphasized.  
+Clicking the detail button in the transaction column will open the <Cmdname sid="TTL06527" className="uitext" /> window, where you can inspect the full transaction trace details.  
+For more information, refer to the [Transaction Info Documentation](trs-profile#transaction-info).
 
-<ImgLang img='multi-tx-table-mode.png' desc='Multi-transaction table mode' />
-
-- ![Filter icon](/img/ico-filter.svg) <Cmdname sid="TLT06410" className="uitext" />: You can select or deselect projects to be displayed on the chart.
-
-- ![Column icon](/img/ic-column.svg) <Cmdname sid="BTN06441" className="uitext" />: You can edit the columns in the table. 
-
-When you select each transaction, the <Cmdname sid="TTL06527" className="uitext" /> window for the selected transaction appears, similar to selecting a node in the <Cmdname sid="BTN07120" className="uitext" /> tab. You can see the details of the transaction through the transaction trace. For more information about the detailed analysis of transaction traces using the <Cmdname sid="TTL06527" className="uitext" /> window, see [the following](trs-profile#transaction-info).
+* ![컬럼 아이콘](/img/ic-column.svg) <Cmdname sid="BTN06441" className="uitext" /> — Edit visible columns in the table
 
 ### Tree {#trace-multi-tx-tree}
 
-If you select <Cmdname sid="BTN06296" className="uitext" />, you can see the detailed information for each transaction and their traces. The transactions within the overall transaction time or start times and step times of each trace to provide transaction call relationships in a tree format.
+When you select the <Cmdname sid="BTN06296" className="uitext" /> button, you can view detailed information for each transaction and its associated traces.  
+This view visualizes the start time and elapsed time of each sub-transaction or trace within the overall transaction execution time, providing a tree-structured representation of the call hierarchy.
 
-<ImgLang img='multi-tx-tree-mode.png' desc='Multi-transaction tree mode' />
+* ![필터 아이콘](/img/ico-filter.svg) <Cmdname sid="TLT06410" className="uitext" />: Select or deselect the projects displayed in the chart.
 
-- ![Filter icon](/img/ico-filter.svg) <Cmdname sid="TLT06410" className="uitext" />: You can select or deselect projects to be displayed on the chart.
+* ![한 줄 보기 아이콘](/img/ic-single-line.svg) <Cmdname sid="BTN06368" className="uitext" />: Display each execution segment’s text in a single line to simplify the tree layout.
 
-- ![View one line icon](/img/ic-single-line.svg) <Cmdname sid="BTN06368" className="uitext" />: You can arrange the tree format at intervals by displaying the texts displayed in the execution data for each section in a single line.
+* ![여러 줄 보기 아이콘](/img/ic-multi-line.svg) <Cmdname sid="BTN06369" className="uitext" />: Display each execution segment’s text in multiple lines (with line breaks).
 
-- ![View multiple lines icon](/img/ic-multi-line.svg) <Cmdname sid="BTN06369" className="uitext" />: All the texts displayed in the execution data for each section, appear by wrapping words.
+* <Cmdname sid="BTN06327" className="uitext" />: Jump to the longest path.
 
-- <Cmdname sid="BTN06327" className="uitext" />: The longest route can appear.
+* ![차트 아이콘](/img/ic-bar-chart.svg) <Cmdname sid="BTN06743" className="uitext" />: Display elapsed time as bar charts.
 
-- ![Chart icon](/img/ic-bar-chart.svg) <Cmdname sid="BTN06743" className="uitext" />: The elapsed times are displayed in a bar chart.
+* ![시간 아이콘](/img/ic-custom-time.svg) <Cmdname sid="BTN06744" className="uitext" />: Display timestamps, gaps, and elapsed time for each segment in text form.
 
-- ![Time icon](/img/ic-custom-time.svg) <Cmdname sid="BTN06744" className="uitext" />: The timestamps, gaps, and elapsed times for each segment are displayed in text.
-
-  - 8 seconds or more: <span class='etrs'>Excessive delay</span> state is distinguished in <span class='etrs'>red</span>.
-
-  - Between 3 and 8 seconds: <span class='ov5ud10'>Delay</span> state is distinguished in <span class='ov5ud10'>orange</span>.
-
-  - Less than 3 seconds: <span class='woer'>Normal</span> state is distinguished in <span class='woer'>blue</span>.
-
-  :::note
-
-  In case of start and step times, the time differences caused by the transaction call environment are corrected on the screen through traces and mappings in the parent transactions. Accordingly, there may be differences from the actual time data.
-
-  :::
-
-- ![Hide icon](/img/ic-eye-invisible.svg) <Cmdname sid="BTN06745" className="uitext" />: The time is hidden.
+  * 8 seconds or more: Displayed in <span class='etrs'>red</span> as an <span class='etrs'>over-delay</span>.
+  * 3 to 8 seconds: Displayed in <span class='ov5ud10'>orange</span> as a <span class='ov5ud10'>delay</span>.
+  * Less than 3 seconds: Displayed in <span class='woer'>blue</span> as <span class='woer'>normal</span>.
 
 :::note
+Start time and elapsed time may differ from actual collected values because they are adjusted based on mapping logic that accounts for time discrepancies between parent transactions and their traces.
+:::
 
-- When you select ![Statistics icon](/img/ic-static.svg) or ![Popup icon](/img/ic-popup.svg) of the trace, you can see the detailed information such as <Cmdname sid="remote_http_call_statistics" className="uitext" />, <Cmdname sid="activestack" className="uitext" /> and <UI>SQL</UI>.
+* ![감추기 아이콘](/img/ic-eye-invisible.svg) <Cmdname sid="BTN06745" className="uitext" />: Hide time information.
 
-- By selecting ![Copy icon](/img/ico-copy.svg) of an SQL step, you can copy the SQL statement of the step.
+:::note
+* Selecting the trace’s ![통계 아이콘](/img/ic-static.svg) button or ![팝업 아이콘](/img/ic-popup.svg) button allows you to view detailed information such as <Cmdname sid="remote_http_call_statistics" className="uitext" />, <Cmdname sid="activestack" className="uitext" />, or <UI>SQL</UI>.
 
+* Clicking the ![복사 아이콘](/img/ico-copy.svg) button on a SQL step copies the SQL query text.
 :::
