@@ -218,6 +218,11 @@ const sidebars = {
             'java/topology-settings'
           ],
         },
+        {
+          type: 'doc',
+          id: 'java/topology-application',
+          className: 'newfunc'
+        },
         'java/analysis-apm-trs',
         {
           type: 'category',
@@ -479,6 +484,11 @@ const sidebars = {
             'php/topology-settings'
           ],
         },
+        {
+          type: 'doc',
+          id: 'php/topology-application',
+          className: 'newfunc'
+        },
         'php/analysis-apm-trs',
         {
           type: 'category',
@@ -715,6 +725,11 @@ const sidebars = {
             'nodejs/topology-add-function',
             'nodejs/topology-settings'
           ],
+        },
+        {
+          type: 'doc',
+          id: 'nodejs/topology-application',
+          className: 'newfunc'
         },
         'nodejs/analysis-apm-trs',
         {
@@ -959,6 +974,11 @@ const sidebars = {
             'python/topology-add-function',
           ],
         },
+        {
+          type: 'doc',
+          id: 'python/topology-application',
+          className: 'newfunc'
+        },
         'python/analysis-apm-trs',
         {
           type: 'category',
@@ -1202,6 +1222,11 @@ const sidebars = {
             'dotnet/topology-settings'
           ],
         },
+        {
+          type: 'doc',
+          id: 'dotnet/topology-application',
+          className: 'newfunc'
+        },
         'dotnet/analysis-apm-trs',
         {
           type: 'category',
@@ -1420,6 +1445,11 @@ const sidebars = {
             'golang/topology-type',
             'golang/topology-add-function',
           ],
+        },
+        {
+          type: 'doc',
+          id: 'golang/topology-application',
+          className: 'newfunc'
         },
         'golang/analysis-apm-trs',
         {

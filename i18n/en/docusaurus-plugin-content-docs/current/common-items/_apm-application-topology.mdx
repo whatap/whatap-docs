@@ -1,0 +1,180 @@
+<Cmdname sid="application_topology" className="uitext" /> visually displays the database and external service calls related to the transaction flow.  
+You can clearly see the entire request path—from user request to database calls and external service integrations—making it easy to identify performance bottlenecks.
+
+- Visualize the path from user request → DB/external service
+- Filtering based on URL patterns
+- Check transaction performance status (slow/error, etc.)
+- Identify bottlenecks and view detailed information
+
+## Viewing Topology
+
+After selecting the time range and application, configure the search scope using the options below.  
+Each query opens in a new tab. When hovering over a tab, a tooltip shows the search conditions, and clicking the pop-out button in the tooltip opens the topology in a separate window.
+
+### Transaction URL Search
+
+Displays only the domains that called transactions matching a specific URL pattern.  
+You can use wildcards (`*`) to define patterns.
+
+**Examples**
+
+- `/api/*`: All URLs starting with `/api/`
+- `*/users/*`: All URLs containing `users`
+- `/api/v1/users`: Exact match
+
+:::warning
+**Be careful when combining slashes(`/`) and wildcards(`*`).**
+
+- `/api/*`: Does **not** match `/api`; it requires a path after `/api/`  
+  (e.g., 🔵 `/api/users`, ❌ `/api`)
+- `/api*`: Matches `/api` itself  
+  (e.g., 🔵 `/api`, `/api/users`, `/apitest`)
+:::
+
+#### Pattern Limitations
+
+- **Must contain at least one non-wildcard character**  
+    - ❌ Not allowed: `***`, `**`  
+    - 🔵 Allowed: `a*`, `*a`, `*a*`, `/api*`
+- **Empty string** or null is not matched.
+- **Consecutive wildcards (`**`)** behave the same as `*`.
+- **Complex patterns** with 3+ `*` are not fully supported.
+- **Regular expressions** are not supported.
+- **Case sensitive** matching.
+- **Cannot escape `*`** to match it literally.
+
+### Trace Limit Count
+
+Maximum number of transaction traces (profiles) to retrieve.  
+Higher limits show more data but increase query time.
+
+- Default: 10,000
+- Max: 1,000,000
+
+:::caution
+Even if you increase the limit, you may still not retrieve all matching transactions.  
+A warning appears when the limit is reached.
+:::
+
+### Time Limit
+
+When the time limit is reached, only data up to that point is shown, and a warning appears.
+
+- Range: 30 seconds ~ 5 minutes
+- Default: 1 minute
+
+## Screen Structure & Visualization
+
+The screen visualizes transaction flow using circular **nodes** and **connecting lines**.
+
+<ImgLang img='app-topology.png' desc='Application topology new' />
+
+### Node Structure
+
+Nodes are arranged vertically based on transaction execution flow: upper nodes call lower nodes.
+
+#### Node Types
+
+Nodes are arranged in order: User → TX → DB/HTTPC.
+
+| Node Type | Description |
+| --- | --- |
+| **User** | Number of users who invoked the transaction |
+| **TX (Transaction)** | Application transactions (HTTP domain/URL) |
+| **DB (Database)** | Database queries and connections |
+| **HTTPC (HTTP Call)** | External HTTP calls |
+
+#### Node Visual Elements
+
+- **Error Gauge**: Circular error-rate gauge on node border
+- **Performance Tags**: “<span class='slow'>Slow</span>” (orange) / “<span class='vslow'>Very Slow</span>” (red)
+- **Hover Effect**: Gray border + highlight connected edges
+- **Selected Effect**: Blue border + highlight connected edges
+
+### Connecting Lines
+
+Color changes based on average elapsed time:
+
+- **Gray**: Normal
+- **<span class='slow'>Orange</span>**: Slow (≥ 3 sec by default)
+- **<span class='vslow'>Red</span>**: Very Slow (≥ 8 sec by default)
+
+### Summary Metrics
+
+Displayed at the top:
+
+- **Total Count**
+- **Error Count**
+- **Average Response Time**
+
+## Screen Interaction
+
+| Category | Action | Description |
+| --- | --- | --- |
+| **Scroll & Zoom** | Mouse wheel | Vertical scroll |
+| ^ | Shift + wheel | Horizontal scroll |
+| ^ | Ctrl + wheel | Zoom in/out |
+| **Drag** | Canvas drag | Move entire topology |
+| ^ | Node drag | Adjust individual node position |
+| **Node Interaction** | Hover | Highlight connected paths |
+| ^ | Click | Select node + show details |
+| ^ | Re-click | Deselect |
+| **Zoom Controls** | Zoom in/out | Range 0.1x ~ 2.0x |
+| ^ | Fit to screen | Auto-fit |
+| ^ | Reset | Reset zoom |
+| ^ | Slider | Fine zoom control |
+| **Export** | PNG Download | Export current chart |
+| **Mini-map** | Map view | Shows current viewport |
+| ^ | Toggle icon | Show/hide |
+| **Domain Search** | Input search | Highlight matching nodes |
+
+## Display Settings
+
+### Node Labels
+
+- Call count  
+- Error count (percentage or number)  
+- Average elapsed time  
+- Name (domain, DB URL)  
+- Type (TX, DB, HTTPC, User)
+
+### Edge Labels
+
+- Display mode: Always / On hover or click
+- Call count  
+- Error count / error rate  
+- Average elapsed time (color-coded)
+
+### Other Options
+
+- Edge animation for slow paths
+- Show/hide User nodes
+- Hide isolated nodes
+- Merge identical nodes
+- Merge HTTPC and corresponding TX nodes
+
+### Slow Thresholds
+
+- **Slow** (<span class='slow'>orange</span>): default 3 sec  
+- **Very Slow** (<span class='vslow'>red</span>): default 8 sec
+
+## Node Details
+
+### Tooltip
+
+- Node type & name  
+- Call count  
+- Error count / rate  
+- Average elapsed time  
+- For merged nodes: top 10 source-domain stats
+
+### Detail Drawer
+
+- Performance metrics  
+- Merged-node performance table  
+- Caller transaction list (up to 1,000)  
+  - Status filter  
+  - Text search  
+  - Sorting  
+  - CSV download  
+  - Click row → trace popup
