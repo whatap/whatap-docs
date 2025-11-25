@@ -69,6 +69,10 @@ env:
   valueFrom: {fieldRef: {fieldPath: spec.nodeName}}
 - name: POD_NAME
   valueFrom: {fieldRef: {fieldPath: metadata.name}}
+- name: WHATAP_PHP_AGENT_PATH
+  value: /usr/whatap/php/whatap_php_static
+- name: WHATAP_CONTAINER_CONF_PATH
+  value: /usr/whatap/php
 
 ```
 
@@ -89,6 +93,10 @@ spec:
       valueFrom: {fieldRef: {fieldPath: spec.nodeName}}
     - name: POD_NAME
       valueFrom: {fieldRef: {fieldPath: metadata.name}}
+    - name: WHATAP_PHP_AGENT_PATH
+      value: /usr/whatap/php/whatap_php_static
+    - name: WHATAP_CONTAINER_CONF_PATH
+      value: /usr/whatap/php
 ```
 
 :::note 
@@ -100,6 +108,10 @@ spec:
 - `NODE_NAME`: Collects the name of the node where the current Pod is running.
 
 - `POD_NAME`: Collects the name of the current Pod.
+
+- `WHATAP_PHP_AGENT_PATH`: Specifies the PHP agent executable file path.
+
+- `WHATAP_CONTAINER_CONF_PATH`: Specifies the path where the container ID will be stored.
 
 :::
 
