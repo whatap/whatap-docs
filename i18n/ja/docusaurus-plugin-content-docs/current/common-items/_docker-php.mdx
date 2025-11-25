@@ -69,6 +69,10 @@ env:
   valueFrom: {fieldRef: {fieldPath: spec.nodeName}}
 - name: POD_NAME
   valueFrom: {fieldRef: {fieldPath: metadata.name}}
+- name: WHATAP_PHP_AGENT_PATH
+  value: /usr/whatap/php/whatap_php_static
+- name: WHATAP_CONTAINER_CONF_PATH
+  value: /usr/whatap/php
 
 ```
 
@@ -89,6 +93,10 @@ spec:
       valueFrom: {fieldRef: {fieldPath: spec.nodeName}}
     - name: POD_NAME
       valueFrom: {fieldRef: {fieldPath: metadata.name}}
+    - name: WHATAP_PHP_AGENT_PATH
+      value: /usr/whatap/php/whatap_php_static
+    - name: WHATAP_CONTAINER_CONF_PATH
+      value: /usr/whatap/php
 ```
 
 :::note 
@@ -100,6 +108,10 @@ spec:
 - `NODE_NAME`: 現在Podが実行中のノードの名前を収集します。
 
 - `POD_NAME`: 現在のPodの名前を収集します。
+
+- `WHATAP_PHP_AGENT_PATH`: PHPエージェントの実行ファイルパスを指定します。
+
+- `WHATAP_CONTAINER_CONF_PATH`: コンテナIDが保存されるパスを指定します。
 
 :::
 
