@@ -213,6 +213,11 @@ const sidebars = {
           },
           items: [
             'java/topology-basic',
+            {
+              type: 'doc',
+              id: 'java/topology-applicaiton',
+              className: 'newfunc'
+            },
             'java/topology-type',
             'java/topology-add-function',
             'java/topology-settings'
