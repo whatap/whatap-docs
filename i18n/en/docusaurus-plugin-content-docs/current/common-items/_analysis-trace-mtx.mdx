@@ -68,21 +68,39 @@ To use the <Cmdname sid="multi_server_transaction_trace" className="uitext" /> m
 
 ### <Cmdname sid="BTN07120" />
 
-The <Cmdname sid="BTN07120" className="uitext" /> quickly and clearly provides users with the call relationship between transactions. The execution times for each individual transaction service with the same <Cmdname sid="TTL06107" className="uitext" /> can be viewed. You can check the call relationship between transactions by using the execution time displayed at the top of the transaction node (<LinkImage img="number-01.png" desc="number 1"/> <Cmdname sid="time_bar" className="uitext" />). In <Cmdname sid="BTN07120" className="uitext" />, you can use the mouse to go to a desired position or zoom in or out by scrolling.
+<Cmdname sid="BTN07120" className="uitext" /> provides a fast and clear view of the call relationships between transactions.  
+You can check the individual execution times of transaction services that share the same <Cmdname sid="TTL06107" className="uitext" />.  
+The elapsed time displayed at the top of each transaction node (<LinkImage img="number-01.png" desc="number 1"/> <Cmdname sid="time_bar" className="uitext" />) allows you to understand the call flow between transactions.
 
 ![Chart](/img/trace-mtx-chart-timebar.png)
 
-If you select a transaction node, an additional <Cmdname sid="TTL06527" className="uitext" /> window appears as follows. The transaction trace allows you to see the transaction details. For more information about the detailed analysis of transaction trace through the <Cmdname sid="TTL06527" className="uitext" /> window, see [the following](trs-profile#transaction-info).
+:::tip
+You can freely move, zoom in, or zoom out of the chart with your mouse.
 
-- **_A_**<Cmdname sid="small" className="uitext" /> / **_A_**<Cmdname sid="big" className="uitext" />: The size of the font displayed on the node can be adjusted.
+- Drag within the chart area to move it.
+- Scroll within the chart area to move vertically or horizontally.
+  - Vertical scroll: move up/down  
+  - Horizontal scroll: move left/right
+- Hold `Ctrl` + scroll up/down to zoom in or out.
+  - Pinch zoom on a touchpad is also supported.
+:::
 
-- <Cmdname sid="time_bar" className="uitext" />: You can display or hide the step times (<Cmdname sid="time_bar" className="uitext" />) for each node.
+When you select a transaction, only the connected nodes remain active, while all unrelated nodes are dimmed.  
+The **Detail View** button (<LinkImage img="number-02.png" desc="number 2"/>) at the bottom of the selected transaction becomes active.  
+Clicking it opens the <Cmdname sid="TTL06527" className="uitext" /> window, where you can view detailed transaction information.  
+For more details on analyzing transaction traces using the <Cmdname sid="TTL06527" className="uitext" /> window, refer to the following document: [Transaction Info](trs-profile#transaction-info).
 
-- <Cmdname sid="application_name" className="uitext" />: You can display or hide the agent names (oname) for each node.
+* ![확대 아이콘](/img/ic-button-zoom-in.svg) **Zoom In**  
+* ![축소 아이콘](/img/ic-button-zoom-out.svg) **Zoom Out**
 
-- <Cmdname sid="project" className="uitext" />: You can display or hide the project names for each node.
+* ![화면 맞춤 아이콘](/img/ic-button-fit-to-screen.svg) **Fit to Screen**: Display all nodes to fit the visible area.
 
-- <Cmdname sid="database" className="uitext" /> / <Cmdname sid="apply_external_remote" className="uitext" /> / <Cmdname sid="apply_internal_remote" className="uitext" />: Connection requests for other databases or HTTP calls that occurred in the transaction can also be viewed through the nodes of the chart.
+* ![화면 초기화 아이콘](/img/ic-button-reset-zooming.svg) **Reset Zoom**: Restore the initial chart zoom and position.
+
+* ![설정 아이콘](/img/ic-button-setting.svg) **Chart View Settings**: Show or hide chart elements.
+
+    * <Cmdname sid="TTL06344" className="uitext" />: Show/hide application name, project info, IP, status code.
+    * <Cmdname sid="database" className="uitext" /> / <Cmdname sid="apply_external_remote" className="uitext" />: Display other database connections or external HTTP calls as nodes in the chart.
 
 ### <Cmdname sid="BTN07121" />
 
