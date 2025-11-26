@@ -1,0 +1,94 @@
+## Service 2.23.0
+
+November 26, 2025
+
+<div class='indentTab'>
+
+### `Common`
+
+- <Status priority='1'>Feature</Status> Added CSV download button to the <Cmdname sid="flexboard" className="uitext" /> table widget.
+
+- <Status priority='1'>Changed</Status> Changed menu names for <Cmdname sid="event_statistic" className="uitext" />.
+
+    - <Cmdname sid="event_statistic" className="uitext" /> > <Cmdname sid="event_setting" className="uitext" /> → <Cmdname sid="event_setting" className="uitext" /> `Classis`
+
+    - <Cmdname sid="event_statistic" className="uitext" /> > <Cmdname sid="event_setting" className="uitext" /> <code class="newfunc">New</code> → <Cmdname sid="event_setting" className="uitext" /> 
+
+- <Status priority='1'>Changed</Status> Integrated the Basic and Metrics tabs in <Cmdname sid="event_statistic" className="uitext" /> > <Cmdname sid="event_setting" className="uitext" />.
+
+- <Status priority='1'>Changed</Status> Improved behavior so that users without permission for display group settings will be redirected through a “No Permission” page to an accessible page.
+
+- <Status priority='1'>Changed</Status> <Cmdname sid="sms_maintenance" className="uitext" /> now displays ICMP Feature products.
+
+- <Status priority='0'>Fixed</Status> Unified the sorting order of the Agent list (alias > oname > oid).
+
+- <Status priority='0'>Fixed</Status> Fixed an issue in <Cmdname sid="side_myUsage" className="uitext" /> > <Cmdname sid="payment_information" className="uitext" /> where editing the billing email was not possible.
+
+### `Application`
+
+- <Status priority='1'>Feature</Status> Added new **Application Topology** side menu.
+
+- <Status priority='0'>Fixed</Status> Fixed missing scroll in <Cmdname sid="sms_management" className="uitext" /> > <Cmdname sid="agent_list" className="uitext" />.
+
+- <Status priority='0'>Fixed</Status> Added HTTPC URL information in <Cmdname sid="trace" className="uitext" /> > **HTTPC Step Details**.
+
+### `Server`
+
+- <Status priority='1'>Feature</Status> Added status column filter options to <Cmdname sid="server_list" className="uitext" />.
+
+- <Status priority='1'>Feature</Status> **GPU Performance Summary**
+
+    - Added GPU information search input.
+    - Improved table to show total number of retrieved rows.
+
+- <Status priority='1'>Feature</Status> Added dimension selection when configuring Azure agents in <Cmdname sid="product_sms" className="uitext" /> > <Cmdname sid="cloud_monitoring" className="uitext" />.
+
+- <Status priority='0'>Fixed</Status> Fixed CPU chart tooltip to show decimal values and improved unit display for Process I/O chart in <Cmdname sid="serverDetail" className="uitext" />.
+
+- <Status priority='0'>Fixed</Status> Fixed issue where events did not trigger when adding events using the “CPU User % is too high” composite metrics template in <Cmdname sid="event_setting" className="uitext" />.
+
+### `Cloud`
+
+- <Status priority='1'>Feature</Status> Added ability to select dimensions during Azure agent setup in <Cmdname sid="cloud_monitoring" className="uitext" /> > <Cmdname sid="sms_agent_setup" className="uitext" />.
+
+### `Kubernetes`
+
+- <Status priority='1'>Feature</Status> Added report product type prefixes to report selection list and improved sorting.
+
+- <Status priority='0'>Fixed</Status> Fixed issue in <Cmdname sid="app" className="uitext" /> > <Cmdname sid="analysis" className="uitext" /> > <Cmdname sid="multi_hitmap" className="uitext" /> where agents outside the dragged OKIND were displayed.
+
+- <Status priority='0'>Fixed</Status> Fixed issue in **Service Networking** > <Cmdname sid="side_ingressList" className="uitext" /> where some Pod information was not shown.
+
+### `Database`
+
+- <Status priority='1'>Changed</Status> Improved threshold configuration UI in <Cmdname sid="dashboard" className="uitext" /> > <Cmdname sid="TTL10499" className="uitext" />.
+
+- <Status priority='0'>Fixed</Status> Fixed SQL text to remain fixed when scrolling horizontally in <Cmdname sid="statistics_sql" className="uitext" /> and <Cmdname sid="side_dbTopSql" className="uitext" />.
+
+- <Status priority='0'>Fixed</Status> Applied multilingual support to <Cmdname sid="side_analysis" className="uitext" /> > <Cmdname sid="db_parameter" className="uitext" />.
+
+#### MySQL, PostgreSQL
+
+- <Status priority='1'>Changed</Status> Improved <Cmdname sid="side_dashboard" className="uitext" /> > <Cmdname sid="side_dbMonitoring" className="uitext" /> <code class="newfunc">New</code> widget list.
+
+#### Oracle, Oracle Pro
+
+- <Status priority='1'>Feature</Status> Added new tab to view parallel query trees in the session table via <Cmdname sid="side_dashboard" className="uitext" /> > <Cmdname sid="side_dbMonitoring" className="uitext" /> <code class="newfunc">New</code>.
+
+- <Status priority='1'>Changed</Status> Updated Wait Class widget details view to show up to 21 classes and to use statistical data depending on time range.
+
+#### Oracle Pro
+
+- <Status priority='1'>Feature</Status> Added agent pause function in <Cmdname sid="management" className="uitext" /> > <Cmdname sid="agent_list" className="uitext" />.
+
+- <Status priority='1'>Changed</Status> Improved data retrieval in <Cmdname sid="lock_tree" className="uitext" />.
+
+#### PostgreSQL
+
+- <Status priority='1'>Feature</Status> Added `scan_count` and `scan_ratio` columns to the Scan Table in <Cmdname sid="analysis" className="uitext" /> > <Cmdname sid="dbObjectInfo" className="uitext" />.
+
+### `Log`
+
+- <Status priority='0'>Fixed</Status> Fixed an issue where query favorites did not work in <Cmdname sid="side_logExplorer2" className="uitext" />.
+
+</div>
