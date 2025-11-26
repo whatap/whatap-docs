@@ -258,8 +258,11 @@ const sidebars = {
                 id: 'java/warning-notice-v2'
               },
               items: [
-                'java/basic-event-setting',
+                // 'java/basic-event-setting',
                 'java/metric-warning-notice-new',
+                'java/hitmap-notice',
+                'java/set-event-detect-anomal',
+                'java/set-event-log',
                 'java/transaction-event-setting',
               ]
             },
@@ -271,11 +274,8 @@ const sidebars = {
               className: 'classicfunc',
               items: [
                 'java/warning-notice',
-                'java/metric-warning-notice',
+                // 'java/metric-warning-notice',
                 'java/set-notification-message',
-                'java/hitmap-notice',
-                'java/set-event-detect-anomal',
-                'java/set-event-log',
               ]
             },
             'java/set-receive-event',
