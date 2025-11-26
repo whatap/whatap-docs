@@ -1,0 +1,94 @@
+## Service 2.23.0
+
+2025年11月26日
+
+<div class='indentTab'>
+
+### `共通`
+
+- <Status priority='1'>Feature</Status> <Cmdname sid="flexboard" className="uitext" /> テーブルウィジェットに CSV ダウンロードボタンを追加。
+
+- <Status priority='1'>Changed</Status> <Cmdname sid="event_statistic" className="uitext" /> のメニュー名を変更。
+
+    - <Cmdname sid="event_statistic" className="uitext" /> > <Cmdname sid="event_setting" className="uitext" /> → <Cmdname sid="event_setting" className="uitext" /> `Classis`
+
+    - <Cmdname sid="event_statistic" className="uitext" /> > <Cmdname sid="event_setting" className="uitext" /> <code class="newfunc">New</code> → <Cmdname sid="event_setting" className="uitext" />
+
+- <Status priority='1'>Changed</Status> <Cmdname sid="event_statistic" className="uitext" /> > <Cmdname sid="event_setting" className="uitext" /> の基本タブとメトリクスタブを統合。
+
+- <Status priority='1'>Changed</Status> ユーザー表示グループ設定の権限がない場合、「権限なし」案内ページを経由してアクセス可能なページへ遷移できるよう改善。
+
+- <Status priority='1'>Changed</Status> <Cmdname sid="sms_maintenance" className="uitext" /> に ICMP Feature 製品を表示。
+
+- <Status priority='0'>Fixed</Status> エージェント一覧のソート順を統一（alias > oname > oid）。
+
+- <Status priority='0'>Fixed</Status> <Cmdname sid="side_myUsage" className="uitext" /> > <Cmdname sid="payment_information" className="uitext" /> で請求書受信メールが修正できない問題を修正。
+
+### `Application`
+
+- <Status priority='1'>Feature</Status> 新しい **アプリケーショントポロジー** サイドメニューを追加。
+
+- <Status priority='0'>Fixed</Status> <Cmdname sid="sms_management" className="uitext" /> > <Cmdname sid="agent_list" className="uitext" /> にスクロールが表示されない問題を修正。
+
+- <Status priority='0'>Fixed</Status> <Cmdname sid="trace" className="uitext" /> > **HTTPC ステップ詳細** に HTTPC URL を追加。
+
+### `Server`
+
+- <Status priority='1'>Feature</Status> <Cmdname sid="server_list" className="uitext" /> のフィルターに状態カラム選択を追加。
+
+- <Status priority='1'>Feature</Status> **GPU パフォーマンス要約**
+
+    - GPU 情報検索用 Input を追加。
+    - 取得されたテーブル件数が表示されるよう改善。
+
+- <Status priority='1'>Feature</Status> <Cmdname sid="product_sms" className="uitext" /> > <Cmdname sid="cloud_monitoring" className="uitext" /> で Azure エージェント設定時にディメンションを選択できる機能を追加。
+
+- <Status priority='0'>Fixed</Status> <Cmdname sid="serverDetail" className="uitext" /> のプロセス CPU チャートのツールチップが小数点を表示するよう修正し、I/O チャートは単位変換と単位表示を改善。
+
+- <Status priority='0'>Fixed</Status> <Cmdname sid="event_setting" className="uitext" /> の複合メトリクス “CPU User % is too high” テンプレートでイベントが発生しない問題を修正。
+
+### `Cloud`
+
+- <Status priority='1'>Feature</Status> <Cmdname sid="cloud_monitoring" className="uitext" /> > <Cmdname sid="sms_agent_setup" className="uitext" /> に Azure エージェント設定時のディメンション選択機能を追加。
+
+### `Kubernetes`
+
+- <Status priority='1'>Feature</Status> レポート選択リストにレポート製品タイププレフィックスを追加し、並び順を改善。
+
+- <Status priority='0'>Fixed</Status> <Cmdname sid="app" className="uitext" /> > <Cmdname sid="analysis" className="uitext" /> > <Cmdname sid="multi_hitmap" className="uitext" /> でドラッグした OKIND に含まれないエージェントが表示される問題を修正。
+
+- <Status priority='0'>Fixed</Status> **サービスネットワーキング** > <Cmdname sid="side_ingressList" className="uitext" /> の詳細で一部 Pod 情報が表示されない問題を修正。
+
+### `Database`
+
+- <Status priority='1'>Changed</Status> <Cmdname sid="dashboard" className="uitext" /> > <Cmdname sid="TTL10499" className="uitext" /> の閾値設定 UI を改善。
+
+- <Status priority='0'>Fixed</Status> <Cmdname sid="statistics_sql" className="uitext" />、<Cmdname sid="side_dbTopSql" className="uitext" /> で横スクロール時に SQL 文が固定されるよう修正。
+
+- <Status priority='0'>Fixed</Status> <Cmdname sid="side_analysis" className="uitext" /> > <Cmdname sid="db_parameter" className="uitext" /> に多言語を適用。
+
+#### MySQL, PostgreSQL
+
+- <Status priority='1'>Changed</Status> <Cmdname sid="side_dashboard" className="uitext" /> > <Cmdname sid="side_dbMonitoring" className="uitext" /> <code class="newfunc">New</code> のウィジェットリストを改善。
+
+#### Oracle, Oracle Pro
+
+- <Status priority='1'>Feature</Status> <Cmdname sid="side_dashboard" className="uitext" /> > <Cmdname sid="side_dbMonitoring" className="uitext" /> <code class="newfunc">New</code> で並列クエリツリーを確認できるタブを追加。
+
+- <Status priority='1'>Changed</Status> Wait Class ウィジェット詳細ビューを最大21件まで表示し、期間に応じて統計データを使用するよう変更。
+
+#### Oracle Pro
+
+- <Status priority='1'>Feature</Status> <Cmdname sid="management" className="uitext" /> > <Cmdname sid="agent_list" className="uitext" /> にエージェント一時停止機能を追加。
+
+- <Status priority='1'>Changed</Status> <Cmdname sid="lock_tree" className="uitext" /> のデータ取得改善。
+
+#### PostgreSQL
+
+- <Status priority='1'>Feature</Status> <Cmdname sid="analysis" className="uitext" /> > <Cmdname sid="dbObjectInfo" className="uitext" /> の Scan テーブルに `scan_count`, `scan_ratio` カラムを追加。
+
+### `Log`
+
+- <Status priority='0'>Fixed</Status> <Cmdname sid="side_logExplorer2" className="uitext" /> のクエリお気に入りが動作しない問題を修正。
+
+</div>
