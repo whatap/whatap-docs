@@ -28,6 +28,30 @@ November 26, 2025
 
 - <Status priority='1'>Feature</Status> Added new **Application Topology** side menu.
 
+- <Status priority='1'>Feature</Status> <Cmdname sid="multi_transaction" className="uitext" /> Improved chart visibility
+    
+    - Fixed an issue where error transactions were not displayed (changed chart color criteria from execution time to error/normal status)
+
+    - Added highlight functionality for related items when clicking a node
+
+    - Added bottom-area table
+        
+        - Improved to display transaction relationships and detailed information on a single screen; chart and table are split vertically with adjustable ratio
+
+        - When clicking a table row, the chart automatically moves to the corresponding transaction and highlights connected items
+
+- <Status priority='1'>Feature</Status> <Cmdname sid="multi_transaction" className="uitext" /> Improved chart interaction features
+
+    - Chart area can now be moved using vertical and horizontal scrolling
+
+    - Zoom in/out available when scrolling vertically while holding the Control key
+
+    - Zoom in/out supported through pinch gestures when using a touchpad
+
+- <Status priority='1'>Feature</Status> <Cmdname sid="multi_transaction" className="uitext" /> Added display for total transactions, error transactions, database connection requests, and external calls
+
+- <Status priority='0'>Fixed</Status> <Cmdname sid="multi_transaction" className="uitext" /> Resolved chart bugs (lagging during zoom in/out, and sudden jumps to unexpected positions when navigating via chart clicks)
+
 - <Status priority='0'>Fixed</Status> Fixed missing scroll in <Cmdname sid="sms_management" className="uitext" /> > <Cmdname sid="agent_list" className="uitext" />.
 
 - <Status priority='0'>Fixed</Status> Added HTTPC URL information in <Cmdname sid="trace" className="uitext" /> > **HTTPC Step Details**.

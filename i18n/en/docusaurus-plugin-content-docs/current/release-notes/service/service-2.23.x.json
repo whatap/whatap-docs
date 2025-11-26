@@ -55,6 +55,37 @@
               "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> Added new <span class=\"uitext\">Application Topology</span> to side menu</p>"
           },
           {
+            "ver": "Service 2.23.0",
+            "hash": "service-2230",
+            "product": "Application",
+            "type": "Feature",
+            "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">Multi Transaction</span> Chart visibility improvements</p>",
+            "details": "<ul>\n<li>Improved issue where error transactions were not displayed (chart color criteria changed from execution time to error/normal status)</li>\n\n<li>Added highlight feature for connected items when clicking a node</li>\n\n<li>Added bottom-area table</li>\n</ul>"
+        },
+        {
+            "ver": "Service 2.23.0",
+            "hash": "service-2230",
+            "product": "Application",
+            "type": "Feature",
+            "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">Multi Transaction</span> Chart interaction improvements</p>",
+            "details": "<ul>\n<li>Chart area can be moved using vertical and horizontal scrolling</li>\n\n<li>Zoom in/out available by scrolling vertically while holding the Control key</li>\n\n<li>Touchpad pinch gestures now support zoom in/out</li>\n</ul>"
+        },
+        {
+            "ver": "Service 2.23.0",
+            "hash": "service-2230",
+            "product": "Application",
+            "type": "Feature",
+            "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">Multi Transaction</span> Added display for total transactions, error transactions, DB connection requests, and external calls</p>"
+        },
+        {
+            "ver": "Service 2.23.0",
+            "hash": "service-2230",
+            "product": "Application",
+            "type": "Fixed",
+            "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">Multi Transaction</span> Chart bug fixes</p>",
+            "details": "<ul>\n<li>Fixed stuttering during zoom in/out actions</li>\n\n<li>Fixed issue where clicking the chart caused it to jump to an unintended location</li>\n</ul>"
+        },
+          {
               "ver": "Service 2.23.0",
               "hash": "service-2230",
               "product": "Application",
