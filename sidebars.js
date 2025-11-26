@@ -258,9 +258,13 @@ const sidebars = {
                 id: 'java/warning-notice-v2'
               },
               items: [
-                'java/basic-event-setting',
+                // 'java/basic-event-setting',
                 'java/metric-warning-notice-new',
+                'java/hitmap-notice',
+                'java/set-event-detect-anomal',
+                'java/set-event-log',
                 'java/transaction-event-setting',
+                'java/set-notification-message',
               ]
             },
             {
@@ -271,11 +275,7 @@ const sidebars = {
               className: 'classicfunc',
               items: [
                 'java/warning-notice',
-                'java/metric-warning-notice',
-                'java/set-notification-message',
-                'java/hitmap-notice',
-                'java/set-event-detect-anomal',
-                'java/set-event-log',
+                // 'java/metric-warning-notice',
               ]
             },
             'java/set-receive-event',
@@ -524,9 +524,13 @@ const sidebars = {
                 id: 'php/warning-notice-v2'
               },
               items: [
-                'php/basic-event-setting',
+                // 'php/basic-event-setting',
                 'php/metric-warning-notice-new',
                 'php/transaction-event-setting',
+                'php/hitmap-notice',
+                'php/set-event-detect-anomal',
+                'php/set-event-log',
+                'php/set-notification-message',
               ]
             },
             {
@@ -537,11 +541,7 @@ const sidebars = {
               className: 'classicfunc',
               items: [
                 'php/warning-notice',
-                'php/metric-warning-notice',
-                'php/set-notification-message',
-                'php/hitmap-notice',
-                'php/set-event-detect-anomal',
-                'php/set-event-log',
+                // 'php/metric-warning-notice',
               ]
             },
             'php/set-receive-event',
