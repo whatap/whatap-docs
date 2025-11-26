@@ -216,6 +216,14 @@
               "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">Analysis</span> &gt; <span class=\"uitext\">Top Objects</span> Added scan_count and scan_ratio columns to Scan → Table table</p>"
           },
           {
+            "ver": "Service 2.23.0",
+            "hash": "service-2230",
+            "product": "Network",
+            "category": "Network Management System",
+            "type": "Feature",
+            "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">Automatic Device Discovery</span> added </p>"
+        },        
+          {
               "ver": "Service 2.23.0",
               "hash": "service-2230",
               "product": "Log",
