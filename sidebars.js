@@ -4376,7 +4376,7 @@ const sidebars = {
               label: 'Go',
               collapsible: true,
               collapsed: true,
-              // className: 'new',
+              className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/golang/index',
