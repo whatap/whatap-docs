@@ -149,3 +149,271 @@ isEmpty(Key)
 ```java
 isNotEmpty(Key)
 ```
+
+## レベル動作ガイド {#level-action-guide}
+
+1. **優先順位に基づくイベント発生**
+
+    複数のレベル条件を同時に満たす場合、最も優先度の高いイベントのみが発生します。
+
+    ```json title="例"
+    設定:
+    - Warning: CPU > 70%
+    - Critical: CPU > 90%
+
+    現在の状態: CPU 95%
+    → 結果: Critical イベントのみ発生（Warning は抑制）
+    ```
+
+1. **レベル上昇**
+
+    低レベルのイベントが進行中の状態で、高レベル条件を満たした場合、両方のレベルが「進行中」となります。
+
+    ```json title="例"
+    設定:
+    - Warning: CPU > 70%
+    - Critical: CPU > 90%
+
+    シナリオ:
+    1) CPU 80% → Warning 発生（進行中）
+    2) CPU 95% → Warning（進行中）、Critical（進行中）
+    ```
+
+1. **レベル下降**
+
+    進行中の高レベルイベントが低レベル条件に戻った場合、高レベルは解消され、低レベルが維持されます。
+
+    ```json title="例"
+    設定:
+    - Warning: CPU > 70%
+    - Critical: CPU > 90%
+
+    シナリオ:
+    1) CPU 97% → Critical 発生
+    2) CPU 85% → Critical 解消、Warning 維持
+    3) CPU 65% → Warning 解消
+    ```
+
+1. **動作フロー**
+
+    ```json
+    - Warning: CPU > 70%
+    - Critical: CPU > 90%
+
+    メトリック値: 60% → 75% → 92% → 85% → 60%
+    状態:        正常   Warning  Critical  Warning   正常
+                       (発生)     (発生)     (維持)      (解消)
+                      Warning
+                       (維持)
+    ```
+
+:::note
+進行中のイベントは、条件が満たされている限りアクティブ状態を維持し、条件が解除されるまで継続します。
+:::
+
+
+## 条件設定ガイド {#condition-setting-guide}
+
+:::caution
+
+指標名が数字で始まる場合、または特殊文字を含む場合は `${指標名}` の形式で記述する必要があります。
+
+- 括弧 `()`, `[]`
+- 演算子 `+`, `-`, `*`, `/`, `%`
+- 区切り文字 `:`, `@`, `#`, `,`, `(スペース)`
+- その他の特殊文字 `!`, `^`, `&`, `|`, `~`, ```, `=`
+
+**`${}` を使用した例**:
+
+```dart
+${cpu(xos)} > 50
+${mem[0]} >= 100
+${cpu-usage} > 80
+${namespace:cpu} > 70
+${metric name} > 60
+${4xx_error} > 10
+```
+
+**`${}` を付けずに使用可能:** 英字、アンダースコア（`_`）、ドット（`.`）のみで構成されている場合
+
+```dart
+cpu > 80
+cpu_usage > 50
+CPUUtilization.Average > 0.8
+```
+
+:::
+
+1. **比較演算子**
+
+    ```dart title="数値比較"
+    大きい:            cpu > 80
+    以上:              cpu >= 80
+    小さい:            memory < 1000
+    以下:              memory <= 1000
+    等しい:            status == 200
+    等しくない:        error != 0
+    ```
+
+    ```dart title="文字列比較"
+    status == 'OK'
+    region == "us-east-1"
+    ```
+
+1. **算術演算子**
+
+    * 基本算術
+
+    ```dart title="基本算術"
+    加算:    cpu + 10 >= 90
+    減算:    memory - 100 >= 500
+    乗算:    cpu * 2 >= 100
+    除算:    disk / 1024 >= 100
+    剰余:    value % 10 == 0
+    ```
+
+    * 括弧による優先順位制御
+
+    ```dart title="優先順位制御"
+    (cpu + memory) * 2 >= 200
+    (disk - used) / total >= 0.2
+    ((cpu + memory) / 2) >= 50
+    ```
+
+    * 負数の表現
+
+    ```dart title="負数の表現"
+    cpu > -100
+    ```
+
+1. **論理演算子**
+
+    * AND (&&)
+
+    ```dart
+    cpu > 80 && memory > 1000
+    ${cpu(xos)} > 50 && ${mem(xos)} > 60
+    ```
+
+    * OR (||)
+
+    ```dart
+    cpu > 90 || memory > 90
+    disk < 10 || network > 1000
+    ```
+
+    * 複合論理式
+
+    ```dart
+    (cpu > 50 && memory > 50) || disk < 20
+    cpu > 80 && (memory > 1000 || disk > 500)
+    ```
+
+1. **パターンマッチ演算子**
+
+    * LIKE
+
+    ```dart
+    oname like 'prod-*'
+    url like '*error*'
+    message like 'WARN%'
+    ```
+
+    * NOT LIKE
+
+    ```dart
+    oname not like 'test-*'
+    url not like '*debug*'
+    ```
+
+2. **組み込み関数**
+
+    * Null チェック
+
+    ```dart
+    isNull(value)             # null か確認
+    isNotNull(value)          # null でないか確認
+    nvl(value, 0)             # null の場合はデフォルト値
+    isEmpty(str)              # 空文字列か確認
+    isNotEmpty(str)           # 空でないか確認
+    ```
+
+    * 集計関数
+
+    ```dart
+    sum(cpu, memory, disk)              # 合計
+    avg(cpu, memory)                    # 平均
+    max(cpu, memory, disk)              # 最大
+    min(cpu, memory, disk)              # 最小
+    count(value1, value2, value3)       # 件数
+    ```
+
+    * 数学関数
+
+    ```dart
+    round(cpu, 2)             # 四捨五入（小数2桁）
+    ```
+
+    * 文字列関数
+
+    ```dart
+    length(str)                # 文字数
+    startsWith(str, 'prefix')  # プレフィックス確認
+    endsWith(str, 'suffix')    # サフィックス確認
+    indexOf(str, 'search')     # 位置
+    substring(str, 0, 10)      # 部分文字列
+    trim(str)                  # トリム
+    replace(str, 'old', 'new') # 置換
+    hasStr(str, 'search')      # 含むか確認
+    ```
+
+    * 条件関数
+
+        **if**: 条件が true の場合は true値、false の場合は false値 を返す
+
+        ```dart title="形式"
+        if(条件, true値, false値)
+        ```
+
+        ```dart title="例"
+        if(value >= 90, 'High', 'Medium') == 'High'
+        ```
+
+        **decode**: 値と条件を比較し、一致した結果を返す。一致がなければデフォルト値を返す
+
+        ```dart title="形式"
+        decode(値, 条件1, 結果1, 条件2, 結果2, ..., 条件N, 結果N, デフォルト)
+        ```
+
+        ```dart title="例"
+        decode(value, 1, 'Low', 2, 'Medium', 3, 'High', 'Unknown') == 'Unknown'
+        ```
+
+        **in**: 値が候補値のいずれかと一致すれば true、そうでなければ false
+
+        ```dart title="形式"
+        in(値, 候補1, 候補2, ..., 候補N)
+        ```
+
+        ```dart title="例"
+        in(status, 200, 201, 204) == false
+        ```
+
+:::caution
+
+**記述時の注意事項**
+
+* 推奨：
+
+- シンプルな変数名は ${} 不要（例: cpu, memory）
+- 特殊文字を含む場合は必ず ${} を使用
+- 複雑な式は括弧で明確化
+- 関数名は正確に記述（大文字小文字を区別）
+
+* 避けるべきこと：
+
+- 不完全な式（例: cpu >, memory &&）
+- 括弧の不一致（例: (cpu > 80, cpu > 80））
+- 無効な演算子（例: cpu >> 80, cpu >< 80）
+
+:::

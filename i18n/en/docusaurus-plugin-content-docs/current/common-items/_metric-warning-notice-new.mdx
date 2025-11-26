@@ -120,11 +120,34 @@ In the <Cmdname sid="select_category" className="uitext" /> list, <Cmdname sid="
 
 #### <Cmdname sid="TTL07365" className="uitext" /> {#TTL07365}
 
-You can select a notification level and set the threshold for events that trigger a notification.
+You can select the alert level and configure the threshold that triggers the alert. **A single rule can include multiple levels (Critical, Warning, Info).**  
+For effective monitoring, it is recommended to configure step-by-step thresholds for the same metric.
 
 <ImgLang img="metric-warning-notice-new-set-metrics.png" desc="Indicator settings" />
 
-- Notification levels are divided into Critical (<span className="vslow">Critical</span>), Warning (<span className="slow">Warning</span>), and Normal (<span className="info">Info</span>).
+* Notification levels are categorized into critical (<span className="vslow">Critical</span>), warning (<span className="slow">Warning</span>), and normal (<span className="info">Info</span>) levels. The configured levels operate according to their priority.
+
+    :::tip
+
+    For more details on how levels operate, refer to the [Level Action Guide](#level-action-guide).
+
+    :::
+
+* After selecting a metric included in the chosen category, enter the conditions to configure the monitoring criteria. You can combine arithmetic, comparison, and logical operators to construct the desired conditional expression.
+
+    :::tip
+
+    For details on how to write conditional expressions and the available operators, refer to the [Condition Setting Guide](#condition-setting-guide).
+
+    :::
+
+{/* - Notification levels are divided into Critical (<span className="vslow">Critical</span>), Warning (<span className="slow">Warning</span>), and Normal (<span className="info">Info</span>). Configured levels operate according to their priority.
+
+    :::note
+
+    For more details about how levels operate, refer to the Level Behavior Guide.
+
+    :::
 
 - <Cmdname sid="metrics_rule_select" className="uitext" />: Set the thresholds after selecting the field name and operators and then entering values. After clicking a field, you can see the list of fields included in the metric category.
 
@@ -156,7 +179,7 @@ The following example is an event condition that triggers a notification when th
 
 - When the input method is changed between <Cmdname sid="metrics_rule_select" className="uitext" /> and <Cmdname sid="metrics_rule_direct" className="uitext" /> options, the edited result disappears.
 
-:::
+:::  */}
 
 #### <Cmdname sid="number_of_event" className="uitext" /> {#number_of_event}
 
