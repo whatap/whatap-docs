@@ -195,18 +195,18 @@ isNotEmpty(Key)
     ```
 
 1. **動作フロー**
-
+    
     ```json
     - Warning: CPU > 70%
     - Critical: CPU > 90%
-
-    メトリック値: 60% → 75% → 92% → 85% → 60%
-    状態:        正常   Warning  Critical  Warning   正常
-                       (発生)     (発生)     (維持)      (解消)
-                      Warning
-                       (維持)
+    
+    メトリック値:  60%     →      75%      →      92%      →      85%      →      60%
+    状態:          正常           Warning          Critical          Warning            正常
+                    (発生)             (発生)               (維持)               (解消)
+                                                                Warning
+                                                                   (維持)
     ```
-
+    
 :::note
 進行中のイベントは、条件が満たされている限りアクティブ状態を維持し、条件が解除されるまで継続します。
 :::
