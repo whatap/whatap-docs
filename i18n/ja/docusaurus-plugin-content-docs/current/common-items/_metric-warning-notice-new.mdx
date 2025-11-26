@@ -120,11 +120,28 @@
 
 #### <Cmdname sid="TTL07365" className="uitext" /> {#TTL07365}
 
-通知レベルを選択し、通知を発生させるイベントのしきい値を設定できます。
+アラートレベルを選択し、アラートを発生させるイベントのしきい値を設定できます。 **1つのルールで複数のレベル（Critical、Warning、Info）を設定することができます。**  
+効果的なモニタリングのためには、同じ指標に対して段階的なしきい値を設定することを推奨します。
 
 <ImgLang img="metric-warning-notice-new-set-metrics.png" desc="Indicator settings" />
 
-- 通知レベルは危険(<span className="vslow">Critical</span>)と警告(<span className="slow">Warning</span>)、正常(<span className="info">Info</span>)レベルで区分します。
+* アラートレベルは、重大 (<span className="vslow">Critical</span>)、警告 (<span className="slow">Warning</span>)、正常 (<span className="info">Info</span>) のレベルに区分されます。設定したレベルは優先順位に従って動作します。
+
+    :::tip
+
+    レベルの動作方式の詳細については、[レベル動作ガイド](#level-action-guide) を参照してください。
+
+    :::
+
+* 選択したカテゴリに含まれる指標を選択し、条件を入力してモニタリング基準を設定してください。算術演算、比較演算、論理演算を組み合わせて、希望する条件式を構成できます。
+
+    :::tip
+
+    条件式の作成方法および使用可能な演算子については、[条件設定ガイド](#condition-setting-guide) を参照してください。
+
+    :::
+
+{/*
 
 - <Cmdname sid="metrics_rule_select" className="uitext" />: フィールド名と演算子を選択し、値を入力してしきい値を設定します。 フィールド項目をクリックすると、メトリクスカテゴリに含まれるフィールドの一覧を確認できます。
 
@@ -156,7 +173,7 @@
 
 - <Cmdname sid="metrics_rule_select" className="uitext" />と<Cmdname sid="metrics_rule_direct" className="uitext" />オプション間の入力方式を変更すると、作成した内容が消えます。
 
-:::
+:::  */}
 
 #### <Cmdname sid="number_of_event" className="uitext" /> {#number_of_event}
 
