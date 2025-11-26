@@ -105,6 +105,13 @@
               "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Fixed issue where events were not triggered when adding an event using the composite metrics “CPU User % is too high” template under <span class=\"uitext\">Event Settings</span></p>"
           },
           {
+            "ver": "Service 2.23.0",
+            "hash": "service-2230",
+            "product": "Kubernetes",
+            "type": "Feature",
+            "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> Added search functionality to <span class=\"uitext\">List</span></p>"
+          },          
+          {
               "ver": "Service 2.23.0",
               "hash": "service-2230",
               "product": "Kubernetes",
