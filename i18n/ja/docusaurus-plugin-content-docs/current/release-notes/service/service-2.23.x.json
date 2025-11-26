@@ -55,6 +55,37 @@
               "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">新規アプリケーショントポロジー</span> サイドメニュー追加</p>"
           },
           {
+            "ver": "Service 2.23.0",
+            "hash": "service-2230",
+            "product": "Application",
+            "type": "Feature",
+            "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">マルチトランザクション</span> チャートの可視性改善</p>",
+            "details": "<ul>\n<li>エラートランザクションが表示されない問題を改善（チャートの色適用基準を実行時間からエラー／正常状態へ変更）</li>\n\n<li>ノードクリック時に関連項目を強調表示する機能を追加</li>\n\n<li>下部エリアにテーブルを追加</li>\n</ul>"
+        },
+        {
+            "ver": "Service 2.23.0",
+            "hash": "service-2230",
+            "product": "Application",
+            "type": "Feature",
+            "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">マルチトランザクション</span> チャートのインタラクション改善</p>",
+            "details": "<ul>\n<li>上下左右スクロールでチャート領域を移動可能</li>\n\n<li>Ctrlキーを押しながら上下スクロールで拡大／縮小が可能</li>\n\n<li>タッチパッドのピンチ操作で拡大／縮小が可能</li>\n</ul>"
+        },
+        {
+            "ver": "Service 2.23.0",
+            "hash": "service-2230",
+            "product": "Application",
+            "type": "Feature",
+            "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">マルチトランザクション</span> 全トランザクション数、エラートランザクション数、DB接続リクエスト数、外部呼び出し件数の表示を追加</p>"
+        },
+        {
+            "ver": "Service 2.23.0",
+            "hash": "service-2230",
+            "product": "Application",
+            "type": "Fixed",
+            "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">マルチトランザクション</span> チャートのバグ修正</p>",
+            "details": "<ul>\n<li>拡大／縮小操作時のカクつき現象を修正</li>\n\n<li>チャートクリック時に特定の位置へ瞬間移動してしまう問題を修正</li>\n</ul>"
+        },
+          {
               "ver": "Service 2.23.0",
               "hash": "service-2230",
               "product": "Application",

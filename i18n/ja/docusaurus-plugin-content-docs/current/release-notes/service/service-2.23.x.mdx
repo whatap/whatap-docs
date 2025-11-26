@@ -28,6 +28,30 @@
 
 - <Status priority='1'>Feature</Status> 新しい **アプリケーショントポロジー** サイドメニューを追加。
 
+- <Status priority='1'>Feature</Status> <Cmdname sid="multi_transaction" className="uitext" /> チャートの可視性を改善
+    
+    - エラートランザクションが表示されない問題を改善（チャートの色適用基準を実行時間ではなく、エラー／正常状態に変更）
+
+    - ノードクリック時に関連項目を強調表示する機能を追加
+
+    - 下部エリアにテーブルを追加
+        
+        - トランザクションの関係性と詳細情報を1画面で確認できるよう改善し、チャートとテーブルを上下に分離して比率調整が可能
+
+        - テーブルの行をクリックすると、チャート上で該当トランザクション位置へ移動し、関連項目が自動で強調表示される
+
+- <Status priority='1'>Feature</Status> <Cmdname sid="multi_transaction" className="uitext" /> チャートのインタラクション機能を改善
+
+    - 上下左右のスクロールでチャート領域を移動可能
+
+    - Ctrlキーを押しながら上下スクロールするとズームイン／ズームアウトが可能
+
+    - タッチパッド使用時、ピンチ操作でズームイン／ズームアウトが可能
+
+- <Status priority='1'>Feature</Status> <Cmdname sid="multi_transaction" className="uitext" /> 全トランザクション数、エラートランザクション数、データベース接続要求数、外部呼び出し数の表示を追加
+
+- <Status priority='0'>Fixed</Status> <Cmdname sid="multi_transaction" className="uitext" /> チャートの不具合を修正（ズームイン／ズームアウト時のカクつき、チャートクリックで移動する際に特定位置へ瞬間移動する問題）
+
 - <Status priority='0'>Fixed</Status> <Cmdname sid="sms_management" className="uitext" /> > <Cmdname sid="agent_list" className="uitext" /> にスクロールが表示されない問題を修正。
 
 - <Status priority='0'>Fixed</Status> <Cmdname sid="trace" className="uitext" /> > **HTTPC ステップ詳細** に HTTPC URL を追加。
@@ -52,7 +76,6 @@
 - <Status priority='1'>Feature</Status> <Cmdname sid="cloud_monitoring" className="uitext" /> > <Cmdname sid="sms_agent_setup" className="uitext" /> に Azure エージェント設定時のディメンション選択機能を追加。
 
 ### `Kubernetes`
-
 
 - <Status priority='1'>Feature</Status> <Cmdname sid="clm_dashboard_list" className="uitext" /> に検索機能を追加
 
