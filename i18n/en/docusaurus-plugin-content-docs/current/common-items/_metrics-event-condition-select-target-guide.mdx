@@ -196,15 +196,16 @@ isNotEmpty(Key)
 
 1. **Behavior Flow**
 
+    
     ```json
     - Warning: CPU > 70%
     - Critical: CPU > 90%
-
-    Metric Value: 60% → 75% → 92% → 85% → 60%
-    Status:       Normal  Warning  Critical  Warning  Normal
-                           (start)  (start)   (hold)     (end)
-                         Warning
-                          (hold)
+    
+    Metric Value:  60%     →      75%      →      92%      →      85%      →      60%
+    Status:          Normal           Warning          Critical          Warning            Normal
+                    (start)             (start)               (hold)               (end)
+                                                                Warning
+                                                                   (hold)
     ```
 
 :::note
