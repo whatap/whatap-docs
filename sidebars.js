@@ -253,21 +253,6 @@ const sidebars = {
               label: '이벤트 설정',
               collapsible: true,
               collapsed: true,
-              items: [
-                'java/warning-notice',
-                'java/metric-warning-notice',
-                'java/set-notification-message',
-                'java/hitmap-notice',
-                'java/set-event-detect-anomal',
-                'java/set-event-log',
-              ]
-            },
-            {
-              type: 'category',
-              label: '이벤트 설정',
-              collapsible: true,
-              collapsed: true,
-              className: 'newfunc',
               link: {
                 type: 'doc',
                 id: 'java/warning-notice-v2'
@@ -276,6 +261,21 @@ const sidebars = {
                 'java/basic-event-setting',
                 'java/metric-warning-notice-new',
                 'java/transaction-event-setting',
+              ]
+            },
+            {
+              type: 'category',
+              label: '이벤트 설정',
+              collapsible: true,
+              collapsed: true,
+              className: 'classicfunc',
+              items: [
+                'java/warning-notice',
+                'java/metric-warning-notice',
+                'java/set-notification-message',
+                'java/hitmap-notice',
+                'java/set-event-detect-anomal',
+                'java/set-event-log',
               ]
             },
             'java/set-receive-event',
@@ -519,21 +519,6 @@ const sidebars = {
               label: '이벤트 설정',
               collapsible: true,
               collapsed: true,
-              items: [
-                'php/warning-notice',
-                'php/metric-warning-notice',
-                'php/set-notification-message',
-                'php/hitmap-notice',
-                'php/set-event-detect-anomal',
-                'php/set-event-log',
-              ]
-            },
-            {
-              type: 'category',
-              label: '이벤트 설정',
-              collapsible: true,
-              collapsed: true,
-              className: 'newfunc',
               link: {
                 type: 'doc',
                 id: 'php/warning-notice-v2'
@@ -542,6 +527,21 @@ const sidebars = {
                 'php/basic-event-setting',
                 'php/metric-warning-notice-new',
                 'php/transaction-event-setting',
+              ]
+            },
+            {
+              type: 'category',
+              label: '이벤트 설정',
+              collapsible: true,
+              collapsed: true,
+              className: 'classicfunc',
+              items: [
+                'php/warning-notice',
+                'php/metric-warning-notice',
+                'php/set-notification-message',
+                'php/hitmap-notice',
+                'php/set-event-detect-anomal',
+                'php/set-event-log',
               ]
             },
             'php/set-receive-event',
@@ -761,20 +761,6 @@ const sidebars = {
               label: '이벤트 설정',
               collapsible: true,
               collapsed: true,
-              items: [
-                'nodejs/warning-notice',
-                'nodejs/metric-warning-notice',
-                'nodejs/set-notification-message',
-                'nodejs/hitmap-notice',
-                'nodejs/set-event-detect-anomal'
-              ]
-            },
-            {
-              type: 'category',
-              label: '이벤트 설정',
-              collapsible: true,
-              collapsed: true,
-              className: 'newfunc',
               link: {
                 type: 'doc',
                 id: 'nodejs/warning-notice-v2'
@@ -783,6 +769,20 @@ const sidebars = {
                 'nodejs/basic-event-setting',
                 'nodejs/metric-warning-notice-new',
                 'nodejs/transaction-event-setting',
+              ]
+            },
+            {
+              type: 'category',
+              label: '이벤트 설정',
+              collapsible: true,
+              collapsed: true,
+              className: 'classicfunc',
+              items: [
+                'nodejs/warning-notice',
+                'nodejs/metric-warning-notice',
+                'nodejs/set-notification-message',
+                'nodejs/hitmap-notice',
+                'nodejs/set-event-detect-anomal'
               ]
             },
             'nodejs/set-receive-event',
@@ -1009,21 +1009,6 @@ const sidebars = {
               label: '이벤트 설정',
               collapsible: true,
               collapsed: true,
-              items: [
-                'python/warning-notice',
-                'python/metric-warning-notice',
-                'python/set-notification-message',
-                'python/hitmap-notice',
-                'python/set-event-detect-anomal',
-                'python/set-event-log',
-              ]
-            },
-            {
-              type: 'category',
-              label: '이벤트 설정',
-              collapsible: true,
-              collapsed: true,
-              className: 'newfunc',
               link: {
                 type: 'doc',
                 id: 'python/warning-notice-v2'
@@ -1032,6 +1017,21 @@ const sidebars = {
                 'python/basic-event-setting',
                 'python/metric-warning-notice-new',
                 'python/transaction-event-setting',
+              ]
+            },
+            {
+              type: 'category',
+              label: '이벤트 설정',
+              collapsible: true,
+              collapsed: true,
+              className: 'classicfunc',
+              items: [
+                'python/warning-notice',
+                'python/metric-warning-notice',
+                'python/set-notification-message',
+                'python/hitmap-notice',
+                'python/set-event-detect-anomal',
+                'python/set-event-log',
               ]
             },
             'python/set-receive-event',
@@ -1257,20 +1257,6 @@ const sidebars = {
               label: '이벤트 설정',
               collapsible: true,
               collapsed: true,
-              items: [
-                'dotnet/warning-notice',
-                'dotnet/metric-warning-notice',
-                'dotnet/set-notification-message',
-                'dotnet/hitmap-notice',
-                'dotnet/set-event-detect-anomal'
-              ]
-            },
-            {
-              type: 'category',
-              label: '이벤트 설정',
-              collapsible: true,
-              collapsed: true,
-              className: 'newfunc',
               link: {
                 type: 'doc',
                 id: 'dotnet/warning-notice-v2'
@@ -1279,6 +1265,20 @@ const sidebars = {
                 'dotnet/basic-event-setting',
                 'dotnet/metric-warning-notice-new',
                 'dotnet/transaction-event-setting',
+              ]
+            },
+            {
+              type: 'category',
+              label: '이벤트 설정',
+              collapsible: true,
+              collapsed: true,
+              className: 'classicfunc',
+              items: [
+                'dotnet/warning-notice',
+                'dotnet/metric-warning-notice',
+                'dotnet/set-notification-message',
+                'dotnet/hitmap-notice',
+                'dotnet/set-event-detect-anomal'
               ]
             },
             'dotnet/set-receive-event',
@@ -1481,21 +1481,6 @@ const sidebars = {
               label: '이벤트 설정',
               collapsible: true,
               collapsed: true,
-              items: [
-                'golang/warning-notice',
-                'golang/metric-warning-notice',
-                'golang/set-notification-message',
-                'golang/hitmap-notice',
-                'golang/set-event-detect-anomal',
-                'golang/set-event-log',
-              ]
-            },
-            {
-              type: 'category',
-              label: '이벤트 설정',
-              collapsible: true,
-              collapsed: true,
-              className: 'newfunc',
               link: {
                 type: 'doc',
                 id: 'golang/warning-notice-v2'
@@ -1504,6 +1489,21 @@ const sidebars = {
                 'golang/basic-event-setting',
                 'golang/metric-warning-notice-new',
                 'golang/transaction-event-setting',
+              ]
+            },
+            {
+              type: 'category',
+              label: '이벤트 설정',
+              collapsible: true,
+              collapsed: true,
+              className: 'classicfunc',
+              items: [
+                'golang/warning-notice',
+                'golang/metric-warning-notice',
+                'golang/set-notification-message',
+                'golang/hitmap-notice',
+                'golang/set-event-detect-anomal',
+                'golang/set-event-log',
               ]
             },
             'golang/set-receive-event',
@@ -1679,7 +1679,6 @@ const sidebars = {
               label: '이벤트 설정',
               collapsible: true,
               collapsed: true,
-              className: 'newfunc',
               link: {
                 type: 'doc',
                 id: 'db2/warning-notice-v2'
@@ -1869,7 +1868,6 @@ const sidebars = {
               label: '이벤트 설정',
               collapsible: true,
               collapsed: true,
-              className: 'newfunc',
               link: {
                 type: 'doc',
                 id: 'sapase/warning-notice-v2'
@@ -2105,20 +2103,6 @@ const sidebars = {
               label: '이벤트 설정',
               collapsible: true,
               collapsed: true,
-              items: [
-                'postgresql/warning-notice',
-                'postgresql/metric-warning-notice',
-                'postgresql/set-notification-message',
-                'postgresql/set-event-detect-anomal',
-                'postgresql/set-event-log',
-              ]
-            },
-            {
-              type: 'category',
-              label: '이벤트 설정',
-              collapsible: true,
-              collapsed: true,
-              className: 'newfunc',
               link: {
                 type: 'doc',
                 id: 'postgresql/warning-notice-v2'
@@ -2126,6 +2110,20 @@ const sidebars = {
               items: [
                 'postgresql/basic-event-setting',
                 'postgresql/metric-warning-notice-new',
+              ]
+            },
+            {
+              type: 'category',
+              label: '이벤트 설정',
+              collapsible: true,
+              collapsed: true,
+              className: 'classicfunc',
+              items: [
+                'postgresql/warning-notice',
+                'postgresql/metric-warning-notice',
+                'postgresql/set-notification-message',
+                'postgresql/set-event-detect-anomal',
+                'postgresql/set-event-log',
               ]
             },
             'postgresql/set-receive-event',
@@ -2329,20 +2327,6 @@ const sidebars = {
               label: '이벤트 설정',
               collapsible: true,
               collapsed: true,
-              items: [
-                'oracle/warning-notice',
-                'oracle/metric-warning-notice',
-                'oracle/set-notification-message',
-                'oracle/set-event-detect-anomal',
-                'oracle/set-event-log',
-              ]
-            },
-            {
-              type: 'category',
-              label: '이벤트 설정',
-              collapsible: true,
-              collapsed: true,
-              className: 'newfunc',
               link: {
                 type: 'doc',
                 id: 'oracle/warning-notice-v2'
@@ -2350,6 +2334,20 @@ const sidebars = {
               items: [
                 'oracle/basic-event-setting',
                 'oracle/metric-warning-notice-new',
+              ]
+            },
+            {
+              type: 'category',
+              label: '이벤트 설정',
+              collapsible: true,
+              collapsed: true,
+              className: 'classicfunc',
+              items: [
+                'oracle/warning-notice',
+                'oracle/metric-warning-notice',
+                'oracle/set-notification-message',
+                'oracle/set-event-detect-anomal',
+                'oracle/set-event-log',
               ]
             },
             'oracle/set-receive-event',
@@ -2550,7 +2548,6 @@ const sidebars = {
               label: '이벤트 설정',
               collapsible: true,
               collapsed: true,
-              className: 'newfunc',
               link: {
                 type: 'doc',
                 id: 'oracle-pro/warning-notice-v2'
@@ -2786,20 +2783,6 @@ const sidebars = {
               label: '이벤트 설정',
               collapsible: true,
               collapsed: true,
-              items: [
-                'mysql/warning-notice',
-                'mysql/metric-warning-notice',
-                'mysql/set-notification-message',
-                'mysql/set-event-detect-anomal',
-                'mysql/set-event-log',
-              ]
-            },
-            {
-              type: 'category',
-              label: '이벤트 설정',
-              collapsible: true,
-              collapsed: true,
-              className: 'newfunc',
               link: {
                 type: 'doc',
                 id: 'mysql/warning-notice-v2'
@@ -2807,6 +2790,20 @@ const sidebars = {
               items: [
                 'mysql/basic-event-setting',
                 'mysql/metric-warning-notice-new',
+              ]
+            },
+            {
+              type: 'category',
+              label: '이벤트 설정',
+              collapsible: true,
+              collapsed: true,
+              className: 'classicfunc',
+              items: [
+                'mysql/warning-notice',
+                'mysql/metric-warning-notice',
+                'mysql/set-notification-message',
+                'mysql/set-event-detect-anomal',
+                'mysql/set-event-log',
               ]
             },
             'mysql/set-receive-event',
@@ -3017,20 +3014,6 @@ const sidebars = {
               label: '이벤트 설정',
               collapsible: true,
               collapsed: true,
-              items: [
-                'mssql/warning-notice',
-                'mssql/metric-warning-notice',
-                'mssql/set-notification-message',
-                'mssql/set-event-detect-anomal',
-                'mssql/set-event-log',
-              ]
-            },
-            {
-              type: 'category',
-              label: '이벤트 설정',
-              collapsible: true,
-              collapsed: true,
-              className: 'newfunc',
               link: {
                 type: 'doc',
                 id: 'mssql/warning-notice-v2'
@@ -3038,6 +3021,20 @@ const sidebars = {
               items: [
                 'mssql/basic-event-setting',
                 'mssql/metric-warning-notice-new',
+              ]
+            },
+            {
+              type: 'category',
+              label: '이벤트 설정',
+              collapsible: true,
+              collapsed: true,
+              className: 'classicfunc',
+              items: [
+                'mssql/warning-notice',
+                'mssql/metric-warning-notice',
+                'mssql/set-notification-message',
+                'mssql/set-event-detect-anomal',
+                'mssql/set-event-log',
               ]
             },
             'mssql/set-receive-event',
@@ -3196,19 +3193,6 @@ const sidebars = {
               label: '이벤트 설정',
               collapsible: true,
               collapsed: true,
-              items: [
-                'tibero/warning-notice',
-                'tibero/metric-warning-notice',
-                'tibero/set-notification-message',
-                'tibero/set-event-detect-anomal'
-              ]
-            },
-            {
-              type: 'category',
-              label: '이벤트 설정',
-              collapsible: true,
-              collapsed: true,
-              className: 'newfunc',
               link: {
                 type: 'doc',
                 id: 'tibero/warning-notice-v2'
@@ -3216,6 +3200,19 @@ const sidebars = {
               items: [
                 'tibero/basic-event-setting',
                 'tibero/metric-warning-notice-new',
+              ]
+            },
+            {
+              type: 'category',
+              label: '이벤트 설정',
+              collapsible: true,
+              collapsed: true,
+              className: 'classicfunc',
+              items: [
+                'tibero/warning-notice',
+                'tibero/metric-warning-notice',
+                'tibero/set-notification-message',
+                'tibero/set-event-detect-anomal'
               ]
             },
             'tibero/set-receive-event',
@@ -3399,20 +3396,6 @@ const sidebars = {
               label: '이벤트 설정',
               collapsible: true,
               collapsed: true,
-              items: [
-                'cubrid/warning-notice',
-                'cubrid/metric-warning-notice',
-                'cubrid/set-notification-message',
-                'cubrid/set-event-detect-anomal',
-                'cubrid/set-event-log',
-              ]
-            },
-            {
-              type: 'category',
-              label: '이벤트 설정',
-              collapsible: true,
-              collapsed: true,
-              className: 'newfunc',
               link: {
                 type: 'doc',
                 id: 'cubrid/warning-notice-v2'
@@ -3420,6 +3403,20 @@ const sidebars = {
               items: [
                 'cubrid/basic-event-setting',
                 'cubrid/metric-warning-notice-new',
+              ]
+            },
+            {
+              type: 'category',
+              label: '이벤트 설정',
+              collapsible: true,
+              collapsed: true,
+              className: 'classicfunc',
+              items: [
+                'cubrid/warning-notice',
+                'cubrid/metric-warning-notice',
+                'cubrid/set-notification-message',
+                'cubrid/set-event-detect-anomal',
+                'cubrid/set-event-log',
               ]
             },
             'cubrid/set-receive-event',
@@ -3600,20 +3597,6 @@ const sidebars = {
               label: '이벤트 설정',
               collapsible: true,
               collapsed: true,
-              items: [
-                'altibase/warning-notice',
-                'altibase/metric-warning-notice',
-                'altibase/set-notification-message',
-                'altibase/set-event-detect-anomal',
-                'altibase/set-event-log',
-              ]
-            },
-            {
-              type: 'category',
-              label: '이벤트 설정',
-              collapsible: true,
-              collapsed: true,
-              className: 'newfunc',
               link: {
                 type: 'doc',
                 id: 'altibase/warning-notice-v2'
@@ -3621,6 +3604,20 @@ const sidebars = {
               items: [
                 'altibase/basic-event-setting',
                 'altibase/metric-warning-notice-new',
+              ]
+            },
+            {
+              type: 'category',
+              label: '이벤트 설정',
+              collapsible: true,
+              collapsed: true,
+              className: 'classicfunc',
+              items: [
+                'altibase/warning-notice',
+                'altibase/metric-warning-notice',
+                'altibase/set-notification-message',
+                'altibase/set-event-detect-anomal',
+                'altibase/set-event-log',
               ]
             },
             'altibase/set-receive-event',
@@ -3801,7 +3798,7 @@ const sidebars = {
               label: '이벤트 설정',
               collapsible: true,
               collapsed: true,
-              className: 'newfunc',
+              className: 'classicfunc',
               link: {
                 type: 'doc',
                 id: 'redis/warning-notice-v2'
@@ -3988,19 +3985,6 @@ const sidebars = {
               label: '이벤트 설정',
               collapsible: true,
               collapsed: true,
-              items: [
-                'mongodb/metric-warning-notice',
-                'mongodb/set-notification-message',
-                'mongodb/set-event-detect-anomal',
-                'mongodb/set-event-log',
-              ]
-            },
-            {
-              type: 'category',
-              label: '이벤트 설정',
-              collapsible: true,
-              collapsed: true,
-              className: 'newfunc',
               link: {
                 type: 'doc',
                 id: 'mongodb/warning-notice-v2'
@@ -4008,6 +3992,19 @@ const sidebars = {
               items: [
                 'mongodb/basic-event-setting',
                 'mongodb/metric-warning-notice-new',
+              ]
+            },
+            {
+              type: 'category',
+              label: '이벤트 설정',
+              collapsible: true,
+              collapsed: true,
+              className: 'classicfunc',
+              items: [
+                'mongodb/metric-warning-notice',
+                'mongodb/set-notification-message',
+                'mongodb/set-event-detect-anomal',
+                'mongodb/set-event-log',
               ]
             },
             'mongodb/set-receive-event',
@@ -4107,16 +4104,6 @@ const sidebars = {
               label: '이벤트 설정',
               collapsible: true,
               collapsed: true,
-              items: [
-                'npm/metric-warning-notice'
-              ]
-            },
-            {
-              type: 'category',
-              label: '이벤트 설정',
-              collapsible: true,
-              collapsed: true,
-              className: 'newfunc',
               link: {
                 type: 'doc',
                 id: 'npm/warning-notice-v2'
@@ -4124,6 +4111,16 @@ const sidebars = {
               items: [
                 'npm/basic-event-setting',
                 'npm/metric-warning-notice-new'
+              ]
+            },
+            {
+              type: 'category',
+              label: '이벤트 설정',
+              collapsible: true,
+              collapsed: true,
+              className: 'classicfunc',
+              items: [
+                'npm/metric-warning-notice'
               ]
             },
             'npm/set-receive-event',
@@ -6127,17 +6124,6 @@ const sidebars = {
               label: '이벤트 설정',
               collapsible: true,
               collapsed: true,
-              items: [
-                'browser/metric-warning-notice',
-                'browser/hitmap-notice'
-              ]
-            },
-            {
-              type: 'category',
-              label: '이벤트 설정',
-              collapsible: true,
-              collapsed: true,
-              className: 'newfunc',
               link: {
                 type: 'doc',
                 id: 'browser/warning-notice-v2'
@@ -6145,6 +6131,17 @@ const sidebars = {
               items: [
                 'browser/basic-event-setting',
                 'browser/metric-warning-notice-new'
+              ]
+            },
+            {
+              type: 'category',
+              label: '이벤트 설정',
+              collapsible: true,
+              collapsed: true,
+              className: 'classicfunc',
+              items: [
+                'browser/metric-warning-notice',
+                'browser/hitmap-notice'
               ]
             },
             'browser/set-receive-event',
@@ -6468,20 +6465,6 @@ const sidebars = {
               label: '이벤트 설정',
               collapsible: true,
               collapsed: true,
-              items: [
-                'server/warning-notice',
-                'server/metric-warning-notice',
-                'server/set-notification-message',
-                'server/set-event-detect-anomal',
-                'server/set-event-log',
-              ]
-            }, 
-            {
-              type: 'category',
-              label: '이벤트 설정',
-              collapsible: true,
-              collapsed: true,
-              className: 'newfunc',
               link: {
                 type: 'doc',
                 id: 'server/warning-notice-v2',
@@ -6490,6 +6473,20 @@ const sidebars = {
                 // 'server/warning-notice-v2',
                 'server/basic-event-setting',
                 'server/metric-warning-notice-new',
+              ]
+            }, 
+            {
+              type: 'category',
+              label: '이벤트 설정',
+              collapsible: true,
+              collapsed: true,
+              className: 'classicfunc',
+              items: [
+                'server/warning-notice',
+                'server/metric-warning-notice',
+                'server/set-notification-message',
+                'server/set-event-detect-anomal',
+                'server/set-event-log',
               ]
             }, 
             'server/set-receive-event',
@@ -7001,21 +6998,6 @@ const sidebars = {
               label: '이벤트 설정',
               collapsible: true,
               collapsed: true,
-              items: [
-                'kubernetes/container-warning-notice',
-                'kubernetes/metric-warning-notice',
-                'kubernetes/set-notification-message',
-                'kubernetes/hitmap-notice',
-                'kubernetes/set-event-detect-anomal',
-                'kubernetes/set-event-log',
-              ]
-            },
-            {
-              type: 'category',
-              label: '이벤트 설정',
-              collapsible: true,
-              collapsed: true,
-              className: 'newfunc',
               link: {
                 type: 'doc',
                 id: 'kubernetes/warning-notice-v2',
@@ -7024,6 +7006,21 @@ const sidebars = {
                 'kubernetes/basic-event-setting',
                 'kubernetes/metric-warning-notice-new',
                 'kubernetes/transaction-event-setting',
+              ]
+            },
+            {
+              type: 'category',
+              label: '이벤트 설정',
+              collapsible: true,
+              collapsed: true,
+              className: 'classicfunc',
+              items: [
+                'kubernetes/container-warning-notice',
+                'kubernetes/metric-warning-notice',
+                'kubernetes/set-notification-message',
+                'kubernetes/hitmap-notice',
+                'kubernetes/set-event-detect-anomal',
+                'kubernetes/set-event-log',
               ]
             },
             'kubernetes/set-receive-event',
