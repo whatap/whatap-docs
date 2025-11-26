@@ -1,206 +1,227 @@
 [
-    {
+  {
       "url": "https://docs.whatap.io/release-notes/service/service-2_23_x",
       "ver": "Service 2.23.0",
       "date": "2025-11-26",
       "Lists": [
-        {
-          "ver": "Service 2.23.0",
-          "hash": "service-2230",
-          "product": "共通",
-          "type": "Feature",
-          "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">Flex ボード</span> テーブルウィジェットに CSV ダウンロードボタンを追加</p>"
-        },
-        {
-          "ver": "Service 2.23.0",
-          "hash": "service-2230",
-          "product": "共通",
-          "type": "Changed",
-          "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> <span class=\"uitext\">警告通知</span> メニュー名を変更</p>",
-          "details": "<ul>\n<li><span class=\"uitext\">警告通知</span> &gt; <span class=\"uitext\">イベント設定</span> → <span class=\"uitext\">イベント設定</span> <code>Classic</code></li>\n\n<li><span class=\"uitext\">警告通知</span> &gt; <span class=\"uitext\">イベント設定</span> <code class=\"newfunc\">New</code> → <span class=\"uitext\">イベント設定</span></li>\n</ul>"
-        },
-        {
-          "ver": "Service 2.23.0",
-          "hash": "service-2230",
-          "product": "共通",
-          "type": "Changed",
-          "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> <span class=\"uitext\">警告通知</span> &gt; <span class=\"uitext\">イベント設定</span> 基本タブとメトリクスタブを統合</p>"
-        },
-        {
-          "ver": "Service 2.23.0",
-          "hash": "service-2230",
-          "product": "共通",
-          "type": "Changed",
-          "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> ユーザー表示グループの権限がない場合、「権限なし」案内ページを経由してアクセス可能なページに移動できるよう改善</p>"
-        },
-        {
-          "ver": "Service 2.23.0",
-          "hash": "service-2230",
-          "product": "共通",
-          "type": "Changed",
-          "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> <span class=\"uitext\">メンテナンス計画</span> に ICMP Feature 製品を表示</p>"
-        },
-        {
-          "ver": "Service 2.23.0",
-          "hash": "service-2230",
-          "product": "共通",
-          "type": "Fixed",
-          "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">利用明細</span> &gt; <span class=\"uitext\">決済情報</span> 請求書受信メールが修正できない問題を修正</p>"
-        },
-        {
-          "ver": "Service 2.23.0",
-          "hash": "service-2230",
-          "product": "Application",
-          "type": "Feature",
-          "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">新しいアプリケーショントポロジー</span> をサイドメニューに追加</p>"
-        },
-        {
-          "ver": "Service 2.23.0",
-          "hash": "service-2230",
-          "product": "Application",
-          "type": "Fixed",
-          "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">管理</span> &gt; <span class=\"uitext\">エージェント一覧</span> でスクロールが表示されない問題を修正</p>"
-        },
-        {
-          "ver": "Service 2.23.0",
-          "hash": "service-2230",
-          "product": "Application",
-          "type": "Fixed",
-          "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">トレース</span> &gt; <span class=\"uitext\">HTTPC ステップ詳細</span> に HTTPC URL を追加</p>"
-        },
-        {
-          "ver": "Service 2.23.0",
-          "hash": "service-2230",
-          "product": "Server",
-          "type": "Feature",
-          "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">サーバー一覧</span> のフィルタに状態カラムのフィルタリングオプションを追加</p>"
-        },
-        {
-          "ver": "Service 2.23.0",
-          "hash": "service-2230",
-          "product": "Server",
-          "type": "Feature",
-          "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">GPU パフォーマンスサマリー</span></p>",
-          "details": "<ul>\n<li>GPU 情報検索用 Input を追加</li>\n\n<li>テーブルのデータ件数を表示するよう改善</li>\n</ul>"
-        },
-        {
-          "ver": "Service 2.23.0",
-          "hash": "service-2230",
-          "product": "Server",
-          "type": "Feature",
-          "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">サーバーモニタリング</span> &gt; <span class=\"uitext\">クラウドモニタリング</span> Azure エージェント設定時にディメンション選択機能を追加</p>"
-        },
-        {
-          "ver": "Service 2.23.0",
-          "hash": "service-2230",
-          "product": "Server",
-          "type": "Fixed",
-          "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">サーバー詳細</span> プロセステーブルの CPU チャート tooltip が小数点値を表示するよう修正、Process I/O チャート tooltip に単位変換および単位を追加</p>"
-        },
-        {
-          "ver": "Service 2.23.0",
-          "hash": "service-2230",
-          "product": "Server",
-          "type": "Fixed",
-          "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">イベント設定</span> 複合メトリクス “CPU User % is too high” テンプレートでイベントが発生しない問題を修正</p>"
-        },
-        {
-          "ver": "Service 2.23.0",
-          "hash": "service-2230",
-          "product": "Kubernetes",
-          "type": "Feature",
-          "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> レポート選択リストにレポート製品タイプのプレフィックスを追加し、並び順を改善</p>"
-        },
-        {
-          "ver": "Service 2.23.0",
-          "hash": "service-2230",
-          "product": "Kubernetes",
-          "type": "Fixed",
-          "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">アプリケーション</span> &gt; <span class=\"uitext\">分析</span> &gt; <span class=\"uitext\">マルチサービスヒットマップ</span> でドラッグした OKIND に含まれていないエージェントが表示される問題を修正</p>"
-        },
-        {
-          "ver": "Service 2.23.0",
-          "hash": "service-2230",
-          "product": "Kubernetes",
-          "type": "Fixed",
-          "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">サービスネットワーキング</span> &gt; <span class=\"uitext\">Ingress 一覧</span> の詳細で一部の Pod 情報が表示されない問題を修正</p>"
-        },
-        {
-          "ver": "Service 2.23.0",
-          "hash": "service-2230",
-          "product": "Database",
-          "type": "Changed",
-          "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> <span class=\"uitext\">ダッシュボード</span> &gt; <span class=\"uitext\">インスタンスマップ</span> 閾値設定モードの UI を改善</p>"
-        },
-        {
-          "ver": "Service 2.23.0",
-          "hash": "service-2230",
-          "product": "Database",
-          "type": "Fixed",
-          "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">SQL 統計</span>, <span class=\"uitext\">Top SQL</span> 横スクロール時に SQL 文が固定されるよう修正</p>"
-        },
-        {
-          "ver": "Service 2.23.0",
-          "hash": "service-2230",
-          "product": "Database",
-          "type": "Fixed",
-          "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">分析</span> &gt; <span class=\"uitext\">データベースパラメータ</span> 多言語対応を適用</p>"
-        },
-        {
-          "ver": "Service 2.23.0",
-          "hash": "service-2230",
-          "product": "Database",
-          "category": "MySQL, PostgreSQL",
-          "type": "Changed",
-          "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> <span class=\"uitext\">ダッシュボード</span> &gt; <span class=\"uitext\">インスタンスモニタリング</span> <code class=\"newfunc\">New</code> ウィジェットリストを改善</p>"
-        },
-        {
-          "ver": "Service 2.23.0",
-          "hash": "service-2230",
-          "product": "Database",
-          "category": "Oracle, Oracle Pro",
-          "type": "Feature",
-          "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">ダッシュボード</span> &gt; <span class=\"uitext\">インスタンスモニタリング</span> <code class=\"newfunc\">New</code> セッションテーブルにパラレルクエリツリーを確認できるタブを追加</p>"
-        },
-        {
-          "ver": "Service 2.23.0",
-          "hash": "service-2230",
-          "product": "Database",
-          "category": "Oracle, Oracle Pro",
-          "type": "Changed",
-          "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> <span class=\"uitext\">ダッシュボード</span> Wait Class ウィジェットの詳細を最大 21 件まで表示可能にし、期間に応じて統計データを使用するよう変更</p>"
-        },
-        {
-          "ver": "Service 2.23.0",
-          "hash": "service-2230",
-          "product": "Database",
-          "category": "Oracle Pro",
-          "type": "Feature",
-          "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">管理</span> &gt; <span class=\"uitext\">エージェント一覧</span> にエージェント一時停止機能を追加</p>"
-        },
-        {
-          "ver": "Service 2.23.0",
-          "hash": "service-2230",
-          "product": "Database",
-          "category": "Oracle Pro",
-          "type": "Changed",
-          "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> <span class=\"uitext\">ロックツリー</span> データ照会を改善</p>"
-        },
-        {
-          "ver": "Service 2.23.0",
-          "hash": "service-2230",
-          "product": "Database",
-          "category": "PostgreSQL",
-          "type": "Feature",
-          "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">分析</span> &gt; <span class=\"uitext\">Top オブジェクト</span> の Scan > Table に scan_count と scan_ratio カラムを追加</p>"
-        },
-        {
-          "ver": "Service 2.23.0",
-          "hash": "service-2230",
-          "product": "Log",
-          "type": "Fixed",
-          "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">ログエクスプローラー</span> クエリお気に入りが動作しない問題を修正</p>"
-        }
+          {
+              "ver": "Service 2.23.0",
+              "hash": "service-2230",
+              "product": "共通",
+              "type": "Feature",
+              "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">Flexボード</span> テーブルウィジェットにCSVダウンロードボタンを追加</p>"
+          },
+          {
+              "ver": "Service 2.23.0",
+              "hash": "service-2230",
+              "product": "共通",
+              "type": "Changed",
+              "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> <span class=\"uitext\">警告通知</span> メニュー名変更</p>",
+              "details": "<ul>\n<li><span class=\"uitext\">警告通知</span> &gt; <span class=\"uitext\">イベント設定</span> → <span class=\"uitext\">イベント設定</span> <code>Classic</code></li>\n\n<li><span class=\"uitext\">警告通知</span> &gt; <span class=\"uitext\">イベント設定</span> <code class=\"newfunc\">New</code> → <span class=\"uitext\">イベント設定</span></li>\n</ul>"
+          },
+          {
+              "ver": "Service 2.23.0",
+              "hash": "service-2230",
+              "product": "共通",
+              "type": "Changed",
+              "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> <span class=\"uitext\">警告通知</span> &gt; <span class=\"uitext\">イベント設定</span> 基本タブとメトリクスタブを統合</p>"
+          },
+          {
+              "ver": "Service 2.23.0",
+              "hash": "service-2230",
+              "product": "共通",
+              "type": "Changed",
+              "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> ユーザー表示グループ設定権限がない場合、「権限なし」案内ページを経由してアクセス可能なページへ移動できるよう改善</p>"
+          },
+          {
+              "ver": "Service 2.23.0",
+              "hash": "service-2230",
+              "product": "共通",
+              "type": "Changed",
+              "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> <span class=\"uitext\">メンテナンス計画</span> にICMP Feature製品も表示</p>"
+          },
+          {
+              "ver": "Service 2.23.0",
+              "hash": "service-2230",
+              "product": "共通",
+              "type": "Fixed",
+              "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">利用履歴</span> &gt; <span class=\"uitext\">決済情報</span> 請求書受信メールが修正できない問題を修正</p>"
+          },
+          {
+              "ver": "Service 2.23.0",
+              "hash": "service-2230",
+              "product": "Application",
+              "type": "Feature",
+              "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">新規アプリケーショントポロジー</span> サイドメニュー追加</p>"
+          },
+          {
+              "ver": "Service 2.23.0",
+              "hash": "service-2230",
+              "product": "Application",
+              "type": "Fixed",
+              "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">管理</span> &gt; <span class=\"uitext\">エージェント一覧</span> スクロールが表示されない問題を修正</p>"
+          },
+          {
+              "ver": "Service 2.23.0",
+              "hash": "service-2230",
+              "product": "Application",
+              "type": "Fixed",
+              "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">トレース</span> &gt; <span class=\"uitext\">HTTPCステップ詳細</span> HTTPC URLを追加</p>"
+          },
+          {
+              "ver": "Service 2.23.0",
+              "hash": "service-2230",
+              "product": "Server",
+              "type": "Feature",
+              "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">サーバー一覧</span> フィルターに状態カラム値を選択できるオプションを追加</p>"
+          },
+          {
+              "ver": "Service 2.23.0",
+              "hash": "service-2230",
+              "product": "Server",
+              "type": "Feature",
+              "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">GPU パフォーマンスサマリー</span></p>",
+              "details": "<ul>\n<li>GPU情報検索Input追加</li>\n<li>照会テーブルのデータ件数表示を改善</li>\n</ul>"
+          },
+          {
+              "ver": "Service 2.23.0",
+              "hash": "service-2230",
+              "product": "Server",
+              "type": "Feature",
+              "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">サーバーモニタリング</span> &gt; <span class=\"uitext\">クラウドモニタリング</span> Azureエージェント設定時にディメンション選択機能を追加</p>"
+          },
+          {
+              "ver": "Service 2.23.0",
+              "hash": "service-2230",
+              "product": "Server",
+              "type": "Fixed",
+              "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">サーバー詳細</span> プロセステーブルのCPUチャートツールチップに小数点が表示されるよう修正、プロセスI/Oチャートツールチップに単位変換および単位表示を追加</p>"
+          },
+          {
+              "ver": "Service 2.23.0",
+              "hash": "service-2230",
+              "product": "Server",
+              "type": "Fixed",
+              "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">イベント設定</span> 複合メトリクス “CPU User % is too high” テンプレートでイベント追加時、イベントが発生しない問題を修正</p>"
+          },
+          {
+              "ver": "Service 2.23.0",
+              "hash": "service-2230",
+              "product": "Kubernetes",
+              "type": "Feature",
+              "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> レポート選択リストにレポート製品タイプをプレフィックスとして追加し並べ替え</p>"
+          },
+          {
+              "ver": "Service 2.23.0",
+              "hash": "service-2230",
+              "product": "Kubernetes",
+              "type": "Feature",
+              "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">GPU</span> &gt; <span class=\"uitext\">GPUトレンド</span> 期間の直接設定オプションを追加</p>"
+          },
+          {
+              "ver": "Service 2.23.0",
+              "hash": "service-2230",
+              "product": "Kubernetes",
+              "type": "Changed",
+              "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> <span class=\"uitext\">GPU</span> &gt; <span class=\"uitext\">GPUトレンド</span> フィルター検索でワイルドカード(*)が使用可能に変更</p>"
+          },
+          {
+              "ver": "Service 2.23.0",
+              "hash": "service-2230",
+              "product": "Kubernetes",
+              "type": "Fixed",
+              "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">アプリケーション</span> &gt; <span class=\"uitext\">分析</span> &gt; <span class=\"uitext\">マルチサービスヒートマップ</span> で、ドラッグしたOKINDに含まれないエージェントがリストに表示される問題を修正</p>"
+          },
+          {
+              "ver": "Service 2.23.0",
+              "hash": "service-2230",
+              "product": "Kubernetes",
+              "type": "Fixed",
+              "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">サービスネットワーキング</span> &gt; <span class=\"uitext\">Ingress一覧</span> の詳細で一部Pod情報が表示されない問題を修正</p>"
+          },
+          {
+              "ver": "Service 2.23.0",
+              "hash": "service-2230",
+              "product": "Kubernetes",
+              "type": "Fixed",
+              "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">ワークロード</span> &gt; <span class=\"uitext\">Pod一覧</span> Deviceカラムのソートが動作しない問題を修正</p>"
+          },
+          {
+              "ver": "Service 2.23.0",
+              "hash": "service-2230",
+              "product": "Database",
+              "type": "Changed",
+              "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> <span class=\"uitext\">ダッシュボード</span> &gt; <span class=\"uitext\">インスタンスマップ</span> しきい値設定モードのUI改善</p>"
+          },
+          {
+              "ver": "Service 2.23.0",
+              "hash": "service-2230",
+              "product": "Database",
+              "type": "Fixed",
+              "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">SQL統計</span>, <span class=\"uitext\">Top SQL</span> 水平スクロール時にSQL文が固定されるよう修正</p>"
+          },
+          {
+              "ver": "Service 2.23.0",
+              "hash": "service-2230",
+              "product": "Database",
+              "type": "Fixed",
+              "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">分析</span> &gt; <span class=\"uitext\">データベースパラメータ</span> 多言語対応</p>"
+          },
+          {
+              "ver": "Service 2.23.0",
+              "hash": "service-2230",
+              "product": "Database",
+              "category": "MySQL, PostgreSQL",
+              "type": "Changed",
+              "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> <span class=\"uitext\">ダッシュボード</span> &gt; <span class=\"uitext\">インスタンスモニタリング</span> <code class=\"newfunc\">New</code> ウィジェットリスト改善</p>"
+          },
+          {
+              "ver": "Service 2.23.0",
+              "hash": "service-2230",
+              "product": "Database",
+              "category": "Oracle, Oracle Pro",
+              "type": "Feature",
+              "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">ダッシュボード</span> &gt; <span class=\"uitext\">インスタンスモニタリング</span> <code class=\"newfunc\">New</code> セッションテーブルに並列クエリツリーを確認できるタブを追加</p>"
+          },
+          {
+              "ver": "Service 2.23.0",
+              "hash": "service-2230",
+              "product": "Database",
+              "category": "Oracle, Oracle Pro",
+              "type": "Changed",
+              "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> <span class=\"uitext\">ダッシュボード</span> Wait Classウィジェットの詳細で最大21まで照会されるよう変更し、照会期間に応じて統計データを使用するよう変更</p>"
+          },
+          {
+              "ver": "Service 2.23.0",
+              "hash": "service-2230",
+              "product": "Database",
+              "category": "Oracle Pro",
+              "type": "Feature",
+              "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">管理</span> &gt; <span class=\"uitext\">エージェント一覧</span> エージェント一時停止機能を追加</p>"
+          },
+          {
+              "ver": "Service 2.23.0",
+              "hash": "service-2230",
+              "product": "Database",
+              "category": "Oracle Pro",
+              "type": "Changed",
+              "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> <span class=\"uitext\">ロックツリー</span> データ照会改善</p>"
+          },
+          {
+              "ver": "Service 2.23.0",
+              "hash": "service-2230",
+              "product": "Database",
+              "category": "PostgreSQL",
+              "type": "Feature",
+              "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">分析</span> &gt; <span class=\"uitext\">Topオブジェクト</span> ScanのTableテーブルにscan_count、scan_ratioカラム追加</p>"
+          },
+          {
+              "ver": "Service 2.23.0",
+              "hash": "service-2230",
+              "product": "Log",
+              "type": "Fixed",
+              "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">ログエクスプローラ</span> お気に入りクエリが動作しない問題を修正</p>"
+          }
       ]
-    }
-  ]  
+  }
+]

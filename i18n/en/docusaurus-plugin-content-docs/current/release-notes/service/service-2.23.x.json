@@ -1,206 +1,227 @@
 [
-    {
+  {
       "url": "https://docs.whatap.io/release-notes/service/service-2_23_x",
       "ver": "Service 2.23.0",
       "date": "2025-11-26",
       "Lists": [
-        {
-          "ver": "Service 2.23.0",
-          "hash": "service-2230",
-          "product": "Common",
-          "type": "Feature",
-          "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">Flex Board</span> Added CSV download button to table widget</p>"
-        },
-        {
-          "ver": "Service 2.23.0",
-          "hash": "service-2230",
-          "product": "Common",
-          "type": "Changed",
-          "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> <span class=\"uitext\">Alert Notification</span> Menu name changed</p>",
-          "details": "<ul>\n<li><span class=\"uitext\">Alert Notification</span> &gt; <span class=\"uitext\">Event Settings</span> → <span class=\"uitext\">Event Settings</span> <code>Classic</code></li>\n\n<li><span class=\"uitext\">Alert Notification</span> &gt; <span class=\"uitext\">Event Settings</span> <code class=\"newfunc\">New</code> → <span class=\"uitext\">Event Settings</span></li>\n</ul>"
-        },
-        {
-          "ver": "Service 2.23.0",
-          "hash": "service-2230",
-          "product": "Common",
-          "type": "Changed",
-          "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> <span class=\"uitext\">Alert Notification</span> &gt; <span class=\"uitext\">Event Settings</span> Basic and Metrics tabs merged</p>"
-        },
-        {
-          "ver": "Service 2.23.0",
-          "hash": "service-2230",
-          "product": "Common",
-          "type": "Changed",
-          "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> Improved behavior so that users without Display Group permissions are guided through a 'No Permission' page and redirected to an accessible page</p>"
-        },
-        {
-          "ver": "Service 2.23.0",
-          "hash": "service-2230",
-          "product": "Common",
-          "type": "Changed",
-          "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> <span class=\"uitext\">Maintenance Plan</span> Now displays ICMP Feature products</p>"
-        },
-        {
-          "ver": "Service 2.23.0",
-          "hash": "service-2230",
-          "product": "Common",
-          "type": "Fixed",
-          "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">Usage History</span> &gt; <span class=\"uitext\">Payment Information</span> Fixed issue where billing email could not be edited</p>"
-        },
-        {
-          "ver": "Service 2.23.0",
-          "hash": "service-2230",
-          "product": "Application",
-          "type": "Feature",
-          "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">New Application Topology</span> Added to side menu</p>"
-        },
-        {
-          "ver": "Service 2.23.0",
-          "hash": "service-2230",
-          "product": "Application",
-          "type": "Fixed",
-          "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">Management</span> &gt; <span class=\"uitext\">Agent List</span> Fixed issue where scrollbar did not appear</p>"
-        },
-        {
-          "ver": "Service 2.23.0",
-          "hash": "service-2230",
-          "product": "Application",
-          "type": "Fixed",
-          "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">Trace</span> &gt; <span class=\"uitext\">HTTPC Step Details</span> Added HTTPC URL</p>"
-        },
-        {
-          "ver": "Service 2.23.0",
-          "hash": "service-2230",
-          "product": "Server",
-          "type": "Feature",
-          "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">Server List</span> Added status column filtering options</p>"
-        },
-        {
-          "ver": "Service 2.23.0",
-          "hash": "service-2230",
-          "product": "Server",
-          "type": "Feature",
-          "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">GPU Performance Summary</span></p>",
-          "details": "<ul>\n<li>Added GPU information search input</li>\n\n<li>Improved to display total number of retrieved table rows</li>\n</ul>"
-        },
-        {
-          "ver": "Service 2.23.0",
-          "hash": "service-2230",
-          "product": "Server",
-          "type": "Feature",
-          "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">Server Monitoring</span> &gt; <span class=\"uitext\">Cloud Monitoring</span> Added ability to select dimensions when configuring Azure agents</p>"
-        },
-        {
-          "ver": "Service 2.23.0",
-          "hash": "service-2230",
-          "product": "Server",
-          "type": "Fixed",
-          "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">Server Detail</span> Fixed CPU chart tooltip to show decimal values and updated Process I/O tooltip to show proper units</p>"
-        },
-        {
-          "ver": "Service 2.23.0",
-          "hash": "service-2230",
-          "product": "Server",
-          "type": "Fixed",
-          "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">Event Settings</span> Fixed issue where events did not trigger when using the “CPU User % is too high” composite metrics template</p>"
-        },
-        {
-          "ver": "Service 2.23.0",
-          "hash": "service-2230",
-          "product": "Kubernetes",
-          "type": "Feature",
-          "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> Added report product type prefixes and improved sorting in report selection list</p>"
-        },
-        {
-          "ver": "Service 2.23.0",
-          "hash": "service-2230",
-          "product": "Kubernetes",
-          "type": "Fixed",
-          "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">Application</span> &gt; <span class=\"uitext\">Analysis</span> &gt; <span class=\"uitext\">Multi-Service Hitmap</span> Fixed issue where agents not in the dragged OKIND appeared in the list</p>"
-        },
-        {
-          "ver": "Service 2.23.0",
-          "hash": "service-2230",
-          "product": "Kubernetes",
-          "type": "Fixed",
-          "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">Service Networking</span> &gt; <span class=\"uitext\">Ingress List</span> Fixed issue where some Pod details were not displayed</p>"
-        },
-        {
-          "ver": "Service 2.23.0",
-          "hash": "service-2230",
-          "product": "Database",
-          "type": "Changed",
-          "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> <span class=\"uitext\">Dashboard</span> &gt; <span class=\"uitext\">Instance Map</span> Improved threshold configuration mode UI</p>"
-        },
-        {
-          "ver": "Service 2.23.0",
-          "hash": "service-2230",
-          "product": "Database",
-          "type": "Fixed",
-          "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">SQL Statistics</span>, <span class=\"uitext\">Top SQL</span> Fixed SQL text to stay fixed during horizontal scrolling</p>"
-        },
-        {
-          "ver": "Service 2.23.0",
-          "hash": "service-2230",
-          "product": "Database",
-          "type": "Fixed",
-          "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">Analysis</span> &gt; <span class=\"uitext\">Database Parameters</span> Applied multilingual support</p>"
-        },
-        {
-          "ver": "Service 2.23.0",
-          "hash": "service-2230",
-          "product": "Database",
-          "category": "MySQL, PostgreSQL",
-          "type": "Changed",
-          "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> <span class=\"uitext\">Dashboard</span> &gt; <span class=\"uitext\">Instance Monitoring</span> <code class=\"newfunc\">New</code> Improved widget list</p>"
-        },
-        {
-          "ver": "Service 2.23.0",
-          "hash": "service-2230",
-          "product": "Database",
-          "category": "Oracle, Oracle Pro",
-          "type": "Feature",
-          "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">Dashboard</span> &gt; <span class=\"uitext\">Instance Monitoring</span> <code class=\"newfunc\">New</code> Added tab to view parallel query tree in session table</p>"
-        },
-        {
-          "ver": "Service 2.23.0",
-          "hash": "service-2230",
-          "product": "Database",
-          "category": "Oracle, Oracle Pro",
-          "type": "Changed",
-          "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> <span class=\"uitext\">Dashboard</span> Updated Wait Class widget details to support up to 21 entries and use statistical data depending on time range</p>"
-        },
-        {
-          "ver": "Service 2.23.0",
-          "hash": "service-2230",
-          "product": "Database",
-          "category": "Oracle Pro",
-          "type": "Feature",
-          "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">Management</span> &gt; <span class=\"uitext\">Agent List</span> Added agent pause functionality</p>"
-        },
-        {
-          "ver": "Service 2.23.0",
-          "hash": "service-2230",
-          "product": "Database",
-          "category": "Oracle Pro",
-          "type": "Changed",
-          "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> <span class=\"uitext\">Lock Tree</span> Improved data retrieval</p>"
-        },
-        {
-          "ver": "Service 2.23.0",
-          "hash": "service-2230",
-          "product": "Database",
-          "category": "PostgreSQL",
-          "type": "Feature",
-          "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">Analysis</span> &gt; <span class=\"uitext\">Top Objects</span> Added scan_count and scan_ratio columns to Scan > Table</p>"
-        },
-        {
-          "ver": "Service 2.23.0",
-          "hash": "service-2230",
-          "product": "Log",
-          "type": "Fixed",
-          "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">Log Explorer</span> Fixed issue where query favorites did not work</p>"
-        }
+          {
+              "ver": "Service 2.23.0",
+              "hash": "service-2230",
+              "product": "Common",
+              "type": "Feature",
+              "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> Added CSV download button to <span class=\"uitext\">Flex Board</span> table widget</p>"
+          },
+          {
+              "ver": "Service 2.23.0",
+              "hash": "service-2230",
+              "product": "Common",
+              "type": "Changed",
+              "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> Changed menu name for <span class=\"uitext\">Alert Notification</span></p>",
+              "details": "<ul>\n<li><span class=\"uitext\">Alert Notification</span> &gt; <span class=\"uitext\">Event Settings</span> → <span class=\"uitext\">Event Settings</span> <code>Classic</code></li>\n\n<li><span class=\"uitext\">Alert Notification</span> &gt; <span class=\"uitext\">Event Settings</span> <code class=\"newfunc\">New</code> → <span class=\"uitext\">Event Settings</span></li>\n</ul>"
+          },
+          {
+              "ver": "Service 2.23.0",
+              "hash": "service-2230",
+              "product": "Common",
+              "type": "Changed",
+              "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> Unified the Basic and Metrics tabs in <span class=\"uitext\">Event Settings</span> under <span class=\"uitext\">Alert Notification</span></p>"
+          },
+          {
+              "ver": "Service 2.23.0",
+              "hash": "service-2230",
+              "product": "Common",
+              "type": "Changed",
+              "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> Improved behavior to redirect users without permission for User Display Group settings through a “No Permission” guide page</p>"
+          },
+          {
+              "ver": "Service 2.23.0",
+              "hash": "service-2230",
+              "product": "Common",
+              "type": "Changed",
+              "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> Display ICMP Feature products in <span class=\"uitext\">Maintenance Plan</span></p>"
+          },
+          {
+              "ver": "Service 2.23.0",
+              "hash": "service-2230",
+              "product": "Common",
+              "type": "Fixed",
+              "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Fixed issue where billing email could not be edited under <span class=\"uitext\">Usage Details</span> &gt; <span class=\"uitext\">Payment Information</span></p>"
+          },
+          {
+              "ver": "Service 2.23.0",
+              "hash": "service-2230",
+              "product": "Application",
+              "type": "Feature",
+              "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> Added new <span class=\"uitext\">Application Topology</span> to side menu</p>"
+          },
+          {
+              "ver": "Service 2.23.0",
+              "hash": "service-2230",
+              "product": "Application",
+              "type": "Fixed",
+              "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Fixed issue where scroll did not appear in <span class=\"uitext\">Management</span> &gt; <span class=\"uitext\">Agent List</span></p>"
+          },
+          {
+              "ver": "Service 2.23.0",
+              "hash": "service-2230",
+              "product": "Application",
+              "type": "Fixed",
+              "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">Trace</span> &gt; <span class=\"uitext\">HTTPC Step Details</span> now shows HTTPC URL</p>"
+          },
+          {
+              "ver": "Service 2.23.0",
+              "hash": "service-2230",
+              "product": "Server",
+              "type": "Feature",
+              "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> Added status column filter options to <span class=\"uitext\">Server List</span> filter</p>"
+          },
+          {
+              "ver": "Service 2.23.0",
+              "hash": "service-2230",
+              "product": "Server",
+              "type": "Feature",
+              "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">GPU Performance Summary</span></p>",
+              "details": "<ul>\n<li>Added GPU information search input</li>\n<li>Improved display of result table row counts</li>\n</ul>"
+          },
+          {
+              "ver": "Service 2.23.0",
+              "hash": "service-2230",
+              "product": "Server",
+              "type": "Feature",
+              "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">Server Monitoring</span> &gt; <span class=\"uitext\">Cloud Monitoring</span> Added dimension selection for Azure agent configuration</p>"
+          },
+          {
+              "ver": "Service 2.23.0",
+              "hash": "service-2230",
+              "product": "Server",
+              "type": "Fixed",
+              "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Fixed CPU chart tooltip to show decimal values, and added unit conversion and display for process I/O chart tooltips in <span class=\"uitext\">Server Details</span></p>"
+          },
+          {
+              "ver": "Service 2.23.0",
+              "hash": "service-2230",
+              "product": "Server",
+              "type": "Fixed",
+              "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Fixed issue where events were not triggered when adding an event using the composite metrics “CPU User % is too high” template under <span class=\"uitext\">Event Settings</span></p>"
+          },
+          {
+              "ver": "Service 2.23.0",
+              "hash": "service-2230",
+              "product": "Kubernetes",
+              "type": "Feature",
+              "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> Added report product type as prefix and sorted the report selection list</p>"
+          },
+          {
+              "ver": "Service 2.23.0",
+              "hash": "service-2230",
+              "product": "Kubernetes",
+              "type": "Feature",
+              "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">GPU</span> &gt; <span class=\"uitext\">GPU Trend</span> Added manual time range setting option</p>"
+          },
+          {
+              "ver": "Service 2.23.0",
+              "hash": "service-2230",
+              "product": "Kubernetes",
+              "type": "Changed",
+              "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> <span class=\"uitext\">GPU</span> &gt; <span class=\"uitext\">GPU Trend</span> Updated filter search to support wildcard (*) patterns</p>"
+          },
+          {
+              "ver": "Service 2.23.0",
+              "hash": "service-2230",
+              "product": "Kubernetes",
+              "type": "Fixed",
+              "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">Application</span> &gt; <span class=\"uitext\">Analysis</span> &gt; <span class=\"uitext\">Multi Service Heatmap</span> Fixed issue where agents not included in the dragged OKIND appeared in the list</p>"
+          },
+          {
+              "ver": "Service 2.23.0",
+              "hash": "service-2230",
+              "product": "Kubernetes",
+              "type": "Fixed",
+              "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">Service Networking</span> &gt; <span class=\"uitext\">Ingress List</span> Fixed issue where some Pod information was not displayed in details</p>"
+          },
+          {
+              "ver": "Service 2.23.0",
+              "hash": "service-2230",
+              "product": "Kubernetes",
+              "type": "Fixed",
+              "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">Workload</span> &gt; <span class=\"uitext\">Pod List</span> Fixed issue where Device column sorting did not work</p>"
+          },
+          {
+              "ver": "Service 2.23.0",
+              "hash": "service-2230",
+              "product": "Database",
+              "type": "Changed",
+              "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> <span class=\"uitext\">Dashboard</span> &gt; <span class=\"uitext\">Instance Map</span> Improved UI for threshold setting mode</p>"
+          },
+          {
+              "ver": "Service 2.23.0",
+              "hash": "service-2230",
+              "product": "Database",
+              "type": "Fixed",
+              "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">SQL Statistics</span>, <span class=\"uitext\">Top SQL</span> Fixed issue where SQL text did not stay fixed while horizontally scrolling</p>"
+          },
+          {
+              "ver": "Service 2.23.0",
+              "hash": "service-2230",
+              "product": "Database",
+              "type": "Fixed",
+              "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">Analysis</span> &gt; <span class=\"uitext\">Database Parameters</span> Applied multilingual support</p>"
+          },
+          {
+              "ver": "Service 2.23.0",
+              "hash": "service-2230",
+              "product": "Database",
+              "category": "MySQL, PostgreSQL",
+              "type": "Changed",
+              "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> <span class=\"uitext\">Dashboard</span> &gt; <span class=\"uitext\">Instance Monitoring</span> <code class=\"newfunc\">New</code> Improved widget list</p>"
+          },
+          {
+              "ver": "Service 2.23.0",
+              "hash": "service-2230",
+              "product": "Database",
+              "category": "Oracle, Oracle Pro",
+              "type": "Feature",
+              "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">Dashboard</span> &gt; <span class=\"uitext\">Instance Monitoring</span> <code class=\"newfunc\">New</code> Added tab to view parallel query tree in session table</p>"
+          },
+          {
+              "ver": "Service 2.23.0",
+              "hash": "service-2230",
+              "product": "Database",
+              "category": "Oracle, Oracle Pro",
+              "type": "Changed",
+              "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> <span class=\"uitext\">Dashboard</span> Updated Wait Class widget to display up to 21 results and use statistical data based on selected time period</p>"
+          },
+          {
+              "ver": "Service 2.23.0",
+              "hash": "service-2230",
+              "product": "Database",
+              "category": "Oracle Pro",
+              "type": "Feature",
+              "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">Management</span> &gt; <span class=\"uitext\">Agent List</span> Added agent pause feature</p>"
+          },
+          {
+              "ver": "Service 2.23.0",
+              "hash": "service-2230",
+              "product": "Database",
+              "category": "Oracle Pro",
+              "type": "Changed",
+              "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> <span class=\"uitext\">Lock Tree</span> Improved data lookup performance</p>"
+          },
+          {
+              "ver": "Service 2.23.0",
+              "hash": "service-2230",
+              "product": "Database",
+              "category": "PostgreSQL",
+              "type": "Feature",
+              "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">Analysis</span> &gt; <span class=\"uitext\">Top Objects</span> Added scan_count and scan_ratio columns to Scan → Table table</p>"
+          },
+          {
+              "ver": "Service 2.23.0",
+              "hash": "service-2230",
+              "product": "Log",
+              "type": "Fixed",
+              "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">Log Explorer</span> Fixed issue where favorite queries did not work</p>"
+          }
       ]
-    }
-  ]  
+  }
+]
