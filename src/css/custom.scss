@@ -561,6 +561,21 @@ footer.footer.full--width {
   font-size: .8rem;
   transform: none;
 }
+.menu__list-item.classicfunc > .menu__list-item-collapsible > a::after,
+.menu__list-item.classicfunc > a::after {
+  display: contents;
+  content: ' Classic';
+  border-radius: 4px;
+  padding: 0 3px;
+  border: 1px solid none;
+  background-color: rgb(234, 234, 234);
+  color: rgb(127, 127, 127);
+  font-family: "Oleo Script";
+  margin-left: 10px;
+  font-weight: 400;
+  font-size: .8rem;
+  transform: none;
+}
 .menu__list-item-collapsible:hover {
   background: var(--ifm-active-menu-color);
 }
