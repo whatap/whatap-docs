@@ -1,4 +1,32 @@
 [
+    {
+        "url": "https://docs.whatap.io/release-notes/service/service-2_23_x",
+        "ver": "Service 2.23.1",
+        "date": "2025-11-27",
+        "Lists": [
+          {
+            "ver": "Service 2.23.1",
+            "hash": "service-2231",
+            "product": "Browser",
+            "type": "Fixed",
+            "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> 重複メニューを削除</p>"
+          },
+          {
+            "ver": "Service 2.23.1",
+            "hash": "service-2231",
+            "product": "Server",
+            "type": "Fixed",
+            "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">サーバーインベントリマップ</span> 断続的に発生するエラー問題を修正</p>"
+          },
+          {
+            "ver": "Service 2.23.1",
+            "hash": "service-2231",
+            "product": "URL",
+            "type": "Fixed",
+            "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">イベント記録</span> イベント設定ボタンからメニュー移動時に発生するホワイトアウト問題を修正</p>"
+          }
+        ]
+      },      
   {
       "url": "https://docs.whatap.io/release-notes/service/service-2_23_x",
       "ver": "Service 2.23.0",

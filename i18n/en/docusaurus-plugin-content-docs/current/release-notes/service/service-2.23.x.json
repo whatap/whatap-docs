@@ -1,4 +1,32 @@
 [
+    {
+        "url": "https://docs.whatap.io/release-notes/service/service-2_23_x",
+        "ver": "Service 2.23.1",
+        "date": "2025-11-27",
+        "Lists": [
+          {
+            "ver": "Service 2.23.1",
+            "hash": "service-2231",
+            "product": "Browser",
+            "type": "Fixed",
+            "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Removed duplicate menu</p>"
+          },
+          {
+            "ver": "Service 2.23.1",
+            "hash": "service-2231",
+            "product": "Server",
+            "type": "Fixed",
+            "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">Server Inventory Map</span> Fixed an intermittent error issue</p>"
+          },
+          {
+            "ver": "Service 2.23.1",
+            "hash": "service-2231",
+            "product": "URL",
+            "type": "Fixed",
+            "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">Event History</span> Fixed whiteout issue when navigating through the event settings button</p>"
+          }
+        ]
+      },      
   {
       "url": "https://docs.whatap.io/release-notes/service/service-2_23_x",
       "ver": "Service 2.23.0",
