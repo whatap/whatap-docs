@@ -766,9 +766,12 @@ const sidebars = {
                 id: 'nodejs/warning-notice-v2'
               },
               items: [
-                'nodejs/basic-event-setting',
+                // 'nodejs/basic-event-setting',
                 'nodejs/metric-warning-notice-new',
+                'nodejs/hitmap-notice',
+                'nodejs/set-event-detect-anomal',
                 'nodejs/transaction-event-setting',
+                'nodejs/set-notification-message',
               ]
             },
             {
@@ -779,10 +782,7 @@ const sidebars = {
               className: 'classicfunc',
               items: [
                 'nodejs/warning-notice',
-                'nodejs/metric-warning-notice',
-                'nodejs/set-notification-message',
-                'nodejs/hitmap-notice',
-                'nodejs/set-event-detect-anomal'
+                // 'nodejs/metric-warning-notice',
               ]
             },
             'nodejs/set-receive-event',
@@ -1014,9 +1014,13 @@ const sidebars = {
                 id: 'python/warning-notice-v2'
               },
               items: [
-                'python/basic-event-setting',
+                // 'python/basic-event-setting',
                 'python/metric-warning-notice-new',
+                'python/hitmap-notice',
+                'python/set-event-detect-anomal',
+                'python/set-event-log',
                 'python/transaction-event-setting',
+                'python/set-notification-message',
               ]
             },
             {
@@ -1027,11 +1031,7 @@ const sidebars = {
               className: 'classicfunc',
               items: [
                 'python/warning-notice',
-                'python/metric-warning-notice',
-                'python/set-notification-message',
-                'python/hitmap-notice',
-                'python/set-event-detect-anomal',
-                'python/set-event-log',
+                // 'python/metric-warning-notice',
               ]
             },
             'python/set-receive-event',
@@ -1262,9 +1262,12 @@ const sidebars = {
                 id: 'dotnet/warning-notice-v2'
               },
               items: [
-                'dotnet/basic-event-setting',
+                // 'dotnet/basic-event-setting',
                 'dotnet/metric-warning-notice-new',
+                'dotnet/hitmap-notice',
+                'dotnet/set-event-detect-anomal',
                 'dotnet/transaction-event-setting',
+                'dotnet/set-notification-message',
               ]
             },
             {
@@ -1275,10 +1278,7 @@ const sidebars = {
               className: 'classicfunc',
               items: [
                 'dotnet/warning-notice',
-                'dotnet/metric-warning-notice',
-                'dotnet/set-notification-message',
-                'dotnet/hitmap-notice',
-                'dotnet/set-event-detect-anomal'
+                // 'dotnet/metric-warning-notice',
               ]
             },
             'dotnet/set-receive-event',
@@ -1486,9 +1486,13 @@ const sidebars = {
                 id: 'golang/warning-notice-v2'
               },
               items: [
-                'golang/basic-event-setting',
+                // 'golang/basic-event-setting',
                 'golang/metric-warning-notice-new',
+                'golang/hitmap-notice',
+                'golang/set-event-detect-anomal',
+                'golang/set-event-log',
                 'golang/transaction-event-setting',
+                'golang/set-notification-message',
               ]
             },
             {
@@ -1499,11 +1503,7 @@ const sidebars = {
               className: 'classicfunc',
               items: [
                 'golang/warning-notice',
-                'golang/metric-warning-notice',
-                'golang/set-notification-message',
-                'golang/hitmap-notice',
-                'golang/set-event-detect-anomal',
-                'golang/set-event-log',
+                // 'golang/metric-warning-notice',
               ]
             },
             'golang/set-receive-event',
@@ -1684,11 +1684,11 @@ const sidebars = {
                 id: 'db2/warning-notice-v2'
               },
               items: [
-                'db2/basic-event-setting',
+                // 'db2/basic-event-setting',
                 'db2/metric-warning-notice-new',
-                'db2/set-notification-message',
                 'db2/set-event-detect-anomal',
                 'db2/set-event-log',
+                'db2/set-notification-message',
               ]
             },
             'db2/set-receive-event',
@@ -1873,11 +1873,11 @@ const sidebars = {
                 id: 'sapase/warning-notice-v2'
               },
               items: [
-                'sapase/basic-event-setting',
+                // 'sapase/basic-event-setting',
                 'sapase/metric-warning-notice-new',
-                'sapase/set-notification-message',
                 'sapase/set-event-detect-anomal',
                 'sapase/set-event-log',
+                'sapase/set-notification-message',
               ]
             },
             'sapase/set-receive-event',
@@ -2108,8 +2108,11 @@ const sidebars = {
                 id: 'postgresql/warning-notice-v2'
               },
               items: [
-                'postgresql/basic-event-setting',
+                // 'postgresql/basic-event-setting',
                 'postgresql/metric-warning-notice-new',
+                'postgresql/set-event-detect-anomal',
+                'postgresql/set-event-log',
+                'postgresql/set-notification-message',
               ]
             },
             {
@@ -2120,10 +2123,7 @@ const sidebars = {
               className: 'classicfunc',
               items: [
                 'postgresql/warning-notice',
-                'postgresql/metric-warning-notice',
-                'postgresql/set-notification-message',
-                'postgresql/set-event-detect-anomal',
-                'postgresql/set-event-log',
+                // 'postgresql/metric-warning-notice',
               ]
             },
             'postgresql/set-receive-event',
@@ -2332,8 +2332,11 @@ const sidebars = {
                 id: 'oracle/warning-notice-v2'
               },
               items: [
-                'oracle/basic-event-setting',
+                // 'oracle/basic-event-setting',
                 'oracle/metric-warning-notice-new',
+                'oracle/set-event-detect-anomal',
+                'oracle/set-event-log',
+                'oracle/set-notification-message',
               ]
             },
             {
@@ -2344,10 +2347,7 @@ const sidebars = {
               className: 'classicfunc',
               items: [
                 'oracle/warning-notice',
-                'oracle/metric-warning-notice',
-                'oracle/set-notification-message',
-                'oracle/set-event-detect-anomal',
-                'oracle/set-event-log',
+                // 'oracle/metric-warning-notice',
               ]
             },
             'oracle/set-receive-event',
@@ -2553,7 +2553,7 @@ const sidebars = {
                 id: 'oracle-pro/warning-notice-v2'
               },
               items: [
-                'oracle-pro/basic-event-setting',
+                // 'oracle-pro/basic-event-setting',
                 'oracle-pro/metric-warning-notice-new',
                 'oracle-pro/set-notification-message',
                 'oracle-pro/set-event-detect-anomal',
@@ -2788,8 +2788,11 @@ const sidebars = {
                 id: 'mysql/warning-notice-v2'
               },
               items: [
-                'mysql/basic-event-setting',
+                // 'mysql/basic-event-setting',
                 'mysql/metric-warning-notice-new',
+                'mysql/set-event-detect-anomal',
+                'mysql/set-event-log',
+                'mysql/set-notification-message',
               ]
             },
             {
@@ -2800,10 +2803,7 @@ const sidebars = {
               className: 'classicfunc',
               items: [
                 'mysql/warning-notice',
-                'mysql/metric-warning-notice',
-                'mysql/set-notification-message',
-                'mysql/set-event-detect-anomal',
-                'mysql/set-event-log',
+                // 'mysql/metric-warning-notice',
               ]
             },
             'mysql/set-receive-event',
@@ -3019,8 +3019,11 @@ const sidebars = {
                 id: 'mssql/warning-notice-v2'
               },
               items: [
-                'mssql/basic-event-setting',
+                // 'mssql/basic-event-setting',
                 'mssql/metric-warning-notice-new',
+                'mssql/set-event-detect-anomal',
+                'mssql/set-event-log',
+                'mssql/set-notification-message',
               ]
             },
             {
@@ -3031,10 +3034,7 @@ const sidebars = {
               className: 'classicfunc',
               items: [
                 'mssql/warning-notice',
-                'mssql/metric-warning-notice',
-                'mssql/set-notification-message',
-                'mssql/set-event-detect-anomal',
-                'mssql/set-event-log',
+                // 'mssql/metric-warning-notice',
               ]
             },
             'mssql/set-receive-event',
@@ -3195,8 +3195,10 @@ const sidebars = {
                 id: 'tibero/warning-notice-v2'
               },
               items: [
-                'tibero/basic-event-setting',
+                // 'tibero/basic-event-setting',
                 'tibero/metric-warning-notice-new',
+                'tibero/set-event-detect-anomal',
+                'tibero/set-notification-message'
               ]
             },
             {
@@ -3207,9 +3209,7 @@ const sidebars = {
               className: 'classicfunc',
               items: [
                 'tibero/warning-notice',
-                'tibero/metric-warning-notice',
-                'tibero/set-notification-message',
-                'tibero/set-event-detect-anomal'
+                //'tibero/metric-warning-notice',
               ]
             },
             'tibero/set-receive-event',
@@ -3412,8 +3412,11 @@ const sidebars = {
                 id: 'cubrid/warning-notice-v2'
               },
               items: [
-                'cubrid/basic-event-setting',
+                // 'cubrid/basic-event-setting',
                 'cubrid/metric-warning-notice-new',
+                'cubrid/set-event-detect-anomal',
+                'cubrid/set-event-log',
+                'cubrid/set-notification-message',
               ]
             },
             {
@@ -3424,10 +3427,7 @@ const sidebars = {
               className: 'classicfunc',
               items: [
                 'cubrid/warning-notice',
-                'cubrid/metric-warning-notice',
-                'cubrid/set-notification-message',
-                'cubrid/set-event-detect-anomal',
-                'cubrid/set-event-log',
+                // 'cubrid/metric-warning-notice',
               ]
             },
             'cubrid/set-receive-event',
@@ -3613,8 +3613,11 @@ const sidebars = {
                 id: 'altibase/warning-notice-v2'
               },
               items: [
-                'altibase/basic-event-setting',
+                // 'altibase/basic-event-setting',
                 'altibase/metric-warning-notice-new',
+                'altibase/set-event-detect-anomal',
+                'altibase/set-event-log',
+                'altibase/set-notification-message',
               ]
             },
             {
@@ -3625,10 +3628,7 @@ const sidebars = {
               className: 'classicfunc',
               items: [
                 'altibase/warning-notice',
-                'altibase/metric-warning-notice',
-                'altibase/set-notification-message',
-                'altibase/set-event-detect-anomal',
-                'altibase/set-event-log',
+                // 'altibase/metric-warning-notice',
               ]
             },
             'altibase/set-receive-event',
@@ -3797,28 +3797,32 @@ const sidebars = {
               label: '이벤트 설정',
               collapsible: true,
               collapsed: true,
-              items: [
-                'redis/metric-warning-notice',
-                'redis/set-notification-message',
-                'redis/set-event-detect-anomal',
-                'redis/set-event-log',
-              ]
-            },
-            {
-              type: 'category',
-              label: '이벤트 설정',
-              collapsible: true,
-              collapsed: true,
-              className: 'classicfunc',
               link: {
                 type: 'doc',
                 id: 'redis/warning-notice-v2'
               },
               items: [
-                'redis/basic-event-setting',
+                // 'redis/basic-event-setting',
                 'redis/metric-warning-notice-new',
+                'redis/set-event-detect-anomal',
+                'redis/set-event-log',
+                'redis/set-notification-message',
               ]
             },
+            //{
+              //type: 'category',
+              //label: '이벤트 설정',
+              //collapsible: true,
+              //collapsed: true,
+              //className: 'classicfunc',
+              //link: {
+              //  type: 'doc',
+              //  id: 'redis/warning-notice-v2'
+              //},
+              //items: [
+              //  'redis/metric-warning-notice',
+              //]
+            //},
             'redis/set-receive-event',
             'redis/set-event-history',
             'redis/set-event-format',
@@ -4001,23 +4005,23 @@ const sidebars = {
                 id: 'mongodb/warning-notice-v2'
               },
               items: [
-                'mongodb/basic-event-setting',
+                // 'mongodb/basic-event-setting',
                 'mongodb/metric-warning-notice-new',
-              ]
-            },
-            {
-              type: 'category',
-              label: '이벤트 설정',
-              collapsible: true,
-              collapsed: true,
-              className: 'classicfunc',
-              items: [
-                'mongodb/metric-warning-notice',
-                'mongodb/set-notification-message',
                 'mongodb/set-event-detect-anomal',
                 'mongodb/set-event-log',
+                'mongodb/set-notification-message',
               ]
             },
+            //{
+              //type: 'category',
+              //label: '이벤트 설정',
+              //collapsible: true,
+              //collapsed: true,
+              //className: 'classicfunc',
+              //items: [
+              //  'mongodb/metric-warning-notice',
+              //]
+            //},
             'mongodb/set-receive-event',
             'mongodb/set-event-history',
             'mongodb/set-event-format',
@@ -4120,20 +4124,20 @@ const sidebars = {
                 id: 'npm/warning-notice-v2'
               },
               items: [
-                'npm/basic-event-setting',
+                // 'npm/basic-event-setting',
                 'npm/metric-warning-notice-new'
               ]
             },
-            {
-              type: 'category',
-              label: '이벤트 설정',
-              collapsible: true,
-              collapsed: true,
-              className: 'classicfunc',
-              items: [
-                'npm/metric-warning-notice'
-              ]
-            },
+            // {
+              //type: 'category',
+              //label: '이벤트 설정',
+              //collapsible: true,
+              //collapsed: true,
+              //className: 'classicfunc',
+              //items: [
+              //  'npm/metric-warning-notice'
+              //]
+            // },
             'npm/set-receive-event',
             'npm/set-event-history',
             'npm/real-time-notification',
@@ -6124,21 +6128,21 @@ const sidebars = {
                 id: 'browser/warning-notice-v2'
               },
               items: [
-                'browser/basic-event-setting',
-                'browser/metric-warning-notice-new'
+                // 'browser/basic-event-setting',
+                'browser/metric-warning-notice-new',
+                'browser/hitmap-notice',
               ]
             },
-            {
-              type: 'category',
-              label: '이벤트 설정',
-              collapsible: true,
-              collapsed: true,
-              className: 'classicfunc',
-              items: [
-                'browser/metric-warning-notice',
-                'browser/hitmap-notice'
-              ]
-            },
+            // {
+              //type: 'category',
+              //label: '이벤트 설정',
+              //collapsible: true,
+              //collapsed: true,
+              //className: 'classicfunc',
+              //items: [
+              //  'browser/metric-warning-notice',
+              //]
+            // },
             'browser/set-receive-event',
             'browser/set-event-history',
             'browser/real-time-notification',
@@ -6462,8 +6466,11 @@ const sidebars = {
               },
               items: [
                 // 'server/warning-notice-v2',
-                'server/basic-event-setting',
+                // 'server/basic-event-setting',
                 'server/metric-warning-notice-new',
+                'server/set-event-detect-anomal',
+                'server/set-event-log',
+                'server/set-notification-message',
               ]
             }, 
             {
@@ -6474,10 +6481,7 @@ const sidebars = {
               className: 'classicfunc',
               items: [
                 'server/warning-notice',
-                'server/metric-warning-notice',
-                'server/set-notification-message',
-                'server/set-event-detect-anomal',
-                'server/set-event-log',
+                // 'server/metric-warning-notice',
               ]
             }, 
             'server/set-receive-event',
@@ -6994,9 +6998,13 @@ const sidebars = {
                 id: 'kubernetes/warning-notice-v2',
               },
               items: [
-                'kubernetes/basic-event-setting',
+                // 'kubernetes/basic-event-setting',
                 'kubernetes/metric-warning-notice-new',
+                'kubernetes/hitmap-notice',
+                'kubernetes/set-event-detect-anomal',
+                'kubernetes/set-event-log',
                 'kubernetes/transaction-event-setting',
+                'kubernetes/set-notification-message',
               ]
             },
             {
@@ -7007,11 +7015,7 @@ const sidebars = {
               className: 'classicfunc',
               items: [
                 'kubernetes/container-warning-notice',
-                'kubernetes/metric-warning-notice',
-                'kubernetes/set-notification-message',
-                'kubernetes/hitmap-notice',
-                'kubernetes/set-event-detect-anomal',
-                'kubernetes/set-event-log',
+                // 'kubernetes/metric-warning-notice',
               ]
             },
             'kubernetes/set-receive-event',
