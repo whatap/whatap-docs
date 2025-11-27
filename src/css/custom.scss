@@ -465,7 +465,12 @@ footer.footer.full--width {
   }
 }
 .menu__link--sublist-caret:after {
-  margin-right: 3px;
+  //margin-right: 3px;
+  position: absolute;
+  right: 0px;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
 }
 
 .menu__list .menu__list {
@@ -561,7 +566,7 @@ footer.footer.full--width {
   font-size: .8rem;
   transform: none;
 }
-.menu__list-item.classicfunc > .menu__list-item-collapsible > a::after,
+.menu__list-item.classicfunc > .menu__list-item-collapsible > a::after, 
 .menu__list-item.classicfunc > a::after {
   display: contents;
   content: ' Classic';
