@@ -1,6 +1,20 @@
 [
     {
         "url": "https://docs.whatap.io/release-notes/service/service-2_23_x",
+        "ver": "Service 2.23.2",
+        "date": "2025-12-2",
+        "Lists": [
+            {
+                "ver": "Service 2.23.3",
+                "hash": "service-2233",
+                "product": "Kubernetes",
+                "type": "Fixed",
+                "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">Event Settings</span> &gt; <span class=\"uitext\">Transaction</span> Fixed an issue where the add/edit page could not be accessed.</p>"
+            }
+        ]
+    },    
+    {
+        "url": "https://docs.whatap.io/release-notes/service/service-2_23_x",
         "ver": "Service 2.23.1",
         "date": "2025-11-27",
         "Lists": [

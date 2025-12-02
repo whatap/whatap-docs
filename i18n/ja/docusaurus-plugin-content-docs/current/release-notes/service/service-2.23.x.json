@@ -1,6 +1,20 @@
 [
     {
         "url": "https://docs.whatap.io/release-notes/service/service-2_23_x",
+        "ver": "Service 2.23.2",
+        "date": "2025-12-2",
+        "Lists": [
+            {
+                "ver": "Service 2.23.3",
+                "hash": "service-2233",
+                "product": "Kubernetes",
+                "type": "Fixed",
+                "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">イベント設定</span> &gt; <span class=\"uitext\">トランザクション</span> の追加/編集ページにアクセスできない問題を修正しました。</p>"
+            }
+        ]
+    },    
+    {
+        "url": "https://docs.whatap.io/release-notes/service/service-2_23_x",
         "ver": "Service 2.23.1",
         "date": "2025-11-27",
         "Lists": [
