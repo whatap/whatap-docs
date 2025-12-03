@@ -54,17 +54,17 @@ import Dbagentdbxbasicoption from "../common-items/_db-agent-dbx-basic-option.md
 
     It sets how many bind capture values ​​to collect. Only the bind capture values after the last collection time can be collected.
 
-- **codefrom / codeto** <span class='type'>Int</span>
-
-    Default `15`
+- **codefrom / codeto** <span class='type'>String</span>
 
     This option changes the character encoding when there is a problem with Korean characters broken in the SQL text. The value can be selected from the list in iconv -l.
 
+    e.g. codefrom=EUC-KR, codeto=UTF-8
+
 - **conn_fail_count** <span class='type'>Int</span>
 
-    It sends a notification when 15 consecutive connection errors occur. You can adjust the notification occurrence criteria by entering the desired number.
+    Default `15`
 
-    e.g. codefrom=EUC-KR, codeto=UTF-8
+    It sends a notification when 15 consecutive connection errors occur. You can adjust the notification occurrence criteria by entering the desired number.
 
 - **event** <span class='type'>String</span>
 

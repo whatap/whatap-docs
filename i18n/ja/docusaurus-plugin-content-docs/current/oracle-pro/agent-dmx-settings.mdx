@@ -54,17 +54,17 @@ import Dbagentdbxbasicoption from "../common-items/_db-agent-dbx-basic-option.md
 
     バインドキャプチャ値を収集するときに、いくつまで収集するかを設定します。 最後の収集時間以降のバインドキャプチャ値のみを収集できます。
 
-- **codefrom / codeto** <span class='type'>Int</span>
-
-    既定値 `15`
+- **codefrom / codeto** <span class='type'>String</span>
 
     SQL textで韓国語の文字化けの問題がある場合、文字エンコーディングを変えるオプションです。 指定する値は、iconv -lのリストから選択できます。
 
+    例) codefrom=EUC-KR, codeto=UTF-8
+
 - **conn_fail_count** <span class='type'>Int</span>
 
-    15回連続connection errorが発生した時に通知を送信します。 希望する回数を入力して、通知の発生基準を調整できます。
+    既定値 `15`
 
-    例) codefrom=EUC-KR, codeto=UTF-8
+    15回連続connection errorが発生した時に通知を送信します。 希望する回数を入力して、通知の発生基準を調整できます。
 
 - **event** <span class='type'>String</span>
 
