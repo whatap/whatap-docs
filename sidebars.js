@@ -2620,12 +2620,10 @@ const sidebars = {
               label: '에이전트 설치',
               collapsible: true,
               collapsed: true,
-              link: {
-                type: 'doc',
-                id: 'mysql/install-agent'
-              },
               items: [
-                'mysql/install-agent-quick-setup',
+                'mysql/install-agent',
+                'mysql/install-package-manager',
+                'mysql/install-docker',
               ],
             },
             'mysql/after-install-agent',
@@ -2642,6 +2640,7 @@ const sidebars = {
             id: 'mysql/agent-settings'
           },
           items: [
+            'mysql/install-agent-quick-setup',
             'mysql/agent-dbx-settings',
             'mysql/agent-xos-settings',
             {
