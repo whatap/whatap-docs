@@ -399,6 +399,10 @@
     "message": "インストール",
     "description": "The label for category 설치하기 in sidebar mssqlSidebar"
   },
+  "sidebar.mssqlSidebar.category.에이전트 설치": {
+    "message": "エージェントのインストール",
+    "description": "The label for category 에이전트 설치 in sidebar javaSidebar"
+  },
   "sidebar.mssqlSidebar.category.설정하기": {
     "message": "設定",
     "description": "The label for category 설정하기 in sidebar mssqlSidebar"
