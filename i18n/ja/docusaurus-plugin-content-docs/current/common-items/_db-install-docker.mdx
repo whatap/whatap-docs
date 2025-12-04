@@ -1,0 +1,54 @@
+## エージェントの実行
+
+次のコマンドを実行して、WhaTapデータベースモニタリングエージェントをDockerコンテナとして起動します。
+```bash
+docker run -d --name whatap-db-agent \
+-e WHATAP_CONF="
+license=x6051ro88nrc9-x4hmr76jvvlfnq-z52cnv1dfa8n5c 
+whatap.server.host=13.124.11.223/13.209.172.35
+dbms=mysql
+db_ip=10.0.0.1
+db_port=3306 
+connect_option=?useSSL=true&verifyServerCertificate=false&serverTimezone=SERVER_TIMEZONE" \
+-e DB_USERNAME=mydbuser \
+-e DB_PASSWORD=mypassword \
+whatap/db-agent:latest
+```
+
+### 設定項目
+
+#### 必須設定
+
+* `license`: プロジェクトアクセスキー
+* `whatap.server.host`: WhaTap収集サーバーIP (13.124.11.223/13.209.172.35)
+* `dbms`: データベースタイプ (mysql, postgresql, mssql)
+* `db_ip`: データベースサーバーIPアドレス
+* `db_port`: データベースサーバーポート番号
+* `DB_USERNAME`: データベースアカウントID
+* `DB_PASSWORD`: データベースアカウントパスワード
+
+#### 選択設定
+
+* `connect_option`: データベース接続オプション
+  * `useSSL=true&verifyServerCertificate=false`: SSLを使用してデータベースに接続する場合
+  * `serverTimezone=SERVER_TIMEZONE`: JDBCドライバー接続時にサーバータイムゾーン設定が必要な場合
+
+:::note
+
+上記コマンドの設定値を実際の環境に合わせて修正してください。
+
+:::
+
+## エージェント動作確認
+
+次のコマンドでエージェントが正常に動作しているか確認します。
+```bash
+docker logs -f whatap-db-agent
+```
+
+## エージェントの削除
+
+次のコマンドを実行して、WhaTapデータベースモニタリングエージェントコンテナを停止し、削除します。
+```bash
+docker stop whatap-db-agent && docker rm whatap-db-agent
+```

@@ -1,0 +1,164 @@
+## 계정 생성{#uid}
+
+:::note
+
+  * 권한을 가진 계정이 있다면 이 단계를 생략하고 [다음 단계](#check-accesskey)로 넘어가세요.
+
+  * 예시 코드에서 `DB_User`는 DB 사용자 계정 이름입니다. 사용자가 이용하는 사용자 계정 이름으로 변경하세요.
+
+  * 예시 코드의 `DB_Password`에는 사용자 비밀번호를 입력하세요.
+
+  * 권한이 없는 계정은 모니터링이 정상적으로 이루어지지 않을 수 있습니다.
+  
+  * 리플리케이션 구조의 경우 계정 생성 및 권한 부여는 **Master DB에서만 수행**해야 합니다. (Slave DB에서 수행할 경우 복제가 깨질 수 있습니다.)
+
+:::
+
+<Tabs groupId="mysql-db">
+<TabItem value="mysql" label="MySQL">
+
+```bash
+  create user DB_User identified by 'DB_PASSWORD'; # 원하는 password를 입력하세요.
+  grant process on *.* to DB_User;
+  grant select on performance_schema.* to DB_User;
+  grant show databases on *.* to DB_User;
+
+  MySQL 8.0 이상에서 락 정보를 모니터링하려면 다음 권한이 반드시 필요합니다.
+
+  grant select on `sys`.`sys_config` TO DB_User;
+  grant select on `sys`.`innodb_lock_waits` TO DB_User;
+  grant execute on function `sys`.`format_statement` TO DB_User;
+  grant execute on function `sys`.`quote_identifier` TO DB_User;
+  grant execute on function `sys`.`sys_get_config` TO DB_User;  
+```
+
+기능 및 사용 환경에 따라 추가 권한을 부여하세요.
+
+* 모든 테이블 정보를 수집할 경우
+
+  ```sql
+  grant select on *.* to DB_User;
+  ```
+
+* 특정 DB의 테이블만 모니터링하는 경우
+
+  ```sql
+  grant select on {DB_NAME}.* to DB_User;
+  ```
+
+* Replication 사용할 경우
+
+  ```sql
+  grant replication client on *.* to DB_User;
+  grant replication slave on *.* to DB_User;
+  ```
+
+* Kill session 기능을 사용할 경우
+
+  ```sql
+  grant super on *.* to DB_User;
+  ```
+
+* AWS RDS 환경에서 kill session 기능을 사용할 경우
+
+  ```sql
+  grant execute on procedure mysql.rds_kill to DB_User;
+  ```
+
+</TabItem>
+<TabItem value="mariadb" label="MariaDB">
+
+```sql
+create user DB_User identified by 'DB_PASSWORD'; # 원하는 password를 입력하세요.
+grant process on *.* to DB_User;
+grant select on performance_schema.* to DB_User;
+grant show databases on *.* to DB_User;
+```
+
+기능 및 사용 환경에 따라 추가 권한을 부여하세요.
+
+* 모든 테이블 정보를 수집할 경우
+
+  ```sql
+  grant select on *.* to DB_User;
+  ```
+
+* 특정 DB의 테이블만 모니터링하는 경우
+
+  ```sql
+  grant select on {DB_NAME}.* to DB_User;
+  ```
+
+* Replication 사용할 경우
+
+  ```sql title="below MariaDB 10.5.1"
+  grant replication client, replication slave on *.* to DB_User;
+  ```
+
+  ```sql title="MariaDB 10.5.2 ~ 10.5.8"
+  grant replication master admin, replication slave admin, binlog monitor on *.* to DB_User;
+  ```
+
+  ```sql title="MariaDB 10.5.9 or later"
+  grant replication master admin, replica monitor, binlog monitor on *.* to DB_User;
+  ```
+
+  :::note
+
+  **AWS RDS MariaDB**의 경우 Replication 정보 조회는 **10.5** 버전 미만까지 지원합니다.
+
+  :::
+
+* Kill session 기능을 사용할 경우
+
+  ```sql
+  grant super on *.* to DB_User;
+  ```
+
+* AWS RDS 환경에서 kill session 기능을 사용할 경우
+
+  ```sql
+  grant execute on procedure mysql.rds_kill to DB_User;
+  ```
+
+</TabItem>
+</Tabs>
+
+<details>
+
+<summary>권한에 따른 지원 기능 살펴보기</summary>
+
+**기본 권한** 외의 권한은 사용자의 환경에 따라 부여하지 않아도 됩니다. 단, 일부 기능이 동작하지 않을 수 있습니다.
+
+<div className="c4-5-30-25-40">
+
+| 권한 | command | 메뉴 및 기능 | 상세 내역 |
+| -- | -- | -- | -- |
+| 기본 권한 | `grant process on *.* to whatap;` | 액티브 세션 수집 / <Cmdname sid="side_dbLockTree" className="uitext" /> / <Cmdname sid="side_deadLock" className="uitext" /> | 다른 계정에 속한 스레드 정보 표시를 위한 권한, `show engine` 수행 |
+| \^ | <code>grant select on <span className="vslow">performance_schema.*</span> to whatap;</code> | 액티브 세션 수집 / <Cmdname sid="side_dbLockTree" className="uitext" /> / <Cmdname sid="TTL06865" className="uitext" /> | 개별 권한 부여 시 다음 표 내용 참조 |
+| \^ | `grant show databases on *.* to whatap;` | <Cmdname sid="side_instanceList" className="uitext" /> 등 | 데이터베이스 이름 표시 |
+| 상세 권한 | `grant select on *.* to whatap;`<br/>또는<br/>`grant select on {DB_NAME}.{TABLE_NAME} to whatap;` | <Cmdname sid="side_dbSize" className="uitext" /> / <Cmdname sid="side_tableInfo" className="uitext" /> / <UI>Object detail</UI> / 플랜 조회 | MySQL은 해당 테이블에 대한 **SELECT** 권한이 없으면 <Cmdname sid="side_dbSize" className="uitext" />, Object detail, 플랜 조회 기능을 지원하지 않습니다. |
+| replication | `grant replication client on *.* to whatap;` | <Cmdname sid="side_instanceList" className="uitext" /> 의 <span class='mark instance'>S</span> 표시 / replication 정보 수집 | `SHOW MASTER STATUS`, `SHOW SLAVE STATUS` |
+| \^ | `grant replication slave on *.* to whatap;` | <Cmdname sid="side_instanceList" className="uitext" />의 <span class='mark master'>M</span> 표시 / replication 정보 수집 | `SHOW SLAVE HOSTS` |
+| 세션 킬 | `grant super on *.* to whatap;` | 액티브 세션 리스트에서 세션 킬 기능 | 다른 계정에 속한 스레드 종료 | 
+| \^ | `grant execute on procedure mysql.rds_kill to DB_User;` | AWS RDS의 경우 세션 킬 기능 | - |
+
+</div>
+
+<code><span className="vslow">performance_schema.*</span></code> 대신 다음 권한을 개별로 부여해도 됩니다.
+
+<div className="c3-3">
+
+| 권한 | command | 비고 |
+| -- | -- | --|
+| <Cmdname sid="active_sessions" /> / <Cmdname sid="lock_tree" /> | `performance_schema.data_lock_waits` | MySQL 8 버전부터 |
+| \^ | `performance_schema.data_locks` | \^ |
+| \^ | `performance_schema.threads` | - |
+| \^ | `performance_schema.metadata_locks` | MariaDB 10.5 버전부터 |
+| Wait event 정보 | `performance_schema.events_waits_summary_global_by_event_name` | - |
+| SQL 통계 정보 | `performance_schema.events_statements_summary_by_digest` | - |
+| Wait 지표 이름 | `performance_schema.setup_instruments` | - |
+
+</div>
+
+</details>
