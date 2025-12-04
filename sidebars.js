@@ -1939,12 +1939,10 @@ const sidebars = {
               label: '에이전트 설치',
               collapsible: true,
               collapsed: true,
-              link: {
-                type: 'doc',
-                id: 'postgresql/install-agent'
-              },
               items: [
-                'postgresql/install-agent-quick-setup',
+                'postgresql/install-agent',
+                'postgresql/install-package-manager',
+                'postgresql/install-docker',
               ],
             },
             'postgresql/after-install-agent',
@@ -1961,6 +1959,7 @@ const sidebars = {
             id: 'postgresql/agent-settings'
           },
           items: [
+            'postgresql/install-agent-quick-setup',
             'postgresql/agent-dbx-settings',
             'postgresql/agent-xos-settings',
             {
@@ -2620,12 +2619,10 @@ const sidebars = {
               label: '에이전트 설치',
               collapsible: true,
               collapsed: true,
-              link: {
-                type: 'doc',
-                id: 'mysql/install-agent'
-              },
               items: [
-                'mysql/install-agent-quick-setup',
+                'mysql/install-agent',
+                'mysql/install-package-manager',
+                'mysql/install-docker',
               ],
             },
             'mysql/after-install-agent',
@@ -2642,6 +2639,7 @@ const sidebars = {
             id: 'mysql/agent-settings'
           },
           items: [
+            'mysql/install-agent-quick-setup',
             'mysql/agent-dbx-settings',
             'mysql/agent-xos-settings',
             {
@@ -2861,7 +2859,17 @@ const sidebars = {
           collapsible: true,
           collapsed: true,
           items: [
-            'mssql/install-agent',
+            {
+              type: 'category',
+              label: '에이전트 설치',
+              collapsible: true,
+              collapsed: true,
+              items: [
+                'mssql/install-agent',
+                'mssql/install-package-manager',
+                'mssql/install-docker',
+              ],
+            },
             'mssql/after-install-agent',
             'mssql/troubleshooting',
           ],

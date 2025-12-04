@@ -1,0 +1,46 @@
+---
+id: install-docker
+title: Dockerインストール
+description: Dockerコンテナを利用したWhaTapデータベースモニタリングエージェントのインストール方法をご案内します。
+keywords: [ PostgreSQL, データベースモニタリング, エージェント, Docker ]
+---
+
+import DBuserDesc from '../common-items/_import_db-create-db-user-desc.mdx';
+import Agentsignupguide from "../common-items/_agent-signup-guide.mdx";
+import Createprojectv2 from "../getting-started/_create-project-v2.mdx";
+import CheckType from "../common-items/_db-install-agent-check-type.mdx";
+import Dbcreatemonitoringaccount from "../common-items/_db-create-postgre-account.mdx";
+import Accesskeyv2 from "../getting-started/_accesskey-v2.mdx";
+import RunDocker from "../common-items/_db-install-docker.mdx";
+
+Dockerコンテナを利用したWhaTapデータベースモニタリングエージェントのインストール方法をご案内します。
+
+:::tip
+
+**インストール方法の選択**
+
+* Docker環境で使用する場合は、このドキュメントを参照してください。
+* Debian/Ubuntuシステムでは、[パッケージマネージャーインストール](install-package-manager)を推奨します。
+* その他の環境では、[手動インストール](install-agent)を参照してください。
+
+:::
+
+:::note
+
+**サポートされているデータベース**
+
+MySQL、PostgreSQL、SQL Server
+
+:::
+
+<Agentsignupguide />
+
+<Createprojectv2 />
+
+<CheckType />
+
+<Dbcreatemonitoringaccount />
+
+<Accesskeyv2 />
+
+<RunDocker />

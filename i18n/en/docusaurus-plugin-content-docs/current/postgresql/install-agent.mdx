@@ -1,6 +1,6 @@
 ---
 id: install-agent
-title: Agent Installation
+title: Manual Installation
 description: The following guides you to the basic installation method for using the WhaTap database monitoring service.
 keywords:
   - PostgreSQL
@@ -27,71 +27,9 @@ import CheckType from "../common-items/_db-install-agent-check-type.mdx";
 
 <CheckType />
 
-import Dbcreatemonitoringaccount from "../common-items/_db-create-monitoring-account.mdx";
+import Dbcreatemonitoringaccount from "../common-items/_db-create-postgre-account.mdx";
 
 <Dbcreatemonitoringaccount />
-
-Assign additional roles depending on the features and operation environment.
-
-- **PostgreSQL 10 or later**
-
-  ```sql title="SQL"
-  create user DB_User with password 'DB Password'; 
-  grant pg_monitor to DB_User;
-  ```
-
-- **Below PostgreSQL 10**
-
-  ```sql title="SQL"
-  create user DB_User with password 'DB Password';
-  alter user DB_User with superuser;
-  ```
-
-- **In case of using the kill session**
-
-  Database monitoring provides the <UI>Kill Session</UI> function that allows you to kill an active session. To use this function, set the role as follows:
-
-  ```sql title="SQL"
-  grant pg_signal_backend to DB_User;
-  ```
-
-- **In case of collecting the table size** (<Cmdname sid="side_reportStat" className="uitext" /> &gt; <Cmdname sid="side_dbSize" className="uitext" /> &gt; <Cmdname sid="TTL06572" className="uitext" />)
-
-  ```sql title="SQL"
-  grant usage on schema {schema_name} to DB_User;
-  ```
-
-  :::note
-
-  Execute the command for each individual DB.
-
-  :::
-
-- **In case of collecting the object information** (<Cmdname sid="side_analysis" className="uitext" /> &gt; <Cmdname sid="side_dbObjectInfo" className="uitext" />)
-
-  ```sql title="SQL"
-  grant select on all tables in schema {schema_name} to DB_User;
-  ```
-
-<details>
-
-<summary>Support features for each role</summary>
-
-The roles other than the **Default role** do not need to be assigned depending on the environment. However, some functions may not work.
-
-<div className="c4-5-30-25-40">
-
-| Role                                              | command                                                         | Menu and feature                                                                                                                                                       | Details                                                                       |
-| ------------------------------------------------- | --------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------- |
-| Default role                                      | `grant pg_monitor to whatap;`                                   | <Cmdname sid="side_dbMonitoring" className="uitext" /> / <Cmdname sid="side_multiInstance" className="uitext" /> / <Cmdname sid="side_dbSqlStat" className="uitext" /> | It is the same as `grant pg_read_all_stats,pg_read_all_settings to DB_User;`. |
-| Role details                                      | `grant usage on schema {schema_name} to whatap;`                | <Cmdname sid="side_dbSize" className="uitext" /> / <Cmdname sid="TTL06572" className="uitext" />                                                                       | The roles for all schemas in the DB are required.                             |
-| \^                                                | `grant select on all tables in schema {schema_name} to whatap;` | Table layout query                                                                                                                                                     | -                                                                             |
-| \^                                                | `grant pg_read_all_settings to whatap;`                         | Parameter query                                                                                                                                                        | Specific parameter values may be invisible.                                   |
-| <Cmdname sid="session_kill" className="uitext" /> | `grant pg_signal_backend to whatap;`                            | <Cmdname sid="active_sessions" className="uitext" /> &gt; <Cmdname sid="session_kill" className="uitext" />                                                        | PostgreSQL 9.6 or earlier requires the superuser privilege.                   |
-
-</div>
-
-</details>
 
 {/* 액세스 키 확인 */}
 import Accesskeyv2 from "../getting-started/_accesskey-v2.mdx";

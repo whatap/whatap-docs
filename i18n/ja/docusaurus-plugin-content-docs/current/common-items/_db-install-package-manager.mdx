@@ -1,0 +1,65 @@
+## エージェントのインストール
+
+### WhaTapリポジトリの追加
+
+次のコマンドを実行して、WhaTap公式リポジトリをシステムに追加します。
+```bash
+curl -s https://repo.whatap.io/debian/release.gpg | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/whatap-release.gpg > /dev/null
+echo "deb [signed-by=/etc/apt/trusted.gpg.d/whatap-release.gpg] https://repo.whatap.io/debian unstable/" | sudo tee /etc/apt/sources.list.d/whatap.list
+sudo apt-get update
+```
+
+### パッケージのインストール
+
+次のコマンドでWhaTapデータベースモニタリングエージェントをインストールします。
+```bash
+sudo apt-get install whatap-db
+```
+
+### エージェントの設定と起動
+
+設定ファイルを作成し、エージェントを起動します。
+```bash
+sudo bash -c 'cat > /usr/whatap/db/whatap.conf <<EOF
+license=ライセンスキー
+whatap.server.host=13.124.11.223/13.209.172.35
+dbms=mysql
+db_ip=127.0.0.1
+db_port=3306
+EOF'
+cd /usr/whatap/db && sudo /usr/whatap/db/uid.sh whatap whatap && cd -
+sudo service whatap-db restart
+```
+
+:::note
+
+- `whatap.conf`ファイルに必要なデータベースオプションを追加できます。
+- `uid.sh`スクリプトのパラメータ値(データベースアカウントIDおよびパスワード)を実際の環境に合わせて修正してください。
+
+:::
+
+## エージェントの管理
+
+### エージェントのアップデート
+
+エージェントを最新バージョンにアップデートするには、次のコマンドを実行します。
+```bash
+sudo apt-get update
+sudo apt-get install whatap-db
+sudo service whatap-db restart
+```
+
+### エージェントの停止とパッケージの削除
+
+WhaTapデータベースモニタリングエージェントを削除するには、次のコマンドを実行します。
+```bash
+sudo service whatap-db stop
+sudo apt-get remove whatap-db
+```
+
+### エージェントログの確認
+
+エージェントログを確認するには、次のコマンドを使用します。
+```bash
+sudo service whatap-db log
+```

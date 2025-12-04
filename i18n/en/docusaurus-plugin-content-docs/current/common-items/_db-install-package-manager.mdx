@@ -1,0 +1,65 @@
+## Installing the Agent
+
+### Adding the WhaTap Repository
+
+Run the following commands to add the official WhaTap repository to your system.
+```bash
+curl -s https://repo.whatap.io/debian/release.gpg | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/whatap-release.gpg > /dev/null
+echo "deb [signed-by=/etc/apt/trusted.gpg.d/whatap-release.gpg] https://repo.whatap.io/debian unstable/" | sudo tee /etc/apt/sources.list.d/whatap.list
+sudo apt-get update
+```
+
+### Installing the Package
+
+Install the WhaTap database monitoring agent with the following command.
+```bash
+sudo apt-get install whatap-db
+```
+
+### Configuring and Starting the Agent
+
+Create the configuration file and start the agent.
+```bash
+sudo bash -c 'cat > /usr/whatap/db/whatap.conf <<EOF
+license=license_key
+whatap.server.host=13.124.11.223/13.209.172.35
+dbms=mysql
+db_ip=127.0.0.1
+db_port=3306
+EOF'
+cd /usr/whatap/db && sudo /usr/whatap/db/uid.sh whatap whatap && cd -
+sudo service whatap-db restart
+```
+
+:::note
+
+- You can add additional database options to the `whatap.conf` file.
+- Modify the parameter values (database account ID and password) of the `uid.sh` script to match your actual environment.
+
+:::
+
+## Managing the Agent
+
+### Updating the Agent
+
+To update the agent to the latest version, run the following commands.
+```bash
+sudo apt-get update
+sudo apt-get install whatap-db
+sudo service whatap-db restart
+```
+
+### Stopping the Agent and Removing the Package
+
+To remove the WhaTap database monitoring agent, run the following commands.
+```bash
+sudo service whatap-db stop
+sudo apt-get remove whatap-db
+```
+
+### Checking Agent Logs
+
+To check the agent logs, use the following command.
+```bash
+sudo service whatap-db log
+```
