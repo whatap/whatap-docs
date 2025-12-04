@@ -1,0 +1,54 @@
+## Running the Agent
+
+Run the following command to start the WhaTap database monitoring agent as a Docker container.
+```bash
+docker run -d --name whatap-db-agent \
+-e WHATAP_CONF="
+license=x6051ro88nrc9-x4hmr76jvvlfnq-z52cnv1dfa8n5c 
+whatap.server.host=13.124.11.223/13.209.172.35
+dbms=mysql
+db_ip=10.0.0.1
+db_port=3306 
+connect_option=?useSSL=true&verifyServerCertificate=false&serverTimezone=SERVER_TIMEZONE" \
+-e DB_USERNAME=mydbuser \
+-e DB_PASSWORD=mypassword \
+whatap/db-agent:latest
+```
+
+### Configuration Items
+
+#### Required Settings
+
+* `license`: Project access key
+* `whatap.server.host`: WhaTap collection server IP (13.124.11.223/13.209.172.35)
+* `dbms`: Database type (mysql, postgresql, mssql)
+* `db_ip`: Database server IP address
+* `db_port`: Database server port number
+* `DB_USERNAME`: Database account ID
+* `DB_PASSWORD`: Database account password
+
+#### Optional Settings
+
+* `connect_option`: Database connection options
+  * `useSSL=true&verifyServerCertificate=false`: When connecting to the database using SSL
+  * `serverTimezone=SERVER_TIMEZONE`: When server timezone configuration is required for JDBC driver connection
+
+:::note
+
+Modify the configuration values in the above command to match your actual environment.
+
+:::
+
+## Verifying Agent Operation
+
+Check if the agent is running properly with the following command.
+```bash
+docker logs -f whatap-db-agent
+```
+
+## Removing the Agent
+
+Run the following command to stop and remove the WhaTap database monitoring agent container.
+```bash
+docker stop whatap-db-agent && docker rm whatap-db-agent
+```

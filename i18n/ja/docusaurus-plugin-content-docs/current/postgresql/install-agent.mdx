@@ -27,71 +27,9 @@ import CheckType from "../common-items/_db-install-agent-check-type.mdx";
 
 <CheckType />
 
-import Dbcreatemonitoringaccount from "../common-items/_db-create-monitoring-account.mdx";
+import Dbcreatemonitoringaccount from "../common-items/_db-create-postgre-account.mdx";
 
 <Dbcreatemonitoringaccount />
-
-機能と使用環境に応じて追加権限を付与してください。
-
-- **PostgreSQL 10バージョン以降**
-
-  ```sql title="SQL"
-  create user DB_User with password 'DB Password'; 
-  grant pg_monitor to DB_User;
-  ```
-
-- **PostgreSQL 10バージョン未満**
-
-  ```sql title="SQL"
-  create user DB_User with password 'DB Password';
-  alter user DB_User with superuser;
-  ```
-
-- **Kill sessionを使用する場合**
-
-  データベースモニタリングでは、進行中のセッションを終了できる<UI>Kill Session</UI>機能を提供します。この機能を使用するには、次のように権限を設定してください。
-
-  ```sql title="SQL"
-  grant pg_signal_backend to DB_User;
-  ```
-
-- **テーブルサイズを収集する場合** (<Cmdname sid="side_reportStat" className="uitext" /> &gt; <Cmdname sid="side_dbSize" className="uitext" /> &gt; <Cmdname sid="TTL06572" className="uitext" />)
-
-  ```sql title="SQL"
-  grant usage on schema {schema_name} to DB_User;
-  ```
-
-  :::note
-
-  個別のDBごとにコマンドを実行する必要があります。
-
-  :::
-
-- **オブジェクト情報を照会する場合**(<Cmdname sid="side_analysis" className="uitext" /> &gt; <Cmdname sid="side_dbObjectInfo" className="uitext" />)
-
-  ```sql title="SQL"
-  grant select on all tables in schema {schema_name} to DB_User;
-  ```
-
-<details>
-
-<summary>権限による対応機能を確認する</summary>
-
-**基本権限**外の権限は、ユーザーの環境によって付与する必要はありません。ただし、一部の機能が動作しないことがあります。
-
-<div className="c4-5-30-25-40">
-
-| 権限                                                | command                                                         | メニューと機能                                                                                                                                                                | 詳細履歴                                                          |
-| ------------------------------------------------- | --------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------- |
-| 基本権限                                              | `grant pg_monitor to whatap;`                                   | <Cmdname sid="side_dbMonitoring" className="uitext" /> / <Cmdname sid="side_multiInstance" className="uitext" /> / <Cmdname sid="side_dbSqlStat" className="uitext" /> | `grant pg_read_all_stats,pg_read_all_settings to DB_User;`と同一 |
-| 詳細権限                                              | `grant usage on schema {schema_name} to whatap;`                | <Cmdname sid="side_dbSize" className="uitext" /> / <Cmdname sid="TTL06572" className="uitext" />                                                                       | 当該DBのすべてのスキーマに対して権限が必要                                        |
-| \^                                                | `grant select on all tables in schema {schema_name} to whatap;` | テーブルレイアウトを照会                                                                                                                                                           | -                                                             |
-| \^                                                | `grant pg_read_all_settings to whatap;`                         | パラメータ照会                                                                                                                                                                | 特定のパラメータ値が見えないことがある                                           |
-| <Cmdname sid="session_kill" className="uitext" /> | `grant pg_signal_backend to whatap;`                            | <Cmdname sid="active_sessions" className="uitext" /> &gt; <Cmdname sid="session_kill" className="uitext" />                                                        | PostgreSQL 9.6バージョン以下はsuperuser権限が必要                          |
-
-</div>
-
-</details>
 
 {/* 액세스 키 확인 */}
 import Accesskeyv2 from "../getting-started/_accesskey-v2.mdx";
