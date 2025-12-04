@@ -4,23 +4,30 @@
         "ver": "Service 2.23.4",
         "date": "2025-12-04",
         "Lists": [
-            {
-                "ver": "Service 2.23.4",
-                "hash": "service-2234",
-                "product": "Database",
-                "type": "Fixed",
-                "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Modified so that temporary table reserved words (<code>#string</code>, <code>##string</code>) in the <span class=\"uitext\">SQL Detail</span> window do not change to the UI for entering bind values.</p>"
-            },
-            {
-                "ver": "Service 2.23.4",
-                "hash": "service-2234",
-                "product": "Network",
-                "category": "Network Management System",
-                "type": "Fixed",
-                "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Resolved the screen flickering issue that occurred during real-time view in <span class=\"uitext\">Device Status</span> &gt; <span class=\"uitext\">Usage Status</span>.</p>"
-            }
+          {
+            "ver": "Service 2.23.4",
+            "hash": "service-2234",
+            "product": "Database",
+            "type": "Fixed",
+            "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">SQL Detail</span> window updated so that temporary table reserved words (<code>#string</code>, <code>##string</code>) are not converted into a bind-value input UI.</p>"
+          },
+          {
+            "ver": "Service 2.23.3",
+            "hash": "service-2233",
+            "product": "Kubernetes",
+            "type": "Fixed",
+            "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">GPU</span> &gt; <span class=\"uitext\">GPU Trend</span> issue where preset values were not saved correctly when the filter contained the <code>*</code> character.</p>"
+          },
+          {
+            "ver": "Service 2.23.4",
+            "hash": "service-2234",
+            "product": "Network",
+            "category": "Network Management System",
+            "type": "Fixed",
+            "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">Device Status</span> &gt; <span class=\"uitext\">Usage Status</span> screen flickering issue occurring during real-time data refresh.</p>"
+          }
         ]
-    },    
+      },          
     {
         "url": "https://docs.whatap.io/release-notes/service/service-2_23_x",
         "ver": "Service 2.23.3",
