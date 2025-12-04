@@ -16,14 +16,14 @@ import Dbagentdbxbasicoption from "../common-items/_db-agent-dbx-basic-option.md
 
 <Dbagentdbxbasicoption />
 
-- **rac** <span class='type'>String</span> <code class="my">RAC</code>
+- **rac_name** <span class='type'>String</span> <code class="my">RAC</code>
 
     Oracleの**Real Application Clusters**(**RAC**) クラスターグループに束ねられているインスタンスのグループ名を設定するオプションです。 このオプションを使用して、複雑なRACクラスター グループ名を簡潔で識別しやすい名前に設定できます。 このオプションによって設定されたRACクラスターグループ名は、WhaTapモニタリングサービス画面で確認できます。
 
     例えば、RACクラスタグループ名が'**my_long_rac_cluster_group_name**'のように長い場合、ユーザーは次のように簡潔な名前で設定できます。
 
   ```ini title="whatap.conf"
-  rac=my_rac_cluster_group
+  rac_name=my_rac_cluster_group
   ```
 
     WhaTapモニタリングサービスで'**my_rac_cluster_group**'と表示され、ユーザーはそのRACクラスターグループをすばやく識別してモニタリングできます。
