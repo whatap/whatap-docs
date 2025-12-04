@@ -1,12 +1,61 @@
 [
     {
         "url": "https://docs.whatap.io/release-notes/service/service-2_23_x",
+        "ver": "Service 2.23.3",
+        "date": "2025-12-04",
+        "Lists": [
+          {
+            "ver": "Service 2.23.3",
+            "hash": "service-2233",
+            "product": "Kubernetes",
+            "type": "Feature",
+            "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">Workload</span> &gt; <span class=\"uitext\">Pod List</span> Added Job and CronJob columns</p>"
+          },
+          {
+            "ver": "Service 2.23.3",
+            "hash": "service-2233",
+            "product": "Kubernetes",
+            "type": "Feature",
+            "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">GPU</span> &gt; <span class=\"uitext\">GPU Trend</span> Added min/avg/max selection options</p>"
+          },
+          {
+            "ver": "Service 2.23.3",
+            "hash": "service-2233",
+            "product": "Kubernetes",
+            "type": "Changed",
+            "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> <span class=\"uitext\">GPU</span> &gt; <span class=\"uitext\">GPU Trend</span> Modified to always display labels</p>"
+          },
+          {
+            "ver": "Service 2.23.3",
+            "hash": "service-2233",
+            "product": "Kubernetes",
+            "type": "Changed",
+            "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> <span class=\"uitext\">Container</span> Updated the Pod Memory Working Set By Limit chart type in Out Of Memory Container details from stacked to multiline</p>"
+          },
+          {
+            "ver": "Service 2.23.3",
+            "hash": "service-2233",
+            "product": "Kubernetes",
+            "type": "Fixed",
+            "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">Container Map</span> Fixed an issue where the resource relationship scroll flickered in certain browsers</p>"
+          },
+          {
+            "ver": "Service 2.23.3",
+            "hash": "service-2233",
+            "product": "OpenMetrics",
+            "type": "Fixed",
+            "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Fixed an unknown error that occurred when accessing the <span class=\"uitext\">Istio Template</span> without an issued access key</p>"
+          }
+        ]
+      },      
+    {
+        "url": "https://docs.whatap.io/release-notes/service/service-2_23_x",
         "ver": "Service 2.23.2",
-        "date": "2025-12-2",
+        "date": "2025-12-02",
         "Lists": [
             {
-                "ver": "Service 2.23.3",
-                "hash": "service-2233",
+                "ver": "Service 2.23.2",
+                "hash": "service-2232",
                 "product": "Kubernetes",
                 "type": "Fixed",
                 "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">Event Settings</span> &gt; <span class=\"uitext\">Transaction</span> Fixed an issue where the add/edit page could not be accessed.</p>"

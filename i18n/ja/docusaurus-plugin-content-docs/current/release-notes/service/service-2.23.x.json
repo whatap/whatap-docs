@@ -1,12 +1,61 @@
 [
     {
         "url": "https://docs.whatap.io/release-notes/service/service-2_23_x",
+        "ver": "Service 2.23.3",
+        "date": "2025-12-04",
+        "Lists": [
+          {
+            "ver": "Service 2.23.3",
+            "hash": "service-2233",
+            "product": "Kubernetes",
+            "type": "Feature",
+            "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">ワークロード</span> &gt; <span class=\"uitext\">Pod リスト</span> に Job・CronJob カラムを追加</p>"
+          },
+          {
+            "ver": "Service 2.23.3",
+            "hash": "service-2233",
+            "product": "Kubernetes",
+            "type": "Feature",
+            "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">GPU</span> &gt; <span class=\"uitext\">GPU トレンド</span> に最小・平均・最大の選択オプションを追加</p>"
+          },
+          {
+            "ver": "Service 2.23.3",
+            "hash": "service-2233",
+            "product": "Kubernetes",
+            "type": "Changed",
+            "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> <span class=\"uitext\">GPU</span> &gt; <span class=\"uitext\">GPU トレンド</span> のラベルが常に表示されるように変更</p>"
+          },
+          {
+            "ver": "Service 2.23.3",
+            "hash": "service-2233",
+            "product": "Kubernetes",
+            "type": "Changed",
+            "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> <span class=\"uitext\">コンテナ</span> Out Of Memory Container 詳細の Pod Memory Working Set By Limit チャートタイプをスタックからマルチラインに変更</p>"
+          },
+          {
+            "ver": "Service 2.23.3",
+            "hash": "service-2233",
+            "product": "Kubernetes",
+            "type": "Fixed",
+            "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">コンテナマップ</span> 詳細のリソース関係スクロールが特定ブラウザでちらつく問題を修正</p>"
+          },
+          {
+            "ver": "Service 2.23.3",
+            "hash": "service-2233",
+            "product": "OpenMetrics",
+            "type": "Fixed",
+            "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> アクセスキー未発行状態で <span class=\"uitext\">Istio テンプレート</span> にアクセスした際に発生していた不明なエラーを修正</p>"
+          }
+        ]
+      },      
+    {
+        "url": "https://docs.whatap.io/release-notes/service/service-2_23_x",
         "ver": "Service 2.23.2",
-        "date": "2025-12-2",
+        "date": "2025-12-02",
         "Lists": [
             {
-                "ver": "Service 2.23.3",
-                "hash": "service-2233",
+                "ver": "Service 2.23.2",
+                "hash": "service-2232",
                 "product": "Kubernetes",
                 "type": "Fixed",
                 "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">イベント設定</span> &gt; <span class=\"uitext\">トランザクション</span> の追加/編集ページにアクセスできない問題を修正しました。</p>"
