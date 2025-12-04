@@ -1,42 +1,42 @@
-## 계정 생성{#uid}
+## Account creation {#uid}
 
-데이터베이스 모니터링을 하기 위해 필요한 권한을 가진 계정을 생성하세요. root(admin) 계정으로 로그인해 계정을 생성하세요.
+Create an account with roles required for database monitoring. Log in with the root account and then create accounts.
 
 :::note
 
-* 권한을 가진 계정이 있다면 이 단계를 생략하고 [다음 단계](#check-accesskey)로 넘어가세요.
+* If you already have an account with the required permissions, skip this step and proceed to the [next step](#check-accesskey).
 
-* 예시 코드에서 `DB_User`는 DB 사용자 계정 이름입니다. 사용자가 이용하는 사용자 계정 이름으로 변경하세요.
+* In the example code, `DB_User` is the database user account name. Change it to the user account name you are using.
 
-* 예시 코드의 `DB_Password`에는 사용자 비밀번호를 입력하세요.
+* Enter your user password in `DB_Password` in the example code.
 
 :::
 
-기능 및 사용 환경에 따라 추가 권한을 부여하세요.
+Assign additional roles depending on the features and operation environment.
 
-* **PostgreSQL 10 버전 이상**
+- **PostgreSQL 10 or later**
 
   ```sql title="SQL"
   create user DB_User with password 'DB Password'; 
   grant pg_monitor to DB_User;
   ```
 
-* **PostgreSQL 10 버전 미만**
+- **Below PostgreSQL 10**
 
   ```sql title="SQL"
   create user DB_User with password 'DB Password';
   alter user DB_User with superuser;
   ```
 
-* **Kill session 기능을 사용할 경우**
+- **In case of using the kill session**
 
-  데이터베이스 모니터링에서는 진행 중인 세션을 종료할 수 있는 <UI>Kill Session</UI> 기능을 제공합니다. 이 기능을 사용하려면 다음과 같이 권한을 설정하세요.
+  Database monitoring provides the <UI>Kill Session</UI> function that allows you to kill an active session. To use this function, set the role as follows:
 
   ```sql title="SQL"
   grant pg_signal_backend to DB_User;
   ```
 
-* **테이블 사이즈를 수집하는 경우** (<Cmdname sid="side_reportStat" className="uitext" /> &gt; <Cmdname sid="side_dbSize" className="uitext" /> &gt; <Cmdname sid="TTL06572" className="uitext" />)
+- **In case of collecting the table size** (<Cmdname sid="side_reportStat" className="uitext" /> &gt; <Cmdname sid="side_dbSize" className="uitext" /> &gt; <Cmdname sid="TTL06572" className="uitext" />)
 
   ```sql title="SQL"
   grant usage on schema {schema_name} to DB_User;
@@ -44,11 +44,11 @@
 
   :::note
 
-  개별 DB마다 명령어를 수행해야 합니다.
+  Execute the command for each individual DB.
 
   :::
 
-* **오브젝트 정보를 조회하는 경우** (<Cmdname sid="side_analysis" className="uitext" /> &gt; <Cmdname sid="side_dbObjectInfo" className="uitext" />)
+- **In case of collecting the object information** (<Cmdname sid="side_analysis" className="uitext" /> &gt; <Cmdname sid="side_dbObjectInfo" className="uitext" />)
 
   ```sql title="SQL"
   grant select on all tables in schema {schema_name} to DB_User;
@@ -56,19 +56,19 @@
 
 <details>
 
-<summary>권한에 따른 지원 기능 살펴보기</summary>
+<summary>Support features for each role</summary>
 
-**기본 권한** 외의 권한은 사용자의 환경에 따라 부여하지 않아도 됩니다. 단, 일부 기능이 동작하지 않을 수 있습니다.
+The roles other than the **Default role** do not need to be assigned depending on the environment. However, some functions may not work.
 
 <div className="c4-5-30-25-40">
 
-| 권한 | command | 메뉴 및 기능 | 상세 내역 |
-| -- | -- | -- | -- |
-| 기본 권한 | `grant pg_monitor to whatap;` | <Cmdname sid="side_dbMonitoring" className="uitext" /> / <Cmdname sid="side_multiInstance" className="uitext" /> / <Cmdname sid="side_dbSqlStat" className="uitext" /> | `grant pg_read_all_stats,pg_read_all_settings to DB_User;` 와 동일 |
-| 상세 권한 | `grant usage on schema {schema_name} to whatap;` | <Cmdname sid="side_dbSize" className="uitext" /> / <Cmdname sid="TTL06572" className="uitext" /> | 해당 DB의 모든 스키마에 대해 권한 필요 |
-| \^ | `grant select on all tables in schema {schema_name} to whatap;` | 테이블 레이아웃 조회 | - |
-| \^ | `grant pg_read_all_settings to whatap;` | 파라미터 조회 | 특정 파라미터 값이 보이지 않을 수 있음 |
-| <Cmdname sid="session_kill" className="uitext" /> | `grant pg_signal_backend to whatap;` | <Cmdname sid="active_sessions" className="uitext" /> &gt; <Cmdname sid="session_kill" className="uitext" /> | PostgreSQL 9.6 버전 이하는 superuser 권한 필요 |
+| Role                                              | command                                                         | Menu and feature                                                                                                                                                       | Details                                                                       |
+| ------------------------------------------------- | --------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------- |
+| Default role                                      | `grant pg_monitor to whatap;`                                   | <Cmdname sid="side_dbMonitoring" className="uitext" /> / <Cmdname sid="side_multiInstance" className="uitext" /> / <Cmdname sid="side_dbSqlStat" className="uitext" /> | It is the same as `grant pg_read_all_stats,pg_read_all_settings to DB_User;`. |
+| Role details                                      | `grant usage on schema {schema_name} to whatap;`                | <Cmdname sid="side_dbSize" className="uitext" /> / <Cmdname sid="TTL06572" className="uitext" />                                                                       | The roles for all schemas in the DB are required.                             |
+| \^                                                | `grant select on all tables in schema {schema_name} to whatap;` | Table layout query                                                                                                                                                     | -                                                                             |
+| \^                                                | `grant pg_read_all_settings to whatap;`                         | Parameter query                                                                                                                                                        | Specific parameter values may be invisible.                                   |
+| <Cmdname sid="session_kill" className="uitext" /> | `grant pg_signal_backend to whatap;`                            | <Cmdname sid="active_sessions" className="uitext" /> &gt; <Cmdname sid="session_kill" className="uitext" />                                                        | PostgreSQL 9.6 or earlier requires the superuser privilege.                   |
 
 </div>
 
