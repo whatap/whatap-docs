@@ -1,27 +1,27 @@
-## 에이전트 설치
+## エージェントのインストール
 
-### 와탭 리포지토리 추가
+### WhaTapリポジトリの追加
 
-다음 명령어를 실행하여 와탭 공식 리포지토리를 시스템에 추가합니다.
+次のコマンドを実行して、WhaTap公式リポジトリをシステムに追加します。
 ```bash
 curl -s https://repo.whatap.io/debian/release.gpg | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/whatap-release.gpg > /dev/null
 echo "deb [signed-by=/etc/apt/trusted.gpg.d/whatap-release.gpg] https://repo.whatap.io/debian unstable/" | sudo tee /etc/apt/sources.list.d/whatap.list
 sudo apt-get update
 ```
 
-### 패키지 설치
+### パッケージのインストール
 
-다음 명령어로 와탭 데이터베이스 모니터링 에이전트를 설치합니다.
+次のコマンドでWhaTapデータベースモニタリングエージェントをインストールします。
 ```bash
 sudo apt-get install whatap-db
 ```
 
-### 에이전트 설정 및 시작
+### エージェントの設定と起動
 
-설정 파일을 생성하고 에이전트를 시작합니다.
+設定ファイルを作成し、エージェントを起動します。
 ```bash
 sudo bash -c 'cat > /usr/whatap/db/whatap.conf <<EOF
-license=라이센스
+license=ライセンスキー
 whatap.server.host=13.124.11.223/13.209.172.35
 dbms=mysql
 db_ip=127.0.0.1
@@ -33,36 +33,33 @@ sudo service whatap-db restart
 
 :::note
 
-- `whatap.conf` 파일에 필요한 데이터베이스 옵션을 추가할 수 있습니다.
-- `uid.sh` 스크립트의 파라미터 값(데이터베이스 계정 ID 및 비밀번호)을 실제 환경에 맞게 수정하세요.
+- `whatap.conf`ファイルに必要なデータベースオプションを追加できます。
+- `uid.sh`スクリプトのパラメータ値(データベースアカウントIDおよびパスワード)を実際の環境に合わせて修正してください。
 
 :::
 
-## 에이전트 관리
+## エージェントの管理
 
-### 에이전트 업데이트
+### エージェントのアップデート
 
-에이전트를 최신 버전으로 업데이트하려면 다음 명령어를 실행합니다.
-
+エージェントを最新バージョンにアップデートするには、次のコマンドを実行します。
 ```bash
 sudo apt-get update
 sudo apt-get install whatap-db
 sudo service whatap-db restart
 ```
 
-### 에이전트 중지 및 패키지 제거
+### エージェントの停止とパッケージの削除
 
-와탭 데이터베이스 모니터링 에이전트를 제거하려면 다음 명령어를 실행합니다.
-
+WhaTapデータベースモニタリングエージェントを削除するには、次のコマンドを実行します。
 ```bash
 sudo service whatap-db stop
 sudo apt-get remove whatap-db
 ```
 
-### 에이전트 로그 확인
+### エージェントログの確認
 
-에이전트 로그를 확인하려면 다음 명령어를 사용합니다.
-
+エージェントログを確認するには、次のコマンドを使用します。
 ```bash
 sudo service whatap-db log
 ```

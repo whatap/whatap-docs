@@ -1,42 +1,42 @@
-## 계정 생성{#uid}
+## アカウントの作成{#uid}
 
 데이터베이스 모니터링을 하기 위해 필요한 권한을 가진 계정을 생성하세요. root(admin) 계정으로 로그인해 계정을 생성하세요.
 
 :::note
 
-* 권한을 가진 계정이 있다면 이 단계를 생략하고 [다음 단계](#check-accesskey)로 넘어가세요.
+  * 必要な権限を持つアカウントがすでにある場合は、このステップをスキップして[次のステップ](#check-accesskey)に進んでください。
 
-* 예시 코드에서 `DB_User`는 DB 사용자 계정 이름입니다. 사용자가 이용하는 사용자 계정 이름으로 변경하세요.
+  * サンプルコードの`DB_User`は、データベースユーザーアカウント名です。使用するユーザーアカウント名に変更してください。
 
-* 예시 코드의 `DB_Password`에는 사용자 비밀번호를 입력하세요.
+  * サンプルコードの`DB_Password`には、ユーザーパスワードを入力してください。
 
 :::
 
-기능 및 사용 환경에 따라 추가 권한을 부여하세요.
+機能と使用環境に応じて追加権限を付与してください。
 
-* **PostgreSQL 10 버전 이상**
+- **PostgreSQL 10バージョン以降**
 
   ```sql title="SQL"
   create user DB_User with password 'DB Password'; 
   grant pg_monitor to DB_User;
   ```
 
-* **PostgreSQL 10 버전 미만**
+- **PostgreSQL 10バージョン未満**
 
   ```sql title="SQL"
   create user DB_User with password 'DB Password';
   alter user DB_User with superuser;
   ```
 
-* **Kill session 기능을 사용할 경우**
+- **Kill sessionを使用する場合**
 
-  데이터베이스 모니터링에서는 진행 중인 세션을 종료할 수 있는 <UI>Kill Session</UI> 기능을 제공합니다. 이 기능을 사용하려면 다음과 같이 권한을 설정하세요.
+  データベースモニタリングでは、進行中のセッションを終了できる<UI>Kill Session</UI>機能を提供します。この機能を使用するには、次のように権限を設定してください。
 
   ```sql title="SQL"
   grant pg_signal_backend to DB_User;
   ```
 
-* **테이블 사이즈를 수집하는 경우** (<Cmdname sid="side_reportStat" className="uitext" /> &gt; <Cmdname sid="side_dbSize" className="uitext" /> &gt; <Cmdname sid="TTL06572" className="uitext" />)
+- **テーブルサイズを収集する場合** (<Cmdname sid="side_reportStat" className="uitext" /> &gt; <Cmdname sid="side_dbSize" className="uitext" /> &gt; <Cmdname sid="TTL06572" className="uitext" />)
 
   ```sql title="SQL"
   grant usage on schema {schema_name} to DB_User;
@@ -44,11 +44,11 @@
 
   :::note
 
-  개별 DB마다 명령어를 수행해야 합니다.
+  個別のDBごとにコマンドを実行する必要があります。
 
   :::
 
-* **오브젝트 정보를 조회하는 경우** (<Cmdname sid="side_analysis" className="uitext" /> &gt; <Cmdname sid="side_dbObjectInfo" className="uitext" />)
+- **オブジェクト情報を照会する場合**(<Cmdname sid="side_analysis" className="uitext" /> &gt; <Cmdname sid="side_dbObjectInfo" className="uitext" />)
 
   ```sql title="SQL"
   grant select on all tables in schema {schema_name} to DB_User;
@@ -56,19 +56,19 @@
 
 <details>
 
-<summary>권한에 따른 지원 기능 살펴보기</summary>
+<summary>権限による対応機能を確認する</summary>
 
-**기본 권한** 외의 권한은 사용자의 환경에 따라 부여하지 않아도 됩니다. 단, 일부 기능이 동작하지 않을 수 있습니다.
+**基本権限**外の権限は、ユーザーの環境によって付与する必要はありません。ただし、一部の機能が動作しないことがあります。
 
 <div className="c4-5-30-25-40">
 
-| 권한 | command | 메뉴 및 기능 | 상세 내역 |
-| -- | -- | -- | -- |
-| 기본 권한 | `grant pg_monitor to whatap;` | <Cmdname sid="side_dbMonitoring" className="uitext" /> / <Cmdname sid="side_multiInstance" className="uitext" /> / <Cmdname sid="side_dbSqlStat" className="uitext" /> | `grant pg_read_all_stats,pg_read_all_settings to DB_User;` 와 동일 |
-| 상세 권한 | `grant usage on schema {schema_name} to whatap;` | <Cmdname sid="side_dbSize" className="uitext" /> / <Cmdname sid="TTL06572" className="uitext" /> | 해당 DB의 모든 스키마에 대해 권한 필요 |
-| \^ | `grant select on all tables in schema {schema_name} to whatap;` | 테이블 레이아웃 조회 | - |
-| \^ | `grant pg_read_all_settings to whatap;` | 파라미터 조회 | 특정 파라미터 값이 보이지 않을 수 있음 |
-| <Cmdname sid="session_kill" className="uitext" /> | `grant pg_signal_backend to whatap;` | <Cmdname sid="active_sessions" className="uitext" /> &gt; <Cmdname sid="session_kill" className="uitext" /> | PostgreSQL 9.6 버전 이하는 superuser 권한 필요 |
+| 権限                                                | command                                                         | メニューと機能                                                                                                                                                                | 詳細履歴                                                          |
+| ------------------------------------------------- | --------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------- |
+| 基本権限                                              | `grant pg_monitor to whatap;`                                   | <Cmdname sid="side_dbMonitoring" className="uitext" /> / <Cmdname sid="side_multiInstance" className="uitext" /> / <Cmdname sid="side_dbSqlStat" className="uitext" /> | `grant pg_read_all_stats,pg_read_all_settings to DB_User;`と同一 |
+| 詳細権限                                              | `grant usage on schema {schema_name} to whatap;`                | <Cmdname sid="side_dbSize" className="uitext" /> / <Cmdname sid="TTL06572" className="uitext" />                                                                       | 当該DBのすべてのスキーマに対して権限が必要                                        |
+| \^                                                | `grant select on all tables in schema {schema_name} to whatap;` | テーブルレイアウトを照会                                                                                                                                                           | -                                                             |
+| \^                                                | `grant pg_read_all_settings to whatap;`                         | パラメータ照会                                                                                                                                                                | 特定のパラメータ値が見えないことがある                                           |
+| <Cmdname sid="session_kill" className="uitext" /> | `grant pg_signal_backend to whatap;`                            | <Cmdname sid="active_sessions" className="uitext" /> &gt; <Cmdname sid="session_kill" className="uitext" />                                                        | PostgreSQL 9.6バージョン以下はsuperuser権限が必要                          |
 
 </div>
 
