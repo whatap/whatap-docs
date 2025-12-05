@@ -7,6 +7,13 @@
       {
         "ver": "Service 2.23.5",
         "hash": "service-2235",
+        "product": "Kubernetes",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">Log</span> &gt; <span class=\"uitext\">Log Search</span> Fixed an issue where the seconds value disappeared after performing a second-level search.</p>"
+      },      
+      {
+        "ver": "Service 2.23.5",
+        "hash": "service-2235",
         "product": "Log",
         "type": "Fixed",
         "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">Log</span> &gt; <span class=\"uitext\">Log Search</span> Fixed an issue where the seconds disappeared after performing a second-level search.</p>"
