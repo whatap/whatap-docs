@@ -1,4 +1,25 @@
 [
+  {
+    "url": "https://docs.whatap.io/release-notes/service/service-2_23_x",
+    "ver": "Service 2.23.5",
+    "date": "2025-12-05",
+    "Lists": [
+      {
+        "ver": "Service 2.23.5",
+        "hash": "service-2235",
+        "product": "Log",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">ログ</span> &gt; <span class=\"uitext\">ログ検索</span> 秒単位で検索した際、検索後に秒が消えてしまう問題を修正しました。</p>"
+      },
+      {
+        "ver": "Service 2.23.5",
+        "hash": "service-2235",
+        "product": "Log",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">ログ</span> &gt; <span class=\"uitext\">ログ検索</span> キーワード検索時に「ログ」列以外の列もハイライトされるように修正しました。</p>"
+      }
+    ]
+  },  
     {
         "url": "https://docs.whatap.io/release-notes/service/service-2_23_x",
         "ver": "Service 2.23.4",
