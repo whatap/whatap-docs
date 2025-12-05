@@ -7,6 +7,13 @@
       {
         "ver": "Service 2.23.5",
         "hash": "service-2235",
+        "product": "Kubernetes",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">ログ</span> &gt; <span class=\"uitext\">ログ検索</span> 秒単位で検索した後、秒が表示されなくなる問題を修正しました。</p>"
+      },      
+      {
+        "ver": "Service 2.23.5",
+        "hash": "service-2235",
         "product": "Log",
         "type": "Fixed",
         "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">ログ</span> &gt; <span class=\"uitext\">ログ検索</span> 秒単位で検索した際、検索後に秒が消えてしまう問題を修正しました。</p>"
