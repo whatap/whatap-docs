@@ -1,6 +1,20 @@
 [
   {
     "url": "https://docs.whatap.io/release-notes/service/service-2_23_x",
+    "ver": "Service 2.23.6",
+    "date": "2025-12-08",
+    "Lists": [
+      {
+        "ver": "Service 2.23.6",
+        "hash": "service-2236",
+        "product": "Application",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Fixed an issue where log retrieval failed in the pop-out when there were many agent filters</p>"
+      }
+    ]
+  },  
+  {
+    "url": "https://docs.whatap.io/release-notes/service/service-2_23_x",
     "ver": "Service 2.23.5",
     "date": "2025-12-05",
     "Lists": [
