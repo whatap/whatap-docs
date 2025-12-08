@@ -1,6 +1,20 @@
 [
   {
     "url": "https://docs.whatap.io/release-notes/service/service-2_23_x",
+    "ver": "Service 2.23.7",
+    "date": "2025-12-08",
+    "Lists": [
+      {
+        "ver": "Service 2.23.7",
+        "hash": "service-2237",
+        "product": "OpenMetrics",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">OpenMetricsエクスプローラ</span> クエリ照会時にホワイトアウトが発生する問題を修正しました</p>"
+      }
+    ]
+  },  
+  {
+    "url": "https://docs.whatap.io/release-notes/service/service-2_23_x",
     "ver": "Service 2.23.6",
     "date": "2025-12-08",
     "Lists": [
