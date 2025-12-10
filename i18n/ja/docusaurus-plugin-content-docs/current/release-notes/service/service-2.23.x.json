@@ -1,6 +1,20 @@
 [
   {
     "url": "https://docs.whatap.io/release-notes/service/service-2_23_x",
+    "ver": "Service 2.23.8",
+    "date": "2025-12-09",
+    "Lists": [
+      {
+        "ver": "Service 2.23.8",
+        "hash": "service-2238",
+        "product": "Kubernetes",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">ワークロード</span> &gt; <span class=\"uitext\">Pod一覧</span> MIGインスタンスのGPU性能指標が表示されない問題を修正しました</p>"
+      }
+    ]
+  },  
+  {
+    "url": "https://docs.whatap.io/release-notes/service/service-2_23_x",
     "ver": "Service 2.23.7",
     "date": "2025-12-08",
     "Lists": [

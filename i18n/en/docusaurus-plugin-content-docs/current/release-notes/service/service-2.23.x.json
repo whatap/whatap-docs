@@ -1,6 +1,20 @@
 [
   {
     "url": "https://docs.whatap.io/release-notes/service/service-2_23_x",
+    "ver": "Service 2.23.8",
+    "date": "2025-12-09",
+    "Lists": [
+      {
+        "ver": "Service 2.23.8",
+        "hash": "service-2238",
+        "product": "Kubernetes",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">Workload</span> &gt; <span class=\"uitext\">Pod List</span> Fixed an issue where MIG instance GPU performance metrics were not displayed</p>"
+      }
+    ]
+  },  
+  {
+    "url": "https://docs.whatap.io/release-notes/service/service-2_23_x",
     "ver": "Service 2.23.7",
     "date": "2025-12-08",
     "Lists": [
