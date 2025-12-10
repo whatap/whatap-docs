@@ -17,7 +17,7 @@
 <meta name="description" content="WhaTap Docs 페이지입니다. 애플리케이션, 서버, 쿠버네티스, 데이터베이스, 브라우저 등 다양한 모니터링 솔루션의 사용법을 제공합니다.">
 <meta name="naver-site-verification" content="0c21fc5664a467108fb762ade47a3f81ee9b88ed">
 <meta name="google-site-verification" content="rIlfJkbbogFOIDc3DgJZmOGbUMJWytyvZSKEgV7EMsE"><link rel="stylesheet" href="/whatap-docs/assets/css/styles.5afef6a4.css">
-<script src="/whatap-docs/assets/js/runtime~main.24431a2b.js" defer="defer"></script>
+<script src="/whatap-docs/assets/js/runtime~main.545c333b.js" defer="defer"></script>
 <script src="/whatap-docs/assets/js/main.c365b86d.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -36,6 +36,9 @@
 <p><code class="Feature" type="1">Feature</code> <span class="uitext">경고 알림</span> &gt; <span class="uitext">이벤트 수신 설정</span> 서드 파티 플러그인 추가 안내 모달에 라인 설명 추가</p>
 </li>
 <li>
+<p><code class="Feature" type="1">Feature</code> <span class="uitext">계정 관리</span> &gt; <span class="uitext">접근 제어</span> IP 추가 시 현재 내 IP를 적용하는 기능 추가</p>
+</li>
+<li>
 <p><code class="Fixed" type="0">Fixed</code> <span class="uitext">경고 알림</span> &gt; <span class="uitext">이벤트 수신 설정</span> 이메일 수신 차단 시 WhatsApp 알림에 &#x27;송신중지 상태&#x27;로 표시되지 않도록 수정</p>
 </li>
 </ul><h3 class="anchor anchorWithStickyNavbar_LWe7" id="application"><code>Application</code><a href="#application" class="hash-link" aria-label="application에 대한 직접 링크" title="application에 대한 직접 링크">​</a></h3><ul>
@@ -47,7 +50,24 @@
 <p><code class="Feature" type="1">Feature</code> <span class="uitext">서버 인벤토리</span> 테이블 값 수정 후, 업데이트된 데이터를 불러 올 때 로딩 컴포넌트를 표시하도록 개선</p>
 </li>
 <li>
-<p><code class="Fixed" type="0">Fixed</code> <strong>GPU 인벤토리</strong>, <strong>GPU 성능요약</strong> 테이블 헤더 너비 조절 시 정렬 아이콘이 숨겨지지 않도 록 개선</p>
+<p><code class="Changed" type="1">Changed</code><strong>GPU 인벤토리</strong></p>
+<ul>
+<li>
+<p>Connection, Hostname 컬럼을 필수 컬럼으로 지정</p>
+</li>
+<li>
+<p>테이블 고정 컬럼은 컬럼 순서를 바꿀 수 없도록 변경</p>
+</li>
+<li>
+<p>선택된 컬럼 중 수정 가능한 컬럼이 없는 경우, 수정 버튼 비활성화</p>
+</li>
+<li>
+<p>수정 버튼 비활성화 시 툴팁으로 비활성화된 이유 표시</p>
+</li>
+</ul>
+</li>
+<li>
+<p><code class="Fixed" type="0">Fixed</code> <strong>GPU 인벤토리</strong>, <strong>GPU 성능요약</strong> 테이블 헤더 너비 조절 시 정렬 아이콘이 숨겨지지 않도록 개선</p>
 </li>
 <li>
 <p><code class="Fixed" type="0">Fixed</code> <span class="uitext">서버 상세</span> <code>메뉴 진입 시 프로젝트에 설치된 서버가 없습니다.</code> 메시지가 잠깐 표시되었다 데이터가 표시되는 현상 개선</p>
