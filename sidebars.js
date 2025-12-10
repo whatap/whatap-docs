@@ -4641,7 +4641,31 @@ const sidebars = {
           className: 'beta'
         },
         'management/maintenance',
-        'management/userbehavior'
+        'management/userbehavior',
+        {
+          type: 'category',
+          label: '경고 알림',
+          collapsible: true,
+          collapsed: false,
+          link: {
+            type: 'doc',
+            id: 'alert/overview', // 경고 알림 개요
+          },
+          items: [
+            {
+              type: 'category',
+              label: '이벤트 설정',
+              link: {
+                type: 'doc',
+                id: 'alert/event-configuration/index', // 이벤트 설정 개요
+              },
+              items: [
+                'alert/event-configuration/metrics',
+                'alert/event-configuration/composite-metrics',
+              ]
+            }
+          ]
+        }
       ]
     }
   ],

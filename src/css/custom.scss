@@ -25,7 +25,7 @@
   --ifm-h2-font-size: 1.75rem;
   --ifm-h3-font-size: 1.5rem;
   --ifm-h4-font-size: 1.25rem;
-  --ifm-h5-font-size: 1.0rem;
+  --ifm-h5-font-size: 1.1rem;
   --ifm-body-small-size: 0.875rem;
   --ifm-body-breacrums-size: 12px;
   // --ifm-code-font-size: 85%;
@@ -1510,6 +1510,13 @@ main {
           padding: 4px 15px;
         }
       }
+    }
+    .table-title {
+      font-weight: 600;
+      font-size: 14px;
+      margin-top: 20px;
+      margin-bottom: 8px;
+      color: var(--ifm-heading-color);
     }
     hr + h2, hr + h3:not(:has(code)) {
       padding: 0;
