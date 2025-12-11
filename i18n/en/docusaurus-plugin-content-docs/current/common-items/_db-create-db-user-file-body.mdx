@@ -1,6 +1,6 @@
 <section>
 
-<Xclude product="oracle-pro,cubrid,mssql,sapase">
+<Xclude product="oracle-pro,cubrid,mssql,sapase,mongodb">
 
 <Tabs groupId='os'>
 
@@ -172,16 +172,6 @@ uid.bat "DB_USER" "DB_PASSWORD"
 
 </InDoc>
 
-<InDoc product="oracle,oracle-v1,tibero,cubrid,cubrid-v1,mssql,mssql-v1,mysql,altibase,altibase-v1,postgresql">
-
-{/* 디폴트 플랜 조회하기 */}
-
-import CheckDefaultPlan from '../common-items/_import_db-check-default-plan.mdx';
-
-<CheckDefaultPlan level={4} />
-
-</InDoc>
-
 <InDoc product="sapase">
 
 <Tabs groupId='os'>
@@ -229,6 +219,82 @@ uid.bat "LOGIN" "PASSWORD"
 
 </TabItem>
 </Tabs>
+
+</InDoc>
+
+<InDoc product="mongodb">
+
+<Tabs>
+<TabItem value="linux" label="Linux">
+```bash
+./uid.sh {DB_USER} {DB_PASSWORD}
+```
+
+</TabItem>
+<TabItem value="windows" label="Windows">
+```batch
+uid.bat {DB_USER} {DB_PASSWORD}
+```
+
+</TabItem>
+</Tabs>
+
+:::info
+
+* Once configured initially, data collection from the monitored database server proceeds through the encrypted UID.
+* To create the DB user file, the project access key must be entered in the *whatap.conf* file. [Check access key](#)
+
+:::
+
+### Handling special characters
+
+If `DB_USER` or `DB_PASSWORD` contains special characters in MongoDB environments, follow these steps:
+
+#### Step 1: Apply percent encoding (required)
+
+MongoDB requires <b>percent encoding</b> to be applied first when special characters are included.
+
+**Example**
+
+* Original password: `whatap@#`
+* After percent encoding: `whatap%40%23`
+
+:::tip
+
+For more information about percent encoding rules, see the [MongoDB Connection String URI Format](https://www.mongodb.com/docs/manual/reference/connection-string/) official documentation.
+
+:::
+
+#### Step 2: Apply escape characters (if needed)
+
+If the password still contains special characters interpreted by the shell (`!`, `\`, `$`, etc.) after percent encoding, apply additional escape characters (`\`).
+
+**Example**
+```bash
+# Basic usage
+./uid.sh whatap whatap%40%23
+
+# When shell interpretation issues occur
+./uid.sh whatap whatap\%40\%23
+```
+
+:::warning Important
+
+* MongoDB requires **percent encoding as the priority** when special characters are included.
+* Application order: **Percent encoding** → **Escape characters if needed**
+* Without percent encoding, UID generation may succeed but actual DB connection may fail.
+
+:::
+
+</InDoc>
+
+<InDoc product="oracle,oracle-v1,tibero,cubrid,cubrid-v1,mssql,mssql-v1,mysql,altibase,altibase-v1,postgresql">
+
+{/* 디폴트 플랜 조회하기 */}
+
+import CheckDefaultPlan from '../common-items/_import_db-check-default-plan.mdx';
+
+<CheckDefaultPlan level={4} />
 
 </InDoc>
 
