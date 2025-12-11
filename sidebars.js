@@ -4659,6 +4659,7 @@ const sidebars = {
                 'alert/event-configuration/metrics',
                 'alert/event-configuration/composite-metrics',
                 'alert/event-configuration/hitmap-pattern',
+                'alert/event-configuration/anomaly-detection',
               ]
             }
           ]
