@@ -1,5 +1,46 @@
 [
   {
+    "ver": "v2.9.6",
+    "date": "2025-11-26",
+    "Lists": [
+      {
+        "ver": "v2.9.6",
+        "hash": "v296",
+        "product": "Server Agent",
+        "type": "New",
+        "desc": "<p><code class=\"New\" type=\"1\">New</code> GPU Utilization指標を追加</p>"
+      },
+      {
+        "ver": "v2.9.6",
+        "hash": "v296",
+        "product": "Server Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> GPU dxgm-exporterがハングする場合、呼び出し頻度が調整されるように修正</p>"
+      },
+      {
+        "ver": "v2.9.6",
+        "hash": "v296",
+        "product": "Server Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> GPU Driver R440の場合、指標が収集されないケースを修正</p>"
+      },
+      {
+        "ver": "v2.9.6",
+        "hash": "v296",
+        "product": "Server Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> GPU MIG環境でInventory情報収集時にタイムアウトが発生するケースを改善</p>"
+      },
+      {
+        "ver": "v2.9.6",
+        "hash": "v296",
+        "product": "Server Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> GPU MIG環境でdcgm-exporter使用時にPhysical GPU指標が収集されないケースを修正</p>"
+      }
+    ]
+  },
+  {
     "ver": "v2.9.5",
     "date": "2025-10-30",
     "Lists": [

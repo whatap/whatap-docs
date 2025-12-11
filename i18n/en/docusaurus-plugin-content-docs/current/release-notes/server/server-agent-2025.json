@@ -1,5 +1,46 @@
 [
   {
+    "ver": "v2.9.6",
+    "date": "2025-11-26",
+    "Lists": [
+      {
+        "ver": "v2.9.6",
+        "hash": "v296",
+        "product": "Server Agent",
+        "type": "New",
+        "desc": "<p><code class=\"New\" type=\"1\">New</code> Added GPU Utilization metric</p>"
+      },
+      {
+        "ver": "v2.9.6",
+        "hash": "v296",
+        "product": "Server Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Modified to adjust call frequency when GPU dxgm-exporter hangs</p>"
+      },
+      {
+        "ver": "v2.9.6",
+        "hash": "v296",
+        "product": "Server Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Fixed issue where metrics were not collected with GPU Driver R440</p>"
+      },
+      {
+        "ver": "v2.9.6",
+        "hash": "v296",
+        "product": "Server Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Improved timeout issue when collecting Inventory information in GPU MIG environment</p>"
+      },
+      {
+        "ver": "v2.9.6",
+        "hash": "v296",
+        "product": "Server Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Fixed issue where Physical GPU metrics were not collected when using dcgm-exporter in GPU MIG environment</p>"
+      }
+    ]
+  },
+  {
     "ver": "v2.9.5",
     "date": "2025-10-30",
     "Lists": [
