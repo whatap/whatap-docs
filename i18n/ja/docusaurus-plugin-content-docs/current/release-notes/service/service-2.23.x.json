@@ -1,6 +1,21 @@
 [
   {
     "url": "https://docs.whatap.io/release-notes/service/service-2_23_x",
+    "ver": "Service 2.23.11",
+    "date": "2025-12-11",
+    "Lists": [
+      {
+        "ver": "Service 2.23.11",
+        "hash": "service-22311",
+        "product": "Network",
+        "category": "Network Management System",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">OpenMetrics</span>, <span class=\"uitext\">イベント設定</span> メニューが正常に表示されるように修正しました</p>"
+      }
+    ]
+  },  
+  {
+    "url": "https://docs.whatap.io/release-notes/service/service-2_23_x",
     "ver": "Service 2.23.10",
     "date": "2025-12-11",
     "Lists": [
