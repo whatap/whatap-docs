@@ -136,6 +136,19 @@
     border-left: 1px solid #d3d3d3 !important;
   }
 
+    /* 가상 요소도 제거 */
+    *::before,
+    *::after {
+      border-left: none !important;
+      content: none !important;
+    }
+    
+    /* 테이블 관련 가상 요소는 복원 */
+    table *::before,
+    table *::after {
+      content: normal !important;
+    }
+    
   .breadcrumbs__item--active.item-1 { -prince-bookmark-level: 1 }
   .breadcrumbs__item--active.item-2 { -prince-bookmark-level: 2 }
   .breadcrumbs__item--active.item-3 { -prince-bookmark-level: 3 }
