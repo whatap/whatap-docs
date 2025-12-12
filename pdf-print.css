@@ -66,6 +66,10 @@
 
 @page {
   prince-shrink-to-fit: none;
+  margin-top: 15mm;      /* 상단 여백 */
+  margin-bottom: 15mm;   /* 하단 여백 - 이 값을 줄이세요 */
+  margin-left: 10mm;     /* 좌측 여백 */
+  margin-right: 10mm;    /* 우측 여백 */
   @top-right { content: string(doctitle);font-size: .75rem; }
   @bottom-center { content: counter(page);font-size: .75rem; }
 }
@@ -106,6 +110,17 @@
     h1, h2, h3, h4, h5, h6 {
       font-family: 'Noto Sans JP', 'Noto Sans', sans-serif, 'Apple SD Gothic Neo' !important;
     }
+  }
+
+  * {
+    border-left: none !important;
+  }
+  
+  /* 테이블은 예외 */
+  table,
+  table th,
+  table td {
+    border-left: 1px solid #d3d3d3 !important;
   }
 
   .breadcrumbs__item--active.item-1 { -prince-bookmark-level: 1 }
@@ -283,5 +298,31 @@
   .markdown .tabs-container div.margin-top--md div[role='tabpanel'], .markdown > ol > li > div.tabs-container > div.margin-top--md > div[role='tabpanel'] {
     display: block;
     visibility: visible;
+  }
+  
+  /* 테이블 기본 스타일 */
+  .markdown table,
+  main table {
+    border: 1px solid #d3d3d3 !important;
+    border-collapse: collapse !important;
+  }
+  
+  .markdown table th,
+  .markdown table td,
+  main table th,
+  main table td {
+    border: 1px solid #d3d3d3 !important;
+    padding: 0.75rem !important;
+  }
+  
+  .markdown table thead th,
+  main table thead th {
+    background-color: #f5f7f9 !important;
+    font-weight: bold !important;
+  }
+  
+  .markdown table tbody tr:nth-child(even),
+  main table tbody tr:nth-child(even) {
+    background-color: #fafafa !important;
   }
 }
