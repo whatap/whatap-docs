@@ -67,7 +67,7 @@
 @page {
   prince-shrink-to-fit: none;
   margin-top: 15mm;      /* 상단 여백 */
-  margin-bottom: 15mm;   /* 하단 여백 - 이 값을 줄이세요 */
+  margin-bottom: 10mm;   /* 하단 여백 - 이 값을 줄이세요 */
   margin-left: 10mm;     /* 좌측 여백 */
   margin-right: 10mm;    /* 우측 여백 */
   @top-right { content: string(doctitle);font-size: .75rem; }
@@ -112,10 +112,23 @@
     }
   }
 
+  /* 모든 왼쪽 관련 스타일 제거 */
   * {
     border-left: none !important;
+    box-shadow: none !important;
+    outline: none !important;
+  }
+
+  /* 특정 요소들 추가 처리 */
+  main, article, .markdown, 
+  div[class*="doc"], 
+  div[class*="item"],
+  section {
+    border-left: none !important;
+    padding-left: 0 !important;
   }
   
+
   /* 테이블은 예외 */
   table,
   table th,
