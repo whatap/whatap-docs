@@ -136,19 +136,6 @@
     border-left: 1px solid #d3d3d3 !important;
   }
 
-    /* 가상 요소도 제거 */
-    *::before,
-    *::after {
-      border-left: none !important;
-      content: none !important;
-    }
-    
-    /* 테이블 관련 가상 요소는 복원 */
-    table *::before,
-    table *::after {
-      content: normal !important;
-    }
-
   .breadcrumbs__item--active.item-1 { -prince-bookmark-level: 1 }
   .breadcrumbs__item--active.item-2 { -prince-bookmark-level: 2 }
   .breadcrumbs__item--active.item-3 { -prince-bookmark-level: 3 }
@@ -324,48 +311,6 @@
   .markdown .tabs-container div.margin-top--md div[role='tabpanel'], .markdown > ol > li > div.tabs-container > div.margin-top--md > div[role='tabpanel'] {
     display: block;
     visibility: visible;
-  }
-  
-  /* Admonition (note, info, warning 등) 스타일 */
-  .alert,
-  .admonition,
-  div[class*="alert"],
-  div[class*="admonition"],
-  .theme-admonition {
-    padding: 1rem;
-    margin-bottom: 1rem;
-    border-left: 4px solid !important;
-    background-color: var(--ifm-alert-background) !important;
-  }
-
-  .alert--info,
-  .admonition-info,
-  div[class*="alert--info"] {
-    border-left-color: var(--ifm-color-info-dark) !important;
-  }
-
-  .alert--warning,
-  .admonition-warning,
-  div[class*="alert--warning"] {
-    border-left-color: var(--ifm-color-warning-dark) !important;
-  }
-
-  .alert--danger,
-  .admonition-danger,
-  div[class*="alert--danger"] {
-    border-left-color: var(--ifm-color-danger-dark) !important;
-  }
-
-  .alert--success,
-  .admonition-success,
-  div[class*="alert--success"] {
-    border-left-color: var(--ifm-color-success-dark) !important;
-  }
-
-  .alert--note,
-  .admonition-note,
-  div[class*="alert--note"] {
-    border-left-color: var(--ifm-color-secondary-dark) !important;
   }
   
   /* 테이블 기본 스타일 */
