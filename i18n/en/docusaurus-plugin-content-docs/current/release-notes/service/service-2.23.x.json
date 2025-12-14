@@ -1,6 +1,20 @@
 [
   {
     "url": "https://docs.whatap.io/release-notes/service/service-2_23_x",
+    "ver": "Service 2.23.13",
+    "date": "2025-12-12",
+    "Lists": [
+      {
+        "ver": "Service 2.23.13",
+        "hash": "service-22313",
+        "product": "Log",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">Log</span> &gt; <span class=\"uitext\">Live Tail</span> Fixed an issue where the password input field did not appear when a password was set</p>"
+      }
+    ]
+  },  
+  {
+    "url": "https://docs.whatap.io/release-notes/service/service-2_23_x",
     "ver": "Service 2.23.12",
     "date": "2025-12-11",
     "Lists": [
