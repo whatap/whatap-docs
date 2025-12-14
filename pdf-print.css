@@ -66,6 +66,10 @@
 
 @page {
   prince-shrink-to-fit: none;
+  margin-top: 15mm;      /* 상단 여백 */
+  margin-bottom: 10mm;   /* 하단 여백 - 이 값을 줄이세요 */
+  margin-left: 10mm;     /* 좌측 여백 */
+  margin-right: 10mm;    /* 우측 여백 */
   @top-right { content: string(doctitle);font-size: .75rem; }
   @bottom-center { content: counter(page);font-size: .75rem; }
 }
@@ -107,6 +111,43 @@
       font-family: 'Noto Sans JP', 'Noto Sans', sans-serif, 'Apple SD Gothic Neo' !important;
     }
   }
+
+  /* 모든 왼쪽 관련 스타일 제거 */
+  * {
+    border-left: none !important;
+    box-shadow: none !important;
+    outline: none !important;
+  }
+
+  /* 특정 요소들 추가 처리 */
+  main, article, .markdown, 
+  div[class*="doc"], 
+  div[class*="item"],
+  section {
+    border-left: none !important;
+    padding-left: 0 !important;
+  }
+  
+
+  /* 테이블은 예외 */
+  table,
+  table th,
+  table td {
+    border-left: 1px solid #d3d3d3 !important;
+  }
+
+    /* 가상 요소도 제거 */
+    *::before,
+    *::after {
+      border-left: none !important;
+      content: none !important;
+    }
+    
+    /* 테이블 관련 가상 요소는 복원 */
+    table *::before,
+    table *::after {
+      content: normal !important;
+    }
 
   .breadcrumbs__item--active.item-1 { -prince-bookmark-level: 1 }
   .breadcrumbs__item--active.item-2 { -prince-bookmark-level: 2 }
@@ -155,6 +196,10 @@
   div[class*="lastUpdated"],
   div[class*="tocCollapsible"],
   div[class*="tableOfContents"],
+  nav.breadcrumbs,                     /* 온라인 파일 경로 숨기기 */
+  .theme-doc-breadcrumbs,              /* 온라인 파일 경로 숨기기 */
+  .breadcrumbs,                        /* 온라인 파일 경로 숨기기 */
+  hr,
   .footer {
     display: none !important;
   }
@@ -279,5 +324,73 @@
   .markdown .tabs-container div.margin-top--md div[role='tabpanel'], .markdown > ol > li > div.tabs-container > div.margin-top--md > div[role='tabpanel'] {
     display: block;
     visibility: visible;
+  }
+  
+  /* Admonition (note, info, warning 등) 스타일 */
+  .alert,
+  .admonition,
+  div[class*="alert"],
+  div[class*="admonition"],
+  .theme-admonition {
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-left: 4px solid !important;
+    background-color: var(--ifm-alert-background) !important;
+  }
+
+  .alert--info,
+  .admonition-info,
+  div[class*="alert--info"] {
+    border-left-color: var(--ifm-color-info-dark) !important;
+  }
+
+  .alert--warning,
+  .admonition-warning,
+  div[class*="alert--warning"] {
+    border-left-color: var(--ifm-color-warning-dark) !important;
+  }
+
+  .alert--danger,
+  .admonition-danger,
+  div[class*="alert--danger"] {
+    border-left-color: var(--ifm-color-danger-dark) !important;
+  }
+
+  .alert--success,
+  .admonition-success,
+  div[class*="alert--success"] {
+    border-left-color: var(--ifm-color-success-dark) !important;
+  }
+
+  .alert--note,
+  .admonition-note,
+  div[class*="alert--note"] {
+    border-left-color: var(--ifm-color-secondary-dark) !important;
+  }
+  
+  /* 테이블 기본 스타일 */
+  .markdown table,
+  main table {
+    border: 1px solid #d3d3d3 !important;
+    border-collapse: collapse !important;
+  }
+  
+  .markdown table th,
+  .markdown table td,
+  main table th,
+  main table td {
+    border: 1px solid #d3d3d3 !important;
+    padding: 0.75rem !important;
+  }
+  
+  .markdown table thead th,
+  main table thead th {
+    background-color: #f5f7f9 !important;
+    font-weight: bold !important;
+  }
+  
+  .markdown table tbody tr:nth-child(even),
+  main table tbody tr:nth-child(even) {
+    background-color: #fafafa !important;
   }
 }
