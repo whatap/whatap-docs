@@ -2625,11 +2625,15 @@ main {
       font-size: 95%;
       code {
         font-family: monospace;
-        background: none;
-        border: none;
+        background: rgba(205, 208, 213, 0.376);
         // font-size: 98%;
-        padding: 0;
+        border: none;
+        padding: 0px 3px;
         color: var(--ifm-font-code-color);
+      }
+      /* 표 본문 색 제거 */
+      tr {
+        background-color: transparent;
       }
       a {
         word-break: break-all;
