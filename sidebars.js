@@ -4665,6 +4665,7 @@ const sidebars = {
                 'alert/event-configuration/hitmap-pattern',
                 'alert/event-configuration/anomaly-detection',
                 'alert/event-configuration/log-event',
+                'alert/event-configuration/transaction',
               ]
             }
           ]
