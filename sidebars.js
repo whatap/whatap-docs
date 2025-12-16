@@ -4663,6 +4663,20 @@ const sidebars = {
                 'alert/event-configuration/log-event',
                 'alert/event-configuration/transaction',
               ]
+            },
+            {
+              type: 'category',
+              label: '이벤트 설정',
+              className: 'classicfunc',
+              link: {
+                type: 'doc',
+                id: 'alert/event-classic/index', // 이벤트 설정 개요
+              },
+              items: [
+                'alert/event-classic/application',
+                'alert/event-classic/database',
+                'alert/event-classic/server-process',
+              ]
             }
           ]
         }
