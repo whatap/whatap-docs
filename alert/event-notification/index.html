@@ -1,0 +1,450 @@
+<!doctype html>
+<html lang="ko-KR" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-alert/event-notification" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.8.0">
+<title data-rh="true">이벤트 수신 설정 | WhaTap Docs</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://www.whatap.io/img/og/whatap.png"><meta data-rh="true" name="twitter:image" content="https://www.whatap.io/img/og/whatap.png"><meta data-rh="true" property="og:url" content="https://docs.whatap.io/whatap-docs/alert/event-notification"><meta data-rh="true" property="og:locale" content="ko_KR"><meta data-rh="true" property="og:locale:alternate" content="en_US"><meta data-rh="true" property="og:locale:alternate" content="ja_JP"><meta data-rh="true" name="docusaurus_locale" content="ko"><meta data-rh="true" name="docsearch:language" content="ko"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="이벤트 수신 설정 | WhaTap Docs"><meta data-rh="true" name="description" content="."><meta data-rh="true" property="og:description" content="."><meta data-rh="true" name="keywords" content="경고 알림,이벤트 수신 설정"><link data-rh="true" rel="icon" href="/whatap-docs/img/whatap-favicon.ico"><link data-rh="true" rel="canonical" href="https://docs.whatap.io/whatap-docs/alert/event-notification"><link data-rh="true" rel="alternate" href="https://docs.whatap.io/whatap-docs/alert/event-notification" hreflang="ko-KR"><link data-rh="true" rel="alternate" href="https://docs.whatap.io/whatap-docs/en/alert/event-notification" hreflang="en-US"><link data-rh="true" rel="alternate" href="https://docs.whatap.io/whatap-docs/ja/alert/event-notification" hreflang="ja-JP"><link data-rh="true" rel="alternate" href="https://docs.whatap.io/whatap-docs/alert/event-notification" hreflang="x-default"><script>!function(e,t,a,o,r){e=e[r]=e[r]||{config:{projectAccessKey:"x4t5020boh2ln-z6pi7d91ds6c1a-z7t4b2lrgnub4o",pcode:29856,sampleRate:100,sessionReplaySampleRate:100,ignorePageUrls:[/^.*localhost.*$/i,/^.*ngrok-free.app.*$/i,/^.*whatap.github.io.*$/i],collectUserClick:!0}},(r=t.createElement(a)).async=1,r.src=o,(o=t.getElementsByTagName(a)[0]).parentNode.insertBefore(r,o)}(window,document,"script","https://repo.whatap-browser-agent.io/rum/prod/v1/whatap-browser-agent.js","WhatapBrowserAgent")</script>
+<script>let curLang=document.documentElement.lang.split("-")[0];CRISP_RUNTIME_CONFIG={locale:curLang},window.$crisp=[],window.CRISP_WEBSITE_ID="9a0c342f-a5b1-4c4a-a22f-92c7b4b9b477",d=document,s=d.createElement("script"),s.src="https://client.crisp.chat/l.js",s.async=1,d.getElementsByTagName("head")[0].appendChild(s)</script>
+
+
+<link rel="preconnect" href="https://www.googletagmanager.com">
+<script>window.dataLayer=window.dataLayer||[]</script>
+<script>!function(e,t,a,n){e[n]=e[n]||[],e[n].push({"gtm.start":(new Date).getTime(),event:"gtm.js"});var g=t.getElementsByTagName(a)[0],m=t.createElement(a);m.async=!0,m.src="https://www.googletagmanager.com/gtm.js?id=GTM-KT747XQX",g.parentNode.insertBefore(m,g)}(window,document,"script","dataLayer")</script>
+
+
+
+<meta name="keywords" content="WhaTap, 와탭, 매뉴얼, 사용법, WhaTap 사용법, WhaTap 매뉴얼, 기술 문서, APM, 애플리케이션 모니터링, 로그 모니터링, 쿠버네티스 모니터링, 서버 모니터링, 데이터베이스 모니터링, URL 모니터링, 클라우드 모니터링, 브라우저 모니터링, Browser monitoring, Application Monitoring, Log Monitoring, Kubernetes Monitoring, Server Monitoring, Database Monitoring, URL Monitoring, Cloud Monitoring, Manual, User Guide, Docs, WhaTap Manual, WhaTap Docs, WhaTap Documents, 트랜잭션, Transaction, 트레이싱, Tracing, 마스터, Master, 노드, Node, 데드락, Deadlock, 락 트리, Lock tree, 멀티 트랜잭션, Multi Trancsaction, 메트릭스, Metrics, 소프트웨어 프록시, Software proxy, 스택, Stack, 슬로우 쿼리, Slow query, 액티브 트랜잭션, Active transaction, 컨테이너, Container, 히트맵, Hitmap, Garbage Collection, GC, MXQL, Method 추적, Trace method, OOM Killed 컨테이너, OOM Killed Container, Oracle, Tibero, PostgreSQL, MySQL, MongoDB, SQL Server, CUBRID, Altibase, Redis, WebLogic, WebSphere">
+<meta name="description" content="WhaTap Docs 페이지입니다. 애플리케이션, 서버, 쿠버네티스, 데이터베이스, 브라우저 등 다양한 모니터링 솔루션의 사용법을 제공합니다.">
+<meta name="naver-site-verification" content="0c21fc5664a467108fb762ade47a3f81ee9b88ed">
+<meta name="google-site-verification" content="rIlfJkbbogFOIDc3DgJZmOGbUMJWytyvZSKEgV7EMsE"><link rel="stylesheet" href="/whatap-docs/assets/css/styles.9192e53b.css">
+<script src="/whatap-docs/assets/js/runtime~main.1122e219.js" defer="defer"></script>
+<script src="/whatap-docs/assets/js/main.287dfeeb.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light")),document.documentElement.setAttribute("data-theme-choice",t||"system")}(),function(){try{const n=new URLSearchParams(window.location.search).entries();for(var[t,e]of n)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}(),document.documentElement.setAttribute("data-announcement-bar-initially-dismissed",function(){try{return"true"===localStorage.getItem("docusaurus.announcement.dismiss")}catch(t){}return!1}())</script>
+
+<script async defer="defer" crossorigin="anonymous" src="https://connect.facebook.net/ko_KR/sdk.js#xfbml=1&amp;version=v17.0&amp;appId=169051789422006&amp;autoLogAppEvents=1" nonce="y4U7YSrt"></script>
+<div id="fb-root"></div>
+
+
+
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KT747XQX" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript><div id="__docusaurus"><div role="region" aria-label="본문으로 건너뛰기"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">본문으로 건너뛰기</a></div><div class="theme-announcement-bar announcementBar_mb4j" style="background-color:none;color:#ffffff" role="banner"><div class="content_knG7 announcementBarContent_xLdY"><div id="announce-banner"> Preview Docs</div></div></div><nav aria-label="Main" class="navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/whatap-docs/"><div class="navbar__logo"><img src="/whatap-docs/img/whatap-docs-logo.svg" alt="WhaTap Docs" class="themedComponent_mlkZ themedComponent--light_NVdE" height="43px" width="154px"><img src="/whatap-docs/img/whatap-docs-logo.svg" alt="WhaTap Docs" class="themedComponent_mlkZ themedComponent--dark_xIcU" height="43px" width="154px"></div><b class="navbar__title text--truncate"></b></a><div class="navbar__item dropdown dropdown--hoverable"><a href="#" aria-haspopup="true" aria-expanded="false" role="button" class="navbar__link">상품</a><ul class="dropdown__menu"><li><a class="dropdown__link" href="/whatap-docs/java/introduction">Java</a></li><li><a class="dropdown__link" href="/whatap-docs/php/introduction">PHP</a></li><li><a class="dropdown__link" href="/whatap-docs/nodejs/introduction">Node.js</a></li><li><a class="dropdown__link" href="/whatap-docs/python/introduction">Python</a></li><li><a class="dropdown__link" href="/whatap-docs/dotnet/introduction">.NET</a></li><li><a class="dropdown__link" href="/whatap-docs/golang/introduction">Go</a></li><li><a class="dropdown__link" href="/whatap-docs/server/introduction">Server</a></li><li><a class="dropdown__link" href="/whatap-docs/kubernetes/introduction">Kubernetes</a></li><li><a class="dropdown__link" href="/whatap-docs/postgresql/monitoring-intro">PostgreSQL</a></li><li><a class="dropdown__link" href="/whatap-docs/oracle/monitoring-intro">Oracle</a></li><li><a class="dropdown__link" href="/whatap-docs/oracle-pro/monitoring-intro">Oracle Pro</a></li><li><a class="dropdown__link" href="/whatap-docs/mysql/monitoring-intro">MySQL</a></li><li><a class="dropdown__link" href="/whatap-docs/mssql/monitoring-intro">SQL Server</a></li><li><a class="dropdown__link" href="/whatap-docs/tibero/monitoring-intro">Tibero</a></li><li><a class="dropdown__link" href="/whatap-docs/cubrid/monitoring-intro">CUBRID</a></li><li><a class="dropdown__link" href="/whatap-docs/altibase/monitoring-intro">Altibase</a></li><li><a class="dropdown__link" href="/whatap-docs/redis/monitoring-intro">Redis</a></li><li><a class="dropdown__link" href="/whatap-docs/mongodb/monitoring-intro">MongoDB</a></li><li><a class="dropdown__link" href="/whatap-docs/db2/monitoring-intro">IBM DB2</a></li><li><a class="dropdown__link" href="/whatap-docs/sapase/monitoring-intro">SAP ASE</a></li><li><a class="dropdown__link" href="/whatap-docs/url/url-intro">URL</a></li><li><a class="dropdown__link" href="/whatap-docs/browser">Browser</a></li><li><a class="dropdown__link" href="/whatap-docs/mobile/mobile-intro">Mobile</a></li><li><a class="dropdown__link narrow" href="/whatap-docs/amazon-cloudwatch/install-agent">Amazon CloudWatch</a></li><li><a class="dropdown__link" href="/whatap-docs/amazon-ecs/introduction">Amazon ECS</a></li><li><a class="dropdown__link" href="/whatap-docs/aws-log/introduction">AWS Log</a></li><li><a class="dropdown__link" href="/whatap-docs/azure/install-agent">Azure Monitor</a></li><li><a class="dropdown__link narrow" href="/whatap-docs/ncloud/install-agent">Naver Cloud Monitoring</a></li><li><a class="dropdown__link narrow" href="/whatap-docs/oracle-cloud/install-agent">Oracle Cloud Monitor</a></li><li><a class="dropdown__link narrow" href="/whatap-docs/npm/introduction">Network Performance Monitoring</a></li><li><a class="dropdown__link narrow" href="/whatap-docs/nms/introduction">Network Management System</a></li><li><a class="dropdown__link narrow" href="/whatap-docs/features/introduction">Feature Project</a></li><li><a class="dropdown__link" href="/whatap-docs/log/introduction">Log</a></li><li><a class="dropdown__link" href="/whatap-docs/extensions">Extensions</a></li><li><a class="dropdown__link" href="/whatap-docs/openmetrics/introduction">OpenMetrics</a></li></ul></div><a class="navbar__item navbar__link hidden" href="/whatap-docs/java/introduction">Java 모니터링</a><a class="navbar__item navbar__link hidden" href="/whatap-docs/php/introduction">PHP 모니터링</a><a class="navbar__item navbar__link hidden" href="/whatap-docs/nodejs/introduction">Node.js 모니터링</a><a class="navbar__item navbar__link hidden" href="/whatap-docs/python/introduction">Python 모니터링</a><a class="navbar__item navbar__link hidden" href="/whatap-docs/dotnet/introduction">.NET 모니터링</a><a class="navbar__item navbar__link hidden" href="/whatap-docs/golang/introduction">Go 모니터링</a><a class="navbar__item navbar__link hidden" href="/whatap-docs/server/introduction">Server 모니터링</a><a class="navbar__item navbar__link hidden" href="/whatap-docs/kubernetes/introduction">Kubernetes 모니터링</a><a class="navbar__item navbar__link hidden" href="/whatap-docs/postgresql/monitoring-intro">PostgreSQL 모니터링</a><a class="navbar__item navbar__link hidden" href="/whatap-docs/oracle/monitoring-intro">Oracle V2 모니터링</a><a class="navbar__item navbar__link hidden" href="/whatap-docs/oracle-pro/monitoring-intro">Oracle Pro 모니터링</a><a class="navbar__item navbar__link hidden" href="/whatap-docs/mysql/monitoring-intro">MySQL 모니터링</a><a class="navbar__item navbar__link hidden" href="/whatap-docs/mssql/monitoring-intro">SQL Server V2 모니터링</a><a class="navbar__item navbar__link hidden" href="/whatap-docs/tibero/monitoring-intro">Tibero 모니터링</a><a class="navbar__item navbar__link hidden" href="/whatap-docs/cubrid/monitoring-intro">CUBRID V2 모니터링</a><a class="navbar__item navbar__link hidden" href="/whatap-docs/altibase/monitoring-intro">Altibase V2 모니터링</a><a class="navbar__item navbar__link hidden" href="/whatap-docs/redis/monitoring-intro">Redis 모니터링</a><a class="navbar__item navbar__link hidden" href="/whatap-docs/mongodb/monitoring-intro">MongoDB 모니터링</a><a class="navbar__item navbar__link hidden" href="/whatap-docs/db2/monitoring-intro">IBM DB2 모니터링</a><a class="navbar__item navbar__link hidden" href="/whatap-docs/sapase/monitoring-intro">SAP ASE 모니터링</a><a class="navbar__item navbar__link hidden" href="/whatap-docs/url/url-intro">URL 모니터링</a><a class="navbar__item navbar__link hidden" href="/whatap-docs/amazon-cloudwatch/install-agent">Amazon CloudWatch</a><a class="navbar__item navbar__link hidden" href="/whatap-docs/amazon-ecs/introduction">Amazon ECS</a><a class="navbar__item navbar__link hidden" href="/whatap-docs/aws-log/introduction">AWS Log</a><a class="navbar__item navbar__link hidden" href="/whatap-docs/azure/install-agent">Azure Monitor</a><a class="navbar__item navbar__link hidden" href="/whatap-docs/ncloud/install-agent">Naver Cloud Monitoring</a><a class="navbar__item navbar__link hidden" href="/whatap-docs/oracle-cloud/install-agent">Oracle Cloud Monitor</a><a class="navbar__item navbar__link hidden" href="/whatap-docs/log/introduction">Log 모니터링</a><a class="navbar__item navbar__link hidden" href="/whatap-docs/browser">Browser</a><a class="navbar__item navbar__link hidden" href="/whatap-docs/mobile/mobile-intro">Mobile 모니터링</a><a class="navbar__item navbar__link hidden" href="/whatap-docs/npm/introduction">NPM</a><a class="navbar__item navbar__link hidden" href="/whatap-docs/extensions">확장 도구</a><a class="navbar__item navbar__link hidden" href="/whatap-docs/opentelemetry/introduction">OpenTelemetry</a><a class="navbar__item navbar__link hidden" href="/whatap-docs/openmetrics/introduction">OpenMetrics</a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/whatap-docs/manage">관리 기능</a><a class="navbar__item navbar__link" href="/whatap-docs/openapi-spec">Open API</a><a class="navbar__item navbar__link" href="/whatap-docs/faq/">FAQ</a><a class="navbar__item navbar__link iflang-link" href="/whatap-docs/learning-guides">Learning</a><a class="navbar__item navbar__link" href="/whatap-docs/release-notes">Release Notes</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><div class="navbar__item dropdown dropdown--hoverable dropdown--right"><a href="#" aria-haspopup="true" aria-expanded="false" role="button" class="navbar__link oneColumn localeDropdown"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" class="iconLanguage_DSK9"><path fill="currentColor" d="M12.87 15.07l-2.54-2.51.03-.03c1.74-1.94 2.98-4.17 3.71-6.53H17V4h-7V2H8v2H1v1.99h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12zm-2.62 7l1.62-4.33L19.12 17h-3.24z"></path></svg><span class="langLabel_L4uU">KOR</span></a><ul class="dropdown__menu"><li><a href="/whatap-docs/alert/event-notification" target="_self" rel="noopener noreferrer" class="dropdown__link dropdown__link--active" lang="ko-KR">KOR</a></li><li><a href="/whatap-docs/en/alert/event-notification" target="_self" rel="noopener noreferrer" class="dropdown__link" lang="en-US">ENG</a></li><li><a href="/whatap-docs/ja/alert/event-notification" target="_self" rel="noopener noreferrer" class="dropdown__link" lang="ja-JP">JPN</a></li></ul></div><div class="navbarSearchContainer_dCNk"><div id="docsearch"></div></div><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="어두운 모드와 밝은 모드 전환하기 (현재 system mode)"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M10.9901 0H13.0099V4.06189C15.2205 4.33486 17.1538 5.49222 18.4373 7.16513L21.9901 5.13397L23 6.86603L19.4486 8.89635C19.8546 9.8507 20.0791 10.8994 20.0791 12C20.0791 13.1006 19.8546 14.1493 19.4486 15.1036L23 17.134L21.9901 18.866L18.4373 16.8349C17.1538 18.5078 15.2205 19.6651 13.0099 19.9381V24H10.9901V19.9381C8.77946 19.6651 6.84617 18.5078 5.56273 16.8349L2.00989 18.866L1 17.134L4.5514 15.1036C4.14535 14.1493 3.9209 13.1006 3.9209 12C3.9209 10.8994 4.14535 9.8507 4.5514 8.89635L1 6.86603L2.00989 5.13397L5.56273 7.16513C6.84617 5.49222 8.77946 4.33486 10.9901 4.06189V0ZM5.94068 12C5.94068 8.68629 8.65353 6 12 6C15.3465 6 18.0593 8.68629 18.0593 12C18.0593 15.3137 15.3465 18 12 18C8.65353 18 5.94068 15.3137 5.94068 12Z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M5.05011 4.409C6.46482 2.9943 8.14585 2.02264 9.90788 1.5C8.84446 5.08024 9.63565 8.99454 12.3303 11.6892C15.025 14.3839 18.9393 15.1751 22.5191 14.1129C21.9969 15.8737 21.0253 17.5548 19.6106 18.9695C15.322 23.2581 8.58587 23.4752 4.56511 19.4545C0.544352 15.4337 0.761495 8.69762 5.05011 4.409ZM7.26586 5.19608C6.97785 5.42391 6.70099 5.67022 6.43684 5.93437C2.99054 9.38066 2.80435 14.782 6.02096 17.9986C9.23756 21.2152 14.6389 21.029 18.0852 17.5827C18.4373 17.2307 18.7577 16.856 19.0448 16.4625C15.9881 16.4646 13.0552 15.3261 10.8743 13.1452C8.77411 11.045 7.6407 8.24751 7.56194 5.31354L7.55754 4.97444L7.26586 5.19608ZM17.3387 2.30478H19.3979V4.36394H21.4571V6.4231H19.3979V8.48226H17.3387V6.4231H15.2795V4.36394H17.3387V2.30478Z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="맨 위로 스크롤하기" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_mhZE"><div class="hold-menu"><ul><li><a href="/" class="home">WhaTap Docs</a></li><li><a href="https://www.whatap.io" target="_blank" rel="noopener noreferrer" class="ext">와탭 홈페이지 바로가기</a></li></ul></div><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_Y1UP menuWithAnnouncementBar_fPny"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--active" href="/whatap-docs/manage">관리 기능</a></div><ul class="menu__list"><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item"><div class="menu__list-item-collapsible"><a class="menu__link" tabindex="0" href="/whatap-docs/account/account-manage">계정 관리</a></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/whatap-docs/account/access-control">접근 제어</a></li></ul></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/whatap-docs/account/mfa">멀티팩터 인증</a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item"><div class="menu__list-item-collapsible"><a class="menu__link" tabindex="0" href="/whatap-docs/account/sso">Single Sign-On 연동</a></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/whatap-docs/account/okta">Okta 연동</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/whatap-docs/account/ms-entra-id">Microsoft Entra ID 연동</a></li></ul></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/whatap-docs/project/project-structure">프로젝트 구조 및 멤버 권한</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/whatap-docs/project/project-manage">프로젝트 관리</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/whatap-docs/project/group">그룹 관리</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/whatap-docs/project/organization">조직 관리</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/whatap-docs/project/integrated-manage">통합 관리</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/whatap-docs/report/integrated-report">통합 보고서</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/whatap-docs/notification/rt-notification">실시간 알림 목록</a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item"><div class="menu__list-item-collapsible"><a class="menu__link" tabindex="0" href="/whatap-docs/management/billing">결제</a></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/whatap-docs/management/billing-usage">이용 내역</a></li></ul></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/whatap-docs/management/aws-marketplace">AWS Marketplace 구독</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item beta"><a class="menu__link" tabindex="0" href="/whatap-docs/management/ai-chatbot">WhaTap AI Chatbot</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/whatap-docs/management/maintenance">정비 계획</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/whatap-docs/management/userbehavior">사용자 행위</a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--active" tabindex="0" href="/whatap-docs/alert/overview">경고 알림</a><button aria-label="Collapse sidebar category &#x27;경고 알림&#x27;" aria-expanded="true" type="button" class="clean-btn menu__caret"></button></div><ul class="menu__list"><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" tabindex="0" href="/whatap-docs/alert/event-configuration/">이벤트 설정</a><button aria-label="Expand sidebar category &#x27;이벤트 설정&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item menu__list-item--collapsed classicfunc"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" tabindex="0" href="/whatap-docs/alert/event-classic/">이벤트 설정</a><button aria-label="Expand sidebar category &#x27;이벤트 설정&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item"><div class="menu__list-item-collapsible menu__list-item-collapsible--active"><a class="menu__link menu__link--sublist menu__link--active" aria-current="page" tabindex="0" href="/whatap-docs/alert/event-notification">이벤트 수신 설정</a><button aria-label="Collapse sidebar category &#x27;이벤트 수신 설정&#x27;" aria-expanded="true" type="button" class="clean-btn menu__caret"></button></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/whatap-docs/alert/event-notification-format">이벤트 수신 포맷</a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" tabindex="0" href="/whatap-docs/alert/event-history">이벤트 기록 및 모니터링</a><button aria-label="Expand sidebar category &#x27;이벤트 기록 및 모니터링&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li></ul></li></ul></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_z5aJ"><div class="docItemContainer_c0TR"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Alpn" aria-label="Breadcrumbs"><ul class="breadcrumbs" itemscope="" itemtype="https://schema.org/BreadcrumbList"><li class="breadcrumbs__item"><a aria-label="홈" class="breadcrumbs__link" href="/whatap-docs/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_xK9p"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li itemscope="" itemprop="itemListElement" itemtype="https://schema.org/ListItem" class="breadcrumbs__item item-1"><a class="breadcrumbs__link" itemprop="item" href="/whatap-docs/manage"><span itemprop="name">관리 기능</span></a><meta itemprop="position" content="1"></li><li itemscope="" itemprop="itemListElement" itemtype="https://schema.org/ListItem" class="breadcrumbs__item item-2"><a class="breadcrumbs__link" itemprop="item" href="/whatap-docs/alert/overview"><span itemprop="name">경고 알림</span></a><meta itemprop="position" content="2"></li><li itemscope="" itemprop="itemListElement" itemtype="https://schema.org/ListItem" class="breadcrumbs__item breadcrumbs__item--active item-3"><span class="breadcrumbs__link" itemprop="name">이벤트 수신 설정</span><meta itemprop="position" content="3"></li></ul><div class="breadcrumbs-hidden"><span itemprop="name">관리 기능<cite>&gt;</cite></span><span itemprop="name">경고 알림<cite>&gt;</cite></span><span itemprop="name">이벤트 수신 설정</span></div></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_XdKt"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">이 페이지에서</button></div><div class="theme-doc-markdown markdown"><header><h1>이벤트 수신 설정</h1></header><blockquote>
+<p>홈 &gt; 프로젝트 선택 &gt; <img decoding="async" loading="lazy" alt="알림 아이콘" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xLjUzODk1IDcuMTY4N0MyLjE5MDA2IDQuOTE0MjkgMy40NjAyIDMuMTEyOTEgNS4zMzE0NSAxLjc5ODU1QzUuNzg4NDkgMS40Nzc1MiA2LjQyMzY3IDEuNTgxNTkgNi43NTAxNiAyLjAzMDk5QzcuMDc2NjUgMi40ODAzOSA2Ljk3MDgxIDMuMTA0OTQgNi41MTM3NyAzLjQyNTk3QzUuMDIyMjIgNC40NzM2MyA0LjAyMjEzIDUuODkyIDMuNDk1NiA3LjcxNTA3QzMuMzQyMTYgOC4yNDYzNSAyLjc3OTc2IDguNTU0NzIgMi4yMzk0NCA4LjQwMzg1QzEuNjk5MTMgOC4yNTI5NyAxLjM4NTUgNy42OTk5OCAxLjUzODk1IDcuMTY4N1pNMjIuNDYxMSA3LjE2ODdDMjEuODA5OSA0LjkxNDI5IDIwLjUzOTggMy4xMTI5MSAxOC42Njg2IDEuNzk4NTVDMTguMjExNSAxLjQ3NzUyIDE3LjU3NjMgMS41ODE1OSAxNy4yNDk4IDIuMDMwOTlDMTYuOTIzMyAyLjQ4MDM5IDE3LjAyOTIgMy4xMDQ5NCAxNy40ODYyIDMuNDI1OTdDMTguOTc3OCA0LjQ3MzYzIDE5Ljk3NzkgNS44OTIgMjAuNTA0NCA3LjcxNTA3QzIwLjY1NzggOC4yNDYzNSAyMS4yMjAyIDguNTU0NzIgMjEuNzYwNiA4LjQwMzg1QzIyLjMwMDkgOC4yNTI5NyAyMi42MTQ1IDcuNjk5OTggMjIuNDYxMSA3LjE2ODdaIiBmaWxsPSIjNzU3NTc1Ii8+CjxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBkPSJNMTQuMDI0OCAzLjVDMTQuMDI0OCAzLjU5NjQgMTQuMDE3OSAzLjY5MTIgMTQuMDA0OCAzLjc4Mzk2QzE2LjkwNjUgNC42MzgwOCAxOS4wMjQ4IDcuMzIxNjcgMTkuMDI0OCAxMC41VjE2LjVIMjBDMjAuNTUyMyAxNi41IDIxIDE2Ljk0NzcgMjEgMTcuNUMyMSAxOC4wNTIzIDIwLjU1MjMgMTguNSAyMCAxOC41SDE5LjAyNDhINS4wMjQ3N0g0QzMuNDQ3NzIgMTguNSAzIDE4LjA1MjMgMyAxNy41QzMgMTYuOTQ3NyAzLjQ0NzcyIDE2LjUgNCAxNi41SDUuMDI0NzdWMTAuNUw1LjAyODgyIDEwLjI1OTNDNS4xMzI2MiA3LjE4Njg0IDcuMjE2NTQgNC42MTY0NCAxMC4wNDQ4IDMuNzgzOTZDMTAuMDMxNiAzLjY5MTIgMTAuMDI0OCAzLjU5NjQgMTAuMDI0OCAzLjVDMTAuMDI0OCAyLjM5NTQzIDEwLjkyMDIgMS41IDEyLjAyNDggMS41QzEzLjEyOTMgMS41IDE0LjAyNDggMi4zOTU0MyAxNC4wMjQ4IDMuNVpNNy4wMjg1NCAxMC4yOTMxQzcuMTE4NDYgNy42Mzk5OSA5LjMyNzU4IDUuNSAxMi4wMjQ4IDUuNUMxNC43ODYyIDUuNSAxNy4wMjQ4IDcuNzM4NTggMTcuMDI0OCAxMC41VjE2LjVINy4wMjQ3N1YxMC41TDcuMDI4NTQgMTAuMjkzMVpNMTIuMDI0OCAyMi41QzEwLjM2NzkgMjIuNSA5LjAyNDc3IDIxLjE1NjkgOS4wMjQ3NyAxOS41SDE1LjAyNDhDMTUuMDI0OCAyMS4xNTY5IDEzLjY4MTYgMjIuNSAxMi4wMjQ4IDIyLjVaIiBmaWxsPSIjNzU3NTc1Ii8+Cjwvc3ZnPgo=" width="24" height="24" class="img_ev3q"> <span class="uitext">경고 알림</span> &gt; <span class="uitext">이벤트 수신 설정</span></p>
+</blockquote>
+<section class="remark-sectionize-h2"><h2 class="anchor anchorWithStickyNavbar_LWe7" id="event-notification-settings-per-user">사용자별 이벤트 수신 설정<a href="#event-notification-settings-per-user" class="hash-link" aria-label="사용자별 이벤트 수신 설정에 대한 직접 링크" title="사용자별 이벤트 수신 설정에 대한 직접 링크">​</a></h2><div class="theme-admonition theme-admonition-caution admonition_xJq3 alert alert--warning"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"></path></svg></span>주의</div><div class="admonitionContent_BuS1"><p><span class="uitext">사용자별 이벤트 수신 설정</span> 의 다른 멤버의 정보는 <strong>멤버 관리</strong> 권한을 가진 멤버만 확인할 수 있습니다. 그 외 멤버에게는 필수 정보가 마스킹 처리됩니다.</p><ul>
+<li>
+<p>이벤트 알림의 일괄 수신설정 및 접근 설정을 위한 모바일 기기 관리는 <strong>계정 정보</strong>에서 할 수 있습니다.</p>
+</li>
+<li>
+<p>멤버 권한에 대한 자세한 설명은 <a href="/whatap-docs/project/project-structure#project-auth">다음 문서</a>를 참고하세요.</p>
+</li>
+</ul></div></div></section>
+<section class="remark-sectionize-h3"><h3 class="anchor anchorWithStickyNavbar_LWe7" id="notification-methods">수신 수단 설정<a href="#notification-methods" class="hash-link" aria-label="수신 수단 설정에 대한 직접 링크" title="수신 수단 설정에 대한 직접 링크">​</a></h3><p><a href="#email-alert"><strong>이메  일</strong></a>, <a href="#sms-alert"><strong>SMS</strong></a>, <a href="#whatsapp-alert"><strong>WhatsApp</strong></a>, <a href="#mobile-alert"><strong>모바일</strong></a> 알림을 제공합니다.</p><p><span class="uitext">사용자별 이벤트 수신 설정</span> 섹션에서 원하는 알림 수신 수단의 체크 박스를 선택하면 경고 알림을 받을 수 있습니다. 알림 수신 수단의 체크 박스를 해제하면 경고 알림을 보내지 않습니다.</p><div class="theme-admonition theme-admonition-note admonition_xJq3 alert alert--secondary"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M6.3 5.69a.942.942 0 0 1-.28-.7c0-.28.09-.52.28-.7.19-.18.42-.28.7-.28.28 0 .52.09.7.28.18.19.28.42.28.7 0 .28-.09.52-.28.7a1 1 0 0 1-.7.3c-.28 0-.52-.11-.7-.3zM8 7.99c-.02-.25-.11-.48-.31-.69-.2-.19-.42-.3-.69-.31H6c-.27.02-.48.13-.69.31-.2.2-.3.44-.31.69h1v3c.02.27.11.5.31.69.2.2.42.31.69.31h1c.27 0 .48-.11.69-.31.2-.19.3-.42.31-.69H8V7.98v.01zM7 2.3c-3.14 0-5.7 2.54-5.7 5.68 0 3.14 2.56 5.7 5.7 5.7s5.7-2.55 5.7-5.7c0-3.15-2.56-5.69-5.7-5.69v.01zM7 .98c3.86 0 7 3.14 7 7s-3.14 7-7 7-7-3.12-7-7 3.14-7 7-7z"></path></svg></span>노트</div><div class="admonitionContent_BuS1"><p>프로젝트 최고 관리자를 제외한 모든 사용자는 자신의 수신 설정만 변경할 수 있습니다.</p></div></div></section>
+<section class="remark-sectionize-h4"><h4 class="anchor anchorWithStickyNavbar_LWe7" id="email-alert">이메일 알림<a href="#email-alert" class="hash-link" aria-label="이메일 알림에 대한 직접 링크" title="이메일 알림에 대한 직접 링크">​</a></h4><p>이메일 알림은 회원 가입 시 입력한 이메일 주소로 알림을 보냅니다.</p></section>
+<section class="remark-sectionize-h4"><h4 class="anchor anchorWithStickyNavbar_LWe7" id="sms-alert">SMS 알림<a href="#sms-alert" class="hash-link" aria-label="SMS 알림에 대한 직접 링크" title="SMS 알림에 대한 직  접 링크">​</a></h4><p>SMS로 알림을 수신할 수 있습니다.</p><div class="theme-admonition theme-admonition-note admonition_xJq3 alert alert--secondary"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M6.3 5.69a.942.942 0 0 1-.28-.7c0-.28.09-.52.28-.7.19-.18.42-.28.7-.28.28 0 .52.09.7.28.18.19.28.42.28.7 0 .28-.09.52-.28.7a1 1 0 0 1-.7.3c-.28 0-.52-.11-.7-.3zM8 7.99c-.02-.25-.11-.48-.31-.69-.2-.19-.42-.3-.69-.31H6c-.27.02-.48.13-.69.31-.2.2-.3.44-.31.69h1v3c.02.27.11.5.31.69.2.2.42.31.69.31h1c.27 0 .48-.11.69-.31.2-.19.3-.42.31-.69H8V7.98v.01zM7 2.3c-3.14 0-5.7 2.54-5.7 5.68 0 3.14 2.56 5.7 5.7 5.7s5.7-2.55 5.7-5.7c0-3.15-2.56-5.69-5.7-5.69v.01zM7 .98c3.86 0 7 3.14 7 7s-3.14 7-7 7-7-3.12-7-7 3.14-7 7-7z"></path></svg></span>노트</div><div class="admonitionContent_BuS1"><p>SMS 알림 기능은 유료 서버에 한정됩니다.</p></div></div><ol>
+<li>
+<p>화면 오른쪽 위의 <strong>자신의 프로필 아이콘</strong> &gt; <span class="uitext">계정 관리</span>로 이동하세요.</p>
+</li>
+<li>
+<p><strong>계정 정보</strong>의 <strong>사용자 전화번호</strong> 섹션에서 [ 일반 휴대전화 ] 버튼을 클릭하세요.</p>
+</li>
+<li>
+<p><strong>전화번호</strong>에 인증번호를 수신을 전화번호를 입력하세요.</p>
+<ul>
+<li>SMS를 알림으로 수신할 수 있는 전화번호는 <strong>한국의 휴대전화 번호만 등록</strong>할 수 있습니다.</li>
+</ul>
+</li>
+<li>
+<p>[ 저장 ] 버튼을 클릭하세요.</p>
+</li>
+</ol><div class="theme-admonition theme-admonition-tip admonition_xJq3 alert alert--success"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 12 16"><path fill-rule="evenodd" d="M6.5 0C3.48 0 1 2.19 1 5c0 .92.55 2.25 1 3 1.34 2.25 1.78 2.78 2 4v1h5v-1c.22-1.22.66-1.75 2-4 .45-.75 1-2.08 1-3 0-2.81-2.48-5-5.5-5zm3.64 7.48c-.25.44-.47.8-.67 1.11-.86 1.41-1.25 2.06-1.45 3.23-.02.05-.02.11-.02.17H5c0-.06 0-.13-.02-.17-.2-1.17-.59-1.83-1.45-3.23-.2-.31-.42-.67-.67-1.11C2.44 6.78 2 5.65 2 5c0-2.2 2.02-4 4.5-4 1.22 0 2.36.42 3.22 1.19C10.55 2.94 11 3.94 11 5c0 .66-.44 1.78-.86 2.48zM4 14h5c-.23 1.14-1.3 2-2.5 2s-2.27-.86-2.5-2z"></path></svg></span>팁</div><div class="admonitionContent_BuS1"><p><strong>등록한 전화번호 변경 및 삭제</strong></p><ul>
+<li>전화번호를 변경할 경우, [ 변경 ] 버튼을 클릭하세요. SMS 인증이 필요합니다.</li>
+<li>전화번호를 삭제할 경우, [ 삭제 ] 버튼을 클릭하세요. 전화번호 삭제 시 SMS로 수신받는 알림은 수신할 수 없습니다.</li>
+</ul></div></div></section>
+<section class="remark-sectionize-h4"><h4 class="anchor anchorWithStickyNavbar_LWe7" id="whatsapp-alert">WhatsApp 알림<a href="#whatsapp-alert" class="hash-link" aria-label="WhatsApp 알림에 대한 직접 링크" title="WhatsApp 알림에 대한 직접 링크">​</a></h4><p>WhatsApp을 통해 알림을 수신할 수 있습니다.</p><div class="theme-admonition theme-admonition-note admonition_xJq3 alert alert--secondary"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M6.3 5.69a.942.942 0 0 1-.28-.7c0-.28.09-.52.28-.7.19-.18.42-.28.7-.28.28 0 .52.09.7.28.18.19.28.42.28.7 0 .28-.09.52-.28.7a1 1 0 0 1-.7.3c-.28 0-.52-.11-.7-.3zM8 7.99c-.02-.25-.11-.48-.31-.69-.2-.19-.42-.3-.69-.31H6c-.27.02-.48.13-.69.31-.2.2-.3.44-.31.69h1v3c.02.27.11.5.31.69.2.2.42.31.69.31h1c.27 0 .48-.11.69-.31.2-.19.3-.42.31-.69H8V7.98v.01zM7 2.3c-3.14 0-5.7 2.54-5.7 5.68 0 3.14 2.56 5.7 5.7 5.7s5.7-2.55 5.7-5.7c0-3.15-2.56-5.69-5.7-5.69v.01zM7 .98c3.86 0 7 3.14 7 7s-3.14 7-7 7-7-3.12-7-7 3.14-7 7-7z"></path></svg></span>노트</div><div class="admonitionContent_BuS1"><p>WhatsApp 알림 기능은 유료 서버에 한정됩니다.</p></div></div><ol>
+<li>
+<p>화면 오른쪽 위의 <strong>자신의 프로필 아이콘</strong> &gt; <span class="uitext">계정 관리</span>로 이동하세요.</p>
+</li>
+<li>
+<p><strong>계정 정보</strong>의 <strong>사용자 전화번호</strong> 섹션에서 [ WhatsApp ] 버튼을 클릭하세요.</p>
+</li>
+<li>
+<p>인증번호를 받을 <strong>전화번호</strong>를 입력하세요.</p>
+</li>
+<li>
+<p>[ 인증번호 전송 ] 버튼을 클릭하세요.</p>
+</li>
+<li>
+<p>WhatsApp 애플리케이션으로 전송된 인증번호 6자리를 입력하세요.</p>
+<ul>
+<li>10분 내로 인증번호를 받지 못했다면, [ 인증번호 재전송 ] 버튼을 클릭하세요.</li>
+</ul>
+</li>
+<li>
+<p>[ 인증하기 ] 버튼을 클릭하세요.</p>
+</li>
+</ol></section>
+<section class="remark-sectionize-h4"><h4 class="anchor anchorWithStickyNavbar_LWe7" id="mobile-alert">모바일 알림<a href="#mobile-alert" class="hash-link" aria-label="모바일 알림에 대한 직접 링크" title="모바일 알림에 대한 직접 링크">​</a></h4><p>모바일 알림 수신이 필요한 사용자는 모바일 기기에 와탭 애플리케이션을 설치한 후 로그인해야 합니다.</p><ul>
+<li>
+<p>와탭 애플리케이션 다운로드 - <a href="https://play.google.com/store/apps/details?id=io.whatap.lion" target="_blank" rel="noopener noreferrer"><strong>안드로이드</strong></a></p>
+</li>
+<li>
+<p>와탭 애플리케이션 다운로드 - <a href="https://apps.apple.com/us/app/whatap/id6450067434" target="_blank" rel="noopener noreferrer"><strong>iOS</strong></a></p>
+</li>
+</ul></section>
+<section class="remark-sectionize-h3"><h3 class="anchor anchorWithStickyNavbar_LWe7" id="escalation">반복 알림(에스컬레이션) 설정<a href="#escalation" class="hash-link" aria-label="반복 알림(에스컬레이션) 설정에 대한 직접 링크" title="반복 알림(에스컬레이션) 설정에 대한 직접 링크">​</a></h3><p>경고 알림 발생 시간으로부터 알림 발생 상황이 해소되지 않을 경우 최초 알림 발생 시각으로부터의 알림 반복 간격을 설정할 수 있습니다. 위험(<span class="vslow">Critical</span>) 레벨의 알림만 적용됩니다.</p><p>예를 들 어, 경고 알림 발생 시간으로부터 0분(즉시), 1시간 후, 1일 후에 경고 알림을 반복하려면 <code>0,1H,1D</code>를 <strong>반복 알림 (에스컬레이션)</strong> 컬럼 항목에 입력하세요.</p><ol>
+<li>
+<p><span class="uitext">경고 알림</span> &gt; <span class="uitext">이벤트 수신 설정</span>의 <span class="uitext">사용자별 이벤트 수신 설정</span> 섹션으로 이동하세요.</p>
+</li>
+<li>
+<p><strong>반복 알림(에스컬레이션)</strong> 항목에서 설정하세요.</p>
+<ul>
+<li>
+<p><strong>M</strong>: 분, <strong>H</strong>: 시간, <strong>D</strong>: 일, 단위를 생략하면 분 단위로 시간을 설정합니다.</p>
+</li>
+<li>
+<p>숫자 또는 숫자+단위(<strong>M</strong>, <strong>H</strong>, <strong>D</strong>)로 입력하세요. 입력이 올바르지 않으면 메시지가 표시됩니다.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>[ 저장 ] 버튼을 클릭하세요. 저장하지 않으면 설정되지 않습니다.</p>
+</li>
+</ol></section>
+<section class="remark-sectionize-h3"><h3 class="anchor anchorWithStickyNavbar_LWe7" id="event-reception-tag">이벤트 수신 태그<a href="#event-reception-tag" class="hash-link" aria-label="이벤트 수신 태그에 대한 직접 링크" title="이벤트 수신 태그에 대한 직접 링크">​</a></h3><p>이벤트 설정 시 이벤트 수신 태그를 선택하여 해당 태그를 가진 프로젝트 멤버와 3rd-party 플러그인에 알림을 전송할 수 있습니다. 이벤트 수신 태그를 설정하지 않으면 전체 멤버에게 경고 알림이 전송됩니다.</p><div class="theme-admonition theme-admonition-caution admonition_xJq3 alert alert--warning"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"></path></svg></span>주의</div><div class="admonitionContent_BuS1"><p>이벤트에 적용 중인 <strong>이벤트 수신 태그</strong> 항목은 삭제할 수 없습니다.</p></div></div></section>
+<section class="remark-sectionize-h4"><h4 class="anchor anchorWithStickyNavbar_LWe7" id="add-tag">이벤트 수신 태그 추가하기<a href="#add-tag" class="hash-link" aria-label="이벤트 수신 태그 추가하기에 대한 직접 링크" title="이벤트 수신 태그 추가하기에 대한 직접 링크">​</a></h4><ol>
+<li>
+<p><span class="uitext">경고 알림</span> &gt; <span class="uitext">이벤트 수신 설정</span>으로 이동하세요.</p>
+</li>
+<li>
+<p><span class="uitext">사용자별 이벤트 수신 설정</span> 섹션의 사용자 목록에서 <strong>+ 태그 추가</strong> 또는 <strong>+</strong> 를 클릭하세요.</p>
+</li>
+<li>
+<p><span class="uitext">이벤트 수신 태그</span> 창에서 <strong>+ 새 태그 생성</strong>을 클릭하세요.</p>
+</li>
+<li>
+<p><strong>태그 생성</strong> 창에서 태그 이름을 입력하고, 색상을 선택한 후, [ 태그 생성 ] 버튼을 클릭해 태그를 생성하세요.</p>
+</li>
+<li>
+<p>생성된 태그는 태그 목록의 <img decoding="async" loading="lazy" alt="수정 아이콘" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xNC45MzkzIDNMMTQuOTAxNCAzLjAzNzk0TDE0Ljg5OTUgMy4wMzYwNEw1IDEyLjkzNTVMNS4wMDQ0NyAxMi45NEg1VjE1Ljk0VjE3Ljk0SDdIMTBWMTcuOTM1M0wxMC4wMDQyIDE3LjkzOTVMMTkuOTAzNyA4LjA0TDE5LjkwMTcgOC4wMzc5NUwxOS45MzMyIDguMDA2NDFMMTQuOTM5MyAzWk05LjE3NTI4IDE1Ljk0SDdWMTMuNzY0TDE0LjkzNTcgNS44MjgyOUwxNy4xMDg2IDguMDA2NjhMOS4xNzUyOCAxNS45NFpNMjIgMjBIMlYyMkgyMlYyMFoiIGZpbGw9IiM3NTc1NzUiLz4KPC9zdmc+Cg==" width="24" height="24" class="img_ev3q"> 아이콘을 클릭해 수정 또는 삭제하세요.</p>
+</li>
+<li>
+<p><span class="uitext">이벤트 수신 태그</span> 창의 <strong>태그 목록</strong>에서 원하는 태그를 선택하면 적용됩니다.</p>
+</li>
+</ol></section>
+<section class="remark-sectionize-h4"><h4 class="anchor anchorWithStickyNavbar_LWe7" id="remove-tag">이벤트 수신 태그 해제하기<a href="#remove-tag" class="hash-link" aria-label="이벤트 수신 태그 해제하기에 대한 직접 링크" title="이벤트 수신 태그 해제하기에 대한 직접 링크">​</a></h4><ol>
+<li>
+<p><span class="uitext">경고 알림</span> &gt; <span class="uitext">이벤트 수신 설정</span>의 <span class="uitext">사용자별 이벤트 수신 설정</span> 섹션으로 이동하세요.</p>
+</li>
+<li>
+<p>이벤트 수신 태그를 해제할 사용자의 <span class="uitext">이벤트 수신 태그</span> 항목의 <strong>+</strong> 를 클릭하세요.</p>
+</li>
+<li>
+<p><span class="uitext">이벤트 수신 태그</span> 창에서 해제할 태그의 X 를 클릭하면 해당 태그가 해제됩니다.</p>
+</li>
+</ol></section>
+<section class="remark-sectionize-h4"><h4 class="anchor anchorWithStickyNavbar_LWe7" id="notify-for-untagged">수신 태그 미설정 알림 받기<a href="#notify-for-untagged" class="hash-link" aria-label="수신 태그 미설정 알림 받기에 대한 직접 링크" title="수신 태그 미설정 알림 받기에 대한 직접 링크">​</a></h4><p>이벤트 설정 시 이벤트 수신 태그를 선택하여 해당 태그를 가진 프로젝트 멤버와 3rd-party 플러그인에 알림을 전송할 수 있습니다.</p><ul>
+<li>이벤트 수신 태그가 설정되지 않은 경고 알림을 받으려면 <strong>수신 태그 미설정 알림 받기</strong> 옵션을 선택하세요.</li>
+<li>이벤트 수신 태그가 설정된 경고 알림만 받고 싶다면 선택을 해제하세요.</li>
+</ul><div class="theme-admonition theme-admonition-note admonition_xJq3 alert alert--secondary"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M6.3 5.69a.942.942 0 0 1-.28-.7c0-.28.09-.52.28-.7.19-.18.42-.28.7-.28.28 0 .52.09.7.28.18.19.28.42.28.7 0 .28-.09.52-.28.7a1 1 0 0 1-.7.3c-.28 0-.52-.11-.7-.3zM8 7.99c-.02-.25-.11-.48-.31-.69-.2-.19-.42-.3-.69-.31H6c-.27.02-.48.13-.69.31-.2.2-.3.44-.31.69h1v3c.02.27.11.5.31.69.2.2.42.31.69.31h1c.27 0 .48-.11.69-.31.2-.19.3-.42.31-.69H8V7.98v.01zM7 2.3c-3.14 0-5.7 2.54-5.7 5.68 0 3.14 2.56 5.7 5.7 5.7s5.7-2.55 5.7-5.7c0-3.15-2.56-5.69-5.7-5.69v.01zM7 .98c3.86 0 7 3.14 7 7s-3.14 7-7 7-7-3.12-7-7 3.14-7 7-7z"></path></svg></span>노트</div><div class="admonitionContent_BuS1"><p>모든 경고 알림을 받지 않으려면 해당 옵션을 해제하고 선택한 <span class="uitext">이벤트 수신 태그</span>가 없어야 합니다.</p></div></div></section>
+<section class="remark-sectionize-h3"><h3 class="anchor anchorWithStickyNavbar_LWe7" id="select-notification-language">알림 수신 언어 선택<a href="#select-notification-language" class="hash-link" aria-label="알림 수신 언어 선택에 대한 직접 링크" title="알림 수신 언어 선택에 대한 직접 링크">​</a></h3><p>사용자의 알림 수신 언어를 선택할 수 있습니다.</p><ol>
+<li>
+<p><span class="uitext">경고 알림</span> &gt; <span class="uitext">이벤트 수신 설정</span>으로 이동하세요.</p>
+</li>
+<li>
+<p><span class="uitext">사용자별 이벤트 수신 설정</span> 섹션의 사용자 목록에서 언어를 설정할 사용자의 가장 왼쪽에 ▶️ 버튼을 클릭하세요.</p>
+</li>
+<li>
+<p><strong>알림 수신 언어</strong>를 선택하세요.</p>
+</li>
+</ol></section>
+<section class="remark-sectionize-h3"><h3 class="anchor anchorWithStickyNavbar_LWe7" id="day-and-time">요일 및 시간별 알림 설정<a href="#day-and-time" class="hash-link" aria-label="요일 및 시간별 알림 설정에 대한 직접 링크" title="요일 및 시간별 알림 설정에 대한 직접 링크">​</a></h3><p>사용자의 요일별, 시간별  알림 수신 여부를 선택할 수 있습니다.</p><ol>
+<li>
+<p><span class="uitext">경고 알림</span> &gt; <span class="uitext">이벤트 수신 설정</span>으로 이동하세요.</p>
+</li>
+<li>
+<p><span class="uitext">사용자별 이벤트 수신 설정</span> 섹션의 사용자 목록에서 요일 및 시간별 알림을 설정할 사용자의 가장 왼쪽에 ▶️ 버튼을 클릭하세요.</p>
+</li>
+<li>
+<p>경고 알림 수신을 원하는 요일을 선택하거나 시간을 입력하세요.</p>
+<ul>
+<li>알림 수신 수단별로 설정할 수 있습니다.</li>
+</ul>
+</li>
+</ol></section>
+<section class="remark-sectionize-h2"><h2 class="anchor anchorWithStickyNavbar_LWe7" id="third-party">3rd 파티 플러그인<a href="#third-party" class="hash-link" aria-label="3rd 파티 플러그인에 대한 직접 링크" title="3rd 파티 플러그인에 대한 직접 링크">​</a></h2><p>외부 애플리케이션을 통해 경고 알림을 받을 수 있습니다.</p><ul>
+<li>지원 애플리케이션: Slack, Telegram, Teams, Teams Workflows, Jandi, AlertNow, Webhook, Webhook JSON, Opsgenie, PagerDuty</li>
+</ul><div class="theme-admonition theme-admonition-note admonition_xJq3 alert alert--secondary"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M6.3 5.69a.942.942 0 0 1-.28-.7c0-.28.09-.52.28-.7.19-.18.42-.28.7-.28.28 0 .52.09.7.28.18.19.28.42.28.7 0 .28-.09.52-.28.7a1 1 0 0 1-.7.3c-.28 0-.52-.11-.7-.3zM8 7.99c-.02-.25-.11-.48-.31-.69-.2-.19-.42-.3-.69-.31H6c-.27.02-.48.13-.69.31-.2.2-.3.44-.31.69h1v3c.02.27.11.5.31.69.2.2.42.31.69.31h1c.27 0 .48-.11.69-.31.2-.19.3-.42.31-.69H8V7.98v.01zM7 2.3c-3.14 0-5.7 2.54-5.7 5.68 0 3.14 2.56 5.7 5.7 5.7s5.7-2.55 5.7-5.7c0-3.15-2.56-5.69-5.7-5.69v.01zM7 .98c3.86 0 7 3.14 7 7s-3.14 7-7 7-7-3.12-7-7 3.14-7 7-7z"></path></svg></span>노트</div><div class="admonitionContent_BuS1"><p>와탭랩스의 지원 범위에 포함하지 않는 사내 메신저는 표준 Webhook, Webhook json을 통해 연동할 수 있습니다.</p></div></div><div class="table-title"> 표 | 3rd 파티 플러그인 목록 구성</div><table><thead><tr><th style="text-align:center">항목</th><th>설명</th></tr></thead><tbody><tr><td style="text-align:center">플러그인 이름</td><td>플러그인의 이름</td></tr><tr><td style="text-align:center">인증 키</td><td>인증 키</td></tr><tr><td style="text-align:center">인증 값</td><td>인증값</td></tr><tr><td style="text-align:center">수신 레벨</td><td>경고, 전체, 위험으로 구분</td></tr><tr><td style="text-align:center">반복 알림(에스컬레이션)</td><td>알림 발생 시간으로부터 알림 발생 상황이 해소되지 않았을 경우, 최초 알림 발생 시각으로부터의 알림 재발행 주기 <br> -  위험(<span class="vslow">Critical</span>) 단계의 알림에만 적용되는 기능</td></tr><tr><td style="text-align:center">Smart 메시지(AI)</td><td>Telegram 3rd 파티 플러그인 추가 시 AI 알림 기능 제공 <br> - 지원 언어: 한국어, 영어, 일본어</td></tr><tr><td style="text-align:center">이벤트 수신 태그</td><td>프로젝트의 멤버 중 특정 멤버 또는 팀을 대상으로 알림 수신 여부</td></tr><tr><td style="text-align:center">삭제</td><td>3rd 파티 플러그인 삭제</td></tr></tbody></table></section>
+<section class="remark-sectionize-h3"><h3 class="anchor anchorWithStickyNavbar_LWe7" id="add-third-party">3rd 파티 플러그인 추가<a href="#add-third-party" class="hash-link" aria-label="3rd 파티 플러그인 추가에 대한 직접 링크" title="3rd 파티 플러그인 추가에 대한 직접 링크">​</a></h3><ol>
+<li>
+<p><span class="uitext">경고 알림</span> &gt; <span class="uitext">이벤트 수신 설정</span>으로 이동하세요.</p>
+</li>
+<li>
+<p><strong>3rd 파티 플러그인</strong> 섹션의 [ 추가하기 ] 버튼을 클릭하세요.</p>
+</li>
+<li>
+<p><strong>서드 파티 플러그인 추가</strong> 창에서 원하는 서비스 탭으로 선택하세요.</p>
+</li>
+<li>
+<p>선택한 서비스의 안내(<a href="#how-to-add-plugin">3rd 파티 플러그인 알림 추가 방법</a>)에 따라 설정을 진행하세요.</p>
+</li>
+<li>
+<p>[ 수신 테스트 ] 버튼을 클릭해 설정이 잘 되었는지 확인하세요.</p>
+</li>
+<li>
+<p>모든 과정을 완료하면 [ 추가하기 ] 또는 [ 등록 ] 버튼을 클릭하세요.</p>
+</li>
+</ol></section>
+<section class="remark-sectionize-h4"><h4 class="anchor anchorWithStickyNavbar_LWe7" id="how-to-add-plugin">3rd 파티 플러그인 알림 추가 방법<a href="#how-to-add-plugin" class="hash-link" aria-label="3rd 파티 플러그인 알림 추가 방법에 대한 직접 링크" title="3rd 파티 플러그인 알림 추가 방법에 대한 직접 링크">​</a></h4><details class="details_lb9f alert alert--info details_b_Ee" data-collapsed="true"><summary>Slack</summary><div><div class="collapsibleContent_i85q"><p><strong>서드 파티 플러그인 추가</strong>의 <strong>Slack</strong> 탭 화면의 [ <span class="uitext">슬랙에 추가하기</span> ] 버튼을 클릭하면 Slack의 팀 및 채널에 <strong>WhaTapNotiBot</strong>을 등록할 수 있습니다.</p></div></div></details><details class="details_lb9f alert alert--info details_b_Ee" data-collapsed="true"><summary>Telegram</summary><div><div class="collapsibleContent_i85q"><ol>
+<li>
+<p><strong>Telegram</strong>에서 <strong>@WhaTapApmNotiBot</strong>을 검색하세요.</p>
+<p><img loading="lazy" src="/whatap-docs/img/3rdparty/set-event-3rd-party-plugin-add-telegram.png" alt="Telegram" width="auto" height="auto"></p>
+</li>
+<li>
+<p>Bot을 선택하고 [ 시작 ] 버튼을 클릭하세요.</p>
+</li>
+<li>
+<p>채팅창에 <code>/license</code> 명령어와 알림을 받을 프로젝트의 액세스 키를 채팅창에 입력하세요.</p>
+<p><img loading="lazy" src="/whatap-docs/img/3rdparty/set-event-3rd-party-plugin-add-telegram-license.png" alt="Telegram" width="auto" height="auto"></p>
+</li>
+</ol><div class="theme-admonition theme-admonition-note admonition_xJq3 alert alert--secondary"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M6.3 5.69a.942.942 0 0 1-.28-.7c0-.28.09-.52.28-.7.19-.18.42-.28.7-.28.28 0 .52.09.7.28.18.19.28.42.28.7 0 .28-.09.52-.28.7a1 1 0 0 1-.7.3c-.28 0-.52-.11-.7-.3zM8 7.99c-.02-.25-.11-.48-.31-.69-.2-.19-.42-.3-.69-.31H6c-.27.02-.48.13-.69.31-.2.2-.3.44-.31.69h1v3c.02.27.11.5.31.69.2.2.42.31.69.31h1c.27 0 .48-.11.69-.31.2-.19.3-.42.31-.69H8V7.98v.01zM7 2.3c-3.14 0-5.7 2.54-5.7 5.68 0 3.14 2.56 5.7 5.7 5.7s5.7-2.55 5.7-5.7c0-3.15-2.56-5.69-5.7-5.69v.01zM7 .98c3.86 0 7 3.14 7 7s-3.14 7-7 7-7-3.12-7-7 3.14-7 7-7z"></path></svg></span>노트</div><div class="admonitionContent_BuS1"><p><strong>사용할 수 있는 명령어 목록</strong></p><ul>
+<li>
+<p><code>/help</code>: 명령어 목록 보기</p>
+</li>
+<li>
+<p><code>/license</code>: 알림 받을 프로젝트의 액세스 키 입력</p>
+</li>
+<li>
+<p><code>/remove</code>: 알림을 받지 않을 프로젝트 코드 입력</p>
+</li>
+<li>
+<p><code>/list</code>: 현재 알림을 받고 있는 프로젝트 코드 보기</p>
+</li>
+</ul></div></div></div></div></details><details class="details_lb9f alert alert--info details_b_Ee" data-collapsed="true"><summary>Teams</summary><div><div class="collapsibleContent_i85q"><ol>
+<li>
+<p>알림을 받을 채널의 <strong>커넥터</strong>로 이동하세요.</p>
+<p><img loading="lazy" src="/whatap-docs/img/3rdparty/management_event_new_teams_step_01.png" alt="Teams" class="width-200" width="auto" height="auto"></p>
+</li>
+<li>
+<p><strong>Webhook</strong>을 추가하고 [ 구성 ] 버튼을 클릭하세요.</p>
+<p><img loading="lazy" src="/whatap-docs/img/3rdparty/management_event_new_teams_step_02.png" alt="Teams" class="width-600" width="auto" height="auto"></p>
+</li>
+<li>
+<p>Webhook 이름을 입력하고 [ 만들기 ] 버튼을 클릭하세요.</p>
+<p><img loading="lazy" src="/whatap-docs/img/3rdparty/management_event_new_teams_step_03.png" alt="Teams" class="width-600" width="auto" height="auto"></p>
+</li>
+<li>
+<p>생성된 Webhhok URL을 복사하세요.</p>
+<p><img loading="lazy" src="/whatap-docs/img/3rdparty/management_event_new_teams_step_04.png" alt="Teams" class="width-600" width="auto" height="auto"></p>
+</li>
+<li>
+<p>와탭 모니터링 서비스의 <span class="uitext">서드 파티 플러그인 추가</span> 창으로 돌아와 <strong>Teams</strong> 탭 하단의 <span class="uitext">Channel Name</span>과 <span class="uitext">Webhook URL</span> 항목을 입력하세요.</p>
+</li>
+<li>
+<p>[ <span class="uitext">등록</span> ]버튼을 클릭하세요.</p>
+</li>
+</ol></div></div></details><details class="details_lb9f alert alert--info details_b_Ee" data-collapsed="true"><summary>Teams Workflows</summary><div><div class="collapsibleContent_i85q"><p>워크플로를 사용하려면 <strong>Microsoft Teams</strong>에 액세스할 수 있는 계정과 비즈니스 플랜 구독이 필요합니다.</p><ol>
+<li>
+<p><strong>팀</strong> 메뉴의 더보기(...) &gt; <strong>채널 추가</strong>를 클릭하세요.</p>
+<p><img loading="lazy" src="/whatap-docs/img/3rdparty/teams_workflows_step_01.png" alt="Teams Workflows" width="auto" height="auto"></p>
+</li>
+<li>
+<p><strong>채널 만들기</strong> 창에서 <strong>채널 이름</strong>과 <strong>설명</strong>을 입력하고, <strong>채널 유형 선택</strong> 항목은 <strong>표준</strong>으로 선택한 후, [ 만들기 ] 버튼을 클릭하세요.</p>
+<p><img loading="lazy" src="/whatap-docs/img/3rdparty/teams_workflows_step_02.png" alt="Teams Workflows" width="auto" height="auto"></p>
+<div class="theme-admonition theme-admonition-caution admonition_xJq3 alert alert--warning"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"></path></svg></span>주의</div><div class="admonitionContent_BuS1"><p>채널 유형을 <strong>공유</strong>로 선택하면 워크플로를 사용할 수 없으며, <strong>비공개</strong>를 선택하면 워크플로를 추가할 수 있지만 알림을 수신할 수 없습니다.</p></div></div>
+</li>
+<li>
+<p>생성한 채널의 더보기(...) &gt; <strong>워크플로</strong>를 클릭하세요.</p>
+<p><img loading="lazy" src="/whatap-docs/img/3rdparty/teams_workflows_step_03.png" alt="Teams Workflows" width="auto" height="auto"></p>
+</li>
+<li>
+<p><strong>워크플로</strong> 대화상자의 <strong>워크플로</strong>의 목록에서 <strong>웹후크 요청이 수신되면 채널에 게시</strong>를 선택 후, [ 추가 워크플로 ] 버튼을 클릭하세요.</p>
+<p><img loading="lazy" src="/whatap-docs/img/3rdparty/teams_workflows_step_04.png" alt="Teams Workflows" width="auto" height="auto"></p>
+</li>
+<li>
+<p><strong>이름</strong>과 <strong>연결</strong> 상태를 확인한 후, [ 다음 ] 버튼을 클릭하세요.</p>
+</li>
+<li>
+<p><strong>세부 정보</strong>를 확인한 후, [ 워크플로 추가 ] 버튼을 클릭하세요.</p>
+</li>
+<li>
+<p>워크플로가 추가되었습니다. 생성된 주소를 복사하세요.</p>
+<p><img loading="lazy" src="/whatap-docs/img/3rdparty/teams_workflows_step_07.png" alt="Teams Workflows" width="auto" height="auto"></p>
+</li>
+<li>
+<p>와탭 모니터링 서비스의 <span class="uitext">서드 파티 플러그인 추가</span> 창으로 돌아와 <strong>Teams Workflows</strong> 탭 안내 하단의 <span class="uitext">Channel Name</span>과 <span class="uitext">Webhook URL</span> 항목을 입력하세요.</p>
+</li>
+<li>
+<p>[ <span class="uitext">등록</span> ] 버튼을 선택하세요.</p>
+</li>
+</ol></div></div></details><details class="details_lb9f alert alert--info details_b_Ee" data-collapsed="true"><summary>잔디(Jandi)</summary><div><div class="collapsibleContent_i85q"><ol>
+<li>
+<p>알림을 받을 토픽 또는 채팅에서 잔디 커넥트 설정으로 이동하세요.</p>
+</li>
+<li>
+<p><strong>커넥트 목록</strong>에서 <b>Webhook 수신 (Incoming Webhook)</b> 항목에서 [ 연동하기 ] 버튼을 클릭하세요.</p>
+<p><img loading="lazy" src="/whatap-docs/img/3rdparty/management_event_jandi_step_01.png" alt="Jandi" width="auto" height="auto"></p>
+</li>
+<li>
+<p>[ Webhook 수신 추가 ] 버튼을 클릭하세요.</p>
+</li>
+<li>
+<p><strong>Webhook URL 등록</strong> 항목에 Webhook URL을 복사하세요.</p>
+<p><img loading="lazy" src="/whatap-docs/img/3rdparty/management_event_jandi_step_02.png" alt="Jandi" width="auto" height="auto"></p>
+</li>
+<li>
+<p>와탭 모니터링 서비스의 <span class="uitext">서드 파티 플러그인 추가</span> 창으로 돌아와 <strong>Jandi</strong> 탭 안내 하단의 <span class="uitext">Channel Name</span>과 <span class="uitext">Webhook URL</span> 항목을 입력하세요.</p>
+</li>
+<li>
+<p>[ <span class="uitext">등록</span> ] 버튼을 클릭하세요.</p>
+</li>
+</ol></div></div></details><details class="details_lb9f alert alert--info details_b_Ee" data-collapsed="true"><summary>AlertNow</summary><div><div class="collapsibleContent_i85q"><ol>
+<li>
+<p><strong>AlerNow</strong> 서비스를 접속한 후, <strong>환경 설정</strong> &gt; <strong>Integration</strong> 메뉴로 이동하세요.</p>
+<p><img loading="lazy" src="/whatap-docs/img/3rdparty/management_event_alertnow_step_01.png" alt="AlertNow" class="width-200" width="auto" height="auto"></p>
+</li>
+<li>
+<p><strong>인티그레이션</strong> 화면에서 [ 인티그레이션 생성 ] 버튼을 클릭하세요.</p>
+</li>
+<li>
+<p>Integration 유형 중 <strong>WhaTap</strong>을 선택하세요.</p>
+</li>
+<li>
+<p><strong>인티그레이션 생성</strong> 화면에서 이름 및 이름 지정 규칙을 설정하세요.</p>
+<p><img loading="lazy" src="/whatap-docs/img/3rdparty/management_event_alertnow_step_04.png" alt="AlertNow" class="width-600" width="auto" height="auto"></p>
+</li>
+<li>
+<p>[ 확인 ] 버튼을 클릭하면 Integration이 생성됩니다.</p>
+</li>
+<li>
+<p>생성된 인티그레이션 목록을 확인하고 생성된 Integration 항목을 선택하세요.</p>
+<p><img loading="lazy" src="/whatap-docs/img/3rdparty/management_event_alertnow_step_05.png" alt="AlertNow" class="width-600" width="auto" height="auto"></p>
+</li>
+<li>
+<p>상세 화면에서 URL 오른쪽의 복사 아이콘을 클릭해 URL을 복사하세요.</p>
+<p><img loading="lazy" src="/whatap-docs/img/3rdparty/management_event_alertnow_step_06.png" alt="AlertNow" class="width-600" width="auto" height="auto"></p>
+</li>
+<li>
+<p>와탭 모니터링 서비스의 <span class="uitext">서드 파티 플러그인 추가</span> 창으로 돌아와 <strong>AlertNow</strong> 탭 안내 하단의 <span class="uitext">Channel Name</span>과 <span class="uitext">Webhook URL</span> 항목을 입력하세요.</p>
+</li>
+<li>
+<p>[ <span class="uitext">등록</span> ] 버튼을 클릭하세요.</p>
+</li>
+</ol></div></div></details><details class="details_lb9f alert alert--info details_b_Ee" data-collapsed="true"><summary>Webhook</summary><div><div class="collapsibleContent_i85q"><ol>
+<li>알림을 받을 Webhook을 등록하세요. 등록한 URL에 POST Method로 알림의 <code>title</code>, <code>text</code>가 전송됩니다.</li>
+</ol><div class="language-json codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#bfc7d5;--prism-background-color:#292d3e"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-json codeBlock_bY9V thin-scrollbar" style="color:#bfc7d5;background-color:#292d3e"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#bfc7d5"><span class="token plain">    </span><span class="token punctuation" style="color:rgb(199, 146, 234)">{</span><span class="token plain"></span><br></span><span class="token-line" style="color:#bfc7d5"><span class="token plain">	    </span><span class="token property">&quot;title&quot;</span><span class="token operator" style="color:rgb(137, 221, 255)">:</span><span class="token string" style="color:rgb(195, 232, 141)">&quot;Alert Title&quot;</span><span class="token punctuation" style="color:rgb(199, 146, 234)">,</span><span class="token plain"> </span><br></span><span class="token-line" style="color:#bfc7d5"><span class="token plain">	    </span><span class="token property">&quot;text&quot;</span><span class="token operator" style="color:rgb(137, 221, 255)">:</span><span class="token plain"> </span><span class="token string" style="color:rgb(195, 232, 141)">&quot;Sample warning message&quot;</span><span class="token plain"></span><br></span><span class="token-line" style="color:#bfc7d5"><span class="token plain">    </span><span class="token punctuation" style="color:rgb(199, 146, 234)">}</span><br></span></code></pre></div></div><ol>
+<li>
+<p><span class="uitext">Webhook Name</span>과 <span class="uitext">Webhook URL</span> 항목을 입력하세요.</p>
+</li>
+<li>
+<p>[ <span class="uitext">등록</span> ] 버튼을 클릭하세요.</p>
+</li>
+</ol></div></div></details><details class="details_lb9f alert alert--info details_b_Ee" data-collapsed="true"><summary>Webhook JSON</summary><div><div class="collapsibleContent_i85q"><ol>
+<li>
+<p>알림을 받을 Webhook을 등록하세요. 등록한 URL에 POST Method로 알림 데이터가 JSON 형태로 전송됩니다. JSON 내에 포함 시킬 수 있는 대체 변수에 대해선 <strong>사용 가능 변수</strong> 부분을 참고하세요.</p>
+<ul>
+<li>
+<p><code>${something}</code>은 와탭에서 제공하는 대체될 값입니다. 지원하는 전체 목록과 의미는 사용 가능 변수를 참고하세요.</p>
+</li>
+<li>
+<p>이벤트 상태(<code>status</code>)는 이벤트 발생(<code>on</code>), 이벤트 해소(<code>off</code>)로 구분할 수 있습니다.</p>
+</li>
+<li>
+<p><code>level</code>은 <code>None</code>, <code>Info</code>, <code>Warning</code>, <code>Critical</code>로 구분합니다.</p>
+</li>
+</ul>
+<div class="language-json codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#bfc7d5;--prism-background-color:#292d3e"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-json codeBlock_bY9V thin-scrollbar" style="color:#bfc7d5;background-color:#292d3e"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#bfc7d5"><span class="token punctuation" style="color:rgb(199, 146, 234)">{</span><span class="token plain"></span><br></span><span class="token-line" style="color:#bfc7d5"><span class="token plain">    </span><span class="token property">&quot;pcode&quot;</span><span class="token operator" style="color:rgb(137, 221, 255)">:</span><span class="token plain"> </span><span class="token string" style="color:rgb(195, 232, 141)">&quot;${pcode}&quot;</span><span class="token punctuation" style="color:rgb(199, 146, 234)">,</span><span class="token plain"></span><br></span><span class="token-line" style="color:#bfc7d5"><span class="token plain">    </span><span class="token property">&quot;projectName&quot;</span><span class="token operator" style="color:rgb(137, 221, 255)">:</span><span class="token plain"> </span><span class="token string" style="color:rgb(195, 232, 141)">&quot;${projectName}&quot;</span><span class="token punctuation" style="color:rgb(199, 146, 234)">,</span><span class="token plain"></span><br></span><span class="token-line" style="color:#bfc7d5"><span class="token plain">    </span><span class="token property">&quot;time&quot;</span><span class="token operator" style="color:rgb(137, 221, 255)">:</span><span class="token plain"> </span><span class="token string" style="color:rgb(195, 232, 141)">&quot;${time}&quot;</span><span class="token punctuation" style="color:rgb(199, 146, 234)">,</span><span class="token plain"></span><br></span><span class="token-line" style="color:#bfc7d5"><span class="token plain">    </span><span class="token property">&quot;oid&quot;</span><span class="token operator" style="color:rgb(137, 221, 255)">:</span><span class="token plain"> </span><span class="token string" style="color:rgb(195, 232, 141)">&quot;${oid}&quot;</span><span class="token punctuation" style="color:rgb(199, 146, 234)">,</span><span class="token plain"></span><br></span><span class="token-line" style="color:#bfc7d5"><span class="token plain">    </span><span class="token property">&quot;oname&quot;</span><span class="token operator" style="color:rgb(137, 221, 255)">:</span><span class="token plain"> </span><span class="token string" style="color:rgb(195, 232, 141)">&quot;${oname}&quot;</span><span class="token punctuation" style="color:rgb(199, 146, 234)">,</span><span class="token plain"></span><br></span><span class="token-line" style="color:#bfc7d5"><span class="token plain">    </span><span class="token property">&quot;title&quot;</span><span class="token operator" style="color:rgb(137, 221, 255)">:</span><span class="token plain"> </span><span class="token string" style="color:rgb(195, 232, 141)">&quot;${title}&quot;</span><span class="token punctuation" style="color:rgb(199, 146, 234)">,</span><span class="token plain"></span><br></span><span class="token-line" style="color:#bfc7d5"><span class="token plain">    </span><span class="token property">&quot;message&quot;</span><span class="token operator" style="color:rgb(137, 221, 255)">:</span><span class="token plain"> </span><span class="token string" style="color:rgb(195, 232, 141)">&quot;${message}&quot;</span><span class="token punctuation" style="color:rgb(199, 146, 234)">,</span><span class="token plain"></span><br></span><span class="token-line" style="color:#bfc7d5"><span class="token plain">    </span><span class="token property">&quot;level&quot;</span><span class="token operator" style="color:rgb(137, 221, 255)">:</span><span class="token plain"> </span><span class="token string" style="color:rgb(195, 232, 141)">&quot;${level}&quot;</span><span class="token punctuation" style="color:rgb(199, 146, 234)">,</span><span class="token plain"></span><br></span><span class="token-line" style="color:#bfc7d5"><span class="token plain">    </span><span class="token property">&quot;status&quot;</span><span class="token operator" style="color:rgb(137, 221, 255)">:</span><span class="token plain"> </span><span class="token string" style="color:rgb(195, 232, 141)">&quot;${status}&quot;</span><span class="token punctuation" style="color:rgb(199, 146, 234)">,</span><span class="token plain"></span><br></span><span class="token-line" style="color:#bfc7d5"><span class="token plain">    </span><span class="token property">&quot;metricName&quot;</span><span class="token operator" style="color:rgb(137, 221, 255)">:</span><span class="token plain"> </span><span class="token string" style="color:rgb(195, 232, 141)">&quot;${metricName}&quot;</span><span class="token punctuation" style="color:rgb(199, 146, 234)">,</span><span class="token plain"></span><br></span><span class="token-line" style="color:#bfc7d5"><span class="token plain">    </span><span class="token property">&quot;metricValue&quot;</span><span class="token operator" style="color:rgb(137, 221, 255)">:</span><span class="token plain"> </span><span class="token string" style="color:rgb(195, 232, 141)">&quot;${metricValue}&quot;</span><span class="token punctuation" style="color:rgb(199, 146, 234)">,</span><span class="token plain"></span><br></span><span class="token-line" style="color:#bfc7d5"><span class="token plain">    </span><span class="token property">&quot;metricThreshold&quot;</span><span class="token operator" style="color:rgb(137, 221, 255)">:</span><span class="token plain"> </span><span class="token string" style="color:rgb(195, 232, 141)">&quot;${metricThreshold}&quot;</span><span class="token punctuation" style="color:rgb(199, 146, 234)">,</span><span class="token plain"></span><br></span><span class="token-line" style="color:#bfc7d5"><span class="token plain">    </span><span class="token property">&quot;uuid&quot;</span><span class="token operator" style="color:rgb(137, 221, 255)">:</span><span class="token plain"> </span><span class="token string" style="color:rgb(195, 232, 141)">&quot;${uuid}&quot;</span><span class="token punctuation" style="color:rgb(199, 146, 234)">,</span><span class="token plain"></span><br></span><span class="token-line" style="color:#bfc7d5"><span class="token plain">    </span><span class="token property">&quot;okind&quot;</span><span class="token operator" style="color:rgb(137, 221, 255)">:</span><span class="token plain"> </span><span class="token string" style="color:rgb(195, 232, 141)">&quot;${okind}&quot;</span><span class="token punctuation" style="color:rgb(199, 146, 234)">,</span><span class="token plain"></span><br></span><span class="token-line" style="color:#bfc7d5"><span class="token plain">    </span><span class="token property">&quot;onode&quot;</span><span class="token operator" style="color:rgb(137, 221, 255)">:</span><span class="token plain"> </span><span class="token string" style="color:rgb(195, 232, 141)">&quot;${onode}&quot;</span><span class="token plain"></span><br></span><span class="token-line" style="color:#bfc7d5"><span class="token plain"></span><span class="token punctuation" style="color:rgb(199, 146, 234)">}</span><br></span></code></pre></div></div>
+</li>
+<li>
+<p><span class="uitext">Webhook Name</span>과 <span class="uitext">Webhook URL</span> 항목을 입력하세요.</p>
+</li>
+<li>
+<p>Header 값을 추가하려면 <span class="uitext">사용자 Header 값 추가</span>의 <strong>+ 추가</strong>를 클릭해 key, value을 추가하세요.</p>
+</li>
+<li>
+<p>[ <span class="uitext">등록</span> ] 버튼을 클릭하세요.</p>
+</li>
+</ol></div></div></details><details class="details_lb9f alert alert--info details_b_Ee" data-collapsed="true"><summary>Opsgenie</summary><div><div class="collapsibleContent_i85q"><ol>
+<li>
+<p><strong>Teams</strong> 메뉴에서 알림을 수신할 팀을 선택하세요.</p>
+</li>
+<li>
+<p><strong>Integration</strong> 메뉴로 이동해 [ Add Integration ] 버튼을 클릭하세요.</p>
+<p><img decoding="async" loading="lazy" alt="Opsgenie" src="/whatap-docs/assets/images/management_event_opsgenie_step_02-06c2b0b6ecf0cf74abf1a8923581a6a3.png" width="2064" height="279" class="img_ev3q"></p>
+</li>
+<li>
+<p>Integration 목록에서 &#x27;API&#x27; 검색 후 선택하세요.</p>
+<p><img decoding="async" loading="lazy" alt="Opsgenie" src="/whatap-docs/assets/images/management_event_opsgenie_step_03-43418f9b6bd6bf3cb5c6332ad7a9639c.png" width="2064" height="762" class="img_ev3q"></p>
+</li>
+<li>
+<p>API 명과 Team을 할당하고 각 권한을 설정한 후, [ Save Integration ] 버튼을 클릭하세요.</p>
+<p><img decoding="async" loading="lazy" alt="Opsgenie" src="/whatap-docs/assets/images/management_event_opsgenie_step_04-2b0a7d83cc270357f963c5b50ac5a782.png" width="2064" height="1356" class="img_ev3q"></p>
+</li>
+<li>
+<p>와탭 모니터링 서비스의 <span class="uitext">서드 파티 플러그인 추가</span> 창으로 돌아와, <strong>Opsgenie</strong> 탭 안내 하단의 <span class="uitext">Name</span>과 <span class="uitext">API Key</span> 항목을 입력하세요.</p>
+</li>
+<li>
+<p>[ <span class="uitext">등록</span> ] 버튼을 선택하세요.</p>
+</li>
+</ol></div></div></details><details class="details_lb9f alert alert--info details_b_Ee" data-collapsed="true"><summary>PagerDuty</summary><div><div class="collapsibleContent_i85q"><ol>
+<li>
+<p><a href="https://www.pagerduty.com/" target="_blank" rel="noopener noreferrer">PagerDuty</a> 계정에 등록하고 로그인하세요.</p>
+</li>
+<li>
+<p>PagerDuty에서 <strong>Services</strong> &gt; <strong>Service Directory</strong> 메뉴에서 [ + New Service ] 버튼을 클릭하세요.</p>
+<p><img decoding="async" loading="lazy" src="https://preview.whatap.io/assets/assets/image/management_event_pagerduty_step_01.jpg" alt="PagerDuty" class="img_ev3q"></p>
+</li>
+<li>
+<p>Service 정보(<strong>Name</strong>)를 입력한 후 [ Next ] 버튼을 클릭하세요.</p>
+<p><img decoding="async" loading="lazy" src="https://preview.whatap.io/assets/assets/image/management_event_pagerduty_step_02.jpg" alt="PagerDuty" class="img_ev3q"></p>
+</li>
+<li>
+<p>Escalation Policy를 설정 후 [ Next ] 버튼을 클릭하세요.</p>
+<p><img decoding="async" loading="lazy" src="https://preview.whatap.io/assets/assets/image/management_event_pagerduty_step_03.jpg" alt="PagerDuty" class="img_ev3q"></p>
+</li>
+<li>
+<p><strong>Alert Grouping</strong>과 <strong>Transient Alerts</strong> 항목을 설정한 후 [ Next ] 버튼을 클릭하세요.</p>
+<p><img decoding="async" loading="lazy" src="https://preview.whatap.io/assets/assets/image/management_event_pagerduty_step_04.jpg" alt="PagerDuty" class="img_ev3q"></p>
+</li>
+<li>
+<p><strong>Integrations</strong>에서 <strong>Event API V2</strong>를 선택한 후 [ Create Service ] 버튼을 클릭하세요.</p>
+<p><img decoding="async" loading="lazy" src="https://preview.whatap.io/assets/assets/image/management_event_pagerduty_step_05.jpg" alt="PagerDuty" class="img_ev3q"></p>
+</li>
+<li>
+<p>생성한 Service 화면에서 <strong>Integration Name</strong>과 <strong>Integration Key</strong> 값을 복사하세요.</p>
+<p><img decoding="async" loading="lazy" src="https://preview.whatap.io/assets/assets/image/management_event_pagerduty_step_06.jpg" alt="PagerDuty" class="img_ev3q"></p>
+</li>
+<li>
+<p>와탭 모니터링 서비스의 <span class="uitext">서드 파티 플러그인 추가</span> 화면으로 돌아와 <span class="uitext">Integration Name</span>과 <span class="uitext">Integration Key</span> 항목을 입력하세요.</p>
+</li>
+<li>
+<p>[ 등록 ] 버튼을 클릭하세요.</p>
+</li>
+</ol><div class="theme-admonition theme-admonition-note admonition_xJq3 alert alert--secondary"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M6.3 5.69a.942.942 0 0 1-.28-.7c0-.28.09-.52.28-.7.19-.18.42-.28.7-.28.28 0 .52.09.7.28.18.19.28.42.28.7 0 .28-.09.52-.28.7a1 1 0 0 1-.7.3c-.28 0-.52-.11-.7-.3zM8 7.99c-.02-.25-.11-.48-.31-.69-.2-.19-.42-.3-.69-.31H6c-.27.02-.48.13-.69.31-.2.2-.3.44-.31.69h1v3c.02.27.11.5.31.69.2.2.42.31.69.31h1c.27 0 .48-.11.69-.31.2-.19.3-.42.31-.69H8V7.98v.01zM7 2.3c-3.14 0-5.7 2.54-5.7 5.68 0 3.14 2.56 5.7 5.7 5.7s5.7-2.55 5.7-5.7c0-3.15-2.56-5.69-5.7-5.69v.01zM7 .98c3.86 0 7 3.14 7 7s-3.14 7-7 7-7-3.12-7-7 3.14-7 7-7z"></path></svg></span>노트</div><div class="admonitionContent_BuS1"><p>메시지를 수신하지 못했거나 플러그인이 등록되지 않았다면 <strong>Integration Name</strong> 또는 <strong>Integration Key</strong>값이 올바른지 확인하세요.</p></div></div></div></div></details></section>
+<section class="remark-sectionize-h2"><h2 class="anchor anchorWithStickyNavbar_LWe7" id="대량-알림-발생-방지">대량 알림 발생 방지<a href="#대량-알림-발생-방지" class="hash-link" aria-label="대량 알림 발생 방지에 대한 직접 링크" title="대량 알림 발생 방지에 대한 직접 링크">​</a></h2><p>알림이 대량으로 발생하면 지정한 시간 동안 알림이 일시적으로 중지됩니다. 예를 들어, 5분 동안 20회의 이벤트가 발생하면 5분 동안 경고 알림을 중지합니다. 설정한 <strong>정지 시간</strong> 시간이 지나면 대량 알림 발생 방지 기능은 해제됩니다.</p><ol>
+<li>
+<p><span class="uitext">경고 알림</span> &gt; <span class="uitext">이벤트 수신 설정</span>의 <span class="uitext">대량 알림 발생 방지</span> 섹션으로 이동하세요.</p>
+</li>
+<li>
+<p>토글 버튼을 클릭해 <strong>활성화</strong> 또는 <strong>비활성화</strong> 할 수 있습니다.</p>
+<ul>
+<li>
+<p><img decoding="async" loading="lazy" alt="토글 활성화 아이콘" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAzMiAxNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjMyIiBoZWlnaHQ9IjE2IiByeD0iOCIgZmlsbD0iIzAwQjU0MyIvPgo8ZWxsaXBzZSBjeD0iMjQuMDAwMiIgY3k9IjcuOTk5OTIiIHJ4PSI2LjY2NjY3IiByeT0iNi42NjY2NyIgZmlsbD0id2hpdGUiLz4KPC9zdmc+Cg==" width="32" height="16" class="img_ev3q"> <strong>활성 화</strong>: 대량 알림 일시적 중지</p>
+</li>
+<li>
+<p><img decoding="async" loading="lazy" alt="토글 비활성화 아이콘" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAzMiAxNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3QgeD0iMC41IiB5PSIwLjUiIHdpZHRoPSIzMSIgaGVpZ2h0PSIxNSIgcng9IjcuNSIgZmlsbD0iIzk5OTk5OSIgc3Ryb2tlPSIjOTk5OTk5Ii8+CjxjaXJjbGUgY3g9IjguMDAwMTYiIGN5PSI3Ljk5OTkyIiByPSI2LjY2NjY3IiBmaWxsPSJ3aGl0ZSIvPgo8L3N2Zz4K" width="32" height="16" class="img_ev3q"> <strong>비활성화</strong>: 대량 알림 재개</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>탐지 시간, 탐지 횟수, 정지 시간</strong>을 설정하세요.</p>
+<ul>
+<li><strong>탐지 시간</strong> 동안 <strong>탐지 횟수</strong> 이상의 이벤트가 발생하면 <strong>정지 시간</strong> 동안 경고 알림을 중지합니다.</li>
+</ul>
+</li>
+</ol><div class="theme-admonition theme-admonition-note admonition_xJq3 alert alert--secondary"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M6.3 5.69a.942.942 0 0 1-.28-.7c0-.28.09-.52.28-.7.19-.18.42-.28.7-.28.28 0 .52.09.7.28.18.19.28.42.28.7 0 .28-.09.52-.28.7a1 1 0 0 1-.7.3c-.28 0-.52-.11-.7-.3zM8 7.99c-.02-.25-.11-.48-.31-.69-.2-.19-.42-.3-.69-.31H6c-.27.02-.48.13-.69.31-.2.2-.3.44-.31.69h1v3c.02.27.11.5.31.69.2.2.42.31.69.31h1c.27 0 .48-.11.69-.31.2-.19.3-.42.31-.69H8V7.98v.01zM7 2.3c-3.14 0-5.7 2.54-5.7 5.68 0 3.14 2.56 5.7 5.7 5.7s5.7-2.55 5.7-5.7c0-3.15-2.56-5.69-5.7-5.69v.01zM7 .98c3.86 0 7 3.14 7 7s-3.14 7-7 7-7-3.12-7-7 3.14-7 7-7z"></path></svg></span>노트</div><div class="admonitionContent_BuS1"><p>대량 알림 차단 기능을 해제하려면 이메일 주소 옆의 [ 중단 해제 ] 버튼을 클릭하세요.</p></div></div></section></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col"><div class="btnwrapper_gsW7"><button class="modalopenbtn_jIdz">피드백</button></div></div><div class="col lastUpdated_JAkA"></div></div></footer></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="문서 탐색"><a class="pagination-nav__link pagination-nav__link--prev" href="/whatap-docs/alert/event-classic/server-process"><div class="pagination-nav__sublabel">이전</div><div class="pagination-nav__label">서버/프로세스</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/whatap-docs/alert/event-notification-format"><div class="pagination-nav__sublabel">다음</div><div class="pagination-nav__label">이벤트 수신 포맷</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_pzBX thin-scrollbar"></div><div class="fbsharebutton_dZBI" data-href="https://docs.whatap.io/whatap-docs/alert/event-notification" data-layout="" data-size=""><button type="button" class="fb_xfbml_parse_ignore_BpHP">공유</button></div><div class="btnprint_EBmh"><button>PDF</button></div><div class="btnwrapper_gsW7"><button class="modalopenbtn_jIdz">피드백</button></div></div></div></div></main></div></div></div><footer class="footer"><div class="container container-fluid"><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2025 WhaTap Labs Inc. All rights reserved. Built with Docusaurus.</div></div></div></footer></div>
+</body>
+</html>
