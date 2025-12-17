@@ -4681,6 +4681,29 @@ const sidebars = {
                 'alert/event-classic/database',
                 'alert/event-classic/server-process',
               ]
+            },
+            {
+              type: 'category',
+              label: '이벤트 수신 설정',
+              link: {
+                type: 'doc',
+                id: 'alert/event-notification',
+              },
+              items: [
+                'alert/event-notification-format',
+              ]
+            },
+            {
+              type: 'category',
+              label: '이벤트 기록 및 모니터링',
+              link: {
+                type: 'doc',
+                id: 'alert/event-history',
+              },
+              items: [
+                'alert/real-time-notifications',
+                'alert/system-events',
+              ]
             }
           ]
         }
