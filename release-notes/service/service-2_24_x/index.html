@@ -17,7 +17,7 @@
 <meta name="description" content="WhaTap Docs 페이지입니다. 애플리케이션, 서버, 쿠버네티스, 데이터베이스, 브라우저 등 다양한 모니터링 솔루션의 사용법을 제공합니다.">
 <meta name="naver-site-verification" content="0c21fc5664a467108fb762ade47a3f81ee9b88ed">
 <meta name="google-site-verification" content="rIlfJkbbogFOIDc3DgJZmOGbUMJWytyvZSKEgV7EMsE"><link rel="stylesheet" href="/whatap-docs/assets/css/styles.9192e53b.css">
-<script src="/whatap-docs/assets/js/runtime~main.bbdc5ede.js" defer="defer"></script>
+<script src="/whatap-docs/assets/js/runtime~main.7fec5dbd.js" defer="defer"></script>
 <script src="/whatap-docs/assets/js/main.287dfeeb.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -36,12 +36,24 @@
 <p><code class="Feature" type="1">Feature</code> <span class="uitext">경고 알림</span> &gt; <span class="uitext">이벤트 수신 설정</span> 서드 파티 플러그인 추가 안내 모달에 라인 설명 추가</p>
 </li>
 <li>
+<p><code class="Feature" type="1">Feature</code> <span class="uitext">경고 알림</span> &gt; <span class="uitext">이벤트 설정</span> 메트릭스 탭과 실시간 로그 탭에 이벤트 이름, 이벤트 수신 태그, 대상 검색이 가능하도록 수정</p>
+</li>
+<li>
+<p><code class="Feature" type="1">Feature</code> <span class="uitext">분석</span> &gt; <span class="uitext">메트릭스 차트</span> <code class="newfunc">New</code> 지표 시간 병합 기능 추가</p>
+</li>
+<li>
 <p><code class="Feature" type="1">Feature</code> <span class="uitext">계정 관리</span> &gt; <span class="uitext">접근 제어</span> IP 추가 시 현재 내 IP를 적용하는 기능 추가</p>
 </li>
 <li>
 <p><code class="Fixed" type="0">Fixed</code> <span class="uitext">경고 알림</span> &gt; <span class="uitext">이벤트 수신 설정</span> 이메일 수신 차단 시 WhatsApp 알림에 &#x27;송신중지 상태&#x27;로 표시되지 않도록 수정</p>
 </li>
+<li>
+<p><code class="Fixed" type="0">Fixed</code> <span class="uitext">경고 알림</span> &gt; <span class="uitext">이벤트 기록</span>  CSV 다운로드 시 10,000 라인 다운로드 할 수 있도록 수정</p>
+</li>
 </ul><h3 class="anchor anchorWithStickyNavbar_LWe7" id="application"><code>Application</code><a href="#application" class="hash-link" aria-label="application에 대한 직접 링크" title="application에 대한 직접 링크">​</a></h3><ul>
+<li>
+<p><code class="Feature" type="1">Feature</code> <span class="uitext">경고 알림</span> &gt; <span class="uitext">이벤트 설정</span>  이상치 탐지 이벤트 추가 시 발생 횟수, 일시 중지 설정 가능하도록 추가</p>
+</li>
 <li>
 <p><code class="Fixed" type="0">Fixed</code> <span class="uitext">대시보드</span> &gt; <span class="uitext">애플리케이션 대시보드</span> 프리셋에 저장된 에이전트 선택이 간헐적으로 적용되지 않는 현상 개선</p>
 </li>
@@ -56,6 +68,17 @@
 </ul><h3 class="anchor anchorWithStickyNavbar_LWe7" id="server"><code>Server</code><a href="#server" class="hash-link" aria-label="server에 대한 직접 링크" title="server에 대한 직접 링크">​</a></h3><ul>
 <li>
 <p><code class="Feature" type="1">Feature</code> <span class="uitext">서버 인벤토리</span> 테이블 값 수정 후, 업데이트된 데이터를 불러 올 때 로딩 컴포넌트를 표시하도록 개선</p>
+</li>
+<li>
+<p><code class="Feature" type="1">Feature</code> <span class="uitext">대시보드</span> &gt; <span class="uitext">Flex 보드</span> 아래 위젯에서 서버 상세 페이지 이동 가능하도록 링크 추가</p>
+<ul>
+<li>
+<p>서버 프로세스 CPU TopN</p>
+</li>
+<li>
+<p>서버 프로세스 Memory TopN</p>
+</li>
+</ul>
 </li>
 <li>
 <p><code class="Feature" type="1">Feature</code>  <strong>GPU 인벤토리</strong> 에이전트에서 사전 정의되지 않은 필드를 수집했을 때, 컬럼 설정에서 선택할 수 있도록 개선</p>
@@ -87,7 +110,7 @@
 <p><code class="Fixed" type="0">Fixed</code> <span class="uitext">리소스 보드</span> TOP5 Panel 위젯의 Contents 버튼 선택 시, 옵션 드롭박스에서 선택된 항목에 하이라이트 되지 않는 현상 수정</p>
 </li>
 <li>
-<p><code class="Fixed" type="0">Fixed</code> <span class="uitext">서버 상세</span> <code>메뉴 진입 시 프로젝트에 설치된 서버가 없습니다.</code> 메시지가 잠깐 표시되었 다 데이터가 표시되는 현상 개선</p>
+<p><code class="Fixed" type="0">Fixed</code> <span class="uitext">서버 상세</span> <code>메뉴 진입 시 프로젝트에 설치된 서버가 없습니다.</code> 메시지가 잠깐 표시되었다 데이터가 표시되는 현상 개선</p>
 </li>
 <li>
 <p><code class="Fixed" type="0">Fixed</code> <span class="uitext">메트릭스 익스플로러</span> 차트범례 라벨에 <code>,</code> 문자가 포함된 차트의 CSV 다운로드 시 컬럼 헤더에 라벨이 분리되어 표시되는 현상 수정</p>
@@ -151,7 +174,7 @@
 <p><code class="Fixed" type="0">Fixed</code> 이벤트 수정 시 목록에 해당 내용이 업데이트되지 않는 오류 수정</p>
 </li>
 <li>
-<p><code class="Fixed" type="0">Fixed</code>   등록된 URL 없는 경우, 데이터 없음을 표시하도록 수정</p>
+<p><code class="Fixed" type="0">Fixed</code> 등록된 URL 없는 경우, 데이터 없음을 표시하도록 수정</p>
 </li>
 </ul><h3 class="anchor anchorWithStickyNavbar_LWe7" id="url-pro"><code>URL Pro</code><a href="#url-pro" class="hash-link" aria-label="url-pro에 대한 직접 링크" title="url-pro에 대한 직접 링크">​</a></h3><ul>
 <li><code class="Fixed" type="0">Fixed</code> <span class="uitext">경고 알림</span> &gt; <span class="uitext">이벤트 설정</span> Docs 아이콘 선택 시 이벤트 설정 관련 가이드로 이동되도록 수정</li>
