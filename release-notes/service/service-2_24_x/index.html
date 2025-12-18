@@ -17,7 +17,7 @@
 <meta name="description" content="WhaTap Docs 페이지입니다. 애플리케이션, 서버, 쿠버네티스, 데이터베이스, 브라우저 등 다양한 모니터링 솔루션의 사용법을 제공합니다.">
 <meta name="naver-site-verification" content="0c21fc5664a467108fb762ade47a3f81ee9b88ed">
 <meta name="google-site-verification" content="rIlfJkbbogFOIDc3DgJZmOGbUMJWytyvZSKEgV7EMsE"><link rel="stylesheet" href="/whatap-docs/assets/css/styles.9192e53b.css">
-<script src="/whatap-docs/assets/js/runtime~main.f0a306ad.js" defer="defer"></script>
+<script src="/whatap-docs/assets/js/runtime~main.58ba2a8e.js" defer="defer"></script>
 <script src="/whatap-docs/assets/js/main.287dfeeb.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -58,6 +58,9 @@
 <p><code class="Feature" type="1">Feature</code> <span class="uitext">서버 인벤토리</span> 테이블 값 수정 후, 업데이트된 데이터를 불러 올 때 로딩 컴포넌트를 표시하도록 개선</p>
 </li>
 <li>
+<p><code class="Feature" type="1">Feature</code>  <strong>GPU 인벤토리</strong> 에이전트에서 사전 정의되지 않은 필드를 수집했을 때, 컬럼 설정에서 선택할 수 있도록 개선</p>
+</li>
+<li>
 <p><code class="Changed" type="1">Changed</code><strong>GPU 인벤토리</strong></p>
 <ul>
 <li>
@@ -75,10 +78,16 @@
 </ul>
 </li>
 <li>
+<p><code class="Fixed" type="0">Fixed</code> <strong>GPU 인벤토리</strong> &gt; <strong>컬럼 설정</strong> 컬럼 추가 시, 숫자 컬럼명 등록 불가한 현상 및 등록 후 input이 사라지지 않는 현상 수정</p>
+</li>
+<li>
 <p><code class="Fixed" type="0">Fixed</code> <strong>GPU 인벤토리</strong>, <strong>GPU 성능요약</strong> 테이블 헤더 너비 조절 시 정렬 아이콘이 숨겨지지 않도록 개선</p>
 </li>
 <li>
-<p><code class="Fixed" type="0">Fixed</code> <span class="uitext">서버 상세</span> <code>메뉴 진입 시 프로젝트에 설치된 서버가 없습니다.</code> 메시지가 잠깐 표시되었다 데이터가 표시되는 현상 개선</p>
+<p><code class="Fixed" type="0">Fixed</code> <span class="uitext">리소스 보드</span> TOP5 Panel 위젯의 Contents 버튼 선택 시, 옵션 드롭박스에서 선택된 항목에 하이라이트 되지 않는 현상 수정</p>
+</li>
+<li>
+<p><code class="Fixed" type="0">Fixed</code> <span class="uitext">서버 상세</span> <code>메뉴 진입 시 프로젝트에 설치된 서버가 없습니다.</code> 메시지가 잠깐 표시되었 다 데이터가 표시되는 현상 개선</p>
 </li>
 <li>
 <p><code class="Fixed" type="0">Fixed</code> <span class="uitext">메트릭스 익스플로러</span> 차트범례 라벨에 <code>,</code> 문자가 포함된 차트의 CSV 다운로드 시 컬럼 헤더에 라벨이 분리되어 표시되는 현상 수정</p>
@@ -142,7 +151,7 @@
 <p><code class="Fixed" type="0">Fixed</code> 이벤트 수정 시 목록에 해당 내용이 업데이트되지 않는 오류 수정</p>
 </li>
 <li>
-<p><code class="Fixed" type="0">Fixed</code> 등록된 URL 없는 경우, 데이터 없음을 표시하도록 수정</p>
+<p><code class="Fixed" type="0">Fixed</code>   등록된 URL 없는 경우, 데이터 없음을 표시하도록 수정</p>
 </li>
 </ul><h3 class="anchor anchorWithStickyNavbar_LWe7" id="url-pro"><code>URL Pro</code><a href="#url-pro" class="hash-link" aria-label="url-pro에 대한 직접 링크" title="url-pro에 대한 직접 링크">​</a></h3><ul>
 <li><code class="Fixed" type="0">Fixed</code> <span class="uitext">경고 알림</span> &gt; <span class="uitext">이벤트 설정</span> Docs 아이콘 선택 시 이벤트 설정 관련 가이드로 이동되도록 수정</li>
