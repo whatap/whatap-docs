@@ -79,7 +79,7 @@
         "hash": "service-2312",
         "product": "Application",
         "type": "Fixed",
-        "desc": "<p><code class=\"Fixed\">Fixed</code> <span class=\"uitext\">ダッシューボード</span> &gt; <span class=\"uitext\">アプリケーション</span>メニューの<span class=\"uitext\">本日TPS</span>および<span class=\"uitext\">本日ユーザー</span>ウィジェットで照会期間を変更してもデータが維持される問題を修正</p>"
+        "desc": "<p><code class=\"Fixed\">Fixed</code> <span class=\"uitext\">ダッシュボード</span> &gt; <span class=\"uitext\">アプリケーション</span>メニューの<span class=\"uitext\">本日TPS</span>および<span class=\"uitext\">本日ユーザー</span>ウィジェットで照会期間を変更してもデータが維持される問題を修正</p>"
       }
     ]
   },
@@ -93,7 +93,7 @@
         "hash": "service-2311",
         "product": "Application",
         "type": "Fixed",
-        "desc": "<p><code class=\"Fixed\">Fixed</code> <span class=\"uitext\">ダッシューボード</span> &gt; <span class=\"uitext\">アプリケーション</span>メニューで<span class=\"uitext\">本日TPS</span>および<span class=\"uitext\">本日ユーザー</span>ウィジェットのデータはエージェントフィルターに関係なく常に全データを照会するように修正</p>"
+        "desc": "<p><code class=\"Fixed\">Fixed</code> <span class=\"uitext\">ダッシュボード</span> &gt; <span class=\"uitext\">アプリケーション</span>メニューで<span class=\"uitext\">本日TPS</span>および<span class=\"uitext\">本日ユーザー</span>ウィジェットのデータはエージェントフィルターに関係なく常に全データを照会するように修正</p>"
       }
     ]
   },
@@ -107,7 +107,7 @@
         "hash": "service-2310",
         "product": "Database",
         "type": "Fixed",
-        "desc": "<p><code class=\"Fixed\">Fixed</code> <span class=\"uitext\">ダッシューボード</span> &gt; <span class=\"uitext\">インスタンスモニタリング</span>メニューで<span class=\"uitext\">SQL詳細</span>ポップアップウィンドウを開くとqueryテキストが見えない問題を修正</p>"
+        "desc": "<p><code class=\"Fixed\">Fixed</code> <span class=\"uitext\">ダッシュボード</span> &gt; <span class=\"uitext\">インスタンスモニタリング</span>メニューで<span class=\"uitext\">SQL詳細</span>ポップアップウィンドウを開くとqueryテキストが見えない問題を修正</p>"
       }
     ]
   },
@@ -143,7 +143,7 @@
         "product": "Browser",
         "type": "Fixed",
         "desc": "<p><code class=\"Fixed\">Fixed</code>ダッシュボードでデータ照会時に5秒、5分、1時間単位データの照会範囲を修正</p>",
-        "category": "ダッシューボード"
+        "category": "ダッシュボード"
       },
       {
         "ver": "Service 2.3.8",
@@ -151,7 +151,7 @@
         "product": "Browser",
         "type": "Fixed",
         "desc": "<p><code class=\"Fixed\">Fixed</code>TopNチャートクエリの照会方法を改善</p>",
-        "category": "ダッシューボード"
+        "category": "ダッシュボード"
       },
       {
         "ver": "Service 2.3.8",
@@ -159,7 +159,7 @@
         "product": "Browser",
         "type": "Fixed",
         "desc": "<p><code class=\"Fixed\">Fixed</code>テーブルウィジェットの場合、最大100件まで照会するように制限</p>",
-        "category": "ダッシューボード"
+        "category": "ダッシュボード"
       }
     ]
   },
@@ -315,7 +315,7 @@
         "hash": "service-231",
         "product": "Kubernetes",
         "type": "Fixed",
-        "desc": "<p><code class=\"Fixed\">Fixed</code> <span class=\"uitext\">ダッシューボード</span> &gt; <span class=\"uitext\">コンテナマップ</span>メニューからグループ/全体を選択すると、要約表示からリストメニューにフィルターなしで移動するように修正</p>"
+        "desc": "<p><code class=\"Fixed\">Fixed</code> <span class=\"uitext\">ダッシュボード</span> &gt; <span class=\"uitext\">コンテナマップ</span>メニューからグループ/全体を選択すると、要約表示からリストメニューにフィルターなしで移動するように修正</p>"
       },
       {
         "ver": "Service 2.3.1",
@@ -338,7 +338,7 @@
         "type": "New",
         "desc": "<p><code class=\"New\">New</code> Redis, MongoDB <code class=\"my\">V2</code>サービス開始！</p>",
         "category": "Database",
-        "details": "<ul>\n<li>\n<p><span class=\"uitext\">ダッシューボード</span>メニューのUIと機能を大幅に改善しました。</p>\n</li>\n<li>\n<p><span class=\"uitext\">ダッシューボード</span>メニューでデータベースの性能の指標情報を確認できます。</p>\n</li>\n<li>\n<p><span class=\"uitext\">ダッシューボード</span> &gt; <span class=\"uitext\">マルチインスタンス</span>メニューでクラスター別のエージェント選択機能を追加しました。</p>\n</li>\n<li>\n<p>データベースログを検索し、推移を確認できる<span class=\"uitext\">ログ</span>メニューを追加し、ログ関連の通知を設定できます。</p>\n</li>\n</ul>"
+        "details": "<ul>\n<li>\n<p><span class=\"uitext\">ダッシュボード</span>メニューのUIと機能を大幅に改善しました。</p>\n</li>\n<li>\n<p><span class=\"uitext\">ダッシュボード</span>メニューでデータベースの性能の指標情報を確認できます。</p>\n</li>\n<li>\n<p><span class=\"uitext\">ダッシュボード</span> &gt; <span class=\"uitext\">マルチインスタンス</span>メニューでクラスター別のエージェント選択機能を追加しました。</p>\n</li>\n<li>\n<p>データベースログを検索し、推移を確認できる<span class=\"uitext\">ログ</span>メニューを追加し、ログ関連の通知を設定できます。</p>\n</li>\n</ul>"
       },
       {
         "ver": "Service 2.3.0",
@@ -530,7 +530,7 @@
         "hash": "service-230",
         "product": "Application",
         "type": "Feature",
-        "desc": "<p><code class=\"Feature\">Feature</code> <span class=\"uitext\">ダッシューボード</span> &gt; <span class=\"uitext\">TXマップ</span>メニューの<span class=\"uitext\">Top 30</span>セクションでIPフィルター項目として希望するIPアドレスを追加・削除・フィルタリングできる機能を追加</p>",
+        "desc": "<p><code class=\"Feature\">Feature</code> <span class=\"uitext\">ダッシュボード</span> &gt; <span class=\"uitext\">TXマップ</span>メニューの<span class=\"uitext\">Top 30</span>セクションでIPフィルター項目として希望するIPアドレスを追加・削除・フィルタリングできる機能を追加</p>",
         "category": "共通"
       },
       {
@@ -578,7 +578,7 @@
         "hash": "service-230",
         "product": "Application",
         "type": "Fixed",
-        "desc": "<p><code class=\"Fixed\">Fixed</code> <span class=\"uitext\">ダッシューボード</span> &gt; <span class=\"uitext\">アプリケーション</span>メニューで<span class=\"uitext\">ヒープメモリ</span>ウィジェットに関して修正</p>",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> <span class=\"uitext\">ダッシュボード</span> &gt; <span class=\"uitext\">アプリケーション</span>メニューで<span class=\"uitext\">ヒープメモリ</span>ウィジェットに関して修正</p>",
         "category": "共通",
         "details": "<ul>\n<li>\n<p>PHP、Python、.Net製品の場合<span class=\"uitext\">ヒープメモリ</span>ウィジェット名を<span class=\"uitext\">プロセスメモリ</span>に変更</p>\n</li>\n<li>\n<p>PHP、Python、.Net、Go製品の場合は、ヒープメモリ、プロセスメモリの詳細情報ウィンドウで<span class=\"uitext\">システムGC</span>カラムを除去</p>\n</li>\n</ul>"
       },
@@ -587,7 +587,7 @@
         "hash": "service-230",
         "product": "Application",
         "type": "Fixed",
-        "desc": "<p><code class=\"Fixed\">Fixed</code> <span class=\"uitext\">ダッシューボード</span> &gt; <span class=\"uitext\">TXマップ</span>メニューで過去の視点を照会する時、<span class=\"uitext\">フィルター</span>項目でIPフィルターが適用されない問題を修正</p>",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> <span class=\"uitext\">ダッシュボード</span> &gt; <span class=\"uitext\">TXマップ</span>メニューで過去の視点を照会する時、<span class=\"uitext\">フィルター</span>項目でIPフィルターが適用されない問題を修正</p>",
         "category": "共通"
       },
       {
@@ -641,7 +641,7 @@
         "hash": "service-230",
         "product": "Server",
         "type": "Fixed",
-        "desc": "<p><code class=\"Fixed\">Fixed</code> <span class=\"uitext\">ダッシューボード</span> &gt; <span class=\"uitext\">リソースイコライザ</span>メニューで<span class=\"uitext\">ディスクIOPS</span>チャートのy軸の最大値が正しく表示されない問題を修正</p>"
+        "desc": "<p><code class=\"Fixed\">Fixed</code> <span class=\"uitext\">ダッシュボード</span> &gt; <span class=\"uitext\">リソースイコライザ</span>メニューで<span class=\"uitext\">ディスクIOPS</span>チャートのy軸の最大値が正しく表示されない問題を修正</p>"
       },
       {
         "ver": "Service 2.3.0",
@@ -831,7 +831,7 @@
         "hash": "service-230",
         "product": "Database",
         "type": "Changed",
-        "desc": "<p><code class=\"Changed\">Changed</code> <span class=\"uitext\">ダッシューボード</span> &gt; <span class=\"uitext\">マルチインスタンス</span>メニューのダッシュボードでマウスの右クリックで表示されるウィジェット選択リストのスタイルを変更</p>",
+        "desc": "<p><code class=\"Changed\">Changed</code> <span class=\"uitext\">ダッシュボード</span> &gt; <span class=\"uitext\">マルチインスタンス</span>メニューのダッシュボードでマウスの右クリックで表示されるウィジェット選択リストのスタイルを変更</p>",
         "category": "共通"
       },
       {
@@ -847,7 +847,7 @@
         "hash": "service-230",
         "product": "Database",
         "type": "Feature",
-        "desc": "<p><code class=\"Feature\">Feature</code> <span class=\"uitext\">ダッシューボード</span> &gt; <span class=\"uitext\">マルチインスタンス</span>メニュー機能の改編</p>",
+        "desc": "<p><code class=\"Feature\">Feature</code> <span class=\"uitext\">ダッシュボード</span> &gt; <span class=\"uitext\">マルチインスタンス</span>メニュー機能の改編</p>",
         "category": "PostgreSQL、MySQL",
         "details": "<ul>\n<li>\n<p>ウィジェットのサイズと位置を変更できます。</p>\n</li>\n<li>\n<p>ウィジェットの追加と削除機能を追加しました。</p>\n</li>\n<li>\n<p>プリセット保存機能を追加しました。</p>\n</li>\n</ul>"
       },

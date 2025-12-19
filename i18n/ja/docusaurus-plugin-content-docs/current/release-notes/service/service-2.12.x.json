@@ -9,14 +9,14 @@
         "hash": "service-2122",
         "product": "Application",
         "type": "Fixed",
-        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">ダッシューボード</span> &gt; <span class=\"uitext\">アプリケーション</span>メニューの再進入時にデータが表示されない現象を修正</p>"
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">ダッシュボード</span> &gt; <span class=\"uitext\">アプリケーション</span>メニューの再進入時にデータが表示されない現象を修正</p>"
       },
       {
         "ver": "Service 2.12.2",
         "hash": "service-2122",
         "product": "Application",
         "type": "Fixed",
-        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">ダッシューボード</span> &gt; <span class=\"uitext\">アプリケーション</span>メニューの<span class=\"uitext\">ヒットマップ</span>ウィジェットで詳細を見るを通じて<span class=\"uitext\">分析</span> &gt; <span class=\"uitext\">ヒットマップ</span>メニューに移動する時、照会されたデータの時間値でタイムセレクターとチャートのx軸が設定されない現象を修正</p>"
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">ダッシュボード</span> &gt; <span class=\"uitext\">アプリケーション</span>メニューの<span class=\"uitext\">ヒットマップ</span>ウィジェットで詳細を見るを通じて<span class=\"uitext\">分析</span> &gt; <span class=\"uitext\">ヒットマップ</span>メニューに移動する時、照会されたデータの時間値でタイムセレクターとチャートのx軸が設定されない現象を修正</p>"
       }
     ]
   },
@@ -37,7 +37,7 @@
         "hash": "service-2121",
         "product": "Application",
         "type": "Fixed",
-        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">ダッシューボード</span> &gt; <span class=\"uitext\">IIS性能カウント</span>メニューでウィジェットの<img decoding=\"async\" loading=\"lazy\" alt=\"拡大アイコン\" src=\"data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik01IDlIM1YzSDVIOVY1SDVWOVpNMyAyMVYxNUg1VjE5SDlWMjFINUgzWk0xNSAxOVYyMUgyMVYxOVYxNUgxOVYxOUgxNVpNMTUgNVYzSDIxVjVWOUgxOVY1SDE1WiIgZmlsbD0iIzc1NzU3NSIvPgo8L3N2Zz4K\" width=\"24\" height=\"24\" class=\"img_ev3q\">ボタンをクリックして全画面でチャートを確認する時、タイムセレクターが表示される問題を修正</p>",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">ダッシュボード</span> &gt; <span class=\"uitext\">IIS性能カウント</span>メニューでウィジェットの<img decoding=\"async\" loading=\"lazy\" alt=\"拡大アイコン\" src=\"data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik01IDlIM1YzSDVIOVY1SDVWOVpNMyAyMVYxNUg1VjE5SDlWMjFINUgzWk0xNSAxOVYyMUgyMVYxOVYxNUgxOVYxOUgxNVpNMTUgNVYzSDIxVjVWOUgxOVY1SDE1WiIgZmlsbD0iIzc1NzU3NSIvPgo8L3N2Zz4K\" width=\"24\" height=\"24\" class=\"img_ev3q\">ボタンをクリックして全画面でチャートを確認する時、タイムセレクターが表示される問題を修正</p>",
         "category": ".NET"
       }
     ]
@@ -152,7 +152,7 @@
         "hash": "service-2120",
         "product": "Application",
         "type": "Fixed",
-        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">ダッシューボード</span> &gt; <span class=\"uitext\">アプリケーション</span>メニューの<span class=\"uitext\">本日ユーザー</span>ウィジェットで前日データの最大値が今日データの最大値より大きければ、今日の最大値が表示されない問題を修正</p>"
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">ダッシュボード</span> &gt; <span class=\"uitext\">アプリケーション</span>メニューの<span class=\"uitext\">本日ユーザー</span>ウィジェットで前日データの最大値が今日データの最大値より大きければ、今日の最大値が表示されない問題を修正</p>"
       },
       {
         "ver": "Service 2.12.0",
@@ -166,7 +166,7 @@
         "hash": "service-2120",
         "product": "Server",
         "type": "Changed",
-        "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> <span class=\"uitext\">ダッシューボード</span> &gt; <span class=\"uitext\">サーバーインベントリマップ</span>メニューでグループ化オプション選択ツールの初期化方法を変更</p>",
+        "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> <span class=\"uitext\">ダッシュボード</span> &gt; <span class=\"uitext\">サーバーインベントリマップ</span>メニューでグループ化オプション選択ツールの初期化方法を変更</p>",
         "details": "<blockquote>\n<p>Clearボタンクリック方式から一覧で<span class=\"uitext\">設定なし</span>項目を選択する方式に変更</p>\n</blockquote>"
       },
       {
@@ -188,14 +188,14 @@
         "hash": "service-2120",
         "product": "Server",
         "type": "Fixed",
-        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">ダッシューボード</span> &gt; <span class=\"uitext\">サーバーインベントリマップ</span>メニューのグループ要約パネルで<span class=\"uitext\">サーバーアップタイムの</span>チャートが断続的にクリックされない問題を修正</p>"
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">ダッシュボード</span> &gt; <span class=\"uitext\">サーバーインベントリマップ</span>メニューのグループ要約パネルで<span class=\"uitext\">サーバーアップタイムの</span>チャートが断続的にクリックされない問題を修正</p>"
       },
       {
         "ver": "Service 2.12.0",
         "hash": "service-2120",
         "product": "Server",
         "type": "Fixed",
-        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">ダッシューボード</span> &gt; <span class=\"uitext\">サーバーインベントリマップ</span>メニューでタイムセレクターのコンポーネントを交替した後、過去の時点を選択できるバグを修正</p>"
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">ダッシュボード</span> &gt; <span class=\"uitext\">サーバーインベントリマップ</span>メニューでタイムセレクターのコンポーネントを交替した後、過去の時点を選択できるバグを修正</p>"
       },
       {
         "ver": "Service 2.12.0",
@@ -253,7 +253,7 @@
         "product": "Kubernetes",
         "type": "Feature",
         "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code>次のメニューパスの詳細情報で提供する<span class=\"uitext\">ノード 構成</span>タブのCPU、メモリ、ディスクのtotal値を追加</p>",
-        "details": "<ul>\n<li><span class=\"uitext\">ダッシューボード</span> &gt; <span class=\"uitext\">ノードマップ</span></li>\n<li><span class=\"uitext\">クラスター</span> &gt; <span class=\"uitext\">ノードリスト</span></li>\n<li><span class=\"uitext\">クラスター</span> &gt; <span class=\"uitext\">ノードタイムライン</span></li>\n</ul>"
+        "details": "<ul>\n<li><span class=\"uitext\">ダッシュボード</span> &gt; <span class=\"uitext\">ノードマップ</span></li>\n<li><span class=\"uitext\">クラスター</span> &gt; <span class=\"uitext\">ノードリスト</span></li>\n<li><span class=\"uitext\">クラスター</span> &gt; <span class=\"uitext\">ノードタイムライン</span></li>\n</ul>"
       },
       {
         "ver": "Service 2.12.0",
@@ -269,7 +269,7 @@
         "type": "Feature",
         "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code>次のメニューパスの<span class=\"uitext\">アクティブセッション</span>テーブルにページネーションを適用</p>",
         "category": "共通",
-        "details": "<ul>\n<li><span class=\"uitext\">ダッシューボード</span> &gt; <span class=\"uitext\">インスタンスモニタリング</span></li>\n<li><span class=\"uitext\">ダッシューボード</span> &gt; <span class=\"uitext\">マルチインスタンス</span></li>\n</ul>"
+        "details": "<ul>\n<li><span class=\"uitext\">ダッシュボード</span> &gt; <span class=\"uitext\">インスタンスモニタリング</span></li>\n<li><span class=\"uitext\">ダッシュボード</span> &gt; <span class=\"uitext\">マルチインスタンス</span></li>\n</ul>"
       },
       {
         "ver": "Service 2.12.0",
@@ -300,7 +300,7 @@
         "hash": "service-2120",
         "product": "Database",
         "type": "Changed",
-        "desc": "<p><code class=\"Changed\" type=\"0\">Changed</code> <span class=\"uitext\">ダッシューボード</span> &gt; <span class=\"uitext\">インスタンスモニタリング</span>メニューでリアルタイムの照会範囲を変更すると、チャートに空白が生じる現象を修正</p>",
+        "desc": "<p><code class=\"Changed\" type=\"0\">Changed</code> <span class=\"uitext\">ダッシュボード</span> &gt; <span class=\"uitext\">インスタンスモニタリング</span>メニューでリアルタイムの照会範囲を変更すると、チャートに空白が生じる現象を修正</p>",
         "category": "共通"
       },
       {
@@ -310,14 +310,14 @@
         "type": "Fixed",
         "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code>次のメニューパスの<span class=\"uitext\">アクティブセッション</span>テーブルに1分の範囲を超えるデータが表示される問題を修正</p>",
         "category": "共通",
-        "details": "<ul>\n<li><span class=\"uitext\">ダッシューボード</span> &gt; <span class=\"uitext\">インスタンスモニタリング</span></li>\n<li><span class=\"uitext\">分析</span> &gt; <span class=\"uitext\">カウント推移比較</span></li>\n</ul>"
+        "details": "<ul>\n<li><span class=\"uitext\">ダッシュボード</span> &gt; <span class=\"uitext\">インスタンスモニタリング</span></li>\n<li><span class=\"uitext\">分析</span> &gt; <span class=\"uitext\">カウント推移比較</span></li>\n</ul>"
       },
       {
         "ver": "Service 2.12.0",
         "hash": "service-2120",
         "product": "Database",
         "type": "Feature",
-        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">ダッシューボード</span> &gt; <span class=\"uitext\">マルチインスタンス</span>メニューのカスタムウィジェットに選択した指標の単位を表示するように追加</p>",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">ダッシュボード</span> &gt; <span class=\"uitext\">マルチインスタンス</span>メニューのカスタムウィジェットに選択した指標の単位を表示するように追加</p>",
         "category": "Database V2"
       },
       {
@@ -349,7 +349,7 @@
         "hash": "service-2120",
         "product": "Database",
         "type": "Fixed",
-        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">ダッシューボード</span> &gt; <span class=\"uitext\">インスタンスモニタリング</span>メニューでウィジェットのY軸が変更した指標に合わせて変更されない問題を修正</p>",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">ダッシュボード</span> &gt; <span class=\"uitext\">インスタンスモニタリング</span>メニューでウィジェットのY軸が変更した指標に合わせて変更されない問題を修正</p>",
         "category": "Database V2"
       },
       {
@@ -357,7 +357,7 @@
         "hash": "service-2120",
         "product": "Database",
         "type": "Fixed",
-        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">ダッシューボード</span> &gt; <span class=\"uitext\">インスタンスモニタリング</span>メニューで照会するデータがない場合は、ローディングインジケーターが継続する問題を修正し、空のデータに対する案内メッセージを追加</p>",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">ダッシュボード</span> &gt; <span class=\"uitext\">インスタンスモニタリング</span>メニューで照会するデータがない場合は、ローディングインジケーターが継続する問題を修正し、空のデータに対する案内メッセージを追加</p>",
         "category": "Database V2"
       },
       {
@@ -365,7 +365,7 @@
         "hash": "service-2120",
         "product": "Database",
         "type": "Fixed",
-        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">ダッシューボード</span> &gt; <span class=\"uitext\">インスタンスモニタリング</span>メニューにチャートデータはあるが、テーブルデータがない場合の<span class=\"uitext\">最近照会された履歴はありません。</span>メッセージを追加</p>",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">ダッシュボード</span> &gt; <span class=\"uitext\">インスタンスモニタリング</span>メニューにチャートデータはあるが、テーブルデータがない場合の<span class=\"uitext\">最近照会された履歴はありません。</span>メッセージを追加</p>",
         "category": "Database V2"
       },
       {
@@ -373,7 +373,7 @@
         "hash": "service-2120",
         "product": "Database",
         "type": "Fixed",
-        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">ダッシューボード</span> &gt; <span class=\"uitext\">インスタンスモニタリング</span>メニューの<span class=\"uitext\">アクティブセッション</span>テーブルでインスタンス名がカラムの幅より長くなる場合、省略記号(...)を表示するように修正</p>",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">ダッシュボード</span> &gt; <span class=\"uitext\">インスタンスモニタリング</span>メニューの<span class=\"uitext\">アクティブセッション</span>テーブルでインスタンス名がカラムの幅より長くなる場合、省略記号(...)を表示するように修正</p>",
         "category": "Database V2"
       },
       {
@@ -381,7 +381,7 @@
         "hash": "service-2120",
         "product": "Database",
         "type": "Fixed",
-        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">ダッシューボード</span> &gt; <span class=\"uitext\">インスタンスモニタリング</span>メニューで過去のデータを照会する時<span class=\"uitext\">セッション詳細</span>ウィンドウを開くとFull Textが照会できない問題を修正</p>",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">ダッシュボード</span> &gt; <span class=\"uitext\">インスタンスモニタリング</span>メニューで過去のデータを照会する時<span class=\"uitext\">セッション詳細</span>ウィンドウを開くとFull Textが照会できない問題を修正</p>",
         "category": "Database V2"
       },
       {
@@ -389,7 +389,7 @@
         "hash": "service-2120",
         "product": "Database",
         "type": "Fixed",
-        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">ダッシューボード</span> &gt; <span class=\"uitext\">マルチインスタンス</span>メニューでイコライザーチャート形式のユーザー定義ウィジェットに表示されたインスタンスの順序を画面上部のインスタンス一覧の順序と一致するように修正</p>",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">ダッシュボード</span> &gt; <span class=\"uitext\">マルチインスタンス</span>メニューでイコライザーチャート形式のユーザー定義ウィジェットに表示されたインスタンスの順序を画面上部のインスタンス一覧の順序と一致するように修正</p>",
         "category": "Database V2"
       },
       {
@@ -405,7 +405,7 @@
         "hash": "service-2120",
         "product": "Database",
         "type": "Feature",
-        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">ダッシューボード</span> &gt; <span class=\"uitext\">インスタンスモニタリング</span>メニューの<span class=\"uitext\">SQL詳細</span>ウィンドウにアクティブセッション情報を追加</p>",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">ダッシュボード</span> &gt; <span class=\"uitext\">インスタンスモニタリング</span>メニューの<span class=\"uitext\">SQL詳細</span>ウィンドウにアクティブセッション情報を追加</p>",
         "category": "Oracle、Oracle Pro"
       },
       {
@@ -421,7 +421,7 @@
         "hash": "service-2120",
         "product": "Database",
         "type": "Changed",
-        "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> <span class=\"uitext\">ダッシューボード</span> &gt; <span class=\"uitext\">インスタンスモニタリング</span>メニューで<span class=\"uitext\">TOP STAT</span>, <span class=\"uitext\">TOP EVENT</span>ウィンドウスタイルを修正し、テーブル内容を変更</p>",
+        "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> <span class=\"uitext\">ダッシュボード</span> &gt; <span class=\"uitext\">インスタンスモニタリング</span>メニューで<span class=\"uitext\">TOP STAT</span>, <span class=\"uitext\">TOP EVENT</span>ウィンドウスタイルを修正し、テーブル内容を変更</p>",
         "category": "Oracle、Oracle Pro"
       },
       {

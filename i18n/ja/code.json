@@ -532,7 +532,7 @@
     "message": "モニタリング対象にエージェントをインストールします。"
   },
   "index.pages.viewDashboard": {
-    "message": "ダッシュボードを照会する"
+    "message": "ダッシュボードを確認する"
   },
   "index.pages.viewDashboard.desc": {
     "message": "エージェントインストール後、データがWhaTapサーバーに送信されると、ダッシュボードメニューでプロジェクトの全体現況をリアルタイムで照会できます。"
@@ -792,5 +792,8 @@
   },
   "index.pages.section.product.nms": {
     "message": "ネットワーク機器の性能指標と状態をリアルタイムでモニタリングします。"
+  },
+  "index.pages.section.product.OpenMetrics": {
+    "message": "PrometheusベースのOpenMetricsメトリクスを自動収集し、複雑な設定なしで簡単に統合モニタリング環境を構築できるソリューションです。"
   }
 }

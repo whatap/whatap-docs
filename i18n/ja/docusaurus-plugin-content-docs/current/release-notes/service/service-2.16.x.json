@@ -122,14 +122,14 @@
         "hash": "service-2160",
         "product": "Server",
         "type": "Feature",
-        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">ダッシューボード</span> &gt; <span class=\"uitext\">サーバーインベントリマップ</span>メニューでサーバーにマウスオーバー時に表示されるポップオーバーにステータス別のイベント数表示を追加</p>"
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">ダッシュボード</span> &gt; <span class=\"uitext\">サーバーインベントリマップ</span>メニューでサーバーにマウスオーバー時に表示されるポップオーバーにステータス別のイベント数表示を追加</p>"
       },
       {
         "ver": "Service 2.16.0",
         "hash": "service-2160",
         "product": "Server",
         "type": "Feature",
-        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">ダッシューボード</span> &gt; <span class=\"uitext\">サーバーインベントリマップ</span> &gt; <strong>詳細を見る</strong>画面でサーバーにマウスオーバー時にポップオーバーにステータス別のイベント数表示を追加</p>"
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">ダッシュボード</span> &gt; <span class=\"uitext\">サーバーインベントリマップ</span> &gt; <strong>詳細を見る</strong>画面でサーバーにマウスオーバー時にポップオーバーにステータス別のイベント数表示を追加</p>"
       },
       {
         "ver": "Service 2.16.0",
@@ -185,7 +185,7 @@
         "hash": "service-2160",
         "product": "Database",
         "type": "Feature",
-        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">ダッシューボード</span> &gt; <span class=\"uitext\">インスタンスモニタリング</span>,  <span class=\"uitext\">マルチインスタンス</span>メニューでテーブルのマルチソートする時にソート優先順位表示を追加</p>",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">ダッシュボード</span> &gt; <span class=\"uitext\">インスタンスモニタリング</span>,  <span class=\"uitext\">マルチインスタンス</span>メニューでテーブルのマルチソートする時にソート優先順位表示を追加</p>",
         "category": "共通"
       },
       {
@@ -219,14 +219,14 @@
         "type": "Feature",
         "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code>画面のチャート画像ダウンロード機能を追加</p>",
         "category": "共通",
-        "details": "<ul>\n<li>\n<p><span class=\"uitext\">ダッシューボード</span> &gt; <span class=\"uitext\">インスタンスモニタリング</span></p>\n</li>\n<li>\n<p><span class=\"uitext\">ダッシューボード</span> &gt; <span class=\"uitext\">インスタンスリスト</span> &gt; <em><strong>ユーザー定義ウィジェット</strong></em></p>\n</li>\n<li>\n<p><em><strong>分析</strong></em> &gt; <em><strong>カウント推移の比較</strong></em></p>\n</li>\n</ul>"
+        "details": "<ul>\n<li>\n<p><span class=\"uitext\">ダッシュボード</span> &gt; <span class=\"uitext\">インスタンスモニタリング</span></p>\n</li>\n<li>\n<p><span class=\"uitext\">ダッシュボード</span> &gt; <span class=\"uitext\">インスタンスリスト</span> &gt; <em><strong>ユーザー定義ウィジェット</strong></em></p>\n</li>\n<li>\n<p><em><strong>分析</strong></em> &gt; <em><strong>カウント推移の比較</strong></em></p>\n</li>\n</ul>"
       },
       {
         "ver": "Service 2.16.0",
         "hash": "service-2160",
         "product": "Database",
         "type": "Feature",
-        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">ダッシューボード</span> &gt; <span class=\"uitext\">インスタンスモニタリング</span>メニューにウィジェット編集、プリセット保存機能を新規追加</p>",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">ダッシュボード</span> &gt; <span class=\"uitext\">インスタンスモニタリング</span>メニューにウィジェット編集、プリセット保存機能を新規追加</p>",
         "category": "共通"
       },
       {
@@ -259,7 +259,7 @@
         "hash": "service-2160",
         "product": "Database",
         "type": "Feature",
-        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">ダッシューボード</span> &gt; <span class=\"uitext\">RACモニタリング</span>で選択したクラスターが保存されるように変更</p>",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">ダッシュボード</span> &gt; <span class=\"uitext\">RACモニタリング</span>で選択したクラスターが保存されるように変更</p>",
         "category": "Oracle、Oracle Pro"
       },
       {

@@ -24381,7 +24381,7 @@
   },
   "add_guide_sms": {
     "en": "WhaTap server monitoring provides multiple dashboards for integrated monitoring, making it easy to see the overall status of your system in real time across more than 1000 servers, helping to reduce downtime resulting in business loss.",
-    "ja": "WhaTapサーバーモニタリングは統合モニタリング向けの複数のダッシューボードを提供します。一千台を超える大規模サーバー環境でも容易にリアルタイムな状況把握が可能で、ビジネスに損失をもたらすダウンタイムを減らすことに役立ちます。",
+    "ja": "WhaTapサーバーモニタリングは統合モニタリング向けの複数のダッシュボードを提供します。一千台を超える大規模サーバー環境でも容易にリアルタイムな状況把握が可能で、ビジネスに損失をもたらすダウンタイムを減らすことに役立ちます。",
     "ko": "와탭 서버 모니터링은 통합 모니터링을 위한 복수의 대시보드를 제공하여, 1000대 이상의 서버에서도 실시간으로 시스템 전체 현황 파악이 용이해 비즈니스 손실을 가져오는 다운타임을 줄이는데 도움이 됩니다.",
     "service_id": "_04135"
   },
@@ -58179,12 +58179,12 @@
   },
   "side_integratedMetricsBoard": {
     "en": "Integrated Metrics Dashboard",
-    "ja": "統合メトリックスダッシューボード",
+    "ja": "統合メトリックスダッシュボード",
     "ko": "통합 메트릭스 보드"
   },
   "side_integratedDashboard": {
     "en": "Integrated Dashboard",
-    "ja": "統合ダッシューボード",
+    "ja": "統合ダッシュボード",
     "ko": "통합 대시보드"
   },
   "dbx_agent_setting": {
@@ -58249,7 +58249,7 @@
   },
   "side_dashboard": {
     "en": "Dashboard",
-    "ja": "ダッシューボード",
+    "ja": "ダッシュボード",
     "ko": "대시보드"
   },
   "side_agentResourceDashboard": {
@@ -59332,7 +59332,7 @@
   },
   "side_multiServiceDashboard": {
     "en": "APP. Multi Services Dashboard",
-    "ja": "アプリケーションマルチサービス ダッシューボード",
+    "ja": "アプリケーションマルチサービス ダッシュボード",
     "ko": "애플리케이션 멀티서비스 대시보드"
   },
   "side_objectManifest": {

@@ -792,5 +792,8 @@
   },
   "index.pages.section.product.nms": {
     "message": "It monitors the performance metrics and conditions of the network equipment in real time."
+  },
+  "index.pages.section.product.OpenMetrics": {
+    "message": "This solution provides automatic collection of Prometheus-based OpenMetrics metrics, enabling seamless deployment of an integrated monitoring environment without complex configuration requirements."
   }
 }

@@ -145,14 +145,14 @@
 		  "type": "Feature",
 		  "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code>ロックツリーテーブルにコラム選択機能を追加</p>",
 		  "category": "共通",
-		  "details": "<ul>\n<li><span class=\"uitext\">ダッシューボード</span> &gt; <span class=\"uitext\">インスタンスモニタリング</span>, <span class=\"uitext\">マルチインスタンス</span></li>\n<li><span class=\"uitext\">分析</span> &gt; <span class=\"uitext\">ロックツリー</span></li>\n</ul>"
+		  "details": "<ul>\n<li><span class=\"uitext\">ダッシュボード</span> &gt; <span class=\"uitext\">インスタンスモニタリング</span>, <span class=\"uitext\">マルチインスタンス</span></li>\n<li><span class=\"uitext\">分析</span> &gt; <span class=\"uitext\">ロックツリー</span></li>\n</ul>"
 		},
 		{
 		  "ver": "Service 2.17.0",
 		  "hash": "service-2170",
 		  "product": "Database",
 		  "type": "Feature",
-		  "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">ダッシューボード</span> &gt; <span class=\"uitext\">インスタンスモニタリング</span>リアルタイムモードでない場合、チャートデータをCSVダウンロード機能を追加</p>",
+		  "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">ダッシュボード</span> &gt; <span class=\"uitext\">インスタンスモニタリング</span>リアルタイムモードでない場合、チャートデータをCSVダウンロード機能を追加</p>",
 		  "category": "共通"
 		},
 		{
@@ -160,7 +160,7 @@
 		  "hash": "service-2170",
 		  "product": "Database",
 		  "type": "Feature",
-		  "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">ダッシューボード</span> &gt; <span class=\"uitext\">マルチインスタンス</span> Disk Usageウィジェットテーブル状態のプリセット保存機能を追加</p>",
+		  "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">ダッシュボード</span> &gt; <span class=\"uitext\">マルチインスタンス</span> Disk Usageウィジェットテーブル状態のプリセット保存機能を追加</p>",
 		  "category": "共通"
 		},
 		{
@@ -170,14 +170,14 @@
 		  "type": "Feature",
 		  "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code>インスタンスのReplication RoleまたはCluster構成表示タグを追加</p>",
 		  "category": "共通",
-		  "details": "<ul>\n<li>\n<p><span class=\"uitext\">ダッシューボード</span> &gt; <span class=\"uitext\">インスタンスモニタリング</span>画面のインスタンスセレクター</p>\n</li>\n<li>\n<p><span class=\"uitext\">ダッシューボード</span> &gt; <span class=\"uitext\">マルチインスタンス</span>画面のインスタンスタグ</p>\n</li>\n<li>\n<p><span class=\"uitext\">管理</span> &gt; <em><strong>エージェントリスト</strong></em>のRoleコラム</p>\n</li>\n</ul>"
+		  "details": "<ul>\n<li>\n<p><span class=\"uitext\">ダッシュボード</span> &gt; <span class=\"uitext\">インスタンスモニタリング</span>画面のインスタンスセレクター</p>\n</li>\n<li>\n<p><span class=\"uitext\">ダッシュボード</span> &gt; <span class=\"uitext\">マルチインスタンス</span>画面のインスタンスタグ</p>\n</li>\n<li>\n<p><span class=\"uitext\">管理</span> &gt; <em><strong>エージェントリスト</strong></em>のRoleコラム</p>\n</li>\n</ul>"
 		},
 		{
 		  "ver": "Service 2.17.0",
 		  "hash": "service-2170",
 		  "product": "Database",
 		  "type": "Feature",
-		  "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">ダッシューボード</span> &gt; <span class=\"uitext\">インスタンスモニタリング</span> <code class=\"newfunc\">New</code>画面を改善</p>",
+		  "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">ダッシュボード</span> &gt; <span class=\"uitext\">インスタンスモニタリング</span> <code class=\"newfunc\">New</code>画面を改善</p>",
 		  "category": "共通",
 		  "details": "<ul>\n<li>ユーザー定義ウィジェットシリーズチャートにクリック及びドラッグイベントを追加</li>\n<li>チャートオプションアイコンを詳細を見るボタンに変更</li>\n<li>非活性化インスタンスの選択時に案内文を追加</li>\n<li>基本提供シリーズチャートにメトリクス選択ボタンを追加</li>\n</ul>"
 		},
@@ -196,7 +196,7 @@
 		  "type": "Feature",
 		  "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">ロックツリー</span>テーブルにロック照会権限の案内文を追加</p>",
 		  "category": "MySQL",
-		  "details": "<ul>\n<li>\n<p><span class=\"uitext\">ダッシューボード</span> &gt; <span class=\"uitext\">インスタンスモニタリング</span></p>\n</li>\n<li>\n<p><span class=\"uitext\">分析</span> &gt; <span class=\"uitext\">ロックツリー</span></p>\n</li>\n</ul>"
+		  "details": "<ul>\n<li>\n<p><span class=\"uitext\">ダッシュボード</span> &gt; <span class=\"uitext\">インスタンスモニタリング</span></p>\n</li>\n<li>\n<p><span class=\"uitext\">分析</span> &gt; <span class=\"uitext\">ロックツリー</span></p>\n</li>\n</ul>"
 		},
 		{
 		  "ver": "Service 2.17.0",
