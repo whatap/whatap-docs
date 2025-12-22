@@ -11,6 +11,340 @@ It is a Go-based agent that collects Prometheus-style metrics and sends them to 
 
 ## Configuration
 
+<details>
+
+<summary>When installing with standalone YAML</summary>
+
+By default, the Open Agent is created in the whatap-monitoring namespace. You can adjust this if needed.
+
+```yaml
+# Whatap Open Agent standalone manifests
+# Adjust the namespace as needed. The example uses whatap-monitoring.
+---
+#apiVersion: v1
+#kind: Namespace
+#metadata:
+#  name: whatap-monitoring
+---
+# Whatap connection information (license/host/port)
+# If you already created a Secret with the same name, you can delete this Secret block
+# and update the Deployment’s secretKeyRef.name to match your existing Secret name.
+apiVersion: v1
+kind: Secret
+metadata:
+  name: whatap-credentials
+  namespace: whatap-monitoring
+type: Opaque
+stringData:
+  WHATAP_LICENSE: "<YOUR_LICENSE>"
+  WHATAP_HOST: "<WHATAP_HOST>"
+  WHATAP_PORT: "6600"
+
+---
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: whatap-open-agent-sa
+  namespace: whatap-monitoring
+
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: whatap-open-agent-role
+rules:
+  - apiGroups: ["*"]
+    resources: ["pods", "services", "endpoints", "endpointslices", "namespaces", "secrets"]
+    verbs: ["get", "list", "watch"]
+  - nonResourceURLs: ["/metrics"]
+    verbs: ["*"]
+  - apiGroups: [""]
+    resources: ["pods/exec"]
+    verbs: ["create"]
+  - apiGroups: [""]
+    resources: ["configmaps"]
+    verbs: ["*"]
+  - nonResourceURLs: ["/metrics"]
+    verbs: ["*"]
+
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRoleBinding
+metadata:
+  name: whatap-open-agent-role-binding
+subjects:
+  - kind: ServiceAccount
+    name: whatap-open-agent-sa
+    namespace: whatap-monitoring
+roleRef:
+  kind: ClusterRole
+  name: whatap-open-agent-role
+  apiGroup: rbac.authorization.k8s.io
+
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: whatap-open-agent-config
+  namespace: whatap-monitoring
+data:
+  scrape_config.yaml: |
+    features:
+      openAgent:
+        enabled: true
+        globalInterval: "60s"
+        globalPath: "/metrics"
+        targets:
+          - targetName: kube-apiserver
+            type: ServiceMonitor
+            namespaceSelector:
+              matchNames:
+                - "default"  # Change to the namespace where the API server service resides
+            selector:
+              matchLabels:
+                component: apiserver
+                provider: kubernetes
+            endpoints:
+              - port: "https"
+                path: "/metrics"
+                interval: "30s"
+                scheme: "https"
+                timeout: "30s"
+                tlsConfig:
+                  insecureSkipVerify: true
+                metricRelabelConfigs:
+                  - source_labels: [__name__]
+                    regex: "apiserver_request_total"
+                    action: keep
+                  - source_labels: [verb]
+                    target_label: http_verb
+                    replacement: "${1}"
+                    action: replace
+                  - target_label: metric_src
+                    replacement: "whatap-open-agent"
+                    action: replace
+
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: whatap-open-agent
+  namespace: whatap-monitoring
+  labels:
+    name: whatap-open-agent
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      name: whatap-open-agent
+  template:
+    metadata:
+      labels:
+        name: whatap-open-agent
+    spec:
+      serviceAccountName: whatap-open-agent-sa
+      volumes:
+        - name: config-volume
+          configMap:
+            name: whatap-open-agent-config
+        - name: logs-volume
+          emptyDir: {}
+      containers:
+        - name: whatap-open-agent
+          image: public.ecr.aws/whatap/open_agent:latest
+          imagePullPolicy: Always
+          resources:
+            requests:
+              memory: "300Mi"
+              cpu: "100m"
+            limits:
+              memory: "1000Mi"
+              cpu: "1000m"
+          env:
+            - name: WHATAP_LICENSE
+              valueFrom:
+                secretKeyRef:
+                  name: whatap-credentials
+                  key: WHATAP_LICENSE
+            - name: WHATAP_HOST
+              valueFrom:
+                secretKeyRef:
+                  name: whatap-credentials
+                  key: WHATAP_HOST
+            - name: WHATAP_PORT
+              valueFrom:
+                secretKeyRef:
+                  name: whatap-credentials
+                  key: WHATAP_PORT
+            - name: debug
+              value: "false"
+          volumeMounts:
+            - name: config-volume
+              mountPath: /app/scrape_config.yaml
+              subPath: scrape_config.yaml
+            - name: logs-volume
+              mountPath: /app/logs
+          # Add container/node tolerations, affinity, and other settings as needed.
+
+```
+
+</details>
+
+<details>
+
+<summary>Helm installation</summary>
+
+1. Run the following commands to add the WhaTap Helm repository.
+
+    ```yaml
+    helm repo add whatap https://whatap.github.io/helm/
+    helm repo update
+    ```
+
+1. For first-time installation, run the following command to install the agent application. Refer to the example *values.yaml* below.
+
+    <Tabs groupId="event-reception">
+    <TabItem value="frist install" label="First Install">
+
+    ```yaml
+    #If you are installing the agent for the first time, run the following commands to install the agent application.
+    kubectl create ns whatap-monitoring
+    helm install whatap-kube-agent --namespace whatap-monitoring whatap/kube -f values.yaml
+    ```
+
+    </TabItem>
+    <TabItem value="user" label="Existing User">
+
+    ```yaml
+    #Existing WhaTap Kubernetes Agent users should run the following commands to install the agent.
+    #If you previously installed the WhaTap Kubernetes Agent using YAML files, a Clean Install is required. Remove the existing Kubernetes agent, then install it using the Helm chart.
+    kubectl delete ns whatap-monitoring
+    kubectl delete clusterrole whatap
+    kubectl delete clusterrolebinding whatap
+    kubectl create ns whatap-monitoring
+    helm install whatap-kube-agent --namespace whatap-monitoring whatap/kube -f values.yaml
+    ```
+
+    </TabItem>
+    </Tabs>
+
+  > **values.yaml**
+
+    ```yaml
+    whatap:
+      license: #Enter your license key
+      host: #Enter the collector server IP
+      port: #Enter the collector server port
+      createSecret: true #default : true, if credentials already exist, set false
+      existingSecretName: "whatap-credentials" #default : whatap-credentials
+    collect_custom_resources: true
+    containerRuntime: "containerd"
+    deployment:
+      containers:
+        controlPlaneHelper:
+          enabled: false
+          image: "whatap/kube_mon:1.8.8"
+          name: "whatap-control-plane-helper"
+          port: 9496
+          resources:
+            limits:
+              cpu: "200m"
+              memory: "350Mi"
+            requests:
+              cpu: "100m"
+              memory: "300Mi"
+        masterAgent:
+          image: "whatap/kube_mon:1.8.8"
+          name: "whatap-master-agent"
+          port: 6600
+          resources:
+            limits:
+              cpu: "200m"
+              memory: "350Mi"
+            requests:
+              cpu: "100m"
+              memory: "300Mi"
+      label: "whatap-master-agent"
+      name: "whatap-master-agent"
+      replicas: 1
+
+    daemonSet:
+      containers:
+        nodeAgent:
+          image: "whatap/kube_mon:1.8.8"
+          limits:
+            cpu: "200m"
+            memory: "350Mi"
+          name: "whatap-node-agent"
+          requests:
+            cpu: "100m"
+            memory: "300Mi"
+        nodeHelper:
+          image: "whatap/kube_mon:1.8.8"
+          limits:
+            cpu: "200m"
+            memory: "350Mi"
+          name: "whatap-node-helper"
+          requests:
+            cpu: "100m"
+            memory: "100Mi"
+      initContainers:
+        nodeDebugger:
+          enabled: false
+          image: "whatap/kube_mon:1.8.8"
+          name: "whatap-node-debug"
+      label: "whatap-node-agent"
+      name: "whatap-node-agent"
+
+    clusterrole:
+      extraResources:
+      - "*"
+
+    deploymentOpen:
+      enabled: true
+      containers:
+        openAgent:
+          image: "public.ecr.aws/whatap/open_agent:latest"
+      config:
+        features:
+          openAgent:
+            enabled: true
+            #globalInterval: "60s"
+            #globalPath: "/metrics"
+            targets:
+              - targetName: "kube-apiserver"
+                type: "ServiceMonitor"
+                enabled: true
+                namespaceSelector:
+                  matchNames:
+                    - "default"   # Adjust according to the cluster’s default labels
+                selector:
+                  matchLabels:
+                    component: "apiserver"
+                    provider: "kubernetes"
+                endpoints:
+                  - port: "https"
+                    path: "/metrics"
+                    interval: "30s"
+                    scheme: "https"
+                    timeout: "30s"
+                    tlsConfig:
+                      insecureSkipVerify: true   # For self-signed certificates, this is for convenience; for security, set to false and specify a CA
+                    metricRelabelConfigs:
+                      - source_labels: [__name__]
+                        regex: "apiserver_request_total"
+                        action: keep
+                      - source_labels: [verb]
+                        target_label: http_verb
+                        replacement: "${1}"
+                        action: replace
+                      - target_label: metric_src
+                        replacement: "whatap-open-agent"
+                        action: replace
+    ```
+
+</details>
+
 After installing the WhatapOperator, you can configure open metrics targets using the `WhatapAgent` CR (Custom Resource).
 
 1. **PodMonitor**: Dynamic discovery using Pod label selectors (similar to Prometheus Operator's PodMonitor)
