@@ -443,13 +443,13 @@ function colsToJson(data){
 
   rd["side_integratedMetricsBoard"] = {
     "en": "Integrated Metrics Dashboard",
-    "ja": "統合メトリックスダッシューボード",
+    "ja": "統合メトリックスダッシュボード",
     "ko": "통합 메트릭스 보드"
   }
 
   rd["side_integratedDashboard"] = {
     "en": "Integrated Dashboard",
-    "ja": "統合ダッシューボード",
+    "ja": "統合ダッシュボード",
     "ko": "통합 대시보드"
   }
 

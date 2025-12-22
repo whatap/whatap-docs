@@ -333,7 +333,7 @@ CPUUtilization.Average > 0.8
     ```dart
     isNull(value)             # null か確認
     isNotNull(value)          # null でないか確認
-    nvl(value, 0)             # null の場合はデフォルト値
+    nvl(value, 0)             # null の場合は既定値
     isEmpty(str)              # 空文字列か確認
     isNotEmpty(str)           # 空でないか確認
     ```
@@ -379,7 +379,7 @@ CPUUtilization.Average > 0.8
         if(value >= 90, 'High', 'Medium') == 'High'
         ```
 
-        **decode**: 値と条件を比較し、一致した結果を返す。一致がなければデフォルト値を返す
+        **decode**: 値と条件を比較し、一致した結果を返す。一致がなければ既定値を返す
 
         ```dart title="形式"
         decode(値, 条件1, 結果1, 条件2, 結果2, ..., 条件N, 結果N, デフォルト)

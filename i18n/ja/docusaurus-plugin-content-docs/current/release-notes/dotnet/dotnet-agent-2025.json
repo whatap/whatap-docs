@@ -24,7 +24,7 @@
         "product": ".NET Agent",
         "type": "New",
         "desc": "<p><code class=\"New\" type=\"1\">New</code> メトリクス照会で <code>app_context_stat</code> カテゴリを追加</p>",
-        "details": "<ul>\n<li>\n<p><strong>app_context_enabled</strong> <span class='type'>Boolean</span></p>\n<ul>\n<li><p>デフォルト値：<code>false</code></p></li>\n<li><p><code>true</code> に設定すると、<code>app_context_stat</code> の収集機能が全体的に有効になります。</p></li>\n</ul>\n</li>\n<li>\n<p><strong>app_context_parser</strong></p>\n<ul>\n<li><p><code>default, prefix, match</code> のいずれかを使用</p></li>\n<li><p><code>default</code>：デフォルトパーサー（最初のパスセグメントを抽出）</p></li>\n<li><p><code>prefix</code>：プレフィックスマッチパーサー（最も柔軟）</p></li>\n<li><p><code>match</code>：完全一致パーサー（正確な一致のみ）</p></li>\n</ul>\n</li>\n<li>\n<p><strong>app_context_parser_reset</strong> <span class='type'>Number</span></p>\n<ul>\n<li><p>デフォルト値：<code>0</code></p></li>\n<li><p>パーサーの内部キャッシュと設定を強制的にリセットするカウンター</p></li>\n</ul>\n</li>\n<li>\n<p><strong>app_context_path_depth</strong> <span class='type'>Number</span></p>\n<ul>\n<li><p>デフォルト値：<code>1</code></p></li>\n<li><p>URLから抽出するパスセグメントの深さを指定（<code>default</code> パーサーのみ使用）</p></li>\n</ul>\n</li>\n<li>\n<p><strong>app_context_path_set</strong> <span class='type'>String</span></p>\n<ul>\n<li><p>監視対象のパスとその名称を定義するマッピングを設定。複数設定する場合は <code>,</code>（カンマ）で区切ります。</p></li>\n<li><p>例：<code>name1@url1,name2@url2,url3,name4@url4</code></p></li>\n</ul>\n</li>\n</ul>"
+        "details": "<ul>\n<li>\n<p><strong>app_context_enabled</strong> <span class='type'>Boolean</span></p>\n<ul>\n<li><p>既定値：<code>false</code></p></li>\n<li><p><code>true</code> に設定すると、<code>app_context_stat</code> の収集機能が全体的に有効になります。</p></li>\n</ul>\n</li>\n<li>\n<p><strong>app_context_parser</strong></p>\n<ul>\n<li><p><code>default, prefix, match</code> のいずれかを使用</p></li>\n<li><p><code>default</code>：デフォルトパーサー（最初のパスセグメントを抽出）</p></li>\n<li><p><code>prefix</code>：プレフィックスマッチパーサー（最も柔軟）</p></li>\n<li><p><code>match</code>：完全一致パーサー（正確な一致のみ）</p></li>\n</ul>\n</li>\n<li>\n<p><strong>app_context_parser_reset</strong> <span class='type'>Number</span></p>\n<ul>\n<li><p>既定値：<code>0</code></p></li>\n<li><p>パーサーの内部キャッシュと設定を強制的にリセットするカウンター</p></li>\n</ul>\n</li>\n<li>\n<p><strong>app_context_path_depth</strong> <span class='type'>Number</span></p>\n<ul>\n<li><p>既定値：<code>1</code></p></li>\n<li><p>URLから抽出するパスセグメントの深さを指定（<code>default</code> パーサーのみ使用）</p></li>\n</ul>\n</li>\n<li>\n<p><strong>app_context_path_set</strong> <span class='type'>String</span></p>\n<ul>\n<li><p>監視対象のパスとその名称を定義するマッピングを設定。複数設定する場合は <code>,</code>（カンマ）で区切ります。</p></li>\n<li><p>例：<code>name1@url1,name2@url2,url3,name4@url4</code></p></li>\n</ul>\n</li>\n</ul>"
       },
       {
         "ver": "v2.4.3",
@@ -32,7 +32,7 @@
         "product": ".NET Agent",
         "type": "New",
         "desc": "<p><code class=\"New\" type=\"1\">New</code> URLを正規化した場合、元のURLをstepでも表示できるオプションを追加</p>",
-        "details": "<ul>\n<li>\n<p><strong>step_origin_url_enabled</strong> <span class='type'>Boolean</span></p>\n<ul>\n<li><p>デフォルト値：<code>false</code></p></li>\n<li><p>URLを正規化した場合でも、元のURLがstepで表示されます。</p></li>\n</ul>\n</li>\n</ul>"
+        "details": "<ul>\n<li>\n<p><strong>step_origin_url_enabled</strong> <span class='type'>Boolean</span></p>\n<ul>\n<li><p>既定値：<code>false</code></p></li>\n<li><p>URLを正規化した場合でも、元のURLがstepで表示されます。</p></li>\n</ul>\n</li>\n</ul>"
       },
       {
         "ver": "v2.4.3",

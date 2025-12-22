@@ -15,7 +15,8 @@
     "crowdin": "crowdin",
     "write-heading-ids": "docusaurus write-heading-ids",
     "typecheck": "tsc",
-    "postgen": "docusaurus-post-generator"
+    "postgen": "docusaurus-post-generator",
+    "export:word": "node scripts/export-to-word.js"
   },
   "dependencies": {
     "@algolia/autocomplete-core": "1.7.4",

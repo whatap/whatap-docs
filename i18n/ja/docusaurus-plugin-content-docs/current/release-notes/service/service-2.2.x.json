@@ -142,7 +142,7 @@
       {
         "ver": "Service 2.2.0",
         "hash": "service-220",
-        "product": "新機能リリーズ",
+        "product": "新機能リリース",
         "type": "New",
         "desc": "<p><code class=\"New\">New</code> サイドメニューを改編</p>",
         "category": "共通",
@@ -151,7 +151,7 @@
       {
         "ver": "Service 2.2.0",
         "hash": "service-220",
-        "product": "新機能リリーズ",
+        "product": "新機能リリース",
         "type": "New",
         "desc": "<p><code class=\"New\">New</code> SSOアカウントの連動機能を追加</p>",
         "category": "共通"
@@ -159,7 +159,7 @@
       {
         "ver": "Service 2.2.0",
         "hash": "service-220",
-        "product": "新機能リリーズ",
+        "product": "新機能リリース",
         "type": "New",
         "desc": "<p><code class=\"New\">New</code>メトリクスのフィールド(Field) 中心のユーザー体験を強化した<span class=\"uitext\">アラート設定</span> <code class=\"newfunc\">New</code> 機能を追加</p>",
         "category": "共通"
@@ -167,7 +167,7 @@
       {
         "ver": "Service 2.2.0",
         "hash": "service-220",
-        "product": "新機能リリーズ",
+        "product": "新機能リリース",
         "type": "New",
         "desc": "<p><code class=\"New\">New</code>マスター及びノードエージェントのインストール状況が確認できる<span class=\"uitext\">Kubernetesエージェントリスト</span>メニューを追加</p>",
         "category": "Kubernetes"
@@ -175,7 +175,7 @@
       {
         "ver": "Service 2.2.0",
         "hash": "service-220",
-        "product": "新機能リリーズ",
+        "product": "新機能リリース",
         "type": "New",
         "desc": "<p><code class=\"New\">New</code> kube-apiserverの状態と性能メトリクスの収集、応答時間、処理量、リクエスト失敗などを追跡し、クラスターの可用性と性能をモニタリングできる<span class=\"uitext\">kube-apiserver ダッシュボード</span>メニューを追加</p>",
         "category": "Kubernetes"

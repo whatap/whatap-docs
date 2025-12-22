@@ -78,6 +78,7 @@ async function requestPage(url) {
     const resp = await fetch(url, fetchOptions);
     const body = await resp.text();
     const dom = new JSDOM(body).window;
+
     const nextLinkEl = dom.document.body.querySelector(argv.selector || '.pagination-nav__link--next');
 
     const nextLink = nextLinkEl && 'href' in nextLinkEl ? `${baseUrl}${nextLinkEl.href}` : null;

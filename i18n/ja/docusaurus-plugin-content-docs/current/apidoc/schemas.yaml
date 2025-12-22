@@ -350,7 +350,7 @@ getApmAllinfo:
       description: アクティブトランザクション
     rtime:
       type: string
-      description: 平均リスポンスタイム(ms)
+      description: 平均レスポンスタイム(ms)
     cpu:
       type: string
       description: CPU使用率の平均(%)
@@ -448,7 +448,7 @@ HttpcRecord:
             description: ホストアドレス
           Max:
             type: integer
-            description: 最大リスポンスタイム(ms)
+            description: 最大レスポンスタイム(ms)
           Stdev:
             type: string
             description: 標準偏差
@@ -457,13 +457,13 @@ HttpcRecord:
             description: 現在活性状態の接続数
           Avg:
             type: integer
-            description: 平均リスポンスタイム(ms)
+            description: 平均レスポンスタイム(ms)
           HostHash:
             type: integer
             description: ホストハッシュコード
           Min:
             type: integer
-            description: 最小リスポンスタイム(ms)
+            description: 最小レスポンスタイム(ms)
           Error:
             type: integer
             description: エラー数
@@ -495,7 +495,7 @@ HttpcFilterRecord:
             description: ホストハッシュコード
           Avg:
             type: integer
-            description: 平均リスポンスタイム(ms)
+            description: 平均レスポンスタイム(ms)
           Error:
             type: integer
             description: エラー数
@@ -513,7 +513,7 @@ HttpcFilterRecord:
             description: リクエストURL
           Max:
             type: integer
-            description: 最大リスポンスタイム(ms)
+            description: 最大レスポンスタイム(ms)
           Stdev:
             type: string
             description: 標準偏差
@@ -525,7 +525,7 @@ HttpcFilterRecord:
             description: 合計リクエスト数
           Min:
             type: integer
-            description: 最小リスポンスタイム(ms)
+            description: 最小レスポンスタイム(ms)
     total:
       type: integer
       description: フィルタリングされた合計HTTP接続レコード数
@@ -652,7 +652,7 @@ TransactionsRecord:
             description: SQLパッチされたデータの合計数
           httpc_avg:
             type: integer
-            description: HTTP接続平均リスポンスタイム(ms)
+            description: HTTP接続平均レスポンスタイム(ms)
           cpu_avg:
             type: integer
             description: 平均CPU使用量

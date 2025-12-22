@@ -36,7 +36,7 @@
         "product": "Java Agent",
         "type": "Feature",
         "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> SQLバインド変数の長さが上限を超える場合の表示方法を制御するオプションを追加</p>",
-        "details": "<ul>\n<li>オプション名: <code>trace_sql_param_show_length_enabled</code></li>\n<li><code>false</code>: デフォルト値。バインド変数を最大40文字まで表示</li>\n<li><code>true</code>: バインド変数が40文字を超える場合、<code>…(総文字数)</code>として表示</li>\n</ul>"
+        "details": "<ul>\n<li>オプション名: <code>trace_sql_param_show_length_enabled</code></li>\n<li><code>false</code>: 既定値。バインド変数を最大40文字まで表示</li>\n<li><code>true</code>: バインド変数が40文字を超える場合、<code>…(総文字数)</code>として表示</li>\n</ul>"
       },
       {
         "ver": "v2.2.65",

@@ -44,14 +44,14 @@
         "hash": "service-241",
         "product": "Application",
         "type": "Fixed",
-        "desc": "<p><code class=\"Fixed\">Fixed</code> <span class=\"uitext\">ダッシューボード</span> &gt; <span class=\"uitext\">アプリケーション</span>メニューのヒットマップウィジェットでエージェントフィルタリングによって発生したチャートに空き領域をドラッグするとデータが照会される問題を修正</p>"
+        "desc": "<p><code class=\"Fixed\">Fixed</code> <span class=\"uitext\">ダッシュボード</span> &gt; <span class=\"uitext\">アプリケーション</span>メニューのヒットマップウィジェットでエージェントフィルタリングによって発生したチャートに空き領域をドラッグするとデータが照会される問題を修正</p>"
       },
       {
         "ver": "Service 2.4.1",
         "hash": "service-241",
         "product": "Database",
         "type": "Fixed",
-        "desc": "<li><code class=\"Fixed\">Fixed</code> <span class=\"uitext\">ダッシューボード</span> &gt; <span class=\"uitext\">マルチインスタンス</span>メニューで<span class=\"uitext\">Long Waiting Session Count</span>ウィジェットのデータが現在時間を基準に表示されるように修正</li>"
+        "desc": "<li><code class=\"Fixed\">Fixed</code> <span class=\"uitext\">ダッシュボード</span> &gt; <span class=\"uitext\">マルチインスタンス</span>メニューで<span class=\"uitext\">Long Waiting Session Count</span>ウィジェットのデータが現在時間を基準に表示されるように修正</li>"
       }
     ]
   },
@@ -202,7 +202,7 @@
         "hash": "service-240",
         "product": "Application",
         "type": "Feature",
-        "desc": "<p><code class=\"Feature\">Feature</code> <span class=\"uitext\">ダッシューボード</span> &gt; <span class=\"uitext\">アプリケーション</span> メニューの<span class=\"uitext\">アクティブTXイコライザー</span>ウィジェットに非活性エージェントを表示するオプションを追加</p>",
+        "desc": "<p><code class=\"Feature\">Feature</code> <span class=\"uitext\">ダッシュボード</span> &gt; <span class=\"uitext\">アプリケーション</span> メニューの<span class=\"uitext\">アクティブTXイコライザー</span>ウィジェットに非活性エージェントを表示するオプションを追加</p>",
         "category": "共通"
       },
       {
@@ -307,7 +307,7 @@
         "hash": "service-240",
         "product": "Kubernetes",
         "type": "Feature",
-        "desc": "<p><code class=\"Feature\">Feature</code> <span class=\"uitext\">ダッシューボード</span> &gt; <span class=\"uitext\">コンテナマップ</span>メニューで<span class=\"uitext\">リソース関係</span>タブを追加</p>"
+        "desc": "<p><code class=\"Feature\">Feature</code> <span class=\"uitext\">ダッシュボード</span> &gt; <span class=\"uitext\">コンテナマップ</span>メニューで<span class=\"uitext\">リソース関係</span>タブを追加</p>"
       },
       {
         "ver": "Service 2.4.0",
@@ -336,28 +336,28 @@
         "product": "Kubernetes",
         "type": "Changed",
         "desc": "<p><code class=\"Changed\">Changed</code>次のメニューパスでアイコンとボタンのスタイルを規定に合わせて修正</p>",
-        "details": "<ul>\n<li>\n<p><span class=\"uitext\">ダッシューボード</span> &gt; <span class=\"uitext\">コンテナマップ</span></p>\n</li>\n<li>\n<p><span class=\"uitext\">ダッシューボード</span> &gt; <span class=\"uitext\">統合コンテナマップ</span></p>\n</li>\n<li>\n<p><span class=\"uitext\">クラスター</span> &gt; <span class=\"uitext\">Object Manifest</span></p>\n</li>\n</ul>"
+        "details": "<ul>\n<li>\n<p><span class=\"uitext\">ダッシュボード</span> &gt; <span class=\"uitext\">コンテナマップ</span></p>\n</li>\n<li>\n<p><span class=\"uitext\">ダッシュボード</span> &gt; <span class=\"uitext\">統合コンテナマップ</span></p>\n</li>\n<li>\n<p><span class=\"uitext\">クラスター</span> &gt; <span class=\"uitext\">Object Manifest</span></p>\n</li>\n</ul>"
       },
       {
         "ver": "Service 2.4.0",
         "hash": "service-240",
         "product": "Kubernetes",
         "type": "Changed",
-        "desc": "<p><code class=\"Changed\">Changed</code> <span class=\"uitext\">ダッシューボード</span> &gt; <span class=\"uitext\">コンテナマップ</span>メニューのブロック上にマウスオーバー時に現れるUIを修正</p>"
+        "desc": "<p><code class=\"Changed\">Changed</code> <span class=\"uitext\">ダッシュボード</span> &gt; <span class=\"uitext\">コンテナマップ</span>メニューのブロック上にマウスオーバー時に現れるUIを修正</p>"
       },
       {
         "ver": "Service 2.4.0",
         "hash": "service-240",
         "product": "Kubernetes",
         "type": "Changed",
-        "desc": "<p><code class=\"Changed\">Changed</code> <span class=\"uitext\">ダッシューボード</span> &gt; <span class=\"uitext\">コンテナマップ</span>メニューで指標オプションを使用する際、単位表記を含むように修正</p>"
+        "desc": "<p><code class=\"Changed\">Changed</code> <span class=\"uitext\">ダッシュボード</span> &gt; <span class=\"uitext\">コンテナマップ</span>メニューで指標オプションを使用する際、単位表記を含むように修正</p>"
       },
       {
         "ver": "Service 2.4.0",
         "hash": "service-240",
         "product": "Database",
         "type": "Feature",
-        "desc": "<p><code class=\"Feature\">Feature</code> <span class=\"uitext\">ダッシューボード</span> &gt; <span class=\"uitext\">インスタンスモニタリング</span>メニューで<span class=\"uitext\">アクティブセッション</span>テーブルのデータを1分おきに照会できるボタンを追加</p>",
+        "desc": "<p><code class=\"Feature\">Feature</code> <span class=\"uitext\">ダッシュボード</span> &gt; <span class=\"uitext\">インスタンスモニタリング</span>メニューで<span class=\"uitext\">アクティブセッション</span>テーブルのデータを1分おきに照会できるボタンを追加</p>",
         "category": "Database V2"
       },
       {
@@ -381,7 +381,7 @@
         "hash": "service-240",
         "product": "Database",
         "type": "Feature",
-        "desc": "<p><code class=\"Feature\">Feature</code> <span class=\"uitext\">ダッシューボード</span> &gt; <span class=\"uitext\">マルチインスタンス</span>メニューでディスク使用の推移が確認できる詳細なポップアウトを追加</p>",
+        "desc": "<p><code class=\"Feature\">Feature</code> <span class=\"uitext\">ダッシュボード</span> &gt; <span class=\"uitext\">マルチインスタンス</span>メニューでディスク使用の推移が確認できる詳細なポップアウトを追加</p>",
         "category": "PostgreSQL / MySQL"
       },
       {
@@ -389,7 +389,7 @@
         "hash": "service-240",
         "product": "Database",
         "type": "Feature",
-        "desc": "<p><code class=\"Feature\">Feature</code> <span class=\"uitext\">ダッシューボード</span> &gt; <span class=\"uitext\">マルチインスタンス</span>メニューでウィジェットを追加</p>",
+        "desc": "<p><code class=\"Feature\">Feature</code> <span class=\"uitext\">ダッシュボード</span> &gt; <span class=\"uitext\">マルチインスタンス</span>メニューでウィジェットを追加</p>",
         "category": "PostgreSQL / MySQL",
         "details": "<ul>\n<li>\n<span class=\"uitext\">Long Active Session Count</span>\n</li>\n<li>\n<span class=\"uitext\">Long Waiting Session Count</span>\n</li>\n</ul>"
       },
@@ -446,7 +446,7 @@
         "hash": "service-240",
         "product": "ネットワーク",
         "type": "Fixed",
-        "desc": "<p><code class=\"Fixed\">Fixed</code> <span class=\"uitext\">ダッシューボード</span> &gt; <span class=\"uitext\">ネットワークトポロジ</span>メニューでノードの枠線の色が意図に反して適用される問題を修正</p>"
+        "desc": "<p><code class=\"Fixed\">Fixed</code> <span class=\"uitext\">ダッシュボード</span> &gt; <span class=\"uitext\">ネットワークトポロジ</span>メニューでノードの枠線の色が意図に反して適用される問題を修正</p>"
       },
       {
         "ver": "Service 2.4.0",

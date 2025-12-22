@@ -55,7 +55,7 @@ tags:
   - name: Database SQL照会
     description: データベースのSQL関連事項を照会できます。
   - name: MXQL Open API を呼び出す
-  - name: MXQL Open API 的な使い方
+  - name: MXQL Open APIの使用方法
     description: |
       MXQLを使用する方法は次のとおりです。
 
@@ -91,11 +91,11 @@ tags:
 x-tagGroups:
   - name: メタ情報照会
     tags:
-      - プロジェク
+      - プロジェクト
       - グループ
       - エージェント
       - イベント
-  - name: Appication
+  - name: Application
     tags:
       - APM Spot情報照会
       - APM統計データの参照
@@ -109,7 +109,7 @@ x-tagGroups:
       - Database SQL照会
   - name: MXQL Open API
     tags:
-      - MXQL Open API 的な使い方
+      - MXQL Open APIの使用方法
       - MXQL Open API を呼び出す
 paths:
   /open/api/json/projects:
@@ -118,7 +118,7 @@ paths:
       operationId: getProjectsList
       description: プロジェクト一覧を照会するAPIです。
       tags:
-        - プロジェク
+        - プロジェクト
       parameters:
         - $ref: parameters.yaml#/WhatapAccoutTokenHeader
       responses:
@@ -272,7 +272,7 @@ paths:
   /open/json/agents:
     get:
       summary: エージェント状態とホストIP照会
-      description: プロジェクト内のエアジェントの状態およびIPアドレスを照会するAPIです。
+      description: プロジェクト内のエージェントの状態およびIPアドレスを照会するAPIです。
       operationId: getAgentInfo
       tags:
         - エージェント
@@ -359,7 +359,7 @@ paths:
                     name: Hong
                     desc: ''
                     sms: 010XXXXXXX
-                totla: 8
+                total: 8
       x-codeSamples:
         - lang: curl
           source: |
@@ -458,7 +458,7 @@ paths:
                     name: 홍길동
                     desc: ''
                     sms: 010XXXXXXX
-                totla: 8
+                total: 8
       x-codeSamples:
         - lang: curl
           source: |
@@ -1165,7 +1165,7 @@ paths:
                     type: string
                     description: TagCount カテゴリ
                   okindName:
-                    type: sting
+                    type: string
                     description: 種類別エージェントのグループ名
                   onode:
                     type: integer
@@ -1254,7 +1254,7 @@ paths:
     post:
       summary: oid一覧呼び出し
       description: |
-        ユーザーが表示したい時間帯を有効になっているエージェント情報を確認できるAPIです。
+        ユーザーが表示したい時間帯に有効になっているエージェント情報を確認できるAPIです。
         照会時間(`stime`、`etime`)は一日に制限され、時間単位はms(millisecond、ms)です。
 
 
@@ -1650,7 +1650,7 @@ paths:
   /open/api/rtime:
     get:
       summary: 平均応答時間
-      description: アプリケーションモニタリングプロジェクトで平均リスポンスタイムを照会できるAPIです。
+      description: アプリケーションモニタリングプロジェクトで平均レスポンスタイムを照会できるAPIです。
       tags:
         - APM Spot情報照会
       parameters:
@@ -2562,7 +2562,7 @@ paths:
   /open/api/raw/tag/app_counter/resp_time?stime={stime}&etime={etime}&timeMerge={timeMerge}:
     get:
       summary: 平均応答時間
-      description: アプリケーションモニタリングプロジェクトで設定した時間中、平均リスポンスタイムを照会できるAPIです。
+      description: アプリケーションモニタリングプロジェクトで設定した時間中、平均レスポンスタイムを照会できるAPIです。
       tags:
         - APM統計データの参照
       parameters:
@@ -3314,7 +3314,7 @@ paths:
         単位です。
 
 
-        * `filter`：デフォルト値は`m5`であり、時間範囲内で5分の統計を照会するには`m5`、5秒の統計は`s5`,
+        * `filter`：既定値は`m5`であり、時間範囲内で5分の統計を照会するには`m5`、5秒の統計は`s5`,
         1時間の統計は`h1`を入力してください。
 
         * `oid`：特定のエージェントを指定して照会する場合は、追加してください。

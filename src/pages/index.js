@@ -507,7 +507,7 @@ export default function pages() {
                             })}
                         </FlexCard>
 
-                        <FlexCard icons="index-icon/product-mongodb-l.svg" product="Mongodb" type="Database" url="mongodb/monitoring-intro">
+                        <FlexCard icons="index-icon/product-mongodb-l.svg" product="MongoDB" type="Database" url="mongodb/monitoring-intro">
                             {translate({
                                 id: "index.pages.section.product.mongodb",
                                 message: "성능 지표 모니터링과 추이 분석 및 비교할 수 있습니다."
