@@ -1,6 +1,20 @@
 [
   {
     "url": "https://docs.whatap.io/release-notes/service/service-2_23_x",
+    "ver": "Service 2.23.14",
+    "date": "2025-12-16",
+    "Lists": [
+      {
+        "ver": "Service 2.23.14",
+        "hash": "service-22314",
+        "product": "Common",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">Metrics Event</span> Fixed an issue where saving or exporting in the JSON editor caused all data outside the current page view to be deleted</p>"
+      }
+    ]
+  },  
+  {
+    "url": "https://docs.whatap.io/release-notes/service/service-2_23_x",
     "ver": "Service 2.23.13",
     "date": "2025-12-12",
     "Lists": [

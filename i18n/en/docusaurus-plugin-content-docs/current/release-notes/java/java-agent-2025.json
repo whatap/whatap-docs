@@ -1,5 +1,18 @@
 [
   {
+    "ver": "v2.2.67",
+    "date": "2025-12-19",
+    "Lists": [
+      {
+        "ver": "v2.2.67",
+        "hash": "v2267",
+        "product": "Java Agent",
+        "type": "New",
+        "desc": "<p><code class=\"New\" type=\"1\">New</code> Expanded support for Java 25 and 26</p>"
+      }
+    ]
+  },  
+  {
     "ver": "v2.2.66",
     "date": "2025-11-07",
     "Lists": [
