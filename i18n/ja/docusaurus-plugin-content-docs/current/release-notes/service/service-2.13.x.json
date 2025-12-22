@@ -39,7 +39,7 @@
       {
         "ver": "Service 2.13.0",
         "hash": "service-2130",
-        "product": "新機能リリーズ",
+        "product": "新機能リリース",
         "type": "New",
         "desc": "<p><code class=\"New\" type=\"1\">New</code> <strong>IBM DB2</strong>モニタリング製品を発売</p>",
         "category": "Database"
@@ -47,7 +47,7 @@
       {
         "ver": "Service 2.13.0",
         "hash": "service-2130",
-        "product": "新機能リリーズ",
+        "product": "新機能リリース",
         "type": "New",
         "desc": "<p><code class=\"New\" type=\"1\">New</code>過去の性能データをより直観的に分析できる<span class=\"uitext\">メトリクスエクスプローラー</span>メニューを追加</p>",
         "category": "Server",
@@ -56,7 +56,7 @@
       {
         "ver": "Service 2.13.0",
         "hash": "service-2130",
-        "product": "新機能リリーズ",
+        "product": "新機能リリース",
         "type": "New",
         "desc": "<p><code class=\"New\" type=\"1\">New</code>Kubernetesのシステムコンポーネントの1つであるkube-schedulerに対するモニタリングデータを照会できる<span class=\"uitext\">kube-scheduler ダッシュボード</span>メニューを追加</p>",
         "category": "Kubernetes"
@@ -64,7 +64,7 @@
       {
         "ver": "Service 2.13.0",
         "hash": "service-2130",
-        "product": "新機能リリーズ",
+        "product": "新機能リリース",
         "type": "New",
         "desc": "<p><code class=\"New\" type=\"1\">New</code>時間の流れによるコンテナの状態を確認できる<span class=\"uitext\">コンテナタイムライン</span>メニューを追加</p>",
         "category": "Kubernetes"
@@ -72,7 +72,7 @@
       {
         "ver": "Service 2.13.0",
         "hash": "service-2130",
-        "product": "新機能リリーズ",
+        "product": "新機能リリース",
         "type": "New",
         "desc": "<p><code class=\"New\" type=\"1\">New</code>時間の経過に伴うPod状態を確認できる<span class=\"uitext\">Podタイムライン</span>メニューを追加</p>",
         "category": "Kubernetes"
@@ -80,7 +80,7 @@
       {
         "ver": "Service 2.13.0",
         "hash": "service-2130",
-        "product": "新機能リリーズ",
+        "product": "新機能リリース",
         "type": "New",
         "desc": "<p><code class=\"New\" type=\"1\">New</code> <span class=\"uitext\">クラスター</span>下位にPersistent Volume関連の新規メニューを追加</p>",
         "category": "Kubernetes",

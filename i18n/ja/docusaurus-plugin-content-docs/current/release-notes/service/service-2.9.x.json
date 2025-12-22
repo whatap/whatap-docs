@@ -189,7 +189,7 @@
       {
         "ver": "Service 2.9.0",
         "hash": "service-290",
-        "product": "新機能リリーズ",
+        "product": "新機能リリース",
         "type": "New",
         "desc": "<p><code class=\"New\" type=\"1\">New</code>インフラサーバー運用に必要な情報をエージェントが自動収集および保存、ユーザー定義フィールドを通じて追加した情報を照会し管理できる<span class=\"uitext\">サーバー インベントリ</span>メニューを追加</p>",
         "category": "Server"
@@ -197,7 +197,7 @@
       {
         "ver": "Service 2.9.0",
         "hash": "service-290",
-        "product": "新機能リリーズ",
+        "product": "新機能リリース",
         "type": "New",
         "desc": "<p><code class=\"New\" type=\"1\">New</code>ノード(Node)についての詳細情報が確認できる<span class=\"uitext\">ノードマップ</span>メニューを追加</p>",
         "category": "Kubernetes"
@@ -205,7 +205,7 @@
       {
         "ver": "Service 2.9.0",
         "hash": "service-290",
-        "product": "新機能リリーズ",
+        "product": "新機能リリース",
         "type": "New",
         "desc": "<p><code class=\"New\" type=\"1\">New</code>時間の流れによるノードの現状を確認できる<span class=\"uitext\">ノードタイムライン</span>メニューを追加</p>",
         "category": "Kubernetes"
@@ -213,7 +213,7 @@
       {
         "ver": "Service 2.9.0",
         "hash": "service-290",
-        "product": "新機能リリーズ",
+        "product": "新機能リリース",
         "type": "New",
         "desc": "<p><code class=\"New\" type=\"1\">New</code> <strong>CUBRID</strong> <code class=\"my\">V2</code>サービスを開始</p>",
         "category": "Database"
@@ -221,7 +221,7 @@
       {
         "ver": "Service 2.9.0",
         "hash": "service-290",
-        "product": "新機能リリーズ",
+        "product": "新機能リリース",
         "type": "New",
         "desc": "<p><code class=\"New\" type=\"1\">New</code>SQLスクリプトを実行して結果を確認できる<span class=\"uitext\">スクリプト·マネージャー</span>メニューを追加</p>",
         "category": "Database"

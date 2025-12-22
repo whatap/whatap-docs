@@ -334,7 +334,7 @@
       {
         "ver": "Service 2.3.0",
         "hash": "service-230",
-        "product": "新機能リリーズ",
+        "product": "新機能リリース",
         "type": "New",
         "desc": "<p><code class=\"New\">New</code> Redis, MongoDB <code class=\"my\">V2</code>サービス開始！</p>",
         "category": "Database",
@@ -343,7 +343,7 @@
       {
         "ver": "Service 2.3.0",
         "hash": "service-230",
-        "product": "新機能リリーズ",
+        "product": "新機能リリース",
         "type": "New",
         "desc": "<p><code class=\"New\">New</code> kube-apiserver収集指標リストを照会できる<span class=\"uitext\">kube-apiserver メトリクス照会</span>メニューを追加</p>",
         "category": "Kubernetes"
@@ -351,7 +351,7 @@
       {
         "ver": "Service 2.3.0",
         "hash": "service-230",
-        "product": "新機能リリーズ",
+        "product": "新機能リリース",
         "type": "New",
         "desc": "<p><code class=\"New\">New</code> Deploymentを基準にReplicaSet数及びコンテナ数、主な性能情報の統計、Pod個数などの情報を提供する<span class=\"uitext\">Deployment リスト</span>メニューを追加</p>",
         "category": "Kubernetes"
@@ -359,7 +359,7 @@
       {
         "ver": "Service 2.3.0",
         "hash": "service-230",
-        "product": "新機能リリーズ",
+        "product": "新機能リリース",
         "type": "New",
         "desc": "<p><code class=\"New\">New</code>ユーザーセッション ログを検索できる<span class=\"uitext\">ユーザーセッションログ検索</span>メニュー追加</p>",
         "category": "Browser"

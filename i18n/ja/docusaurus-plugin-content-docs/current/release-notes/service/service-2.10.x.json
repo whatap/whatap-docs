@@ -186,7 +186,7 @@
       {
         "ver": "Service 2.10.0",
         "hash": "service-2100",
-        "product": "新機能リリーズ",
+        "product": "新機能リリース",
         "type": "New",
         "desc": "<p><code class=\"New\" type=\"1\">New</code> Ingressリソースに関するメタデータと関連情報をモニタリングできる<span class=\"uitext\">Ingress リスト</span>メニューを追加</p>",
         "category": "Kubernetes"
@@ -194,7 +194,7 @@
       {
         "ver": "Service 2.10.0",
         "hash": "service-2100",
-        "product": "新機能リリーズ",
+        "product": "新機能リリース",
         "type": "New",
         "desc": "<p><code class=\"New\" type=\"1\">New</code>クラウドデータベースサーバーのリソース状況を収集し、モニタリングできる <span class=\"uitext\">クラウド設定</span>メニューを追加</p>",
         "category": "Database"
@@ -202,7 +202,7 @@
       {
         "ver": "Service 2.10.0",
         "hash": "service-2100",
-        "product": "新機能リリーズ",
+        "product": "新機能リリース",
         "type": "New",
         "desc": "<p><code class=\"New\" type=\"1\">New</code><strong>MySQL</strong>、<strong>PostgreSQL</strong>プラットホームの<code class=\"my\">V2</code>プロジェクトで<strong>Java</strong>プラットフォームプロジェクトとリアルタイムでセッションを連携・分析する機能を追加</p>",
         "category": "Database"
@@ -210,7 +210,7 @@
       {
         "ver": "Service 2.10.0",
         "hash": "service-2100",
-        "product": "新機能リリーズ",
+        "product": "新機能リリース",
         "type": "New",
         "desc": "<p><code class=\"New\" type=\"1\">New</code>ペイジのURLパス別のロード性能情報に関する統計を提供する<span class=\"uitext\">ページロード統計</span>メニューを追加</p>",
         "category": "Browser"

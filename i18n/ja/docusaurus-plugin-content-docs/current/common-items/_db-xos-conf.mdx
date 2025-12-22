@@ -34,13 +34,13 @@
 
 - **port_check** <span class='type'>String</span>
 
-  XOSエージェントでオプション値として指定したポートに直接接続を試みた後、失敗した場合、そのポート一覧を`db_port_check`カテゴリに転送します。
+  接続状態をチェックするサーバーとポートを指定します。IP:Portの形式で設定し、コンマ(,)で区切って複数登録が可能です。接続ができないサーバーとポートの一覧は、`db_port_check`カテゴリに保存されます。
 
   ```ini title="xos.conf"
   port_check=192.168.122.113:3333,192.168.122.113:3334
-  ```
+  ```  
 
-  指定したポートに接続できない場合、<Cmdname sid="side_analysis" className="uitext" /> &gt; <Cmdname sid="side_metricsSearch" className="uitext" />メニューで`db_port_check`カテゴリを選択した後、確認することができます。
+  接続ができなかったサーバーとポートの一覧を確認する場合、<Cmdname sid="side_analysis" className="uitext" /> &gt; <Cmdname sid="side_metricsSearch" className="uitext" />メニューで`db_port_check`カテゴリを選択します。
 
   ![port_check](/img/db-xos-conf-port-check-metrics.png)
 
@@ -52,8 +52,8 @@
   process_check=pmon,smon,tnslsnr,melong,haha
   ```
 
-  該当の文字列を含むプロセスが監視されない場合、`db_process_check`カテゴリにデータを転送します。例えば、**melong**、**haha**の2つのプロセスがない場合、<Cmdname sid="side_analysis" className="uitext" /> &gt; <Cmdname sid="side_metricsSearch" className="uitext" />メニューで`db_process_check`カテゴリを選択した後、確認できます。
-
+  指定された文字列を含むプロセス名が検知されない場合、`db_process_check`カテゴリにその文字列の一覧を保存します。例えば、**melong**、**haha**の2つのプロセスがない場合、<Cmdname sid="side_analysis" className="uitext" /> &gt; <Cmdname sid="side_metricsSearch" className="uitext" />メニューで`db_process_check`カテゴリを選択した後、確認できます。
+  
   ![process_check](/img/db-xos-conf-process-check-metrics.png)
 
   :::note
@@ -66,13 +66,13 @@
 
   既定値 `6`
 
-  `process_check`オプションを通じてプロセスの実行状態を収集する時間間隔を設定します。
+  `process_check`オプションに設定されたプロセスの実行状況を確認する間隔を設定します。(単位：秒)
 
 - **iplist_interval** <span class='type'>Second</span>
 
   既定値`0`(off)
 
-  データベースサーバーのIP一覧を収集する時間間隔を設定します。秒単位(最小3秒)で時間間隔(interval)を設定できます。
+  DBサーバーのIP一覧を収集すす間隔を設定します。(単位：秒、3以上で設定)
 
   :::note
 

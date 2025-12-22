@@ -95,7 +95,7 @@
       {
         "ver": "Service 2.8.0",
         "hash": "service-280",
-        "product": "新機能リリーズ",
+        "product": "新機能リリース",
         "type": "New",
         "desc": "<p><code class=\"New\" type=\"1\">New</code> <span class=\"uitext\">分析</span> &gt; <span class=\"uitext\">メトリクスチャート</span> <code class=\"newfunc\">New</code>メニューを追加</p>",
         "category": "共通",
@@ -104,7 +104,7 @@
       {
         "ver": "Service 2.8.0",
         "hash": "service-280",
-        "product": "新機能リリーズ",
+        "product": "新機能リリース",
         "type": "New",
         "desc": "<p><code class=\"New\" type=\"1\">New</code> <strong>Node.js</strong>の商品にログモニタリング機能を追加</p>",
         "category": "Application"
@@ -112,7 +112,7 @@
       {
         "ver": "Service 2.8.0",
         "hash": "service-280",
-        "product": "新機能リリーズ",
+        "product": "新機能リリース",
         "type": "New",
         "desc": "<p><code class=\"New\" type=\"1\">New</code>特定のIP別に呼び出したURLと呼出件数を照会できる<span class=\"uitext\">IP Transaction</span>メニューを追加</p>",
         "category": "Application"
@@ -120,7 +120,7 @@
       {
         "ver": "Service 2.8.0",
         "hash": "service-280",
-        "product": "新機能リリーズ",
+        "product": "新機能リリース",
         "type": "New",
         "desc": "<p><code class=\"New\" type=\"1\">New</code> Altibase <code class=\"my\">V2</code>サービスを開始！</p>",
         "category": "Database"

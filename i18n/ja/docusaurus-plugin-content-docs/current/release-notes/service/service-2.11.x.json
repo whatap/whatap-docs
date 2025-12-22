@@ -244,7 +244,7 @@
       {
         "ver": "Service 2.11.0",
         "hash": "service-2110",
-        "product": "新機能リリーズ",
+        "product": "新機能リリース",
         "type": "New",
         "desc": "<p><code class=\"New\" type=\"1\">New</code>クラウドおよびエンタープライズのオンプレミスインフラのモニタリングをサポートする<span class=\"uitext\">サーバーインベントリマップ</span>メニューを追加</p>",
         "category": "Server"
@@ -252,7 +252,7 @@
       {
         "ver": "Service 2.11.0",
         "hash": "service-2110",
-        "product": "新機能リリーズ",
+        "product": "新機能リリース",
         "type": "New",
         "desc": "<p><code class=\"New\" type=\"1\">New</code>Kubernetes環境でクラスター状態関連のデータ保存場所の役割を果たすetcdコンポーネントをモニタリングできる<span class=\"uitext\">etcd ダッシュボード</span>メニュー追加</p>",
         "category": "Kubernetes"
@@ -260,7 +260,7 @@
       {
         "ver": "Service 2.11.0",
         "hash": "service-2110",
-        "product": "新機能リリーズ",
+        "product": "新機能リリース",
         "type": "New",
         "desc": "<p><code class=\"New\" type=\"1\">New</code> <strong>SQL Server</strong> <code class=\"my\">V2</code>サービス開始</p>",
         "category": "Database"
@@ -268,7 +268,7 @@
       {
         "ver": "Service 2.11.0",
         "hash": "service-2110",
-        "product": "新機能リリーズ",
+        "product": "新機能リリース",
         "type": "New",
         "desc": "<p><code class=\"New\" type=\"1\">New</code>IPアドレスグループ単位で統計を分析できる<span class=\"uitext\">IP負荷統計</span>メニューを追加</p>",
         "category": "Browser"

@@ -229,8 +229,8 @@
         "hash": "v040",
         "product": "Go Agent",
         "type": "Changed",
-        "desc": "<p><code class=\"Changed\">Changed</code> SQL文章の正規化オプション設定の変更</p>",
-        "details": "<ul>\n<li>\n<p>SQL文章でパラメータを分離して、正規化する機能を常に有効にします。 <code>trace_sql_normalize_enabled</code>オプションを常に<code>true</code>に設定します。</p>\n</li>\n<li>\n<p>既に正規化オプションを無効に(正規化の中止設定)した状態であれば、正規化してパラメータを別表記する設定を有効にします。</p>\n<ul>\n<li><code>profile_sql_param_enabled</code>オプションを<code>true</code>に設定します。</li>\n<li>正規化されたパラメータを、別に暗号化して収集します。</li>\n<li><em>security.conf</em>の<code>paramkey</code>に復号化してデータを確認できます。</li>\n</ul>\n</li>\n</ul>"
+        "desc": "<p><code class=\"Changed\">Changed</code> SQL文の正規化オプション設定の変更</p>",
+        "details": "<ul>\n<li>\n<p>SQL文でパラメータを分離して、正規化する機能を常に有効にします。 <code>trace_sql_normalize_enabled</code>オプションを常に<code>true</code>に設定します。</p>\n</li>\n<li>\n<p>既に正規化オプションを無効に(正規化の中止設定)した状態であれば、正規化してパラメータを別表記する設定を有効にします。</p>\n<ul>\n<li><code>profile_sql_param_enabled</code>オプションを<code>true</code>に設定します。</li>\n<li>正規化されたパラメータを、別に暗号化して収集します。</li>\n<li><em>security.conf</em>の<code>paramkey</code>に復号化してデータを確認できます。</li>\n</ul>\n</li>\n</ul>"
       },
       {
         "ver": "v0.4.0",
