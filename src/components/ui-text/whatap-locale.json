@@ -12791,7 +12791,7 @@
   },
   "apm_rule_template_for_acttx": {
     "en": "An alert will be sent if the number of active transactions continues to exceed the standard. The default value of occurrence is 100.",
-    "ja": "アクティブトランザクションの発生数が基準を超えた状態が続く場合にはアラートが通知されます。発生数のデフォルト値は100件です。",
+    "ja": "アクティブトランザクションの発生数が基準を超えた状態が続く場合にはアラートが通知されます。発生数の既定値は100件です。",
     "ko": "액티브 트랜잭션 발생 건수가 기준치를 넘은 상태가 지속되면 알람이 갑니다. 발생 건수 디폴트 값은 100개 기준입니다.",
     "service_id": "DSC02197"
   },
@@ -26601,7 +26601,7 @@
   },
   "chart_display_default": {
     "en": "Chart display default",
-    "ja": "チャート表示デフォルト値",
+    "ja": "チャート表示既定値",
     "ko": "차트 표시 기본값",
     "service_id": "_04506"
   },

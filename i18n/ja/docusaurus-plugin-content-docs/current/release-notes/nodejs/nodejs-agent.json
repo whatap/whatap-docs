@@ -113,7 +113,7 @@
         "hash": "v0496",
         "product": "Node.js Agent",
         "type": "Changed",
-        "desc": "<p><code class=\"Changed\">Changed</code> <code>trace_sampling_enabled</code>オプションのデフォルト値を<code>true</code>に変更</p>"
+        "desc": "<p><code class=\"Changed\">Changed</code> <code>trace_sampling_enabled</code>オプションの既定値を<code>true</code>に変更</p>"
       },
       {
         "ver": "v0.4.96",

@@ -11,7 +11,7 @@
         "type": "Feature",
         "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> Segment情報収集のためのエージェントオプションを追加</p>",
         "category": "Altibase",
-        "details": "<ul>\n<li>\n<p><strong>segments</strong> <span class=\"type\">Boolean</span></p>\n<p>既定値 <code>true</code></p>\n<p>セグメントサイズの情報を収集します。 <span class=\"uitext\">統計/レポート</span> &gt; <span class=\"uitext\">テーブルスペース容量増減</span>メニューからデータベースまたはテーブルスペースを選択すると、サイズ情報を確認できます。</p>\n</li>\n<li>\n<p><strong>segments_min_size</strong> <span class=\"type\">Int</span></p>\n<p>デフォルト値<code>10</code> (単位: MB)</p>\n<p>セグメントサイズの情報を収集する最小単位の既定値は10MBです。 セグメントサイズ情報を収集する時に設定した値よりも小さいサイズのセグメントサイズ情報は収集しません。</p>\n</li>\n<li>\n<p><strong>segments_hour</strong> <span class=\"type\">Int</span></p>\n<p>既定値<code>5</code></p>\n<p>セグメントサイズの情報を収集する時刻を設定します。 既定値は<code>5</code>であり、朝の5時に収集を始めます。</p>\n</li>\n</ul>"
+        "details": "<ul>\n<li>\n<p><strong>segments</strong> <span class=\"type\">Boolean</span></p>\n<p>既定値 <code>true</code></p>\n<p>セグメントサイズの情報を収集します。 <span class=\"uitext\">統計/レポート</span> &gt; <span class=\"uitext\">テーブルスペース容量増減</span>メニューからデータベースまたはテーブルスペースを選択すると、サイズ情報を確認できます。</p>\n</li>\n<li>\n<p><strong>segments_min_size</strong> <span class=\"type\">Int</span></p>\n<p>既定値<code>10</code> (単位: MB)</p>\n<p>セグメントサイズの情報を収集する最小単位の既定値は10MBです。 セグメントサイズ情報を収集する時に設定した値よりも小さいサイズのセグメントサイズ情報は収集しません。</p>\n</li>\n<li>\n<p><strong>segments_hour</strong> <span class=\"type\">Int</span></p>\n<p>既定値<code>5</code></p>\n<p>セグメントサイズの情報を収集する時刻を設定します。 既定値は<code>5</code>であり、朝の5時に収集を始めます。</p>\n</li>\n</ul>"
       }
     ]
   },

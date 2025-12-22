@@ -836,7 +836,7 @@
         "hash": "v245",
         "product": "DBX",
         "type": "New",
-        "desc": "<p><code class=\"New\" type=\"1\">New</code>統計データ収集周期1分オプション追加(<code>sqlstat_send_interval=1</code>、デフォルト値: <code>5</code>)</p>",
+        "desc": "<p><code class=\"New\" type=\"1\">New</code>統計データ収集周期1分オプション追加(<code>sqlstat_send_interval=1</code>、既定値: <code>5</code>)</p>",
         "category": "MySQL"
       },
       {
@@ -844,7 +844,7 @@
         "hash": "v245",
         "product": "DBX",
         "type": "New",
-        "desc": "<p><code class=\"New\" type=\"1\">New</code>統計データ収集周期1分オプション追加(<code>sqlstat_send_interval=1</code>、デフォルト値: <code>5</code>)</p>",
+        "desc": "<p><code class=\"New\" type=\"1\">New</code>統計データ収集周期1分オプション追加(<code>sqlstat_send_interval=1</code>、既定値: <code>5</code>)</p>",
         "category": "Oracle"
       },
       {
@@ -852,7 +852,7 @@
         "hash": "v245",
         "product": "DBX",
         "type": "New",
-        "desc": "<li><code class=\"New\" type=\"1\">New</code>統計データ収集周期1分オプション追加(<code>sqlstat_send_interval=1</code>、デフォルト値: <code>5</code>)</li>",
+        "desc": "<li><code class=\"New\" type=\"1\">New</code>統計データ収集周期1分オプション追加(<code>sqlstat_send_interval=1</code>、既定値: <code>5</code>)</li>",
         "category": "Oracle Pro"
       }
     ]

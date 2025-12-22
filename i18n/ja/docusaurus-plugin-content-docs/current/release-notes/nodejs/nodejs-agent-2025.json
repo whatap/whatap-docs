@@ -176,7 +176,7 @@
         "product": "Node.js Agent",
         "type": "New",
         "desc": "<p><code class=\"New\" type=\"1\">New</code> <code>profile_mongodb_param_enabled</code> <span class=\"type\">Boolean</span></p>",
-        "details": "<ul><li><p>デフォルト値：<code>false</code></p></li><li><p>mongoose モジュールをトレースする際、クエリ内の実際のパラメータ値を表示できるオプションを追加</p></li></ul>"
+        "details": "<ul><li><p>既定値：<code>false</code></p></li><li><p>mongoose モジュールをトレースする際、クエリ内の実際のパラメータ値を表示できるオプションを追加</p></li></ul>"
       },
       {
         "ver": "v0.5.22",
@@ -242,7 +242,7 @@
         "product": "Node.js Agent",
         "type": "New",
         "desc": "<p><code class=\"New\" type=\"1\">New</code> Prisma ORM使用のためのオプションを追加</p>",
-        "details": "<ul>\n<li>\n<p><strong>prisma_read_func_name</strong> <span class=\"type\">String</span></p>\n<p>デフォルト値<code>read</code></p>\n<p>Replication使用時にRead-onlyクライアントを取得するために呼び出す関数名を設定します。</p>\n</li>\n<li>\n<p><strong>prisma_database_url_name</strong> <span class=\"type\">String</span></p>\n<p>デフォルト値<code>DATABASE_URL</code></p>\n<p>Prisma ORMで、データベース接続URLが保存された環境変数名を設定します。</p>\n</li>\n</ul>"
+        "details": "<ul>\n<li>\n<p><strong>prisma_read_func_name</strong> <span class=\"type\">String</span></p>\n<p>既定値<code>read</code></p>\n<p>Replication使用時にRead-onlyクライアントを取得するために呼び出す関数名を設定します。</p>\n</li>\n<li>\n<p><strong>prisma_database_url_name</strong> <span class=\"type\">String</span></p>\n<p>既定値<code>DATABASE_URL</code></p>\n<p>Prisma ORMで、データベース接続URLが保存された環境変数名を設定します。</p>\n</li>\n</ul>"
       }
     ]
   },

@@ -429,7 +429,7 @@
         "hash": "service-2110",
         "product": "Application",
         "type": "Fixed",
-        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code><strong>Java</strong>プラットホームの<span class=\"uitext\">管理</span> &gt; <span class=\"uitext\">エージェント設定</span>メニューで<code>sigar_enabled</code>オプションのデフォルト値を<code>true</code>から<code>false</code>に変更</p>"
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code><strong>Java</strong>プラットホームの<span class=\"uitext\">管理</span> &gt; <span class=\"uitext\">エージェント設定</span>メニューで<code>sigar_enabled</code>オプションの既定値を<code>true</code>から<code>false</code>に変更</p>"
       },
       {
         "ver": "Service 2.11.0",

@@ -55,7 +55,7 @@
         "product": "Go Agent",
         "type": "Fixed",
         "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> トランザクション収集エラーを修正</p>",
-        "details": "<ul>\n<li>エラーメッセージを収集する過程でエラーが発生し、トランザクションが正常に収集されない問題を修正</li>\n<li>問題となるオプションのデフォルト値をfalseに変更</li>\n<li>txtext_txname_enabled=false</li>\n<li>txtext_error_enabled=false</li>\n<li>v0.4.4を使用している場合、これらのオプションを無効にすることで問題を解決可能</li>\n</ul>"
+        "details": "<ul>\n<li>エラーメッセージを収集する過程でエラーが発生し、トランザクションが正常に収集されない問題を修正</li>\n<li>問題となるオプションの既定値をfalseに変更</li>\n<li>txtext_txname_enabled=false</li>\n<li>txtext_error_enabled=false</li>\n<li>v0.4.4を使用している場合、これらのオプションを無効にすることで問題を解決可能</li>\n</ul>"
       }
     ]
   },
@@ -222,7 +222,7 @@
         "product": "Go Agent",
         "type": "Changed",
         "desc": "<p><code class=\"Changed\">Changed</code>既存<em>paramkey.txt</em>代わりに<em>security.conf</em>ファイルを使用</p>",
-        "details": "<p>既存<em>security.conf</em>ファイルの<code>paramkey</code>キー値を使用します。 デフォルト値は、ランダム値ではなく<code>WHATAP</code>に指定するように変更します。 <code>WHATAP</code>指定されると、キーの入力なしで復号化できます。</p>"
+        "details": "<p>既存<em>security.conf</em>ファイルの<code>paramkey</code>キー値を使用します。 既定値は、ランダム値ではなく<code>WHATAP</code>に指定するように変更します。 <code>WHATAP</code>指定されると、キーの入力なしで復号化できます。</p>"
       },
       {
         "ver": "v0.4.0",

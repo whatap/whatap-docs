@@ -324,7 +324,7 @@
         "product": "Kubernetes Agent",
         "type": "Feature",
         "desc": "<p><code class=\"Feature\">Feature</code>ファイルシステムが、nfsであるディスクのメトリクス収集オプションを追加</p>",
-        "details": "<ul>\n<li><code>collect_nfs_disk_enabled</code>: nfsディスクの収集可否を決定するオプションです。 デフォルト値は<code>true</code>です。</li>\n</ul>"
+        "details": "<ul>\n<li><code>collect_nfs_disk_enabled</code>: nfsディスクの収集可否を決定するオプションです。 既定値は<code>true</code>です。</li>\n</ul>"
       }
     ]
   },

@@ -275,14 +275,14 @@
         "hash": "v104",
         "product": "DMX h",
         "type": "Feature",
-        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <code>plan_elapse</code> <code>bind_elapse</code> デフォルト値を5秒 → 3秒に変更</p>"
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <code>plan_elapse</code> <code>bind_elapse</code> 既定値を5秒 → 3秒に変更</p>"
       },
       {
         "ver": "v1.0.4h",
         "hash": "v104",
         "product": "DMX h",
         "type": "Feature",
-        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <code>sqlstat</code>伝送周期のデフォルト値を5分 → 1分に変更</p>"
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <code>sqlstat</code>伝送周期の既定値を5分 → 1分に変更</p>"
       },
       {
         "ver": "v1.0.4h",

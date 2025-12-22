@@ -126,7 +126,7 @@
         "product": "PHP Agent",
         "type": "Changed",
         "desc": "<p><code class=\"Changed\">Changed</code>既存<em>paramkey.txt</em>代わりに<em>security.conf</em>ファイルを使用</p>",
-        "details": "<p>既存<em>security.conf</em>ファイルの<code>paramkey</code>キー値を使用します。 デフォルト値は、ランダム値ではなく<code>WHATAP</code>に指定するように変更します。 <code>WHATAP</code>指定されると、キーの入力なしで復号化できます。</p>"
+        "details": "<p>既存<em>security.conf</em>ファイルの<code>paramkey</code>キー値を使用します。 既定値は、ランダム値ではなく<code>WHATAP</code>に指定するように変更します。 <code>WHATAP</code>指定されると、キーの入力なしで復号化できます。</p>"
       },
       {
         "ver": "v2.8.0",
