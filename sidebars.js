@@ -4263,14 +4263,13 @@ const sidebars = {
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/java/java-2_2_66',
+                  id: 'release-notes/java/java-2_2_67',
                   className: 'new',
                 },
+                'release-notes/java/java-2_2_66',
                 'release-notes/java/java-2_2_65',
                 'release-notes/java/java-2_2_64',
                 'release-notes/java/java-2_2_63',
-                'release-notes/java/java-2_2_62',
-                'release-notes/java/java-2_2_61',
                 'release-notes/java/java-previous',
               ],
             },
