@@ -1,0 +1,250 @@
+[
+    {
+        "url": "https://docs.whatap.io/release-notes/service/service-2_24_x",
+        "ver": "Service 2.24.0",
+        "date": "2025-12-23",
+        "Lists": [
+            {
+                "ver": "Service 2.24.0",
+                "hash": "service-2240",
+                "product": "共通",
+                "type": "Feature",
+                "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">警告通知</span> &gt; <span class=\"uitext\">イベント受信設定</span> サードパーティプラグイン追加案内モーダルに説明行を追加</p>"
+            },
+            {
+                "ver": "Service 2.24.0",
+                "hash": "service-2240",
+                "product": "共通",
+                "type": "Feature",
+                "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">警告通知</span> &gt; <span class=\"uitext\">イベント設定</span> メトリクスタブおよびリアルタイムログタブでイベント名、イベント受信タグ、対象検索が可能となるように改善</p>"
+            },
+            {
+                "ver": "Service 2.24.0",
+                "hash": "service-2240",
+                "product": "共通",
+                "type": "Feature",
+                "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">分析</span> &gt; <span class=\"uitext\">メトリクスチャート</span> <code class=\"newfunc\">New</code> 指標時間マージ機能を追加</p>"
+            },
+            {
+                "ver": "Service 2.24.0",
+                "hash": "service-2240",
+                "product": "共通",
+                "type": "Feature",
+                "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">アカウント管理</span> &gt; <span class=\"uitext\">アクセス制御</span> IP 追加時に現在の自分の IP を適用できる機能を追加</p>"
+            },
+            {
+                "ver": "Service 2.24.0",
+                "hash": "service-2240",
+                "product": "共通",
+                "type": "Fixed",
+                "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">警告通知</span> &gt; <span class=\"uitext\">イベント受信設定</span> メール受信をブロックした場合、WhatsApp 通知が「送信停止状態」と表示されない問題を修正</p>"
+            },
+            {
+                "ver": "Service 2.24.0",
+                "hash": "service-2240",
+                "product": "共通",
+                "type": "Fixed",
+                "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">警告通知</span> &gt; <span class=\"uitext\">イベント履歴</span> CSV ダウンロードで 10,000 行をダウンロードできるように修正</p>"
+            },
+            {
+                "ver": "Service 2.24.0",
+                "hash": "service-2240",
+                "product": "共通",
+                "category": "OpenMetrics",
+                "type": "Feature",
+                "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">HAProxy for MySQL テンプレート</span> を追加</p>"
+            },
+            {
+                "ver": "Service 2.24.0",
+                "hash": "service-2240",
+                "product": "Application",
+                "type": "Feature",
+                "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">警告通知</span> &gt; <span class=\"uitext\">イベント設定</span> 異常値検知イベント追加時に発生回数および一時停止設定が可能となるように追加</p>"
+            },              
+            {
+                "ver": "Service 2.24.0",
+                "hash": "service-2240",
+                "product": "Application",
+                "type": "Fixed",
+                "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">ダッシュボード</span> &gt; <span class=\"uitext\">アプリケーションダッシュボード</span> プリセットに保存されたエージェント選択が断続的に適用されない問題を改善</p>"
+            },
+            {
+                "ver": "Service 2.24.0",
+                "hash": "service-2240",
+                "product": "Application",
+                "type": "Fixed",
+                "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">分析</span> &gt; <span class=\"uitext\">日別アプリケーション状況</span> 選択したエージェントがデータ照会に反映されない問題を修正</p>"
+            },
+            {
+                "ver": "Service 2.24.0",
+                "hash": "service-2240",
+                "product": "Application",
+                "type": "Fixed",
+                "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">イベント設定</span> &gt; <span class=\"uitext\">トランザクション</span> イベント名に 255 文字の長さ制限を適用</p>"
+            },
+            {
+                "ver": "Service 2.24.0",
+                "hash": "service-2240",
+                "product": "Application",
+                "category": "Python",
+                "type": "Feature",
+                "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">イベント設定</span> &gt; <span class=\"uitext\">トランザクション</span> イベント名に 255 文字の長さ制限を適用</p>"
+            },              
+            {
+                "ver": "Service 2.24.0",
+                "hash": "service-2240",
+                "product": "Server",
+                "type": "Feature",
+                "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">サーバーインベントリ</span> テーブル値を修正した後、更新されたデータを読み込む際にローディングコンポーネントが表示されるように改善</p>"
+            },
+            {
+                "ver": "Service 2.24.0",
+                "hash": "service-2240",
+                "product": "Server",
+                "type": "Feature",
+                "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">ダッシュボード</span> &gt; <span class=\"uitext\">Flex ボード</span> 下部ウィジェットからサーバー詳細ページへ移動できるリンクを追加</p>",
+                "details": "<ul>\n<li>サーバープロセス CPU TopN</li>\n<li>サーバープロセス Memory TopN</li>\n</ul>"
+            },
+            {
+                "ver": "Service 2.24.0",
+                "hash": "service-2240",
+                "product": "Server",
+                "type": "Feature",
+                "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">GPU インベントリ</span> エージェントが事前定義していないフィールドを収集した場合でも、カラム設定で選択できるように改善</p>"
+            },
+            {
+                "ver": "Service 2.24.0",
+                "hash": "service-2240",
+                "product": "Server",
+                "type": "Changed",
+                "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> <span class=\"uitext\">GPU インベントリ</span> エージェントが事前定義していないフィールドを収集した場合でも、カラム設定で選択できるように改善</p>",
+                "details": "<ul>\n<li>Connection と Hostname カラムを必須カラムとして指定</li>\n<li>固定カラムは並び順を変更できないように変更</li>\n<li>選択されたカラムに編集可能な項目がない場合、編集ボタンを無効化</li>\n<li>編集ボタンが無効化されている場合、ツールチップで理由を表示</li>\n</ul>"
+            },              
+            {
+                "ver": "Service 2.24.0",
+                "hash": "service-2240",
+                "product": "Server",
+                "type": "Fixed",
+                "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">GPU インベントリ</span> &gt; <span class=\"uitext\">カラム設定</span> 数値カラム名が登録できない問題、および登録後に input が消えない問題を修正</p>"
+            },
+            {
+                "ver": "Service 2.24.0",
+                "hash": "service-2240",
+                "product": "Server",
+                "type": "Fixed",
+                "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">GPU インベントリ</span> <span class=\"uitext\">GPU 性能サマリー</span> テーブルヘッダー幅の調整時にソートアイコンが隠れないように改善</p>"
+            },
+            {
+                "ver": "Service 2.24.0",
+                "hash": "service-2240",
+                "product": "Server",
+                "type": "Fixed",
+                "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">リソースボード</span> TOP 5 パネルウィジェットで Contents ボタンを選択した際、ドロップダウンで選択項目がハイライトされない問題を修正</p>"
+            },
+            {
+                "ver": "Service 2.24.0",
+                "hash": "service-2240",
+                "product": "Server",
+                "type": "Fixed",
+                "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">サーバー詳細</span> <code>プロジェクトにインストールされたサーバーがありません。</code> というメッセージが一瞬表示された後、データが表示される問題を改善</p>"
+            },
+            {
+                "ver": "Service 2.24.0",
+                "hash": "service-2240",
+                "product": "Server",
+                "type": "Fixed",
+                "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">メトリクスエクスプローラ</span> 凡例ラベルに <code>,</code> が含まれるチャートの CSV ダウンロードで、カラムヘッダーが分割されて表示される問題を修正</p>"
+            },
+            {
+                "ver": "Service 2.24.0",
+                "hash": "service-2240",
+                "product": "Server",
+                "type": "Fixed",
+                "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">サーバーインベントリ</span></p>",
+                "details": "<ul>\n<li>編集モードでテーブルスクロールを移動した際、入力した値が消える問題を修正</li>\n<li>編集モードで最後に入力した値がまれに更新されない問題を修正</li>\n</ul>"
+            },              
+            {
+                "ver": "Service 2.24.0",
+                "hash": "service-2240",
+                "product": "Database",
+                "type": "Feature",
+                "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">管理</span> &gt; <span class=\"uitext\">エージェント一覧</span> 画面テーブルのアクティブ/非アクティブカラムを分離して表示するように改善</p>"
+            },
+            {
+                "ver": "Service 2.24.0",
+                "hash": "service-2240",
+                "product": "Database",
+                "type": "Feature",
+                "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">ダッシュボード</span> &gt; <span class=\"uitext\">インスタンスモニタリング</span>, <span class=\"uitext\">マルチインスタンスモニタリング</span> CPU とメモリウィジェットを改善</p>",
+                "details": "<ul>\n<li>cpu_iowait 指標を選択できるオプションを追加</li>\n<li>CPU ウィジェットのイコライザーバーをクリックした際、現在のプロセス情報を確認できるテーブルを追加</li>\n<li>メモリウィジェットのイコライザーバーにホバーすると mem_total、mem_available 指標も表示されるように追加</li>\n</ul>"
+            },
+            {
+                "ver": "Service 2.24.0",
+                "hash": "service-2240",
+                "product": "Database",
+                "type": "Changed",
+                "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> <span class=\"uitext\">SQL 詳細</span> ポップアップのデフォルトフォーマットを無効化するように変更</p>"
+            },
+            {
+                "ver": "Service 2.24.0",
+                "hash": "service-2240",
+                "product": "Database",
+                "type": "Fixed",
+                "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">ダッシュボード</span> ツリー形式テーブルのちらつき現象を改善</p>"
+            },
+            {
+                "ver": "Service 2.24.0",
+                "hash": "service-2240",
+                "product": "Database",
+                "type": "Fixed",
+                "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> インスタンスセレクターに変更された時間が反映されない問題を修正</p>"
+            },
+            {
+                "ver": "Service 2.24.0",
+                "hash": "service-2240",
+                "product": "Database",
+                "category": "MySQL, PostgreSQL",
+                "type": "Feature",
+                "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">ダッシュボード</span> &gt; <span class=\"uitext\">スロークエリ</span> テーブルにソート機能を追加</p>"
+            },
+            {
+                "ver": "Service 2.24.0",
+                "hash": "service-2240",
+                "product": "Database",
+                "category": "IBM DB2",
+                "type": "Fixed",
+                "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">ダッシュボード</span> &gt; <span class=\"uitext\">インスタンスモニタリング</span> Direct I/O ウィジェットの指標を変更</p>",
+                "details": "<ul>\n<li>direct_read → direct_reads</li>\n<li>direct_write → direct_writes</li>\n</ul>"
+            },
+            {
+                "ver": "Service 2.24.0",
+                "hash": "service-2240",
+                "product": "Database",
+                "category": "Tibero",
+                "type": "Changed",
+                "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> <span class=\"uitext\">ロックツリー</span> カラムを変更</p>"
+            },              
+            {
+                "ver": "Service 2.24.0",
+                "hash": "service-2240",
+                "product": "Browser",
+                "type": "Feature",
+                "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">AJAX 分析</span> &gt; <span class=\"uitext\">マルチトランザクション</span> を追加</p>"
+            },
+            {
+                "ver": "Service 2.24.0",
+                "hash": "service-2240",
+                "product": "URL",
+                "type": "Fixed",
+                "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> イベント修正時に一覧へ反映されない問題を修正</p>"
+            },
+            {
+                "ver": "Service 2.24.0",
+                "hash": "service-2240",
+                "product": "URL",
+                "type": "Fixed",
+                "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> 登録された URL がない場合、「データなし」を表示するように修正</p>"
+            }              
+        ]
+    }
+]
