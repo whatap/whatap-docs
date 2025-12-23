@@ -1,5 +1,43 @@
 [
   {
+    "url": "https://docs.whatap.io/release-notes/python/python-1_9_0",
+    "ver": "v1.9.0",
+    "date": "2025-12-23",
+    "Lists": [
+      {
+        "ver": "v1.9.0",
+        "hash": "v190",
+        "product": "Python Agent",
+        "type": "New",
+        "desc": "<p><code class=\"New\" type=\"1\">New</code> Windows OS support</p>",
+        "details": "<ul><li>Windows Server 2008 R2, Windows 7 or higher</li></ul>"
+      },
+      {
+        "ver": "v1.9.0",
+        "hash": "v190",
+        "product": "Python Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <strong>ACTIVE_STATUS</strong> monitoring bug fix</p>",
+        "details": "<ul><li>Fixed an issue where data was not properly cleaned up when multi-transaction events occurred</li></ul>"
+      },
+      {
+        "ver": "v1.9.0",
+        "hash": "v190",
+        "product": "Python Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <strong>HTTPC</strong> tracing bug fix</p>",
+        "details": "<ul><li>Fixed an issue where the return value of the original function was not passed correctly</li></ul>"
+      },
+      {
+        "ver": "v1.9.0",
+        "hash": "v190",
+        "product": "Python Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Fixed an issue where Container IDs were collected incorrectly in Kubernetes container environments</p>"
+      }
+    ]
+  },  
+  {
     "url": "https://docs.whatap.io/release-notes/python/python-1_8_14",
     "ver": "v1.8.14",
     "date": "2025-11-11",

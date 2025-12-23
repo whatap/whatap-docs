@@ -1,5 +1,43 @@
 [
   {
+    "url": "https://docs.whatap.io/release-notes/python/python-1_9_0",
+    "ver": "v1.9.0",
+    "date": "2025-12-23",
+    "Lists": [
+      {
+        "ver": "v1.9.0",
+        "hash": "v190",
+        "product": "Python Agent",
+        "type": "New",
+        "desc": "<p><code class=\"New\" type=\"1\">New</code> Windows OS をサポート</p>",
+        "details": "<ul><li>Windows Server 2008 R2、Windows 7 以上</li></ul>"
+      },
+      {
+        "ver": "v1.9.0",
+        "hash": "v190",
+        "product": "Python Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <strong>ACTIVE_STATUS</strong> モニタリングのバグ修正</p>",
+        "details": "<ul><li>マルチトランザクション発生時にデータが正常に整理されない問題を修正</li></ul>"
+      },
+      {
+        "ver": "v1.9.0",
+        "hash": "v190",
+        "product": "Python Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <strong>HTTPC</strong> トレースのバグ修正</p>",
+        "details": "<ul><li>元の関数の戻り値が正しく渡されない問題を修正</li></ul>"
+      },
+      {
+        "ver": "v1.9.0",
+        "hash": "v190",
+        "product": "Python Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Kubernetes コンテナ環境で Container ID が異常値として収集される問題を修正</p>"
+      }
+    ]
+  },  
+  {
     "url": "https://docs.whatap.io/release-notes/python/python-1_8_14",
     "ver": "v1.8.14",
     "date": "2025-11-11",
