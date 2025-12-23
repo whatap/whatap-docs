@@ -1,6 +1,6 @@
 <section>
 
-<Xclude product="oracle-pro,cubrid,mssql,sapase">
+<Xclude product="oracle-pro,cubrid,mssql,sapase,mongodb">
 
 <Tabs groupId='os'>
 
@@ -172,16 +172,6 @@ uid.bat "DB_USER" "DB_PASSWORD"
 
 </InDoc>
 
-<InDoc product="oracle,oracle-v1,tibero,cubrid,cubrid-v1,mssql,mssql-v1,mysql,altibase,altibase-v1,postgresql">
-
-{/* 디폴트 플랜 조회하기 */}
-
-import CheckDefaultPlan from '../common-items/_import_db-check-default-plan.mdx';
-
-<CheckDefaultPlan level={4} />
-
-</InDoc>
-
 <InDoc product="sapase">
 
 <Tabs groupId='os'>
@@ -229,6 +219,82 @@ uid.bat "LOGIN" "PASSWORD"
 
 </TabItem>
 </Tabs>
+
+</InDoc>
+
+<InDoc product="mongodb">
+
+<Tabs>
+<TabItem value="linux" label="Linux">
+```bash
+./uid.sh {DB_USER} {DB_PASSWORD}
+```
+
+</TabItem>
+<TabItem value="windows" label="Windows">
+```batch
+uid.bat {DB_USER} {DB_PASSWORD}
+```
+
+</TabItem>
+</Tabs>
+
+:::info
+
+* 最初に一度設定すると、その後は暗号化されたUIDを通じて監視対象データベースサーバーからデータ収集を行います。
+* DBユーザーファイルを作成するには、プロジェクトアクセスキーが*whatap.conf*ファイルに入力されている必要があります。 [アクセスキーの確認](#)
+
+:::
+
+### 特殊文字を含む場合の処理方法
+
+MongoDB環境で`DB_USER`または`DB_PASSWORD`に特殊文字が含まれる場合、次の手順で処理する必要があります。
+
+#### ステップ1:パーセントエンコーディングの適用(必須)
+
+MongoDBは特殊文字が含まれる場合、<b>パーセントエンコーディング(Percent Encoding)</b>を先に適用する必要があります。
+
+**例**
+
+* 元のパスワード:`whatap@#`
+* パーセントエンコーディング適用後:`whatap%40%23`
+
+:::tip
+
+パーセントエンコーディング規則の詳細については、[MongoDB Connection String URI Format](https://www.mongodb.com/docs/manual/reference/connection-string/)公式ドキュメントを参照してください。
+
+:::
+
+#### ステップ2:エスケープ文字の適用(必要な場合)
+
+パーセントエンコーディング適用後もシェルで解釈される特殊文字(`!`、`\`、`$`など)が含まれる場合、エスケープ文字(`\`)を追加で適用する必要があります。
+
+**例**
+```bash
+# 基本的な使用
+./uid.sh whatap whatap%40%23
+
+# シェル解釈の問題が発生した場合
+./uid.sh whatap whatap\%40\%23
+```
+
+:::warning 重要
+
+* MongoDBは特殊文字を含む場合、**パーセントエンコーディングが優先**です。
+* 適用順序:**パーセントエンコーディング** → **必要に応じてエスケープ文字**
+* パーセントエンコーディングを適用しないと、UID生成は成功してもDB接続が失敗する可能性があります。
+
+:::
+
+</InDoc>
+
+<InDoc product="oracle,oracle-v1,tibero,cubrid,cubrid-v1,mssql,mssql-v1,mysql,altibase,altibase-v1,postgresql">
+
+{/* 디폴트 플랜 조회하기 */}
+
+import CheckDefaultPlan from '../common-items/_import_db-check-default-plan.mdx';
+
+<CheckDefaultPlan level={4} />
 
 </InDoc>
 
