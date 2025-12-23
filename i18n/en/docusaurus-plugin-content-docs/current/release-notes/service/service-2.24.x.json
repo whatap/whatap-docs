@@ -1,0 +1,250 @@
+[
+    {
+        "url": "https://docs.whatap.io/release-notes/service/service-2_24_x",
+        "ver": "Service 2.24.0",
+        "date": "2025-12-23",
+        "Lists": [
+            {
+                "ver": "Service 2.24.0",
+                "hash": "service-2240",
+                "product": "Common",
+                "type": "Feature",
+                "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">Alert Notifications</span> &gt; <span class=\"uitext\">Event Receive Settings</span> Added line descriptions to the modal for adding third-party plugins</p>"
+            },
+            {
+                "ver": "Service 2.24.0",
+                "hash": "service-2240",
+                "product": "Common",
+                "type": "Feature",
+                "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">Alert Notifications</span> &gt; <span class=\"uitext\">Event Settings</span> Updated the Metrics tab and Real-time Log tab to allow searching by event name, event receive tags, and target</p>"
+            },
+            {
+                "ver": "Service 2.24.0",
+                "hash": "service-2240",
+                "product": "Common",
+                "type": "Feature",
+                "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">Analysis</span> &gt; <span class=\"uitext\">Metrics Chart</span> <code class=\"newfunc\">New</code> Added a metric time merge feature</p>"
+            },
+            {
+                "ver": "Service 2.24.0",
+                "hash": "service-2240",
+                "product": "Common",
+                "type": "Feature",
+                "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">Account Management</span> &gt; <span class=\"uitext\">Access Control</span> Added a feature to apply the user's current IP when adding an IP</p>"
+            },              
+            {
+                "ver": "Service 2.24.0",
+                "hash": "service-2240",
+                "product": "Common",
+                "type": "Fixed",
+                "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">Alert Notifications</span> &gt; <span class=\"uitext\">Event Receive Settings</span> Fixed an issue where WhatsApp notifications did not display 'sending disabled' when email reception was blocked</p>"
+            },              
+            {
+                "ver": "Service 2.24.0",
+                "hash": "service-2240",
+                "product": "Common",
+                "type": "Fixed",
+                "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">Alert Notifications</span> &gt; <span class=\"uitext\">Event History</span> Updated CSV download to allow downloading up to 10,000 lines</p>"
+            },
+            {
+                "ver": "Service 2.24.0",
+                "hash": "service-2240",
+                "product": "Common",
+                "category": "OpenMetrics",
+                "type": "Feature",
+                "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> Added <span class=\"uitext\">HAProxy for MySQL template</span></p>"
+            },
+            {
+                "ver": "Service 2.24.0",
+                "hash": "service-2240",
+                "product": "Application",
+                "type": "Feature",
+                "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">Alert Notifications</span> &gt; <span class=\"uitext\">Event Settings</span> Added options to configure occurrence count and pause settings when adding anomaly detection events</p>"
+            },
+            {
+                "ver": "Service 2.24.0",
+                "hash": "service-2240",
+                "product": "Application",
+                "type": "Fixed",
+                "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">Dashboard</span> &gt; <span class=\"uitext\">Application Dashboard</span> Improved an issue where the agent selection saved in presets was intermittently not applied</p>"
+            },
+            {
+                "ver": "Service 2.24.0",
+                "hash": "service-2240",
+                "product": "Application",
+                "type": "Fixed",
+                "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">Analysis</span> &gt; <span class=\"uitext\">Daily Application Status</span> Fixed an issue where the selected agent was not reflected in data queries</p>"
+            },
+            {
+                "ver": "Service 2.24.0",
+                "hash": "service-2240",
+                "product": "Application",
+                "type": "Fixed",
+                "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">Event Settings</span> &gt; <span class=\"uitext\">Transaction</span> Applied a 255-character length limit to event names</p>"
+            },
+            {
+                "ver": "Service 2.24.0",
+                "hash": "service-2240",
+                "product": "Application",
+                "category": "Python",
+                "type": "Feature",
+                "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">Event Settings</span> &gt; <span class=\"uitext\">Transaction</span> Applied a 255-character length limit to event names</p>"
+            },
+            {
+                "ver": "Service 2.24.0",
+                "hash": "service-2240",
+                "product": "Server",
+                "type": "Feature",
+                "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">Server Inventory</span> Improved behavior to display a loading component when updated data is loaded after modifying table values</p>"
+            },
+            {
+                "ver": "Service 2.24.0",
+                "hash": "service-2240",
+                "product": "Server",
+                "type": "Feature",
+                "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">Dashboard</span> &gt; <span class=\"uitext\">Flex Board</span> Added links to navigate to the server detail page from the widgets below</p>",
+                "details": "<ul>\n<li>Server Process CPU TopN</li>\n<li>Server Process Memory TopN</li>\n</ul>"
+            },
+            {
+                "ver": "Service 2.24.0",
+                "hash": "service-2240",
+                "product": "Server",
+                "type": "Feature",
+                "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">GPU Inventory</span> Improved so that fields not predefined by the agent can be selected in column settings</p>"
+            },
+            {
+                "ver": "Service 2.24.0",
+                "hash": "service-2240",
+                "product": "Server",
+                "type": "Changed",
+                "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> <span class=\"uitext\">GPU Inventory</span> Improved so that fields not predefined by the agent can be selected in column settings</p>",
+                "details": "<ul>\n<li>Set Connection and Hostname columns as required columns</li>\n<li>Fixed table columns can no longer have their order changed</li>\n<li>If none of the selected columns are editable, the edit button becomes disabled</li>\n<li>When the edit button is disabled, a tooltip explains the reason</li>\n</ul>"
+            },              
+            {
+                "ver": "Service 2.24.0",
+                "hash": "service-2240",
+                "product": "Server",
+                "type": "Fixed",
+                "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">GPU Inventory</span> &gt; <span class=\"uitext\">Column Settings</span> Fixed an issue where numeric column names could not be registered and where the input field did not disappear after registration</p>"
+            },
+            {
+                "ver": "Service 2.24.0",
+                "hash": "service-2240",
+                "product": "Server",
+                "type": "Fixed",
+                "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">GPU Inventory</span> <span class=\"uitext\">GPU Performance Summary</span> Improved behavior so the sort icon is not hidden when adjusting table header width</p>"
+            },
+            {
+                "ver": "Service 2.24.0",
+                "hash": "service-2240",
+                "product": "Server",
+                "type": "Fixed",
+                "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">Resource Board</span> Fixed an issue where selecting the Contents button in the TOP 5 Panel widget did not highlight the selected option in the dropdown</p>"
+            },
+            {
+                "ver": "Service 2.24.0",
+                "hash": "service-2240",
+                "product": "Server",
+                "type": "Fixed",
+                "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">Server Detail</span> Improved an issue where the message <code>There are no servers installed in the project.</code> briefly appeared before the data was displayed</p>"
+            },
+            {
+                "ver": "Service 2.24.0",
+                "hash": "service-2240",
+                "product": "Server",
+                "type": "Fixed",
+                "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">Metrics Explorer</span> Fixed an issue where CSV downloads from charts whose legend labels contained a comma (<code>,</code>) caused the column header to split</p>"
+            },
+            {
+                "ver": "Service 2.24.0",
+                "hash": "service-2240",
+                "product": "Server",
+                "type": "Fixed",
+                "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">Server Inventory</span></p>",
+                "details": "<ul>\n<li>Fixed a bug where entered values disappeared when scrolling the table in edit mode</li>\n<li>Fixed an issue where the last entered input value occasionally failed to update in edit mode</li>\n</ul>"
+            },              
+            {
+                "ver": "Service 2.24.0",
+                "hash": "service-2240",
+                "product": "Database",
+                "type": "Feature",
+                "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">Management</span> &gt; <span class=\"uitext\">Agent List</span> Improved the table to display active and inactive columns separately</p>"
+            },
+            {
+                "ver": "Service 2.24.0",
+                "hash": "service-2240",
+                "product": "Database",
+                "type": "Feature",
+                "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">Dashboard</span> &gt; <span class=\"uitext\">Instance Monitoring</span>, <span class=\"uitext\">Multi-instance Monitoring</span> Improved CPU and Memory widgets</p>",
+                "details": "<ul>\n<li>Added an option to select the cpu_iowait metric</li>\n<li>Added a table to display current process information when clicking the equalizer bar in the CPU widget</li>\n<li>Added display of mem_total and mem_available when hovering over the equalizer bar in the Memory widget</li>\n</ul>"
+            },
+            {
+                "ver": "Service 2.24.0",
+                "hash": "service-2240",
+                "product": "Database",
+                "type": "Changed",
+                "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> <span class=\"uitext\">SQL Detail</span> Updated so that default popup formatting is disabled</p>"
+            },
+            {
+                "ver": "Service 2.24.0",
+                "hash": "service-2240",
+                "product": "Database",
+                "type": "Fixed",
+                "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">Dashboard</span> Improved flickering issues with tree-structured tables</p>"
+            },
+            {
+                "ver": "Service 2.24.0",
+                "hash": "service-2240",
+                "product": "Database",
+                "type": "Fixed",
+                "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Fixed an issue where updated times were not reflected in the instance selector</p>"
+            },
+            {
+                "ver": "Service 2.24.0",
+                "hash": "service-2240",
+                "product": "Database",
+                "category": "MySQL, PostgreSQL",
+                "type": "Feature",
+                "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">Dashboard</span> &gt; <span class=\"uitext\">Slow Query</span> Added sorting functionality to the table</p>"
+            },
+            {
+                "ver": "Service 2.24.0",
+                "hash": "service-2240",
+                "product": "Database",
+                "category": "IBM DB2",
+                "type": "Fixed",
+                "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">Dashboard</span> &gt; <span class=\"uitext\">Instance Monitoring</span> Updated Direct I/O widget metrics</p>",
+                "details": "<ul>\n<li>direct_read → direct_reads</li>\n<li>direct_write → direct_writes</li>\n</ul>"
+            },
+            {
+                "ver": "Service 2.24.0",
+                "hash": "service-2240",
+                "product": "Database",
+                "category": "Tibero",
+                "type": "Changed",
+                "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> <span class=\"uitext\">Lock Tree</span> Updated columns</p>"
+            },              
+            {
+                "ver": "Service 2.24.0",
+                "hash": "service-2240",
+                "product": "Browser",
+                "type": "Feature",
+                "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">AJAX Analysis</span> &gt; <span class=\"uitext\">Multi Transaction</span> Added</p>"
+            },
+            {
+                "ver": "Service 2.24.0",
+                "hash": "service-2240",
+                "product": "URL",
+                "type": "Fixed",
+                "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Fixed an issue where modifications to an event were not updated in the list</p>"
+            },
+            {
+                "ver": "Service 2.24.0",
+                "hash": "service-2240",
+                "product": "URL",
+                "type": "Fixed",
+                "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Updated behavior to display 'No data' when no URL is registered</p>"
+            }              
+        ]
+    }
+]
