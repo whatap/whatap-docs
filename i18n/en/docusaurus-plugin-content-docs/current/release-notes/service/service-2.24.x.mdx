@@ -1,0 +1,121 @@
+---
+id: service-2_24_x
+title: Service 2.24.X
+toc_max_heading_level: 2
+pagination_next: release-notes/service/service-2_23_x
+displayed_sidebar: releaseSidebar
+---
+
+## Service 2.24.0
+
+December 23, 2025
+
+<div class='indentTab'>
+
+### `Common`
+
+- <Status priority='1'>Feature</Status> <Cmdname sid="side_event" className="uitext" /> > <Cmdname sid="event_receive_configuration" className="uitext" /> Added line descriptions to the modal that guides third-party plugin addition
+
+- <Status priority='1'>Feature</Status> <Cmdname sid="side_event" className="uitext" /> > <Cmdname sid="side_eventSetting" className="uitext" /> Updated the Metrics tab and the Real-time Log tab to allow searching by event name, event receive tags, and targets
+
+- <Status priority='1'>Feature</Status> <Cmdname sid="analysis" className="uitext" /> > <Cmdname sid="side_metricsChart" className="uitext" /> <code class="newfunc">New</code> Added a metric time merge feature
+
+- <Status priority='1'>Feature</Status> <Cmdname sid="MNU07360" className="uitext" /> > <Cmdname sid="access_control" className="uitext" /> Added a feature to apply the user’s current IP when adding an IP
+
+- <Status priority='1'>Changed</Status> Improved behavior so that users without permission to configure display groups are redirected through a “Permission Denied” page to an accessible page
+
+- <Status priority='0'>Fixed</Status> <Cmdname sid="side_event" className="uitext" /> > <Cmdname sid="event_receive_configuration" className="uitext" /> Fixed an issue where WhatsApp notifications displayed “sending disabled” when email reception was blocked
+
+- <Status priority='0'>Fixed</Status> <Cmdname sid="side_event" className="uitext" /> > <Cmdname sid="side_eventHistory" className="uitext" /> Updated CSV download to allow downloading up to 10,000 lines
+
+#### OpenMetrics
+
+- <Status priority='1'>Feature</Status> Added HAProxy for MySQL template
+
+### `Application`
+
+- <Status priority='1'>Feature</Status> <Cmdname sid="side_event" className="uitext" /> > <Cmdname sid="side_eventSetting" className="uitext" /> Added options to configure occurrence count and pause settings when adding an anomaly detection event
+
+- <Status priority='0'>Fixed</Status> <Cmdname sid="dashboard" className="uitext" /> > <Cmdname sid="appDashboard" className="uitext" /> Improved an issue where the agent selection saved in presets was occasionally not applied
+
+- <Status priority='0'>Fixed</Status> <Cmdname sid="side_analysis" className="uitext" /> > <Cmdname sid="side_dailyAppStat" className="uitext" /> Fixed an issue where the selected agent was not reflected when querying data
+
+- <Status priority='0'>Fixed</Status> <Cmdname sid="side_eventSetting" className="uitext" /> Applied a 255-character length limit to transaction and event names
+
+#### Python
+
+- <Status priority='1'>Feature</Status> **Agent Installation** Added Windows OS guidance
+
+### `Server`
+
+- <Status priority='1'>Feature</Status> <Cmdname sid="TTL08767" className="uitext" /> Improved behavior to display a loading component when updated data is loaded after modifying table values
+
+- <Status priority='1'>Feature</Status> <Cmdname sid="dashboard" className="uitext" /> > <Cmdname sid="flexboard" className="uitext" /> Added a link to navigate to the server detail page from the widgets below
+
+    - Server Process CPU TopN  
+    - Server Process Memory TopN
+
+- <Status priority='1'>Feature</Status> **GPU Inventory** Improved so that fields not predefined by the agent can be selected in column settings
+
+- <Status priority='1'>Changed</Status> **GPU Inventory**
+
+    - Set Connection and Hostname columns as required fields  
+    - Fixed table columns can no longer have their order changed  
+    - If none of the selected columns are editable, the edit button becomes disabled  
+    - When the edit button is disabled, a tooltip now explains the reason
+
+- <Status priority='0'>Fixed</Status> **GPU Inventory** > **Column Settings** Fixed an issue where numeric column names could not be added and where the input field did not disappear after registering a column
+
+- <Status priority='0'>Fixed</Status> **GPU Inventory**, **GPU Performance Summary** Improved to prevent the sort icon from disappearing when adjusting the table header width
+
+- <Status priority='0'>Fixed</Status> <Cmdname sid="sms_resource_board" className="uitext" /> Fixed an issue where selecting the Contents button in the TOP 5 Panel widget did not highlight the selected option in the dropdown
+
+- <Status priority='0'>Fixed</Status> <Cmdname sid="serverDetail" className="uitext" /> Improved an issue where the message `There are no servers installed in the project.` briefly appeared before data was loaded
+
+- <Status priority='0'>Fixed</Status> <Cmdname sid="side_serverMetricsExplorer" className="uitext" /> Fixed an issue where chart legend labels containing a comma (`,`) caused the header in the CSV download to split incorrectly
+
+- <Status priority='0'>Fixed</Status> <Cmdname sid="TTL08767" className="uitext" />
+
+    - Fixed a bug where entered values disappeared when scrolling the table in edit mode  
+    - Fixed an issue where the last input value occasionally failed to update in edit mode
+
+### `Database`
+
+- <Status priority='1'>Feature</Status> <Cmdname sid="management" className="uitext" /> > <Cmdname sid="agent_list" className="uitext" /> Improved the table to display active and inactive columns separately
+
+- <Status priority='1'>Feature</Status> <Cmdname sid="dashboard" className="uitext" /> > <Cmdname sid="instance_monitoring" className="uitext" />, <Cmdname sid="multi_instance_monitoring" className="uitext" /> Enhanced CPU and Memory widgets
+
+    - Added an option to select the cpu_iowait metric  
+    - Added a table that displays current process information when clicking the equalizer bar in the CPU widget  
+    - Added mem_total and mem_available indicators when hovering over the equalizer bar in the Memory widget
+
+- <Status priority='1'>Changed</Status> <Cmdname sid="TTL06224" className="uitext" /> Updated to disable the default formatting of pop-up windows
+
+- <Status priority='0'>Fixed</Status> <Cmdname sid="dashboard" className="uitext" /> Improved flickering issues in tree-structured tables
+
+#### MySQL, PostgreSQL
+
+- <Status priority='1'>Feature</Status> <Cmdname sid="side_dashboard" className="uitext" /> > <Cmdname sid="side_slowQueryLog" className="uitext" /> Added sorting functionality to the table
+
+#### IBM DB2
+
+- <Status priority='0'>Fixed</Status> <Cmdname sid="side_dashboard" className="uitext" /> > <Cmdname sid="side_dbMonitoring" className="uitext" /> Updated Direct I/O widget metrics
+
+    - direct_read → direct_reads  
+    - direct_write → direct_writes
+
+#### Tibero
+
+- <Status priority='1'>Changed</Status> Updated lock tree columns
+
+### `Browser`
+
+- <Status priority='1'>Feature</Status> <Cmdname sid="TTL09569" className="uitext" /> > <Cmdname sid="multi_transaction" className="uitext" /> Added
+
+### `URL`
+
+- <Status priority='0'>Fixed</Status> Fixed an issue where modifications to an event were not updated in the list
+
+- <Status priority='0'>Fixed</Status> Updated behavior to display “No data” when no registered URL exists
+
+</div>
