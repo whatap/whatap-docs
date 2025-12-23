@@ -24,7 +24,7 @@
     "description": "The label for category 주요 메뉴 알아보기 in sidebar javaSidebar"
   },
   "sidebar.javaSidebar.category.대시보드": {
-    "message": "ダッシューボード",
+    "message": "ダッシュボード",
     "description": "The label for category 대시보드 in sidebar javaSidebar"
   },
   "sidebar.javaSidebar.category.Flex 보드": {
@@ -1108,7 +1108,7 @@
     "description": "The label for the doc item 설정하기 in sidebar logSidebar, linking to the doc log/log-setting"
   },
   "sidebar.mysqlSidebar.category.대시보드": {
-    "message": "ダッシューボード",
+    "message": "ダッシュボード",
     "description": "The label for category 대시보드 in sidebar mysqlSidebar"
   },
   "sidebar.mysqlSidebar.category.분석": {
@@ -1132,7 +1132,7 @@
     "description": "The label for category 서버 목록 in sidebar serverSidebar"
   },
   "sidebar.postgreSidebar.category.대시보드": {
-    "message": "ダッシューボード",
+    "message": "ダッシュボード",
     "description": "The label for category 대시보드 in sidebar postgreSidebar"
   },
   "sidebar.postgreSidebar.category.분석": {
@@ -1144,7 +1144,7 @@
     "description": "The label for category 통계/보고서 in sidebar postgreSidebar"
   },
   "sidebar.dboracleSidebar.category.대시보드": {
-    "message": "ダッシューボード",
+    "message": "ダッシュボード",
     "description": "The label for category 대시보드 in sidebar dboracleSidebar"
   },
   "sidebar.dboracleSidebar.category.분석": {
@@ -1228,7 +1228,7 @@
     "description": "The label for link Go in sidebar indexSidebar, linking to golang/introduction"
   },
   "sidebar.npmsidebar.category.대시보드": {
-    "message": "ダッシューボード",
+    "message": "ダッシュボード",
     "description": "The label for category 대시보드 in sidebar npmsidebar"
   },
   "sidebar.npmsidebar.category.분석": {
@@ -1464,7 +1464,7 @@
     "description": "The label for category 분석 in sidebar goSidebar"
   },
   "sidebar.kubeSidebar.category.대시보드": {
-    "message": "ダッシューボード",
+    "message": "ダッシュボード",
     "description": "The label for category 대시보드 in sidebar kubeSidebar"
   },
   "sidebar.kubeSidebar.category.컨테이너": {
@@ -1532,7 +1532,7 @@
     "description": "The label for category 경고 알림 in sidebar redisSidebar"
   },
   "sidebar.mongodbSidebar.category.대시보드": {
-    "message": "ダッシューボード",
+    "message": "ダッシュボード",
     "description": "The label for category 대시보드 in sidebar mongodbSidebar"
   },
   "sidebar.mongodbSidebar.category.분석": {
@@ -1688,7 +1688,7 @@
     "description": "The label for category 주요 메뉴 알아보기 in sidebar dboracleV2Sidebar"
   },
   "sidebar.dboracleV2Sidebar.category.대시보드": {
-    "message": "ダッシューボード",
+    "message": "ダッシュボード",
     "description": "The label for category 대시보드 in sidebar dboracleV2Sidebar"
   },
   "sidebar.dboracleV2Sidebar.category.Flex 보드": {
@@ -1736,7 +1736,7 @@
     "description": "The label for category 주요 메뉴 알아보기 in sidebar dboracledmaSidebar"
   },
   "sidebar.dboracledmaSidebar.category.대시보드": {
-    "message": "ダッシューボード",
+    "message": "ダッシュボード",
     "description": "The label for category 대시보드 in sidebar dboracledmaSidebar"
   },
   "sidebar.dboracledmaSidebar.category.Flex 보드": {
@@ -1808,7 +1808,7 @@
     "description": "The label for category Altibase V2 모니터링 in sidebar altibaseSidebar"
   },
   "sidebar.altibaseSidebar.category.대시보드": {
-    "message": "ダッシューボード",
+    "message": "ダッシュボード",
     "description": "The label for category 대시보드 in sidebar altibaseSidebar"
   },
   "sidebar.altibaseSidebar.category.분석": {
@@ -1876,7 +1876,7 @@
     "description": "The label for category 컨테이너 맵 상세 분석 in sidebar kubeSidebar"
   },
   "sidebar.mssqlSidebar.category.대시보드": {
-    "message": "ダッシューボード",
+    "message": "ダッシュボード",
     "description": "The label for category 대시보드 in sidebar mssqlSidebar"
   },
   "sidebar.mssqlSidebar.category.분석": {
@@ -1896,7 +1896,7 @@
     "description": "The label for category 실험실 in sidebar mssqlSidebar"
   },
   "sidebar.tiberoSidebar.category.대시보드": {
-    "message": "ダッシューボード",
+    "message": "ダッシュボード",
     "description": "The label for category 대시보드 in sidebar tiberoSidebar"
   },
   "sidebar.tiberoSidebar.category.분석": {
@@ -1996,7 +1996,7 @@
     "description": "The label for category 서버 인벤토리 맵 in sidebar serverSidebar"
   },
   "sidebar.altibasev1Sidebar.category.대시보드": {
-    "message": "ダッシューボード",
+    "message": "ダッシュボード",
     "description": "The label for category 대시보드 in sidebar altibasev1Sidebar"
   },
   "sidebar.altibasev1Sidebar.category.경고 알림": {
@@ -2052,7 +2052,7 @@
     "description": "The label for category 경고 알림 in sidebar oracleSidebar"
   },
   "sidebar.serverSidebar.category.대시보드": {
-    "message": "ダッシューボード",
+    "message": "ダッシュボード",
     "description": "The label for category 대시보드 in sidebar serverSidebar"
   },
   "sidebar.serverSidebar.category.경고 알림": {
@@ -2184,7 +2184,7 @@
     "description": "The label for category 설정하기 in sidebar db2Sidebar"
   },
   "sidebar.db2Sidebar.category.대시보드": {
-    "message": "ダッシューボード",
+    "message": "ダッシュボード",
     "description": "The label for category 대시보드 in sidebar db2Sidebar"
   },
   "sidebar.db2Sidebar.category.Flex 보드": {
@@ -2236,7 +2236,7 @@
     "description": "The label for category 설정하기 in sidebar sapaseSidebar"
   },
   "sidebar.sapaseSidebar.category.대시보드": {
-    "message": "ダッシューボード",
+    "message": "ダッシュボード",
     "description": "The label for category 대시보드 in sidebar sapaseSidebar"
   },
   "sidebar.sapaseSidebar.category.Flex 보드": {

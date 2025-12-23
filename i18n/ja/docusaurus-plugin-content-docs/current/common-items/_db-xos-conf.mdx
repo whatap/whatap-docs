@@ -10,7 +10,9 @@
 
   既定値`3002`
 
-  DBXエージェントと通信するポートを設定します。DBXエージェントは、UDPで通信します。そのポートにファイアウォールを設定した場合は、UDP通信のためにファイアウォールを解除してください。  
+  DBXエージェントと通信するポートを設定します。
+  {/* DBXエージェントは、UDPで通信します。そのポートにファイアウォールを設定した場合は、UDP通信のためにファイアウォールを解除してください。   */}
+  DBXエージェントは、UDPで通信します。ファイアウォールでUDPポートがブロックされている場合は、該当ポートを開放してください。
 
 - **cpu_limit** <span class='type'>Int</span>
 
@@ -22,7 +24,7 @@
 
   既定値`10240`
 
-  limitの設定値より大きい値を持つプロセス情報を収集します。K bytes単位で10240は10M bytesです。
+  limitの設定値より大きい値を持つプロセス情報を収集します。単位は「KB」で既定値である10240は、10MBになります。(1024 KB = 1 MB)
 
 - **disk_usage_interval** <span class='type'>Second</span>
 
@@ -32,26 +34,26 @@
 
 - **port_check** <span class='type'>String</span>
 
-  XOSエージェントでオプション値として指定したポートに直接接続を試みた後、失敗した場合、そのポート一覧を`db_port_check`カテゴリに転送します。
+  接続状態をチェックするサーバーとポートを指定します。IP:Portの形式で設定し、コンマ(,)で区切って複数登録が可能です。接続ができないサーバーとポートの一覧は、`db_port_check`カテゴリに保存されます。
 
   ```ini title="xos.conf"
   port_check=192.168.122.113:3333,192.168.122.113:3334
-  ```
+  ```  
 
-  指定したポートに接続できない場合、<Cmdname sid="side_analysis" className="uitext" /> &gt; <Cmdname sid="side_metricsSearch" className="uitext" />メニューで`db_port_check`カテゴリを選択した後、確認することができます。
+  接続ができなかったサーバーとポートの一覧を確認する場合、<Cmdname sid="side_analysis" className="uitext" /> &gt; <Cmdname sid="side_metricsSearch" className="uitext" />メニューで`db_port_check`カテゴリを選択します。
 
   ![port_check](/img/db-xos-conf-port-check-metrics.png)
 
 - **process_check** <span class='type'>String</span>
 
-  プロセスの実行状態をモニタリングできます。オプション値でプロセス名を入力します。コンマ(,)を区切り文字としてして使用して、複数登録することができます。
+  プロセスの実行状態をモニタリングできます。オプション値でプロセス名を入力します。コンマ(,)を区切り文字として使用し。複数登録することができます。
 
   ```ini title='xos.conf'
   process_check=pmon,smon,tnslsnr,melong,haha
   ```
 
-  該当の文字列を含むプロセスが監視されない場合、`db_process_check`カテゴリにデータを転送します。例えば、**melong**、**haha**の2つのプロセスがない場合、<Cmdname sid="side_analysis" className="uitext" /> &gt; <Cmdname sid="side_metricsSearch" className="uitext" />メニューで`db_process_check`カテゴリを選択した後、確認できます。
-
+  指定された文字列を含むプロセス名が検知されない場合、`db_process_check`カテゴリにその文字列の一覧を保存します。例えば、**melong**、**haha**の2つのプロセスがない場合、<Cmdname sid="side_analysis" className="uitext" /> &gt; <Cmdname sid="side_metricsSearch" className="uitext" />メニューで`db_process_check`カテゴリを選択した後、確認できます。
+  
   ![process_check](/img/db-xos-conf-process-check-metrics.png)
 
   :::note
@@ -64,13 +66,13 @@
 
   既定値 `6`
 
-  `process_check`オプションを通じてプロセスの実行状態を収集する時間間隔を設定します。
+  `process_check`オプションに設定されたプロセスの実行状況を確認する間隔を設定します。(単位：秒)
 
 - **iplist_interval** <span class='type'>Second</span>
 
   既定値`0`(off)
 
-  データベースサーバーのIP一覧を収集する時間間隔を設定します。秒単位(最小3秒)で時間間隔(interval)を設定できます。
+  DBサーバーのIP一覧を収集すす間隔を設定します。(単位：秒、3以上で設定)
 
   :::note
 
@@ -205,7 +207,7 @@ SHMONはユーザー定義のシェルスクリプトの実行結果を定期的
 
 * **shmon** <span class='type'>Int</span>
 
-  デフォルト値: `1`
+  既定値: `1`
 
   対応バージョン: dbx 2.55.01以降 & xos 1.2.0f以降
 

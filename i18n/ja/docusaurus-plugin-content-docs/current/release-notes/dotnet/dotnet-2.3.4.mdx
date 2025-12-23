@@ -14,13 +14,13 @@ displayed_sidebar: releaseSidebar
 
   - **expand_transaction_level** <span class='type'>Boolean</span>
 
-    デフォルト値 `false`
+    既定値 `false`
 
     そのオプションを`true`に設定すると、トランザクションの外部から発生するSQLおよびHTTPの呼び出しをトランザクションと見なし、ヒットマップに表示します。
 
   - **expand_transaction_basetime** <span class='type'>Int</span>
 
-    デフォルト値 `1000`ms (1秒)
+    既定値 `1000`ms (1秒)
 
     `expand_transaction_level` オプションが `true`に設定されている場合、指定した時間よりも応答時間のかかるリクエストのみがデータを収集します。 毎秒最大100件のデータを収集します。 最小値は `100` msで0.1秒です。
 

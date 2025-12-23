@@ -31,7 +31,7 @@
         "hash": "service-298",
         "product": "Database",
         "type": "Fixed",
-        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">ダッシューボード</span> &gt; <span class=\"uitext\">インスタンスモニタリング</span>メニューで<span class=\"uitext\">セッション詳細</span>ウィンドウで古いセッションを照会する時、データが照会されない問題を修正</p>",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">ダッシュボード</span> &gt; <span class=\"uitext\">インスタンスモニタリング</span>メニューで<span class=\"uitext\">セッション詳細</span>ウィンドウで古いセッションを照会する時、データが照会されない問題を修正</p>",
         "category": "Oracle Pro"
       }
     ]
@@ -103,7 +103,7 @@
         "hash": "service-293",
         "product": "Kubernetes",
         "type": "Fixed",
-        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">ダッシューボード</span> &gt; <span class=\"uitext\">ノードマップ</span>メニューでノード全体を選択した後、<span class=\"uitext\">ログ</span>メニューに移動するとログデータが照会されない問題を修正(キャッシュ問題の解決)</p>"
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">ダッシュボード</span> &gt; <span class=\"uitext\">ノードマップ</span>メニューでノード全体を選択した後、<span class=\"uitext\">ログ</span>メニューに移動するとログデータが照会されない問題を修正(キャッシュ問題の解決)</p>"
       }
     ]
   },
@@ -125,7 +125,7 @@
         "product": "Kubernetes",
         "type": "Feature",
         "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code>次のメニュー経路に進入する時、新機能に対する案内ポップアップを追加</p>",
-        "details": "<ul>\n<li>\n<p><span class=\"uitext\">ダッシューボード</span> &gt; <span class=\"uitext\">ノードマップ</span></p>\n</li>\n<li>\n<p><span class=\"uitext\">クラスター</span> &gt; <span class=\"uitext\">ノードタイムライン</span></p>\n</li>\n</ul>"
+        "details": "<ul>\n<li>\n<p><span class=\"uitext\">ダッシュボード</span> &gt; <span class=\"uitext\">ノードマップ</span></p>\n</li>\n<li>\n<p><span class=\"uitext\">クラスター</span> &gt; <span class=\"uitext\">ノードタイムライン</span></p>\n</li>\n</ul>"
       },
       {
         "ver": "Service 2.9.2",
@@ -139,7 +139,7 @@
         "hash": "service-292",
         "product": "Kubernetes",
         "type": "Fixed",
-        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">ダッシューボード</span> &gt; <span class=\"uitext\">ノードマップ</span>メニューでノード全体を選択した後、<span class=\"uitext\">ログ</span>メニューに移動するとログデータが照会されない問題を修正</p>"
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">ダッシュボード</span> &gt; <span class=\"uitext\">ノードマップ</span>メニューでノード全体を選択した後、<span class=\"uitext\">ログ</span>メニューに移動するとログデータが照会されない問題を修正</p>"
       },
       {
         "ver": "Service 2.9.2",
@@ -189,7 +189,7 @@
       {
         "ver": "Service 2.9.0",
         "hash": "service-290",
-        "product": "新機能リリーズ",
+        "product": "新機能リリース",
         "type": "New",
         "desc": "<p><code class=\"New\" type=\"1\">New</code>インフラサーバー運用に必要な情報をエージェントが自動収集および保存、ユーザー定義フィールドを通じて追加した情報を照会し管理できる<span class=\"uitext\">サーバー インベントリ</span>メニューを追加</p>",
         "category": "Server"
@@ -197,7 +197,7 @@
       {
         "ver": "Service 2.9.0",
         "hash": "service-290",
-        "product": "新機能リリーズ",
+        "product": "新機能リリース",
         "type": "New",
         "desc": "<p><code class=\"New\" type=\"1\">New</code>ノード(Node)についての詳細情報が確認できる<span class=\"uitext\">ノードマップ</span>メニューを追加</p>",
         "category": "Kubernetes"
@@ -205,7 +205,7 @@
       {
         "ver": "Service 2.9.0",
         "hash": "service-290",
-        "product": "新機能リリーズ",
+        "product": "新機能リリース",
         "type": "New",
         "desc": "<p><code class=\"New\" type=\"1\">New</code>時間の流れによるノードの現状を確認できる<span class=\"uitext\">ノードタイムライン</span>メニューを追加</p>",
         "category": "Kubernetes"
@@ -213,7 +213,7 @@
       {
         "ver": "Service 2.9.0",
         "hash": "service-290",
-        "product": "新機能リリーズ",
+        "product": "新機能リリース",
         "type": "New",
         "desc": "<p><code class=\"New\" type=\"1\">New</code> <strong>CUBRID</strong> <code class=\"my\">V2</code>サービスを開始</p>",
         "category": "Database"
@@ -221,7 +221,7 @@
       {
         "ver": "Service 2.9.0",
         "hash": "service-290",
-        "product": "新機能リリーズ",
+        "product": "新機能リリース",
         "type": "New",
         "desc": "<p><code class=\"New\" type=\"1\">New</code>SQLスクリプトを実行して結果を確認できる<span class=\"uitext\">スクリプト·マネージャー</span>メニューを追加</p>",
         "category": "Database"
@@ -330,7 +330,7 @@
         "hash": "service-290",
         "product": "Application",
         "type": "Fixed",
-        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">ダッシューボード</span> &gt; <span class=\"uitext\">アプリケーション</span>メニューで<span class=\"uitext\">アクティブTX</span>ウィジェットのチャート領域を選択した時に表示される <span class=\"uitext\">アクティブTX</span>画面のデザイン要素を修正</p>",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">ダッシュボード</span> &gt; <span class=\"uitext\">アプリケーション</span>メニューで<span class=\"uitext\">アクティブTX</span>ウィジェットのチャート領域を選択した時に表示される <span class=\"uitext\">アクティブTX</span>画面のデザイン要素を修正</p>",
         "details": "<ul>\n<li>\n<p><span class=\"uitext\">トップ10</span>タブでデータがない時に表示される<span class=\"uitext\">No rows found</span>メッセージがテーブルヘッダーと重ならないように修正</p>\n</li>\n<li>\n<p>余白が生じた際、背景色が埋められない問題を修正</p>\n</li>\n</ul>"
       },
       {
@@ -338,7 +338,7 @@
         "hash": "service-290",
         "product": "Application",
         "type": "Fixed",
-        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">ダッシューボード</span>メニューで<span class=\"uitext\">ヒットマップ</span>ウィジェットのY軸の調整ボタンが断続的に見えない問題を修正</p>"
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">ダッシュボード</span>メニューで<span class=\"uitext\">ヒットマップ</span>ウィジェットのY軸の調整ボタンが断続的に見えない問題を修正</p>"
       },
       {
         "ver": "Service 2.9.0",
@@ -444,7 +444,7 @@
         "hash": "service-290",
         "product": "Database",
         "type": "Feature",
-        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">ダッシューボード</span> &gt; <span class=\"uitext\">マルチインスタンス</span>メニューでユーザー定義ウィジェットに次の機能を追加</p>",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">ダッシュボード</span> &gt; <span class=\"uitext\">マルチインスタンス</span>メニューでユーザー定義ウィジェットに次の機能を追加</p>",
         "category": "共通",
         "details": "<ul>\n<li>\n<p>パイチャートまたはテキストチャートに<span class=\"uitext\">マージなし</span>オプションを追加</p>\n</li>\n<li>\n<p><span class=\"uitext\">マルチインスタンス</span>メニューに入ると、ユーザー定義ウィジェットに関する案内メッセージウィンドウを表示</p>\n</li>\n</ul>"
       },
@@ -461,7 +461,7 @@
         "hash": "service-290",
         "product": "Database",
         "type": "Changed",
-        "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> <span class=\"uitext\">ダッシューボード</span> &gt; <span class=\"uitext\">マルチインスタンス</span>メニューで、<span class=\"uitext\">Vacuum Sessions</span>ウィジェットの<img decoding=\"async\" loading=\"lazy\" alt=\"詳細アイコン\" src=\"data:image/svg+xml;base64,PHN2ZyBjbGFzcz0iU1ZHSW5saW5lLXN2ZyIgc3R5bGU9IndpZHRoOiAxNnB4O2hlaWdodDogMTZweDsiIHdpZHRoPSIyNHB4IiBoZWlnaHQ9IjI0cHgiIHZpZXdCb3g9IjAgMCAyNCAyNCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KICAgIDwhLS0gR2VuZXJhdG9yOiBTa2V0Y2ggNTkuMSAoODYxNDQpIC0gaHR0cHM6Ly9za2V0Y2guY29tIC0tPgogICAgPCEtLSA8dGl0bGU+aWMtYW5hbHlzaXM8L3RpdGxlPiAtLT4KICAgIDxkZXNjPkNyZWF0ZWQgd2l0aCBTa2V0Y2guPC9kZXNjPgogICAgPGcgaWQ9Ikljb24tU2V0IiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgICAgICA8ZyBpZD0iV2hhVGFwX0ljb25fU2V0IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtOTMyLjAwMDAwMCwgLTE3MDQuMDAwMDAwKSIgZmlsbD0iIzc1NzU3NSI+CiAgICAgICAgICAgIDxnIGlkPSJkYXRhLWljb25zIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg0MC4wMDAwMDAsIDE1NzkuMDAwMDAwKSI+CiAgICAgICAgICAgICAgICA8ZyBpZD0iaWMtYW5hbHlzaXMiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDg5Mi4wMDAwMDAsIDEyNS4wMDAwMDApIj4KICAgICAgICAgICAgICAgICAgICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgyLjAwMDAwMCwgMi4wMDAwMDApIiBpZD0iQ29tYmluZWQtU2hhcGUiPgogICAgICAgICAgICAgICAgICAgICAgICA8cGF0aCBkPSJNMjAsMCBMMjAsMjAgTDAsMjAgTDAsMCBMMjAsMCBaIE00Ljk3MTczODAyLDkuNDc4NjQwMDcgTDIsMTEuOTY5IEwyLDE4IEwxOCwxOCBMMTgsMTAuMjU2IEwxNS45NTcyOTA3LDEyLjAzNzQzMTEgQzE1Ljk3NTUzNDcsMTIuMTM0OTUyOCAxNS45ODgxMTY3LDEyLjIzNDQ2ODYgMTUuOTk0NjgyMywxMi4zMzU2MjQzIEwxNiwxMi41IEMxNiwxMy44ODA3MTE5IDE0Ljg4MDcxMTksMTUgMTMuNSwxNSBDMTIuMTE5Mjg4MSwxNSAxMSwxMy44ODA3MTE5IDExLDEyLjUgQzExLDEyLjI3Nzk4ODggMTEuMDI4OTM5MSwxMi4wNjI3MzY4IDExLjA4MzI1MDksMTEuODU3ODEwMyBMNy45NzA1OTcyMyw5LjUyMTkzNSBDNy41NTc5MTc1NSw5LjgyMjYwMjA1IDcuMDQ5Njc1NTMsMTAgNi41LDEwIEM1LjkyNDQzNzEzLDEwIDUuMzk0MzAyMzUsOS44MDU0OTkyNCA0Ljk3MTczODAyLDkuNDc4NjQwMDcgWiBNMTMuNSwxMS41IEMxMi45NDc3MTUzLDExLjUgMTIuNSwxMS45NDc3MTUzIDEyLjUsMTIuNSBDMTIuNSwxMy4wNTIyODQ3IDEyLjk0NzcxNTMsMTMuNSAxMy41LDEzLjUgQzE0LjA1MjI4NDcsMTMuNSAxNC41LDEzLjA1MjI4NDcgMTQuNSwxMi41IEMxNC41LDExLjk0NzcxNTMgMTQuMDUyMjg0NywxMS41IDEzLjUsMTEuNSBaIE0xOCwyIEwyLDIgTDIsMTAuMDEyIEw0LjExMTUyNTkxLDguMjQwNjIzMzIgQzQuMDU0NTYzNjksOC4wNTY3MTc3MSA0LjAxODI1NzEzLDcuODYzNzMxMzYgNC4wMDUzMTc2OCw3LjY2NDM3NTY5IEw0LDcuNSBDNCw2LjExOTI4ODEzIDUuMTE5Mjg4MTMsNSA2LjUsNSBDNy44ODA3MTE4Nyw1IDksNi4xMTkyODgxMyA5LDcuNSBDOSw3Ljc4NTUzNDk3IDguOTUyMTMxLDguMDU5ODg5NTQgOC44NjM5ODAyOSw4LjMxNTQ3NjQgTDExLjg4OTA1NDgsMTAuNTg4MTYwMSBDMTIuMzI0MTQ0MywxMC4yMjExNzA5IDEyLjg4NjI0MzYsMTAgMTMuNSwxMCBDMTQuMTY3ODA4NSwxMCAxNC43NzQ0NjA1LDEwLjI2MTg0MjIgMTUuMjIyODkwNCwxMC42ODg0NjExIEwxOCw4LjI2NiBMMTgsMiBaIE02LjUsNi41IEM1Ljk0NzcxNTI1LDYuNSA1LjUsNi45NDc3MTUyNSA1LjUsNy41IEM1LjUsOC4wNTIyODQ3NSA1Ljk0NzcxNTI1LDguNSA2LjUsOC41IEM3LjA1MjI4NDc1LDguNSA3LjUsOC4wNTIyODQ3NSA3LjUsNy41IEM3LjUsNi45NDc3MTUyNSA3LjA1MjI4NDc1LDYuNSA2LjUsNi41IFoiPjwvcGF0aD4KICAgICAgICAgICAgICAgICAgICA8L2c+CiAgICAgICAgICAgICAgICA8L2c+CiAgICAgICAgICAgIDwvZz4KICAgICAgICA8L2c+CiAgICA8L2c+Cjwvc3ZnPg==\" width=\"24\" height=\"24\" class=\"img_ev3q\">ボタンで開く<span class=\"uitext\">Vacuum履歴</span>画面で<span class=\"uitext\">time</span>カラムの時間を照会された時間として表示するように変更</p>",
+        "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> <span class=\"uitext\">ダッシュボード</span> &gt; <span class=\"uitext\">マルチインスタンス</span>メニューで、<span class=\"uitext\">Vacuum Sessions</span>ウィジェットの<img decoding=\"async\" loading=\"lazy\" alt=\"詳細アイコン\" src=\"data:image/svg+xml;base64,PHN2ZyBjbGFzcz0iU1ZHSW5saW5lLXN2ZyIgc3R5bGU9IndpZHRoOiAxNnB4O2hlaWdodDogMTZweDsiIHdpZHRoPSIyNHB4IiBoZWlnaHQ9IjI0cHgiIHZpZXdCb3g9IjAgMCAyNCAyNCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KICAgIDwhLS0gR2VuZXJhdG9yOiBTa2V0Y2ggNTkuMSAoODYxNDQpIC0gaHR0cHM6Ly9za2V0Y2guY29tIC0tPgogICAgPCEtLSA8dGl0bGU+aWMtYW5hbHlzaXM8L3RpdGxlPiAtLT4KICAgIDxkZXNjPkNyZWF0ZWQgd2l0aCBTa2V0Y2guPC9kZXNjPgogICAgPGcgaWQ9Ikljb24tU2V0IiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgICAgICA8ZyBpZD0iV2hhVGFwX0ljb25fU2V0IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtOTMyLjAwMDAwMCwgLTE3MDQuMDAwMDAwKSIgZmlsbD0iIzc1NzU3NSI+CiAgICAgICAgICAgIDxnIGlkPSJkYXRhLWljb25zIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg0MC4wMDAwMDAsIDE1NzkuMDAwMDAwKSI+CiAgICAgICAgICAgICAgICA8ZyBpZD0iaWMtYW5hbHlzaXMiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDg5Mi4wMDAwMDAsIDEyNS4wMDAwMDApIj4KICAgICAgICAgICAgICAgICAgICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgyLjAwMDAwMCwgMi4wMDAwMDApIiBpZD0iQ29tYmluZWQtU2hhcGUiPgogICAgICAgICAgICAgICAgICAgICAgICA8cGF0aCBkPSJNMjAsMCBMMjAsMjAgTDAsMjAgTDAsMCBMMjAsMCBaIE00Ljk3MTczODAyLDkuNDc4NjQwMDcgTDIsMTEuOTY5IEwyLDE4IEwxOCwxOCBMMTgsMTAuMjU2IEwxNS45NTcyOTA3LDEyLjAzNzQzMTEgQzE1Ljk3NTUzNDcsMTIuMTM0OTUyOCAxNS45ODgxMTY3LDEyLjIzNDQ2ODYgMTUuOTk0NjgyMywxMi4zMzU2MjQzIEwxNiwxMi41IEMxNiwxMy44ODA3MTE5IDE0Ljg4MDcxMTksMTUgMTMuNSwxNSBDMTIuMTE5Mjg4MSwxNSAxMSwxMy44ODA3MTE5IDExLDEyLjUgQzExLDEyLjI3Nzk4ODggMTEuMDI4OTM5MSwxMi4wNjI3MzY4IDExLjA4MzI1MDksMTEuODU3ODEwMyBMNy45NzA1OTcyMyw5LjUyMTkzNSBDNy41NTc5MTc1NSw5LjgyMjYwMjA1IDcuMDQ5Njc1NTMsMTAgNi41LDEwIEM1LjkyNDQzNzEzLDEwIDUuMzk0MzAyMzUsOS44MDU0OTkyNCA0Ljk3MTczODAyLDkuNDc4NjQwMDcgWiBNMTMuNSwxMS41IEMxMi45NDc3MTUzLDExLjUgMTIuNSwxMS45NDc3MTUzIDEyLjUsMTIuNSBDMTIuNSwxMy4wNTIyODQ3IDEyLjk0NzcxNTMsMTMuNSAxMy41LDEzLjUgQzE0LjA1MjI4NDcsMTMuNSAxNC41LDEzLjA1MjI4NDcgMTQuNSwxMi41IEMxNC41LDExLjk0NzcxNTMgMTQuMDUyMjg0NywxMS41IDEzLjUsMTEuNSBaIE0xOCwyIEwyLDIgTDIsMTAuMDEyIEw0LjExMTUyNTkxLDguMjQwNjIzMzIgQzQuMDU0NTYzNjksOC4wNTY3MTc3MSA0LjAxODI1NzEzLDcuODYzNzMxMzYgNC4wMDUzMTc2OCw3LjY2NDM3NTY5IEw0LDcuNSBDNCw2LjExOTI4ODEzIDUuMTE5Mjg4MTMsNSA2LjUsNSBDNy44ODA3MTE4Nyw1IDksNi4xMTkyODgxMyA5LDcuNSBDOSw3Ljc4NTUzNDk3IDguOTUyMTMxLDguMDU5ODg5NTQgOC44NjM5ODAyOSw4LjMxNTQ3NjQgTDExLjg4OTA1NDgsMTAuNTg4MTYwMSBDMTIuMzI0MTQ0MywxMC4yMjExNzA5IDEyLjg4NjI0MzYsMTAgMTMuNSwxMCBDMTQuMTY3ODA4NSwxMCAxNC43NzQ0NjA1LDEwLjI2MTg0MjIgMTUuMjIyODkwNCwxMC42ODg0NjExIEwxOCw4LjI2NiBMMTgsMiBaIE02LjUsNi41IEM1Ljk0NzcxNTI1LDYuNSA1LjUsNi45NDc3MTUyNSA1LjUsNy41IEM1LjUsOC4wNTIyODQ3NSA1Ljk0NzcxNTI1LDguNSA2LjUsOC41IEM3LjA1MjI4NDc1LDguNSA3LjUsOC4wNTIyODQ3NSA3LjUsNy41IEM3LjUsNi45NDc3MTUyNSA3LjA1MjI4NDc1LDYuNSA2LjUsNi41IFoiPjwvcGF0aD4KICAgICAgICAgICAgICAgICAgICA8L2c+CiAgICAgICAgICAgICAgICA8L2c+CiAgICAgICAgICAgIDwvZz4KICAgICAgICA8L2c+CiAgICA8L2c+Cjwvc3ZnPg==\" width=\"24\" height=\"24\" class=\"img_ev3q\">ボタンで開く<span class=\"uitext\">Vacuum履歴</span>画面で<span class=\"uitext\">time</span>カラムの時間を照会された時間として表示するように変更</p>",
         "category": "共通"
       },
       {
@@ -469,7 +469,7 @@
         "hash": "service-290",
         "product": "Database",
         "type": "Fixed",
-        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">ダッシューボード</span> &gt; <span class=\"uitext\">インスタンスリスト</span>メニューでインスタンス名を選択して<span class=\"uitext\">インスタンスモニタリング</span>メニューに移動する際に組織情報が漏れる問題を修正</p>",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">ダッシュボード</span> &gt; <span class=\"uitext\">インスタンスリスト</span>メニューでインスタンス名を選択して<span class=\"uitext\">インスタンスモニタリング</span>メニューに移動する際に組織情報が漏れる問題を修正</p>",
         "category": "共通"
       },
       {

@@ -250,7 +250,7 @@
         "product": "Python Agent",
         "type": "New",
         "desc": "<p><code class=\"New\" type=\"1\">New</code> URL を正規化した場合、元の URL を step に表示するオプションを追加</p>",
-        "details": "<ul><li><p><strong>step_origin_url_enabled</strong> <span class='type'>Boolean</span></p><p>デフォルト値 <code>false</code></p></li></ul>"
+        "details": "<ul><li><p><strong>step_origin_url_enabled</strong> <span class='type'>Boolean</span></p><p>既定値 <code>false</code></p></li></ul>"
       },
       {
         "ver": "v1.8.6",
@@ -258,7 +258,7 @@
         "product": "Python Agent",
         "type": "New",
         "desc": "<p><code class=\"New\" type=\"1\">New</code> standalone Python プロセスのトレースオプションを追加</p>",
-        "details": "<ul><li><p><strong>standalone_enabled</strong> <span class='type'>Boolean</span></p><p>デフォルト値 <code>false</code></p></li><li><p><strong>standalone_type</strong> <span class='type'>String</span></p>\n<br /><p><code>single-transaction</code>: デフォルト、1 トランザクションとしてモニタリング</p>\n<br /><p><code>multiple-transaction</code>: モジュール・クラス・メソッド単位でトランザクションを指定可能</p></li><li><p><strong>standalone_transaction_patterns</strong> <span class='type'>String</span></p>\n<br /><p>デフォルトなし</p>\n<br /><p>形式: <code>[MODULE]:[CLASS].[FUNC]</code> または <code>[MODULE]:[FUNC]</code></p>\n<br /><p>例: <code>myPackage:MyClass.__init__, myPackage:my_function</code></p></li></ul>"
+        "details": "<ul><li><p><strong>standalone_enabled</strong> <span class='type'>Boolean</span></p><p>既定値 <code>false</code></p></li><li><p><strong>standalone_type</strong> <span class='type'>String</span></p>\n<br /><p><code>single-transaction</code>: デフォルト、1 トランザクションとしてモニタリング</p>\n<br /><p><code>multiple-transaction</code>: モジュール・クラス・メソッド単位でトランザクションを指定可能</p></li><li><p><strong>standalone_transaction_patterns</strong> <span class='type'>String</span></p>\n<br /><p>デフォルトなし</p>\n<br /><p>形式: <code>[MODULE]:[CLASS].[FUNC]</code> または <code>[MODULE]:[FUNC]</code></p>\n<br /><p>例: <code>myPackage:MyClass.__init__, myPackage:my_function</code></p></li></ul>"
       },
       {
         "ver": "v1.8.6",
@@ -287,7 +287,7 @@
         "product": "Python Agent",
         "type": "New",
         "desc": "<p><code class=\"New\" type=\"1\">New</code> <code>whatap.conf</code> にメトリクスカテゴリ <code>app_context_stat</code> 関連のオプションを追加</p>",
-        "details": "<ul>\n<li><p><strong>app_context_enabled</strong> <span class=\"type\">Boolean</span></p>\n<p>デフォルト値 <code>false</code></p>\n<br /><p><code>true</code> に設定すると、<code>app_context_stat</code> の収集機能が全体的に有効になります</p></li>\n<li><p><strong>app_context_parser</strong></p>\n<br /><p><code>default</code>: デフォルトパーサー（最初のパスセグメントを抽出）</p>\n<br /><p><code>prefix</code>: 接頭辞マッチングパーサー（最も柔軟）</p>\n<br /><p><code>match</code>: 完全一致パーサー（正確に一致するもののみ）</p></li>\n<li><p><strong>app_context_parser_reset</strong> <span class=\"type\">Number</span></p>\n デフォルト値 <p><code>0</code></p>\n<br /><p>パーサーの内部キャッシュと設定を強制的にリセットするカウンター</p></li>\n<li><p><strong>app_context_path_depth</strong> <span class=\"type\">Number</span></p>\n デフォルト値 <p><code>1</code></p>\n<br /><p>URL から抽出するパスセグメントの深さを指定（<code>default</code> パーサーのみ使用）</p></li>\n<li><p><strong>app_context_path_set</strong> <span class=\"type\">String</span></p>\n<p>デフォルト値なし</p>\n<br /><p>監視対象のパスとその名前を定義するマッピング設定（カンマ <code>,</code> 区切り）</p>\n<br /><p>例: <code>name1@url1,name2@url2,url3,name4@url4</code></p></li>\n</ul>"
+        "details": "<ul>\n<li><p><strong>app_context_enabled</strong> <span class=\"type\">Boolean</span></p>\n<p>既定値 <code>false</code></p>\n<br /><p><code>true</code> に設定すると、<code>app_context_stat</code> の収集機能が全体的に有効になります</p></li>\n<li><p><strong>app_context_parser</strong></p>\n<br /><p><code>default</code>: デフォルトパーサー（最初のパスセグメントを抽出）</p>\n<br /><p><code>prefix</code>: 接頭辞マッチングパーサー（最も柔軟）</p>\n<br /><p><code>match</code>: 完全一致パーサー（正確に一致するもののみ）</p></li>\n<li><p><strong>app_context_parser_reset</strong> <span class=\"type\">Number</span></p>\n 既定値 <p><code>0</code></p>\n<br /><p>パーサーの内部キャッシュと設定を強制的にリセットするカウンター</p></li>\n<li><p><strong>app_context_path_depth</strong> <span class=\"type\">Number</span></p>\n 既定値 <p><code>1</code></p>\n<br /><p>URL から抽出するパスセグメントの深さを指定（<code>default</code> パーサーのみ使用）</p></li>\n<li><p><strong>app_context_path_set</strong> <span class=\"type\">String</span></p>\n<p>既定値なし</p>\n<br /><p>監視対象のパスとその名前を定義するマッピング設定（カンマ <code>,</code> 区切り）</p>\n<br /><p>例: <code>name1@url1,name2@url2,url3,name4@url4</code></p></li>\n</ul>"
       }
     ]
   },

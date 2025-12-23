@@ -144,7 +144,7 @@
         "hash": "service-260",
         "product": "共通",
         "type": "Changed",
-        "desc": "<p><code class=\"Changed\">Changed</code> <span class=\"uitext\">統合ダッシューボード</span>, <span class=\"uitext\">統合メトリックスダッシューボード</span> メニューのサービス終了の案内メッセージを変更</p>",
+        "desc": "<p><code class=\"Changed\">Changed</code> <span class=\"uitext\">統合ダッシュボード</span>, <span class=\"uitext\">統合メトリックスダッシュボード</span> メニューのサービス終了の案内メッセージを変更</p>",
         "category": "その他"
       },
       {
@@ -169,7 +169,7 @@
         "product": "Application",
         "type": "Feature",
         "desc": "<p><code class=\"Feature\">Feature</code> <span class=\"uitext\">アプリケーション</span>メニューで基本プリセット変更の機能追加</p>",
-        "category": "ダッシューボード"
+        "category": "ダッシュボード"
       },
       {
         "ver": "Service 2.6.0",
@@ -177,7 +177,7 @@
         "product": "Application",
         "type": "Feature",
         "desc": "<p><code class=\"Feature\">Feature</code> <span class=\"uitext\">アプリケーション</span> メニューでエージェントの検索機能を追加</p>",
-        "category": "ダッシューボード"
+        "category": "ダッシュボード"
       },
       {
         "ver": "Service 2.6.0",
@@ -185,7 +185,7 @@
         "product": "Application",
         "type": "Feature",
         "desc": "<p><code class=\"Feature\">Feature</code> <span class=\"uitext\">TXマップ</span>メニューで<span class=\"uitext\">TOP 30</span>フィルター内の項目を直接検索して追加する<span class=\"uitext\">カスタム</span>機能を追加</p>",
-        "category": "ダッシューボード"
+        "category": "ダッシュボード"
       },
       {
         "ver": "Service 2.6.0",
@@ -193,7 +193,7 @@
         "product": "Application",
         "type": "Changed",
         "desc": "<p><code class=\"Changed\">Changed</code>旧バージョンの<span class=\"uitext\">アプリケーション</span>メニューを削除する予定</p>",
-        "category": "ダッシューボード",
+        "category": "ダッシュボード",
         "details": "<ul>\n<li>\n<p><span class=\"uitext\">サイトマップ</span>メニューに<code class=\"Deprecated\">Deprecated</code>タグを追加</p>\n</li>\n<li>\n<p><span class=\"uitext\">サイトマップ</span> &gt; <span class=\"uitext\">アプリケーション</span> <code class=\"old\">Old</code>メニューに入ると削除予定の案内メッセージを表示</p>\n</li>\n</ul>"
       },
       {
@@ -202,7 +202,7 @@
         "product": "Application",
         "type": "Deprecated",
         "desc": "<p><span class=\"uitext\">サイトマップ</span>メニューに<code class=\"Deprecated\">Deprecated</code>タグを追加</p>",
-        "category": "ダッシューボード"
+        "category": "ダッシュボード"
       },
       {
         "ver": "Service 2.6.0",
@@ -210,7 +210,7 @@
         "product": "Application",
         "type": "Deprecated",
         "desc": "<p><span class=\"uitext\">サイトマップ</span>メニューに<code class=\"Deprecated\">Deprecated</code>タグを追加</p>",
-        "category": "ダッシューボード"
+        "category": "ダッシュボード"
       },
       {
         "ver": "Service 2.6.0",
@@ -218,7 +218,7 @@
         "product": "Application",
         "type": "Fixed",
         "desc": "<p><code class=\"Fixed\">Fixed</code> <span class=\"uitext\">アプリケーション</span>メニューでウィジェットの<img decoding=\"async\" loading=\"lazy\" alt=\"情報アイコン\" src=\"data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xMiAyQzE3LjUyMjggMiAyMiA2LjQ3NzE1IDIyIDEyQzIyIDE3LjUyMjggMTcuNTIyOCAyMiAxMiAyMkM2LjQ3NzE1IDIyIDIgMTcuNTIyOCAyIDEyQzIgNi40NzcxNSA2LjQ3NzE1IDIgMTIgMlpNMTIgNEM3LjU4MTcyIDQgNCA3LjU4MTcyIDQgMTJDNCAxNi40MTgzIDcuNTgxNzIgMjAgMTIgMjBDMTYuNDE4MyAyMCAyMCAxNi40MTgzIDIwIDEyQzIwIDcuNTgxNzIgMTYuNDE4MyA0IDEyIDRaTTExIDdWOUgxM1Y3SDExWk0xMSAxMVYxN0gxM1YxMUgxMVoiIGZpbGw9IiM3NTc1NzUiLz4KPC9zdmc+Cg==\" width=\"24\" height=\"24\" class=\"img_ev3q\">ボタンをクリックして案内画面を開くと、ローディング表示が当該画面でも適用される問題を修正</p>",
-        "category": "ダッシューボード"
+        "category": "ダッシュボード"
       },
       {
         "ver": "Service 2.6.0",
@@ -226,7 +226,7 @@
         "product": "Application",
         "type": "Fixed",
         "desc": "<p><code class=\"Fixed\">Fixed</code> <span class=\"uitext\">トレース分析</span>画面で<span class=\"uitext\">OS</span>、<span class=\"uitext\">クライアント名</span>、<span class=\"uitext\">ステータス</span>に対する文字列が翻訳key値で表示される問題を修正</p>",
-        "category": "ダッシューボード"
+        "category": "ダッシュボード"
       },
       {
         "ver": "Service 2.6.0",
@@ -234,7 +234,7 @@
         "product": "Application",
         "type": "Fixed",
         "desc": "<p><code class=\"Fixed\">Fixed</code> <span class=\"uitext\">トレース分析</span>画面でステップタイムライングラフを選択すると、そのステップに移動しない問題を修正</p>",
-        "category": "ダッシューボード"
+        "category": "ダッシュボード"
       },
       {
         "ver": "Service 2.6.0",
@@ -621,7 +621,7 @@
         "hash": "service-260",
         "product": "Database",
         "type": "Fixed",
-        "desc": "<p><code class=\"Fixed\">Fixed</code> <span class=\"uitext\">ダッシューボード</span> &gt; <span class=\"uitext\">マルチインスタンス</span>メニューの<span class=\"uitext\">DB Status</span>ウィジェットでエージェント選択状態をすぐに反映するように修正</p>",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> <span class=\"uitext\">ダッシュボード</span> &gt; <span class=\"uitext\">マルチインスタンス</span>メニューの<span class=\"uitext\">DB Status</span>ウィジェットでエージェント選択状態をすぐに反映するように修正</p>",
         "category": "MongoDB"
       },
       {

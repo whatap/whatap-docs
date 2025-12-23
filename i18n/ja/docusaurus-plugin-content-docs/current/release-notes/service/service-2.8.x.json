@@ -95,7 +95,7 @@
       {
         "ver": "Service 2.8.0",
         "hash": "service-280",
-        "product": "新機能リリーズ",
+        "product": "新機能リリース",
         "type": "New",
         "desc": "<p><code class=\"New\" type=\"1\">New</code> <span class=\"uitext\">分析</span> &gt; <span class=\"uitext\">メトリクスチャート</span> <code class=\"newfunc\">New</code>メニューを追加</p>",
         "category": "共通",
@@ -104,7 +104,7 @@
       {
         "ver": "Service 2.8.0",
         "hash": "service-280",
-        "product": "新機能リリーズ",
+        "product": "新機能リリース",
         "type": "New",
         "desc": "<p><code class=\"New\" type=\"1\">New</code> <strong>Node.js</strong>の商品にログモニタリング機能を追加</p>",
         "category": "Application"
@@ -112,7 +112,7 @@
       {
         "ver": "Service 2.8.0",
         "hash": "service-280",
-        "product": "新機能リリーズ",
+        "product": "新機能リリース",
         "type": "New",
         "desc": "<p><code class=\"New\" type=\"1\">New</code>特定のIP別に呼び出したURLと呼出件数を照会できる<span class=\"uitext\">IP Transaction</span>メニューを追加</p>",
         "category": "Application"
@@ -120,7 +120,7 @@
       {
         "ver": "Service 2.8.0",
         "hash": "service-280",
-        "product": "新機能リリーズ",
+        "product": "新機能リリース",
         "type": "New",
         "desc": "<p><code class=\"New\" type=\"1\">New</code> Altibase <code class=\"my\">V2</code>サービスを開始！</p>",
         "category": "Database"
@@ -131,7 +131,7 @@
         "product": "共通",
         "type": "Changed",
         "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code>縦イコライザーバーチャートから個別グラフのラベル表示を削除</p>",
-        "category": "ダッシューボード"
+        "category": "ダッシュボード"
       },
       {
         "ver": "Service 2.8.0",
@@ -409,14 +409,14 @@
         "hash": "service-280",
         "product": "Application",
         "type": "Changed",
-        "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code>ユーザーの設定言語が英語の場合、<span class=\"uitext\">ダッシューボード</span> &gt; <span class=\"uitext\">アプリケーション</span>メニューで<span class=\"uitext\">Apdex</span>ウィジェット案内モーダルの可読性向上のためにサイズを修正</p>"
+        "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code>ユーザーの設定言語が英語の場合、<span class=\"uitext\">ダッシュボード</span> &gt; <span class=\"uitext\">アプリケーション</span>メニューで<span class=\"uitext\">Apdex</span>ウィジェット案内モーダルの可読性向上のためにサイズを修正</p>"
       },
       {
         "ver": "Service 2.8.0",
         "hash": "service-280",
         "product": "Application",
         "type": "Changed",
-        "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> <span class=\"uitext\">ダッシューボード</span> &gt; <span class=\"uitext\">アプリケーション</span>メニューで<span class=\"b500\">アクティブTXイコライザー</span>ウィジェット名を<span class=\"uitext\">アクティブTX</span>に変更、ウィジェット名を改行せずに一行で表示するように修正</p>"
+        "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> <span class=\"uitext\">ダッシュボード</span> &gt; <span class=\"uitext\">アプリケーション</span>メニューで<span class=\"b500\">アクティブTXイコライザー</span>ウィジェット名を<span class=\"uitext\">アクティブTX</span>に変更、ウィジェット名を改行せずに一行で表示するように修正</p>"
       },
       {
         "ver": "Service 2.8.0",
@@ -430,7 +430,7 @@
         "hash": "service-280",
         "product": "Application",
         "type": "Fixed",
-        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">ダッシューボード</span> &gt; <span class=\"uitext\">アプリケーション</span>メニューで過去の時間を照会する際、断続的に一部のシリーズチャートのデータが表示されない問題を修正</p>"
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">ダッシュボード</span> &gt; <span class=\"uitext\">アプリケーション</span>メニューで過去の時間を照会する際、断続的に一部のシリーズチャートのデータが表示されない問題を修正</p>"
       },
       {
         "ver": "Service 2.8.0",
@@ -458,7 +458,7 @@
         "hash": "service-280",
         "product": "Application",
         "type": "Fixed",
-        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code>Firefoxのブラウザで<span class=\"uitext\">ダッシューボード</span> &gt; <span class=\"uitext\">アプリケーション</span>メニューのアークイコライザーウィジェットの中央テキストの並べ替えが壊れる問題を修正</p>"
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code>Firefoxのブラウザで<span class=\"uitext\">ダッシュボード</span> &gt; <span class=\"uitext\">アプリケーション</span>メニューのアークイコライザーウィジェットの中央テキストの並べ替えが壊れる問題を修正</p>"
       },
       {
         "ver": "Service 2.8.0",
@@ -514,7 +514,7 @@
         "hash": "service-280",
         "product": "Kubernetes",
         "type": "Feature",
-        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">ダッシューボード</span> &gt; <span class=\"uitext\">コンテナマップ</span>メニューの要約で<span class=\"uitext\">Pod要約分析</span>機能を追加</p>"
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">ダッシュボード</span> &gt; <span class=\"uitext\">コンテナマップ</span>メニューの要約で<span class=\"uitext\">Pod要約分析</span>機能を追加</p>"
       },
       {
         "ver": "Service 2.8.0",
@@ -528,7 +528,7 @@
         "hash": "service-280",
         "product": "Kubernetes",
         "type": "Feature",
-        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">ダッシューボード</span> &gt; <span class=\"uitext\">コンテナマップ</span>メニューの <span class=\"uitext\">対象情報</span>タブで<span class=\"uitext\">Service リスト</span>移動リンクを追加し、サービス<strong>オブジェクトメニフェスト</strong>情報を確認できる機能を追加</p>"
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">ダッシュボード</span> &gt; <span class=\"uitext\">コンテナマップ</span>メニューの <span class=\"uitext\">対象情報</span>タブで<span class=\"uitext\">Service リスト</span>移動リンクを追加し、サービス<strong>オブジェクトメニフェスト</strong>情報を確認できる機能を追加</p>"
       },
       {
         "ver": "Service 2.8.0",
@@ -571,7 +571,7 @@
         "hash": "service-280",
         "product": "Database",
         "type": "Feature",
-        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">ダッシューボード</span> &gt; <span class=\"uitext\">マルチインスタンス</span>メニューで指標を選択できるユーザー定義ウィジェットを追加</p>",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">ダッシュボード</span> &gt; <span class=\"uitext\">マルチインスタンス</span>メニューで指標を選択できるユーザー定義ウィジェットを追加</p>",
         "category": "共通"
       },
       {
@@ -603,7 +603,7 @@
         "hash": "service-280",
         "product": "Database",
         "type": "Feature",
-        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">ダッシューボード</span> &gt; <span class=\"uitext\">マルチインスタンス</span>メニューに、進行中のvacuumプロセス数が確認できる<span class=\"uitext\">Vacuum Sessions</span>ウィジェットを追加</p>",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">ダッシュボード</span> &gt; <span class=\"uitext\">マルチインスタンス</span>メニューに、進行中のvacuumプロセス数が確認できる<span class=\"uitext\">Vacuum Sessions</span>ウィジェットを追加</p>",
         "category": "PostgreSQL"
       },
       {
@@ -635,7 +635,7 @@
         "hash": "service-280",
         "product": "Database",
         "type": "Changed",
-        "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> <span class=\"uitext\">ダッシューボード</span> &gt; <span class=\"uitext\">マルチインスタンス</span>メニューで<span class=\"uitext\">Main Waits</span>ウィジェットのデータを<code>active_session</code>カテゴリで照会するように変更</p>",
+        "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> <span class=\"uitext\">ダッシュボード</span> &gt; <span class=\"uitext\">マルチインスタンス</span>メニューで<span class=\"uitext\">Main Waits</span>ウィジェットのデータを<code>active_session</code>カテゴリで照会するように変更</p>",
         "category": "Oracle V2、Oracle Pro"
       },
       {
@@ -659,7 +659,7 @@
         "hash": "service-280",
         "product": "Database",
         "type": "Fixed",
-        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">ダッシューボード</span> &gt; <span class=\"uitext\">インスタンスリスト</span>メニューにCluster Nameを表記するように修正</p>",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">ダッシュボード</span> &gt; <span class=\"uitext\">インスタンスリスト</span>メニューにCluster Nameを表記するように修正</p>",
         "category": "Oracle V2、Oracle Pro"
       },
       {
@@ -667,7 +667,7 @@
         "hash": "service-280",
         "product": "Database",
         "type": "Fixed",
-        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">ダッシューボード</span> &gt; <span class=\"uitext\">インスタンスリスト</span>メニューにCluster Nameを表記しないように修正</p>",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">ダッシュボード</span> &gt; <span class=\"uitext\">インスタンスリスト</span>メニューにCluster Nameを表記しないように修正</p>",
         "category": "Redis V1、MongoDB V1"
       },
       {
@@ -682,14 +682,14 @@
         "hash": "service-280",
         "product": "Browser",
         "type": "Changed",
-        "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> <span class=\"uitext\">ダッシューボード</span> &gt; <span class=\"uitext\">ブラウザエラー</span> &gt; <span class=\"uitext\">エラーメッセージ</span> <span class=\"uitext\">表</span>セクションのUIを改善</p>"
+        "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> <span class=\"uitext\">ダッシュボード</span> &gt; <span class=\"uitext\">ブラウザエラー</span> &gt; <span class=\"uitext\">エラーメッセージ</span> <span class=\"uitext\">表</span>セクションのUIを改善</p>"
       },
       {
         "ver": "Service 2.8.0",
         "hash": "service-280",
         "product": "Browser",
         "type": "Changed",
-        "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> <span class=\"uitext\">ダッシューボード</span> &gt; <span class=\"uitext\">ブラウザエラー</span> &gt; <span class=\"uitext\">エラーメッセージ</span> <span class=\"uitext\">表</span> &gt; <span class=\"uitext\">エラー</span> <span class=\"uitext\">詳細</span> &gt; <span class=\"uitext\">ページ毎のエラー数</span>セクションのUIを改善</p>"
+        "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> <span class=\"uitext\">ダッシュボード</span> &gt; <span class=\"uitext\">ブラウザエラー</span> &gt; <span class=\"uitext\">エラーメッセージ</span> <span class=\"uitext\">表</span> &gt; <span class=\"uitext\">エラー</span> <span class=\"uitext\">詳細</span> &gt; <span class=\"uitext\">ページ毎のエラー数</span>セクションのUIを改善</p>"
       },
       {
         "ver": "Service 2.8.0",

@@ -9,7 +9,7 @@
         "hash": "v2225",
         "product": "Java Batch Agent",
         "type": "Changed",
-        "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code><code>profile_expired_time</code>オプションのデフォルト値を30秒に修正</p>"
+        "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code><code>profile_expired_time</code>オプションの既定値を30秒に修正</p>"
       },
       {
         "ver": "v2.2.25",

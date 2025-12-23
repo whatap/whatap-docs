@@ -47,7 +47,7 @@
         "product": ".NET Agent",
         "type": "New",
         "desc": "<p><code class=\"New\" type=\"1\">New</code> .NET Coreで<code>expand_transaction_level</code>設定サポートの追加</p>",
-        "details": "<ul>\n<li>\n<p><strong>expand_transaction_level</strong> <span class=\"type\">Boolean</span></p>\n<p>デフォルト値 <code>false</code></p>\n<p>そのオプションを<code>true</code>に設定すると、トランザクションの外部から発生するSQLおよびHTTPの呼び出しをトランザクションと見なし、ヒットマップに表示します。</p>\n</li>\n<li>\n<p><strong>expand_transaction_basetime</strong> <span class=\"type\">Int</span></p>\n<p>デフォルト値 <code>1000</code>ms (1秒)</p>\n<p><code>expand_transaction_level</code> オプションが <code>true</code>に設定されている場合、指定した時間よりも応答時間のかかるリクエストのみがデータを収集します。 毎秒最大100件のデータを収集します。 最小値は <code>100</code> msで0.1秒です。</p>\n</li>\n</ul>"
+        "details": "<ul>\n<li>\n<p><strong>expand_transaction_level</strong> <span class=\"type\">Boolean</span></p>\n<p>既定値 <code>false</code></p>\n<p>そのオプションを<code>true</code>に設定すると、トランザクションの外部から発生するSQLおよびHTTPの呼び出しをトランザクションと見なし、ヒットマップに表示します。</p>\n</li>\n<li>\n<p><strong>expand_transaction_basetime</strong> <span class=\"type\">Int</span></p>\n<p>既定値 <code>1000</code>ms (1秒)</p>\n<p><code>expand_transaction_level</code> オプションが <code>true</code>に設定されている場合、指定した時間よりも応答時間のかかるリクエストのみがデータを収集します。 毎秒最大100件のデータを収集します。 最小値は <code>100</code> msで0.1秒です。</p>\n</li>\n</ul>"
       },
       {
         "ver": "v2.3.4",
@@ -229,7 +229,7 @@
         "product": ".NET Agent",
         "type": "Changed",
         "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> response bodyのオプション処理</p>",
-        "details": "<ul>\n<li>\n<p>文字列エンコードに関連するエラーが発見され、デフォルト設定の代わりに有効オプションが追加されました。</p>\n</li>\n<li>\n<p><code>profile_http_response_body_enabled</code>オプションのデフォルト値は<code>false</code>です。</p>\n</li>\n</ul>"
+        "details": "<ul>\n<li>\n<p>文字列エンコードに関連するエラーが発見され、デフォルト設定の代わりに有効オプションが追加されました。</p>\n</li>\n<li>\n<p><code>profile_http_response_body_enabled</code>オプションの既定値は<code>false</code>です。</p>\n</li>\n</ul>"
       },
       {
         "ver": "v2.3.5",
@@ -281,7 +281,7 @@
         "hash": "v228",
         "product": ".NET Agent",
         "type": "Changed",
-        "desc": "<p><code class=\"Changed\">Changed</code> <code>trace_http_client_ip_header_key</code>オプションのデフォルト値を<code>X-Forwarded-For</code>に変更</p>"
+        "desc": "<p><code class=\"Changed\">Changed</code> <code>trace_http_client_ip_header_key</code>オプションの既定値を<code>X-Forwarded-For</code>に変更</p>"
       }
     ]
   },

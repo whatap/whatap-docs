@@ -24,7 +24,7 @@
         "hash": "service-2515",
         "product": "Kubernetes",
         "type": "Fixed",
-        "desc": "<p><code class=\"Fixed\">Fixed</code> <span class=\"uitext\">ダッシューボード</span> &gt; <span class=\"uitext\">コンテナマップ</span>メニューの<em><strong>Container</strong></em>ビューでブロックが正常個数で表示されない問題を修正</p>"
+        "desc": "<p><code class=\"Fixed\">Fixed</code> <span class=\"uitext\">ダッシュボード</span> &gt; <span class=\"uitext\">コンテナマップ</span>メニューの<em><strong>Container</strong></em>ビューでブロックが正常個数で表示されない問題を修正</p>"
       }
     ]
   },
@@ -52,7 +52,7 @@
         "hash": "service-2513",
         "product": "Application",
         "type": "Fixed",
-        "desc": "<p><code class=\"Fixed\">Fixed</code> <span class=\"uitext\">ダッシューボード</span> &gt; <span class=\"uitext\">アプリケーション</span>メニューでエージェントがない場合、遅延することなくデータの呼び出しが発生する問題を修正</p>"
+        "desc": "<p><code class=\"Fixed\">Fixed</code> <span class=\"uitext\">ダッシュボード</span> &gt; <span class=\"uitext\">アプリケーション</span>メニューでエージェントがない場合、遅延することなくデータの呼び出しが発生する問題を修正</p>"
       }
     ]
   },
@@ -308,7 +308,7 @@
         "hash": "service-251",
         "product": "Database",
         "type": "Fixed",
-        "desc": "<p><code class=\"Fixed\">Fixed</code> <span class=\"uitext\">ダッシューボード</span> &gt; <span class=\"uitext\">インスタンスモニタリング</span>メニューで1か月前のデータが照会されない問題を修正</p>"
+        "desc": "<p><code class=\"Fixed\">Fixed</code> <span class=\"uitext\">ダッシュボード</span> &gt; <span class=\"uitext\">インスタンスモニタリング</span>メニューで1か月前のデータが照会されない問題を修正</p>"
       },
       {
         "ver": "Service 2.5.1",
@@ -473,7 +473,7 @@
         "hash": "service-250",
         "product": "Application",
         "type": "Changed",
-        "desc": "<p><code class=\"Changed\">Changed</code> <span class=\"uitext\">ダッシューボード</span> &gt; <span class=\"uitext\">アプリケーション</span>メニューの<span class=\"uitext\">本日TPS</span>, <span class=\"uitext\">本日ユーザー</span>ウィジェットは1日以内にデータを再照会する際、新しいデータを要請せず、すでに照会したデータを再加工して使用するように修正</p>"
+        "desc": "<p><code class=\"Changed\">Changed</code> <span class=\"uitext\">ダッシュボード</span> &gt; <span class=\"uitext\">アプリケーション</span>メニューの<span class=\"uitext\">本日TPS</span>, <span class=\"uitext\">本日ユーザー</span>ウィジェットは1日以内にデータを再照会する際、新しいデータを要請せず、すでに照会したデータを再加工して使用するように修正</p>"
       },
       {
         "ver": "Service 2.5.0",
@@ -530,7 +530,7 @@
         "hash": "service-250",
         "product": "Application",
         "type": "Fixed",
-        "desc": "<p><code class=\"Fixed\">Fixed</code> <span class=\"uitext\">ダッシューボード</span> &gt; <span class=\"uitext\">TXマップ</span>メニューでマップの上段エリアドラッグ時にデータが照会されない問題を修正</p>"
+        "desc": "<p><code class=\"Fixed\">Fixed</code> <span class=\"uitext\">ダッシュボード</span> &gt; <span class=\"uitext\">TXマップ</span>メニューでマップの上段エリアドラッグ時にデータが照会されない問題を修正</p>"
       },
       {
         "ver": "Service 2.5.0",
@@ -673,7 +673,7 @@
         "hash": "service-250",
         "product": "Database",
         "type": "Fixed",
-        "desc": "<p><code class=\"Fixed\">Fixed</code> <span class=\"uitext\">ダッシューボード</span> &gt; <span class=\"uitext\">インスタンスリスト</span>メニューで<span class=\"uitext\">データベース</span>と<span class=\"uitext\">IP</span>カラムの値がセルサイズを超えたら、省略記号(...)を適用し、カーソルに合わせるとツールチップとして表示するように修正</p>",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> <span class=\"uitext\">ダッシュボード</span> &gt; <span class=\"uitext\">インスタンスリスト</span>メニューで<span class=\"uitext\">データベース</span>と<span class=\"uitext\">IP</span>カラムの値がセルサイズを超えたら、省略記号(...)を適用し、カーソルに合わせるとツールチップとして表示するように修正</p>",
         "category": "共通"
       },
       {
