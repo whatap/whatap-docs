@@ -1,5 +1,153 @@
 [
   {
+    "ver": "v2.58.10",
+    "date": "2025-12-19",
+    "Lists": [
+      {
+        "ver": "v2.58.10",
+        "hash": "v25810",
+        "product": "DBX",
+        "type": "Feature",
+        "category": "Redis",
+        "desc": "<p><code class=\"Feature\">Feature</code> Added flag to Autoscale agent connection status handling</p>"
+      },
+      {
+        "ver": "v2.58.10",
+        "hash": "v25810",
+        "product": "DBX",
+        "type": "Fixed",
+        "category": "PostgreSQL",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> Modified pg tables query</p>"
+      }
+    ]
+  },
+  {
+    "ver": "v2.58.09",
+    "date": "2025-12-17",
+    "Lists": [
+      {
+        "ver": "v2.58.09",
+        "hash": "v25809",
+        "product": "DBX",
+        "type": "Feature",
+        "category": "Redis",
+        "desc": "<p><code class=\"Feature\">Feature</code> Added <code>sub_type</code> to Autoscale agentinfo</p>"
+      },
+      {
+        "ver": "v2.58.09",
+        "hash": "v25809",
+        "product": "DBX",
+        "type": "Deprecated",
+        "category": "Tibero",
+        "desc": "<p><code class=\"Deprecated\">Deprecated</code> Removed <code>db_tibero_tables</code> / <code>DbTablesPack</code></p>"
+      }
+    ]
+  },
+  {
+    "ver": "v2.58.08",
+    "date": "2025-12-10",
+    "Lists": [
+      {
+        "ver": "v2.58.08",
+        "hash": "v25808",
+        "product": "DBX",
+        "type": "Fixed",
+        "category": "DB2",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> Fixed bug related to DB2 memory metrics</p>"
+      },
+      {
+        "ver": "v2.58.08",
+        "hash": "v25808",
+        "product": "DBX",
+        "type": "Fixed",
+        "category": "DB2",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> Fixed accumulation bug for <code>direct_reads</code> and <code>direct_writes</code> values</p>"
+      }
+    ]
+  },
+  {
+    "ver": "v2.58.07",
+    "date": "2025-12-09",
+    "Lists": [
+      {
+        "ver": "v2.58.07",
+        "hash": "v25807",
+        "product": "DBX",
+        "type": "Fixed",
+        "category": "MongoDB",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> Fixed error during version collection processing</p>"
+      }
+    ]
+  },
+  {
+    "ver": "v2.58.06",
+    "date": "2025-12-04",
+    "Lists": [
+      {
+        "ver": "v2.58.06",
+        "hash": "v25806",
+        "product": "DBX",
+        "type": "Fixed",
+        "category": "DB2",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> Added <code>WITH UR</code> to collection query</p>"
+      },
+      {
+        "ver": "v2.58.06",
+        "hash": "v25806",
+        "product": "DBX",
+        "type": "Fixed",
+        "category": "Tibero",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> Fixed bug where active session sesstat value was displayed as 0 (added sid)</p>"
+      },
+      {
+        "ver": "v2.58.06",
+        "hash": "v25806",
+        "product": "DBX",
+        "type": "Fixed",
+        "category": "Tibero",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> Fixed wait class bug</p>"
+      },
+      {
+        "ver": "v2.58.06",
+        "hash": "v25806",
+        "product": "DBX",
+        "type": "Fixed",
+        "category": "Tibero",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> Modified active session: removed duplicate xos values, added <code>cpu_usage</code> (CPU usage collected from DB), <code>plan_hash_value</code>, <code>sql_child_number</code>, updated and changed <code>status</code> and <code>state</code></p>"
+      },
+      {
+        "ver": "v2.58.06",
+        "hash": "v25806",
+        "product": "DBX",
+        "type": "Fixed",
+        "category": "Tibero",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> Fixed xview bug (bug where previous session information remained)</p>"
+      }
+    ]
+  },
+  {
+    "ver": "v2.58.05",
+    "date": "2025-11-27",
+    "Lists": [
+      {
+        "ver": "v2.58.05",
+        "hash": "v25805",
+        "product": "DBX",
+        "type": "Feature",
+        "category": "Common",
+        "desc": "<p><code class=\"Feature\">Feature</code> Added xos metrics: <code>pgpgin(xos)</code>, <code>pgpgout(xos)</code>, <code>pswpin(xos)</code>, <code>pswpout(xos)</code>, <code>procs_blocked(xos)</code></p>"
+      },
+      {
+        "ver": "v2.58.05",
+        "hash": "v25805",
+        "product": "DBX",
+        "type": "Changed",
+        "category": "MS SQL Server",
+        "desc": "<p><code class=\"Changed\">Changed</code> Added error message when querying temporary table plans</p>"
+      }
+    ]
+  },
+  {
     "ver": "v2.58.04",
     "date": "2025-11-10",
     "Lists": [

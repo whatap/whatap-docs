@@ -1,5 +1,153 @@
 [
   {
+    "ver": "v2.58.10",
+    "date": "2025-12-19",
+    "Lists": [
+      {
+        "ver": "v2.58.10",
+        "hash": "v25810",
+        "product": "DBX",
+        "type": "Feature",
+        "category": "Redis",
+        "desc": "<p><code class=\"Feature\">Feature</code> Autoscaleエージェントのconnected状態処理にflagを追加</p>"
+      },
+      {
+        "ver": "v2.58.10",
+        "hash": "v25810",
+        "product": "DBX",
+        "type": "Fixed",
+        "category": "PostgreSQL",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> pg tablesクエリを修正</p>"
+      }
+    ]
+  },
+  {
+    "ver": "v2.58.09",
+    "date": "2025-12-17",
+    "Lists": [
+      {
+        "ver": "v2.58.09",
+        "hash": "v25809",
+        "product": "DBX",
+        "type": "Feature",
+        "category": "Redis",
+        "desc": "<p><code class=\"Feature\">Feature</code> Autoscale agentinfoに<code>sub_type</code>を追加</p>"
+      },
+      {
+        "ver": "v2.58.09",
+        "hash": "v25809",
+        "product": "DBX",
+        "type": "Deprecated",
+        "category": "Tibero",
+        "desc": "<p><code class=\"Deprecated\">Deprecated</code> <code>db_tibero_tables</code> / <code>DbTablesPack</code>を削除</p>"
+      }
+    ]
+  },
+  {
+    "ver": "v2.58.08",
+    "date": "2025-12-10",
+    "Lists": [
+      {
+        "ver": "v2.58.08",
+        "hash": "v25808",
+        "product": "DBX",
+        "type": "Fixed",
+        "category": "DB2",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> DB2 memory指標に関するバグを修正</p>"
+      },
+      {
+        "ver": "v2.58.08",
+        "hash": "v25808",
+        "product": "DBX",
+        "type": "Fixed",
+        "category": "DB2",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> <code>direct_reads</code>、<code>direct_writes</code>値の累積バグを修正</p>"
+      }
+    ]
+  },
+  {
+    "ver": "v2.58.07",
+    "date": "2025-12-09",
+    "Lists": [
+      {
+        "ver": "v2.58.07",
+        "hash": "v25807",
+        "product": "DBX",
+        "type": "Fixed",
+        "category": "MongoDB",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> バージョン収集処理時のエラーを修正</p>"
+      }
+    ]
+  },
+  {
+    "ver": "v2.58.06",
+    "date": "2025-12-04",
+    "Lists": [
+      {
+        "ver": "v2.58.06",
+        "hash": "v25806",
+        "product": "DBX",
+        "type": "Fixed",
+        "category": "DB2",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> 収集クエリに<code>WITH UR</code>を追加</p>"
+      },
+      {
+        "ver": "v2.58.06",
+        "hash": "v25806",
+        "product": "DBX",
+        "type": "Fixed",
+        "category": "Tibero",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> アクティブセッションのsesstat値が0と表示されるバグを修正（sidを追加）</p>"
+      },
+      {
+        "ver": "v2.58.06",
+        "hash": "v25806",
+        "product": "DBX",
+        "type": "Fixed",
+        "category": "Tibero",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> wait classのバグを修正</p>"
+      },
+      {
+        "ver": "v2.58.06",
+        "hash": "v25806",
+        "product": "DBX",
+        "type": "Fixed",
+        "category": "Tibero",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> アクティブセッションを修正：xos重複値を削除、<code>cpu_usage</code>（DBから収集したCPU使用率）、<code>plan_hash_value</code>、<code>sql_child_number</code>を追加、<code>status</code>、<code>state</code>を修正および変更</p>"
+      },
+      {
+        "ver": "v2.58.06",
+        "hash": "v25806",
+        "product": "DBX",
+        "type": "Fixed",
+        "category": "Tibero",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> xviewのバグを修正（前のセッション情報が残るバグ）</p>"
+      }
+    ]
+  },
+  {
+    "ver": "v2.58.05",
+    "date": "2025-11-27",
+    "Lists": [
+      {
+        "ver": "v2.58.05",
+        "hash": "v25805",
+        "product": "DBX",
+        "type": "Feature",
+        "category": "Common",
+        "desc": "<p><code class=\"Feature\">Feature</code> xos指標を追加：<code>pgpgin(xos)</code>、<code>pgpgout(xos)</code>、<code>pswpin(xos)</code>、<code>pswpout(xos)</code>、<code>procs_blocked(xos)</code></p>"
+      },
+      {
+        "ver": "v2.58.05",
+        "hash": "v25805",
+        "product": "DBX",
+        "type": "Changed",
+        "category": "MS SQL Server",
+        "desc": "<p><code class=\"Changed\">Changed</code> 一時テーブルプラン照会時のエラーメッセージを追加</p>"
+      }
+    ]
+  },
+  {
     "ver": "v2.58.04",
     "date": "2025-11-10",
     "Lists": [
