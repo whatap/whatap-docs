@@ -173,7 +173,7 @@ x-tagGroups:
       - Group
       - Agent
       - Event
-  - name: Appication
+  - name: Application
     tags:
       - APM spot information API
       - APM viewing the statistical data
@@ -439,7 +439,7 @@ paths:
                     name: Hong
                     desc: ''
                     sms: 010XXXXXXX
-                totla: 8
+                total: 8
       x-codeSamples:
         - lang: curl
           source: |
@@ -540,7 +540,7 @@ paths:
                     name: Hong
                     desc: ''
                     sms: 010XXXXXXX
-                totla: 8
+                total: 8
       x-codeSamples:
         - lang: curl
           source: |
@@ -1496,7 +1496,7 @@ paths:
                     type: string
                     description: TagCount Category
                   okindName:
-                    type: sting
+                    type: string
                     description: Agent Group Name per Type
                   onode:
                     type: integer

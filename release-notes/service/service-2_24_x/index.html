@@ -17,8 +17,8 @@
 <meta name="description" content="WhaTap Docs 페이지입니다. 애플리케이션, 서버, 쿠버네티스, 데이터베이스, 브라우저 등 다양한 모니터링 솔루션의 사용법을 제공합니다.">
 <meta name="naver-site-verification" content="0c21fc5664a467108fb762ade47a3f81ee9b88ed">
 <meta name="google-site-verification" content="rIlfJkbbogFOIDc3DgJZmOGbUMJWytyvZSKEgV7EMsE"><link rel="stylesheet" href="/whatap-docs/assets/css/styles.9192e53b.css">
-<script src="/whatap-docs/assets/js/runtime~main.530b3a42.js" defer="defer"></script>
-<script src="/whatap-docs/assets/js/main.1119eaf6.js" defer="defer"></script>
+<script src="/whatap-docs/assets/js/runtime~main.b6ee4b90.js" defer="defer"></script>
+<script src="/whatap-docs/assets/js/main.1e6b239a.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;"><defs>
@@ -53,6 +53,8 @@
 <li>
 <p><code class="Fixed" type="0">Fixed</code> <span class="uitext">경고 알림</span> &gt; <span class="uitext">이벤트 기록</span>  CSV 다운로드 시 10,000 라인 다운로드 할 수 있도록 수정</p>
 </li>
+</ul><h4 class="anchor anchorWithStickyNavbar_LWe7" id="openmetrics">OpenMetrics<a href="#openmetrics" class="hash-link" aria-label="OpenMetrics에 대한 직접 링크" title="OpenMetrics에 대한 직접 링크">​</a></h4><ul>
+<li><code class="Feature" type="1">Feature</code> <strong>HAProxy for MySQL 템플릿</strong> 추가</li>
 </ul><h3 class="anchor anchorWithStickyNavbar_LWe7" id="application"><code>Application</code><a href="#application" class="hash-link" aria-label="application에 대한 직접 링크" title="application에 대한 직접 링크">​</a></h3><ul>
 <li>
 <p><code class="Feature" type="1">Feature</code> <span class="uitext">경고 알림</span> &gt; <span class="uitext">이벤트 설정</span>  이상치 탐지 이벤트 추가 시 발생 횟수, 일시 중지 설정 가능하도록 추가</p>
@@ -64,7 +66,7 @@
 <p><code class="Fixed" type="0">Fixed</code> <span class="uitext">분석</span> &gt; <span class="uitext">일자별 애플리케이션 현황</span> 선택된 에이전트가 데이터 조회에 반영되지 않는 현상 수정</p>
 </li>
 <li>
-<p><code class="Fixed" type="0">Fixed</code> <span class="uitext">이벤트 설정</span>  트랜잭션, 이벤트 이름 255자로 길이 제한 적용</p>
+<p><code class="Fixed" type="0">Fixed</code> <span class="uitext">이벤트 설정</span> &gt; <strong>트랜잭션</strong> 이벤트 이름 255자로 길이 제한 적용</p>
 </li>
 </ul><h4 class="anchor anchorWithStickyNavbar_LWe7" id="python">Python<a href="#python" class="hash-link" aria-label="Python에 대한 직접 링크" title="Python에 대한 직접 링크">​</a></h4><ul>
 <li><code class="Feature" type="1">Feature</code> <strong>에이전트 설치</strong> Windows OS 안내 추가</li>
@@ -154,11 +156,14 @@
 <li>
 <p><code class="Fixed" type="0">Fixed</code> <span class="uitext">대시보드</span> 트리 형태의 테이블 깜빡임 현상 개선</p>
 </li>
+<li>
+<p><code class="Fixed" type="0">Fixed</code> 변경된 시간이 인스턴스 선택기에 반영되지 않는 현상 수정</p>
+</li>
 </ul><h4 class="anchor anchorWithStickyNavbar_LWe7" id="mysql-postgresql">MySQL, PostgreSQL<a href="#mysql-postgresql" class="hash-link" aria-label="MySQL, PostgreSQL에 대한 직접 링크" title="MySQL, PostgreSQL에 대한 직접 링크">​</a></h4><ul>
 <li><code class="Feature" type="1">Feature</code> <span class="uitext">대시보드</span> &gt; <span class="uitext">슬로우 쿼리</span> 테이블에 정렬 기능 추가</li>
 </ul><h4 class="anchor anchorWithStickyNavbar_LWe7" id="ibm-db2">IBM DB2<a href="#ibm-db2" class="hash-link" aria-label="IBM DB2에 대한 직접 링크" title="IBM DB2에 대한 직접 링크">​</a></h4><ul>
 <li>
-<p><code class="Fixed" type="0">Fixed</code> <span class="uitext">대시보드</span> &gt; <span class="uitext">인스턴스 모니터링</span> Direct I/O 위젯 지표를 변경</p>
+<p><code class="Fixed" type="0">Fixed</code> <span class="uitext">대시보드</span> &gt; <span class="uitext">인스턴스 모니터링</span> Direct I/O 위젯 지표 변경</p>
 <ul>
 <li>
 <p>direct_read → direct_reads</p>
@@ -169,7 +174,7 @@
 </ul>
 </li>
 </ul><h4 class="anchor anchorWithStickyNavbar_LWe7" id="tibero">Tibero<a href="#tibero" class="hash-link" aria-label="Tibero에 대한 직접 링크" title="Tibero에 대한 직접 링크">​</a></h4><ul>
-<li><code class="Changed" type="1">Changed</code> 락트리 컬럼 변경</li>
+<li><code class="Changed" type="1">Changed</code> <strong>락트리</strong> 컬럼 변경</li>
 </ul><h3 class="anchor anchorWithStickyNavbar_LWe7" id="browser"><code>Browser</code><a href="#browser" class="hash-link" aria-label="browser에 대한 직접 링크" title="browser에 대한 직접 링크">​</a></h3><ul>
 <li><code class="Feature" type="1">Feature</code> <span class="uitext">AJAX 분석</span> &gt; <span class="uitext">멀티 트랜잭션</span> 추가</li>
 </ul><h3 class="anchor anchorWithStickyNavbar_LWe7" id="url"><code>URL</code><a href="#url" class="hash-link" aria-label="url에 대한 직접 링크" title="url에 대한 직접 링크">​</a></h3><ul>
@@ -179,8 +184,6 @@
 <li>
 <p><code class="Fixed" type="0">Fixed</code> 등록된 URL 없는 경우, 데이터 없음을 표시하도록 수정</p>
 </li>
-</ul><h3 class="anchor anchorWithStickyNavbar_LWe7" id="url-pro"><code>URL Pro</code><a href="#url-pro" class="hash-link" aria-label="url-pro에 대한 직접 링크" title="url-pro에 대한 직접 링크">​</a></h3><ul>
-<li><code class="Fixed" type="0">Fixed</code> <span class="uitext">경고 알림</span> &gt; <span class="uitext">이벤트 설정</span> Docs 아이콘 선택 시 이벤트 설 정 관련 가이드로 이동되도록 수정</li>
 </ul></div></section></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col"><div class="btnwrapper_gsW7"><button class="modalopenbtn_jIdz">피드백</button></div></div><div class="col lastUpdated_JAkA"></div></div></footer></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="문서 탐색"><a class="pagination-nav__link pagination-nav__link--prev" href="/whatap-docs/release-notes/service/"><div class="pagination-nav__sublabel">이전</div><div class="pagination-nav__label">Service Release Notes</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/whatap-docs/release-notes/service/service-2_23_x"><div class="pagination-nav__sublabel">다음</div><div class="pagination-nav__label">Service 2.23.X</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_pzBX thin-scrollbar"></div><div class="fbsharebutton_dZBI" data-href="https://docs.whatap.io/whatap-docs/release-notes/service/service-2_24_x" data-layout="" data-size=""><button type="button" class="fb_xfbml_parse_ignore_BpHP">공유</button></div><div class="btnprint_EBmh"><button>PDF</button></div><div class="btnwrapper_gsW7"><button class="modalopenbtn_jIdz">피드백</button></div></div></div></div></main></div></div></div><footer class="footer"><div class="container container-fluid"><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2025 WhaTap Labs Inc. All rights reserved. Built with Docusaurus.</div></div></div></footer></div>
 </body>
 </html>
