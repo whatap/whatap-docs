@@ -1,0 +1,71 @@
+---
+id: apm-integration
+title: APM Integration Settings
+description: .
+keywords: [ Browser Monitoring, APM Integration ]
+---
+
+You can link HTTP requests generated in the browser to backend transactions.  
+When linked, you can view frontend indicators together with backend and infrastructure performance information, which helps you quickly identify and understand the causes of delays and errors that real users experience.
+
+## Requirements {#required}
+
+* An application with Whatap APM installed is required.
+* You must configure the AJAX request URLs to be linked in the browser monitoring agent.
+* The server providing the HTTP API may need to **configure and allow Access-Control-Allow-Headers** for the headers below<span class='vslow'>(Important)</span>.
+    
+    Table. Access-Control-Allow-Headers configuration and settings
+    
+    | Info | Description |
+    | --- | --- |
+    | x-wtap-po | Project information used for MTID tracking |
+    | x-wtap-mst | Transaction information used for MTID tracking |
+    | x-wtap-sp1 | Page URL-related information configuration |
+
+
+## Browser Agent Settings {#browser-agent-setting}
+
+Specify the HTTP request URLs to be traced.  
+Configure them in the `config` section of the browser monitoring agent installation script.
+
+* Register target AJAX URLs as a string array in the installation script option `tracingAjaxUrls`.
+
+* You can configure the ratio of multi-transaction generation using `traceSampleRate`.
+
+    ```tsx showLineNumbers {9,10}
+    <script>
+    (function (w, h, _a, t, a, b) {
+    w = w[a] = w[a] || {
+        config: {
+        projectAccessKey: "xxxxxxxxxxxxx-xxxxxxxxxxxxx-xxxxxxxxxxxxx",
+        pcode: 1,
+        sampleRate: 100,
+        proxyBaseUrl: "https://rumote.whatap-browser-agent.io/",
+        traceSampleRate: 50,
+        tracingAjaxUrls: ['http://devote.whatap.io/yard/api/flush', 'http://devote.whatap.io/', /^https?:\/\/localhost(:\d+)?(\/.*)?$/]
+        },
+    };
+    a = h.createElement(_a);
+    a.async = 1;
+    a.src = t;
+    t = h.getElementsByTagName(_a)[0];
+    t.parentNode.insertBefore(a, t);
+    })(window, document, 'script', '${front_rum_url}', 'WhatapBrowserAgent', '');
+    </script>
+    ```
+
+1. In the AJAX heatmap where real-time and historical data can be viewed, check the HTTP requests occurring at the client level.
+
+    <ImgLang img='browser-dashboard-apm.png' desc='Browser dashboard heatmap' />
+
+1. Drag the heatmap to select the analysis range and review the table.
+
+    <ImgLang img='browser-ajax-analysis.png' desc='Browser AJAX analysis' />
+
+    * You can check AJAX requests generated on the client side by user ID, page URL, AJAX URL, and more, and you can link them to the backend transactions processed in APM.
+
+        <ImgLang img='browser-ajax-analysis-multi.png' desc='Browser AJAX analysis multi-transaction' />
+
+    * When clicking a node, you can view detailed information about the APM transaction on that screen.
+
+        <ImgLang img='browser-active-stack.png' desc='Active stack' />
