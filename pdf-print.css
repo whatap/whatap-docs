@@ -371,7 +371,7 @@
     background-position: top 21px left 20px !important;
     border-left: 4px solid #df3737 !important;
   }
-  /* 1. 범인: Back to top 버튼 완전 제거 */
+  /* 1. PDF 출력시 Back to top 버튼 영역 완전 제거 */
   .theme-back-to-top-button,
   button[class*="theme-back-to-top-button"],
   [class*="backToTopButton"] {
