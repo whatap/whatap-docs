@@ -15,6 +15,338 @@ Prometheusエンドポイントからメトリクスを収集し、WhaTapサー�
 
 ## 設定
 
+<details>
+
+<summary>スタンドアロン YAML でインストールする場合</summary>
+
+Open Agent はデフォルトで whatap-monitoring ネームスペースに作成されます。必要に応じて調整できます。
+
+```yaml
+# Whatap Open Agent 単体マニフェスト
+# ネームスペースは必要に応じて調整してください。例では whatap-monitoring を使用しています。
+---
+#apiVersion: v1
+#kind: Namespace
+#metadata:
+#  name: whatap-monitoring
+---
+# Whatap 接続情報（ライセンス／ホスト／ポート）
+# すでに同じ名前の Secret を作成済みの場合、この Secret ブロックを削除し、
+# 下の Deployment の secretKeyRef.name を既存の Secret 名に合わせてください。
+apiVersion: v1
+kind: Secret
+metadata:
+  name: whatap-credentials
+  namespace: whatap-monitoring
+type: Opaque
+stringData:
+  WHATAP_LICENSE: "<YOUR_LICENSE>"
+  WHATAP_HOST: "<WHATAP_HOST>"
+  WHATAP_PORT: "6600"
+
+---
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: whatap-open-agent-sa
+  namespace: whatap-monitoring
+
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: whatap-open-agent-role
+rules:
+  - apiGroups: ["*"]
+    resources: ["pods", "services", "endpoints", "endpointslices", "namespaces", "secrets"]
+    verbs: ["get", "list", "watch"]
+  - nonResourceURLs: ["/metrics"]
+    verbs: ["*"]
+  - apiGroups: [""]
+    resources: ["pods/exec"]
+    verbs: ["create"]
+  - apiGroups: [""]
+    resources: ["configmaps"]
+    verbs: ["*"]
+  - nonResourceURLs: ["/metrics"]
+    verbs: ["*"]
+
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRoleBinding
+metadata:
+  name: whatap-open-agent-role-binding
+subjects:
+  - kind: ServiceAccount
+    name: whatap-open-agent-sa
+    namespace: whatap-monitoring
+roleRef:
+  kind: ClusterRole
+  name: whatap-open-agent-role
+  apiGroup: rbac.authorization.k8s.io
+
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: whatap-open-agent-config
+  namespace: whatap-monitoring
+data:
+  scrape_config.yaml: |
+    features:
+      openAgent:
+        enabled: true
+        globalInterval: "60s"
+        globalPath: "/metrics"
+        targets:
+          - targetName: kube-apiserver
+            type: ServiceMonitor
+            namespaceSelector:
+              matchNames:
+                - "default"  # API サーバーのサービスが存在するネームスペースに変更してください
+            selector:
+              matchLabels:
+                component: apiserver
+                provider: kubernetes
+            endpoints:
+              - port: "https"
+                path: "/metrics"
+                interval: "30s"
+                scheme: "https"
+                timeout: "30s"
+                tlsConfig:
+                  insecureSkipVerify: true
+                metricRelabelConfigs:
+                  - source_labels: [__name__]
+                    regex: "apiserver_request_total"
+                    action: keep
+                  - source_labels: [verb]
+                    target_label: http_verb
+                    replacement: "${1}"
+                    action: replace
+                  - target_label: metric_src
+                    replacement: "whatap-open-agent"
+                    action: replace
+
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: whatap-open-agent
+  namespace: whatap-monitoring
+  labels:
+    name: whatap-open-agent
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      name: whatap-open-agent
+  template:
+    metadata:
+      labels:
+        name: whatap-open-agent
+    spec:
+      serviceAccountName: whatap-open-agent-sa
+      volumes:
+        - name: config-volume
+          configMap:
+            name: whatap-open-agent-config
+        - name: logs-volume
+          emptyDir: {}
+      containers:
+        - name: whatap-open-agent
+          image: public.ecr.aws/whatap/open_agent:latest
+          imagePullPolicy: Always
+          resources:
+            requests:
+              memory: "300Mi"
+              cpu: "100m"
+            limits:
+              memory: "1000Mi"
+              cpu: "1000m"
+          env:
+            - name: WHATAP_LICENSE
+              valueFrom:
+                secretKeyRef:
+                  name: whatap-credentials
+                  key: WHATAP_LICENSE
+            - name: WHATAP_HOST
+              valueFrom:
+                secretKeyRef:
+                  name: whatap-credentials
+                  key: WHATAP_HOST
+            - name: WHATAP_PORT
+              valueFrom:
+                secretKeyRef:
+                  name: whatap-credentials
+                  key: WHATAP_PORT
+            - name: debug
+              value: "false"
+          volumeMounts:
+            - name: config-volume
+              mountPath: /app/scrape_config.yaml
+              subPath: scrape_config.yaml
+            - name: logs-volume
+              mountPath: /app/logs
+          # 必要に応じてコンテナ／ノードのトレランスや affinity などを追加してください。
+```
+
+</details>
+
+<details>
+
+<summary>Helm でのインストール</summary>
+
+1. 次のコマンドを実行して、WhaTap Helm リポジトリを追加してください。
+
+    ```yaml
+    helm repo add whatap https://whatap.github.io/helm/
+    helm repo update
+    ```
+
+1. 初めてエージェントをインストールする場合は、次のコマンドを実行してエージェントアプリケーションをインストールしてください。*values.yaml* は以下の例を参考にしてください。
+
+    <Tabs groupId="event-reception">
+    <TabItem value="frist install" label="初回インストール">
+
+    ```yaml
+    # 初めてエージェントをインストールする場合は、次のコマンドを実行してエージェントアプリケーションをインストールしてください。
+    kubectl create ns whatap-monitoring
+    helm install whatap-kube-agent --namespace whatap-monitoring whatap/kube -f values.yaml
+    ```
+
+    </TabItem>
+    <TabItem value="user" label="既存ユーザー">
+
+    ```yaml
+    #既存の WhaTap Kubernetes エージェント利用者は、次のコマンドを実行してエージェントをインストールしてください。
+    #既存の YAML ファイル方式で WhaTap Kubernetes エージェントをインストールした場合、Clean Install が必要です。 既存の Kubernetes エージェントを削除した後、Helm チャートを使用してインストールしてください。.
+    kubectl delete ns whatap-monitoring
+    kubectl delete clusterrole whatap
+    kubectl delete clusterrolebinding whatap
+    kubectl create ns whatap-monitoring
+    helm install whatap-kube-agent --namespace whatap-monitoring whatap/kube -f values.yaml
+    ```
+
+    </TabItem>
+    </Tabs>
+
+  > **values.yaml**
+
+    ```yaml
+    whatap:
+      license: #ライセンスキーを入力
+      host: #収集サーバーの IP を入力
+      port: #収集サーバーのポートを入力
+      createSecret: true #default : true, if credentials already exist, set false
+      existingSecretName: "whatap-credentials" #default : whatap-credentials
+    collect_custom_resources: true
+    containerRuntime: "containerd"
+    deployment:
+      containers:
+        controlPlaneHelper:
+          enabled: false
+          image: "whatap/kube_mon:1.8.8"
+          name: "whatap-control-plane-helper"
+          port: 9496
+          resources:
+            limits:
+              cpu: "200m"
+              memory: "350Mi"
+            requests:
+              cpu: "100m"
+              memory: "300Mi"
+        masterAgent:
+          image: "whatap/kube_mon:1.8.8"
+          name: "whatap-master-agent"
+          port: 6600
+          resources:
+            limits:
+              cpu: "200m"
+              memory: "350Mi"
+            requests:
+              cpu: "100m"
+              memory: "300Mi"
+      label: "whatap-master-agent"
+      name: "whatap-master-agent"
+      replicas: 1
+
+    daemonSet:
+      containers:
+        nodeAgent:
+          image: "whatap/kube_mon:1.8.8"
+          limits:
+            cpu: "200m"
+            memory: "350Mi"
+          name: "whatap-node-agent"
+          requests:
+            cpu: "100m"
+            memory: "300Mi"
+        nodeHelper:
+          image: "whatap/kube_mon:1.8.8"
+          limits:
+            cpu: "200m"
+            memory: "350Mi"
+          name: "whatap-node-helper"
+          requests:
+            cpu: "100m"
+            memory: "100Mi"
+      initContainers:
+        nodeDebugger:
+          enabled: false
+          image: "whatap/kube_mon:1.8.8"
+          name: "whatap-node-debug"
+      label: "whatap-node-agent"
+      name: "whatap-node-agent"
+
+    clusterrole:
+      extraResources:
+      - "*"
+
+    deploymentOpen:
+      enabled: true
+      containers:
+        openAgent:
+          image: "public.ecr.aws/whatap/open_agent:latest"
+      config:
+        features:
+          openAgent:
+            enabled: true
+            #globalInterval: "60s"
+            #globalPath: "/metrics"
+            targets:
+              - targetName: "kube-apiserver"
+                type: "ServiceMonitor"
+                enabled: true
+                namespaceSelector:
+                  matchNames:
+                    - "default"   # クラスターのデフォルトラベルに合わせて調整してください
+                  matchLabels:
+                    component: "apiserver"
+                    provider: "kubernetes"
+                endpoints:
+                  - port: "https"
+                    path: "/metrics"
+                    interval: "30s"
+                    scheme: "https"
+                    timeout: "30s"
+                    tlsConfig:
+                      insecureSkipVerify: true   # 自己署名証明書の場合の便宜用です。セキュリティが必要な場合は false にし、CA を指定してください
+                    metricRelabelConfigs:
+                      - source_labels: [__name__]
+                        regex: "apiserver_request_total"
+                        action: keep
+                      - source_labels: [verb]
+                        target_label: http_verb
+                        replacement: "${1}"
+                        action: replace
+                      - target_label: metric_src
+                        replacement: "whatap-open-agent"
+                        action: replace
+    ```
+
+</details>
+
 WhatapOperatorをインストールした後、ユーザーは `WhatapAgent` CR（カスタムリソース）を通じてOpenMetricsの対象を設定します。
 
 1. **PodMonitor**: Podラベルセレクターを利用した動的ディスカバリ（Prometheus OperatorのPodMonitorと類似）
