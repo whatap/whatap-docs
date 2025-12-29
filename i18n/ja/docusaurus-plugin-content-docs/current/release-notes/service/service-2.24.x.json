@@ -1,6 +1,28 @@
 [
     {
         "url": "https://docs.whatap.io/release-notes/service/service-2_24_x",
+        "ver": "Service 2.24.1",
+        "date": "2025-12-29",
+        "Lists": [
+            {
+                "ver": "Service 2.24.1",
+                "hash": "service-2241",
+                "product": "共通",
+                "type": "Fixed",
+                "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">警告アラート</span> &gt; <span class=\"uitext\">イベント設定</span></p>",
+                "details": "<ul>\n<li>リアルタイムログイベントに表示されていた一時停止案内文言の誤りを修正</li>\n\n<li>メトリクスイベントにおいて、最近収集されていない対象の情報が表示されない問題を修正</li>\n\n<li>メトリクスイベントでシミュレーション後のイベント総数をレベル別に表示するように修正</li>\n</ul>"
+            },
+            {
+                "ver": "Service 2.24.1",
+                "hash": "service-2241",
+                "product": "共通",
+                "type": "Fixed",
+                "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> 日本語メニュー名の表記誤りを修正（ログ探索、SSO連携）</p>"
+            }
+        ]
+    },    
+    {
+        "url": "https://docs.whatap.io/release-notes/service/service-2_24_x",
         "ver": "Service 2.24.0",
         "date": "2025-12-23",
         "Lists": [
