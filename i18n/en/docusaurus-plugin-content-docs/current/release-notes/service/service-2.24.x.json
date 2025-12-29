@@ -1,6 +1,28 @@
 [
     {
         "url": "https://docs.whatap.io/release-notes/service/service-2_24_x",
+        "ver": "Service 2.24.1",
+        "date": "2025-12-29",
+        "Lists": [
+            {
+                "ver": "Service 2.24.1",
+                "hash": "service-2241",
+                "product": "Common",
+                "type": "Fixed",
+                "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">Alert Notification</span> &gt; <span class=\"uitext\">Event Settings</span></p>",
+                "details": "<ul>\n<li>Fixed an incorrect pause 안내 message displayed in real-time log events</li>\n\n<li>Fixed an issue where information for targets that have not been recently collected was not displayed in metrics events</li>\n\n<li>Updated metrics events to display the total number of events by level after simulation</li>\n</ul>"
+            },
+            {
+                "ver": "Service 2.24.1",
+                "hash": "service-2241",
+                "product": "Common",
+                "type": "Fixed",
+                "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Fixed incorrect Japanese menu name labels (Log Explorer, SSO integration)</p>"
+            }
+        ]
+    },    
+    {
+        "url": "https://docs.whatap.io/release-notes/service/service-2_24_x",
         "ver": "Service 2.24.0",
         "date": "2025-12-23",
         "Lists": [
