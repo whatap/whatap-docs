@@ -1,6 +1,20 @@
 [
     {
         "url": "https://docs.whatap.io/release-notes/service/service-2_24_x",
+        "ver": "Service 2.24.2",
+        "date": "2025-12-29",
+        "Lists": [
+            {
+                "ver": "Service 2.24.2",
+                "hash": "service-2242",
+                "product": "Browser",
+                "type": "Fixed",
+                "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">Statistics</span> Fixed an issue where baseline changes did not work due to syntax errors in some MXQL queries</p>"
+            }
+        ]
+    },    
+    {
+        "url": "https://docs.whatap.io/release-notes/service/service-2_24_x",
         "ver": "Service 2.24.1",
         "date": "2025-12-29",
         "Lists": [
