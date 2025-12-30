@@ -1,6 +1,20 @@
 [
     {
         "url": "https://docs.whatap.io/release-notes/service/service-2_24_x",
+        "ver": "Service 2.24.3",
+        "date": "2025-12-30",
+        "Lists": [
+            {
+                "ver": "Service 2.24.3",
+                "hash": "service-2243",
+                "product": "Server",
+                "type": "Fixed",
+                "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">Server Inventory</span> Fixed an issue where the default group column value was not applied in edit mode</p>"
+            }
+        ]
+    },    
+    {
+        "url": "https://docs.whatap.io/release-notes/service/service-2_24_x",
         "ver": "Service 2.24.2",
         "date": "2025-12-29",
         "Lists": [
