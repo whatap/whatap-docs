@@ -28,7 +28,7 @@ export default function Cover() {
             Extensions
         </h1>
         <p className={styles.date}>
-            release date. 2025. 10. 29.
+            release date. 2025. 12. 31.
         </p>
         <img className={styles.background} src={bgPath} />
       </div>

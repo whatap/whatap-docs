@@ -1,0 +1,43 @@
+---
+id: java-2_2_68
+title: Java Agent v2.2.68
+toc_max_heading_level: 2
+pagination_next: release-notes/java/java-2_2_67
+displayed_sidebar: releaseSidebar
+---
+
+2026年1月2日
+
+- <Status priority='1'>New</Status> WebMethods-10.15 対応
+
+    - HTTP トランザクションのトレース
+
+    - WebMethods 独自の HTTP クライアントである NetURLConnection のトレース
+
+    - Java エージェント設定
+    
+        ```
+        # Requires agent restart
+        weaving=webmethods-10
+        
+        # HTTP Request Tracing
+        # default: true
+        # Enable WebMethods HTTP request tracing
+        trace_webmethods_enabled=true
+        
+        # default: wm.server
+        # Service prefixes to exclude from HTTP tracing
+        trace_webmethods_url_ignore_prefixes=wm.server.packageList,wm.server.monitoring
+        
+        # Service Step Tracing
+        # default: true
+        trace_webmethods_service_enabled=true
+        
+        # default: wm.server,wm.monitor
+        # Service prefixes to exclude from step tracing
+        trace_webmethods_service_ignore_prefixes=wm.server
+        ```
+
+import DownloadJava from './_import_dl-java-agent.mdx';
+
+<DownloadJava ver="2.2.68" />

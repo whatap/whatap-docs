@@ -371,4 +371,31 @@
     background-position: top 21px left 20px !important;
     border-left: 4px solid #df3737 !important;
   }
+  /* 1. PDF 출력시 Back to top 버튼 영역 완전 제거 */
+  .theme-back-to-top-button,
+  button[class*="theme-back-to-top-button"],
+  [class*="backToTopButton"] {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    height: 0 !important;
+    width: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    border: none !important;
+  }
+
+  /* 2. 버튼의 가상 요소(::after, ::before)까지 혹시 모르니 박멸 */
+  [class*="backToTopButton"]::after,
+  [class*="backToTopButton"]::before {
+    content: none !important;
+    display: none !important;
+  }
+
+  /* 3. 버튼을 감싸는 wrapper 영역 초기화 */
+  .main-wrapper,
+  .docWrapper {
+    border: none !important;
+    box-shadow: none !important;
+  }
 }
