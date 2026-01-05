@@ -6051,6 +6051,7 @@ const sidebars = {
           items: [
             'browser/collect-custom-events',
             'browser/set-real-user-id',
+            'browser/apm-integration',
           ],
         },
         'browser/before-starting',
