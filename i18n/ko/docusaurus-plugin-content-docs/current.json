@@ -297,7 +297,7 @@
   },
   "sidebar.postgreSidebar.category.클라우드 에이전트 설정": {
     "message": "클라우드 에이전트 설정",
-    "description": "The label for category 설정하기 in sidebar postgreSidebar"
+    "description": "The label for category 클라우드 에이전트 설정 in sidebar postgreSidebar"
   },
   "sidebar.postgreSidebar.category.주요 메뉴 알아보기": {
     "message": "주요 메뉴 알아보기",
@@ -365,7 +365,7 @@
   },
   "sidebar.mysqlSidebar.category.클라우드 에이전트 설정": {
     "message": "클라우드 에이전트 설정",
-    "description": "The label for category 설정하기 in sidebar mysqlSidebar"
+    "description": "The label for category 클라우드 에이전트 설정 in sidebar mysqlSidebar"
   },
   "sidebar.mysqlSidebar.category.주요 메뉴 알아보기": {
     "message": "주요 메뉴 알아보기",
@@ -1553,7 +1553,7 @@
   },
   "sidebar.mobileSidebar.category.Flex 보드": {
     "message": "Flex 보드",
-    "description": "The label for the doc item Flex 보드 in sidebar mobileSidebar"
+    "description": "The label for category Flex 보드 in sidebar mobileSidebar"
   },
   "sidebar.mobileSidebar.category.통계": {
     "message": "통계",
@@ -1569,7 +1569,7 @@
   },
   "sidebar.mobileSidebar.doc.이벤트 설정": {
     "message": "이벤트 설정",
-    "description": "The label for the doc item 이벤트 설정 in sidebar mobileSidebar"
+    "description": "The label for the doc item 이벤트 설정 in sidebar mobileSidebar, linking to the doc mobile/metric-warning-notice"
   },
   "sidebar.kubeSidebar.doc.설정하기": {
     "message": "설정하기",
@@ -1653,7 +1653,7 @@
   },
   "sidebar.dboracleV2Sidebar.category.클라우드 에이전트 설정": {
     "message": "클라우드 에이전트 설정",
-    "description": "The label for category 설정하기 in sidebar dboracleV2Sidebar"
+    "description": "The label for category 클라우드 에이전트 설정 in sidebar dboracleV2Sidebar"
   },
   "sidebar.dboracleV2Sidebar.category.주요 메뉴 알아보기": {
     "message": "주요 메뉴 알아보기",
@@ -2334,5 +2334,133 @@
   "sidebar.omSidebar.category.OpenMetrics 설치": {
     "message": "OpenMetrics 설치",
     "description": "The label for category OpenMetrics 설치 in sidebar omSidebar"
+  },
+  "sidebar.db2Sidebar.category.실험실": {
+    "message": "실험실",
+    "description": "The label for category 실험실 in sidebar db2Sidebar"
+  },
+  "sidebar.sapaseSidebar.category.관리": {
+    "message": "관리",
+    "description": "The label for category 관리 in sidebar sapaseSidebar"
+  },
+  "sidebar.sapaseSidebar.category.실험실": {
+    "message": "실험실",
+    "description": "The label for category 실험실 in sidebar sapaseSidebar"
+  },
+  "sidebar.dboracleV2Sidebar.category.관리": {
+    "message": "관리",
+    "description": "The label for category 관리 in sidebar dboracleV2Sidebar"
+  },
+  "sidebar.dboracledmaSidebar.category.관리": {
+    "message": "관리",
+    "description": "The label for category 관리 in sidebar dboracledmaSidebar"
+  },
+  "sidebar.mysqlSidebar.category.관리": {
+    "message": "관리",
+    "description": "The label for category 관리 in sidebar mysqlSidebar"
+  },
+  "sidebar.mssqlSidebar.category.에이전트 설치": {
+    "message": "에이전트 설치",
+    "description": "The label for category 에이전트 설치 in sidebar mssqlSidebar"
+  },
+  "sidebar.mssqlSidebar.category.실험실": {
+    "message": "실험실",
+    "description": "The label for category 실험실 in sidebar mssqlSidebar"
+  },
+  "sidebar.tiberoSidebar.category.실험실": {
+    "message": "실험실",
+    "description": "The label for category 실험실 in sidebar tiberoSidebar"
+  },
+  "sidebar.cubridSidebar.category.실험실": {
+    "message": "실험실",
+    "description": "The label for category 실험실 in sidebar cubridSidebar"
+  },
+  "sidebar.altibaseSidebar.category.실험실": {
+    "message": "실험실",
+    "description": "The label for category 실험실 in sidebar altibaseSidebar"
+  },
+  "sidebar.redisSidebar.category.실험실": {
+    "message": "실험실",
+    "description": "The label for category 실험실 in sidebar redisSidebar"
+  },
+  "sidebar.mongodbSidebar.category.실험실": {
+    "message": "실험실",
+    "description": "The label for category 실험실 in sidebar mongodbSidebar"
+  },
+  "sidebar.releaseSidebar.doc.DBX": {
+    "message": "DBX",
+    "description": "The label for the doc item DBX in sidebar releaseSidebar, linking to the doc release-notes/db/dbx-agent"
+  },
+  "sidebar.releaseSidebar.doc.DMX": {
+    "message": "DMX",
+    "description": "The label for the doc item DMX in sidebar releaseSidebar, linking to the doc release-notes/db/dmx-agent"
+  },
+  "sidebar.releaseSidebar.doc.XOS": {
+    "message": "XOS",
+    "description": "The label for the doc item XOS in sidebar releaseSidebar, linking to the doc release-notes/db/xos-agent"
+  },
+  "sidebar.releaseSidebar.doc.WhaTap Docs": {
+    "message": "WhaTap Docs",
+    "description": "The label for the doc item WhaTap Docs in sidebar releaseSidebar, linking to the doc release-notes/docs/release-note"
+  },
+  "sidebar.learningSidebar.category.OpenMetrics": {
+    "message": "OpenMetrics",
+    "description": "The label for category OpenMetrics in sidebar learningSidebar"
+  },
+  "sidebar.indexSidebar.category.제품 공통 UI": {
+    "message": "제품 공통 UI",
+    "description": "The label for category 제품 공통 UI in sidebar indexSidebar"
+  },
+  "sidebar.pluginSidebar.category.OpenTelemetry": {
+    "message": "OpenTelemetry",
+    "description": "The label for category OpenTelemetry in sidebar pluginSidebar"
+  },
+  "sidebar.omSidebar.category.OpenMetrics": {
+    "message": "OpenMetrics",
+    "description": "The label for category OpenMetrics in sidebar omSidebar"
+  },
+  "sidebar.urlproSidebar.category.URL PRO 모니터링": {
+    "message": "URL PRO 모니터링",
+    "description": "The label for category URL PRO 모니터링 in sidebar urlproSidebar"
+  },
+  "sidebar.urlproSidebar.category.분석": {
+    "message": "분석",
+    "description": "The label for category 분석 in sidebar urlproSidebar"
+  },
+  "sidebar.urlproSidebar.category.경고 알림": {
+    "message": "경고 알림",
+    "description": "The label for category 경고 알림 in sidebar urlproSidebar"
+  },
+  "sidebar.urlproSidebar.category.관리": {
+    "message": "관리",
+    "description": "The label for category 관리 in sidebar urlproSidebar"
+  },
+  "sidebar.mobileSidebar.doc.Android": {
+    "message": "Android",
+    "description": "The label for the doc item Android in sidebar mobileSidebar, linking to the doc mobile/apply-agent-android"
+  },
+  "sidebar.mobileSidebar.doc.iOS": {
+    "message": "iOS",
+    "description": "The label for the doc item iOS in sidebar mobileSidebar, linking to the doc mobile/apply-agent-ios"
+  },
+  "sidebar.serverSidebar.category.고급 기능": {
+    "message": "고급 기능",
+    "description": "The label for category 고급 기능 in sidebar serverSidebar"
+  },
+  "sidebar.serverSidebar.category.GPU": {
+    "message": "GPU",
+    "description": "The label for category GPU in sidebar serverSidebar"
+  },
+  "sidebar.nmsSidebar.doc.로그": {
+    "message": "로그",
+    "description": "The label for the doc item 로그 in sidebar nmsSidebar, linking to the doc log/introduction"
+  },
+  "sidebar.kubeSidebar.category.OpenMetrics": {
+    "message": "OpenMetrics",
+    "description": "The label for category OpenMetrics in sidebar kubeSidebar"
+  },
+  "sidebar.kubeSidebar.category.GPU": {
+    "message": "GPU",
+    "description": "The label for category GPU in sidebar kubeSidebar"
   }
 }

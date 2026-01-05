@@ -138,7 +138,7 @@
   },
   "theme.colorToggle.ariaLabel": {
     "message": "어두운 모드와 밝은 모드 전환하기 (현재 {mode})",
-    "description": "The ARIA label for the navbar color mode toggle"
+    "description": "The ARIA label for the color mode toggle"
   },
   "theme.colorToggle.ariaLabel.mode.dark": {
     "message": "어두운 모드",
@@ -792,5 +792,20 @@
   },
   "index.pages.section.product.nms": {
     "message": "네트워크 장비의 성능 지표와 상태를 실시간으로 모니터링합니다."
+  },
+  "index.pages.section.product.om": {
+    "message": "Prometheus 기반의 OpenMetrics 지표를 자동 수집하여, 복잡한 설정 없이 손쉽게 통합 모니터링 환경을 구축할 수 있는 솔루션입니다."
+  },
+  "theme.colorToggle.ariaLabel.mode.system": {
+    "message": "system mode",
+    "description": "The name for the system color mode"
+  },
+  "theme.navbar.mobileDropdown.collapseButton.expandAriaLabel": {
+    "message": "Expand the dropdown",
+    "description": "The ARIA label of the button to expand the mobile dropdown navbar item"
+  },
+  "theme.navbar.mobileDropdown.collapseButton.collapseAriaLabel": {
+    "message": "Collapse the dropdown",
+    "description": "The ARIA label of the button to collapse the mobile dropdown navbar item"
   }
 }
