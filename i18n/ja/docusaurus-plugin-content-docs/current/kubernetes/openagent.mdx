@@ -440,6 +440,9 @@ features:
   - `matchLabels`: ラベルでPodまたはServiceを選択
   - `matchExpressions`: 式でPodまたはServiceを選択
 
+- **relabelConfigs**: ターゲット検出（Discovery）段階で、メタデータ（メタラベルなど）を基にラベルを追加または変更します。  
+  （Prometheus の `relabel_configs` と同様）
+
 - **endpoints**: スクレイピング対象のエンドポイント定義
   - `port`: スクレイピングするポート名または番号
   - `path`: メトリクスパス（デフォルトは globalPath、必要に応じて上書き可能）
@@ -520,6 +523,29 @@ features:
         action: replace
 ```
 
+### Basic Auth 設定
+
+OpenAgent は、認証が必要なエンドポイントをスクレイピングするために HTTP Basic Authentication をサポートしています。
+ユーザー名（username）とパスワード（password）は、Kubernetes Secret を使用して安全に管理されます。
+
+- 設定場所: endpoints 配下の basicAuth 項目で設定します。
+
+- **username**: ユーザー名を格納した Secret 情報
+
+    - `name`: Secret の名前
+
+    - `key`: Secret 内のキー
+
+    - `namespace`: Secret が配置されているネームスペース（省略した場合、エージェントと同じネームスペースが使用されます。）
+
+- **password**: パスワードを格納した Secret 情報
+
+    - `name`: Secret の名前
+
+    - `key`: Secret 内のキー
+
+    - `namespace`: Secret が配置されているネームスペース
+
 ## TLS 設定
 
 OpenAgent は、HTTPS エンドポイントに接続する際に TLS（Transport Layer Security）をサポートします。以下は TLS に関する設定オプションです。
@@ -596,6 +622,65 @@ insecureSkipVerify\` オプションは、サーバー証明書の有効性検�
           target_label: http_verb
           replacement: "${1}"
           action: replace
+```
+
+### ターゲット再ラベリング設定 {#relabelConfigs}
+
+`relabelConfigs` は、スクレイピングを実行する前に、  
+ターゲット（Target）自体のメタデータを基にフィルタリングやラベル操作を行う機能です。  
+（Prometheus の `relabel_configs` と同様です）
+
+1. **ターゲットフィルタリング（Target Filtering）**
+   - 特定のメタデータ条件を満たさないターゲットを収集対象から除外します。
+   - 主な Action: `keep`, `drop`
+
+2. **メタラベルの昇格（Meta Label Promotion）**
+   - `__meta_` で始まるメタデータラベルは、スクレイピング後に削除されます。
+   - 永続的なラベルとして保存するには、この段階で `replace` action を使用して新しい名前に変更する必要があります。
+
+### Meta Labels 一覧
+
+以下は、OpenAgent が提供する主要なメタラベルの一覧です。
+
+#### Common
+
+- `__meta_kubernetes_namespace`: オブジェクトのネームスペース
+- `__address__`: ターゲットアドレス (IP:Port)
+
+#### PodMonitor
+
+- `__meta_kubernetes_pod_name`: Pod名
+- `__meta_kubernetes_pod_ip`: Pod IP
+- `__meta_kubernetes_pod_ready`: Podの準備状態 (`true`/`false`)
+- `__meta_kubernetes_pod_phase`: Podの状態 (`Running`, `Pending` 등)
+- `__meta_kubernetes_pod_node_name`: Podが実行されているノード名
+- `__meta_kubernetes_pod_label_<labelname>`: Podのラベル
+- `__meta_kubernetes_pod_annotation_<annotationname>`: Podのアノテーション
+
+#### ServiceMonitor
+
+- `__meta_kubernetes_service_name`: Service名
+- `__meta_kubernetes_service_cluster_ip`: Cluster IP
+- `__meta_kubernetes_service_label_<labelname>`: Serviceのラベル
+
+```yaml
+targets:
+  - targetName: my-pod-monitor
+    type: PodMonitor
+    selector:
+      matchLabels:
+        app: my-app
+    # ターゲット検出段階のラベリング
+    relabelConfigs:
+      # 1. Pod 名を pod_name ラベルとして保存（メトリクスに pod_name ラベルが付与されます）
+      - source_labels: ["__meta_kubernetes_pod_name"]
+        target_label: "pod_name"
+        action: "replace"
+      
+      # 2. 特定のラベル（scrape_enabled=true）が設定されていない Pod は収集対象から除外
+      - source_labels: ["__meta_kubernetes_pod_label_scrape_enabled"]
+        regex: "true"
+        action: "keep"
 ```
 
 ## メトリック再ラベリング設定 {#metricRelabelConfigs}
