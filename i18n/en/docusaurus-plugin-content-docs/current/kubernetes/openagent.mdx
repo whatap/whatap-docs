@@ -438,6 +438,9 @@ features:
   * `matchLabels`: Select by label
   * `matchExpressions`: Select using expressions
 
+* **relabelConfigs**: Adds or modifies labels based on metadata (such as meta labels) during the target discovery phase.  
+  (Similar to Prometheus `relabel_configs`)
+
 * **endpoints**: Defines endpoints to scrape
   * `port`: Port name or number to scrape
   * `path`: Metrics path (default: `globalPath`, override if needed)
@@ -511,6 +514,37 @@ If the target object is scheduled on a node, you can use the `addNodeLabel` opti
       - source_labels: [node]
         target_label: gpu_node
         action: replace
+```
+
+### Basic Auth Configuration
+
+OpenAgent supports HTTP Basic Authentication to scrape endpoints that require authentication.  
+The username and password are securely managed using Kubernetes Secrets.
+
+- **Configuration location**: Configure under the `basicAuth` field inside `endpoints`.
+
+- **username**: Secret information containing the username
+  - `name`: Name of the Secret
+  - `key`: Key within the Secret
+  - `namespace`: Namespace where the Secret is located (If omitted, the same namespace as the agent is used.)
+
+- **password**: Secret information containing the password
+  - `name`: Name of the Secret
+  - `key`: Key within the Secret
+  - `namespace`: Namespace where the Secret is located
+
+```yaml title="Configuration Example"
+endpoints:
+  - port: "metrics"
+    path: "/metrics"
+    basicAuth:
+      username:
+        name: my-auth-secret
+        key: username
+      password:
+        name: my-auth-secret
+        key: password
+        namespace: monitoring # Specify if the Secret is in a different namespace
 ```
 
 ## TLS Configuration
@@ -591,6 +625,65 @@ If you are using a self-signed certificate, it is safer to add it to a trusted C
           replacement: "${1}"
           action: replace
 ```
+
+### Target Relabeling Configuration {#relabelConfigs}
+
+`relabelConfigs` is a feature that filters targets or manipulates labels based on the target’s own metadata **before scraping is performed**.  
+(It is similar to Prometheus `relabel_configs`.)
+
+1. **Target Filtering**
+   - Excludes targets that do not meet specific metadata conditions from being scraped.
+   - Common actions: `keep`, `drop`
+
+2. **Meta Label Promotion**
+   - Metadata labels starting with `__meta_` are removed after scraping.
+   - To persist them as permanent labels, use the `replace` action at this stage to rename them.
+
+### Meta Labels List
+
+Below is a list of meta labels provided by OpenAgent.
+
+#### Common
+
+- `__meta_kubernetes_namespace`: Object namespace
+- `__address__`: Target address (IP:Port)
+
+#### PodMonitor
+
+- `__meta_kubernetes_pod_name`: Pod name
+- `__meta_kubernetes_pod_ip`: Pod IP
+- `__meta_kubernetes_pod_ready`: Ready for Pod (`true`/`false`)
+- `__meta_kubernetes_pod_phase`: Pod status (`Running`, `Pending`, etc.)
+- `__meta_kubernetes_pod_node_name`: Name of the node running the pod
+- `__meta_kubernetes_pod_label_<labelname>`: Pod label
+- `__meta_kubernetes_pod_annotation_<annotationname>`: Pod annotation
+
+#### ServiceMonitor
+
+- `__meta_kubernetes_service_name`: Service name
+- `__meta_kubernetes_service_cluster_ip`: Cluster IP
+- `__meta_kubernetes_service_label_<labelname>`: Service label
+
+```yaml
+targets:
+  - targetName: my-pod-monitor
+    type: PodMonitor
+    selector:
+      matchLabels:
+        app: my-app
+    # Labeling in the target discovery phase
+    relabelConfigs:
+      # 1. PStore the Pod name as the pod_name label (the metric will include the pod_name label)
+      - source_labels: ["__meta_kubernetes_pod_name"]
+        target_label: "pod_name"
+        action: "replace"
+      
+      # 2. Exclude Pods that do not have the specific label (scrape_enabled=true) from scraping
+      - source_labels: ["__meta_kubernetes_pod_label_scrape_enabled"]
+        regex: "true"
+        action: "keep"
+```
+
 
 ## Metric Relabeling Configuration {#metricRelabelConfigs}
 
