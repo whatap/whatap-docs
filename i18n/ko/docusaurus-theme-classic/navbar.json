@@ -314,5 +314,17 @@
   "item.label.Release Notes": {
     "message": "Release Notes",
     "description": "Navbar item with label Release Notes"
+  },
+  "item.label.Mobile 모니터링": {
+    "message": "Mobile 모니터링",
+    "description": "Navbar item with label Mobile 모니터링"
+  },
+  "item.label.OpenMetrics": {
+    "message": "OpenMetrics",
+    "description": "Navbar item with label OpenMetrics"
+  },
+  "item.label.Mobile": {
+    "message": "Mobile",
+    "description": "Navbar item with label Mobile"
   }
 }
