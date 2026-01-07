@@ -1,5 +1,43 @@
 [
   {
+    "ver": "v2.9.7",
+    "date": "2026-01-07",
+    "Lists": [
+      {
+        "ver": "v2.9.7",
+        "hash": "v297",
+        "product": "Server",
+        "type": "New",
+        "category": "Agent",
+        "desc": "<p><code class=\"New\">New</code> Added Agent Patch feature (Operation Manager)</p>"
+      },
+      {
+        "ver": "v2.9.7",
+        "hash": "v297",
+        "product": "Server",
+        "type": "New",
+        "category": "Agent",
+        "desc": "<p><code class=\"New\">New</code> Added simplified GPU model information</p>"
+      },
+      {
+        "ver": "v2.9.7",
+        "hash": "v297",
+        "product": "Server",
+        "type": "Fixed",
+        "category": "Agent",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> Fixed rpmdb corruption issue during agent startup</p>"
+      },
+      {
+        "ver": "v2.9.7",
+        "hash": "v297",
+        "product": "Server",
+        "type": "Fixed",
+        "category": "Agent",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> Fixed cases where inventory information was displayed incorrectly</p>"
+      }
+    ]
+  },
+  {
     "ver": "v2.9.6",
     "date": "2025-11-26",
     "Lists": [

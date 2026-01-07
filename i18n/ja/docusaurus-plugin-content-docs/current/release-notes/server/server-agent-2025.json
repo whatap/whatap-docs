@@ -1,5 +1,43 @@
 [
   {
+    "ver": "v2.9.7",
+    "date": "2026-01-07",
+    "Lists": [
+      {
+        "ver": "v2.9.7",
+        "hash": "v297",
+        "product": "Server",
+        "type": "New",
+        "category": "Agent",
+        "desc": "<p><code class=\"New\">New</code> Agent Patch機能を追加 (Operation Manager)</p>"
+      },
+      {
+        "ver": "v2.9.7",
+        "hash": "v297",
+        "product": "Server",
+        "type": "New",
+        "category": "Agent",
+        "desc": "<p><code class=\"New\">New</code> GPUモデル簡素化情報を追加</p>"
+      },
+      {
+        "ver": "v2.9.7",
+        "hash": "v297",
+        "product": "Server",
+        "type": "Fixed",
+        "category": "Agent",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> エージェント起動過程でrpmdbが破損する現象を修正</p>"
+      },
+      {
+        "ver": "v2.9.7",
+        "hash": "v297",
+        "product": "Server",
+        "type": "Fixed",
+        "category": "Agent",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> インベントリ情報が正しく表示されないケースを修正</p>"
+      }
+    ]
+  },
+  {
     "ver": "v2.9.6",
     "date": "2025-11-26",
     "Lists": [
