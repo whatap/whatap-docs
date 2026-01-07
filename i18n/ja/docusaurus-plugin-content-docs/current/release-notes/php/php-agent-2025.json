@@ -1,5 +1,19 @@
 [
   {
+    "ver": "v2.13.1",
+    "date": "2026-01-07",
+    "Lists": [
+      {
+        "ver": "v2.13.1",
+        "hash": "v2131",
+        "product": "PHP",
+        "type": "Fixed",
+        "category": "Agent",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> デバッグメッセージがレスポンス内容に出力されるエラーを修正します。マルチトランザクション(mtrace)機能使用時に<code>mtid</code>、<code>mcaller_txid</code>デバッグログがWebページに露出される問題を修正します。</p>"
+      }
+    ]
+  },
+  {
   "ver": "v2.13.0",
   "date": "2025-11-19",
   "Lists": [

@@ -1,5 +1,19 @@
 [
   {
+    "ver": "v2.13.1",
+    "date": "2026-01-07",
+    "Lists": [
+      {
+        "ver": "v2.13.1",
+        "hash": "v2131",
+        "product": "PHP",
+        "type": "Fixed",
+        "category": "Agent",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> Fixed an error where debug messages were output in the response content. Fixed an issue where <code>mtid</code> and <code>mcaller_txid</code> debug logs were exposed on web pages when using the multi-transaction (mtrace) feature.</p>"
+      }
+    ]
+  },
+  {
     "ver": "v2.13.0",
     "date": "2025-11-19",
     "Lists": [
