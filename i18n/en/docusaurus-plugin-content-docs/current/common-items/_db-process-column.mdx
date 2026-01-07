@@ -1,0 +1,17 @@
+The following items are metrics collected when the XOS agent is installed.
+
+| Item       | Description                                                          | Unit        |
+|------------|----------------------------------------------------------------------|-------------|
+| `pid`      | Process ID                                                           | -           |
+| `cpuusage` | CPU usage rate used by the process                                   | %           |
+| `cputime`  | Cumulative CPU time used by the process so far                       | seconds     |
+| `elapse`   | Elapsed time since the process was executed                          | seconds     |
+| `vsize`    | Virtual memory size. Total virtual memory usage (RAM + Swap + reserved) | KB       |
+| `rss`      | Resident Set Size. Actual physical memory size occupied by the current process | KB |
+| `pss`      | Proportional Set Size. Actual physical memory usage including shared memory | KB    |
+| `state`    | Current state code of the process (e.g., R, S, D, T, Z, etc.)       | -           |
+| `ioread`   | Cumulative number of read bytes (`read_bytes`)                       | Bytes (B)   |
+| `iowrite`  | Cumulative number of write bytes (`write_bytes`)                     | Bytes (B)   |
+| `uid`      | User ID that executed the process                                    | -           |
+| `cmd`      | Short form of the executed command                                   | -           |
+| `longcmd`  | Full executed command (including full path and arguments)            | -           |
