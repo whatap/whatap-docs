@@ -245,46 +245,103 @@ const sidebars = {
           collapsed: true,
           link: {
             type: 'doc',
-            id: 'java/apm-set-notice',
+            id: 'java/alert/overview', // 경고 알림 개요
           },
           items: [
             {
               type: 'category',
               label: '이벤트 설정',
-              collapsible: true,
-              collapsed: true,
               link: {
                 type: 'doc',
-                id: 'java/warning-notice-v2'
+                id: 'java/alert/event-configuration/index', // 이벤트 설정 개요
               },
               items: [
-                // 'java/basic-event-setting',
-                'java/metric-warning-notice-new',
-                'java/metric-warning-notice',
-                'java/hitmap-notice',
-                'java/set-event-detect-anomal',
-                'java/set-event-log',
-                'java/transaction-event-setting',
+                'java/alert/event-configuration/metrics',
+                'java/alert/event-configuration/composite-metrics',
+                'java/alert/event-configuration/hitmap-pattern',
+                'java/alert/event-configuration/anomaly-detection',
+                'java/alert/event-configuration/log-event',
+                'java/alert/event-configuration/transaction',
+              ]
+            },
+            {
+              type: 'doc',
+              label: '이벤트 설정',
+              className: 'classicfunc',
+              id: 'java/alert/event-classic/application', // 이벤트 설정 classic
+            }, 
+            {
+              type: 'category',
+              label: '이벤트 수신 설정',
+              link: {
+                type: 'doc',
+                id: 'java/alert/event-notification',
+              },
+              items: [
+                'java/alert/event-notification-format',
               ]
             },
             {
               type: 'category',
-              label: '이벤트 설정',
-              collapsible: true,
-              collapsed: true,
-              className: 'classicfunc',
+              label: '이벤트 기록 및 모니터링',
+              link: {
+                type: 'doc',
+                id: 'java/alert/event-history',
+              },
               items: [
-                'java/warning-notice',
+                'java/alert/real-time-notifications',
+                'java/alert/system-events',
               ]
-            },
-            'java/set-receive-event',
-            'java/set-event-history',
-            'java/set-event-format',
-            'java/real-time-notification',
-            'java/common-alert',
-            'java/set-notification-message',
-          ],
+            }
+          ]
         },
+        // {
+        // type: 'category',
+        // label: '경고 알림',
+        // collapsible: true,
+        // collapsed: true,
+        // link: {
+        //   type: 'doc',
+        //   id: 'java/apm-set-notice',
+        // },
+        // items: [
+        //   {
+        //     type: 'category',
+        //     label: '이벤트 설정',
+        //     collapsible: true,
+        //     collapsed: true,
+        //     link: {
+        //       type: 'doc',
+        //       id: 'java/warning-notice-v2'
+        //     },
+        //     items: [
+        //       'java/basic-event-setting',
+        //       'java/metric-warning-notice-new',
+        //       'java/metric-warning-notice',
+        //       'java/hitmap-notice',
+        //       'java/set-event-detect-anomal',
+        //       'java/set-event-log',
+        //       'java/transaction-event-setting',
+        //     ]
+        //   },
+        //   {
+        //     type: 'category',
+        //     label: '이벤트 설정',
+        //     collapsible: true,
+        //     collapsed: true,
+        //     className: 'classicfunc',
+        //     items: [
+        //       'java/warning-notice',
+        //     ]
+        //   },
+        //   'java/set-receive-event',
+        //   'java/set-event-history',
+        //   'java/set-event-format',
+        //   'java/real-time-notification',
+        //   'java/common-alert',
+        //   'java/set-notification-message',
+        //   ],
+        // },
         'java/instance-performance-analysis',
         'java/linked-projects',
         {
@@ -511,46 +568,103 @@ const sidebars = {
           collapsed: true,
           link: {
             type: 'doc',
-            id: 'php/apm-set-notice',
+            id: 'php/alert/overview', // 경고 알림 개요
           },
           items: [
             {
               type: 'category',
               label: '이벤트 설정',
-              collapsible: true,
-              collapsed: true,
               link: {
                 type: 'doc',
-                id: 'php/warning-notice-v2'
+                id: 'php/alert/event-configuration/index', // 이벤트 설정 개요
               },
               items: [
-                // 'php/basic-event-setting',
-                'php/metric-warning-notice-new',
-                'php/metric-warning-notice',
-                'php/hitmap-notice',
-                'php/set-event-detect-anomal',
-                'php/set-event-log',
-                'php/transaction-event-setting',
+                'php/alert/event-configuration/metrics',
+                'php/alert/event-configuration/composite-metrics',
+                'php/alert/event-configuration/hitmap-pattern',
+                'php/alert/event-configuration/anomaly-detection',
+                'php/alert/event-configuration/log-event',
+                'php/alert/event-configuration/transaction',
+              ]
+            },
+            {
+              type: 'doc',
+              label: '이벤트 설정',
+              className: 'classicfunc',
+              id: 'php/alert/event-classic/application', // 이벤트 설정 classic
+            }, 
+            {
+              type: 'category',
+              label: '이벤트 수신 설정',
+              link: {
+                type: 'doc',
+                id: 'php/alert/event-notification',
+              },
+              items: [
+                'php/alert/event-notification-format',
               ]
             },
             {
               type: 'category',
-              label: '이벤트 설정',
-              collapsible: true,
-              collapsed: true,
-              className: 'classicfunc',
+              label: '이벤트 기록 및 모니터링',
+              link: {
+                type: 'doc',
+                id: 'php/alert/event-history',
+              },
               items: [
-                'php/warning-notice',
+                'php/alert/real-time-notifications',
+                'php/alert/system-events',
               ]
-            },
-            'php/set-receive-event',
-            'php/set-event-history',
-            'php/set-event-format',
-            'php/real-time-notification',
-            'php/common-alert',
-            'php/set-notification-message',
-          ],
+            }
+          ]
         },
+        // {
+        //  type: 'category',
+        //  label: '경고 알림',
+        //  collapsible: true,
+        //  collapsed: true,
+        //  link: {
+        //    type: 'doc',
+        //    id: 'php/apm-set-notice',
+        //  },
+        //  items: [
+        //    {
+        //      type: 'category',
+        //      label: '이벤트 설정',
+        //      collapsible: true,
+        //      collapsed: true,
+        //      link: {
+        //        type: 'doc',
+        //        id: 'php/warning-notice-v2'
+        //      },
+        //      items: [
+        //         'php/basic-event-setting',
+        //        'php/metric-warning-notice-new',
+        //        'php/metric-warning-notice',
+        //        'php/hitmap-notice',
+        //        'php/set-event-detect-anomal',
+        //        'php/set-event-log',
+        //        'php/transaction-event-setting',
+        //      ]
+        //    },
+        //    {
+        //      type: 'category',
+        //      label: '이벤트 설정',
+        //      collapsible: true,
+        //      collapsed: true,
+        //      className: 'classicfunc',
+        //      items: [
+        //        'php/warning-notice',
+        //      ]
+        //    },
+        //    'php/set-receive-event',
+        //    'php/set-event-history',
+        //    'php/set-event-format',
+        //    'php/real-time-notification',
+        //    'php/common-alert',
+        //    'php/set-notification-message',
+        //  ],
+        // },
         'php/instance-performance-analysis',
         'php/linked-projects',
         {
@@ -753,45 +867,102 @@ const sidebars = {
           collapsed: true,
           link: {
             type: 'doc',
-            id: 'nodejs/apm-set-notice',
+            id: 'nodejs/alert/overview', // 경고 알림 개요
           },
           items: [
             {
               type: 'category',
               label: '이벤트 설정',
-              collapsible: true,
-              collapsed: true,
               link: {
                 type: 'doc',
-                id: 'nodejs/warning-notice-v2'
+                id: 'nodejs/alert/event-configuration/index', // 이벤트 설정 개요
               },
               items: [
-                // 'nodejs/basic-event-setting',
-                'nodejs/metric-warning-notice-new',
-                'nodejs/metric-warning-notice',
-                'nodejs/hitmap-notice',
-                'nodejs/set-event-detect-anomal',
-                'nodejs/transaction-event-setting',
+                'nodejs/alert/event-configuration/metrics',
+                'nodejs/alert/event-configuration/composite-metrics',
+                'nodejs/alert/event-configuration/hitmap-pattern',
+                'nodejs/alert/event-configuration/anomaly-detection',
+                'nodejs/alert/event-configuration/log-event',
+                'nodejs/alert/event-configuration/transaction',
+              ]
+            },
+            {
+              type: 'doc',
+              label: '이벤트 설정',
+              className: 'classicfunc',
+              id: 'nodejs/alert/event-classic/application', // 이벤트 설정 classic
+            }, 
+            {
+              type: 'category',
+              label: '이벤트 수신 설정',
+              link: {
+                type: 'doc',
+                id: 'nodejs/alert/event-notification',
+              },
+              items: [
+                'nodejs/alert/event-notification-format',
               ]
             },
             {
               type: 'category',
-              label: '이벤트 설정',
-              collapsible: true,
-              collapsed: true,
-              className: 'classicfunc',
+              label: '이벤트 기록 및 모니터링',
+              link: {
+                type: 'doc',
+                id: 'nodejs/alert/event-history',
+              },
               items: [
-                'nodejs/warning-notice',
+                'nodejs/alert/real-time-notifications',
+                'nodejs/alert/system-events',
               ]
-            },
-            'nodejs/set-receive-event',
-            'nodejs/set-event-history',
-            'nodejs/set-event-format',
-            'nodejs/real-time-notification',
-            'nodejs/common-alert',
-            'nodejs/set-notification-message',
-          ],
+            }
+          ]
         },
+      //   {
+      //    type: 'category',
+      //    label: '경고 알림',
+      //    collapsible: true,
+      //    collapsed: true,
+      //    link: {
+      //      type: 'doc',
+      //      id: 'nodejs/apm-set-notice',
+      //    },
+      //    items: [
+      //      {
+      //        type: 'category',
+      //        label: '이벤트 설정',
+      //        collapsible: true,
+      //        collapsed: true,
+      //        link: {
+      //          type: 'doc',
+      //          id: 'nodejs/warning-notice-v2'
+      //        },
+      //        items: [
+      //           'nodejs/basic-event-setting',
+      //          'nodejs/metric-warning-notice-new',
+      //          'nodejs/metric-warning-notice',
+      //          'nodejs/hitmap-notice',
+      //          'nodejs/set-event-detect-anomal',
+      //          'nodejs/transaction-event-setting',
+      //        ]
+      //      },
+      //      {
+      //        type: 'category',
+      //        label: '이벤트 설정',
+      //        collapsible: true,
+      //        collapsed: true,
+      //        className: 'classicfunc',
+      //        items: [
+      //          'nodejs/warning-notice',
+      //        ]
+      //      },
+      //      'nodejs/set-receive-event',
+      //      'nodejs/set-event-history',
+      //      'nodejs/set-event-format',
+      //      'nodejs/real-time-notification',
+      //      'nodejs/common-alert',
+      //      'nodejs/set-notification-message',
+      //    ],
+      //  },
         'nodejs/instance-performance-analysis',
         'nodejs/linked-projects',
         {
@@ -1001,46 +1172,103 @@ const sidebars = {
           collapsed: true,
           link: {
             type: 'doc',
-            id: 'python/apm-set-notice',
+            id: 'python/alert/overview', // 경고 알림 개요
           },
           items: [
             {
               type: 'category',
               label: '이벤트 설정',
-              collapsible: true,
-              collapsed: true,
               link: {
                 type: 'doc',
-                id: 'python/warning-notice-v2'
+                id: 'python/alert/event-configuration/index', // 이벤트 설정 개요
               },
               items: [
-                // 'python/basic-event-setting',
-                'python/metric-warning-notice-new',
-                'python/metric-warning-notice',
-                'python/hitmap-notice',
-                'python/set-event-detect-anomal',
-                'python/set-event-log',
-                'python/transaction-event-setting',
+                'python/alert/event-configuration/metrics',
+                'python/alert/event-configuration/composite-metrics',
+                'python/alert/event-configuration/hitmap-pattern',
+                'python/alert/event-configuration/anomaly-detection',
+                'python/alert/event-configuration/log-event',
+                'python/alert/event-configuration/transaction',
+              ]
+            },
+            {
+              type: 'doc',
+              label: '이벤트 설정',
+              className: 'classicfunc',
+              id: 'python/alert/event-classic/application', // 이벤트 설정 classic
+            }, 
+            {
+              type: 'category',
+              label: '이벤트 수신 설정',
+              link: {
+                type: 'doc',
+                id: 'python/alert/event-notification',
+              },
+              items: [
+                'python/alert/event-notification-format',
               ]
             },
             {
               type: 'category',
-              label: '이벤트 설정',
-              collapsible: true,
-              collapsed: true,
-              className: 'classicfunc',
+              label: '이벤트 기록 및 모니터링',
+              link: {
+                type: 'doc',
+                id: 'python/alert/event-history',
+              },
               items: [
-                'python/warning-notice',
+                'python/alert/real-time-notifications',
+                'python/alert/system-events',
               ]
-            },
-            'python/set-receive-event',
-            'python/set-event-history',
-            'python/set-event-format',
-            'python/real-time-notification',
-            'python/common-alert',
-            'python/set-notification-message',
-          ],
+            }
+          ]
         },
+        // {
+        //  type: 'category',
+        //  label: '경고 알림',
+        //  collapsible: true,
+        //  collapsed: true,
+        //  link: {
+        //     type: 'doc',
+        //     id: 'python/apm-set-notice',
+        //   },
+        //   items: [
+        //     {
+        //       type: 'category',
+        //       label: '이벤트 설정',
+        //       collapsible: true,
+        //       collapsed: true,
+        //       link: {
+        //         type: 'doc',
+        //         id: 'python/warning-notice-v2'
+        //       },
+        //       items: [
+        //         // 'python/basic-event-setting',
+        //         'python/metric-warning-notice-new',
+        //         'python/metric-warning-notice',
+        //         'python/hitmap-notice',
+        //         'python/set-event-detect-anomal',
+        //         'python/set-event-log',
+        //         'python/transaction-event-setting',
+        //       ]
+        //     },
+        //     {
+        //       type: 'category',
+        //       label: '이벤트 설정',
+        //       collapsible: true,
+        //       collapsed: true,
+        //       className: 'classicfunc',
+        //       items: [
+        //         'python/warning-notice',
+        //       ]
+        //     },
+        //     'python/set-receive-event',
+        //     'python/set-event-history',
+        //     'python/set-event-format',
+        //     'python/real-time-notification',
+        //     'python/common-alert',
+        //     'python/set-notification-message',
+        //   ],
+        // },
         'python/instance-performance-analysis',
         'python/linked-projects',
         {
@@ -1249,45 +1477,102 @@ const sidebars = {
           collapsed: true,
           link: {
             type: 'doc',
-            id: 'dotnet/apm-set-notice',
+            id: 'dotnet/alert/overview', // 경고 알림 개요
           },
           items: [
             {
               type: 'category',
               label: '이벤트 설정',
-              collapsible: true,
-              collapsed: true,
               link: {
                 type: 'doc',
-                id: 'dotnet/warning-notice-v2'
+                id: 'dotnet/alert/event-configuration/index', // 이벤트 설정 개요
               },
               items: [
-                // 'dotnet/basic-event-setting',
-                'dotnet/metric-warning-notice-new',
-                'dotnet/metric-warning-notice',
-                'dotnet/hitmap-notice',
-                'dotnet/set-event-detect-anomal',
-                'dotnet/transaction-event-setting',
+                'dotnet/alert/event-configuration/metrics',
+                'dotnet/alert/event-configuration/composite-metrics',
+                'dotnet/alert/event-configuration/hitmap-pattern',
+                'dotnet/alert/event-configuration/anomaly-detection',
+                'dotnet/alert/event-configuration/log-event',
+                'dotnet/alert/event-configuration/transaction',
+              ]
+            },
+            {
+              type: 'doc',
+              label: '이벤트 설정',
+              className: 'classicfunc',
+              id: 'dotnet/alert/event-classic/application', // 이벤트 설정 classic
+            }, 
+            {
+              type: 'category',
+              label: '이벤트 수신 설정',
+              link: {
+                type: 'doc',
+                id: 'dotnet/alert/event-notification',
+              },
+              items: [
+                'dotnet/alert/event-notification-format',
               ]
             },
             {
               type: 'category',
-              label: '이벤트 설정',
-              collapsible: true,
-              collapsed: true,
-              className: 'classicfunc',
+              label: '이벤트 기록 및 모니터링',
+              link: {
+                type: 'doc',
+                id: 'dotnet/alert/event-history',
+              },
               items: [
-                'dotnet/warning-notice',
+                'dotnet/alert/real-time-notifications',
+                'dotnet/alert/system-events',
               ]
-            },
-            'dotnet/set-receive-event',
-            'dotnet/set-event-history',
-            'dotnet/set-event-format',
-            'dotnet/real-time-notification',
-            'dotnet/common-alert',
-            'dotnet/set-notification-message',
-          ],
+            }
+          ]
         },
+      //   {
+      //     type: 'category',
+      //     label: '경고 알림',
+      //     collapsible: true,
+      //     collapsed: true,
+      //     link: {
+      //       type: 'doc',
+      //       id: 'dotnet/apm-set-notice',
+      //     },
+      //     items: [
+      //       {
+      //         type: 'category',
+      //         label: '이벤트 설정',
+      //         collapsible: true,
+      //         collapsed: true,
+      //         link: {
+      //           type: 'doc',
+      //           id: 'dotnet/warning-notice-v2'
+      //         },
+      //         items: [
+      //           // 'dotnet/basic-event-setting',
+      //           'dotnet/metric-warning-notice-new',
+      //           'dotnet/metric-warning-notice',
+      //           'dotnet/hitmap-notice',
+      //           'dotnet/set-event-detect-anomal',
+      //           'dotnet/transaction-event-setting',
+      //         ]
+      //       },
+      //       {
+      //         type: 'category',
+      //         label: '이벤트 설정',
+      //         collapsible: true,
+      //         collapsed: true,
+      //         className: 'classicfunc',
+      //         items: [
+      //           'dotnet/warning-notice',
+      //         ]
+      //       },
+      //       'dotnet/set-receive-event',
+      //       'dotnet/set-event-history',
+      //       'dotnet/set-event-format',
+      //       'dotnet/real-time-notification',
+      //       'dotnet/common-alert',
+      //       'dotnet/set-notification-message',
+      //     ],
+      //  },
         'dotnet/instance-performance-analysis',
         'dotnet/linked-projects',
         'dotnet/labs'
@@ -1473,46 +1758,103 @@ const sidebars = {
           collapsed: true,
           link: {
             type: 'doc',
-            id: 'golang/apm-set-notice',
+            id: 'golang/alert/overview', // 경고 알림 개요
           },
           items: [
             {
               type: 'category',
               label: '이벤트 설정',
-              collapsible: true,
-              collapsed: true,
               link: {
                 type: 'doc',
-                id: 'golang/warning-notice-v2'
+                id: 'golang/alert/event-configuration/index', // 이벤트 설정 개요
               },
               items: [
-                // 'golang/basic-event-setting',
-                'golang/metric-warning-notice-new',
-                'golang/metric-warning-notice',
-                'golang/hitmap-notice',
-                'golang/set-event-detect-anomal',
-                'golang/set-event-log',
-                'golang/transaction-event-setting',
+                'golang/alert/event-configuration/metrics',
+                'golang/alert/event-configuration/composite-metrics',
+                'golang/alert/event-configuration/hitmap-pattern',
+                'golang/alert/event-configuration/anomaly-detection',
+                'golang/alert/event-configuration/log-event',
+                'golang/alert/event-configuration/transaction',
+              ]
+            },
+            {
+              type: 'doc',
+              label: '이벤트 설정',
+              className: 'classicfunc',
+              id: 'golang/alert/event-classic/application', // 이벤트 설정 classic
+            }, 
+            {
+              type: 'category',
+              label: '이벤트 수신 설정',
+              link: {
+                type: 'doc',
+                id: 'golang/alert/event-notification',
+              },
+              items: [
+                'golang/alert/event-notification-format',
               ]
             },
             {
               type: 'category',
-              label: '이벤트 설정',
-              collapsible: true,
-              collapsed: true,
-              className: 'classicfunc',
+              label: '이벤트 기록 및 모니터링',
+              link: {
+                type: 'doc',
+                id: 'golang/alert/event-history',
+              },
               items: [
-                'golang/warning-notice',
+                'golang/alert/real-time-notifications',
+                'golang/alert/system-events',
               ]
-            },
-            'golang/set-receive-event',
-            'golang/set-event-history',
-            'golang/set-event-format',
-            'golang/real-time-notification',
-            'golang/common-alert',
-            'golang/set-notification-message',
-          ],
+            }
+          ]
         },
+        // {
+        //   type: 'category',
+        //   label: '경고 알림',
+        //   collapsible: true,
+        //   collapsed: true,
+        //   link: {
+        //     type: 'doc',
+        //     id: 'golang/apm-set-notice',
+        //   },
+        //   items: [
+        //     {
+        //       type: 'category',
+        //       label: '이벤트 설정',
+        //       collapsible: true,
+        //       collapsed: true,
+        //       link: {
+        //         type: 'doc',
+        //         id: 'golang/warning-notice-v2'
+        //       },
+        //       items: [
+        //         // 'golang/basic-event-setting',
+        //         'golang/metric-warning-notice-new',
+        //         'golang/metric-warning-notice',
+        //         'golang/hitmap-notice',
+        //         'golang/set-event-detect-anomal',
+        //         'golang/set-event-log',
+        //         'golang/transaction-event-setting',
+        //       ]
+        //     },
+        //     {
+        //       type: 'category',
+        //       label: '이벤트 설정',
+        //       collapsible: true,
+        //       collapsed: true,
+        //       className: 'classicfunc',
+        //       items: [
+        //         'golang/warning-notice',
+        //       ]
+        //     },
+        //     'golang/set-receive-event',
+        //     'golang/set-event-history',
+        //     'golang/set-event-format',
+        //     'golang/real-time-notification',
+        //     'golang/common-alert',
+        //     'golang/set-notification-message',
+        //   ],
+        // },
         'golang/instance-performance-analysis',
         'golang/linked-projects',
         {
@@ -1671,33 +2013,90 @@ const sidebars = {
           collapsed: true,
           link: {
             type: 'doc',
-            id: 'db2/set-notice',
+            id: 'db2/alert/overview', // 경고 알림 개요
           },
           items: [
             {
               type: 'category',
               label: '이벤트 설정',
-              collapsible: true,
-              collapsed: true,
               link: {
                 type: 'doc',
-                id: 'db2/warning-notice-v2'
+                id: 'db2/alert/event-configuration/index', // 이벤트 설정 개요
               },
               items: [
-                // 'db2/basic-event-setting',
-                'db2/metric-warning-notice-new',
-                'db2/set-event-detect-anomal',
-                'db2/set-event-log',
+                'db2/alert/event-configuration/metrics',
+                'db2/alert/event-configuration/composite-metrics',
+                'db2/alert/event-configuration/hitmap-pattern',
+                'db2/alert/event-configuration/anomaly-detection',
+                'db2/alert/event-configuration/log-event',
+                'db2/alert/event-configuration/transaction',
               ]
             },
-            'db2/set-receive-event',
-            'db2/set-event-history',
-            'db2/set-event-format',
-            'db2/real-time-notification',
-            'db2/common-alert',
-            'db2/set-notification-message',
-          ],
+            {
+              type: 'doc',
+              label: '이벤트 설정',
+              className: 'classicfunc',
+              id: 'db2/alert/event-classic/database', // 이벤트 설정 classic
+            }, 
+            {
+              type: 'category',
+              label: '이벤트 수신 설정',
+              link: {
+                type: 'doc',
+                id: 'db2/alert/event-notification',
+              },
+              items: [
+                'db2/alert/event-notification-format',
+              ]
+            },
+            {
+              type: 'category',
+              label: '이벤트 기록 및 모니터링',
+              link: {
+                type: 'doc',
+                id: 'db2/alert/event-history',
+              },
+              items: [
+                'db2/alert/real-time-notifications',
+                'db2/alert/system-events',
+              ]
+            }
+          ]
         },
+        // {
+        //   type: 'category',
+        //   label: '경고 알림',
+        //   collapsible: true,
+        //   collapsed: true,
+        //   link: {
+        //     type: 'doc',
+        //     id: 'db2/set-notice',
+        //   },
+        //   items: [
+        //     {
+        //       type: 'category',
+        //       label: '이벤트 설정',
+        //       collapsible: true,
+        //       collapsed: true,
+        //       link: {
+        //         type: 'doc',
+        //         id: 'db2/warning-notice-v2'
+        //       },
+        //       items: [
+        //         // 'db2/basic-event-setting',
+        //         'db2/metric-warning-notice-new',
+        //         'db2/set-event-detect-anomal',
+        //         'db2/set-event-log',
+        //       ]
+        //     },
+        //     'db2/set-receive-event',
+        //     'db2/set-event-history',
+        //     'db2/set-event-format',
+        //     'db2/real-time-notification',
+        //     'db2/common-alert',
+        //     'db2/set-notification-message',
+        //   ],
+        // },
         {
           type: 'category',
           label: '실험실',
@@ -1860,33 +2259,90 @@ const sidebars = {
           collapsed: true,
           link: {
             type: 'doc',
-            id: 'sapase/set-notice',
+            id: 'sapase/alert/overview', // 경고 알림 개요
           },
           items: [
             {
               type: 'category',
               label: '이벤트 설정',
-              collapsible: true,
-              collapsed: true,
               link: {
                 type: 'doc',
-                id: 'sapase/warning-notice-v2'
+                id: 'sapase/alert/event-configuration/index', // 이벤트 설정 개요
               },
               items: [
-                // 'sapase/basic-event-setting',
-                'sapase/metric-warning-notice-new',
-                'sapase/set-event-detect-anomal',
-                'sapase/set-event-log',
+                'sapase/alert/event-configuration/metrics',
+                'sapase/alert/event-configuration/composite-metrics',
+                'sapase/alert/event-configuration/hitmap-pattern',
+                'sapase/alert/event-configuration/anomaly-detection',
+                'sapase/alert/event-configuration/log-event',
+                'sapase/alert/event-configuration/transaction',
               ]
             },
-            'sapase/set-receive-event',
-            'sapase/set-event-history',
-            'sapase/set-event-format',
-            'sapase/real-time-notification',
-            'sapase/common-alert',
-            'sapase/set-notification-message',
-          ],
+            {
+              type: 'doc',
+              label: '이벤트 설정',
+              className: 'classicfunc',
+              id: 'sapase/alert/event-classic/database', // 이벤트 설정 classic
+            }, 
+            {
+              type: 'category',
+              label: '이벤트 수신 설정',
+              link: {
+                type: 'doc',
+                id: 'sapase/alert/event-notification',
+              },
+              items: [
+                'sapase/alert/event-notification-format',
+              ]
+            },
+            {
+              type: 'category',
+              label: '이벤트 기록 및 모니터링',
+              link: {
+                type: 'doc',
+                id: 'sapase/alert/event-history',
+              },
+              items: [
+                'sapase/alert/real-time-notifications',
+                'sapase/alert/system-events',
+              ]
+            }
+          ]
         },
+        // {
+        //   type: 'category',
+        //   label: '경고 알림',
+        //   collapsible: true,
+        //   collapsed: true,
+        //   link: {
+        //     type: 'doc',
+        //     id: 'sapase/set-notice',
+        //   },
+        //   items: [
+        //     {
+        //       type: 'category',
+        //       label: '이벤트 설정',
+        //       collapsible: true,
+        //       collapsed: true,
+        //       link: {
+        //         type: 'doc',
+        //         id: 'sapase/warning-notice-v2'
+        //       },
+        //       items: [
+        //         // 'sapase/basic-event-setting',
+        //         'sapase/metric-warning-notice-new',
+        //         'sapase/set-event-detect-anomal',
+        //         'sapase/set-event-log',
+        //       ]
+        //     },
+        //     'sapase/set-receive-event',
+        //     'sapase/set-event-history',
+        //     'sapase/set-event-format',
+        //     'sapase/real-time-notification',
+        //     'sapase/common-alert',
+        //     'sapase/set-notification-message',
+        //   ],
+        // },
         {
           type: 'category',
           label: '관리',
@@ -2094,44 +2550,101 @@ const sidebars = {
           collapsed: true,
           link: {
             type: 'doc',
-            id: 'postgresql/set-notice',
+            id: 'postgresql/alert/overview', // 경고 알림 개요
           },
           items: [
             {
               type: 'category',
               label: '이벤트 설정',
-              collapsible: true,
-              collapsed: true,
               link: {
                 type: 'doc',
-                id: 'postgresql/warning-notice-v2'
+                id: 'postgresql/alert/event-configuration/index', // 이벤트 설정 개요
               },
               items: [
-                // 'postgresql/basic-event-setting',
-                'postgresql/metric-warning-notice-new',
-                'postgresql/metric-warning-notice',
-                'postgresql/set-event-detect-anomal',
-                'postgresql/set-event-log',
+                'postgresql/alert/event-configuration/metrics',
+                'postgresql/alert/event-configuration/composite-metrics',
+                'postgresql/alert/event-configuration/hitmap-pattern',
+                'postgresql/alert/event-configuration/anomaly-detection',
+                'postgresql/alert/event-configuration/log-event',
+                'postgresql/alert/event-configuration/transaction',
+              ]
+            },
+            {
+              type: 'doc',
+              label: '이벤트 설정',
+              className: 'classicfunc',
+              id: 'postgresql/alert/event-classic/database', // 이벤트 설정 classic
+            }, 
+            {
+              type: 'category',
+              label: '이벤트 수신 설정',
+              link: {
+                type: 'doc',
+                id: 'postgresql/alert/event-notification',
+              },
+              items: [
+                'postgresql/alert/event-notification-format',
               ]
             },
             {
               type: 'category',
-              label: '이벤트 설정',
-              collapsible: true,
-              collapsed: true,
-              className: 'classicfunc',
+              label: '이벤트 기록 및 모니터링',
+              link: {
+                type: 'doc',
+                id: 'postgresql/alert/event-history',
+              },
               items: [
-                'postgresql/warning-notice',
+                'postgresql/alert/real-time-notifications',
+                'postgresql/alert/system-events',
               ]
-            },
-            'postgresql/set-receive-event',
-            'postgresql/set-event-history',
-            'postgresql/set-event-format',
-            'postgresql/real-time-notification',
-            'postgresql/common-alert',
-            'postgresql/set-notification-message',
-          ],
+            }
+          ]
         },
+        // {
+        //   type: 'category',
+        //   label: '경고 알림',
+        //   collapsible: true,
+        //   collapsed: true,
+        //   link: {
+        //     type: 'doc',
+        //     id: 'postgresql/set-notice',
+        //   },
+        //   items: [
+        //     {
+        //       type: 'category',
+        //       label: '이벤트 설정',
+        //       collapsible: true,
+        //       collapsed: true,
+        //       link: {
+        //         type: 'doc',
+        //         id: 'postgresql/warning-notice-v2'
+        //       },
+        //       items: [
+        //         // 'postgresql/basic-event-setting',
+        //         'postgresql/metric-warning-notice-new',
+        //         'postgresql/metric-warning-notice',
+        //         'postgresql/set-event-detect-anomal',
+        //         'postgresql/set-event-log',
+        //       ]
+        //     },
+        //     {
+        //       type: 'category',
+        //       label: '이벤트 설정',
+        //       collapsible: true,
+        //       collapsed: true,
+        //       className: 'classicfunc',
+        //       items: [
+        //         'postgresql/warning-notice',
+        //       ]
+        //     },
+        //     'postgresql/set-receive-event',
+        //     'postgresql/set-event-history',
+        //     'postgresql/set-event-format',
+        //     'postgresql/real-time-notification',
+        //     'postgresql/common-alert',
+        //     'postgresql/set-notification-message',
+        //   ],
+        // },
         {
           type: 'category',
           label: '관리',
@@ -2318,44 +2831,101 @@ const sidebars = {
           collapsed: true,
           link: {
             type: 'doc',
-            id: 'oracle/set-notice',
+            id: 'oracle/alert/overview', // 경고 알림 개요
           },
           items: [
             {
               type: 'category',
               label: '이벤트 설정',
-              collapsible: true,
-              collapsed: true,
               link: {
                 type: 'doc',
-                id: 'oracle/warning-notice-v2'
+                id: 'oracle/alert/event-configuration/index', // 이벤트 설정 개요
               },
               items: [
-                // 'oracle/basic-event-setting',
-                'oracle/metric-warning-notice-new',
-                'oracle/metric-warning-notice',
-                'oracle/set-event-detect-anomal',
-                'oracle/set-event-log',
+                'oracle/alert/event-configuration/metrics',
+                'oracle/alert/event-configuration/composite-metrics',
+                'oracle/alert/event-configuration/hitmap-pattern',
+                'oracle/alert/event-configuration/anomaly-detection',
+                'oracle/alert/event-configuration/log-event',
+                'oracle/alert/event-configuration/transaction',
+              ]
+            },
+            {
+              type: 'doc',
+              label: '이벤트 설정',
+              className: 'classicfunc',
+              id: 'oracle/alert/event-classic/database', // 이벤트 설정 classic
+            }, 
+            {
+              type: 'category',
+              label: '이벤트 수신 설정',
+              link: {
+                type: 'doc',
+                id: 'oracle/alert/event-notification',
+              },
+              items: [
+                'oracle/alert/event-notification-format',
               ]
             },
             {
               type: 'category',
-              label: '이벤트 설정',
-              collapsible: true,
-              collapsed: true,
-              className: 'classicfunc',
+              label: '이벤트 기록 및 모니터링',
+              link: {
+                type: 'doc',
+                id: 'oracle/alert/event-history',
+              },
               items: [
-                'oracle/warning-notice',
+                'oracle/alert/real-time-notifications',
+                'oracle/alert/system-events',
               ]
-            },
-            'oracle/set-receive-event',
-            'oracle/set-event-history',
-            'oracle/set-event-format',
-            'oracle/real-time-notification',
-            'oracle/common-alert',
-            'oracle/set-notification-message',
-          ],
+            }
+          ]
         },
+        // {
+        //   type: 'category',
+        //   label: '경고 알림',
+        //   collapsible: true,
+        //   collapsed: true,
+        //   link: {
+        //     type: 'doc',
+        //     id: 'oracle/set-notice',
+        //   },
+        //   items: [
+        //     {
+        //       type: 'category',
+        //       label: '이벤트 설정',
+        //       collapsible: true,
+        //       collapsed: true,
+        //       link: {
+        //         type: 'doc',
+        //         id: 'oracle/warning-notice-v2'
+        //       },
+        //       items: [
+        //         // 'oracle/basic-event-setting',
+        //         'oracle/metric-warning-notice-new',
+        //         'oracle/metric-warning-notice',
+        //         'oracle/set-event-detect-anomal',
+        //         'oracle/set-event-log',
+        //       ]
+        //     },
+        //     {
+        //       type: 'category',
+        //       label: '이벤트 설정',
+        //       collapsible: true,
+        //       collapsed: true,
+        //       className: 'classicfunc',
+        //       items: [
+        //         'oracle/warning-notice',
+        //       ]
+        //     },
+        //     'oracle/set-receive-event',
+        //     'oracle/set-event-history',
+        //     'oracle/set-event-format',
+        //     'oracle/real-time-notification',
+        //     'oracle/common-alert',
+        //     'oracle/set-notification-message',
+        //   ],
+        // },
         {
           type: 'category',
           label: '관리',
@@ -2539,33 +3109,90 @@ const sidebars = {
           collapsed: true,
           link: {
             type: 'doc',
-            id: 'oracle-pro/set-notice',
+            id: 'oracle-pro/alert/overview', // 경고 알림 개요
           },
           items: [
             {
               type: 'category',
               label: '이벤트 설정',
-              collapsible: true,
-              collapsed: true,
               link: {
                 type: 'doc',
-                id: 'oracle-pro/warning-notice-v2'
+                id: 'oracle-pro/alert/event-configuration/index', // 이벤트 설정 개요
               },
               items: [
-                // 'oracle-pro/basic-event-setting',
-                'oracle-pro/metric-warning-notice-new',
-                'oracle-pro/set-event-detect-anomal',
-                'oracle-pro/set-event-log',
+                'oracle-pro/alert/event-configuration/metrics',
+                'oracle-pro/alert/event-configuration/composite-metrics',
+                'oracle-pro/alert/event-configuration/hitmap-pattern',
+                'oracle-pro/alert/event-configuration/anomaly-detection',
+                'oracle-pro/alert/event-configuration/log-event',
+                'oracle-pro/alert/event-configuration/transaction',
               ]
             },
-            'oracle-pro/set-receive-event',
-            'oracle-pro/set-event-history',
-            'oracle-pro/set-event-format',
-            'oracle-pro/real-time-notification',
-            'oracle-pro/common-alert',
-            'oracle-pro/set-notification-message',
-          ],
+            {
+              type: 'doc',
+              label: '이벤트 설정',
+              className: 'classicfunc',
+              id: 'oracle-pro/alert/event-classic/database', // 이벤트 설정 classic
+            }, 
+            {
+              type: 'category',
+              label: '이벤트 수신 설정',
+              link: {
+                type: 'doc',
+                id: 'oracle-pro/alert/event-notification',
+              },
+              items: [
+                'oracle-pro/alert/event-notification-format',
+              ]
+            },
+            {
+              type: 'category',
+              label: '이벤트 기록 및 모니터링',
+              link: {
+                type: 'doc',
+                id: 'oracle-pro/alert/event-history',
+              },
+              items: [
+                'oracle-pro/alert/real-time-notifications',
+                'oracle-pro/alert/system-events',
+              ]
+            }
+          ]
         },
+        // {
+        //   type: 'category',
+        //   label: '경고 알림',
+        //   collapsible: true,
+        //   collapsed: true,
+        //   link: {
+        //     type: 'doc',
+        //     id: 'oracle-pro/set-notice',
+        //   },
+        //   items: [
+        //     {
+        //       type: 'category',
+        //       label: '이벤트 설정',
+        //       collapsible: true,
+        //       collapsed: true,
+        //       link: {
+        //         type: 'doc',
+        //         id: 'oracle-pro/warning-notice-v2'
+        //       },
+        //       items: [
+        //         // 'oracle-pro/basic-event-setting',
+        //         'oracle-pro/metric-warning-notice-new',
+        //         'oracle-pro/set-event-detect-anomal',
+        //         'oracle-pro/set-event-log',
+        //       ]
+        //     },
+        //     'oracle-pro/set-receive-event',
+        //     'oracle-pro/set-event-history',
+        //     'oracle-pro/set-event-format',
+        //     'oracle-pro/real-time-notification',
+        //     'oracle-pro/common-alert',
+        //     'oracle-pro/set-notification-message',
+        //   ],
+        // },
         {
           type: 'category',
           label: '관리',
@@ -2773,44 +3400,101 @@ const sidebars = {
           collapsed: true,
           link: {
             type: 'doc',
-            id: 'mysql/set-notice',
+            id: 'mysql/alert/overview', // 경고 알림 개요
           },
           items: [
             {
               type: 'category',
               label: '이벤트 설정',
-              collapsible: true,
-              collapsed: true,
               link: {
                 type: 'doc',
-                id: 'mysql/warning-notice-v2'
+                id: 'mysql/alert/event-configuration/index', // 이벤트 설정 개요
               },
               items: [
-                // 'mysql/basic-event-setting',
-                'mysql/metric-warning-notice-new',
-                'mysql/metric-warning-notice',
-                'mysql/set-event-detect-anomal',
-                'mysql/set-event-log',
+                'mysql/alert/event-configuration/metrics',
+                'mysql/alert/event-configuration/composite-metrics',
+                'mysql/alert/event-configuration/hitmap-pattern',
+                'mysql/alert/event-configuration/anomaly-detection',
+                'mysql/alert/event-configuration/log-event',
+                'mysql/alert/event-configuration/transaction',
+              ]
+            },
+            {
+              type: 'doc',
+              label: '이벤트 설정',
+              className: 'classicfunc',
+              id: 'mysql/alert/event-classic/database', // 이벤트 설정 classic
+            }, 
+            {
+              type: 'category',
+              label: '이벤트 수신 설정',
+              link: {
+                type: 'doc',
+                id: 'mysql/alert/event-notification',
+              },
+              items: [
+                'mysql/alert/event-notification-format',
               ]
             },
             {
               type: 'category',
-              label: '이벤트 설정',
-              collapsible: true,
-              collapsed: true,
-              className: 'classicfunc',
+              label: '이벤트 기록 및 모니터링',
+              link: {
+                type: 'doc',
+                id: 'mysql/alert/event-history',
+              },
               items: [
-                'mysql/warning-notice',
+                'mysql/alert/real-time-notifications',
+                'mysql/alert/system-events',
               ]
-            },
-            'mysql/set-receive-event',
-            'mysql/set-event-history',
-            'mysql/set-event-format',
-            'mysql/real-time-notification',
-            'mysql/common-alert',
-            'mysql/set-notification-message',
-          ],
+            }
+          ]
         },
+        // {
+        //   type: 'category',
+        //   label: '경고 알림',
+        //   collapsible: true,
+        //   collapsed: true,
+        //   link: {
+        //     type: 'doc',
+        //     id: 'mysql/set-notice',
+        //   },
+        //   items: [
+        //     {
+        //       type: 'category',
+        //       label: '이벤트 설정',
+        //       collapsible: true,
+        //       collapsed: true,
+        //       link: {
+        //         type: 'doc',
+        //         id: 'mysql/warning-notice-v2'
+        //       },
+        //       items: [
+        //         // 'mysql/basic-event-setting',
+        //         'mysql/metric-warning-notice-new',
+        //         'mysql/metric-warning-notice',
+        //         'mysql/set-event-detect-anomal',
+        //         'mysql/set-event-log',
+        //       ]
+        //     },
+        //     {
+        //       type: 'category',
+        //       label: '이벤트 설정',
+        //       collapsible: true,
+        //       collapsed: true,
+        //       className: 'classicfunc',
+        //       items: [
+        //         'mysql/warning-notice',
+        //       ]
+        //     },
+        //     'mysql/set-receive-event',
+        //     'mysql/set-event-history',
+        //     'mysql/set-event-format',
+        //     'mysql/real-time-notification',
+        //     'mysql/common-alert',
+        //     'mysql/set-notification-message',
+        //   ],
+        // },
         {
           type: 'category',
           label: '관리',
@@ -3014,44 +3698,101 @@ const sidebars = {
           collapsed: true,
           link: {
             type: 'doc',
-            id: 'mssql/set-notice',
+            id: 'mssql/alert/overview', // 경고 알림 개요
           },
           items: [
             {
               type: 'category',
               label: '이벤트 설정',
-              collapsible: true,
-              collapsed: true,
               link: {
                 type: 'doc',
-                id: 'mssql/warning-notice-v2'
+                id: 'mssql/alert/event-configuration/index', // 이벤트 설정 개요
               },
               items: [
-                // 'mssql/basic-event-setting',
-                'mssql/metric-warning-notice-new',
-                'mssql/metric-warning-notice',
-                'mssql/set-event-detect-anomal',
-                'mssql/set-event-log',
+                'mssql/alert/event-configuration/metrics',
+                'mssql/alert/event-configuration/composite-metrics',
+                'mssql/alert/event-configuration/hitmap-pattern',
+                'mssql/alert/event-configuration/anomaly-detection',
+                'mssql/alert/event-configuration/log-event',
+                'mssql/alert/event-configuration/transaction',
+              ]
+            },
+            {
+              type: 'doc',
+              label: '이벤트 설정',
+              className: 'classicfunc',
+              id: 'mssql/alert/event-classic/database', // 이벤트 설정 classic
+            }, 
+            {
+              type: 'category',
+              label: '이벤트 수신 설정',
+              link: {
+                type: 'doc',
+                id: 'mssql/alert/event-notification',
+              },
+              items: [
+                'mssql/alert/event-notification-format',
               ]
             },
             {
               type: 'category',
-              label: '이벤트 설정',
-              collapsible: true,
-              collapsed: true,
-              className: 'classicfunc',
+              label: '이벤트 기록 및 모니터링',
+              link: {
+                type: 'doc',
+                id: 'mssql/alert/event-history',
+              },
               items: [
-                'mssql/warning-notice',
+                'mssql/alert/real-time-notifications',
+                'mssql/alert/system-events',
               ]
-            },
-            'mssql/set-receive-event',
-            'mssql/set-event-history',
-            'mssql/set-event-format',
-            'mssql/real-time-notification',
-            'mssql/common-alert',
-            'mssql/set-notification-message',
-          ],
+            }
+          ]
         },
+        // {
+        //   type: 'category',
+        //   label: '경고 알림',
+        //   collapsible: true,
+        //   collapsed: true,
+        //   link: {
+        //     type: 'doc',
+        //     id: 'mssql/set-notice',
+        //   },
+        //   items: [
+        //     {
+        //       type: 'category',
+        //       label: '이벤트 설정',
+        //       collapsible: true,
+        //       collapsed: true,
+        //       link: {
+        //         type: 'doc',
+        //         id: 'mssql/warning-notice-v2'
+        //       },
+        //       items: [
+        //         // 'mssql/basic-event-setting',
+        //         'mssql/metric-warning-notice-new',
+        //         'mssql/metric-warning-notice',
+        //         'mssql/set-event-detect-anomal',
+        //         'mssql/set-event-log',
+        //       ]
+        //     },
+        //     {
+        //       type: 'category',
+        //       label: '이벤트 설정',
+        //       collapsible: true,
+        //       collapsed: true,
+        //       className: 'classicfunc',
+        //       items: [
+        //         'mssql/warning-notice',
+        //       ]
+        //     },
+        //     'mssql/set-receive-event',
+        //     'mssql/set-event-history',
+        //     'mssql/set-event-format',
+        //     'mssql/real-time-notification',
+        //     'mssql/common-alert',
+        //     'mssql/set-notification-message',
+        //   ],
+        // },
         {
           type: 'category',
           label: '실험실',
@@ -3193,43 +3934,100 @@ const sidebars = {
           collapsed: true,
           link: {
             type: 'doc',
-            id: 'tibero/set-notice',
+            id: 'tibero/alert/overview', // 경고 알림 개요
           },
           items: [
             {
               type: 'category',
               label: '이벤트 설정',
-              collapsible: true,
-              collapsed: true,
               link: {
                 type: 'doc',
-                id: 'tibero/warning-notice-v2'
+                id: 'tibero/alert/event-configuration/index', // 이벤트 설정 개요
               },
               items: [
-                // 'tibero/basic-event-setting',
-                'tibero/metric-warning-notice-new',
-                'tibero/metric-warning-notice',
-                'tibero/set-event-detect-anomal',
+                'tibero/alert/event-configuration/metrics',
+                'tibero/alert/event-configuration/composite-metrics',
+                'tibero/alert/event-configuration/hitmap-pattern',
+                'tibero/alert/event-configuration/anomaly-detection',
+                'tibero/alert/event-configuration/log-event',
+                'tibero/alert/event-configuration/transaction',
+              ]
+            },
+            {
+              type: 'doc',
+              label: '이벤트 설정',
+              className: 'classicfunc',
+              id: 'tibero/alert/event-classic/database', // 이벤트 설정 classic
+            }, 
+            {
+              type: 'category',
+              label: '이벤트 수신 설정',
+              link: {
+                type: 'doc',
+                id: 'tibero/alert/event-notification',
+              },
+              items: [
+                'tibero/alert/event-notification-format',
               ]
             },
             {
               type: 'category',
-              label: '이벤트 설정',
-              collapsible: true,
-              collapsed: true,
-              className: 'classicfunc',
+              label: '이벤트 기록 및 모니터링',
+              link: {
+                type: 'doc',
+                id: 'tibero/alert/event-history',
+              },
               items: [
-                'tibero/warning-notice',
+                'tibero/alert/real-time-notifications',
+                'tibero/alert/system-events',
               ]
-            },
-            'tibero/set-receive-event',
-            'tibero/set-event-history',
-            'tibero/set-event-format',
-            'tibero/real-time-notification',
-            'tibero/common-alert',
-            'tibero/set-notification-message'
-          ],
+            }
+          ]
         },
+        // {
+        //   type: 'category',
+        //   label: '경고 알림',
+        //   collapsible: true,
+        //   collapsed: true,
+        //   link: {
+        //     type: 'doc',
+        //     id: 'tibero/set-notice',
+        //   },
+        //   items: [
+        //     {
+        //       type: 'category',
+        //       label: '이벤트 설정',
+        //       collapsible: true,
+        //       collapsed: true,
+        //       link: {
+        //         type: 'doc',
+        //         id: 'tibero/warning-notice-v2'
+        //       },
+        //       items: [
+        //         // 'tibero/basic-event-setting',
+        //         'tibero/metric-warning-notice-new',
+        //         'tibero/metric-warning-notice',
+        //         'tibero/set-event-detect-anomal',
+        //       ]
+        //     },
+        //     {
+        //       type: 'category',
+        //       label: '이벤트 설정',
+        //       collapsible: true,
+        //       collapsed: true,
+        //       className: 'classicfunc',
+        //       items: [
+        //         'tibero/warning-notice',
+        //       ]
+        //     },
+        //     'tibero/set-receive-event',
+        //     'tibero/set-event-history',
+        //     'tibero/set-event-format',
+        //     'tibero/real-time-notification',
+        //     'tibero/common-alert',
+        //     'tibero/set-notification-message'
+        //   ],
+        // },
         {
           type: 'category',
           label: '실험실',
@@ -3396,44 +4194,101 @@ const sidebars = {
           collapsed: true,
           link: {
             type: 'doc',
-            id: 'cubrid/set-notice',
+            id: 'cubrid/alert/overview', // 경고 알림 개요
           },
           items: [
             {
               type: 'category',
               label: '이벤트 설정',
-              collapsible: true,
-              collapsed: true,
               link: {
                 type: 'doc',
-                id: 'cubrid/warning-notice-v2'
+                id: 'cubrid/alert/event-configuration/index', // 이벤트 설정 개요
               },
               items: [
-                // 'cubrid/basic-event-setting',
-                'cubrid/metric-warning-notice-new',
-                'cubrid/metric-warning-notice',
-                'cubrid/set-event-detect-anomal',
-                'cubrid/set-event-log',
+                'cubrid/alert/event-configuration/metrics',
+                'cubrid/alert/event-configuration/composite-metrics',
+                'cubrid/alert/event-configuration/hitmap-pattern',
+                'cubrid/alert/event-configuration/anomaly-detection',
+                'cubrid/alert/event-configuration/log-event',
+                'cubrid/alert/event-configuration/transaction',
+              ]
+            },
+            {
+              type: 'doc',
+              label: '이벤트 설정',
+              className: 'classicfunc',
+              id: 'cubrid/alert/event-classic/database', // 이벤트 설정 classic
+            }, 
+            {
+              type: 'category',
+              label: '이벤트 수신 설정',
+              link: {
+                type: 'doc',
+                id: 'cubrid/alert/event-notification',
+              },
+              items: [
+                'cubrid/alert/event-notification-format',
               ]
             },
             {
               type: 'category',
-              label: '이벤트 설정',
-              collapsible: true,
-              collapsed: true,
-              className: 'classicfunc',
+              label: '이벤트 기록 및 모니터링',
+              link: {
+                type: 'doc',
+                id: 'cubrid/alert/event-history',
+              },
               items: [
-                'cubrid/warning-notice',
+                'cubrid/alert/real-time-notifications',
+                'cubrid/alert/system-events',
               ]
-            },
-            'cubrid/set-receive-event',
-            'cubrid/set-event-history',
-            'cubrid/set-event-format',
-            'cubrid/real-time-notification',
-            'cubrid/common-alert',
-            'cubrid/set-notification-message',
-          ],
+            }
+          ]
         },
+        // {
+        //   type: 'category',
+        //   label: '경고 알림',
+        //   collapsible: true,
+        //   collapsed: true,
+        //   link: {
+        //     type: 'doc',
+        //     id: 'cubrid/set-notice',
+        //   },
+        //   items: [
+        //     {
+        //       type: 'category',
+        //       label: '이벤트 설정',
+        //       collapsible: true,
+        //       collapsed: true,
+        //       link: {
+        //         type: 'doc',
+        //         id: 'cubrid/warning-notice-v2'
+        //       },
+        //       items: [
+        //         // 'cubrid/basic-event-setting',
+        //         'cubrid/metric-warning-notice-new',
+        //         'cubrid/metric-warning-notice',
+        //         'cubrid/set-event-detect-anomal',
+        //         'cubrid/set-event-log',
+        //       ]
+        //     },
+        //     {
+        //       type: 'category',
+        //       label: '이벤트 설정',
+        //       collapsible: true,
+        //       collapsed: true,
+        //       className: 'classicfunc',
+        //       items: [
+        //         'cubrid/warning-notice',
+        //       ]
+        //     },
+        //     'cubrid/set-receive-event',
+        //     'cubrid/set-event-history',
+        //     'cubrid/set-event-format',
+        //     'cubrid/real-time-notification',
+        //     'cubrid/common-alert',
+        //     'cubrid/set-notification-message',
+        //   ],
+        // },
         {
           type: 'category',
           label: '실험실',
@@ -3597,44 +4452,101 @@ const sidebars = {
           collapsed: true,
           link: {
             type: 'doc',
-            id: 'altibase/set-notice',
+            id: 'altibase/alert/overview', // 경고 알림 개요
           },
           items: [
             {
               type: 'category',
               label: '이벤트 설정',
-              collapsible: true,
-              collapsed: true,
               link: {
                 type: 'doc',
-                id: 'altibase/warning-notice-v2'
+                id: 'altibase/alert/event-configuration/index', // 이벤트 설정 개요
               },
               items: [
-                // 'altibase/basic-event-setting',
-                'altibase/metric-warning-notice-new',
-                'altibase/metric-warning-notice',
-                'altibase/set-event-detect-anomal',
-                'altibase/set-event-log',
+                'altibase/alert/event-configuration/metrics',
+                'altibase/alert/event-configuration/composite-metrics',
+                'altibase/alert/event-configuration/hitmap-pattern',
+                'altibase/alert/event-configuration/anomaly-detection',
+                'altibase/alert/event-configuration/log-event',
+                'altibase/alert/event-configuration/transaction',
+              ]
+            },
+            {
+              type: 'doc',
+              label: '이벤트 설정',
+              className: 'classicfunc',
+              id: 'altibase/alert/event-classic/database', // 이벤트 설정 classic
+            }, 
+            {
+              type: 'category',
+              label: '이벤트 수신 설정',
+              link: {
+                type: 'doc',
+                id: 'altibase/alert/event-notification',
+              },
+              items: [
+                'altibase/alert/event-notification-format',
               ]
             },
             {
               type: 'category',
-              label: '이벤트 설정',
-              collapsible: true,
-              collapsed: true,
-              className: 'classicfunc',
+              label: '이벤트 기록 및 모니터링',
+              link: {
+                type: 'doc',
+                id: 'altibase/alert/event-history',
+              },
               items: [
-                'altibase/warning-notice',
+                'altibase/alert/real-time-notifications',
+                'altibase/alert/system-events',
               ]
-            },
-            'altibase/set-receive-event',
-            'altibase/set-event-history',
-            'altibase/set-event-format',
-            'altibase/real-time-notification',
-            'altibase/common-alert',
-            'altibase/set-notification-message',
-          ],
+            }
+          ]
         },
+        // {
+        //   type: 'category',
+        //   label: '경고 알림',
+        //   collapsible: true,
+        //   collapsed: true,
+        //   link: {
+        //     type: 'doc',
+        //     id: 'altibase/set-notice',
+        //   },
+        //   items: [
+        //     {
+        //       type: 'category',
+        //       label: '이벤트 설정',
+        //       collapsible: true,
+        //       collapsed: true,
+        //       link: {
+        //         type: 'doc',
+        //         id: 'altibase/warning-notice-v2'
+        //       },
+        //       items: [
+        //         // 'altibase/basic-event-setting',
+        //         'altibase/metric-warning-notice-new',
+        //         'altibase/metric-warning-notice',
+        //         'altibase/set-event-detect-anomal',
+        //         'altibase/set-event-log',
+        //       ]
+        //     },
+        //     {
+        //       type: 'category',
+        //       label: '이벤트 설정',
+        //       collapsible: true,
+        //       collapsed: true,
+        //       className: 'classicfunc',
+        //       items: [
+        //         'altibase/warning-notice',
+        //       ]
+        //     },
+        //     'altibase/set-receive-event',
+        //     'altibase/set-event-history',
+        //     'altibase/set-event-format',
+        //     'altibase/real-time-notification',
+        //     'altibase/common-alert',
+        //     'altibase/set-notification-message',
+        //   ],
+        // },
         {
           type: 'category',
           label: '실험실',
@@ -3786,48 +4698,105 @@ const sidebars = {
           collapsed: true,
           link: {
             type: 'doc',
-            id: 'redis/set-notice',
+            id: 'redis/alert/overview', // 경고 알림 개요
           },
           items: [
             {
               type: 'category',
               label: '이벤트 설정',
-              collapsible: true,
-              collapsed: true,
               link: {
                 type: 'doc',
-                id: 'redis/warning-notice-v2'
+                id: 'redis/alert/event-configuration/index', // 이벤트 설정 개요
               },
               items: [
-                // 'redis/basic-event-setting',
-                'redis/metric-warning-notice-new',
-                'redis/metric-warning-notice',
-                'redis/set-event-detect-anomal',
-                'redis/set-event-log',
+                'redis/alert/event-configuration/metrics',
+                'redis/alert/event-configuration/composite-metrics',
+                'redis/alert/event-configuration/hitmap-pattern',
+                'redis/alert/event-configuration/anomaly-detection',
+                'redis/alert/event-configuration/log-event',
+                'redis/alert/event-configuration/transaction',
               ]
             },
-            //{
-              //type: 'category',
-              //label: '이벤트 설정',
-              //collapsible: true,
-              //collapsed: true,
-              //className: 'classicfunc',
-              //link: {
-              //  type: 'doc',
-              //  id: 'redis/warning-notice-v2'
-              //},
-              //items: [
-              //  'redis/metric-warning-notice',
-              //]
-            //},
-            'redis/set-receive-event',
-            'redis/set-event-history',
-            'redis/set-event-format',
-            'redis/real-time-notification',
-            'redis/common-alert',
-            'redis/set-notification-message',
-          ],
+            {
+              type: 'doc',
+              label: '이벤트 설정',
+              className: 'classicfunc',
+              id: 'redis/alert/event-classic/database', // 이벤트 설정 classic
+            }, 
+            {
+              type: 'category',
+              label: '이벤트 수신 설정',
+              link: {
+                type: 'doc',
+                id: 'redis/alert/event-notification',
+              },
+              items: [
+                'redis/alert/event-notification-format',
+              ]
+            },
+            {
+              type: 'category',
+              label: '이벤트 기록 및 모니터링',
+              link: {
+                type: 'doc',
+                id: 'redis/alert/event-history',
+              },
+              items: [
+                'redis/alert/real-time-notifications',
+                'redis/alert/system-events',
+              ]
+            }
+          ]
         },
+        // {
+        //   type: 'category',
+        //   label: '경고 알림',
+        //   collapsible: true,
+        //   collapsed: true,
+        //   link: {
+        //     type: 'doc',
+        //     id: 'redis/set-notice',
+        //   },
+        //   items: [
+        //     {
+        //       type: 'category',
+        //       label: '이벤트 설정',
+        //       collapsible: true,
+        //       collapsed: true,
+        //       link: {
+        //         type: 'doc',
+        //         id: 'redis/warning-notice-v2'
+        //       },
+        //       items: [
+        //         // 'redis/basic-event-setting',
+        //         'redis/metric-warning-notice-new',
+        //         'redis/metric-warning-notice',
+        //         'redis/set-event-detect-anomal',
+        //         'redis/set-event-log',
+        //       ]
+        //     },
+        //     //{
+        //       //type: 'category',
+        //       //label: '이벤트 설정',
+        //       //collapsible: true,
+        //       //collapsed: true,
+        //       //className: 'classicfunc',
+        //       //link: {
+        //       //  type: 'doc',
+        //       //  id: 'redis/warning-notice-v2'
+        //       //},
+        //       //items: [
+        //       //  'redis/metric-warning-notice',
+        //       //]
+        //     //},
+        //     'redis/set-receive-event',
+        //     'redis/set-event-history',
+        //     'redis/set-event-format',
+        //     'redis/real-time-notification',
+        //     'redis/common-alert',
+        //     'redis/set-notification-message',
+        //   ],
+        // },
         {
           type: 'category',
           label: '실험실',
@@ -3990,44 +4959,101 @@ const sidebars = {
           collapsed: true,
           link: {
             type: 'doc',
-            id: 'mongodb/set-notice',
+            id: 'mongodb/alert/overview', // 경고 알림 개요
           },
           items: [
             {
               type: 'category',
               label: '이벤트 설정',
-              collapsible: true,
-              collapsed: true,
               link: {
                 type: 'doc',
-                id: 'mongodb/warning-notice-v2'
+                id: 'mongodb/alert/event-configuration/index', // 이벤트 설정 개요
               },
               items: [
-                // 'mongodb/basic-event-setting',
-                'mongodb/metric-warning-notice-new',
-                'mongodb/metric-warning-notice',
-                'mongodb/set-event-detect-anomal',
-                'mongodb/set-event-log',
+                'mongodb/alert/event-configuration/metrics',
+                'mongodb/alert/event-configuration/composite-metrics',
+                'mongodb/alert/event-configuration/hitmap-pattern',
+                'mongodb/alert/event-configuration/anomaly-detection',
+                'mongodb/alert/event-configuration/log-event',
+                'mongodb/alert/event-configuration/transaction',
               ]
             },
-            //{
-              //type: 'category',
-              //label: '이벤트 설정',
-              //collapsible: true,
-              //collapsed: true,
-              //className: 'classicfunc',
-              //items: [
-              //  'mongodb/metric-warning-notice',
-              //]
-            //},
-            'mongodb/set-receive-event',
-            'mongodb/set-event-history',
-            'mongodb/set-event-format',
-            'mongodb/real-time-notification',
-            'mongodb/common-alert',
-            'mongodb/set-notification-message',
-          ],
+            {
+              type: 'doc',
+              label: '이벤트 설정',
+              className: 'classicfunc',
+              id: 'mongodb/alert/event-classic/database', // 이벤트 설정 classic
+            }, 
+            {
+              type: 'category',
+              label: '이벤트 수신 설정',
+              link: {
+                type: 'doc',
+                id: 'mongodb/alert/event-notification',
+              },
+              items: [
+                'mongodb/alert/event-notification-format',
+              ]
+            },
+            {
+              type: 'category',
+              label: '이벤트 기록 및 모니터링',
+              link: {
+                type: 'doc',
+                id: 'mongodb/alert/event-history',
+              },
+              items: [
+                'mongodb/alert/real-time-notifications',
+                'mongodb/alert/system-events',
+              ]
+            }
+          ]
         },
+        // {
+        //   type: 'category',
+        //   label: '경고 알림',
+        //   collapsible: true,
+        //   collapsed: true,
+        //   link: {
+        //     type: 'doc',
+        //     id: 'mongodb/set-notice',
+        //   },
+        //   items: [
+        //     {
+        //       type: 'category',
+        //       label: '이벤트 설정',
+        //       collapsible: true,
+        //       collapsed: true,
+        //       link: {
+        //         type: 'doc',
+        //         id: 'mongodb/warning-notice-v2'
+        //       },
+        //       items: [
+        //         // 'mongodb/basic-event-setting',
+        //         'mongodb/metric-warning-notice-new',
+        //         'mongodb/metric-warning-notice',
+        //         'mongodb/set-event-detect-anomal',
+        //         'mongodb/set-event-log',
+        //       ]
+        //     },
+        //     //{
+        //       //type: 'category',
+        //       //label: '이벤트 설정',
+        //       //collapsible: true,
+        //       //collapsed: true,
+        //       //className: 'classicfunc',
+        //       //items: [
+        //       //  'mongodb/metric-warning-notice',
+        //       //]
+        //     //},
+        //     'mongodb/set-receive-event',
+        //     'mongodb/set-event-history',
+        //     'mongodb/set-event-format',
+        //     'mongodb/real-time-notification',
+        //     'mongodb/common-alert',
+        //     'mongodb/set-notification-message',
+        //   ],
+        // },
         {
           type: 'category',
           label: '실험실',
@@ -4110,39 +5136,90 @@ const sidebars = {
           collapsed: true,
           link: {
             type: 'doc',
-            id: 'npm/set-notice'
+            id: 'npm/alert/overview', // 경고 알림 개요
           },
           items: [
             {
               type: 'category',
               label: '이벤트 설정',
-              collapsible: true,
-              collapsed: true,
               link: {
                 type: 'doc',
-                id: 'npm/warning-notice-v2'
+                id: 'npm/alert/event-configuration/index', // 이벤트 설정 개요
               },
               items: [
-                // 'npm/basic-event-setting',
-                'npm/metric-warning-notice-new'
+                'npm/alert/event-configuration/metrics',
+                // 'npm/alert/event-configuration/composite-metrics',
+                // 'npm/alert/event-configuration/hitmap-pattern',
+                // 'npm/alert/event-configuration/anomaly-detection',
+                // 'npm/alert/event-configuration/log-event',
+                // 'npm/alert/event-configuration/transaction',
               ]
             },
-            // {
-              //type: 'category',
-              //label: '이벤트 설정',
-              //collapsible: true,
-              //collapsed: true,
-              //className: 'classicfunc',
-              //items: [
-              //  'npm/metric-warning-notice'
-              //]
-            // },
-            'npm/set-receive-event',
-            'npm/set-event-history',
-            'npm/real-time-notification',
-            'npm/common-alert'
-          ],
+            {
+              type: 'category',
+              label: '이벤트 수신 설정',
+              link: {
+                type: 'doc',
+                id: 'npm/alert/event-notification',
+              },
+              items: [
+                'npm/alert/event-notification-format',
+              ]
+            },
+            {
+              type: 'category',
+              label: '이벤트 기록 및 모니터링',
+              link: {
+                type: 'doc',
+                id: 'npm/alert/event-history',
+              },
+              items: [
+                'npm/alert/real-time-notifications',
+                'npm/alert/system-events',
+              ]
+            }
+          ]
         },
+        // {
+        //   type: 'category',
+        //   label: '경고 알림',
+        //   collapsible: true,
+        //   collapsed: true,
+        //   link: {
+        //     type: 'doc',
+        //     id: 'npm/set-notice'
+        //   },
+        //   items: [
+        //     {
+        //       type: 'category',
+        //       label: '이벤트 설정',
+        //       collapsible: true,
+        //       collapsed: true,
+        //       link: {
+        //         type: 'doc',
+        //         id: 'npm/warning-notice-v2'
+        //       },
+        //       items: [
+        //         // 'npm/basic-event-setting',
+        //         'npm/metric-warning-notice-new'
+        //       ]
+        //     },
+        //     // {
+        //       //type: 'category',
+        //       //label: '이벤트 설정',
+        //       //collapsible: true,
+        //       //collapsed: true,
+        //       //className: 'classicfunc',
+        //       //items: [
+        //       //  'npm/metric-warning-notice'
+        //       //]
+        //     // },
+        //     'npm/set-receive-event',
+        //     'npm/set-event-history',
+        //     'npm/real-time-notification',
+        //     'npm/common-alert'
+        //   ],
+        // },
         'npm/labs'
       ],
     }
@@ -4674,10 +5751,9 @@ const sidebars = {
               className: 'classicfunc',
               link: {
                 type: 'doc',
-                id: 'alert/event-classic/index', // 이벤트 설정 개요
+                id: 'alert/event-classic/application', // 이벤트 설정 classic
               },
               items: [
-                'alert/event-classic/application',
                 'alert/event-classic/database',
                 'alert/event-classic/server-process',
               ]
@@ -5414,15 +6490,72 @@ const sidebars = {
           type: 'category',
           label: '경고 알림',
           collapsible: true,
-          collapsed: false,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'aws-log/alert/overview', // 경고 알림 개요
+          },
           items: [
-            'aws-log/set-notice',
-            'aws-log/set-receive-event',
-            'aws-log/set-event-history',
-            'aws-log/real-time-notification',
-            'aws-log/common-alert'
+            {
+              type: 'category',
+              label: '이벤트 설정',
+              link: {
+                type: 'doc',
+                id: 'aws-log/alert/event-configuration/index', // 이벤트 설정 개요
+              },
+              items: [
+                'aws-log/alert/event-configuration/metrics',
+                'aws-log/alert/event-configuration/composite-metrics',
+                'aws-log/alert/event-configuration/hitmap-pattern',
+                'aws-log/alert/event-configuration/anomaly-detection',
+                'aws-log/alert/event-configuration/log-event',
+                'aws-log/alert/event-configuration/transaction',
+              ]
+            },
+            {
+              type: 'doc',
+              label: '이벤트 설정',
+              className: 'classicfunc',
+              id: 'aws-log/alert/event-classic/database', // 이벤트 설정 classic
+            }, 
+            {
+              type: 'category',
+              label: '이벤트 수신 설정',
+              link: {
+                type: 'doc',
+                id: 'aws-log/alert/event-notification',
+              },
+              items: [
+                'aws-log/alert/event-notification-format',
+              ]
+            },
+            {
+              type: 'category',
+              label: '이벤트 기록 및 모니터링',
+              link: {
+                type: 'doc',
+                id: 'aws-log/alert/event-history',
+              },
+              items: [
+                'aws-log/alert/real-time-notifications',
+                'aws-log/alert/system-events',
+              ]
+            }
           ]
         },
+        // {
+        //   type: 'category',
+        //   label: '경고 알림',
+        //   collapsible: true,
+        //   collapsed: false,
+        //   items: [
+        //     'aws-log/set-notice',
+        //     'aws-log/set-receive-event',
+        //     'aws-log/set-event-history',
+        //     'aws-log/real-time-notification',
+        //     'aws-log/common-alert'
+        //   ]
+        // },
       ]
     }
   ],
@@ -5575,16 +6708,73 @@ const sidebars = {
               collapsed: true,
               link: {
                 type: 'doc',
-                id: 'amazon-ecs/set-notice',
+                id: 'amazon-ecs/alert/overview', // 경고 알림 개요
               },
               items: [
-                'amazon-ecs/metric-warning-notice',
-                'amazon-ecs/set-receive-event',
-                'amazon-ecs/set-event-history',
-                'amazon-ecs/real-time-notification',
-                'amazon-ecs/common-alert'
+                {
+                  type: 'category',
+                  label: '이벤트 설정',
+                  link: {
+                    type: 'doc',
+                    id: 'amazon-ecs/alert/event-configuration/index', // 이벤트 설정 개요
+                  },
+                  items: [
+                    'amazon-ecs/alert/event-configuration/metrics',
+                    'amazon-ecs/alert/event-configuration/composite-metrics',
+                    'amazon-ecs/alert/event-configuration/hitmap-pattern',
+                    'amazon-ecs/alert/event-configuration/anomaly-detection',
+                    'amazon-ecs/alert/event-configuration/log-event',
+                    'amazon-ecs/alert/event-configuration/transaction',
+                  ]
+                },
+                {
+                  type: 'doc',
+                  label: '이벤트 설정',
+                  className: 'classicfunc',
+                  id: 'amazon-ecs/alert/event-classic/database', // 이벤트 설정 classic
+                }, 
+                {
+                  type: 'category',
+                  label: '이벤트 수신 설정',
+                  link: {
+                    type: 'doc',
+                    id: 'amazon-ecs/alert/event-notification',
+                  },
+                  items: [
+                    'amazon-ecs/alert/event-notification-format',
+                  ]
+                },
+                {
+                  type: 'category',
+                  label: '이벤트 기록 및 모니터링',
+                  link: {
+                    type: 'doc',
+                    id: 'amazon-ecs/alert/event-history',
+                  },
+                  items: [
+                    'amazon-ecs/alert/real-time-notifications',
+                    'amazon-ecs/alert/system-events',
+                  ]
+                }
               ]
             },
+            // {
+            //   type: 'category',
+            //   label: '경고 알림',
+            //   collapsible: true,
+            //   collapsed: true,
+            //   link: {
+            //     type: 'doc',
+            //     id: 'amazon-ecs/set-notice',
+            //   },
+            //   items: [
+            //     'amazon-ecs/metric-warning-notice',
+            //     'amazon-ecs/set-receive-event',
+            //     'amazon-ecs/set-event-history',
+            //     'amazon-ecs/real-time-notification',
+            //     'amazon-ecs/common-alert'
+            //   ]
+            // },
             'amazon-ecs/labs',
       ]
     }
@@ -5638,16 +6828,73 @@ const sidebars = {
               collapsed: true,
               link: {
                 type: 'doc',
-                id: 'amazon-cloudwatch/set-notice',
+                id: 'amazon-cloudwatch/alert/overview', // 경고 알림 개요
               },
               items: [
-                'amazon-cloudwatch/metric-warning-notice',
-                'amazon-cloudwatch/set-receive-event',
-                'amazon-cloudwatch/set-event-history',
-                'amazon-cloudwatch/real-time-notification',
-                'amazon-cloudwatch/common-alert'
+                {
+                  type: 'category',
+                  label: '이벤트 설정',
+                  link: {
+                    type: 'doc',
+                    id: 'amazon-cloudwatch/alert/event-configuration/index', // 이벤트 설정 개요
+                  },
+                  items: [
+                    'amazon-cloudwatch/alert/event-configuration/metrics',
+                    'amazon-cloudwatch/alert/event-configuration/composite-metrics',
+                    'amazon-cloudwatch/alert/event-configuration/hitmap-pattern',
+                    'amazon-cloudwatch/alert/event-configuration/anomaly-detection',
+                    'amazon-cloudwatch/alert/event-configuration/log-event',
+                    'amazon-cloudwatch/alert/event-configuration/transaction',
+                  ]
+                },
+                {
+                  type: 'doc',
+                  label: '이벤트 설정',
+                  className: 'classicfunc',
+                  id: 'amazon-cloudwatch/alert/event-classic/database', // 이벤트 설정 classic
+                }, 
+                {
+                  type: 'category',
+                  label: '이벤트 수신 설정',
+                  link: {
+                    type: 'doc',
+                    id: 'amazon-cloudwatch/alert/event-notification',
+                  },
+                  items: [
+                    'amazon-cloudwatch/alert/event-notification-format',
+                  ]
+                },
+                {
+                  type: 'category',
+                  label: '이벤트 기록 및 모니터링',
+                  link: {
+                    type: 'doc',
+                    id: 'amazon-cloudwatch/alert/event-history',
+                  },
+                  items: [
+                    'amazon-cloudwatch/alert/real-time-notifications',
+                    'amazon-cloudwatch/alert/system-events',
+                  ]
+                }
               ]
             },
+            // {
+            //   type: 'category',
+            //   label: '경고 알림',
+            //   collapsible: true,
+            //   collapsed: true,
+            //   link: {
+            //     type: 'doc',
+            //     id: 'amazon-cloudwatch/set-notice',
+            //   },
+            //   items: [
+            //     'amazon-cloudwatch/metric-warning-notice',
+            //     'amazon-cloudwatch/set-receive-event',
+            //     'amazon-cloudwatch/set-event-history',
+            //     'amazon-cloudwatch/real-time-notification',
+            //     'amazon-cloudwatch/common-alert'
+            //   ]
+            // },
             'amazon-cloudwatch/labs',
       ]
     }
@@ -5701,16 +6948,73 @@ const sidebars = {
           collapsed: true,
           link: {
             type: 'doc',
-            id: 'azure/set-notice',
+            id: 'azure/alert/overview', // 경고 알림 개요
           },
           items: [
-            'azure/metric-warning-notice',
-            'azure/set-receive-event',
-            'azure/set-event-history',
-            'azure/real-time-notification',
-            'azure/common-alert'
+            {
+              type: 'category',
+              label: '이벤트 설정',
+              link: {
+                type: 'doc',
+                id: 'azure/alert/event-configuration/index', // 이벤트 설정 개요
+              },
+              items: [
+                'azure/alert/event-configuration/metrics',
+                'azure/alert/event-configuration/composite-metrics',
+                'azure/alert/event-configuration/hitmap-pattern',
+                'azure/alert/event-configuration/anomaly-detection',
+                'azure/alert/event-configuration/log-event',
+                'azure/alert/event-configuration/transaction',
+              ]
+            },
+            {
+              type: 'doc',
+              label: '이벤트 설정',
+              className: 'classicfunc',
+              id: 'azure/alert/event-classic/database', // 이벤트 설정 classic
+            }, 
+            {
+              type: 'category',
+              label: '이벤트 수신 설정',
+              link: {
+                type: 'doc',
+                id: 'azure/alert/event-notification',
+              },
+              items: [
+                'azure/alert/event-notification-format',
+              ]
+            },
+            {
+              type: 'category',
+              label: '이벤트 기록 및 모니터링',
+              link: {
+                type: 'doc',
+                id: 'azure/alert/event-history',
+              },
+              items: [
+                'azure/alert/real-time-notifications',
+                'azure/alert/system-events',
+              ]
+            }
           ]
         },
+        // {
+        //   type: 'category',
+        //   label: '경고 알림',
+        //   collapsible: true,
+        //   collapsed: true,
+        //   link: {
+        //     type: 'doc',
+        //     id: 'azure/set-notice',
+        //   },
+        //   items: [
+        //     'azure/metric-warning-notice',
+        //     'azure/set-receive-event',
+        //     'azure/set-event-history',
+        //     'azure/real-time-notification',
+        //     'azure/common-alert'
+        //   ]
+        // },
         'azure/labs'
       ]
     }
@@ -6670,45 +7974,102 @@ const sidebars = {
           collapsed: true,
           link: {
             type: 'doc',
-            id: 'nms/set-notice'
+            id: 'nms/alert/overview', // 경고 알림 개요
           },
           items: [
             {
               type: 'category',
               label: '이벤트 설정',
-              collapsible: true,
-              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'nms/alert/event-configuration/index', // 이벤트 설정 개요
+              },
               items: [
-                // 'server/warning-notice',
-                'nms/metric-warning-notice',
-                // 'nms/set-notification-message',
-                // 'server/set-event-detect-anomal',
-                'nms/set-event-log',
+                'nms/alert/event-configuration/metrics',
+                'nms/alert/event-configuration/composite-metrics',
+                'nms/alert/event-configuration/hitmap-pattern',
+                'nms/alert/event-configuration/anomaly-detection',
+                'nms/alert/event-configuration/log-event',
+                'nms/alert/event-configuration/transaction',
               ]
+            },
+            {
+              type: 'doc',
+              label: '이벤트 설정',
+              className: 'classicfunc',
+              id: 'nms/alert/event-classic/database', // 이벤트 설정 classic
             }, 
-            // {
-            //   type: 'category',
-            //   label: '이벤트 설정',
-            //   collapsible: true,
-            //   collapsed: true,
-            //   className: 'newfunc',
-            //   link: {
-            //     type: 'doc',
-            //     id: 'nms/warning-notice-v2',
-            //   },
-            //   items: [
-            //     'server/warning-notice-v2',
-            //     'nms/basic-event-setting',
-            //     'nms/metric-warning-notice-new',
-            //   ]
-            // }, 
-            'nms/set-receive-event',
-            'nms/set-event-history',
-            // 'server/set-event-format',
-            'nms/real-time-notification',
-            'nms/common-alert'
+            {
+              type: 'category',
+              label: '이벤트 수신 설정',
+              link: {
+                type: 'doc',
+                id: 'nms/alert/event-notification',
+              },
+              items: [
+                'nms/alert/event-notification-format',
+              ]
+            },
+            {
+              type: 'category',
+              label: '이벤트 기록 및 모니터링',
+              link: {
+                type: 'doc',
+                id: 'nms/alert/event-history',
+              },
+              items: [
+                'nms/alert/real-time-notifications',
+                'nms/alert/system-events',
+              ]
+            }
           ]
         },
+        // {
+        //   type: 'category',
+        //   label: '경고 알림',
+        //   collapsible: true,
+        //   collapsed: true,
+        //   link: {
+        //     type: 'doc',
+        //     id: 'nms/set-notice'
+        //   },
+        //   items: [
+        //     {
+        //       type: 'category',
+        //       label: '이벤트 설정',
+        //       collapsible: true,
+        //       collapsed: true,
+        //       items: [
+        //         // 'server/warning-notice',
+        //         'nms/metric-warning-notice',
+        //         // 'nms/set-notification-message',
+        //         // 'server/set-event-detect-anomal',
+        //         'nms/set-event-log',
+        //       ]
+        //     }, 
+        //     // {
+        //     //   type: 'category',
+        //     //   label: '이벤트 설정',
+        //     //   collapsible: true,
+        //     //   collapsed: true,
+        //     //   className: 'newfunc',
+        //     //   link: {
+        //     //     type: 'doc',
+        //     //     id: 'nms/warning-notice-v2',
+        //     //   },
+        //     //   items: [
+        //     //     'server/warning-notice-v2',
+        //     //     'nms/basic-event-setting',
+        //     //     'nms/metric-warning-notice-new',
+        //     //   ]
+        //     // }, 
+        //     'nms/set-receive-event',
+        //     'nms/set-event-history',
+        //     // 'server/set-event-format',
+        //     'nms/real-time-notification',
+        //     'nms/common-alert'
+        //   ]
+        // },
         {
           type: 'doc',
           label: '로그',
@@ -7302,15 +8663,72 @@ const sidebars = {
           collapsed: true,
           link: {
             type: 'doc',
-            id: 'log/set-notice',
+            id: 'log/alert/overview', // 경고 알림 개요
           },
           items: [
-            'log/set-receive-event',
-            'log/set-event-history',
-            'log/real-time-notification',
-            'log/common-alert',
+            {
+              type: 'category',
+              label: '이벤트 설정',
+              link: {
+                type: 'doc',
+                id: 'log/alert/event-configuration/index', // 이벤트 설정 개요
+              },
+              items: [
+                'log/alert/event-configuration/metrics',
+                'log/alert/event-configuration/composite-metrics',
+                'log/alert/event-configuration/hitmap-pattern',
+                'log/alert/event-configuration/anomaly-detection',
+                'log/alert/event-configuration/log-event',
+                'log/alert/event-configuration/transaction',
+              ]
+            },
+            {
+              type: 'doc',
+              label: '이벤트 설정',
+              className: 'classicfunc',
+              id: 'log/alert/event-classic/database', // 이벤트 설정 classic
+            }, 
+            {
+              type: 'category',
+              label: '이벤트 수신 설정',
+              link: {
+                type: 'doc',
+                id: 'log/alert/event-notification',
+              },
+              items: [
+                'log/alert/event-notification-format',
+              ]
+            },
+            {
+              type: 'category',
+              label: '이벤트 기록 및 모니터링',
+              link: {
+                type: 'doc',
+                id: 'log/alert/event-history',
+              },
+              items: [
+                'log/alert/real-time-notifications',
+                'log/alert/system-events',
+              ]
+            }
           ]
         },
+        // {
+        //   type: 'category',
+        //   label: '경고 알림',
+        //   collapsible: true,
+        //   collapsed: true,
+        //   link: {
+        //     type: 'doc',
+        //     id: 'log/set-notice',
+        //   },
+        //   items: [
+        //     'log/set-receive-event',
+        //     'log/set-event-history',
+        //     'log/real-time-notification',
+        //     'log/common-alert',
+        //   ]
+        // },
       ]  
     }
   ]  
