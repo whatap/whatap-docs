@@ -1,6 +1,62 @@
 [
     {
         "url": "https://docs.whatap.io/release-notes/service/service-2_24_x",
+        "ver": "Service 2.24.5",
+        "date": "2026-01-09",
+        "Lists": [
+            {
+                "ver": "Service 2.24.5",
+                "hash": "service-2245",
+                "product": "Application",
+                "type": "Fixed",
+                "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">Agent Installation</span> Removed the download button for the legacy .Net agent </p>"
+            }
+        ]
+    },
+    {
+        "url": "https://docs.whatap.io/release-notes/service/service-2_24_x",
+        "ver": "Service 2.24.5",
+        "date": "2026-01-09",
+        "Lists": [
+            {
+                "ver": "Service 2.24.5",
+                "hash": "service-2245",
+                "product": "Database",
+                "type": "Fixed",
+                "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">Analysis</span> &gt; <span class=\"uitext\">Trend Comparison</span> Fixed an issue where cloud metrics could not be selected in the metric selector </p>"
+            }
+        ]
+    },
+    {
+        "url": "https://docs.whatap.io/release-notes/service/service-2_24_x",
+        "ver": "Service 2.24.4",
+        "date": "2026-01-08",
+        "Lists": [
+            {
+                "ver": "Service 2.24.4",
+                "hash": "service-2244",
+                "product": "OpenMetrics",
+                "type": "Fixed",
+                "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">Template List</span> Fixed an issue where descriptions and some text were not visible in dark mode </p>"
+            }
+        ]
+    },
+    {
+        "url": "https://docs.whatap.io/release-notes/service/service-2_24_x",
+        "ver": "Service 2.24.4",
+        "date": "2026-01-08",
+        "Lists": [
+            {
+                "ver": "Service 2.24.4",
+                "hash": "service-2244",
+                "product": "Kubernetes",
+                "type": "Fixed",
+                "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">Container Map</span> Removed the GPU item from grouped metrics</p>"
+            }
+        ]
+    },    
+    {
+        "url": "https://docs.whatap.io/release-notes/service/service-2_24_x",
         "ver": "Service 2.24.3",
         "date": "2025-12-30",
         "Lists": [
