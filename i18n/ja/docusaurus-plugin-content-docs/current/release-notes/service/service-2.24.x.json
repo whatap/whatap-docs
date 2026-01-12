@@ -1,6 +1,36 @@
 [
     {
         "url": "https://docs.whatap.io/release-notes/service/service-2_24_x",
+        "ver": "Service 2.24.6",
+        "date": "2026-01-12",
+        "Lists": [
+            {
+                "ver": "Service 2.24.6",
+                "hash": "service-2246",
+                "product": "공통",
+                "type": "Fixed",
+                "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">利用履歴</span> </p>",
+                "details": "<ul>\n<li>基本情報を修正する際、電話番号入力フィールドの既存値が空欄で表示される問題を修正</li>\n\n<li>請求および支払履歴でホワイトアウトが発生する問題を修正</li>\n</ul>"
+            }
+        ]
+    },
+    {
+        "url": "https://docs.whatap.io/release-notes/service/service-2_24_x",
+        "ver": "Service 2.24.6",
+        "date": "2026-01-12",
+        "Lists": [
+            {
+                "ver": "Service 2.24.6",
+                "hash": "service-2246",
+                "product": "공통",
+                "type": "Fixed",
+                "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">リアルタイムログイベント</span> </p>",
+                "details": "<ul>\n<li>イベント対象フィルタリングの検索値サジェストが正しくない問題を修正</li>\n\n<li>イベント対象フィルタリングで値を直接入力する際、スペースが入力できない問題を修正</li>\n</ul>"
+            }
+        ]
+    },
+    {
+        "url": "https://docs.whatap.io/release-notes/service/service-2_24_x",
         "ver": "Service 2.24.5",
         "date": "2026-01-09",
         "Lists": [
