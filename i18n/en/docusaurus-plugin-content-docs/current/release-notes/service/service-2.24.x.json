@@ -1,6 +1,36 @@
 [
     {
         "url": "https://docs.whatap.io/release-notes/service/service-2_24_x",
+        "ver": "Service 2.24.6",
+        "date": "2026-01-12",
+        "Lists": [
+            {
+                "ver": "Service 2.24.6",
+                "hash": "service-2246",
+                "product": "공통",
+                "type": "Fixed",
+                "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">Usage</span> </p>",
+                "details": "<ul>\n<li>An issue where the existing phone number value appeared empty when editing basic information</li>\n\n<li>White-out issue on the billing and payment history</li>\n</ul>"
+            }
+        ]
+    },
+    {
+        "url": "https://docs.whatap.io/release-notes/service/service-2_24_x",
+        "ver": "Service 2.24.6",
+        "date": "2026-01-12",
+        "Lists": [
+            {
+                "ver": "Service 2.24.6",
+                "hash": "service-2246",
+                "product": "공통",
+                "type": "Fixed",
+                "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">Real-time Log Events</span> </p>",
+                "details": "<ul>\n<li>Incorrect suggestion of search values for event target filtering</li>\n\n<li>An issue where spaces did not work when directly entering values in event target filtering</li>\n</ul>"
+            }
+        ]
+    },
+    {
+        "url": "https://docs.whatap.io/release-notes/service/service-2_24_x",
         "ver": "Service 2.24.5",
         "date": "2026-01-09",
         "Lists": [
